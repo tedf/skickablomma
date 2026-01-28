@@ -5,7 +5,8 @@
 A web-based tool that analyzes uploaded digital ad images and generates predictive heatmaps showing:
 1. **Attention Heatmap**: Where viewers will likely look (based on eye-tracking research)
 2. **Click Prediction Heatmap**: Where viewers will likely click
-3. **Actionable Insights**: Design recommendations based on ad best practices
+3. **Bullet Report**: Short, scannable summary of what's working and what to improve
+4. **Actionable Insights**: Detailed design recommendations based on ad best practices
 
 The tool uses a **hybrid approach** combining:
 - Deep learning models trained on eye-tracking data
@@ -122,22 +123,34 @@ The tool uses a **hybrid approach** combining:
 ### 1. Frontend (React + TypeScript + Tailwind)
 
 **Features**:
-- Drag-and-drop image upload
-- Real-time processing progress
-- Interactive heatmap visualization with toggles:
+- Drag-and-drop image upload with subtle hover animations
+- Real-time processing progress with shimmer loading states
+- Interactive heatmap visualization with smooth toggles:
   - Attention heatmap overlay
   - Click prediction overlay
   - Element detection overlay (bounding boxes)
+- **Bullet Report Card**: Scannable summary with what's working and suggested improvements
+- Detailed insights panel (collapsible)
 - Split-view comparison (before/after)
 - Downloadable reports (PDF/PNG)
-- Insights panel with actionable recommendations
+- Minimal, best-in-class design with subtle animations throughout
 
 **Tech Stack**:
 - **Framework**: Next.js 14+ (App Router)
-- **UI**: Tailwind CSS + shadcn/ui
+- **UI**: Tailwind CSS + shadcn/ui (for consistent, accessible components)
 - **Visualization**: Canvas API + react-konva for heatmap rendering
-- **State**: Zustand or React Query
+- **Animations**: Framer Motion (optional) + CSS transitions
+- **State**: Zustand or TanStack Query
 - **Upload**: react-dropzone
+- **Fonts**: Inter Variable
+
+**Design Requirements**:
+- Clean, minimal interface with purposeful whitespace
+- Subtle animations (150-350ms, cubic-bezier easing)
+- GPU-accelerated animations (transform/opacity only)
+- Respect `prefers-reduced-motion`
+- WCAG AA accessibility compliance
+- Mobile-first responsive design
 
 ### 2. Backend (Python FastAPI)
 
@@ -391,6 +404,785 @@ def generate_insights(image, attention_map, click_map):
     return insights
 ```
 
+### 8. Bullet Report Generator
+
+**Purpose**: Provide a concise, scannable summary alongside the detailed heatmap analysis. This report immediately shows users what's working and what needs improvement without having to study the heatmap.
+
+**Format**:
+```typescript
+interface BulletReport {
+  overall_score: number;  // 0-100
+  grade: 'A' | 'B' | 'C' | 'D' | 'F';
+  whats_working: string[];  // 3-5 positive points
+  suggested_improvements: string[];  // 3-5 actionable changes
+  priority_fix?: string;  // Single most important change
+}
+```
+
+**Implementation**:
+```python
+def generate_bullet_report(image, attention_map, click_map, insights):
+    """Generate concise bullet report for quick scanning."""
+
+    report = {
+        "overall_score": 0,
+        "grade": "F",
+        "whats_working": [],
+        "suggested_improvements": [],
+        "priority_fix": None
+    }
+
+    # Calculate overall score
+    scores = {
+        "visual_hierarchy": calculate_hierarchy_score(image),
+        "attention_distribution": score_attention_distribution(attention_map),
+        "cta_effectiveness": score_cta_effectiveness(image, click_map),
+        "mobile_readiness": score_mobile_readiness(image),
+        "text_clarity": score_text_clarity(image),
+        "color_contrast": score_contrast(image)
+    }
+
+    overall = sum(scores.values()) / len(scores)
+    report["overall_score"] = int(overall)
+
+    # Assign letter grade
+    if overall >= 90:
+        report["grade"] = "A"
+    elif overall >= 80:
+        report["grade"] = "B"
+    elif overall >= 70:
+        report["grade"] = "C"
+    elif overall >= 60:
+        report["grade"] = "D"
+    else:
+        report["grade"] = "F"
+
+    # ===== WHAT'S WORKING =====
+    # Identify strengths (scores > 75)
+
+    if scores["color_contrast"] > 75:
+        contrast_ratio = calculate_average_contrast(image)
+        report["whats_working"].append(
+            f"Strong color contrast ({contrast_ratio:.1f}:1) makes elements easy to distinguish"
+        )
+
+    cta_regions = detect_ctas(image)
+    if cta_regions and scores["cta_effectiveness"] > 70:
+        report["whats_working"].append(
+            "CTA is well-positioned in a high-attention zone"
+        )
+
+    if scores["visual_hierarchy"] > 75:
+        report["whats_working"].append(
+            "Clear visual hierarchy guides the eye naturally"
+        )
+
+    faces = detect_faces(image)
+    if faces:
+        for face in faces:
+            if face_looking_at_cta(face, cta_regions):
+                report["whats_working"].append(
+                    "Model's gaze directs attention toward your CTA/product"
+                )
+                break
+
+    text_coverage = calculate_text_coverage(image)
+    if text_coverage < 0.25:
+        report["whats_working"].append(
+            "Minimal text approach aligns with best practices (research shows text-light ads outperform wordy ones)"
+        )
+
+    whitespace_ratio = calculate_whitespace_ratio(image)
+    if whitespace_ratio > 0.35:
+        report["whats_working"].append(
+            "Good use of whitespace creates breathing room"
+        )
+
+    if scores["mobile_readiness"] > 80:
+        report["whats_working"].append(
+            "Ad is optimized for mobile viewing"
+        )
+
+    # Ensure at least 2 positive points (find something good!)
+    if len(report["whats_working"]) < 2:
+        # Add generic positives based on detected elements
+        if faces:
+            report["whats_working"].append("Human face attracts attention")
+        if detect_brand_logo(image):
+            report["whats_working"].append("Brand logo is present")
+        if len(report["whats_working"]) < 2:
+            report["whats_working"].append("Image quality is clear and professional")
+
+    # Limit to 5 items
+    report["whats_working"] = report["whats_working"][:5]
+
+    # ===== SUGGESTED IMPROVEMENTS =====
+    # Identify weaknesses (scores < 70), sorted by impact
+
+    improvements = []
+
+    if scores["cta_effectiveness"] < 60:
+        cta_attention_percent = calculate_cta_attention_percent(attention_map, cta_regions)
+        if cta_attention_percent < 10:
+            improvements.append({
+                "text": "Move CTA to top-right quadrant or increase size by 50-100%",
+                "priority": 10,
+                "impact": 25
+            })
+        else:
+            improvements.append({
+                "text": "Increase CTA contrast and size to improve visibility",
+                "priority": 8,
+                "impact": 15
+            })
+
+    if text_coverage > 0.3:
+        improvements.append({
+            "text": f"Reduce text by {int((text_coverage - 0.20) * 100)}% - minimal-text ads outperform wordy ones",
+            "priority": 9,
+            "impact": 20
+        })
+
+    if faces and not face_looking_at_cta(faces[0], cta_regions):
+        improvements.append({
+            "text": "Adjust model's gaze to direct attention toward CTA or product",
+            "priority": 7,
+            "impact": 18
+        })
+
+    if scores["color_contrast"] < 60:
+        improvements.append({
+            "text": "Increase contrast between text and background (aim for 4.5:1 ratio)",
+            "priority": 8,
+            "impact": 16
+        })
+
+    if scores["visual_hierarchy"] < 65:
+        improvements.append({
+            "text": "Make headline 2x larger than body text to establish hierarchy",
+            "priority": 6,
+            "impact": 12
+        })
+
+    if scores["mobile_readiness"] < 70:
+        improvements.append({
+            "text": "Increase minimum text size to 16px for mobile readability",
+            "priority": 9,
+            "impact": 22
+        })
+
+    top_attention = get_top_attention_regions(attention_map, 0.15)
+    if whitespace_ratio < 0.25:
+        improvements.append({
+            "text": "Add more whitespace to reduce clutter and guide attention",
+            "priority": 5,
+            "impact": 10
+        })
+
+    # Check if CTA has action verb
+    if cta_regions:
+        cta_text = extract_text_from_region(image, cta_regions[0])
+        if not has_action_verb(cta_text):
+            improvements.append({
+                "text": "Use action verbs in CTA ('Get', 'Start', 'Shop', 'Learn')",
+                "priority": 4,
+                "impact": 8
+            })
+
+    # Check for alignment issues
+    if not elements_aligned(image):
+        improvements.append({
+            "text": "Align elements to a grid for cleaner appearance",
+            "priority": 3,
+            "impact": 7
+        })
+
+    # Sort by priority * impact
+    improvements.sort(key=lambda x: x["priority"] * x["impact"], reverse=True)
+
+    # Set priority fix (highest impact item)
+    if improvements:
+        report["priority_fix"] = improvements[0]["text"]
+        report["suggested_improvements"] = [item["text"] for item in improvements[:5]]
+
+    # If no issues found, provide optimization suggestions
+    if len(report["suggested_improvements"]) == 0:
+        report["suggested_improvements"] = [
+            "Consider A/B testing different CTA copy",
+            "Test alternative background colors",
+            "Experiment with CTA placement variations"
+        ]
+
+    return report
+```
+
+**Example Output**:
+
+```json
+{
+  "overall_score": 72,
+  "grade": "C",
+  "whats_working": [
+    "Strong color contrast (6.2:1) makes elements easy to distinguish",
+    "CTA is well-positioned in a high-attention zone",
+    "Minimal text approach aligns with best practices",
+    "Good use of whitespace creates breathing room"
+  ],
+  "suggested_improvements": [
+    "Move CTA to top-right quadrant or increase size by 50-100%",
+    "Reduce text by 15% - minimal-text ads outperform wordy ones",
+    "Adjust model's gaze to direct attention toward CTA or product"
+  ],
+  "priority_fix": "Move CTA to top-right quadrant or increase size by 50-100%"
+}
+```
+
+**UI Presentation**:
+- Display as collapsible card above detailed insights
+- Use green checkmarks (✓) for "What's Working"
+- Use orange suggestion icons (→) for "Suggested Improvements"
+- Highlight priority fix with accent color
+- Include overall score as large number with letter grade
+
+---
+
+## UX/Design/CX Guidelines
+
+**Design Philosophy**: **Minimal, Purposeful, Delightful**
+
+The tool should feel like a premium, professional product with a focus on clarity and ease of use. Every element serves a purpose. No clutter. No unnecessary decoration.
+
+### Core Principles
+
+1. **Progressive Disclosure**: Show essential information first, reveal details on demand
+2. **Spatial Consistency**: Every element has a predictable home
+3. **Feedback Loops**: Users always know what's happening and what to do next
+4. **Respectful Motion**: Animations enhance understanding, never distract
+
+### Visual Design System
+
+**Color Palette**:
+```css
+/* Neutral base */
+--background: 0 0% 100%;           /* Pure white */
+--foreground: 222 47% 11%;         /* Near black */
+--muted: 210 40% 96.1%;            /* Light gray */
+--muted-foreground: 215 16% 47%;   /* Mid gray */
+
+/* Accent colors */
+--primary: 221 83% 53%;            /* Modern blue */
+--primary-hover: 221 83% 45%;      /* Darker blue */
+--success: 142 76% 36%;            /* Green (positive) */
+--warning: 38 92% 50%;             /* Orange (suggestions) */
+--error: 0 84% 60%;                /* Red (issues) */
+
+/* Heatmap gradient */
+--heat-cold: 240 100% 50%;         /* Deep blue (low attention) */
+--heat-medium: 120 100% 50%;       /* Green (medium) */
+--heat-hot: 0 100% 50%;            /* Red (high attention) */
+```
+
+**Typography**:
+```css
+/* Font stack */
+font-family: 'Inter Variable', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+
+/* Scale (1.25 ratio) */
+--text-xs: 0.75rem;    /* 12px - labels */
+--text-sm: 0.875rem;   /* 14px - body */
+--text-base: 1rem;     /* 16px - default */
+--text-lg: 1.125rem;   /* 18px - subheadings */
+--text-xl: 1.25rem;    /* 20px - headings */
+--text-2xl: 1.5rem;    /* 24px - page titles */
+--text-3xl: 1.875rem;  /* 30px - hero */
+
+/* Weights */
+--font-normal: 400;
+--font-medium: 500;
+--font-semibold: 600;
+--font-bold: 700;
+```
+
+**Spacing System** (4px base unit):
+```css
+--space-1: 0.25rem;   /* 4px */
+--space-2: 0.5rem;    /* 8px */
+--space-3: 0.75rem;   /* 12px */
+--space-4: 1rem;      /* 16px */
+--space-6: 1.5rem;    /* 24px */
+--space-8: 2rem;      /* 32px */
+--space-12: 3rem;     /* 48px */
+--space-16: 4rem;     /* 64px */
+```
+
+**Shadows** (subtle depth):
+```css
+--shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+--shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+--shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+--shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+```
+
+**Border Radius**:
+```css
+--radius-sm: 0.375rem;  /* 6px - buttons */
+--radius-md: 0.5rem;    /* 8px - cards */
+--radius-lg: 0.75rem;   /* 12px - modals */
+--radius-full: 9999px;  /* Pills */
+```
+
+### Animation Guidelines
+
+**Philosophy**: Animations should be **subtle, purposeful, and fast**. They guide attention and provide feedback, never entertain for entertainment's sake.
+
+**Timing**:
+```css
+--duration-fast: 150ms;      /* Hover, focus states */
+--duration-normal: 250ms;    /* Component transitions */
+--duration-slow: 350ms;      /* Page transitions, modals */
+
+--easing-standard: cubic-bezier(0.4, 0.0, 0.2, 1);  /* Material standard */
+--easing-decelerate: cubic-bezier(0.0, 0.0, 0.2, 1); /* Entering */
+--easing-accelerate: cubic-bezier(0.4, 0.0, 1, 1);   /* Exiting */
+```
+
+**Animation Catalog**:
+
+1. **Upload Zone Interaction**
+   ```css
+   /* Idle state: subtle breathing */
+   .upload-zone {
+     animation: breathe 3s ease-in-out infinite;
+   }
+
+   @keyframes breathe {
+     0%, 100% { border-color: var(--muted); }
+     50% { border-color: var(--primary); opacity: 0.8; }
+   }
+
+   /* Hover: lift */
+   .upload-zone:hover {
+     transform: translateY(-2px);
+     box-shadow: var(--shadow-lg);
+     transition: all var(--duration-fast) var(--easing-decelerate);
+   }
+
+   /* Drag over: pulse */
+   .upload-zone.drag-over {
+     animation: pulse 1s ease-in-out;
+     border-color: var(--primary);
+     background: rgba(var(--primary-rgb), 0.05);
+   }
+   ```
+
+2. **Processing State**
+   ```css
+   /* Skeleton loading with shimmer */
+   .skeleton {
+     background: linear-gradient(
+       90deg,
+       var(--muted) 0%,
+       rgba(255,255,255,0.8) 50%,
+       var(--muted) 100%
+     );
+     background-size: 200% 100%;
+     animation: shimmer 1.5s infinite;
+   }
+
+   @keyframes shimmer {
+     0% { background-position: -200% 0; }
+     100% { background-position: 200% 0; }
+   }
+
+   /* Progress bar with smooth fill */
+   .progress-bar {
+     transition: width var(--duration-normal) var(--easing-standard);
+   }
+   ```
+
+3. **Heatmap Reveal**
+   ```css
+   /* Fade in with slight scale */
+   .heatmap-container {
+     animation: revealHeatmap 600ms var(--easing-decelerate);
+   }
+
+   @keyframes revealHeatmap {
+     0% {
+       opacity: 0;
+       transform: scale(0.95);
+     }
+     100% {
+       opacity: 1;
+       transform: scale(1);
+     }
+   }
+
+   /* Heatmap overlay toggle */
+   .heatmap-overlay {
+     transition: opacity var(--duration-normal) var(--easing-standard);
+   }
+
+   .heatmap-overlay.visible {
+     opacity: 0.75;
+   }
+   ```
+
+4. **Insights Card Stagger**
+   ```css
+   /* Cards appear one by one */
+   .insight-card {
+     opacity: 0;
+     animation: slideInUp 400ms var(--easing-decelerate) forwards;
+   }
+
+   .insight-card:nth-child(1) { animation-delay: 100ms; }
+   .insight-card:nth-child(2) { animation-delay: 150ms; }
+   .insight-card:nth-child(3) { animation-delay: 200ms; }
+   .insight-card:nth-child(4) { animation-delay: 250ms; }
+   .insight-card:nth-child(5) { animation-delay: 300ms; }
+
+   @keyframes slideInUp {
+     0% {
+       opacity: 0;
+       transform: translateY(12px);
+     }
+     100% {
+       opacity: 1;
+       transform: translateY(0);
+     }
+   }
+   ```
+
+5. **Toggle Interactions**
+   ```css
+   /* Smooth toggle switch */
+   .toggle-switch {
+     transition: background-color var(--duration-fast) var(--easing-standard);
+   }
+
+   .toggle-thumb {
+     transition: transform var(--duration-fast) var(--easing-standard);
+   }
+
+   .toggle-switch[data-state="checked"] .toggle-thumb {
+     transform: translateX(20px);
+   }
+   ```
+
+6. **Tooltip Appearance**
+   ```css
+   /* Subtle fade + small translate */
+   .tooltip {
+     animation: tooltipIn 200ms var(--easing-decelerate);
+   }
+
+   @keyframes tooltipIn {
+     0% {
+       opacity: 0;
+       transform: translateY(-4px);
+     }
+     100% {
+       opacity: 1;
+       transform: translateY(0);
+     }
+   }
+   ```
+
+7. **Button Interactions**
+   ```css
+   /* Subtle scale on hover */
+   .button {
+     transition: all var(--duration-fast) var(--easing-standard);
+   }
+
+   .button:hover {
+     transform: translateY(-1px);
+     box-shadow: var(--shadow-md);
+   }
+
+   .button:active {
+     transform: translateY(0);
+     box-shadow: var(--shadow-sm);
+   }
+
+   /* Success state */
+   .button.success {
+     animation: successPulse 600ms var(--easing-decelerate);
+   }
+
+   @keyframes successPulse {
+     0%, 100% { transform: scale(1); }
+     50% { transform: scale(1.05); }
+   }
+   ```
+
+8. **Score Counter Animation**
+   ```tsx
+   // Animated number counter (use in React)
+   const AnimatedScore = ({ value }: { value: number }) => {
+     const [count, setCount] = useState(0);
+
+     useEffect(() => {
+       const duration = 1000;
+       const steps = 60;
+       const increment = value / steps;
+       let current = 0;
+
+       const timer = setInterval(() => {
+         current += increment;
+         if (current >= value) {
+           setCount(value);
+           clearInterval(timer);
+         } else {
+           setCount(Math.floor(current));
+         }
+       }, duration / steps);
+
+       return () => clearInterval(timer);
+     }, [value]);
+
+     return <span className="font-bold text-3xl">{count}</span>;
+   };
+   ```
+
+9. **Micro-interactions**
+   ```css
+   /* Icon spin on click */
+   .icon-button svg {
+     transition: transform var(--duration-fast) var(--easing-standard);
+   }
+
+   .icon-button:active svg {
+     transform: rotate(15deg);
+   }
+
+   /* Checkbox check animation */
+   .checkbox-check {
+     animation: checkmark 300ms var(--easing-decelerate);
+   }
+
+   @keyframes checkmark {
+     0% {
+       stroke-dashoffset: 20;
+       opacity: 0;
+     }
+     100% {
+       stroke-dashoffset: 0;
+       opacity: 1;
+     }
+   }
+   ```
+
+**Animation Performance Rules**:
+- Only animate `transform` and `opacity` (GPU-accelerated)
+- Use `will-change` sparingly and remove after animation
+- Respect `prefers-reduced-motion` media query
+- Never animate during critical rendering paths
+
+```css
+/* Respect user preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+```
+
+### Component Specifications
+
+**1. Upload Zone**
+```tsx
+<div className="relative">
+  {/* Dropzone */}
+  <div className="
+    border-2 border-dashed border-muted
+    rounded-lg p-12
+    text-center
+    transition-all duration-150
+    hover:border-primary hover:bg-primary/5
+    cursor-pointer
+  ">
+    <UploadIcon className="w-12 h-12 mx-auto text-muted-foreground mb-4" />
+    <p className="text-lg font-medium mb-1">Drop your ad here</p>
+    <p className="text-sm text-muted-foreground">or click to browse</p>
+    <p className="text-xs text-muted-foreground mt-2">PNG, JPG up to 10MB</p>
+  </div>
+</div>
+```
+
+**2. Results Layout**
+```tsx
+<div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+  {/* Left: Heatmap Visualization */}
+  <div className="space-y-4">
+    {/* Image with heatmap overlay */}
+    <div className="relative rounded-lg overflow-hidden shadow-lg">
+      <img src={originalImage} alt="Your ad" />
+      <canvas className="absolute inset-0 opacity-75" />
+    </div>
+
+    {/* Controls */}
+    <div className="flex items-center justify-between bg-muted/50 p-4 rounded-lg">
+      <div className="flex gap-4">
+        <label className="flex items-center gap-2 cursor-pointer">
+          <Switch checked={showAttention} />
+          <span className="text-sm">Attention</span>
+        </label>
+        <label className="flex items-center gap-2 cursor-pointer">
+          <Switch checked={showClicks} />
+          <span className="text-sm">Clicks</span>
+        </label>
+      </div>
+      <Button variant="outline" size="sm">Download</Button>
+    </div>
+  </div>
+
+  {/* Right: Bullet Report + Insights */}
+  <div className="space-y-6">
+    {/* Bullet Report Card */}
+    <Card className="p-6">
+      <div className="flex items-center justify-between mb-4">
+        <h3 className="text-xl font-semibold">Analysis</h3>
+        <div className="flex items-center gap-2">
+          <span className="text-3xl font-bold">{score}</span>
+          <span className="text-lg text-muted-foreground">/ 100</span>
+        </div>
+      </div>
+
+      {/* What's Working */}
+      <div className="mb-6">
+        <h4 className="text-sm font-semibold text-success mb-2">
+          ✓ What's Working
+        </h4>
+        <ul className="space-y-1.5">
+          {whatsWorking.map((item, i) => (
+            <li key={i} className="text-sm text-muted-foreground flex items-start gap-2">
+              <span className="text-success mt-0.5">•</span>
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      {/* Suggested Improvements */}
+      <div>
+        <h4 className="text-sm font-semibold text-warning mb-2">
+          → Suggested Improvements
+        </h4>
+        <ul className="space-y-1.5">
+          {improvements.map((item, i) => (
+            <li key={i} className="text-sm text-muted-foreground flex items-start gap-2">
+              <span className="text-warning mt-0.5">•</span>
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      {/* Priority Fix */}
+      {priorityFix && (
+        <div className="mt-6 p-3 bg-warning/10 border border-warning/20 rounded-md">
+          <p className="text-xs font-semibold text-warning mb-1">PRIORITY FIX</p>
+          <p className="text-sm">{priorityFix}</p>
+        </div>
+      )}
+    </Card>
+
+    {/* Detailed Insights (collapsible) */}
+    <Accordion type="single" collapsible>
+      <AccordionItem value="details">
+        <AccordionTrigger>View Detailed Analysis</AccordionTrigger>
+        <AccordionContent>
+          {/* Individual insight cards */}
+        </AccordionContent>
+      </AccordionItem>
+    </Accordion>
+  </div>
+</div>
+```
+
+**3. Processing State**
+```tsx
+<div className="flex flex-col items-center justify-center min-h-[400px]">
+  {/* Animated spinner or progress */}
+  <div className="w-16 h-16 border-4 border-primary/20 border-t-primary rounded-full animate-spin mb-4" />
+  <p className="text-lg font-medium mb-2">Analyzing your ad...</p>
+  <p className="text-sm text-muted-foreground">{statusMessage}</p>
+
+  {/* Progress bar */}
+  <div className="w-64 h-1.5 bg-muted rounded-full mt-4 overflow-hidden">
+    <div
+      className="h-full bg-primary transition-all duration-300"
+      style={{ width: `${progress}%` }}
+    />
+  </div>
+</div>
+```
+
+### Interaction Patterns
+
+**Heatmap Intensity Slider**:
+- Horizontal slider to adjust heatmap opacity (0-100%)
+- Thumb animates on drag with subtle shadow
+- Live preview as user adjusts
+
+**Element Detection Overlay**:
+- Toggle to show bounding boxes for detected elements
+- Boxes fade in with stagger effect
+- Hover over box shows label tooltip
+
+**Export Options**:
+- Dropdown with options: PNG, JPG, PDF report
+- Success state with checkmark animation after download
+
+**Keyboard Shortcuts**:
+- `Space`: Toggle heatmap overlay
+- `A`: Show attention heatmap
+- `C`: Show click heatmap
+- `D`: Download current view
+- `?`: Show shortcut guide
+
+### Accessibility Requirements
+
+- **WCAG AA compliance**: 4.5:1 contrast ratios for text
+- **Keyboard navigation**: All interactive elements focusable
+- **Screen reader support**: Proper ARIA labels and roles
+- **Focus indicators**: Clear, 2px outline on focus
+- **Alt text**: Meaningful descriptions for all images
+- **Error messages**: Clear, actionable, announced to screen readers
+
+### Responsive Behavior
+
+**Mobile (< 768px)**:
+- Single column layout
+- Heatmap visualization full width
+- Sticky controls at bottom
+- Simplified insights view (show top 3)
+- Touch-friendly button sizes (min 44x44px)
+
+**Tablet (768px - 1024px)**:
+- Single column, wider cards
+- Side-by-side toggles
+- Larger text for readability
+
+**Desktop (> 1024px)**:
+- Two-column layout (heatmap left, insights right)
+- Hover states fully active
+- Keyboard shortcuts enabled
+
+### Performance Targets
+
+- **First Contentful Paint**: < 1.5s
+- **Time to Interactive**: < 3s
+- **Heatmap render time**: < 500ms
+- **Smooth 60fps animations**: No dropped frames
+- **Bundle size**: < 200KB (gzipped)
+
 ---
 
 ## Technical Implementation Plan
@@ -411,16 +1203,20 @@ def generate_insights(image, attention_map, click_map):
 
 **Week 5-6: Polish & Testing**
 - [ ] Add click prediction algorithm
-- [ ] Create insights UI with recommendations
+- [ ] Implement bullet report generator
+- [ ] Create insights UI with bullet report card
+- [ ] Add subtle animations (upload, reveal, stagger)
 - [ ] User testing with 20+ ads
 - [ ] Performance optimization
 - [ ] Deployment (Vercel + Railway/Render)
 
 **MVP Features**:
-- Upload single ad image
+- Upload single ad image with drag-and-drop
 - Generate attention heatmap (ML + rules)
 - Generate click prediction heatmap
-- Display 5-7 actionable insights
+- **Bullet Report Card**: 3-5 positives + 3-5 improvements + priority fix
+- Detailed insights (5-7 actionable recommendations)
+- Minimal, best-in-class UI with subtle animations
 - Download heatmap overlay as PNG
 
 ### Phase 2: Enhanced Features (6-8 weeks)
@@ -848,6 +1644,21 @@ const exampleInsights: Insight[] = [
       ],
       "ctas": [{"box": [800, 400, 1000, 480], "text": "Learn More", "prominence": 0.35}]
     },
+    "bullet_report": {
+      "overall_score": 67,
+      "grade": "D",
+      "whats_working": [
+        "Good use of whitespace creates breathing room",
+        "Ad is optimized for mobile viewing",
+        "Human face attracts attention"
+      ],
+      "suggested_improvements": [
+        "Move CTA to top-right quadrant or increase size by 50-100%",
+        "Increase CTA contrast and size to improve visibility",
+        "Adjust model's gaze to direct attention toward CTA or product"
+      ],
+      "priority_fix": "Move CTA to top-right quadrant or increase size by 50-100%"
+    },
     "insights": [
       {
         "type": "warning",
@@ -870,7 +1681,30 @@ const exampleInsights: Insight[] = [
 
 ---
 
-**Document Version**: 1.0
+**Document Version**: 2.0
 **Last Updated**: 2026-01-28
 **Author**: Claude (AI Planning Agent)
 **Status**: Ready for Implementation
+
+---
+
+## Changelog
+
+### Version 2.0 (2026-01-28)
+- Added **Bullet Report** feature with what's working + suggested improvements
+- Added comprehensive **UX/Design/CX Guidelines** section
+- Defined **subtle animation specifications** (150-350ms, purposeful motion)
+- Added **animation catalog** with 9+ interaction patterns
+- Specified **design system** (colors, typography, spacing, shadows)
+- Added **component specifications** with code examples
+- Defined **accessibility requirements** (WCAG AA)
+- Added **performance targets** (< 1.5s FCP, 60fps animations)
+- Updated API response to include `bullet_report` object
+- Updated MVP features to include bullet report and animations
+
+### Version 1.0 (2026-01-28)
+- Initial comprehensive implementation plan
+- System architecture and component breakdown
+- ML/CV algorithms and fusion approach
+- Technical stack selection
+- 3-phase implementation roadmap
