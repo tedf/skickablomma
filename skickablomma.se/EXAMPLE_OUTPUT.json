@@ -1,0 +1,255 @@
+{
+  "generatedAt": "2026-02-01T12:00:00.000Z",
+  "totalProducts": 400,
+  "partners": ["cramers", "fakeflowers", "interflora", "myperfectday"],
+  "products": [
+    {
+      "id": "fakeflowers-KJH505-purple",
+      "sku": "KJH505-purple",
+      "partnerId": "fakeflowers",
+      "name": "Ros mörklila Velvet",
+      "description": "En elegant, konstgjord lila ros, 51 cm hög. Kronbladen är i mjuk sammet, med detaljerade kronblad och realistiskt grönt bladverk, en tidlös skönhet som aldrig vissnar. Denna konstgjorda ros är perfekt för att lysa upp ditt hem utan krångel med att behöva vattna eller byta ut blommor regelbundet. Den kommer alltid att behålla sin fräschör och färg, oavsett årstid eller klimat.",
+      "shortDescription": "En elegant, konstgjord lila ros, 51 cm hög. Kronbladen är i mjuk sammet, med detaljerade kronblad och realistiskt grönt bladverk, en tidlös skönhet som",
+      "mainCategory": "konstgjorda-blommor",
+      "subCategories": [
+        "rosor"
+      ],
+      "tags": [
+        "rosor",
+        "rosor"
+      ],
+      "price": 35,
+      "currency": "SEK",
+      "shipping": 0,
+      "inStock": true,
+      "sameDayDelivery": false,
+      "attributes": {
+        "colors": [
+          "lila"
+        ],
+        "primaryColor": "lila",
+        "size": "mellan",
+        "suitableFor": [
+          "alla"
+        ]
+      },
+      "primaryImage": {
+        "id": "img-fakeflowers-KJH505-purple",
+        "url": "https://www.fakeflowers.se/static/files/40/kjh505-red.jpg",
+        "localPath": "/images/products/fakeflowers-KJH505-purple.jpg",
+        "sourceType": "partner",
+        "license": "partner_provided",
+        "dimensions": {
+          "width": 800,
+          "height": 800
+        },
+        "format": "jpg",
+        "fileSize": 45231,
+        "altText": "Ros mörklila Velvet",
+        "altTextSv": "Ros mörklila Velvet",
+        "createdAt": "2026-02-01T12:00:00.000Z",
+        "validationStatus": "valid"
+      },
+      "additionalImages": [],
+      "productUrl": "https://www.fakeflowers.se/konstgjorda-blommor/snittblommor/rosor/ros-lila-velvet",
+      "trackingUrl": "https://go.fakeflowers.se/t/t?a=1998457785&as=1771789045&t=2&tk=1&url=https%3A%2F%2Fwww.fakeflowers.se%2Fkonstgjorda-blommor%2Fsnittblommor%2Frosor%2Fros-lila-velvet",
+      "brand": "Fakeflowers",
+      "popularityScore": 50,
+      "clickCount": 0,
+      "createdAt": "2026-02-01T12:00:00.000Z",
+      "updatedAt": "2026-02-01T12:00:00.000Z",
+      "feedUpdatedAt": "2026-02-01T12:00:00.000Z",
+      "isActive": true,
+      "isPromoted": false
+    },
+    {
+      "id": "interflora-1201051",
+      "sku": "1201051",
+      "partnerId": "interflora",
+      "name": "Love",
+      "description": "Oavsett anledning – uppvakta någon du tycker om med en ljuvlig och kärleksfull tulpanbukett! Här blandas röda och rosa tulpaner tillsammans med vaxblomma och eukalyptus. Vasen på bilderna ingår inte med buketten men du kan lägga till andra passande vaser som tillval till din bukett längre ner på den här sidan.",
+      "shortDescription": "Oavsett anledning – uppvakta någon du tycker om med en ljuvlig och kärleksfull tulpanbukett! Här blandas röda och rosa tulpaner tillsammans med vaxb",
+      "mainCategory": "buketter",
+      "subCategories": [
+        "tulpaner",
+        "roda-blommor",
+        "rosa-blommor"
+      ],
+      "tags": [
+        "tulpaner",
+        "roda-blommor",
+        "rosa-blommor",
+        "tulpaner"
+      ],
+      "price": 519,
+      "currency": "SEK",
+      "shipping": 99,
+      "inStock": true,
+      "sameDayDelivery": true,
+      "attributes": {
+        "colors": [
+          "röd",
+          "rosa"
+        ],
+        "primaryColor": "röd",
+        "size": "mellan",
+        "suitableFor": [
+          "alla"
+        ]
+      },
+      "primaryImage": {
+        "id": "img-interflora-1201051",
+        "url": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744197818-1201655-4-5.jpg",
+        "localPath": "/images/products/interflora-1201051.jpg",
+        "sourceType": "partner",
+        "license": "partner_provided",
+        "dimensions": {
+          "width": 800,
+          "height": 800
+        },
+        "format": "jpg",
+        "fileSize": 128945,
+        "altText": "Love",
+        "altTextSv": "Love",
+        "createdAt": "2026-02-01T12:00:00.000Z",
+        "validationStatus": "valid"
+      },
+      "additionalImages": [],
+      "productUrl": "https://www.interflora.se/p/628-love/2",
+      "trackingUrl": "https://go.adt246.net/t/t?a=767510657&as=1771789045&t=2&tk=1&url=https%3A%2F%2Fwww.interflora.se%2Fp%2F628-love%2F2",
+      "brand": "Interflora",
+      "popularityScore": 50,
+      "clickCount": 0,
+      "createdAt": "2026-02-01T12:00:00.000Z",
+      "updatedAt": "2026-02-01T12:00:00.000Z",
+      "feedUpdatedAt": "2026-02-01T12:00:00.000Z",
+      "isActive": true,
+      "isPromoted": false
+    },
+    {
+      "id": "cramers-CRM001",
+      "sku": "CRM001",
+      "partnerId": "cramers",
+      "name": "Romantisk Rosbukett",
+      "description": "En vacker bukett med röda rosor som symboliserar kärlek och passion. Perfekt för romantiska tillfällen med 12 storblommiga rosor tillsammans med grönt.",
+      "shortDescription": "En vacker bukett med röda rosor som symboliserar kärlek och passion. Perfekt för romantiska tillfällen med 12 storblommiga rosor tillsammans med grön",
+      "mainCategory": "buketter",
+      "subCategories": [
+        "rosor",
+        "roda-blommor"
+      ],
+      "tags": [
+        "rosor",
+        "roda-blommor",
+        "buketter"
+      ],
+      "price": 549,
+      "originalPrice": 649,
+      "currency": "SEK",
+      "discountPercent": 15,
+      "shipping": 79,
+      "inStock": true,
+      "sameDayDelivery": true,
+      "attributes": {
+        "colors": [
+          "röd"
+        ],
+        "primaryColor": "röd",
+        "size": "mellan",
+        "suitableFor": [
+          "alla"
+        ]
+      },
+      "primaryImage": {
+        "id": "img-cramers-CRM001",
+        "url": "https://www.cramers.se/images/products/CRM001-main.jpg",
+        "localPath": "/images/products/cramers-CRM001.jpg",
+        "sourceType": "partner",
+        "license": "partner_provided",
+        "dimensions": {
+          "width": 800,
+          "height": 800
+        },
+        "format": "jpg",
+        "fileSize": 156234,
+        "altText": "Romantisk Rosbukett",
+        "altTextSv": "Romantisk Rosbukett",
+        "createdAt": "2026-02-01T12:00:00.000Z",
+        "validationStatus": "valid"
+      },
+      "additionalImages": [],
+      "productUrl": "https://www.cramers.se/produkter/romantisk-rosbukett",
+      "trackingUrl": "https://pin.cramersblommor.com/t/t?a=1954033070&as=1771789045&t=2&tk=1&url=https%3A%2F%2Fwww.cramers.se%2Fprodukter%2Fromantisk-rosbukett",
+      "brand": "Cramers Blommor",
+      "popularityScore": 50,
+      "clickCount": 0,
+      "createdAt": "2026-02-01T12:00:00.000Z",
+      "updatedAt": "2026-02-01T12:00:00.000Z",
+      "feedUpdatedAt": "2026-02-01T12:00:00.000Z",
+      "isActive": true,
+      "isPromoted": false
+    },
+    {
+      "id": "myperfectday-MPD001",
+      "sku": "MPD001",
+      "partnerId": "myperfectday",
+      "name": "Brudbukett Klassisk",
+      "description": "Klassisk brudbukett med vita rosor och grönska. Tidlös elegans för den stora dagen. Perfekt för traditionella bröllop med romantisk känsla.",
+      "shortDescription": "Klassisk brudbukett med vita rosor och grönska. Tidlös elegans för den stora dagen. Perfekt för traditionella bröllop med romantisk känsla.",
+      "mainCategory": "brollop",
+      "subCategories": [
+        "rosor",
+        "vita-blommor"
+      ],
+      "tags": [
+        "rosor",
+        "vita-blommor",
+        "bröllop"
+      ],
+      "price": 899,
+      "currency": "SEK",
+      "shipping": 0,
+      "inStock": true,
+      "sameDayDelivery": false,
+      "deliveryDays": 3,
+      "attributes": {
+        "colors": [
+          "vit"
+        ],
+        "primaryColor": "vit",
+        "size": "mellan",
+        "suitableFor": [
+          "alla"
+        ]
+      },
+      "primaryImage": {
+        "id": "img-myperfectday-MPD001",
+        "url": "https://www.myperfectday.se/images/bridal-classic.jpg",
+        "localPath": "/images/products/myperfectday-MPD001.jpg",
+        "sourceType": "partner",
+        "license": "partner_provided",
+        "dimensions": {
+          "width": 800,
+          "height": 800
+        },
+        "format": "jpg",
+        "fileSize": 142567,
+        "altText": "Brudbukett Klassisk",
+        "altTextSv": "Brudbukett Klassisk",
+        "createdAt": "2026-02-01T12:00:00.000Z",
+        "validationStatus": "valid"
+      },
+      "additionalImages": [],
+      "productUrl": "https://www.myperfectday.se/produkter/brudbukett-klassisk",
+      "trackingUrl": "https://in.myperfectday.se/t/t?a=1615913086&as=1771789045&t=2&tk=1&url=https%3A%2F%2Fwww.myperfectday.se%2Fprodukter%2Fbrudbukett-klassisk",
+      "brand": "My Perfect Day",
+      "popularityScore": 50,
+      "clickCount": 0,
+      "createdAt": "2026-02-01T12:00:00.000Z",
+      "updatedAt": "2026-02-01T12:00:00.000Z",
+      "feedUpdatedAt": "2026-02-01T12:00:00.000Z",
+      "isActive": true,
+      "isPromoted": false
+    }
+  ]
+}
