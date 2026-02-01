@@ -2,13 +2,46 @@
  * Produkthantering
  * ================
  * Funktioner för att hämta och filtrera produkter.
- * I produktion: Ersätt med riktig databasanrop.
+ * Laddar produkter från genererad JSON-fil (data/products.json).
  */
 
 import { Product, ProductFilters, SearchResult, MainCategory, Partner } from '@/types'
+import * as fs from 'fs'
+import * as path from 'path'
 
 // =============================================================================
-// MOCK DATA (ersätts med databas i produktion)
+// LOAD PRODUCTS FROM JSON
+// =============================================================================
+
+let PRODUCTS: Product[] = []
+
+try {
+  const productsPath = path.join(process.cwd(), 'data', 'products.json')
+  if (fs.existsSync(productsPath)) {
+    const productsData = JSON.parse(fs.readFileSync(productsPath, 'utf-8'))
+    PRODUCTS = productsData.products.map((p: any) => ({
+      ...p,
+      createdAt: new Date(p.createdAt),
+      updatedAt: new Date(p.updatedAt),
+      feedUpdatedAt: new Date(p.feedUpdatedAt),
+      primaryImage: {
+        ...p.primaryImage,
+        createdAt: new Date(p.primaryImage.createdAt),
+      },
+    }))
+    console.log(`Loaded ${PRODUCTS.length} products from JSON`)
+  } else {
+    console.warn('Products file not found, using fallback mock data')
+    // Fallback to minimal mock data
+    PRODUCTS = MOCK_PRODUCTS
+  }
+} catch (error) {
+  console.error('Error loading products:', error)
+  PRODUCTS = MOCK_PRODUCTS
+}
+
+// =============================================================================
+// FALLBACK MOCK DATA (används endast om JSON inte finns)
 // =============================================================================
 
 const MOCK_PRODUCTS: Product[] = [
@@ -431,7 +464,7 @@ const MOCK_PRODUCTS: Product[] = [
  */
 export async function getPopularProducts(limit: number = 8): Promise<Product[]> {
   // I produktion: SELECT * FROM products ORDER BY popularity_score DESC LIMIT ?
-  return MOCK_PRODUCTS
+  return PRODUCTS
     .filter((p) => p.isActive)
     .sort((a, b) => b.popularityScore - a.popularityScore)
     .slice(0, limit)
@@ -441,7 +474,7 @@ export async function getPopularProducts(limit: number = 8): Promise<Product[]> 
  * Hämtar produkter med samma-dag-leverans
  */
 export async function getSameDayProducts(limit: number = 4): Promise<Product[]> {
-  return MOCK_PRODUCTS
+  return PRODUCTS
     .filter((p) => p.isActive && p.sameDayDelivery)
     .sort((a, b) => b.popularityScore - a.popularityScore)
     .slice(0, limit)
@@ -454,7 +487,7 @@ export async function getProductsByCategory(
   category: MainCategory,
   limit: number = 20
 ): Promise<Product[]> {
-  return MOCK_PRODUCTS
+  return PRODUCTS
     .filter((p) => p.isActive && p.mainCategory === category)
     .sort((a, b) => b.popularityScore - a.popularityScore)
     .slice(0, limit)
@@ -467,7 +500,7 @@ export async function getProductsByPartner(
   partner: Partner,
   limit: number = 20
 ): Promise<Product[]> {
-  return MOCK_PRODUCTS
+  return PRODUCTS
     .filter((p) => p.isActive && p.partnerId === partner)
     .sort((a, b) => b.popularityScore - a.popularityScore)
     .slice(0, limit)
@@ -477,14 +510,14 @@ export async function getProductsByPartner(
  * Hämtar en specifik produkt
  */
 export async function getProductBySku(sku: string): Promise<Product | null> {
-  return MOCK_PRODUCTS.find((p) => p.sku === sku) || null
+  return PRODUCTS.find((p) => p.sku === sku) || null
 }
 
 /**
  * Hämtar en specifik produkt via ID
  */
 export async function getProductById(id: string): Promise<Product | null> {
-  return MOCK_PRODUCTS.find((p) => p.id === id) || null
+  return PRODUCTS.find((p) => p.id === id) || null
 }
 
 /**
@@ -495,7 +528,7 @@ export async function searchProducts(
   page: number = 1,
   pageSize: number = 20
 ): Promise<SearchResult> {
-  let results = [...MOCK_PRODUCTS].filter((p) => p.isActive)
+  let results = [...PRODUCTS].filter((p) => p.isActive)
 
   // Filtrera på huvudkategori
   if (filters.mainCategory) {
@@ -565,7 +598,7 @@ export async function searchProducts(
   const paginatedResults = results.slice(start, start + pageSize)
 
   // Beräkna facetter
-  const facets = calculateFacets(MOCK_PRODUCTS.filter((p) => p.isActive), filters)
+  const facets = calculateFacets(PRODUCTS.filter((p) => p.isActive), filters)
 
   return {
     products: paginatedResults,
@@ -662,7 +695,7 @@ export async function getRelatedProducts(
   product: Product,
   limit: number = 4
 ): Promise<Product[]> {
-  return MOCK_PRODUCTS
+  return PRODUCTS
     .filter(
       (p) =>
         p.isActive &&
