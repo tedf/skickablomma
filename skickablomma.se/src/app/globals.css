@@ -178,7 +178,7 @@
 
   /* Kategori-kort */
   .category-card {
-    @apply group relative overflow-hidden rounded-2xl;
+    @apply relative overflow-hidden rounded-2xl;
     @apply aspect-[4/5] cursor-pointer;
   }
 

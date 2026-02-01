@@ -1,6 +1,5 @@
-import type { Config } from 'tailwindcss'
-
-const config: Config = {
+/** @type {import('tailwindcss').Config} */
+const config = {
   darkMode: ['class'],
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -12,7 +11,7 @@ const config: Config = {
       colors: {
         // Brand colors för skickablomma.se
         primary: {
-          DEFAULT: 'hsl(var(--primary))',
+          DEFAULT: '#ec4899',
           50: '#fdf2f8',
           100: '#fce7f3',
           200: '#fbcfe8',
@@ -24,10 +23,10 @@ const config: Config = {
           800: '#9d174d',
           900: '#831843',
           950: '#500724',
-          foreground: 'hsl(var(--primary-foreground))',
+          foreground: '#ffffff',
         },
         secondary: {
-          DEFAULT: 'hsl(var(--secondary))',
+          DEFAULT: '#22c55e',
           50: '#f0fdf4',
           100: '#dcfce7',
           200: '#bbf7d0',
@@ -39,10 +38,10 @@ const config: Config = {
           800: '#166534',
           900: '#14532d',
           950: '#052e16',
-          foreground: 'hsl(var(--secondary-foreground))',
+          foreground: '#ffffff',
         },
         accent: {
-          DEFAULT: 'hsl(var(--accent))',
+          DEFAULT: '#f59e0b',
           50: '#fffbeb',
           100: '#fef3c7',
           200: '#fde68a',
@@ -54,7 +53,7 @@ const config: Config = {
           800: '#92400e',
           900: '#78350f',
           950: '#451a03',
-          foreground: 'hsl(var(--accent-foreground))',
+          foreground: '#ffffff',
         },
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
@@ -113,7 +112,9 @@ const config: Config = {
       },
     },
   },
-  plugins: [require('tailwindcss-animate')],
+  plugins: [
+    require('tailwindcss-animate')
+  ],
 }
 
 export default config
