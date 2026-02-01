@@ -9,6 +9,7 @@ import { TrustBadges } from '@/components/ui/TrustBadges'
 import { FAQSection } from '@/components/content/FAQSection'
 import { MAIN_CATEGORIES } from '@/data/categories'
 import { getPopularProducts, getSameDayProducts } from '@/lib/products'
+import { getAllGuides } from '@/lib/guides'
 
 export const metadata: Metadata = {
   title: 'Skicka Blomma - Jämför priser på blommor och buketter i Sverige',
@@ -55,6 +56,7 @@ export default async function HomePage() {
   const popularProducts = await getPopularProducts(8)
   const sameDayProducts = await getSameDayProducts(4)
   const mainCategories = Object.values(MAIN_CATEGORIES).slice(0, 6)
+  const guides = getAllGuides()
 
   return (
     <>
@@ -262,6 +264,69 @@ export default async function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Guider Section */}
+      {guides.length > 0 && (
+        <section className="border-t bg-white py-16">
+          <div className="container mx-auto px-4">
+            <div className="mb-8 flex items-end justify-between">
+              <div>
+                <div className="mb-2 inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary">
+                  <span>📚</span>
+                  Guider
+                </div>
+                <h2 className="font-display text-3xl font-bold text-gray-900">
+                  Lär dig mer om blommor
+                </h2>
+                <p className="mt-2 text-gray-600">
+                  Få hjälp att välja rätt blommor och förstå deras betydelse
+                </p>
+              </div>
+              <Link
+                href="/guider"
+                className="hidden items-center gap-1 text-sm font-medium text-primary hover:underline md:flex"
+              >
+                Alla guider
+                <ChevronRight className="h-4 w-4" />
+              </Link>
+            </div>
+
+            <div className="grid gap-6 md:grid-cols-3">
+              {guides.slice(0, 3).map((guide) => (
+                <Link
+                  key={guide.slug}
+                  href={`/guide/${guide.slug}`}
+                  className="group rounded-xl border border-gray-200 bg-gray-50 p-6 transition-all duration-200 hover:border-primary hover:bg-white hover:shadow-md"
+                >
+                  <div className="mb-3 text-4xl">📖</div>
+                  <h3 className="mb-2 font-display text-lg font-semibold text-gray-900 group-hover:text-primary">
+                    {guide.title}
+                  </h3>
+                  {guide.excerpt && (
+                    <p className="mb-4 text-sm text-gray-600 line-clamp-2">
+                      {guide.excerpt}
+                    </p>
+                  )}
+                  <div className="flex items-center text-sm font-medium text-primary">
+                    Läs mer
+                    <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </div>
+                </Link>
+              ))}
+            </div>
+
+            <div className="mt-6 text-center md:hidden">
+              <Link
+                href="/guider"
+                className="inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline"
+              >
+                Alla guider
+                <ChevronRight className="h-4 w-4" />
+              </Link>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* FAQ */}
       <FAQSection
