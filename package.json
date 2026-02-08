@@ -6,9 +6,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:static": "cp next.config.static.ts next.config.ts && next build",
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
+    "deploy:ftp": "npm run build:static && node scripts/deploy-ftp.js",
     "feed:fetch": "tsx scripts/fetch-feeds.ts",
     "feed:process": "tsx scripts/process-feeds.ts",
     "images:resolve": "tsx scripts/resolve-images.ts",
