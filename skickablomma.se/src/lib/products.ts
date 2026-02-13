@@ -706,3 +706,165 @@ export async function getRelatedProducts(
     .sort((a, b) => b.popularityScore - a.popularityScore)
     .slice(0, limit)
 }
+
+/**
+ * Hämtar tillgängliga färger för en kategori
+ */
+export async function getAvailableColors(category?: MainCategory): Promise<string[]> {
+  const products = category
+    ? PRODUCTS.filter((p) => p.isActive && p.mainCategory === category)
+    : PRODUCTS.filter((p) => p.isActive)
+
+  const colorSet = new Set<string>()
+  products.forEach((p) => {
+    p.attributes.colors?.forEach((color) => colorSet.add(color))
+  })
+
+  return Array.from(colorSet).sort()
+}
+
+/**
+ * Hämtar produkter per underkategori
+ */
+export async function getProductsBySubCategory(
+  subCategory: string,
+  limit: number = 24
+): Promise<Product[]> {
+  return PRODUCTS
+    .filter((p) => p.isActive && (
+      p.subCategories.includes(subCategory as any) ||
+      matchesSubCategoryByAttributes(p, subCategory)
+    ))
+    .sort((a, b) => b.popularityScore - a.popularityScore)
+    .slice(0, limit)
+}
+
+/**
+ * Matchar produkt mot underkategori baserat på attribut
+ * Används som fallback när subCategories-fältet är tomt
+ */
+function matchesSubCategoryByAttributes(product: Product, subCategory: string): boolean {
+  const name = product.name.toLowerCase()
+  const desc = product.description?.toLowerCase() || ''
+  const colors = product.attributes.colors || []
+  const flowerTypes = product.attributes.flowerTypes || []
+
+  // Färgmatchning
+  const colorMappings: Record<string, string[]> = {
+    'roda-blommor': ['röd', 'red'],
+    'rosa-blommor': ['rosa', 'pink'],
+    'vita-blommor': ['vit', 'white', 'vitt'],
+    'gula-blommor': ['gul', 'yellow'],
+    'lila-blommor': ['lila', 'purple', 'violett'],
+    'orange-blommor': ['orange'],
+  }
+
+  if (colorMappings[subCategory]) {
+    const matchColors = colorMappings[subCategory]
+    if (colors.some((c) => matchColors.includes(c.toLowerCase()))) {
+      return true
+    }
+  }
+
+  // Blomtyp-matchning
+  const flowerMappings: Record<string, string[]> = {
+    'rosor': ['ros', 'rose', 'rosor'],
+    'tulpaner': ['tulpan', 'tulip'],
+    'liljor': ['lilja', 'lily', 'liljor'],
+    'solrosor': ['solros', 'sunflower'],
+    'orkideer': ['orkidé', 'orchid'],
+    'pioner': ['pion', 'peony'],
+    'hortensia': ['hortensia', 'hydrangea'],
+  }
+
+  if (flowerMappings[subCategory]) {
+    const matchFlowers = flowerMappings[subCategory]
+    if (flowerTypes.some((f) => matchFlowers.some((m) => f.toLowerCase().includes(m)))) {
+      return true
+    }
+    // Kolla också i namn och beskrivning
+    if (matchFlowers.some((m) => name.includes(m) || desc.includes(m))) {
+      return true
+    }
+  }
+
+  // Tillfälle-matchning
+  const occasionMappings: Record<string, string[]> = {
+    'fodelsedags-blommor': ['födelsedag', 'birthday'],
+    'tackblommor': ['tack', 'thank'],
+    'karlek-romantik': ['kärlek', 'romantik', 'romantic', 'love'],
+    'mors-dag': ['mors dag', "mother's day", 'mamma'],
+  }
+
+  if (occasionMappings[subCategory]) {
+    const matchOccasions = occasionMappings[subCategory]
+    if (matchOccasions.some((m) => name.includes(m) || desc.includes(m))) {
+      return true
+    }
+    if (product.attributes.occasions?.some((o) =>
+      matchOccasions.some((m) => o.toLowerCase().includes(m))
+    )) {
+      return true
+    }
+  }
+
+  // Begravning-matchning
+  const funeralMappings: Record<string, string[]> = {
+    'begravningskransar': ['krans', 'wreath'],
+    'begravningsbuketter': ['begravning', 'funeral'],
+    'kondoleanser': ['kondoleans', 'sympati', 'sympathy'],
+  }
+
+  if (funeralMappings[subCategory]) {
+    const matchFuneral = funeralMappings[subCategory]
+    if (matchFuneral.some((m) => name.includes(m) || desc.includes(m))) {
+      return true
+    }
+  }
+
+  // Bröllop-matchning
+  const weddingMappings: Record<string, string[]> = {
+    'brudbuketter': ['brud', 'bridal'],
+    'brollopsbuketter': ['bröllop', 'wedding'],
+  }
+
+  if (weddingMappings[subCategory]) {
+    const matchWedding = weddingMappings[subCategory]
+    if (matchWedding.some((m) => name.includes(m) || desc.includes(m))) {
+      return true
+    }
+  }
+
+  return false
+}
+
+/**
+ * Räknar produkter per underkategori
+ */
+export async function getSubCategoryCounts(
+  mainCategory: MainCategory
+): Promise<Record<string, number>> {
+  const products = PRODUCTS.filter((p) => p.isActive && p.mainCategory === mainCategory)
+  const counts: Record<string, number> = {}
+
+  // Lista alla underkategorier för denna huvudkategori
+  const subCategories = [
+    'rosor', 'tulpaner', 'liljor', 'solrosor', 'orkideer', 'pioner', 'hortensia',
+    'roda-blommor', 'rosa-blommor', 'vita-blommor', 'gula-blommor', 'lila-blommor', 'orange-blommor',
+    'fodelsedags-blommor', 'tackblommor', 'karlek-romantik',
+    'begravningskransar', 'begravningsbuketter', 'kondoleanser',
+    'brudbuketter', 'brollopsbuketter',
+  ]
+
+  for (const subCat of subCategories) {
+    const count = products.filter((p) =>
+      p.subCategories.includes(subCat as any) ||
+      matchesSubCategoryByAttributes(p, subCat)
+    ).length
+    if (count > 0) {
+      counts[subCat] = count
+    }
+  }
+
+  return counts
+}

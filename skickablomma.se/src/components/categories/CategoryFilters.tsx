@@ -8,6 +8,7 @@ import { Category } from '@/types'
 
 interface CategoryFiltersProps {
   category: Category
+  availableColors?: string[]
 }
 
 const PRICE_RANGES = [
@@ -18,16 +19,29 @@ const PRICE_RANGES = [
   { id: 'over-700', label: 'Över 700 kr', min: 700, max: undefined },
 ]
 
-const COLORS = [
-  { id: 'röd', label: 'Röd', color: '#dc2626' },
-  { id: 'rosa', label: 'Rosa', color: '#ec4899' },
-  { id: 'vit', label: 'Vit', color: '#ffffff', border: true },
-  { id: 'gul', label: 'Gul', color: '#eab308' },
-  { id: 'lila', label: 'Lila', color: '#9333ea' },
-  { id: 'orange', label: 'Orange', color: '#f97316' },
-]
+// Färgkonfiguration med hex-värden
+const COLOR_CONFIG: Record<string, { label: string; color: string; border?: boolean }> = {
+  'röd': { label: 'Röd', color: '#dc2626' },
+  'rosa': { label: 'Rosa', color: '#ec4899' },
+  'vit': { label: 'Vit', color: '#ffffff', border: true },
+  'gul': { label: 'Gul', color: '#eab308' },
+  'lila': { label: 'Lila', color: '#9333ea' },
+  'orange': { label: 'Orange', color: '#f97316' },
+  'blå': { label: 'Blå', color: '#2563eb' },
+  'grön': { label: 'Grön', color: '#16a34a' },
+  'brun': { label: 'Brun', color: '#92400e' },
+  'svart': { label: 'Svart', color: '#1f2937' },
+  'flerfärgad': { label: 'Flerfärgad', color: 'linear-gradient(135deg, #dc2626, #eab308, #16a34a, #2563eb)' },
+}
 
-export function CategoryFilters({ category }: CategoryFiltersProps) {
+// Fallback om availableColors inte skickas
+const DEFAULT_COLORS = ['röd', 'rosa', 'vit', 'gul', 'lila', 'orange']
+
+export function CategoryFilters({ category, availableColors }: CategoryFiltersProps) {
+  // Använd tillgängliga färger eller fallback till default
+  const colorsToShow = availableColors && availableColors.length > 0
+    ? availableColors.filter((c) => COLOR_CONFIG[c])
+    : DEFAULT_COLORS
   const router = useRouter()
   const searchParams = useSearchParams()
 
@@ -136,25 +150,31 @@ export function CategoryFilters({ category }: CategoryFiltersProps) {
         </button>
         {colorExpanded && (
           <div className="mt-3 flex flex-wrap gap-2">
-            {COLORS.map((color) => {
-              const isSelected = currentColors.includes(color.id)
+            {colorsToShow.map((colorId) => {
+              const colorConfig = COLOR_CONFIG[colorId]
+              if (!colorConfig) return null
+              const isSelected = currentColors.includes(colorId)
               return (
                 <button
-                  key={color.id}
-                  onClick={() => handleColorToggle(color.id)}
+                  key={colorId}
+                  onClick={() => handleColorToggle(colorId)}
                   className={cn(
                     'flex h-8 w-8 items-center justify-center rounded-full transition-transform hover:scale-110',
                     isSelected && 'ring-2 ring-primary ring-offset-2',
-                    color.border && 'border border-gray-300'
+                    colorConfig.border && 'border border-gray-300'
                   )}
-                  style={{ backgroundColor: color.color }}
-                  title={color.label}
+                  style={{
+                    background: colorConfig.color.includes('gradient')
+                      ? colorConfig.color
+                      : colorConfig.color
+                  }}
+                  title={colorConfig.label}
                 >
                   {isSelected && (
                     <svg
                       className={cn(
                         'h-4 w-4',
-                        color.id === 'vit' ? 'text-gray-800' : 'text-white'
+                        colorId === 'vit' ? 'text-gray-800' : 'text-white'
                       )}
                       fill="currentColor"
                       viewBox="0 0 20 20"

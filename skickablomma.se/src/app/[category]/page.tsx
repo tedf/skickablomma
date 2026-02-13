@@ -1,13 +1,15 @@
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import { getCategoryBySlug, MAIN_CATEGORIES, getSubCategoriesByParent } from '@/data/categories'
-import { getProductsByCategory } from '@/lib/products'
+import Link from 'next/link'
+import { getCategoryBySlug, MAIN_CATEGORIES, getSubCategoriesByParent, SUB_CATEGORIES } from '@/data/categories'
+import { searchProducts, getAvailableColors } from '@/lib/products'
 import { ProductCard } from '@/components/products/ProductCard'
 import { CategoryFilters } from '@/components/categories/CategoryFilters'
 import { FAQSection } from '@/components/content/FAQSection'
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs'
 import { CategorySchema } from '@/components/seo/CategorySchema'
 import { SortSelect } from '@/components/categories/SortSelect'
+import { MainCategory } from '@/types'
 
 interface CategoryPageProps {
   params: {
@@ -17,6 +19,8 @@ interface CategoryPageProps {
     farg?: string
     pris_min?: string
     pris_max?: string
+    partner?: string
+    samma_dag?: string
     sortera?: string
     sida?: string
   }
@@ -59,43 +63,30 @@ export default async function CategoryPage({ params, searchParams }: CategoryPag
     notFound()
   }
 
-  const products = await getProductsByCategory(category.id as any, 24)
-  const subCategories = getSubCategoriesByParent(category.id as any)
+  const subCategoryIds = getSubCategoriesByParent(category.id as MainCategory)
 
-  // Filtrera produkter baserat på searchParams
-  let filteredProducts = [...products]
-
-  if (searchParams.pris_min) {
-    filteredProducts = filteredProducts.filter(
-      (p) => p.price >= parseInt(searchParams.pris_min!)
-    )
-  }
-  if (searchParams.pris_max) {
-    filteredProducts = filteredProducts.filter(
-      (p) => p.price <= parseInt(searchParams.pris_max!)
-    )
-  }
-  if (searchParams.farg) {
-    const colors = searchParams.farg.split(',')
-    filteredProducts = filteredProducts.filter((p) =>
-      p.attributes.colors?.some((c) => colors.includes(c))
-    )
+  // Bygg filter från searchParams
+  const filters = {
+    mainCategory: category.id as MainCategory,
+    priceMin: searchParams.pris_min ? parseInt(searchParams.pris_min) : undefined,
+    priceMax: searchParams.pris_max ? parseInt(searchParams.pris_max) : undefined,
+    colors: searchParams.farg ? searchParams.farg.split(',') : undefined,
+    partners: searchParams.partner ? searchParams.partner.split(',') as any : undefined,
+    sameDayOnly: searchParams.samma_dag === 'true',
   }
 
-  // Sortering
-  if (searchParams.sortera === 'price_asc') {
-    filteredProducts.sort((a, b) => a.price - b.price)
-  } else if (searchParams.sortera === 'price_desc') {
-    filteredProducts.sort((a, b) => b.price - a.price)
-  } else if (searchParams.sortera === 'newest') {
-    filteredProducts.sort(
-      (a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
-    )
-  }
+  const page = searchParams.sida ? parseInt(searchParams.sida) : 1
+  const sortBy = searchParams.sortera || 'popularity'
+
+  // Använd searchProducts för fullständig filtrering
+  const searchResult = await searchProducts(filters, page, 24)
+
+  // Hämta tillgängliga färger för filter
+  const availableColors = await getAvailableColors(category.id as MainCategory)
 
   return (
     <>
-      <CategorySchema category={category} products={filteredProducts} />
+      <CategorySchema category={category} products={searchResult.products} />
 
       <div className="min-h-screen bg-gray-50">
         {/* Header */}
@@ -118,18 +109,22 @@ export default async function CategoryPage({ params, searchParams }: CategoryPag
               </p>
             )}
 
-            {/* Underkategorier */}
-            {subCategories.length > 0 && (
+            {/* Underkategorier - med korrekta länkar */}
+            {subCategoryIds.length > 0 && (
               <div className="mt-6 flex flex-wrap gap-2">
-                {subCategories.slice(0, 8).map((subCat) => (
-                  <a
-                    key={subCat}
-                    href={`/${subCat}`}
-                    className="filter-chip"
-                  >
-                    {subCat.replace(/-/g, ' ')}
-                  </a>
-                ))}
+                {subCategoryIds.slice(0, 8).map((subCatId) => {
+                  const subCat = SUB_CATEGORIES[subCatId]
+                  if (!subCat) return null
+                  return (
+                    <Link
+                      key={subCatId}
+                      href={`/${category.slug}/${subCat.slug}`}
+                      className="filter-chip"
+                    >
+                      {subCat.namePlural}
+                    </Link>
+                  )
+                })}
               </div>
             )}
           </div>
@@ -139,21 +134,24 @@ export default async function CategoryPage({ params, searchParams }: CategoryPag
           <div className="flex flex-col gap-8 lg:flex-row">
             {/* Sidebar */}
             <aside className="w-full lg:w-64 lg:flex-shrink-0">
-              <CategoryFilters category={category} />
+              <CategoryFilters
+                category={category}
+                availableColors={availableColors}
+              />
             </aside>
 
             {/* Produkter */}
             <main className="flex-1">
               <div className="mb-6 flex items-center justify-between">
                 <p className="text-sm text-gray-500">
-                  {filteredProducts.length} produkter
+                  {searchResult.totalCount} produkter
                 </p>
-                <SortSelect defaultValue={searchParams.sortera || 'popularity'} />
+                <SortSelect defaultValue={sortBy} />
               </div>
 
-              {filteredProducts.length > 0 ? (
+              {searchResult.products.length > 0 ? (
                 <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
-                  {filteredProducts.map((product, index) => (
+                  {searchResult.products.map((product, index) => (
                     <ProductCard
                       key={product.id}
                       product={product}
@@ -167,12 +165,31 @@ export default async function CategoryPage({ params, searchParams }: CategoryPag
                   <p className="text-gray-600">
                     Inga produkter hittades med dina filter.
                   </p>
-                  <a
+                  <Link
                     href={`/${category.slug}`}
                     className="mt-4 inline-block text-primary hover:underline"
                   >
                     Visa alla {category.namePlural.toLowerCase()}
-                  </a>
+                  </Link>
+                </div>
+              )}
+
+              {/* Paginering */}
+              {searchResult.pagination.totalPages > 1 && (
+                <div className="mt-8 flex justify-center gap-2">
+                  {Array.from({ length: Math.min(searchResult.pagination.totalPages, 10) }, (_, i) => i + 1).map((p) => (
+                    <Link
+                      key={p}
+                      href={`/${category.slug}?sida=${p}`}
+                      className={`px-4 py-2 rounded ${
+                        p === page
+                          ? 'bg-primary text-white'
+                          : 'bg-white text-gray-700 hover:bg-gray-100'
+                      }`}
+                    >
+                      {p}
+                    </Link>
+                  ))}
                 </div>
               )}
             </main>
