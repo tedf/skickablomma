@@ -39,6 +39,18 @@ const nextConfig: NextConfig = {
     optimizePackageImports: ['lucide-react', '@radix-ui/react-icons'],
   },
 
+  // Prevent Node.js built-ins from being bundled into the client
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        fs: false,
+        path: false,
+      }
+    }
+    return config
+  },
+
   // Headers för SEO och säkerhet
   async headers() {
     return [
