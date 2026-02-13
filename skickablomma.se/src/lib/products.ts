@@ -538,7 +538,10 @@ export async function searchProducts(
   // Filtrera på underkategorier
   if (filters.subCategories && filters.subCategories.length > 0) {
     results = results.filter((p) =>
-      filters.subCategories!.some((sub) => p.subCategories.includes(sub as any))
+      filters.subCategories!.some((sub) =>
+        p.subCategories.includes(sub as any) ||
+        matchesSubCategoryByAttributes(p, sub)
+      )
     )
   }
 
