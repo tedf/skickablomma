@@ -154,41 +154,88 @@ const PARTNERS: PartnerConfig[] = [
 // =============================================================================
 
 /**
- * Categorize product based on category and name
+ * Categorize product based on category, name, and description
  */
-function categorizeProduct(category?: string, name?: string): { mainCategory: string; subCategories: string[] } {
+function categorizeProduct(category?: string, name?: string, description?: string, price?: number): { mainCategory: string; subCategories: string[] } {
   const lowerCategory = (category || '').toLowerCase()
   const lowerName = (name || '').toLowerCase()
-  const combined = `${lowerCategory} ${lowerName}`
+  const lowerDesc = (description || '').toLowerCase()
+  const combined = `${lowerCategory} ${lowerName} ${lowerDesc}`
 
   let mainCategory = 'buketter'
   const subCategories: string[] = []
 
-  // Main category detection
-  if (combined.includes('begravning') || combined.includes('kondoleans') || combined.includes('krans')) {
+  // Main category detection - order matters (more specific first)
+  if (combined.includes('begravning') || combined.includes('kondoleans') ||
+      combined.includes('krans') || combined.includes('sorgbukett') ||
+      combined.includes('funeral') || combined.includes('sympathy') ||
+      combined.includes('minnesgåva') || combined.includes('sorg ')) {
     mainCategory = 'begravning'
-    subCategories.push('begravningsbuketter')
-  } else if (combined.includes('bröllop') || combined.includes('brud')) {
+    // Subcategories for begravning
+    if (combined.includes('krans')) {
+      subCategories.push('begravningskransar')
+    } else if (combined.includes('hjärta') || combined.includes('heart')) {
+      subCategories.push('begravningsbuketter')
+    } else if (combined.includes('kondoleans')) {
+      subCategories.push('kondoleanser')
+    } else {
+      subCategories.push('begravningsbuketter')
+    }
+  } else if (combined.includes('bröllop') || combined.includes('brud') ||
+             combined.includes('wedding') || combined.includes('bridal')) {
     mainCategory = 'brollop'
-    subCategories.push('brudbuketter')
-  } else if (combined.includes('konstgjord') || combined.includes('sidenblomma')) {
+    if (combined.includes('brudbukett') || combined.includes('bridal')) {
+      subCategories.push('brudbuketter')
+    } else if (combined.includes('bord') || combined.includes('table')) {
+      subCategories.push('bordsdekoration')
+    } else {
+      subCategories.push('brollopsbuketter')
+    }
+  } else if (combined.includes('konstgjord') || combined.includes('sidenblomma') ||
+             combined.includes('artificial') || combined.includes('fake')) {
     mainCategory = 'konstgjorda-blommor'
+  } else if (combined.includes('företag') || combined.includes('kontor') ||
+             combined.includes('corporate') || combined.includes('office')) {
+    mainCategory = 'foretag'
+  } else if (combined.includes('presentkort') || combined.includes('gift card')) {
+    mainCategory = 'presenter'
   } else {
     mainCategory = 'buketter'
   }
 
+  // Budget category detection (check price)
+  if (mainCategory === 'buketter' && price && price < 300) {
+    subCategories.push('under-300-kr')
+  }
+  if (mainCategory === 'buketter' && price && price < 500) {
+    subCategories.push('under-500-kr')
+  }
+
   // Flower types
-  if (combined.includes('ros')) subCategories.push('rosor')
-  if (combined.includes('tulpan')) subCategories.push('tulpaner')
-  if (combined.includes('lilja') || combined.includes('lilj')) subCategories.push('liljor')
-  if (combined.includes('solros')) subCategories.push('solrosor')
-  if (combined.includes('orkidé') || combined.includes('orkide')) subCategories.push('orkideer')
+  if (combined.includes('ros') && !combined.includes('frost')) subCategories.push('rosor')
+  if (combined.includes('tulpan') || combined.includes('tulip')) subCategories.push('tulpaner')
+  if (combined.includes('lilja') || combined.includes('lilj') || combined.includes('lily')) subCategories.push('liljor')
+  if (combined.includes('solros') || combined.includes('sunflower')) subCategories.push('solrosor')
+  if (combined.includes('orkidé') || combined.includes('orkide') || combined.includes('orchid')) subCategories.push('orkideer')
+  if (combined.includes('pion') || combined.includes('peony')) subCategories.push('pioner')
+  if (combined.includes('hortensia') || combined.includes('hydrangea')) subCategories.push('hortensia')
 
   // Colors
   if (combined.includes('röd') || combined.includes('red')) subCategories.push('roda-blommor')
   if (combined.includes('rosa') || combined.includes('pink')) subCategories.push('rosa-blommor')
   if (combined.includes('vit') || combined.includes('white')) subCategories.push('vita-blommor')
   if (combined.includes('gul') || combined.includes('yellow')) subCategories.push('gula-blommor')
+  if (combined.includes('lila') || combined.includes('purple') || combined.includes('violett')) subCategories.push('lila-blommor')
+  if (combined.includes('orange')) subCategories.push('orange-blommor')
+
+  // Occasions
+  if (combined.includes('födelsedag') || combined.includes('birthday')) subCategories.push('fodelsedags-blommor')
+  if (combined.includes('tack') || combined.includes('thank')) subCategories.push('tackblommor')
+  if (combined.includes('kärlek') || combined.includes('romantik') || combined.includes('romantic') || combined.includes('love')) subCategories.push('karlek-romantik')
+  if (combined.includes('mors dag') || combined.includes("mother's day")) subCategories.push('mors-dag')
+  if (combined.includes('alla hjärtans') || combined.includes('valentine')) subCategories.push('alla-hjartans-dag')
+  if (combined.includes('student')) subCategories.push('student')
+  if (combined.includes('påsk') || combined.includes('easter')) subCategories.push('pask')
 
   return { mainCategory, subCategories }
 }
@@ -384,14 +431,19 @@ async function processPartner(partner: PartnerConfig): Promise<ProcessedProduct[
     console.log(`\n${progress} Processing: ${feedProduct.Name}`)
     console.log(`   SKU: ${feedProduct.SKU}`)
 
-    // Categorize
-    const { mainCategory, subCategories } = categorizeProduct(feedProduct.Category, feedProduct.Name)
+    // Parse prices first (needed for categorization)
+    const price = parseFloat(feedProduct.Price) || 0
+
+    // Categorize (using category, name, description, and price)
+    const { mainCategory, subCategories } = categorizeProduct(
+      feedProduct.Category,
+      feedProduct.Name,
+      feedProduct.Description,
+      price
+    )
 
     // Extract colors
     const colors = extractColors(feedProduct)
-
-    // Parse prices
-    const price = parseFloat(feedProduct.Price) || 0
     const originalPrice = feedProduct.OriginalPrice ? parseFloat(feedProduct.OriginalPrice) : undefined
     const shipping = feedProduct.Shipping ? parseFloat(feedProduct.Shipping) : 0
     const discountPercent = originalPrice && originalPrice > price
