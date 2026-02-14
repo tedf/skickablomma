@@ -186,12 +186,17 @@ async function main() {
       categoryChanges[key] = (categoryChanges[key] || 0) + 1
     }
 
-    // Update product
+    // Update product - RESET subCategories to only new ones (don't merge with old)
     product.mainCategory = mainCategory
-    product.subCategories = [...new Set([...product.subCategories, ...subCategories])]
+    product.subCategories = subCategories
 
-    // Update tags
-    product.tags = [...new Set([...product.tags, ...subCategories])]
+    // Update tags - keep original feed tags, add new subcategories
+    const originalTags = (product.tags || []).filter((t: string) =>
+      !t.includes('-blommor') && !t.includes('-kr') && !t.includes('rosor') &&
+      !t.includes('tulpaner') && !t.includes('liljor') && !t.includes('begravnings') &&
+      !t.includes('kondoleans') && !t.includes('brollops') && !t.includes('brud')
+    )
+    product.tags = [...new Set([...originalTags, ...subCategories])]
 
     // Count categories
     categoryCounts[mainCategory] = (categoryCounts[mainCategory] || 0) + 1
