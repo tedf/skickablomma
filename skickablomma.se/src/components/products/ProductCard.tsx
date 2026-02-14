@@ -107,7 +107,7 @@ export function ProductCard({
         {/* Produktbild */}
         <div className="relative aspect-square overflow-hidden bg-gray-100">
           <Image
-            src={imageError ? '/images/placeholders/flower-placeholder.svg' : product.primaryImage.url}
+            src={imageError ? '/images/placeholders/flower-placeholder.svg' : (product.primaryImage.localPath || product.primaryImage.url)}
             alt={product.primaryImage.altTextSv}
             fill
             sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"

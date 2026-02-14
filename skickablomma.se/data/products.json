@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-14T21:40:29.404Z",
+  "generatedAt": "2026-02-14T21:51:22.357Z",
   "totalProducts": 400,
   "partners": [
     "cramers",
@@ -13,21 +13,23 @@
       "sku": "8718036503731",
       "partnerId": "cramers",
       "name": "Allium Storblommig Mix 15st - Allium",
-      "description": "Mixen innehåller:\n\nAllium Magic Allium Shing Allium nigrum Allium atropurpureum Allium Purple Sensation Allium Purple Rain\n\nObs att påsen innehåller en mix av dessa sorter & alla påsar innehåller inte alltid alla ovannämnda sorter.Latinskt namn: Allium\\r\\nAntal per påse: 15st\\r\\nBlomfärg: Blandade färger\\r\\nBlomningstid: Maj-Juni\\r\\nBladfärg: Grön\\r\\nLäge: Sol-Halvskugga\\r\\nUndviks av: Rådjur, Hare, Mullvad, Sork\\r\\nHärdighet: C\\r\\nPlanteringstid: Augusti-November\\r\\nLivstid: Flerårig\\r\\nPlanteringsavstånd cm: 35\\r\\nPlanteringsdjup: 2-3 gånger lökens höjd\\r\\nÖvrigt: Fin som snittblomma\\r\\nLökstorlek: 12/14\\r\\n",
+      "description": "Mixen innehåller:\n\nAllium Magic Allium Shing Allium nigrum Allium atropurpureum Allium Purple Sensation Allium Purple Rain\n\nObs att påsen innehåller en mix av dessa sorter & alla påsar innehåller inte alltid alla ovannämnda sorter.Latinskt namn: Allium\nAntal per påse: 15st\nBlomfärg: Blandade färger\nBlomningstid: Maj-Juni\nBladfärg: Grön\nLäge: Sol-Halvskugga\nUndviks av: Rådjur, Hare, Mullvad, Sork\nHärdighet: C\nPlanteringstid: Augusti-November\nLivstid: Flerårig\nPlanteringsavstånd cm: 35\nPlanteringsdjup: 2-3 gånger lökens höjd\nÖvrigt: Fin som snittblomma\nLökstorlek: 12/14",
       "shortDescription": "Mixen innehåller:\n\nAllium Magic Allium Shing Allium nigrum Allium atropurpureum Allium Purple Sensation Allium Purple Rain\n\nObs att påsen innehåller e",
       "mainCategory": "buketter",
       "subCategories": [
         "under-300-kr",
         "under-500-kr",
         "lila-blommor",
-        "blandade-farger"
+        "blandade-farger",
+        "fodelsedags-blommor"
       ],
       "tags": [
         "lökar & knölar - höstplantering - allium",
         "blandade-farger",
         "under-300-kr",
         "under-500-kr",
-        "lila-blommor"
+        "lila-blommor",
+        "fodelsedags-blommor"
       ],
       "price": 159,
       "originalPrice": 159,
@@ -79,7 +81,7 @@
       "sku": "01510",
       "partnerId": "cramers",
       "name": "Ametistlök 1st - Allium amethystinus Forelock",
-      "description": "Den häftiga allium löken Forelock är ett måste för den trädgårdstokige! De dekorativa, bruna blombollarna är täta, runda, 5 cm stora och vajar ståtligt på de höga blomstänglarna. Blommar Maj - Juni. Vacker snittblomma. Anses vara mindre smaklig för rådjur, hare, kanin och sork.Latinskt namn: Allium amethystinus Forelock\\r\\nAntal per påse: 1st\\r\\nBlomfärg: Brunröd\\r\\nBlomningstid: Maj-Juni\\r\\nBladfärg: Grön\\r\\nHöjd: 60-70cm\\r\\nLäge: Sol-Halvskugga\\r\\nUndviks av: Rådjur, Hare, Mullvad, Sork\\r\\nHärdighet: C\\r\\nPlanteringstid: Augusti-November\\r\\nPlanteringsavstånd cm: 25\\r\\nPlanteringsdjup: 2-3 gånger lökens höjd\\r\\nÖvrigt: Fin som snittblomma\\r\\nLökstorlek: 14/16\\r\\n",
+      "description": "Den häftiga allium löken Forelock är ett måste för den trädgårdstokige! De dekorativa, bruna blombollarna är täta, runda, 5 cm stora och vajar ståtligt på de höga blomstänglarna. Blommar Maj - Juni. Vacker snittblomma. Anses vara mindre smaklig för rådjur, hare, kanin och sork.Latinskt namn: Allium amethystinus Forelock\nAntal per påse: 1st\nBlomfärg: Brunröd\nBlomningstid: Maj-Juni\nBladfärg: Grön\nHöjd: 60-70cm\nLäge: Sol-Halvskugga\nUndviks av: Rådjur, Hare, Mullvad, Sork\nHärdighet: C\nPlanteringstid: Augusti-November\nPlanteringsavstånd cm: 25\nPlanteringsdjup: 2-3 gånger lökens höjd\nÖvrigt: Fin som snittblomma\nLökstorlek: 14/16",
       "shortDescription": "Den häftiga allium löken Forelock är ett måste för den trädgårdstokige! De dekorativa, bruna blombollarna är täta, runda, 5 cm stora och vajar ståtlig",
       "mainCategory": "buketter",
       "subCategories": [
@@ -141,8 +143,8 @@
       "sku": "01615",
       "partnerId": "cramers",
       "name": "Balkansippa 10st - Anemone blanda White Splendour",
-      "description": "Balkansippa är en riktig sötnos som påminner i utseende om vår inhemska vitsippa. Sorten &#39;White Splendour&#39; har stora vackert vita blommor med svagt lilarosa utsida. Anses vara mindre smaklig för rådjur, hare, kanin och sork.Latinskt namn: Anemone blanda White Splendour\\r\\nAntal per påse: 10st\\r\\nBlomfärg: Vit\\r\\nBlomningstid: April\\r\\nBladfärg: Grön\\r\\nHöjd: 10cm\\r\\nLäge: Halvskugga\\r\\nUndviks av: Rådjur, Hare, Mullvad, Sork\\r\\nPlanteringstid: Augusti-November\\r\\nPlanteringsavstånd cm: 10cm\\r\\nPlanteringsdjup: 2-3 gånger lökens höjd\\r\\nLökstorlek: 5/6\\r\\n",
-      "shortDescription": "Balkansippa är en riktig sötnos som påminner i utseende om vår inhemska vitsippa. Sorten &#39;White Splendour&#39; har stora vackert vita blommor med ",
+      "description": "Balkansippa är en riktig sötnos som påminner i utseende om vår inhemska vitsippa. Sorten 'White Splendour' har stora vackert vita blommor med svagt lilarosa utsida. Anses vara mindre smaklig för rådjur, hare, kanin och sork.Latinskt namn: Anemone blanda White Splendour\nAntal per påse: 10st\nBlomfärg: Vit\nBlomningstid: April\nBladfärg: Grön\nHöjd: 10cm\nLäge: Halvskugga\nUndviks av: Rådjur, Hare, Mullvad, Sork\nPlanteringstid: Augusti-November\nPlanteringsavstånd cm: 10cm\nPlanteringsdjup: 2-3 gånger lökens höjd\nLökstorlek: 5/6",
+      "shortDescription": "Balkansippa är en riktig sötnos som påminner i utseende om vår inhemska vitsippa. Sorten 'White Splendour' har stora vackert vita blommor med",
       "mainCategory": "buketter",
       "subCategories": [
         "under-300-kr",
@@ -207,8 +209,8 @@
       "sku": "01650",
       "partnerId": "cramers",
       "name": "Bukettanemon 20st - Anemone coronaria Sylphide",
-      "description": "Vacker cerise anemon.Latinskt namn: Anemone coronaria Sylphide\\r\\nAntal per påse: 20st\\r\\nBlomfärg: Cerise\\r\\nBlomningstid: Juni-Juli\\r\\nBladfärg: Grön\\r\\nHöjd: 25cm\\r\\nLäge: Sol\\r\\nUndviks av: Rådjur, Hare, Mullvad, Sork\\r\\nPlanteringstid: Augusti-November\\r\\nPlanteringsavstånd cm: 10cm\\r\\nPlanteringsdjup: 2-3 gånger lökens höjd\\r\\nLökstorlek: 5/6\\r\\n",
-      "shortDescription": "Vacker cerise anemon.Latinskt namn: Anemone coronaria Sylphide\\r\\nAntal per påse: 20st\\r\\nBlomfärg: Cerise\\r\\nBlomningstid: Juni-Juli\\r\\nBladfärg: Grö",
+      "description": "Vacker cerise anemon.Latinskt namn: Anemone coronaria Sylphide\nAntal per påse: 20st\nBlomfärg: Cerise\nBlomningstid: Juni-Juli\nBladfärg: Grön\nHöjd: 25cm\nLäge: Sol\nUndviks av: Rådjur, Hare, Mullvad, Sork\nPlanteringstid: Augusti-November\nPlanteringsavstånd cm: 10cm\nPlanteringsdjup: 2-3 gånger lökens höjd\nLökstorlek: 5/6",
+      "shortDescription": "Vacker cerise anemon.Latinskt namn: Anemone coronaria Sylphide\nAntal per påse: 20st\nBlomfärg: Cerise\nBlomningstid: Juni-Juli\nBladfärg: Grö",
       "mainCategory": "buketter",
       "subCategories": [
         "under-300-kr",
@@ -267,8 +269,8 @@
       "sku": "01055",
       "partnerId": "cramers",
       "name": "Trädgårdshyacint 5st - Hyacinthus orientalis White Pearl",
-      "description": "Hyacinter - dessa ljuvligt doftande lökväxter! &#39;White Pearl&#39; är en sort med vita blommor. Hyacinter passar fint i rabatten eller bland buskar och är trevlig att plantera i krukor där du närmare kan känna doften.\n\nBlomningstiden beror på när plantering sker.Latinskt namn: Hyacinthus orientalis White Pearl\\r\\nAntal per påse: 3st\\r\\nBlomfärg: Vit\\r\\nBlomningstid: Februari-November\\r\\nBladfärg: Grön\\r\\nHöjd: 20-30cm\\r\\nLäge: Sol-Skugga\\r\\nUndviks av: Rådjur, Hare, Mullvad, Sork\\r\\nHärdighet: B\\r\\nPlanteringstid: Augusti-November\\r\\nLivstid: Flerårig\\r\\nPlanteringsavstånd cm: 15\\r\\nPlanteringsdjup: 2-3 gånger lökens höjd\\r\\nLökstorlek: 15/16\\r\\n",
-      "shortDescription": "Hyacinter - dessa ljuvligt doftande lökväxter! &#39;White Pearl&#39; är en sort med vita blommor. Hyacinter passar fint i rabatten eller bland buskar ",
+      "description": "Hyacinter - dessa ljuvligt doftande lökväxter! 'White Pearl' är en sort med vita blommor. Hyacinter passar fint i rabatten eller bland buskar och är trevlig att plantera i krukor där du närmare kan känna doften.\n\nBlomningstiden beror på när plantering sker.Latinskt namn: Hyacinthus orientalis White Pearl\nAntal per påse: 3st\nBlomfärg: Vit\nBlomningstid: Februari-November\nBladfärg: Grön\nHöjd: 20-30cm\nLäge: Sol-Skugga\nUndviks av: Rådjur, Hare, Mullvad, Sork\nHärdighet: B\nPlanteringstid: Augusti-November\nLivstid: Flerårig\nPlanteringsavstånd cm: 15\nPlanteringsdjup: 2-3 gånger lökens höjd\nLökstorlek: 15/16",
+      "shortDescription": "Hyacinter - dessa ljuvligt doftande lökväxter! 'White Pearl' är en sort med vita blommor. Hyacinter passar fint i rabatten eller bland buskar",
       "mainCategory": "buketter",
       "subCategories": [
         "under-300-kr",
@@ -331,8 +333,8 @@
       "sku": "01515",
       "partnerId": "cramers",
       "name": "Jättelök 1st - Allium aflatunense Gladiator",
-      "description": "Prydnadslöken &#39;Gladiator&#39; är mäktig i trädgården! De dekorativa, purpurrosa blombollarna är täta, klotrunda, 10-15 cm stora och vajar ståtligt på de höga blomstänglarna. Vacker snittblomma. Anses vara mindre smaklig för rådjur, hare, kanin och sork.Latinskt namn: Allium aflatunense Gladiator\\r\\nAntal per påse: 1st\\r\\nBlomfärg: Purpurrosa\\r\\nBlomningstid: Maj-Juni\\r\\nBladfärg: Grön\\r\\nHöjd: 125-150cm\\r\\nLäge: Sol-Halvskugga\\r\\nUndviks av: Rådjur, Hare, Mullvad, Sork\\r\\nHärdighet: C\\r\\nPlanteringstid: Augusti-November\\r\\nLivstid: Flerårig\\r\\nPlanteringsavstånd cm: 35\\r\\nPlanteringsdjup: 2-3 gånger lökens höjd\\r\\nÖvrigt: Fin som snittblomma\\r\\nLökstorlek: 20/+\\r\\n",
-      "shortDescription": "Prydnadslöken &#39;Gladiator&#39; är mäktig i trädgården! De dekorativa, purpurrosa blombollarna är täta, klotrunda, 10-15 cm stora och vajar ståtligt",
+      "description": "Prydnadslöken 'Gladiator' är mäktig i trädgården! De dekorativa, purpurrosa blombollarna är täta, klotrunda, 10-15 cm stora och vajar ståtligt på de höga blomstänglarna. Vacker snittblomma. Anses vara mindre smaklig för rådjur, hare, kanin och sork.Latinskt namn: Allium aflatunense Gladiator\nAntal per påse: 1st\nBlomfärg: Purpurrosa\nBlomningstid: Maj-Juni\nBladfärg: Grön\nHöjd: 125-150cm\nLäge: Sol-Halvskugga\nUndviks av: Rådjur, Hare, Mullvad, Sork\nHärdighet: C\nPlanteringstid: Augusti-November\nLivstid: Flerårig\nPlanteringsavstånd cm: 35\nPlanteringsdjup: 2-3 gånger lökens höjd\nÖvrigt: Fin som snittblomma\nLökstorlek: 20/+",
+      "shortDescription": "Prydnadslöken 'Gladiator' är mäktig i trädgården! De dekorativa, purpurrosa blombollarna är täta, klotrunda, 10-15 cm stora och vajar ståtligt",
       "mainCategory": "buketter",
       "subCategories": [
         "under-300-kr",
@@ -393,7 +395,7 @@
       "sku": "01560",
       "partnerId": "cramers",
       "name": "Kirgislök 5st - Allium aflatunense Purple Sensation",
-      "description": "Purpurlök med decimeterstora välfyllda blombollar i härlig lila färg. Värdefull då den har sin skönaste blomsterprakt mellan tulpan och dahlia. Inte alls oäven som snitt. Anses verka avvisande på sork och mindre smaklig för rådjur, hare och kanin.Latinskt namn: Allium aflatunense Purple Sensation\\r\\nAntal per påse: 5st\\r\\nBlomfärg: Lila\\r\\nBlomningstid: Maj-Juni\\r\\nBladfärg: Grön\\r\\nHöjd: 70-100cm\\r\\nLäge: Sol-Halvskugga\\r\\nUndviks av: Rådjur, Hare, Mullvad, Sork\\r\\nHärdighet: C\\r\\nPlanteringstid: Augusti-November\\r\\nLivstid: Flerårig\\r\\nPlanteringsavstånd cm: 20\\r\\nPlanteringsdjup: 2-3 gånger lökens höjd\\r\\nÖvrigt: Fin som snittblomma\\r\\nLökstorlek: 12/14\\r\\n",
+      "description": "Purpurlök med decimeterstora välfyllda blombollar i härlig lila färg. Värdefull då den har sin skönaste blomsterprakt mellan tulpan och dahlia. Inte alls oäven som snitt. Anses verka avvisande på sork och mindre smaklig för rådjur, hare och kanin.Latinskt namn: Allium aflatunense Purple Sensation\nAntal per påse: 5st\nBlomfärg: Lila\nBlomningstid: Maj-Juni\nBladfärg: Grön\nHöjd: 70-100cm\nLäge: Sol-Halvskugga\nUndviks av: Rådjur, Hare, Mullvad, Sork\nHärdighet: C\nPlanteringstid: Augusti-November\nLivstid: Flerårig\nPlanteringsavstånd cm: 20\nPlanteringsdjup: 2-3 gånger lökens höjd\nÖvrigt: Fin som snittblomma\nLökstorlek: 12/14",
       "shortDescription": "Purpurlök med decimeterstora välfyllda blombollar i härlig lila färg. Värdefull då den har sin skönaste blomsterprakt mellan tulpan och dahlia. Inte a",
       "mainCategory": "buketter",
       "subCategories": [
@@ -459,19 +461,21 @@
       "sku": "3033300",
       "partnerId": "cramers",
       "name": "Botanisk Narciss 10st - Narcissus Mix",
-      "description": "En härlig mix av Narciss. Anses vara mindre smaklig för rådjur, hare, kanin och sork.Latinskt namn: Narcissus Mix\\r\\nAntal per påse: 10st\\r\\nBlomfärg: Blandade färger\\r\\nBlomningstid: April-Maj\\r\\nBladfärg: Grön\\r\\nLäge: Sol-Halvskugga\\r\\nUndviks av: Rådjur, Hare, Mullvad, Sork\\r\\nHärdighet: A\\r\\nPlanteringstid: Augusti-November\\r\\nLivstid: Flerårig\\r\\nPlanteringsavstånd cm: 15\\r\\nPlanteringsdjup: 2-3 gånger lökens höjd\\r\\nÖvrigt: Fin som snittblomma\\r\\nLökstorlek: 12/+\\r\\n",
-      "shortDescription": "En härlig mix av Narciss. Anses vara mindre smaklig för rådjur, hare, kanin och sork.Latinskt namn: Narcissus Mix\\r\\nAntal per påse: 10st\\r\\nBlomfärg:",
+      "description": "En härlig mix av Narciss. Anses vara mindre smaklig för rådjur, hare, kanin och sork.Latinskt namn: Narcissus Mix\nAntal per påse: 10st\nBlomfärg: Blandade färger\nBlomningstid: April-Maj\nBladfärg: Grön\nLäge: Sol-Halvskugga\nUndviks av: Rådjur, Hare, Mullvad, Sork\nHärdighet: A\nPlanteringstid: Augusti-November\nLivstid: Flerårig\nPlanteringsavstånd cm: 15\nPlanteringsdjup: 2-3 gånger lökens höjd\nÖvrigt: Fin som snittblomma\nLökstorlek: 12/+",
+      "shortDescription": "En härlig mix av Narciss. Anses vara mindre smaklig för rådjur, hare, kanin och sork.Latinskt namn: Narcissus Mix\nAntal per påse: 10st\nBlomfärg:",
       "mainCategory": "buketter",
       "subCategories": [
         "under-300-kr",
         "under-500-kr",
-        "blandade-farger"
+        "blandade-farger",
+        "fodelsedags-blommor"
       ],
       "tags": [
         "lökar & knölar - höstplantering - narciss",
         "blandade-farger",
         "under-300-kr",
-        "under-500-kr"
+        "under-500-kr",
+        "fodelsedags-blommor"
       ],
       "price": 89,
       "originalPrice": 89,
@@ -519,8 +523,8 @@
       "sku": "01182",
       "partnerId": "cramers",
       "name": "Stjärnnarciss 5st - Narcissus Ice King",
-      "description": "Vita kalkblad och en mycket dubbel krona i gulvitt.Latinskt namn: Narcissus Ice King\\r\\nAntal per påse: 5st\\r\\nBlomfärg: Vit med gul mitt\\r\\nBlomningstid: April-Maj\\r\\nBladfärg: Grön\\r\\nHöjd: 35cm\\r\\nLäge: Sol-Halvskugga\\r\\nUndviks av: Rådjur, Hare, Mullvad, Sork\\r\\nHärdighet: A\\r\\nPlanteringstid: Augusti-November\\r\\nLivstid: Flerårig\\r\\nPlanteringsavstånd cm: 10-15\\r\\nPlanteringsdjup: 2-3 gånger lökens höjd\\r\\nÖvrigt: Fin som snittblomma\\r\\nLökstorlek: 14/16\\r\\n",
-      "shortDescription": "Vita kalkblad och en mycket dubbel krona i gulvitt.Latinskt namn: Narcissus Ice King\\r\\nAntal per påse: 5st\\r\\nBlomfärg: Vit med gul mitt\\r\\nBlomnings",
+      "description": "Vita kalkblad och en mycket dubbel krona i gulvitt.Latinskt namn: Narcissus Ice King\nAntal per påse: 5st\nBlomfärg: Vit med gul mitt\nBlomningstid: April-Maj\nBladfärg: Grön\nHöjd: 35cm\nLäge: Sol-Halvskugga\nUndviks av: Rådjur, Hare, Mullvad, Sork\nHärdighet: A\nPlanteringstid: Augusti-November\nLivstid: Flerårig\nPlanteringsavstånd cm: 10-15\nPlanteringsdjup: 2-3 gånger lökens höjd\nÖvrigt: Fin som snittblomma\nLökstorlek: 14/16",
+      "shortDescription": "Vita kalkblad och en mycket dubbel krona i gulvitt.Latinskt namn: Narcissus Ice King\nAntal per påse: 5st\nBlomfärg: Vit med gul mitt\nBlomnings",
       "mainCategory": "buketter",
       "subCategories": [
         "under-300-kr",
@@ -586,7 +590,7 @@
       "sku": "3034400",
       "partnerId": "cramers",
       "name": "Orkidénarciss 10st - Narcissus triandus Hawera",
-      "description": "Lätt bakåtböjda kalkblad, en milt gul färg och en fin doft. Ibland kan det komma flera stänglar från samma lök och flera blommor på varje stängel.Latinskt namn: Narcissus triandus Hawera\\r\\nAntal per påse: 10st\\r\\nBlomfärg: Gul\\r\\nBlomningstid: April-Maj\\r\\nBladfärg: Grön\\r\\nHöjd: 15cm\\r\\nLäge: Sol-Halvskugga\\r\\nUndviks av: Rådjur, Hare, Mullvad, Sork\\r\\nHärdighet: A\\r\\nPlanteringstid: Augusti-November\\r\\nLivstid: Flerårig\\r\\nPlanteringsavstånd cm: 10-15\\r\\nPlanteringsdjup: 2-3 gånger lökens höjd\\r\\nÖvrigt: Fin som snittblomma\\r\\nLökstorlek: 10/12\\r\\n",
+      "description": "Lätt bakåtböjda kalkblad, en milt gul färg och en fin doft. Ibland kan det komma flera stänglar från samma lök och flera blommor på varje stängel.Latinskt namn: Narcissus triandus Hawera\nAntal per påse: 10st\nBlomfärg: Gul\nBlomningstid: April-Maj\nBladfärg: Grön\nHöjd: 15cm\nLäge: Sol-Halvskugga\nUndviks av: Rådjur, Hare, Mullvad, Sork\nHärdighet: A\nPlanteringstid: Augusti-November\nLivstid: Flerårig\nPlanteringsavstånd cm: 10-15\nPlanteringsdjup: 2-3 gånger lökens höjd\nÖvrigt: Fin som snittblomma\nLökstorlek: 10/12",
       "shortDescription": "Lätt bakåtböjda kalkblad, en milt gul färg och en fin doft. Ibland kan det komma flera stänglar från samma lök och flera blommor på varje stängel.Lati",
       "mainCategory": "buketter",
       "subCategories": [
@@ -652,7 +656,7 @@
       "sku": "01840",
       "partnerId": "cramers",
       "name": "Turkisk Snödroppe 10st - Galanthus elwesii",
-      "description": "Snödroppen - hos oss kanske mest känd som en av vårens allra tidigaste budbärare. Visst är den efterlängtad när den kommer och trotsar både snö och kyla.Latinskt namn: Galanthus elwesii\\r\\nAntal per påse: 10st\\r\\nBlomfärg: Vit\\r\\nBlomningstid: Februari-April\\r\\nDoft: Svag doft\\r\\nBladfärg: Grön\\r\\nHöjd: 15cm\\r\\nLäge: Sol-Halvskugga\\r\\nUndviks av: Rådjur, Hare, Mullvad, Sork\\r\\nPlanteringstid: Augusti-November\\r\\nLivstid: Flerårig\\r\\nPlanteringsavstånd cm: 5\\r\\nPlanteringsdjup: 2-3 gånger lökens höjd\\r\\nLökstorlek: 5/6\\r\\n",
+      "description": "Snödroppen - hos oss kanske mest känd som en av vårens allra tidigaste budbärare. Visst är den efterlängtad när den kommer och trotsar både snö och kyla.Latinskt namn: Galanthus elwesii\nAntal per påse: 10st\nBlomfärg: Vit\nBlomningstid: Februari-April\nDoft: Svag doft\nBladfärg: Grön\nHöjd: 15cm\nLäge: Sol-Halvskugga\nUndviks av: Rådjur, Hare, Mullvad, Sork\nPlanteringstid: Augusti-November\nLivstid: Flerårig\nPlanteringsavstånd cm: 5\nPlanteringsdjup: 2-3 gånger lökens höjd\nLökstorlek: 5/6",
       "shortDescription": "Snödroppen - hos oss kanske mest känd som en av vårens allra tidigaste budbärare. Visst är den efterlängtad när den kommer och trotsar både snö och ky",
       "mainCategory": "buketter",
       "subCategories": [
@@ -716,8 +720,8 @@
       "sku": "01940",
       "partnerId": "cramers",
       "name": "Sommarsnöklocka 10st - Leucojum aestivum",
-      "description": "Fina vita blommor med gröna fläckar i klasar.Latinskt namn: Leucojum aestivum\\r\\nAntal per påse: 10st\\r\\nBlomfärg: Vit med gröna fläckar\\r\\nBlomningstid: Maj\\r\\nBladfärg: Grön\\r\\nHöjd: 30cm\\r\\nLäge: Sol-Halvskugga\\r\\nUndviks av: Rådjur, Hare, Mullvad, Sork\\r\\nHärdighet: C\\r\\nPlanteringstid: Augusti-November\\r\\nLivstid: Flerårig\\r\\nPlanteringsavstånd cm: 10cm\\r\\nPlanteringsdjup: 2-3 gånger lökens höjd\\r\\nLökstorlek: 10/12\\r\\n",
-      "shortDescription": "Fina vita blommor med gröna fläckar i klasar.Latinskt namn: Leucojum aestivum\\r\\nAntal per påse: 10st\\r\\nBlomfärg: Vit med gröna fläckar\\r\\nBlomningst",
+      "description": "Fina vita blommor med gröna fläckar i klasar.Latinskt namn: Leucojum aestivum\nAntal per påse: 10st\nBlomfärg: Vit med gröna fläckar\nBlomningstid: Maj\nBladfärg: Grön\nHöjd: 30cm\nLäge: Sol-Halvskugga\nUndviks av: Rådjur, Hare, Mullvad, Sork\nHärdighet: C\nPlanteringstid: Augusti-November\nLivstid: Flerårig\nPlanteringsavstånd cm: 10cm\nPlanteringsdjup: 2-3 gånger lökens höjd\nLökstorlek: 10/12",
+      "shortDescription": "Fina vita blommor med gröna fläckar i klasar.Latinskt namn: Leucojum aestivum\nAntal per påse: 10st\nBlomfärg: Vit med gröna fläckar\nBlomningst",
       "mainCategory": "buketter",
       "subCategories": [
         "under-300-kr",
@@ -780,8 +784,8 @@
       "sku": "00520",
       "partnerId": "cramers",
       "name": "Franstulpan 10st - Tulipa Crystal Beauty",
-      "description": "Vackra röda fransiga blommor.Latinskt namn: Tulipa Crystal Beauty\\r\\nAntal per påse: 10st\\r\\nBlomfärg: Röd\\r\\nBlomningstid: April-Maj\\r\\nBladfärg: Grön\\r\\nHöjd: 50cm\\r\\nLäge: Sol-Halvskugga\\r\\nPlanteringstid: Augusti-November\\r\\nLivstid: Flerårig\\r\\nPlanteringsavstånd cm: 15\\r\\nPlanteringsdjup: 3-4 gånger lökens höjd\\r\\nÖvrigt: Fin som snittblomma\\r\\nLökstorlek: 12/+\\r\\n",
-      "shortDescription": "Vackra röda fransiga blommor.Latinskt namn: Tulipa Crystal Beauty\\r\\nAntal per påse: 10st\\r\\nBlomfärg: Röd\\r\\nBlomningstid: April-Maj\\r\\nBladfärg: Grö",
+      "description": "Vackra röda fransiga blommor.Latinskt namn: Tulipa Crystal Beauty\nAntal per påse: 10st\nBlomfärg: Röd\nBlomningstid: April-Maj\nBladfärg: Grön\nHöjd: 50cm\nLäge: Sol-Halvskugga\nPlanteringstid: Augusti-November\nLivstid: Flerårig\nPlanteringsavstånd cm: 15\nPlanteringsdjup: 3-4 gånger lökens höjd\nÖvrigt: Fin som snittblomma\nLökstorlek: 12/+",
+      "shortDescription": "Vackra röda fransiga blommor.Latinskt namn: Tulipa Crystal Beauty\nAntal per påse: 10st\nBlomfärg: Röd\nBlomningstid: April-Maj\nBladfärg: Grö",
       "mainCategory": "buketter",
       "subCategories": [
         "under-300-kr",
@@ -846,8 +850,8 @@
       "sku": "00540",
       "partnerId": "cramers",
       "name": "Franstulpan 7st - Tulipa Fancy Frills",
-      "description": "Härligt rosa fransiga blommor.Latinskt namn: Tulipa Fancy Frills\\r\\nAntal per påse: 7st\\r\\nBlomfärg: Rosa\\r\\nBlomningstid: April-Maj\\r\\nBladfärg: Grön\\r\\nHöjd: 45cm\\r\\nLäge: Sol-Halvskugga\\r\\nPlanteringstid: Augusti-November\\r\\nLivstid: Flerårig\\r\\nPlanteringsavstånd cm: 15\\r\\nPlanteringsdjup: 3-4 gånger lökens höjd\\r\\nÖvrigt: Fin som snittblomma\\r\\nLökstorlek: 12/+\\r\\n",
-      "shortDescription": "Härligt rosa fransiga blommor.Latinskt namn: Tulipa Fancy Frills\\r\\nAntal per påse: 7st\\r\\nBlomfärg: Rosa\\r\\nBlomningstid: April-Maj\\r\\nBladfärg: Grön",
+      "description": "Härligt rosa fransiga blommor.Latinskt namn: Tulipa Fancy Frills\nAntal per påse: 7st\nBlomfärg: Rosa\nBlomningstid: April-Maj\nBladfärg: Grön\nHöjd: 45cm\nLäge: Sol-Halvskugga\nPlanteringstid: Augusti-November\nLivstid: Flerårig\nPlanteringsavstånd cm: 15\nPlanteringsdjup: 3-4 gånger lökens höjd\nÖvrigt: Fin som snittblomma\nLökstorlek: 12/+",
+      "shortDescription": "Härligt rosa fransiga blommor.Latinskt namn: Tulipa Fancy Frills\nAntal per påse: 7st\nBlomfärg: Rosa\nBlomningstid: April-Maj\nBladfärg: Grön",
       "mainCategory": "buketter",
       "subCategories": [
         "under-300-kr",
@@ -912,8 +916,8 @@
       "sku": "3030400",
       "partnerId": "cramers",
       "name": "Liljetulpan Tulipa Elegant Lady 7st - Tulipa gesneriana Elegant Lady",
-      "description": "Liljeblommande tulpan Elegant Lady 7-p\n\nCreme/ljsurosa liljeblommande tulpan.Latinskt namn: Tulipa gesneriana Elegant Lady\\r\\nAntal per påse: 7st\\r\\nBlomfärg: Krämvitsrosa\\r\\nBlomningstid: April-Maj\\r\\nBladfärg: Grön\\r\\nHöjd: 60cm\\r\\nLäge: Sol-Halvskugga\\r\\nPlanteringstid: Augusti-November\\r\\nLivstid: Flerårig\\r\\nPlanteringsavstånd cm: 10-15\\r\\nPlanteringsdjup: 3-4 gånger lökens höjd\\r\\nÖvrigt: Fin som snittblomma\\r\\nLökstorlek: 12/+\\r\\n",
-      "shortDescription": "Liljeblommande tulpan Elegant Lady 7-p\n\nCreme/ljsurosa liljeblommande tulpan.Latinskt namn: Tulipa gesneriana Elegant Lady\\r\\nAntal per påse: 7st\\r\\nB",
+      "description": "Liljeblommande tulpan Elegant Lady 7-p\n\nCreme/ljsurosa liljeblommande tulpan.Latinskt namn: Tulipa gesneriana Elegant Lady\nAntal per påse: 7st\nBlomfärg: Krämvitsrosa\nBlomningstid: April-Maj\nBladfärg: Grön\nHöjd: 60cm\nLäge: Sol-Halvskugga\nPlanteringstid: Augusti-November\nLivstid: Flerårig\nPlanteringsavstånd cm: 10-15\nPlanteringsdjup: 3-4 gånger lökens höjd\nÖvrigt: Fin som snittblomma\nLökstorlek: 12/+",
+      "shortDescription": "Liljeblommande tulpan Elegant Lady 7-p\n\nCreme/ljsurosa liljeblommande tulpan.Latinskt namn: Tulipa gesneriana Elegant Lady\nAntal per påse: 7st\nB",
       "mainCategory": "buketter",
       "subCategories": [
         "under-300-kr",
@@ -979,8 +983,8 @@
       "sku": "00355",
       "partnerId": "cramers",
       "name": "Papegojtulpan 7st - Tulipa gesneriana Libretto Parrot",
-      "description": "Libretto parrot är en mycket häftig tulpan med sina fransade kronblad i rosa och gulvita toner.Latinskt namn: Tulipa gesneriana Libretto Parrot\\r\\nAntal per påse: 7st\\r\\nBlomfärg: Rosa med krämvita toner\\r\\nBlomningstid: April-Maj\\r\\nBladfärg: Grön\\r\\nHöjd: 50cm\\r\\nLäge: Sol-Halvskugga\\r\\nPlanteringstid: Augusti-November\\r\\nLivstid: Ettårig\\r\\nPlanteringsavstånd cm: 15\\r\\nPlanteringsdjup: 3-4 gånger lökens höjd\\r\\nÖvrigt: Fin som snittblomma\\r\\nLökstorlek: 12/+\\r\\n",
-      "shortDescription": "Libretto parrot är en mycket häftig tulpan med sina fransade kronblad i rosa och gulvita toner.Latinskt namn: Tulipa gesneriana Libretto Parrot\\r\\nAnt",
+      "description": "Libretto parrot är en mycket häftig tulpan med sina fransade kronblad i rosa och gulvita toner.Latinskt namn: Tulipa gesneriana Libretto Parrot\nAntal per påse: 7st\nBlomfärg: Rosa med krämvita toner\nBlomningstid: April-Maj\nBladfärg: Grön\nHöjd: 50cm\nLäge: Sol-Halvskugga\nPlanteringstid: Augusti-November\nLivstid: Ettårig\nPlanteringsavstånd cm: 15\nPlanteringsdjup: 3-4 gånger lökens höjd\nÖvrigt: Fin som snittblomma\nLökstorlek: 12/+",
+      "shortDescription": "Libretto parrot är en mycket häftig tulpan med sina fransade kronblad i rosa och gulvita toner.Latinskt namn: Tulipa gesneriana Libretto Parrot\nAnt",
       "mainCategory": "buketter",
       "subCategories": [
         "under-300-kr",
@@ -1047,8 +1051,8 @@
       "sku": "00155",
       "partnerId": "cramers",
       "name": "Triumftulpan 10st - Tulipa Flaming Flag",
-      "description": "Tulpan Triumf Tulipa Flaming Flag 10st\n\nJa, nog skulle väl denna ståtliga triumftulpan kunna liknas vid en flammande flagga som vajar i vinden i lila och vitt. Blommar länge och är lika hållbar i rabatten som i den eleganta vårbuketten.Latinskt namn: Tulipa Flaming Flag\\r\\nAntal per påse: 10st\\r\\nBlomfärg: Lila och vit\\r\\nBlomningstid: April-Maj\\r\\nBladfärg: Grön\\r\\nHöjd: 40-50cm\\r\\nLäge: Sol-Halvskugga\\r\\nPlanteringstid: Augusti-November\\r\\nLivstid: Flerårig\\r\\nPlanteringsavstånd cm: 15\\r\\nPlanteringsdjup: 3-4 gånger lökens höjd\\r\\nÖvrigt: Fin som snittblomma\\r\\nLökstorlek: 12/+\\r\\n",
-      "shortDescription": "Tulpan Triumf Tulipa Flaming Flag 10st\n\nJa, nog skulle väl denna ståtliga triumftulpan kunna liknas vid en flammande flagga som vajar i vinden i lila ",
+      "description": "Tulpan Triumf Tulipa Flaming Flag 10st\n\nJa, nog skulle väl denna ståtliga triumftulpan kunna liknas vid en flammande flagga som vajar i vinden i lila och vitt. Blommar länge och är lika hållbar i rabatten som i den eleganta vårbuketten.Latinskt namn: Tulipa Flaming Flag\nAntal per påse: 10st\nBlomfärg: Lila och vit\nBlomningstid: April-Maj\nBladfärg: Grön\nHöjd: 40-50cm\nLäge: Sol-Halvskugga\nPlanteringstid: Augusti-November\nLivstid: Flerårig\nPlanteringsavstånd cm: 15\nPlanteringsdjup: 3-4 gånger lökens höjd\nÖvrigt: Fin som snittblomma\nLökstorlek: 12/+",
+      "shortDescription": "Tulpan Triumf Tulipa Flaming Flag 10st\n\nJa, nog skulle väl denna ståtliga triumftulpan kunna liknas vid en flammande flagga som vajar i vinden i lila",
       "mainCategory": "buketter",
       "subCategories": [
         "under-300-kr",
@@ -1116,21 +1120,23 @@
       "sku": "00845",
       "partnerId": "cramers",
       "name": "Triumftulpan 10st - Tulipa Flower Power",
-      "description": "Tulpan Triumf Tulipa Flower Power Mix 10st\n\n \n\nHärlig mix av triumf tulpaner.\n\nLatinskt namn: Tulipa Flower Power\nAntal lök: 10st\nPlantavstånd: 15cm\nHöjd: 40-50cm\nVäxtläge: Sol till halvskugga\nBlomningstid: April-MajLatinskt namn: Tulipa Flower Power\\r\\nAntal per påse: 10st\\r\\nBlomfärg: Blandade färger\\r\\nBlomningstid: April-Maj\\r\\nBladfärg: Grön\\r\\nHöjd: 40-50cm\\r\\nLäge: Sol-Halvskugga\\r\\nPlanteringstid: Augusti-November\\r\\nLivstid: Flerårig\\r\\nPlanteringsavstånd cm: 15\\r\\nPlanteringsdjup: 3-4 gånger lökens höjd\\r\\nÖvrigt: Fin som snittblomma\\r\\n",
+      "description": "Tulpan Triumf Tulipa Flower Power Mix 10st\n\n \n\nHärlig mix av triumf tulpaner.\n\nLatinskt namn: Tulipa Flower Power\nAntal lök: 10st\nPlantavstånd: 15cm\nHöjd: 40-50cm\nVäxtläge: Sol till halvskugga\nBlomningstid: April-MajLatinskt namn: Tulipa Flower Power\nAntal per påse: 10st\nBlomfärg: Blandade färger\nBlomningstid: April-Maj\nBladfärg: Grön\nHöjd: 40-50cm\nLäge: Sol-Halvskugga\nPlanteringstid: Augusti-November\nLivstid: Flerårig\nPlanteringsavstånd cm: 15\nPlanteringsdjup: 3-4 gånger lökens höjd\nÖvrigt: Fin som snittblomma",
       "shortDescription": "Tulpan Triumf Tulipa Flower Power Mix 10st\n\n \n\nHärlig mix av triumf tulpaner.\n\nLatinskt namn: Tulipa Flower Power\nAntal lök: 10st\nPlantavstånd: 15cm\nH",
       "mainCategory": "buketter",
       "subCategories": [
         "under-300-kr",
         "under-500-kr",
         "tulpaner",
-        "blandade-farger"
+        "blandade-farger",
+        "fodelsedags-blommor"
       ],
       "tags": [
         "lökar & knölar - höstplantering - tulpanlök",
         "blandade-farger",
         "under-300-kr",
         "under-500-kr",
-        "tulpaner"
+        "tulpaner",
+        "fodelsedags-blommor"
       ],
       "price": 119,
       "originalPrice": 119,
@@ -1178,8 +1184,8 @@
       "sku": "00220",
       "partnerId": "cramers",
       "name": "Triumftulpan 7st - Tulipa Princess Irene",
-      "description": "Underbar tulpan i orange med röda skiftningar.Latinskt namn: Tulipa gesneriana Princess Irene\\r\\nAntal per påse: 7st\\r\\nBlomfärg: Orange med skiftningar i röd\\r\\nBlomningstid: April-Maj\\r\\nBladfärg: Grön\\r\\nHöjd: 40cm\\r\\nLäge: Sol-Halvskugga\\r\\nPlanteringstid: Augusti-November\\r\\nLivstid: Flerårig\\r\\nPlanteringsavstånd cm: 15\\r\\nPlanteringsdjup: 3-4 gånger lökens höjd\\r\\nÖvrigt: Fin som snittblomma\\r\\nLökstorlek: 12/+\\r\\n",
-      "shortDescription": "Underbar tulpan i orange med röda skiftningar.Latinskt namn: Tulipa gesneriana Princess Irene\\r\\nAntal per påse: 7st\\r\\nBlomfärg: Orange med skiftning",
+      "description": "Underbar tulpan i orange med röda skiftningar.Latinskt namn: Tulipa gesneriana Princess Irene\nAntal per påse: 7st\nBlomfärg: Orange med skiftningar i röd\nBlomningstid: April-Maj\nBladfärg: Grön\nHöjd: 40cm\nLäge: Sol-Halvskugga\nPlanteringstid: Augusti-November\nLivstid: Flerårig\nPlanteringsavstånd cm: 15\nPlanteringsdjup: 3-4 gånger lökens höjd\nÖvrigt: Fin som snittblomma\nLökstorlek: 12/+",
+      "shortDescription": "Underbar tulpan i orange med röda skiftningar.Latinskt namn: Tulipa gesneriana Princess Irene\nAntal per påse: 7st\nBlomfärg: Orange med skiftning",
       "mainCategory": "buketter",
       "subCategories": [
         "under-300-kr",
@@ -1246,8 +1252,8 @@
       "sku": "00560",
       "partnerId": "cramers",
       "name": "Påfågelstulpan 10st - Tulipa greigii Orange Toronto",
-      "description": "Denna härliga tulpan blir ca 20cm hög och får blommor i orange.Latinskt namn: Tulipa greigii Orange Toronto\\r\\nAntal per påse: 10st\\r\\nBlomfärg: Orange\\r\\nBlomningstid: April-Maj\\r\\nBladfärg: Grön\\r\\nHöjd: 20cm\\r\\nLäge: Sol-Halvskugga\\r\\nPlanteringstid: Augusti-November\\r\\nLivstid: Flerårig\\r\\nPlanteringsavstånd cm: 10-15\\r\\nPlanteringsdjup: 3-4 gånger lökens höjd\\r\\nÖvrigt: Fin som snittblomma\\r\\nLökstorlek: 12/+\\r\\n",
-      "shortDescription": "Denna härliga tulpan blir ca 20cm hög och får blommor i orange.Latinskt namn: Tulipa greigii Orange Toronto\\r\\nAntal per påse: 10st\\r\\nBlomfärg: Orang",
+      "description": "Denna härliga tulpan blir ca 20cm hög och får blommor i orange.Latinskt namn: Tulipa greigii Orange Toronto\nAntal per påse: 10st\nBlomfärg: Orange\nBlomningstid: April-Maj\nBladfärg: Grön\nHöjd: 20cm\nLäge: Sol-Halvskugga\nPlanteringstid: Augusti-November\nLivstid: Flerårig\nPlanteringsavstånd cm: 10-15\nPlanteringsdjup: 3-4 gånger lökens höjd\nÖvrigt: Fin som snittblomma\nLökstorlek: 12/+",
+      "shortDescription": "Denna härliga tulpan blir ca 20cm hög och får blommor i orange.Latinskt namn: Tulipa greigii Orange Toronto\nAntal per påse: 10st\nBlomfärg: Orang",
       "mainCategory": "buketter",
       "subCategories": [
         "under-300-kr",
@@ -1308,8 +1314,8 @@
       "sku": "00055",
       "partnerId": "cramers",
       "name": "Näckrostulpan 7st - Tulipa kaufmania Buttercup",
-      "description": "Gula blommor med en röd anstrykning på utsidan av kalkbladen.Latinskt namn: Tulipa kaufmania Buttercup\\r\\nAntal per påse: 7st\\r\\nBlomfärg: Gul\\r\\nBlomningstid: April-Maj\\r\\nBladfärg: Grön\\r\\nHöjd: 20cm\\r\\nLäge: Sol-Halvskugga\\r\\nPlanteringstid: Augusti-November\\r\\nLivstid: Flerårig\\r\\nPlanteringsavstånd cm: 8-10\\r\\nPlanteringsdjup: 3-4 gånger lökens höjd\\r\\nÖvrigt: Fin som snittblomma\\r\\nLökstorlek: 12/+\\r\\n",
-      "shortDescription": "Gula blommor med en röd anstrykning på utsidan av kalkbladen.Latinskt namn: Tulipa kaufmania Buttercup\\r\\nAntal per påse: 7st\\r\\nBlomfärg: Gul\\r\\nBlom",
+      "description": "Gula blommor med en röd anstrykning på utsidan av kalkbladen.Latinskt namn: Tulipa kaufmania Buttercup\nAntal per påse: 7st\nBlomfärg: Gul\nBlomningstid: April-Maj\nBladfärg: Grön\nHöjd: 20cm\nLäge: Sol-Halvskugga\nPlanteringstid: Augusti-November\nLivstid: Flerårig\nPlanteringsavstånd cm: 8-10\nPlanteringsdjup: 3-4 gånger lökens höjd\nÖvrigt: Fin som snittblomma\nLökstorlek: 12/+",
+      "shortDescription": "Gula blommor med en röd anstrykning på utsidan av kalkbladen.Latinskt namn: Tulipa kaufmania Buttercup\nAntal per påse: 7st\nBlomfärg: Gul\nBlom",
       "mainCategory": "buketter",
       "subCategories": [
         "under-300-kr",
@@ -1317,7 +1323,9 @@
         "rosor",
         "tulpaner",
         "roda-blommor",
-        "gula-blommor"
+        "gula-blommor",
+        "karlek-romantik",
+        "alla-hjartans-dag"
       ],
       "tags": [
         "lökar & knölar - höstplantering - tulpanlök",
@@ -1326,7 +1334,9 @@
         "rosor",
         "tulpaner",
         "roda-blommor",
-        "gula-blommor"
+        "gula-blommor",
+        "karlek-romantik",
+        "alla-hjartans-dag"
       ],
       "price": 89,
       "originalPrice": 89,
@@ -1379,8 +1389,8 @@
       "sku": "00315",
       "partnerId": "cramers",
       "name": "Grönbandad Tulpan 7st - Tulipa viridiflora Esperanto",
-      "description": "En rödrosa skönhet som ljusnar mot basen med en härlig grön strimma på varje kronblad.Latinskt namn: Tulipa viridiflora Esperanto\\r\\nAntal per påse: 7st\\r\\nBlomfärg: Rödrosa med en grön strimma\\r\\nBlomningstid: April-Maj\\r\\nBladfärg: Grön\\r\\nHöjd: 30-35cm\\r\\nLäge: Sol-Halvskugga\\r\\nPlanteringstid: Augusti-November\\r\\nLivstid: Flerårig\\r\\nPlanteringsavstånd cm: 10-15\\r\\nPlanteringsdjup: 3-4 gånger lökens höjd\\r\\nÖvrigt: Fin som snittblomma\\r\\nLökstorlek: 12/+\\r\\n",
-      "shortDescription": "En rödrosa skönhet som ljusnar mot basen med en härlig grön strimma på varje kronblad.Latinskt namn: Tulipa viridiflora Esperanto\\r\\nAntal per påse: 7",
+      "description": "En rödrosa skönhet som ljusnar mot basen med en härlig grön strimma på varje kronblad.Latinskt namn: Tulipa viridiflora Esperanto\nAntal per påse: 7st\nBlomfärg: Rödrosa med en grön strimma\nBlomningstid: April-Maj\nBladfärg: Grön\nHöjd: 30-35cm\nLäge: Sol-Halvskugga\nPlanteringstid: Augusti-November\nLivstid: Flerårig\nPlanteringsavstånd cm: 10-15\nPlanteringsdjup: 3-4 gånger lökens höjd\nÖvrigt: Fin som snittblomma\nLökstorlek: 12/+",
+      "shortDescription": "En rödrosa skönhet som ljusnar mot basen med en härlig grön strimma på varje kronblad.Latinskt namn: Tulipa viridiflora Esperanto\nAntal per påse: 7",
       "mainCategory": "buketter",
       "subCategories": [
         "under-300-kr",
@@ -1444,15 +1454,17 @@
       "sku": "01850",
       "partnerId": "cramers",
       "name": "Vårlilja 15st - Ipheion uniflorum Wisley Blue",
-      "description": "Underbara lila blommor med vita inslag .Latinskt namn: Ipheion uniflorum Wisley Blue\\r\\nAntal per påse: 15st\\r\\nBlomfärg: Lila\\r\\nBlomningstid: Maj\\r\\nBladfärg: Grön\\r\\nHöjd: 10-20cm\\r\\nLäge: Sol-Halvskugga\\r\\nUndviks av: Rådjur, Hare, Mullvad, Sork\\r\\nPlanteringstid: Augusti-November\\r\\nPlanteringsdjup: 2-3 gånger lökens höjd\\r\\nLökstorlek: 4/5\\r\\n",
-      "shortDescription": "Underbara lila blommor med vita inslag .Latinskt namn: Ipheion uniflorum Wisley Blue\\r\\nAntal per påse: 15st\\r\\nBlomfärg: Lila\\r\\nBlomningstid: Maj\\r\\",
+      "description": "Underbara lila blommor med vita inslag .Latinskt namn: Ipheion uniflorum Wisley Blue\nAntal per påse: 15st\nBlomfärg: Lila\nBlomningstid: Maj\nBladfärg: Grön\nHöjd: 10-20cm\nLäge: Sol-Halvskugga\nUndviks av: Rådjur, Hare, Mullvad, Sork\nPlanteringstid: Augusti-November\nPlanteringsdjup: 2-3 gånger lökens höjd\nLökstorlek: 4/5",
+      "shortDescription": "Underbara lila blommor med vita inslag .Latinskt namn: Ipheion uniflorum Wisley Blue\nAntal per påse: 15st\nBlomfärg: Lila\nBlomningstid: Maj\\r\\",
       "mainCategory": "buketter",
       "subCategories": [
         "under-300-kr",
         "under-500-kr",
         "liljor",
         "vita-blommor",
-        "lila-blommor"
+        "lila-blommor",
+        "begravningsbuketter",
+        "tackblommor"
       ],
       "tags": [
         "lökar & knölar - höstplantering - övrigt",
@@ -1460,7 +1472,9 @@
         "under-500-kr",
         "liljor",
         "vita-blommor",
-        "lila-blommor"
+        "lila-blommor",
+        "begravningsbuketter",
+        "tackblommor"
       ],
       "price": 59,
       "originalPrice": 59,
@@ -2527,7 +2541,7 @@
       "partnerId": "cramers",
       "name": "Fiberkruka Rund 8cm 12-pack",
       "description": "Fiberkruka till förodling. Utmärkt i minidrivhus eller odlingstråg. Kan därefter planteras ut direkt i jord eftersom krukan då förmultnar. Tillverkad av pappersmassa från återvunnen emballagekartong.\n\n \n\nAntal i förpackningen: 12 st\n\nMaterial: Pappersmassa\n\nFärg: Natur\n\nStorlek: 8 cm",
-      "shortDescription": "Fiberkruka till förodling. Utmärkt i minidrivhus eller odlingstråg. Kan därefter planteras ut direkt i jord eftersom krukan då förmultnar. Tillverkad ",
+      "shortDescription": "Fiberkruka till förodling. Utmärkt i minidrivhus eller odlingstråg. Kan därefter planteras ut direkt i jord eftersom krukan då förmultnar. Tillverkad",
       "mainCategory": "buketter",
       "subCategories": [
         "under-300-kr",
@@ -2585,7 +2599,7 @@
       "partnerId": "cramers",
       "name": "Fiberkruka Fyrkantig 6cm 20-pack",
       "description": "Fiberkruka till förodling. Utmärkt i minidrivhus eller odlingstråg. Kan därefter planteras ut direkt i jord eftersom krukan då förmultnar. Tillverkad av pappersmassa från återvunnen emballagekartong.\n\n \n\nAntal i förpackningen: 20 st\n\nMaterial: Pappersmassa\n\nFärg: Natur\n\nStorlek: 6 x 6 cm",
-      "shortDescription": "Fiberkruka till förodling. Utmärkt i minidrivhus eller odlingstråg. Kan därefter planteras ut direkt i jord eftersom krukan då förmultnar. Tillverkad ",
+      "shortDescription": "Fiberkruka till förodling. Utmärkt i minidrivhus eller odlingstråg. Kan därefter planteras ut direkt i jord eftersom krukan då förmultnar. Tillverkad",
       "mainCategory": "buketter",
       "subCategories": [
         "under-300-kr",
@@ -2823,7 +2837,7 @@
       "partnerId": "cramers",
       "name": "Gnagskydd, Finmaskigt",
       "description": "Skonsamt plastnät som skyddar yngre trädstammar. Nätet öppnar sig allt eftersom trädet växer.\n\n \n\nAntal: 1 st\n\nMaterial: Plast\n\nFärg: Svart\n\nStorlek: 80 cm",
-      "shortDescription": "Skonsamt plastnät som skyddar yngre trädstammar. Nätet öppnar sig allt eftersom trädet växer.\n\n \n\nAntal: 1 st\n\nMaterial: Plast\n\nFärg: Svart\n\nStorlek: ",
+      "shortDescription": "Skonsamt plastnät som skyddar yngre trädstammar. Nätet öppnar sig allt eftersom trädet växer.\n\n \n\nAntal: 1 st\n\nMaterial: Plast\n\nFärg: Svart\n\nStorlek:",
       "mainCategory": "buketter",
       "subCategories": [
         "under-300-kr",
@@ -3177,7 +3191,7 @@
       "partnerId": "cramers",
       "name": "Hydroponisk odling, Plugg Basilika, 6-pack",
       "description": "6 odlingspluggar, av komposterbar kokosfiber och torv samt lite näring, försådda med basilika. Passar för hydroponisk odling, d.v.s. odling i vatten.\n\n \n\nAntal i förpacknignen: 6 st\n\nMaterial: Kokosfiber & torv\n\nFärg: Natur",
-      "shortDescription": "6 odlingspluggar, av komposterbar kokosfiber och torv samt lite näring, försådda med basilika. Passar för hydroponisk odling, d.v.s. odling i vatten.\n",
+      "shortDescription": "6 odlingspluggar, av komposterbar kokosfiber och torv samt lite näring, försådda med basilika. Passar för hydroponisk odling, d.v.s. odling i vatten.",
       "mainCategory": "buketter",
       "subCategories": [
         "under-300-kr",
@@ -3290,7 +3304,7 @@
       "sku": "N5604",
       "partnerId": "cramers",
       "name": "Hängare, Växtbelysning, Sugpropp",
-      "description": "Smart upphängning för växtbelysning. Fästs med sugproppar på fönsterruta eller blankt kakel. Kedjor medföljer. Av lackerat stål. Max belastning 0,5 kg.\n\n\nMaterial: Metall\n\nStorlek: 40cm",
+      "description": "Smart upphängning för växtbelysning. Fästs med sugproppar på fönsterruta eller blankt kakel. Kedjor medföljer. Av lackerat stål. Max belastning 0,5 kg.\n\nMaterial: Metall\n\nStorlek: 40cm",
       "shortDescription": "Smart upphängning för växtbelysning. Fästs med sugproppar på fönsterruta eller blankt kakel. Kedjor medföljer. Av lackerat stål. Max belastning 0,5 kg",
       "mainCategory": "buketter",
       "subCategories": [
@@ -3587,7 +3601,7 @@
       "partnerId": "cramers",
       "name": "Drivhus, Mini-, Krukinsatser",
       "description": "Krukinsats i svart plast med 6 djupa celler. Sådd i dessa insatser ger möjlighet att så olika sorters fröer och omplantera de olika plantorna utefter behov. På så sätt skapas även utrymme i delar av växthuset till ny sådd. De djupa krukinsatserna ger plantorna de allra bästa förutsättningarna att utveckla djupa och fina rotsystem. Utmärkta till förodling eller drivning av sticklingar. Passar till minidrivhusen Small, Medium, Large och Window.\n\n \n\nAntal i förpackningen: 8 st\n\nMaterial: Plast\n\nFärg: Svart",
-      "shortDescription": "Krukinsats i svart plast med 6 djupa celler. Sådd i dessa insatser ger möjlighet att så olika sorters fröer och omplantera de olika plantorna utefter ",
+      "shortDescription": "Krukinsats i svart plast med 6 djupa celler. Sådd i dessa insatser ger möjlighet att så olika sorters fröer och omplantera de olika plantorna utefter",
       "mainCategory": "buketter",
       "subCategories": [
         "under-300-kr",
@@ -3645,7 +3659,7 @@
       "partnerId": "cramers",
       "name": "Kålnät 2x5m",
       "description": "Lätt och följsamt nät som, utan att värma, skyddar kål och andra grödor mot ovälkomna insekter. Minskar behovet av bekämpningsmedel. Polyeten (PE) 30 g/m².\n\n \n\nMaterial: Polyeten\n\nFärg: Vit\n\nBredd: 2 m\n\nLängd: 5 m",
-      "shortDescription": "Lätt och följsamt nät som, utan att värma, skyddar kål och andra grödor mot ovälkomna insekter. Minskar behovet av bekämpningsmedel. Polyeten (PE) 30 ",
+      "shortDescription": "Lätt och följsamt nät som, utan att värma, skyddar kål och andra grödor mot ovälkomna insekter. Minskar behovet av bekämpningsmedel. Polyeten (PE) 30",
       "mainCategory": "buketter",
       "subCategories": [
         "under-300-kr",
@@ -3710,7 +3724,7 @@
       "partnerId": "cramers",
       "name": "Kryddsax Kökets",
       "description": "Liten och smidig kryddsax. De långa bladen gör det enkelt att skörda kökets kryddor och handtagets ögla för pekfingret ger ett bra grepp.\n\n \n\nAntal i förpackningen: 1 st\n\nMaterial: Metall\n\nFärg: Grön / Grå\n\nStorlek: 15 cm",
-      "shortDescription": "Liten och smidig kryddsax. De långa bladen gör det enkelt att skörda kökets kryddor och handtagets ögla för pekfingret ger ett bra grepp.\n\n \n\nAntal i ",
+      "shortDescription": "Liten och smidig kryddsax. De långa bladen gör det enkelt att skörda kökets kryddor och handtagets ögla för pekfingret ger ett bra grepp.\n\n \n\nAntal i",
       "mainCategory": "buketter",
       "subCategories": [
         "under-300-kr",
@@ -4245,8 +4259,8 @@
       "sku": "N8077",
       "partnerId": "cramers",
       "name": "Hönsnät Galvaniserat 0,9x5m",
-      "description": "Galvaniserat metallnät. Lämpligt för t ex. hönsgården.\n\n\nMaterial: Metall\n\nFärg: Grå\n\nMaskstorlek: 19 x 19 mm\n\nHöjd: 0,9 m\n\nLängd: 5 m",
-      "shortDescription": "Galvaniserat metallnät. Lämpligt för t ex. hönsgården.\n\n\nMaterial: Metall\n\nFärg: Grå\n\nMaskstorlek: 19 x 19 mm\n\nHöjd: 0,9 m\n\nLängd: 5 m",
+      "description": "Galvaniserat metallnät. Lämpligt för t ex. hönsgården.\n\nMaterial: Metall\n\nFärg: Grå\n\nMaskstorlek: 19 x 19 mm\n\nHöjd: 0,9 m\n\nLängd: 5 m",
+      "shortDescription": "Galvaniserat metallnät. Lämpligt för t ex. hönsgården.\n\nMaterial: Metall\n\nFärg: Grå\n\nMaskstorlek: 19 x 19 mm\n\nHöjd: 0,9 m\n\nLängd: 5 m",
       "mainCategory": "buketter",
       "subCategories": [
         "under-300-kr",
@@ -4478,7 +4492,7 @@
       "partnerId": "cramers",
       "name": "Kruka, Plast-, Fyrkantig, 11 cm, 10-pack",
       "description": "Fyrkantig, svart plastkruka till drivning av sticklingar eller plantering av krukväxter och perenner. Av så kraftig plast att den kan användas om och om igen.\n\n \n\nAntal i förpackningen: 10 st\n\nMaterial: Plast\n\nFärg: Svart\n\nStorlek: 11 x 11 cm",
-      "shortDescription": "Fyrkantig, svart plastkruka till drivning av sticklingar eller plantering av krukväxter och perenner. Av så kraftig plast att den kan användas om och ",
+      "shortDescription": "Fyrkantig, svart plastkruka till drivning av sticklingar eller plantering av krukväxter och perenner. Av så kraftig plast att den kan användas om och",
       "mainCategory": "buketter",
       "subCategories": [
         "under-300-kr",
@@ -4536,7 +4550,7 @@
       "partnerId": "cramers",
       "name": "Kruka, Plast-, Fyrkantig, 7 cm, 25-pack",
       "description": "Fyrkantig, svart plastkruka till drivning av sticklingar eller plantering av krukväxter och perenner. Av så kraftig plast att den kan användas om och om igen.\n\n \n\nAntal i förpackningen: 25 st\n\nMaterial: Plast\n\nFärg: Svart\n\nStorlek: 7 x 7 x 8 cm\n\nFoto Miljöbild: Vibeke Svenningsen",
-      "shortDescription": "Fyrkantig, svart plastkruka till drivning av sticklingar eller plantering av krukväxter och perenner. Av så kraftig plast att den kan användas om och ",
+      "shortDescription": "Fyrkantig, svart plastkruka till drivning av sticklingar eller plantering av krukväxter och perenner. Av så kraftig plast att den kan användas om och",
       "mainCategory": "buketter",
       "subCategories": [
         "under-300-kr",
@@ -4594,7 +4608,7 @@
       "partnerId": "cramers",
       "name": "Kruka, Plast-, Fyrkantig, 9 cm, 20-pack",
       "description": "Fyrkantig, svart plastkruka till drivning av sticklingar eller plantering av krukväxter och perenner. Av så kraftig plast att den kan användas om och om igen.\n\n \n\nAntal i förpackningen: 20 st\n\nMaterial: Plast\n\nFärg: Svart\n\nStorlek: 9 x 9 x 10 cm",
-      "shortDescription": "Fyrkantig, svart plastkruka till drivning av sticklingar eller plantering av krukväxter och perenner. Av så kraftig plast att den kan användas om och ",
+      "shortDescription": "Fyrkantig, svart plastkruka till drivning av sticklingar eller plantering av krukväxter och perenner. Av så kraftig plast att den kan användas om och",
       "mainCategory": "buketter",
       "subCategories": [
         "under-300-kr",
@@ -6158,11 +6172,13 @@
       "mainCategory": "konstgjorda-blommor",
       "subCategories": [
         "rosor",
-        "vita-blommor"
+        "vita-blommor",
+        "brudbuketter"
       ],
       "tags": [
         "rosor",
-        "vita-blommor"
+        "vita-blommor",
+        "brudbuketter"
       ],
       "price": 35,
       "originalPrice": 35,
@@ -6398,11 +6414,15 @@
       "mainCategory": "konstgjorda-blommor",
       "subCategories": [
         "rosor",
-        "roda-blommor"
+        "roda-blommor",
+        "karlek-romantik",
+        "alla-hjartans-dag"
       ],
       "tags": [
         "rosor",
-        "roda-blommor"
+        "roda-blommor",
+        "karlek-romantik",
+        "alla-hjartans-dag"
       ],
       "price": 35,
       "originalPrice": 35,
@@ -6759,7 +6779,7 @@
       "partnerId": "fakeflowers",
       "name": "Ros varm beige melerad Vintage",
       "description": "En konstgjord beige ros, 51 cm hög - skapad i en tygdesign som bär på ett charmigt vintage-estetiskt drag. Varje kronblad är fint utformat och passar i alla hem. Bladverket som omger rosen har naturliga nyanser av grönt.  Denna konstgjorda ros fylld med nostalgi och skönhet, redo att förmedla känslor utan att förlora sin elegans.",
-      "shortDescription": "En konstgjord beige ros, 51 cm hög - skapad i en tygdesign som bär på ett charmigt vintage-estetiskt drag. Varje kronblad är fint utformat och passar ",
+      "shortDescription": "En konstgjord beige ros, 51 cm hög - skapad i en tygdesign som bär på ett charmigt vintage-estetiskt drag. Varje kronblad är fint utformat och passar",
       "mainCategory": "konstgjorda-blommor",
       "subCategories": [
         "rosor"
@@ -6818,7 +6838,7 @@
       "partnerId": "fakeflowers",
       "name": "Ros blå Vintage",
       "description": "En konstgjord blå ros, 51 cm hög - skapad i en tygdesign som bär på ett charmigt vintage-estetiskt drag. Varje kronblad är fint utformat och passar i alla hem. Bladverket som omger rosen har naturliga nyanser av grönt.  Denna konstgjorda ros fylld med nostalgi och skönhet, redo att förmedla känslor utan att förlora sin elegans.",
-      "shortDescription": "En konstgjord blå ros, 51 cm hög - skapad i en tygdesign som bär på ett charmigt vintage-estetiskt drag. Varje kronblad är fint utformat och passar i ",
+      "shortDescription": "En konstgjord blå ros, 51 cm hög - skapad i en tygdesign som bär på ett charmigt vintage-estetiskt drag. Varje kronblad är fint utformat och passar i",
       "mainCategory": "konstgjorda-blommor",
       "subCategories": [
         "rosor"
@@ -6884,13 +6904,15 @@
         "rosor",
         "rosa-blommor",
         "vita-blommor",
-        "karlek-romantik"
+        "karlek-romantik",
+        "brudbuketter"
       ],
       "tags": [
         "karlek-romantik",
         "rosor",
         "rosa-blommor",
-        "vita-blommor"
+        "vita-blommor",
+        "brudbuketter"
       ],
       "price": 119,
       "originalPrice": 119,
@@ -6949,12 +6971,14 @@
       "subCategories": [
         "rosor",
         "vita-blommor",
-        "karlek-romantik"
+        "karlek-romantik",
+        "brudbuketter"
       ],
       "tags": [
         "karlek-romantik",
         "rosor",
-        "vita-blommor"
+        "vita-blommor",
+        "brudbuketter"
       ],
       "price": 119,
       "originalPrice": 119,
@@ -7013,13 +7037,15 @@
         "rosor",
         "vita-blommor",
         "lila-blommor",
-        "karlek-romantik"
+        "karlek-romantik",
+        "brudbuketter"
       ],
       "tags": [
         "karlek-romantik",
         "rosor",
         "vita-blommor",
-        "lila-blommor"
+        "lila-blommor",
+        "brudbuketter"
       ],
       "price": 119,
       "originalPrice": 119,
@@ -7078,12 +7104,14 @@
       "subCategories": [
         "rosor",
         "vita-blommor",
-        "karlek-romantik"
+        "karlek-romantik",
+        "brudbuketter"
       ],
       "tags": [
         "karlek-romantik",
         "rosor",
-        "vita-blommor"
+        "vita-blommor",
+        "brudbuketter"
       ],
       "price": 119,
       "originalPrice": 119,
@@ -7141,12 +7169,14 @@
       "subCategories": [
         "rosor",
         "rosa-blommor",
-        "gula-blommor"
+        "gula-blommor",
+        "fodelsedags-blommor"
       ],
       "tags": [
         "rosor",
         "rosa-blommor",
-        "gula-blommor"
+        "gula-blommor",
+        "fodelsedags-blommor"
       ],
       "price": 98,
       "originalPrice": 98,
@@ -7204,11 +7234,13 @@
       "mainCategory": "konstgjorda-blommor",
       "subCategories": [
         "rosor",
-        "vita-blommor"
+        "vita-blommor",
+        "brudbuketter"
       ],
       "tags": [
         "rosor",
-        "vita-blommor"
+        "vita-blommor",
+        "brudbuketter"
       ],
       "price": 98,
       "originalPrice": 98,
@@ -7265,11 +7297,15 @@
       "mainCategory": "konstgjorda-blommor",
       "subCategories": [
         "rosor",
-        "roda-blommor"
+        "roda-blommor",
+        "karlek-romantik",
+        "alla-hjartans-dag"
       ],
       "tags": [
         "rosor",
-        "roda-blommor"
+        "roda-blommor",
+        "karlek-romantik",
+        "alla-hjartans-dag"
       ],
       "price": 98,
       "originalPrice": 98,
@@ -7383,7 +7419,7 @@
       "partnerId": "fakeflowers",
       "name": "Rosknopp rosa Love",
       "description": "Förhöj ditt hem med vår konstgjorda rosa rosknopp, 53 cm hög -en tidlös prydnad som ger en touch av romantik och elegans till varje rum. Denna blomma ingår i vår serie Real Touch Collection då kvalite och naturligt utseende och känsla är mycket hög.  En mjuk stjälk med vackra, gröna blad. Rosknoppen är tillverkad av gummerad satin med vackert utformade foderblad. Den underhållsfria naturen hos denna konstgjorda rosknopp gör den till det idealiska valet för dem som söker varaktig skönhet utan krav på skötsel. Upplev förtrollningen av en rosknopp året runt utan bekymmer om bevattning eller vissnande blad.",
-      "shortDescription": "Förhöj ditt hem med vår konstgjorda rosa rosknopp, 53 cm hög -en tidlös prydnad som ger en touch av romantik och elegans till varje rum. Denna blomma ",
+      "shortDescription": "Förhöj ditt hem med vår konstgjorda rosa rosknopp, 53 cm hög -en tidlös prydnad som ger en touch av romantik och elegans till varje rum. Denna blomma",
       "mainCategory": "konstgjorda-blommor",
       "subCategories": [
         "rosor",
@@ -7446,17 +7482,19 @@
       "partnerId": "fakeflowers",
       "name": "Rosknopp röd Love",
       "description": "Förhöj ditt hem med vår konstgjorda röda rosknopp, 53 cm hög -en tidlös prydnad som ger en touch av romantik och elegans till varje rum. Denna blomma ingår i vår serie Real Touch Collection då kvalite och naturligt utseende och känsla är mycket hög.  En mjuk stjälk med vackra, gröna blad. Rosknoppen är tillverkad av gummerad satin med vackert utformade foderblad. Den underhållsfria naturen hos denna konstgjorda rosknopp gör den till det idealiska valet för dem som söker varaktig skönhet utan krav på skötsel. Upplev förtrollningen av en rosknopp året runt utan bekymmer om bevattning eller vissnande blad.",
-      "shortDescription": "Förhöj ditt hem med vår konstgjorda röda rosknopp, 53 cm hög -en tidlös prydnad som ger en touch av romantik och elegans till varje rum. Denna blomma ",
+      "shortDescription": "Förhöj ditt hem med vår konstgjorda röda rosknopp, 53 cm hög -en tidlös prydnad som ger en touch av romantik och elegans till varje rum. Denna blomma",
       "mainCategory": "konstgjorda-blommor",
       "subCategories": [
         "rosor",
         "roda-blommor",
-        "karlek-romantik"
+        "karlek-romantik",
+        "alla-hjartans-dag"
       ],
       "tags": [
         "karlek-romantik",
         "rosor",
-        "roda-blommor"
+        "roda-blommor",
+        "alla-hjartans-dag"
       ],
       "price": 55,
       "originalPrice": 55,
@@ -7509,17 +7547,19 @@
       "partnerId": "fakeflowers",
       "name": "Rosknopp vit Love",
       "description": "Förhöj ditt hem med vår konstgjorda vita rosknopp, 53 cm hög -en tidlös prydnad som ger en touch av romantik och elegans till varje rum. Denna blomma ingår i vår serie Real Touch Collection då kvalite och naturligt utseende och känsla är mycket hög.  En mjuk stjälk med vackra, gröna blad. Rosknoppen är tillverkad av gummerad satin med vackert utformade foderblad. Den underhållsfria naturen hos denna konstgjorda rosknopp gör den till det idealiska valet för dem som söker varaktig skönhet utan krav på skötsel. Upplev förtrollningen av en rosknopp året runt utan bekymmer om bevattning eller vissnande blad.",
-      "shortDescription": "Förhöj ditt hem med vår konstgjorda vita rosknopp, 53 cm hög -en tidlös prydnad som ger en touch av romantik och elegans till varje rum. Denna blomma ",
+      "shortDescription": "Förhöj ditt hem med vår konstgjorda vita rosknopp, 53 cm hög -en tidlös prydnad som ger en touch av romantik och elegans till varje rum. Denna blomma",
       "mainCategory": "konstgjorda-blommor",
       "subCategories": [
         "rosor",
         "vita-blommor",
-        "karlek-romantik"
+        "karlek-romantik",
+        "brudbuketter"
       ],
       "tags": [
         "karlek-romantik",
         "rosor",
-        "vita-blommor"
+        "vita-blommor",
+        "brudbuketter"
       ],
       "price": 55,
       "originalPrice": 55,
@@ -7572,7 +7612,7 @@
       "partnerId": "fakeflowers",
       "name": "Rosknopp gul Love",
       "description": "Förhöj ditt hem med vår konstgjorda gula rosknopp, 53 cm hög -en tidlös prydnad som ger en touch av romantik och elegans till varje rum. Denna blomma ingår i vår serie Real Touch Collection då kvalite och naturligt utseende och känsla är mycket hög.  En mjuk stjälk med vackra, gröna blad. Rosknoppen är tillverkad av gummerad satin med vackert utformade foderblad. Den underhållsfria naturen hos denna konstgjorda rosknopp gör den till det idealiska valet för dem som söker varaktig skönhet utan krav på skötsel. Upplev förtrollningen av en rosknopp året runt utan bekymmer om bevattning eller vissnande blad.",
-      "shortDescription": "Förhöj ditt hem med vår konstgjorda gula rosknopp, 53 cm hög -en tidlös prydnad som ger en touch av romantik och elegans till varje rum. Denna blomma ",
+      "shortDescription": "Förhöj ditt hem med vår konstgjorda gula rosknopp, 53 cm hög -en tidlös prydnad som ger en touch av romantik och elegans till varje rum. Denna blomma",
       "mainCategory": "konstgjorda-blommor",
       "subCategories": [
         "rosor",
@@ -8003,7 +8043,7 @@
       "partnerId": "fakeflowers",
       "name": "Tulpan orange Lisse",
       "description": "Upplev tulpanens charm året runt, oavsett säsong, med denna naturtrogna och underbara konstgjorda orangea tulpan, 34 cm hög. Denna blomma ingår i vår serie Real Touch Collection då kvalite och naturligt utseende och känsla är mycket hög. Kronbladen är tillverkade i satin och latex för en äkta känsla och stammen i lågdensitetspolyeten för ett naturtroget utseende. Med denna underhållsfria tulpan behöver du inte längre oroa dig för vattning eller blomstervård. Dess skönhet förblir oförändrad år efter år, vilket gör den till det perfekta valet för långvarig dekoration.",
-      "shortDescription": "Upplev tulpanens charm året runt, oavsett säsong, med denna naturtrogna och underbara konstgjorda orangea tulpan, 34 cm hög. Denna blomma ingår i vår ",
+      "shortDescription": "Upplev tulpanens charm året runt, oavsett säsong, med denna naturtrogna och underbara konstgjorda orangea tulpan, 34 cm hög. Denna blomma ingår i vår",
       "mainCategory": "konstgjorda-blommor",
       "subCategories": [
         "tulpaner",
@@ -8302,7 +8342,7 @@
       "partnerId": "fakeflowers",
       "name": "Dahlia orange Cavanilles",
       "description": "Uppgradera ditt hem med vår konstgjorda dahlia, 56 cm hög. Denna blomma ingår i vår serie Real Touch Collection då kvalite och naturligt utseende och känsla är mycket hög.  Blomman är tillverkad i gummerad satin och bladen i viskos satin. Stjälken är framtagen i mjuk latex i luddigt viskosöverdrag. Oavsett om det är som ensamstående prydnad eller en del av en större arrangemang, kommer dessa blommor att förgylla ditt hem med deras otroliga färg och tidlösa skönhet. Naturens prakt utan krångel – välkommen till ett hem fyllt av blommor året runt!",
-      "shortDescription": "Uppgradera ditt hem med vår konstgjorda dahlia, 56 cm hög. Denna blomma ingår i vår serie Real Touch Collection då kvalite och naturligt utseende och ",
+      "shortDescription": "Uppgradera ditt hem med vår konstgjorda dahlia, 56 cm hög. Denna blomma ingår i vår serie Real Touch Collection då kvalite och naturligt utseende och",
       "mainCategory": "konstgjorda-blommor",
       "subCategories": [
         "orange-blommor"
@@ -8358,7 +8398,7 @@
       "partnerId": "fakeflowers",
       "name": "Dahlia vit Cavanilles",
       "description": "Uppgradera ditt hem med vår konstgjorda dahlia, 56 cm hög. Denna blomma ingår i vår serie Real Touch Collection då kvalite och naturligt utseende och känsla är mycket hög.  Blomman är tillverkad i gummerad satin och bladen i viskos satin. Stjälken är framtagen i mjuk latex i luddigt viskosöverdrag. Oavsett om det är som ensamstående prydnad eller en del av en större arrangemang, kommer dessa blommor att förgylla ditt hem med deras otroliga färg och tidlösa skönhet. Naturens prakt utan krångel – välkommen till ett hem fyllt av blommor året runt!",
-      "shortDescription": "Uppgradera ditt hem med vår konstgjorda dahlia, 56 cm hög. Denna blomma ingår i vår serie Real Touch Collection då kvalite och naturligt utseende och ",
+      "shortDescription": "Uppgradera ditt hem med vår konstgjorda dahlia, 56 cm hög. Denna blomma ingår i vår serie Real Touch Collection då kvalite och naturligt utseende och",
       "mainCategory": "konstgjorda-blommor",
       "subCategories": [
         "vita-blommor"
@@ -8418,7 +8458,7 @@
       "partnerId": "fakeflowers",
       "name": "Dahlia rosa Cavanilles",
       "description": "Uppgradera ditt hem med vår konstgjorda dahlia, 56 cm hög. Denna blomma ingår i vår serie Real Touch Collection då kvalite och naturligt utseende och känsla är mycket hög.  Blomman är tillverkad i gummerad satin och bladen i viskos satin. Stjälken är framtagen i mjuk latex i luddigt viskosöverdrag. Oavsett om det är som ensamstående prydnad eller en del av en större arrangemang, kommer dessa blommor att förgylla ditt hem med deras otroliga färg och tidlösa skönhet. Naturens prakt utan krångel – välkommen till ett hem fyllt av blommor året runt!",
-      "shortDescription": "Uppgradera ditt hem med vår konstgjorda dahlia, 56 cm hög. Denna blomma ingår i vår serie Real Touch Collection då kvalite och naturligt utseende och ",
+      "shortDescription": "Uppgradera ditt hem med vår konstgjorda dahlia, 56 cm hög. Denna blomma ingår i vår serie Real Touch Collection då kvalite och naturligt utseende och",
       "mainCategory": "konstgjorda-blommor",
       "subCategories": [
         "rosor",
@@ -8480,7 +8520,7 @@
       "partnerId": "fakeflowers",
       "name": "Dahlia ljusrosa Cavanilles",
       "description": "Uppgradera ditt hem med vår konstgjorda dahlia, 56 cm hög. Denna blomma ingår i vår serie Real Touch Collection då kvalite och naturligt utseende och känsla är mycket hög.  Blomman är tillverkad i gummerad satin och bladen i viskos satin. Stjälken är framtagen i mjuk latex i luddigt viskosöverdrag. Oavsett om det är som ensamstående prydnad eller en del av en större arrangemang, kommer dessa blommor att förgylla ditt hem med deras otroliga färg och tidlösa skönhet. Naturens prakt utan krångel – välkommen till ett hem fyllt av blommor året runt!",
-      "shortDescription": "Uppgradera ditt hem med vår konstgjorda dahlia, 56 cm hög. Denna blomma ingår i vår serie Real Touch Collection då kvalite och naturligt utseende och ",
+      "shortDescription": "Uppgradera ditt hem med vår konstgjorda dahlia, 56 cm hög. Denna blomma ingår i vår serie Real Touch Collection då kvalite och naturligt utseende och",
       "mainCategory": "konstgjorda-blommor",
       "subCategories": [
         "rosor",
@@ -8542,7 +8582,7 @@
       "partnerId": "fakeflowers",
       "name": "Hortensia vit Paniculata",
       "description": "Beställ vår konstgjorda vita hortensia 80 cm hög. Den konstgjorda hortensian har vackra färger och detaljerade blomklot. Placera den i din favoritvas för att direkt förändra rummets atmosfär eller använd den som en central del i en större bukett. Njut av naturens underverk utan krångel – välkommen till en värld av blommor som varar för evigt.",
-      "shortDescription": "Beställ vår konstgjorda vita hortensia 80 cm hög. Den konstgjorda hortensian har vackra färger och detaljerade blomklot. Placera den i din favoritvas ",
+      "shortDescription": "Beställ vår konstgjorda vita hortensia 80 cm hög. Den konstgjorda hortensian har vackra färger och detaljerade blomklot. Placera den i din favoritvas",
       "mainCategory": "konstgjorda-blommor",
       "subCategories": [
         "hortensia",
@@ -9018,12 +9058,16 @@
       "mainCategory": "konstgjorda-blommor",
       "subCategories": [
         "liljor",
-        "vita-blommor"
+        "vita-blommor",
+        "begravningsbuketter",
+        "tackblommor"
       ],
       "tags": [
         "lilja",
         "liljor",
-        "vita-blommor"
+        "vita-blommor",
+        "begravningsbuketter",
+        "tackblommor"
       ],
       "price": 87,
       "originalPrice": 87,
@@ -9882,7 +9926,7 @@
       "partnerId": "fakeflowers",
       "name": "Krysantemum vit Isört",
       "description": "En mycket fin konstgjord detaljerad vit blomma, 61 cm hög. De 6 blommorna är tillverkadade i siden och är mycket detaljerade och det gröna bladverkat är realistiskt färgat för att efterlikna verkligheten. En tidlös skönhet som lyfter atmosfären i ditt hem. Konstväxten efterliknar mesembryanthemum som härstammar från Isörtssläktet.",
-      "shortDescription": "En mycket fin konstgjord detaljerad vit blomma, 61 cm hög. De 6 blommorna är tillverkadade i siden och är mycket detaljerade och det gröna bladverkat ",
+      "shortDescription": "En mycket fin konstgjord detaljerad vit blomma, 61 cm hög. De 6 blommorna är tillverkadade i siden och är mycket detaljerade och det gröna bladverkat",
       "mainCategory": "konstgjorda-blommor",
       "subCategories": [
         "krysantemum",
@@ -9943,7 +9987,7 @@
       "partnerId": "fakeflowers",
       "name": "Krysantemum röd Isört",
       "description": "En mycket fin konstgjord detaljerad röd blomma, 61 cm hög. De 6 blommorna är tillverkadade i siden och är mycket detaljerade och det gröna bladverkat är realistiskt färgat för att efterlikna verkligheten. En tidlös skönhet som lyfter atmosfären i ditt hem. Konstväxten efterliknar mesembryanthemum som härstammar från Isörtssläktet.",
-      "shortDescription": "En mycket fin konstgjord detaljerad röd blomma, 61 cm hög. De 6 blommorna är tillverkadade i siden och är mycket detaljerade och det gröna bladverkat ",
+      "shortDescription": "En mycket fin konstgjord detaljerad röd blomma, 61 cm hög. De 6 blommorna är tillverkadade i siden och är mycket detaljerade och det gröna bladverkat",
       "mainCategory": "konstgjorda-blommor",
       "subCategories": [
         "krysantemum",
@@ -10004,7 +10048,7 @@
       "partnerId": "fakeflowers",
       "name": "Krysantemum gul Isört",
       "description": "En mycket fin konstgjord detaljerad gul blomma, 61 cm hög. De 6 blommorna är tillverkadade i siden och är mycket detaljerade och det gröna bladverkat är realistiskt färgat för att efterlikna verkligheten. En tidlös skönhet som lyfter atmosfären i ditt hem. Konstväxten efterliknar mesembryanthemum som härstammar från Isörtssläktet.",
-      "shortDescription": "En mycket fin konstgjord detaljerad gul blomma, 61 cm hög. De 6 blommorna är tillverkadade i siden och är mycket detaljerade och det gröna bladverkat ",
+      "shortDescription": "En mycket fin konstgjord detaljerad gul blomma, 61 cm hög. De 6 blommorna är tillverkadade i siden och är mycket detaljerade och det gröna bladverkat",
       "mainCategory": "konstgjorda-blommor",
       "subCategories": [
         "krysantemum",
@@ -10191,7 +10235,7 @@
       "partnerId": "fakeflowers",
       "name": "Krysantemum rosa Shungi",
       "description": "Förhöj ditt hem med vår konstgjorda krysantemum, 72 cm hög, med tre rosa blommor. Denna blomma ingår i vår serie Real Touch Collection då kvalite och naturligt utseende och känsla är mycket hög. En mycket dekorativ utformad konstblomma tillverkad av flockerat tyg. Stjälk och bladverk har en luddig yta för naturligt utseende och känsla. Perfekt för att förgylla din omgivning med stil, enkelhet och tidlös charm.",
-      "shortDescription": "Förhöj ditt hem med vår konstgjorda krysantemum, 72 cm hög, med tre rosa blommor. Denna blomma ingår i vår serie Real Touch Collection då kvalite och ",
+      "shortDescription": "Förhöj ditt hem med vår konstgjorda krysantemum, 72 cm hög, med tre rosa blommor. Denna blomma ingår i vår serie Real Touch Collection då kvalite och",
       "mainCategory": "konstgjorda-blommor",
       "subCategories": [
         "rosor",
@@ -10309,7 +10353,7 @@
       "partnerId": "fakeflowers",
       "name": "Krysantemum blå Shungi",
       "description": "Förhöj ditt hem med vår konstgjorda krysantemum, 72 cm hög, med tre blåa blommor. Denna blomma ingår i vår serie Real Touch Collection då kvalite och naturligt utseende och känsla är mycket hög. En mycket dekorativ utformad konstblomma tillverkad av flockerat tyg. Stjälk och bladverk har en luddig yta för naturligt utseende och känsla. Perfekt för att förgylla din omgivning med stil, enkelhet och tidlös charm.",
-      "shortDescription": "Förhöj ditt hem med vår konstgjorda krysantemum, 72 cm hög, med tre blåa blommor. Denna blomma ingår i vår serie Real Touch Collection då kvalite och ",
+      "shortDescription": "Förhöj ditt hem med vår konstgjorda krysantemum, 72 cm hög, med tre blåa blommor. Denna blomma ingår i vår serie Real Touch Collection då kvalite och",
       "mainCategory": "konstgjorda-blommor",
       "subCategories": [
         "krysantemum"
@@ -10736,7 +10780,7 @@
       "partnerId": "fakeflowers",
       "name": "Nejlika champagne Diana",
       "description": "Vår konstgjorda champange nejlika, 50 cm hög, är den perfekta prydnaden för alla rum. Denna blomma ingår i vår serie Real Touch Collection då kvalite och naturligt utseende och känsla är mycket hög.  Stjälken är gjuten med en typ av vitkalkad beläggning. Kronbladenär tillverkade av satin med en lätt gummerad yta för rätt känsla. Sprid glädje med denna underhållsfria blomma. Oavsett var den placeras, ger den en känsla av välbefinnande och lyfter upp stämningen.",
-      "shortDescription": "Vår konstgjorda champange nejlika, 50 cm hög, är den perfekta prydnaden för alla rum. Denna blomma ingår i vår serie Real Touch Collection då kvalite ",
+      "shortDescription": "Vår konstgjorda champange nejlika, 50 cm hög, är den perfekta prydnaden för alla rum. Denna blomma ingår i vår serie Real Touch Collection då kvalite",
       "mainCategory": "konstgjorda-blommor",
       "subCategories": [],
       "tags": [
@@ -11084,7 +11128,7 @@
       "partnerId": "fakeflowers",
       "name": "Gesang vit Lhasa",
       "description": "Gesang härstammar från Tibet och betyder den lyckliga blomman. Den är 46 cm hög, har 4 små vita blommor. Ståndare och frökapslar är fint detaljerade. Tillsammans med det gröna infärgade bladverket och dess detaljer skapar det en naturtrogen blomma.  Vår konstgjorda vita gesang är den perfekta dekorationen för att komplettera dina andra konstgjorda snittblommor. Skapa en imponerande bukett och låt din vas bli ett konstverk av harmonisk charm!",
-      "shortDescription": "Gesang härstammar från Tibet och betyder den lyckliga blomman. Den är 46 cm hög, har 4 små vita blommor. Ståndare och frökapslar är fint detaljerade. ",
+      "shortDescription": "Gesang härstammar från Tibet och betyder den lyckliga blomman. Den är 46 cm hög, har 4 små vita blommor. Ståndare och frökapslar är fint detaljerade.",
       "mainCategory": "konstgjorda-blommor",
       "subCategories": [
         "vita-blommor"
@@ -11144,7 +11188,7 @@
       "partnerId": "fakeflowers",
       "name": "Gesang rosa Lhasa",
       "description": "Gesang härstammar från Tibet och betyder den lyckliga blomman. Den är 46 cm hög, har 4 små rosa blommor. Ståndare och frökapslar är fint detaljerade. Tillsammans med det gröna infärgade bladverket och dess detaljer skapar det en naturtrogen blomma.  Vår konstgjorda rosa gesang är den perfekta dekorationen för att komplettera dina andra konstgjorda snittblommor. Skapa en imponerande bukett och låt din vas bli ett konstverk av harmonisk charm!",
-      "shortDescription": "Gesang härstammar från Tibet och betyder den lyckliga blomman. Den är 46 cm hög, har 4 små rosa blommor. Ståndare och frökapslar är fint detaljerade. ",
+      "shortDescription": "Gesang härstammar från Tibet och betyder den lyckliga blomman. Den är 46 cm hög, har 4 små rosa blommor. Ståndare och frökapslar är fint detaljerade.",
       "mainCategory": "konstgjorda-blommor",
       "subCategories": [
         "rosor",
@@ -11206,7 +11250,7 @@
       "partnerId": "fakeflowers",
       "name": "Gesang gul Lhasa",
       "description": "Gesang härstammar från Tibet och betyder den lyckliga blomman. Den är 46 cm hög, har 4 små gula blommor. Ståndare och frökapslar är fint detaljerade. Tillsammans med det gröna infärgade bladverket och dess detaljer skapar det en naturtrogen blomma.  Vår konstgjorda gula gesang är den perfekta dekorationen för att komplettera dina andra konstgjorda snittblommor. Skapa en imponerande bukett och låt din vas bli ett konstverk av harmonisk charm!",
-      "shortDescription": "Gesang härstammar från Tibet och betyder den lyckliga blomman. Den är 46 cm hög, har 4 små gula blommor. Ståndare och frökapslar är fint detaljerade. ",
+      "shortDescription": "Gesang härstammar från Tibet och betyder den lyckliga blomman. Den är 46 cm hög, har 4 små gula blommor. Ståndare och frökapslar är fint detaljerade.",
       "mainCategory": "konstgjorda-blommor",
       "subCategories": [
         "gula-blommor"
@@ -11686,7 +11730,7 @@
       "partnerId": "fakeflowers",
       "name": "Tistel grön snittgrönt",
       "description": "Härligt konstgjort snittgrönt, 66 cm hög. Denna blomma ingår i vår serie Real Touch Collection då kvalite och naturligt utseende och känsla är mycket hög.En formbar stjälk som enkelt klipps till önskad längd. De gröna blommorna är mycket detaljrika och arbetade.Använd gärna för att rama in dina andra konstgjorda snittblommor och skapa vackra buketter. Det konstgjorda snittgröna kräver inget underhåll och behåller sin färg och form över tid. Ge ditt hem en touch av naturens skönhet, utan besväret med att ta hand om levande växter. Låt din kreativitet blomstra med en tidlös och underhållsfri inredning.",
-      "shortDescription": "Härligt konstgjort snittgrönt, 66 cm hög. Denna blomma ingår i vår serie Real Touch Collection då kvalite och naturligt utseende och känsla är mycket ",
+      "shortDescription": "Härligt konstgjort snittgrönt, 66 cm hög. Denna blomma ingår i vår serie Real Touch Collection då kvalite och naturligt utseende och känsla är mycket",
       "mainCategory": "konstgjorda-blommor",
       "subCategories": [],
       "tags": [
@@ -11802,7 +11846,7 @@
       "partnerId": "fakeflowers",
       "name": "Gatkamomille snittgrönt",
       "description": "Konstgjord gatkamomille, 50 cm hög. Detaljerad gjuten i plast, bladverk, knoppar och stam i olika nyanser av grönt. Använd gärna för att rama in dina andra konstgjorda snittblommor och skapa vackra buketter. Det konstgjorda snittgröna kräver inget underhåll och behåller sin färg och form över tid. Ge ditt hem en känsla av naturens skönhet, utan besväret med att ta hand om levande växter. Låt din kreativitet blomstra med en tidlös och underhållsfri inredning.",
-      "shortDescription": "Konstgjord gatkamomille, 50 cm hög. Detaljerad gjuten i plast, bladverk, knoppar och stam i olika nyanser av grönt. Använd gärna för att rama in dina ",
+      "shortDescription": "Konstgjord gatkamomille, 50 cm hög. Detaljerad gjuten i plast, bladverk, knoppar och stam i olika nyanser av grönt. Använd gärna för att rama in dina",
       "mainCategory": "konstgjorda-blommor",
       "subCategories": [],
       "tags": [
@@ -12397,6 +12441,7 @@
         "under-500-kr",
         "rosor",
         "vita-blommor",
+        "brudbuketter",
         "begravningsbuketter",
         "kondoleanser"
       ],
@@ -12404,7 +12449,8 @@
         "blommor från 229 kr",
         "under-500-kr",
         "rosor",
-        "vita-blommor"
+        "vita-blommor",
+        "brudbuketter"
       ],
       "price": 399,
       "originalPrice": 399,
@@ -12463,14 +12509,16 @@
         "under-500-kr",
         "rosor",
         "vita-blommor",
-        "tackblommor"
+        "tackblommor",
+        "brudbuketter"
       ],
       "tags": [
         "tack för hjälpen",
         "tackblommor",
         "under-500-kr",
         "rosor",
-        "vita-blommor"
+        "vita-blommor",
+        "brudbuketter"
       ],
       "price": 458,
       "originalPrice": 458,
@@ -12720,18 +12768,20 @@
       "partnerId": "interflora",
       "name": "7 Vita rosor",
       "description": "Rosen, blommornas drottning. Att placera en vas med enbart vita rosor på ett bord eller annan plats, gör att det rummet andas av lyx. Vasen på bilden ingår inte i vårt sortiment men du hittar hela vårt vassortiment under krukor och vaser.",
-      "shortDescription": "Rosen, blommornas drottning. Att placera en vas med enbart vita rosor på ett bord eller annan plats, gör att det rummet andas av lyx. Vasen på bilden ",
+      "shortDescription": "Rosen, blommornas drottning. Att placera en vas med enbart vita rosor på ett bord eller annan plats, gör att det rummet andas av lyx. Vasen på bilden",
       "mainCategory": "buketter",
       "subCategories": [
         "under-500-kr",
         "rosor",
-        "vita-blommor"
+        "vita-blommor",
+        "brudbuketter"
       ],
       "tags": [
         "buketter",
         "under-500-kr",
         "rosor",
-        "vita-blommor"
+        "vita-blommor",
+        "brudbuketter"
       ],
       "price": 419,
       "originalPrice": 419,
@@ -13037,7 +13087,8 @@
         "rosa-blommor",
         "vita-blommor",
         "lila-blommor",
-        "tackblommor"
+        "tackblommor",
+        "brudbuketter"
       ],
       "tags": [
         "tack för hjälpen",
@@ -13047,7 +13098,8 @@
         "tulpaner",
         "rosa-blommor",
         "vita-blommor",
-        "lila-blommor"
+        "lila-blommor",
+        "brudbuketter"
       ],
       "price": 389,
       "originalPrice": 389,
@@ -13111,7 +13163,8 @@
         "rosa-blommor",
         "vita-blommor",
         "lila-blommor",
-        "tackblommor"
+        "tackblommor",
+        "brudbuketter"
       ],
       "tags": [
         "tack för hjälpen",
@@ -13121,7 +13174,8 @@
         "tulpaner",
         "rosa-blommor",
         "vita-blommor",
-        "lila-blommor"
+        "lila-blommor",
+        "brudbuketter"
       ],
       "price": 438,
       "originalPrice": 438,
@@ -13183,14 +13237,16 @@
         "under-500-kr",
         "tulpaner",
         "blandade-farger",
-        "tackblommor"
+        "tackblommor",
+        "fodelsedags-blommor"
       ],
       "tags": [
         "tack för hjälpen",
         "blandade-farger",
         "tackblommor",
         "under-500-kr",
-        "tulpaner"
+        "tulpaner",
+        "fodelsedags-blommor"
       ],
       "price": 399,
       "originalPrice": 399,
@@ -13363,7 +13419,7 @@
       "partnerId": "interflora",
       "name": "30 röda rosor",
       "description": "Uttryck dina känslor med en pampig bukett av 30 röda rosor – den ultimata gesten för att uttrycka din kärlek och uppskattning. Med en uppvaktning med den här buketten av 30 röda rosor kommer din hälsning inte gå obemärkt förbi. Rosorna i buketten är storblommiga och är ungefär 60 cm höga.",
-      "shortDescription": "Uttryck dina känslor med en pampig bukett av 30 röda rosor – den ultimata gesten för att uttrycka din kärlek och uppskattning. Med en uppvaktning med ",
+      "shortDescription": "Uttryck dina känslor med en pampig bukett av 30 röda rosor – den ultimata gesten för att uttrycka din kärlek och uppskattning. Med en uppvaktning med",
       "mainCategory": "buketter",
       "subCategories": [
         "rosor",
@@ -13489,7 +13545,7 @@
       "partnerId": "interflora",
       "name": "20 röda rosor",
       "description": "Visa vad du känner med en pampig bukett med 20 röda rosor – den ultimata gesten för att uttrycka din kärlek och uppskattning. Bukettens storslagenhet kommer att skapa minnesvärda ögonblick.  Rosorna i buketten är storblommiga och är ungefär 60 cm höga. Visa din kärlek på klassiskt vis och skäm bort din mottagare med denna vackra bukett.",
-      "shortDescription": "Visa vad du känner med en pampig bukett med 20 röda rosor – den ultimata gesten för att uttrycka din kärlek och uppskattning. Bukettens storslagenhet ",
+      "shortDescription": "Visa vad du känner med en pampig bukett med 20 röda rosor – den ultimata gesten för att uttrycka din kärlek och uppskattning. Bukettens storslagenhet",
       "mainCategory": "buketter",
       "subCategories": [
         "rosor",
@@ -13995,7 +14051,7 @@
       "partnerId": "interflora",
       "name": "Mera Blomsterglädje",
       "description": "Ge bort Blomsterglädje som håller extra länge! Denna färgsprakande bukett innehåller krysantemum, nejlika, alstroemeria och morotsblomma, som vackert ramas in och lite vilt vippande grönt. Buketten är perfekt för att fira födelsedagar, jubileum eller bara för att sprida glädje och lite extra lyx i någons vardag. Alla dessa blomsorter lever länge om de får lite extra omtanke. Ge dem nytt vatten och en ny snittyta ofta så får du njuta av blomstret under lång tid. Alstroemerian levereras oftast knoppig men kommer att slå ut och blomma vackert och länge. Vasen på bilderna ingår inte med buketten men du kan lägga till andra passande vaser som tillval i nästa steg. Blomsorterna i buketten kan variera beroende på floristens lokala sortiment.",
-      "shortDescription": "Ge bort Blomsterglädje som håller extra länge! Denna färgsprakande bukett innehåller krysantemum, nejlika, alstroemeria och morotsblomma, som vackert ",
+      "shortDescription": "Ge bort Blomsterglädje som håller extra länge! Denna färgsprakande bukett innehåller krysantemum, nejlika, alstroemeria och morotsblomma, som vackert",
       "mainCategory": "buketter",
       "subCategories": [
         "under-500-kr",
@@ -14121,7 +14177,7 @@
       "partnerId": "interflora",
       "name": "10 röda rosor",
       "description": "Visa vad du känner med en bukett ståtliga röda rosor! 10 röda rosor är en perfekt gåva för att fira jubileum, födelsedag eller romantiska tillfällen. Rosorna i buketten är storblommiga och är ungefär 60 cm höga. Den gröna vasen på bilderna ingår inte med buketten, men du kan lägga till den som tillval till din bukett eller så kan du också hittar flera olika vaser under kategorin krukor & vaser.",
-      "shortDescription": "Visa vad du känner med en bukett ståtliga röda rosor! 10 röda rosor är en perfekt gåva för att fira jubileum, födelsedag eller romantiska tillfällen. ",
+      "shortDescription": "Visa vad du känner med en bukett ståtliga röda rosor! 10 röda rosor är en perfekt gåva för att fira jubileum, födelsedag eller romantiska tillfällen.",
       "mainCategory": "buketter",
       "subCategories": [
         "rosor",
@@ -14183,7 +14239,7 @@
       "partnerId": "interflora",
       "name": "10 röda rosor med geléhjärtan",
       "description": "Visa vad du känner med en bukett ståtliga röda rosor! 10 röda rosor är en perfekt gåva för att fira jubileum, födelsedag eller romantiska tillfällen. Ljuvligt goda geléhjärtan, i en fin hjärtformad plåtask, sätter verkligen pricken över i:et på ditt Blommogram. Rosorna i buketten är storblommiga och är ungefär 60 cm höga.",
-      "shortDescription": "Visa vad du känner med en bukett ståtliga röda rosor! 10 röda rosor är en perfekt gåva för att fira jubileum, födelsedag eller romantiska tillfällen. ",
+      "shortDescription": "Visa vad du känner med en bukett ståtliga röda rosor! 10 röda rosor är en perfekt gåva för att fira jubileum, födelsedag eller romantiska tillfällen.",
       "mainCategory": "buketter",
       "subCategories": [
         "rosor",
@@ -14245,7 +14301,7 @@
       "partnerId": "interflora",
       "name": "Floristens kärleksbukett",
       "description": "Floristens val innebär att våra kunniga florister får fria händer att skapa en vacker, handbunden bukett med blommor och färger i kärlekens anda. Låt våra florister hjälpa dig att uppvakta och överraska - enklare kan det inte bli! Våra butiker tittar på speciella önskemål om innehåll i buketten, men det är inget vi kan garantera. Observera att alla bilder är exempel på buketter. Buketterna på exempelbilderna har ett cirka pris på 650-950 kr.",
-      "shortDescription": "Floristens val innebär att våra kunniga florister får fria händer att skapa en vacker, handbunden bukett med blommor och färger i kärlekens anda. Låt ",
+      "shortDescription": "Floristens val innebär att våra kunniga florister får fria händer att skapa en vacker, handbunden bukett med blommor och färger i kärlekens anda. Låt",
       "mainCategory": "buketter",
       "subCategories": [
         "under-500-kr",
@@ -14485,7 +14541,7 @@
       "partnerId": "interflora",
       "name": "Bukett Vita liljor",
       "description": "Oavsett i vilket rum man placerar en ståtlig bukett av vita liljor, så pryder det sin plats. Observera att liljorna kan komma att levereras knoppiga. Produktbilderna visar den stora varianten av buketten. Vasen Amaryllis på bilderna ingår inte med buketten, men du kan lägga till den som tillval till din bukett eller så kan du också hittar flera olika vaser under kategorin krukor & vaser.",
-      "shortDescription": "Oavsett i vilket rum man placerar en ståtlig bukett av vita liljor, så pryder det sin plats. Observera att liljorna kan komma att levereras knoppiga. ",
+      "shortDescription": "Oavsett i vilket rum man placerar en ståtlig bukett av vita liljor, så pryder det sin plats. Observera att liljorna kan komma att levereras knoppiga.",
       "mainCategory": "begravning",
       "subCategories": [
         "under-500-kr",
@@ -14493,6 +14549,7 @@
         "amaryllis",
         "vita-blommor",
         "begravningsbuketter",
+        "tackblommor",
         "kondoleanser"
       ],
       "tags": [
@@ -14500,7 +14557,9 @@
         "amaryllis",
         "under-500-kr",
         "liljor",
-        "vita-blommor"
+        "vita-blommor",
+        "begravningsbuketter",
+        "tackblommor"
       ],
       "price": 319,
       "originalPrice": 319,
@@ -14677,14 +14736,16 @@
         "under-500-kr",
         "tulpaner",
         "blandade-farger",
-        "tackblommor"
+        "tackblommor",
+        "fodelsedags-blommor"
       ],
       "tags": [
         "tack för hjälpen",
         "blandade-farger",
         "tackblommor",
         "under-500-kr",
-        "tulpaner"
+        "tulpaner",
+        "fodelsedags-blommor"
       ],
       "price": 379,
       "originalPrice": 379,
@@ -14743,14 +14804,16 @@
         "under-500-kr",
         "tulpaner",
         "blandade-farger",
-        "tackblommor"
+        "tackblommor",
+        "fodelsedags-blommor"
       ],
       "tags": [
         "tack för hjälpen",
         "blandade-farger",
         "tackblommor",
         "under-500-kr",
-        "tulpaner"
+        "tulpaner",
+        "fodelsedags-blommor"
       ],
       "price": 438,
       "originalPrice": 438,
@@ -14931,7 +14994,7 @@
       "partnerId": "interflora",
       "name": "Kärleksfrossa",
       "description": "Visa vad du känner med vår fantastiska bukett Kärleksfrossa! Den här krispiga buketten innehåller tulpaner i rött, rosa och vitt som ramas in vackert med eukalyptus. Vill du ge bort vasen tillsammans med buketten? Vasen Blåklocka ingår inte men finns att köpa till längre ner på denna sida.",
-      "shortDescription": "Visa vad du känner med vår fantastiska bukett Kärleksfrossa! Den här krispiga buketten innehåller tulpaner i rött, rosa och vitt som ramas in vackert ",
+      "shortDescription": "Visa vad du känner med vår fantastiska bukett Kärleksfrossa! Den här krispiga buketten innehåller tulpaner i rött, rosa och vitt som ramas in vackert",
       "mainCategory": "buketter",
       "subCategories": [
         "under-500-kr",
@@ -14940,7 +15003,9 @@
         "roda-blommor",
         "rosa-blommor",
         "vita-blommor",
-        "karlek-romantik"
+        "karlek-romantik",
+        "alla-hjartans-dag",
+        "brudbuketter"
       ],
       "tags": [
         "karlek-romantik",
@@ -14949,7 +15014,9 @@
         "tulpaner",
         "roda-blommor",
         "rosa-blommor",
-        "vita-blommor"
+        "vita-blommor",
+        "alla-hjartans-dag",
+        "brudbuketter"
       ],
       "price": 459,
       "originalPrice": 459,
@@ -15595,14 +15662,18 @@
         "under-300-kr",
         "under-500-kr",
         "liljor",
-        "vita-blommor"
+        "vita-blommor",
+        "begravningsbuketter",
+        "tackblommor"
       ],
       "tags": [
         "blommor från 229 kr",
         "under-300-kr",
         "under-500-kr",
         "liljor",
-        "vita-blommor"
+        "vita-blommor",
+        "begravningsbuketter",
+        "tackblommor"
       ],
       "price": 279,
       "originalPrice": 279,
@@ -15660,13 +15731,17 @@
       "subCategories": [
         "under-500-kr",
         "liljor",
-        "vita-blommor"
+        "vita-blommor",
+        "begravningsbuketter",
+        "tackblommor"
       ],
       "tags": [
         "blommor från 229 kr",
         "under-500-kr",
         "liljor",
-        "vita-blommor"
+        "vita-blommor",
+        "begravningsbuketter",
+        "tackblommor"
       ],
       "price": 338,
       "originalPrice": 338,
@@ -15918,7 +15993,8 @@
         "under-500-kr",
         "rosa-blommor",
         "gula-blommor",
-        "blandade-farger"
+        "blandade-farger",
+        "fodelsedags-blommor"
       ],
       "tags": [
         "krukväxter",
@@ -15926,7 +16002,8 @@
         "under-300-kr",
         "under-500-kr",
         "rosa-blommor",
-        "gula-blommor"
+        "gula-blommor",
+        "fodelsedags-blommor"
       ],
       "price": 259,
       "originalPrice": 259,
@@ -15980,7 +16057,7 @@
       "partnerId": "interflora",
       "name": "Liljefavorit",
       "description": "Liljebukett i ny tappning! I vår Liljefavorit står den höga rosa liljan i centrum och ramas in av blommor i creme och aprikos tillsammans med blandat grönt.  Buketten innehåller blomsorterna lilja, alstroemeria, nejlika och blandat grönt. Vasen på bilderna ingår inte med buketten men du kan lägga till andra passande vaser som tillval längre ner på den här sidan.  Blomsorterna i buketten kan variera beroende på floristens lokala sortiment.",
-      "shortDescription": "Liljebukett i ny tappning! I vår Liljefavorit står den höga rosa liljan i centrum och ramas in av blommor i creme och aprikos tillsammans med blandat ",
+      "shortDescription": "Liljebukett i ny tappning! I vår Liljefavorit står den höga rosa liljan i centrum och ramas in av blommor i creme och aprikos tillsammans med blandat",
       "mainCategory": "buketter",
       "subCategories": [
         "under-300-kr",
@@ -16046,7 +16123,7 @@
       "partnerId": "interflora",
       "name": "Liljefavorit med vegansk vingummi",
       "description": "Liljebukett i ny tappning! I vår Liljefavorit står den höga rosa liljan i centrum och ramas in av blommor i creme och aprikos tillsammans med blandat grönt.  Buketten innehåller blomsorterna lilja, alstroemeria, nejlika och blandat grönt. Levereras tillsammans med vegansk vingummi med ljuvlig smak av skogsbär. Vasen på bilderna ingår inte med buketten men du kan lägga till andra passande vaser som tillval längre ner på den här sidan.",
-      "shortDescription": "Liljebukett i ny tappning! I vår Liljefavorit står den höga rosa liljan i centrum och ramas in av blommor i creme och aprikos tillsammans med blandat ",
+      "shortDescription": "Liljebukett i ny tappning! I vår Liljefavorit står den höga rosa liljan i centrum och ramas in av blommor i creme och aprikos tillsammans med blandat",
       "mainCategory": "buketter",
       "subCategories": [
         "under-500-kr",
@@ -16118,14 +16195,16 @@
         "under-500-kr",
         "rosor",
         "rosa-blommor",
-        "blandade-farger"
+        "blandade-farger",
+        "fodelsedags-blommor"
       ],
       "tags": [
         "blomsterkassar",
         "blandade-farger",
         "under-500-kr",
         "rosor",
-        "rosa-blommor"
+        "rosa-blommor",
+        "fodelsedags-blommor"
       ],
       "price": 349,
       "originalPrice": 349,
@@ -16244,7 +16323,7 @@
       "partnerId": "interflora",
       "name": "Kärleksbukett med röda rosor",
       "description": "Denna bukett skapas av våra kunniga florister som får fria händer att skapa en vacker, handbunden bukett i kärlekens färger. Buketten innhåller minst två röda rosor tillsammans med andra romantiska blommor. Låt våra florister hjälpa dig att uppvakta och överraska - enklare kan det inte bli! Våra butiker tittar på speciella önskemål om innehåll i buketten, men det är inget vi kan garantera. Observera att alla bilder är exempel på buketter.",
-      "shortDescription": "Denna bukett skapas av våra kunniga florister som får fria händer att skapa en vacker, handbunden bukett i kärlekens färger. Buketten innhåller minst ",
+      "shortDescription": "Denna bukett skapas av våra kunniga florister som får fria händer att skapa en vacker, handbunden bukett i kärlekens färger. Buketten innhåller minst",
       "mainCategory": "buketter",
       "subCategories": [
         "under-500-kr",
@@ -16314,14 +16393,16 @@
         "under-500-kr",
         "rosor",
         "roda-blommor",
-        "karlek-romantik"
+        "karlek-romantik",
+        "alla-hjartans-dag"
       ],
       "tags": [
         "blommor från 229 kr",
         "karlek-romantik",
         "under-500-kr",
         "rosor",
-        "roda-blommor"
+        "roda-blommor",
+        "alla-hjartans-dag"
       ],
       "price": 319,
       "originalPrice": 319,
@@ -16434,7 +16515,7 @@
       "partnerId": "interflora",
       "name": "Färglycka",
       "description": "Säg det med färg! Denna livfulla bukett med ceriserosa germini, röda nejlikor och alstroemeria sprakar av glädje och omtanke. En perfekt överraskning som garanterat lyser upp mottagarens dag – oavsett tillfälle. Alstroemerian levereras oftast knoppig men kommer att slå ut och blomma vackert och länge. Blomsorterna i buketten kan variera beroende på floristens lokala sortiment. Vasen på bilderna ingår inte med buketten men annan vas finns att lägga till som tillval i nästa steg. Blomsorterna i buketten kan variera beroende på floristens lokala sortiment.",
-      "shortDescription": "Säg det med färg! Denna livfulla bukett med ceriserosa germini, röda nejlikor och alstroemeria sprakar av glädje och omtanke. En perfekt överraskning ",
+      "shortDescription": "Säg det med färg! Denna livfulla bukett med ceriserosa germini, röda nejlikor och alstroemeria sprakar av glädje och omtanke. En perfekt överraskning",
       "mainCategory": "buketter",
       "subCategories": [
         "under-300-kr",
@@ -16669,7 +16750,7 @@
       "partnerId": "interflora",
       "name": "Floristens rosa bukett",
       "description": "Floristens rosa bukett innebär att våra kunniga florister får fria händer att skapa en vacker, handbunden bukett med vårens blommor i rosa toner. Låt våra florister hjälpa dig att uppvakta och överraska - enklare kan det inte bli! Observera att alla bilder är exempel på buketter. Buketterna på exempelbilderna har ett cirka pris på 400-600 kr. Vill du ge bort en vas tillsammans med buketten? Vasen på bilden ingår inte men andra vaser finns att köpa till längre ner på denna sida.",
-      "shortDescription": "Floristens rosa bukett innebär att våra kunniga florister får fria händer att skapa en vacker, handbunden bukett med vårens blommor i rosa toner. Låt ",
+      "shortDescription": "Floristens rosa bukett innebär att våra kunniga florister får fria händer att skapa en vacker, handbunden bukett med vårens blommor i rosa toner. Låt",
       "mainCategory": "buketter",
       "subCategories": [
         "under-300-kr",
@@ -16743,7 +16824,9 @@
         "roda-blommor",
         "rosa-blommor",
         "orange-blommor",
-        "tackblommor"
+        "tackblommor",
+        "karlek-romantik",
+        "alla-hjartans-dag"
       ],
       "tags": [
         "tack för hjälpen",
@@ -16752,7 +16835,9 @@
         "rosor",
         "roda-blommor",
         "rosa-blommor",
-        "orange-blommor"
+        "orange-blommor",
+        "karlek-romantik",
+        "alla-hjartans-dag"
       ],
       "price": 429,
       "originalPrice": 429,
@@ -17014,14 +17099,18 @@
         "rosor",
         "roda-blommor",
         "rosa-blommor",
-        "tackblommor"
+        "tackblommor",
+        "karlek-romantik",
+        "alla-hjartans-dag"
       ],
       "tags": [
         "tack för hjälpen",
         "tackblommor",
         "rosor",
         "roda-blommor",
-        "rosa-blommor"
+        "rosa-blommor",
+        "karlek-romantik",
+        "alla-hjartans-dag"
       ],
       "price": 649,
       "originalPrice": 649,
@@ -17214,7 +17303,9 @@
         "roda-blommor",
         "rosa-blommor",
         "orange-blommor",
-        "tackblommor"
+        "tackblommor",
+        "karlek-romantik",
+        "alla-hjartans-dag"
       ],
       "tags": [
         "tack för hjälpen",
@@ -17222,7 +17313,9 @@
         "rosor",
         "roda-blommor",
         "rosa-blommor",
-        "orange-blommor"
+        "orange-blommor",
+        "karlek-romantik",
+        "alla-hjartans-dag"
       ],
       "price": 1159,
       "originalPrice": 1159,
@@ -17477,14 +17570,15 @@
       "partnerId": "interflora",
       "name": "Blomsterprakt",
       "description": "Blomsterprakt är en livfull bukett i toner av lila, blått, aprikos, cerise och orange – en riktig färgexplosion som sprider glädje. Den är sammansatt av prärieklocka, nejlika, statice, aster, kvistros och blandat grönt, vilket ger en härlig mix av struktur och volym. En bukett som passar lika bra till firande som till att lysa upp vardagen. Vasen på bilderna ingår inte med buketten men annan vas finns att lägga till som tillval i nästa steg. Blomsorterna i buketten kan variera beroende på floristens lokala sortiment.",
-      "shortDescription": "Blomsterprakt är en livfull bukett i toner av lila, blått, aprikos, cerise och orange – en riktig färgexplosion som sprider glädje. Den är sammansatt ",
+      "shortDescription": "Blomsterprakt är en livfull bukett i toner av lila, blått, aprikos, cerise och orange – en riktig färgexplosion som sprider glädje. Den är sammansatt",
       "mainCategory": "buketter",
       "subCategories": [
         "under-500-kr",
         "lila-blommor",
         "orange-blommor",
         "blandade-farger",
-        "tackblommor"
+        "tackblommor",
+        "fodelsedags-blommor"
       ],
       "tags": [
         "tack för hjälpen",
@@ -17492,7 +17586,8 @@
         "tackblommor",
         "under-500-kr",
         "lila-blommor",
-        "orange-blommor"
+        "orange-blommor",
+        "fodelsedags-blommor"
       ],
       "price": 429,
       "originalPrice": 429,
@@ -17755,7 +17850,8 @@
         "under-500-kr",
         "vita-blommor",
         "blandade-farger",
-        "gratulationer"
+        "gratulationer",
+        "fodelsedags-blommor"
       ],
       "tags": [
         "krukväxter",
@@ -17763,7 +17859,8 @@
         "gratulationer",
         "under-300-kr",
         "under-500-kr",
-        "vita-blommor"
+        "vita-blommor",
+        "fodelsedags-blommor"
       ],
       "price": 259,
       "originalPrice": 259,
@@ -18210,7 +18307,7 @@
       "partnerId": "interflora",
       "name": "Längtan",
       "description": "Fyll någons hem med värme och elegans med vår bukett Längtan . De vinröda och rosa tonerna skapar en romantisk känsla, medan det friska gröna ger liv och harmoni. Buketten är omsorgsfullt arrangerad med nejlikor, alstroemeria, krysantemum, limonium, asparagus och eukalyptus – en perfekt kombination av färg och struktur.   Vasen på bilderna ingår inte med buketten men det finns passande vas att lägga till som tillval finns i nästa steg.",
-      "shortDescription": "Fyll någons hem med värme och elegans med vår bukett Längtan . De vinröda och rosa tonerna skapar en romantisk känsla, medan det friska gröna ger liv ",
+      "shortDescription": "Fyll någons hem med värme och elegans med vår bukett Längtan . De vinröda och rosa tonerna skapar en romantisk känsla, medan det friska gröna ger liv",
       "mainCategory": "begravning",
       "subCategories": [
         "under-500-kr",
@@ -18285,14 +18382,18 @@
         "under-500-kr",
         "rosor",
         "roda-blommor",
-        "rosa-blommor"
+        "rosa-blommor",
+        "karlek-romantik",
+        "alla-hjartans-dag"
       ],
       "tags": [
         "buketter",
         "under-500-kr",
         "rosor",
         "roda-blommor",
-        "rosa-blommor"
+        "rosa-blommor",
+        "karlek-romantik",
+        "alla-hjartans-dag"
       ],
       "price": 329,
       "originalPrice": 329,
@@ -18353,7 +18454,8 @@
         "rosor",
         "roda-blommor",
         "rosa-blommor",
-        "karlek-romantik"
+        "karlek-romantik",
+        "alla-hjartans-dag"
       ],
       "tags": [
         "buketter",
@@ -18361,7 +18463,8 @@
         "under-500-kr",
         "rosor",
         "roda-blommor",
-        "rosa-blommor"
+        "rosa-blommor",
+        "alla-hjartans-dag"
       ],
       "price": 329,
       "originalPrice": 329,
@@ -18419,13 +18522,17 @@
       "subCategories": [
         "rosor",
         "roda-blommor",
-        "rosa-blommor"
+        "rosa-blommor",
+        "karlek-romantik",
+        "alla-hjartans-dag"
       ],
       "tags": [
         "buketter",
         "rosor",
         "roda-blommor",
-        "rosa-blommor"
+        "rosa-blommor",
+        "karlek-romantik",
+        "alla-hjartans-dag"
       ],
       "price": 649,
       "originalPrice": 649,
@@ -18680,7 +18787,8 @@
         "rosor",
         "rosa-blommor",
         "vita-blommor",
-        "alla-hjartans-dag"
+        "alla-hjartans-dag",
+        "brudbuketter"
       ],
       "tags": [
         "alla högtider - alla hjärtans dag - alla hjärtans dag-dukning",
@@ -18689,7 +18797,8 @@
         "under-500-kr",
         "rosor",
         "rosa-blommor",
-        "vita-blommor"
+        "vita-blommor",
+        "brudbuketter"
       ],
       "price": 19,
       "originalPrice": 19,
@@ -18868,7 +18977,7 @@
       "partnerId": "myperfectday",
       "name": "Sugrör - Svarta med vita prickar - 10-pack",
       "description": "Sugrör - Svarta med vita prickar - 10-pack - Bröllops-sugrör, Bröllopsdukning. Svarta sugrör med vita prickar i biologiskt nedbrytbart papper. Passar även bra att använda som cakepopspinnar!Längd: 20 cmAntal: 10 stycken",
-      "shortDescription": "Sugrör - Svarta med vita prickar - 10-pack - Bröllops-sugrör, Bröllopsdukning. Svarta sugrör med vita prickar i biologiskt nedbrytbart papper. Passar ",
+      "shortDescription": "Sugrör - Svarta med vita prickar - 10-pack - Bröllops-sugrör, Bröllopsdukning. Svarta sugrör med vita prickar i biologiskt nedbrytbart papper. Passar",
       "mainCategory": "brollop",
       "subCategories": [
         "brudbuketter",
@@ -20830,7 +20939,7 @@
       "partnerId": "myperfectday",
       "name": "Sockerkristaller - Ljusblå - Funcakes - 80 g",
       "description": "Sockerkristaller - Ljusblå - Funcakes - 80 g - Strössel, Strössel & bakningsdekor. Sockerkristaller i blått. För dekoration av tårtor, cupcakes, cake pops och andra bakverk.Ingredienser: socker, färgämne: E100 & E131, invertsocker. Glutenfri!Innegåller: 80 gram.Förvaras mellan 8°C - 24°C i torr miljö.",
-      "shortDescription": "Sockerkristaller - Ljusblå - Funcakes - 80 g - Strössel, Strössel & bakningsdekor. Sockerkristaller i blått. För dekoration av tårtor, cupcakes, cake ",
+      "shortDescription": "Sockerkristaller - Ljusblå - Funcakes - 80 g - Strössel, Strössel & bakningsdekor. Sockerkristaller i blått. För dekoration av tårtor, cupcakes, cake",
       "mainCategory": "buketter",
       "subCategories": [
         "under-300-kr",
@@ -21152,7 +21261,7 @@
       "partnerId": "myperfectday",
       "name": "Sockerpärlor - Mini - Lila",
       "description": "Sockerpärlor - Mini - Lila - Strössel, Strössel & bakningsdekor. Små sockerpärlor, nonpareils, i lila. En burk innehåller cirka 80 gram.Ingredienser: socker, stärkelse (vete, majs), glukossirap, färgämne (E120, E132), vegetabiliskt fett, ytbehandlingsmedel (bivax). Allergener: Gluten, vete, majs.",
-      "shortDescription": "Sockerpärlor - Mini - Lila - Strössel, Strössel & bakningsdekor. Små sockerpärlor, nonpareils, i lila. En burk innehåller cirka 80 gram.Ingredienser: ",
+      "shortDescription": "Sockerpärlor - Mini - Lila - Strössel, Strössel & bakningsdekor. Små sockerpärlor, nonpareils, i lila. En burk innehåller cirka 80 gram.Ingredienser:",
       "mainCategory": "buketter",
       "subCategories": [
         "under-300-kr",
@@ -21222,13 +21331,15 @@
       "subCategories": [
         "under-300-kr",
         "under-500-kr",
-        "blandade-farger"
+        "blandade-farger",
+        "fodelsedags-blommor"
       ],
       "tags": [
         "bakning - strössel & bakningsdekor - strössel",
         "blandade-farger",
         "under-300-kr",
-        "under-500-kr"
+        "under-500-kr",
+        "fodelsedags-blommor"
       ],
       "price": 49,
       "originalPrice": 49,
@@ -21289,7 +21400,8 @@
         "rosa-blommor",
         "blandade-farger",
         "karlek-romantik",
-        "alla-hjartans-dag"
+        "alla-hjartans-dag",
+        "fodelsedags-blommor"
       ],
       "tags": [
         "alla högtider - alla hjärtans dag - alla hjärtans dag-bakning",
@@ -21298,7 +21410,8 @@
         "alla-hjartans-dag",
         "under-300-kr",
         "under-500-kr",
-        "rosa-blommor"
+        "rosa-blommor",
+        "fodelsedags-blommor"
       ],
       "price": 39,
       "originalPrice": 39,
@@ -22618,7 +22731,8 @@
         "under-500-kr",
         "rosor",
         "rosa-blommor",
-        "vita-blommor"
+        "vita-blommor",
+        "brudbuketter"
       ],
       "tags": [
         "bakning - strössel & bakningsdekor - sockerpärlor",
@@ -22626,7 +22740,8 @@
         "under-500-kr",
         "rosor",
         "rosa-blommor",
-        "vita-blommor"
+        "vita-blommor",
+        "brudbuketter"
       ],
       "price": 49,
       "originalPrice": 49,
@@ -22870,7 +22985,7 @@
       "partnerId": "myperfectday",
       "name": "Spindelnät - Vitt",
       "description": "Spindelnät - Vitt - Halloweendekorationer, Halloween. Vitt spindelnät att dekorera med på bord, buffén eller över andra dekorationer!Påsen innehåller 60 gram nät och två stycken små, svarta spindlar.",
-      "shortDescription": "Spindelnät - Vitt - Halloweendekorationer, Halloween. Vitt spindelnät att dekorera med på bord, buffén eller över andra dekorationer!Påsen innehåller ",
+      "shortDescription": "Spindelnät - Vitt - Halloweendekorationer, Halloween. Vitt spindelnät att dekorera med på bord, buffén eller över andra dekorationer!Påsen innehåller",
       "mainCategory": "buketter",
       "subCategories": [
         "under-300-kr",
@@ -23491,7 +23606,8 @@
         "under-500-kr",
         "rosor",
         "rosa-blommor",
-        "vita-blommor"
+        "vita-blommor",
+        "brudbuketter"
       ],
       "tags": [
         "bakning - cupcakes & muffins - muffinsformar",
@@ -23499,7 +23615,8 @@
         "under-500-kr",
         "rosor",
         "rosa-blommor",
-        "vita-blommor"
+        "vita-blommor",
+        "brudbuketter"
       ],
       "price": 45,
       "originalPrice": 45,
@@ -24427,7 +24544,7 @@
       "partnerId": "myperfectday",
       "name": "Papptallrikar - Metallic - Silver - 6-pack",
       "description": "Papptallrikar - Metallic - Silver - 6-pack - Papptallrikar, Dukning. 6-pack papptallrikar i silvermetallic. Tallrikarna är ca 23 cm i diameter. Finns även i guld!",
-      "shortDescription": "Papptallrikar - Metallic - Silver - 6-pack - Papptallrikar, Dukning. 6-pack papptallrikar i silvermetallic. Tallrikarna är ca 23 cm i diameter. Finns ",
+      "shortDescription": "Papptallrikar - Metallic - Silver - 6-pack - Papptallrikar, Dukning. 6-pack papptallrikar i silvermetallic. Tallrikarna är ca 23 cm i diameter. Finns",
       "mainCategory": "buketter",
       "subCategories": [
         "under-300-kr",
@@ -24801,7 +24918,7 @@
       "partnerId": "myperfectday",
       "name": "Draperi - Metallic - Hot Pink",
       "description": "Draperi - Metallic - Hot Pink - Draperier, Hängande dekorationer. Draperi i fransig skarpt rosametallic. Draperiet är ca 0,9x2,5 meter. Superfint att sätta upp som bakgrund till ett dessert- eller godisbord!",
-      "shortDescription": "Draperi - Metallic - Hot Pink - Draperier, Hängande dekorationer. Draperi i fransig skarpt rosametallic. Draperiet är ca 0,9x2,5 meter. Superfint att ",
+      "shortDescription": "Draperi - Metallic - Hot Pink - Draperier, Hängande dekorationer. Draperi i fransig skarpt rosametallic. Draperiet är ca 0,9x2,5 meter. Superfint att",
       "mainCategory": "buketter",
       "subCategories": [
         "under-300-kr",

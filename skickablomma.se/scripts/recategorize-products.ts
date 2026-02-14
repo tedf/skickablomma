@@ -109,6 +109,30 @@ function categorizeProduct(
   if (combined.includes('jul') || combined.includes('christmas')) subCategories.push('jul-blommor')
   if (combined.includes('gratulation') || combined.includes('grattis')) subCategories.push('gratulationer')
 
+  // Cross-category tagging - products that could work for multiple purposes
+  // White lilies are traditional for both sympathy AND elegant occasions
+  if (subCategories.includes('liljor') && subCategories.includes('vita-blommor')) {
+    if (!subCategories.includes('begravningsbuketter')) subCategories.push('begravningsbuketter')
+    if (!subCategories.includes('tackblommor')) subCategories.push('tackblommor')
+  }
+
+  // Red roses are romantic - perfect for Valentine's and love occasions
+  if (subCategories.includes('rosor') && subCategories.includes('roda-blommor')) {
+    if (!subCategories.includes('karlek-romantik')) subCategories.push('karlek-romantik')
+    if (!subCategories.includes('alla-hjartans-dag')) subCategories.push('alla-hjartans-dag')
+  }
+
+  // White roses work for weddings
+  if (subCategories.includes('rosor') && subCategories.includes('vita-blommor')) {
+    if (!subCategories.includes('brudbuketter')) subCategories.push('brudbuketter')
+  }
+
+  // Colorful/mixed flowers work for birthdays
+  if (subCategories.includes('blandade-farger') ||
+      (subCategories.includes('rosa-blommor') && subCategories.includes('gula-blommor'))) {
+    if (!subCategories.includes('fodelsedags-blommor')) subCategories.push('fodelsedags-blommor')
+  }
+
   // Remove duplicates
   return { mainCategory, subCategories: [...new Set(subCategories)] }
 }

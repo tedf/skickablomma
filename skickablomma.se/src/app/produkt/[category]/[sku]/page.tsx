@@ -70,7 +70,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
           <div className="relative aspect-square overflow-hidden rounded-xl bg-white shadow-sm">
             {product.primaryImage ? (
               <Image
-                src={product.primaryImage.url}
+                src={product.primaryImage.localPath || product.primaryImage.url}
                 alt={product.primaryImage.altTextSv || product.name}
                 fill
                 className="object-cover"
@@ -128,7 +128,9 @@ export default async function ProductPage({ params }: ProductPageProps) {
             )}
 
             <div className="prose prose-gray max-w-none">
-              <p className="text-lg text-gray-700">{product.description}</p>
+              {product.description.split('\n').filter(p => p.trim()).map((paragraph, i) => (
+                <p key={i} className="text-lg text-gray-700 mb-2">{paragraph}</p>
+              ))}
             </div>
 
             {/* Attributes */}

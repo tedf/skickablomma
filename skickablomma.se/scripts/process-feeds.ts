@@ -276,8 +276,13 @@ function stripHtml(html?: string): string {
     .replace(/&lt;/g, '<')
     .replace(/&gt;/g, '>')
     .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
     .replace(/&ndash;/g, '–')
     .replace(/&mdash;/g, '—')
+    .replace(/\\r\\n/g, '\n')  // Handle escaped \r\n
+    .replace(/\r\n/g, '\n')    // Handle actual CRLF
+    .replace(/\r/g, '\n')      // Handle CR
+    .replace(/\n{3,}/g, '\n\n') // Collapse multiple newlines
     .trim()
 }
 

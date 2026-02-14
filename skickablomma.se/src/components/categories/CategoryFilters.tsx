@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
-import { ChevronDown, ChevronUp } from 'lucide-react'
+import { ChevronDown, ChevronUp, SlidersHorizontal, X } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { Category } from '@/types'
 
@@ -45,6 +45,7 @@ export function CategoryFilters({ category, availableColors }: CategoryFiltersPr
   const router = useRouter()
   const searchParams = useSearchParams()
 
+  const [mobileOpen, setMobileOpen] = useState(false)
   const [priceExpanded, setPriceExpanded] = useState(true)
   const [colorExpanded, setColorExpanded] = useState(true)
 
@@ -100,10 +101,10 @@ export function CategoryFilters({ category, availableColors }: CategoryFiltersPr
     return match?.id || 'all'
   }
 
-  return (
-    <div className="sticky top-24 rounded-xl bg-white p-6 shadow-sm">
-      <h2 className="mb-6 text-lg font-semibold text-gray-900">Filter</h2>
+  const activeFilterCount = (currentColors.length > 0 ? 1 : 0) + (currentPriceMin || currentPriceMax ? 1 : 0)
 
+  const filterContent = (
+    <>
       {/* Pris */}
       <div className="border-b pb-4">
         <button
@@ -196,12 +197,69 @@ export function CategoryFilters({ category, availableColors }: CategoryFiltersPr
       {/* Rensa filter */}
       {(currentPriceMin || currentPriceMax || currentColors.length > 0) && (
         <button
-          onClick={() => router.push(`/${category.slug}`)}
+          onClick={() => {
+            router.push(`/${category.slug}`)
+            setMobileOpen(false)
+          }}
           className="mt-4 w-full rounded-lg border border-gray-300 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50"
         >
           Rensa filter
         </button>
       )}
-    </div>
+    </>
+  )
+
+  return (
+    <>
+      {/* Mobile: Toggle button */}
+      <button
+        onClick={() => setMobileOpen(true)}
+        className="flex w-full items-center justify-center gap-2 rounded-lg bg-white px-4 py-3 text-sm font-medium text-gray-700 shadow-sm lg:hidden"
+      >
+        <SlidersHorizontal className="h-4 w-4" />
+        Filter
+        {activeFilterCount > 0 && (
+          <span className="flex h-5 w-5 items-center justify-center rounded-full bg-primary text-xs text-white">
+            {activeFilterCount}
+          </span>
+        )}
+      </button>
+
+      {/* Mobile: Slide-up drawer */}
+      {mobileOpen && (
+        <div className="fixed inset-0 z-50 lg:hidden">
+          {/* Backdrop */}
+          <div
+            className="absolute inset-0 bg-black/50"
+            onClick={() => setMobileOpen(false)}
+          />
+          {/* Drawer */}
+          <div className="absolute bottom-0 left-0 right-0 max-h-[80vh] overflow-y-auto rounded-t-2xl bg-white p-6 shadow-xl">
+            <div className="mb-4 flex items-center justify-between">
+              <h2 className="text-lg font-semibold text-gray-900">Filter</h2>
+              <button
+                onClick={() => setMobileOpen(false)}
+                className="rounded-full p-2 hover:bg-gray-100"
+              >
+                <X className="h-5 w-5" />
+              </button>
+            </div>
+            {filterContent}
+            <button
+              onClick={() => setMobileOpen(false)}
+              className="mt-6 w-full rounded-lg bg-primary py-3 text-sm font-medium text-white hover:bg-primary/90"
+            >
+              Visa {searchParams.toString() ? 'resultat' : 'produkter'}
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* Desktop: Sticky sidebar */}
+      <div className="sticky top-24 hidden rounded-xl bg-white p-6 shadow-sm lg:block">
+        <h2 className="mb-6 text-lg font-semibold text-gray-900">Filter</h2>
+        {filterContent}
+      </div>
+    </>
   )
 }
