@@ -1,5 +1,5 @@
 import { Metadata } from 'next'
-import { notFound } from 'next/navigation'
+import { notFound, redirect } from 'next/navigation'
 import Link from 'next/link'
 import { getCategoryBySlug, MAIN_CATEGORIES, getSubCategoriesByParent, SUB_CATEGORIES } from '@/data/categories'
 import { searchProducts, getAvailableColors } from '@/lib/products'
@@ -51,9 +51,11 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
 }
 
 export async function generateStaticParams() {
-  return Object.values(MAIN_CATEGORIES).map((category) => ({
-    category: category.slug,
-  }))
+  return Object.values(MAIN_CATEGORIES)
+    .filter((category) => category.isActive)
+    .map((category) => ({
+      category: category.slug,
+    }))
 }
 
 export default async function CategoryPage({ params, searchParams }: CategoryPageProps) {
@@ -61,6 +63,11 @@ export default async function CategoryPage({ params, searchParams }: CategoryPag
 
   if (!category) {
     notFound()
+  }
+
+  // Redirect inactive categories to home
+  if (category.isActive === false) {
+    redirect('/buketter')
   }
 
   const subCategoryIds = getSubCategoriesByParent(category.id as MainCategory)

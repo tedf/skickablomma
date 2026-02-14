@@ -10,10 +10,7 @@ import {
   ChevronDown,
   Flower2,
   Heart,
-  Gift,
-  Building2,
   Sparkles,
-  Clock,
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
@@ -48,9 +45,8 @@ const navigation = [
     icon: Sparkles,
     children: [
       { name: 'Alla begravningsblommor', href: '/begravning' },
-      { name: 'Kransar', href: '/begravningskransar' },
-      { name: 'Begravningsbuketter', href: '/begravningsbuketter' },
-      { name: 'Kondoleanser', href: '/kondoleanser' },
+      { name: 'Begravningsbuketter', href: '/begravning/begravningsbuketter' },
+      { name: 'Kondoleanser', href: '/begravning/kondoleanser' },
     ],
   },
   {
@@ -63,16 +59,7 @@ const navigation = [
       { name: 'Bordsdekoration', href: '/bordsdekoration-brollop' },
     ],
   },
-  {
-    name: 'Presenter',
-    href: '/presenter',
-    icon: Gift,
-  },
-  {
-    name: 'Företag',
-    href: '/foretag',
-    icon: Building2,
-  },
+  // Note: Presenter and Företag removed - no products in feed yet
 ]
 
 export function Header() {
@@ -85,9 +72,9 @@ export function Header() {
       {/* Top bar */}
       <div className="bg-primary text-white">
         <div className="container mx-auto flex items-center justify-center gap-2 px-4 py-2 text-sm">
-          <Clock className="h-4 w-4" />
+          <Flower2 className="h-4 w-4" />
           <span>
-            Beställ före kl 14:00 för <strong>leverans idag</strong> hos utvalda partners
+            Jämför priser från <strong>Interflora</strong>, <strong>Bloomify</strong> och fler
           </span>
         </div>
       </div>
@@ -158,12 +145,12 @@ export function Header() {
             </Link>
 
             <Link
-              href="/samma-dag-leverans"
+              href="/konstgjorda-blommor"
               className="hidden rounded-full bg-secondary px-4 py-2 text-sm font-medium text-white hover:bg-secondary/90 sm:block"
             >
               <span className="flex items-center gap-1">
-                <Clock className="h-4 w-4" />
-                Samma dag
+                <Sparkles className="h-4 w-4" />
+                Konstgjorda blommor
               </span>
             </Link>
 
@@ -225,12 +212,12 @@ export function Header() {
             {/* Mobile CTA */}
             <div className="mt-4 border-t pt-4">
               <Link
-                href="/samma-dag-leverans"
+                href="/konstgjorda-blommor"
                 className="flex w-full items-center justify-center gap-2 rounded-full bg-secondary py-3 text-base font-medium text-white"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                <Clock className="h-5 w-5" />
-                Leverans samma dag
+                <Sparkles className="h-5 w-5" />
+                Konstgjorda blommor
               </Link>
             </div>
           </div>

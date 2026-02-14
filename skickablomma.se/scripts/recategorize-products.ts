@@ -247,8 +247,8 @@ async function main() {
 
   // Print summary
   console.log('Category changes:')
-  for (const [change, items] of Object.entries(categoryChanges)) {
-    console.log(`  ${change}: ${items.length} products`)
+  for (const [change, count] of Object.entries(categoryChanges)) {
+    console.log(`  ${change}: ${count} products`)
   }
 
   console.log('\nFinal category counts:')

@@ -94,7 +94,7 @@ export const MAIN_CATEGORIES: Record<MainCategory, Category> = {
     metaDescription:
       'Professionella blomsterarrangemang för företag. Kontorsblommor, eventblommor och representationsblommor med faktura.',
     productCount: 0,
-    isActive: true,
+    isActive: false, // No products in feed
     sortOrder: 4,
   },
   presenter: {
@@ -107,7 +107,7 @@ export const MAIN_CATEGORIES: Record<MainCategory, Category> = {
     metaDescription:
       'Kombinera blommor med presenter! Choklad, vin, nallar och andra gåvor som kompletterar din blomsterhälsning.',
     productCount: 0,
-    isActive: true,
+    isActive: false, // No products in feed
     sortOrder: 5,
   },
   'konstgjorda-blommor': {
@@ -133,7 +133,7 @@ export const MAIN_CATEGORIES: Record<MainCategory, Category> = {
     metaDescription:
       'Beställ blommor med leverans samma dag! Skicka blommor idag till någon du bryr dig om. Beställ före kl 13-14.',
     productCount: 0,
-    isActive: true,
+    isActive: false, // No same-day-delivery data in feed
     sortOrder: 7,
     seoContent: {
       intro:
@@ -159,7 +159,7 @@ export const MAIN_CATEGORIES: Record<MainCategory, Category> = {
     metaDescription:
       'Vackra buketter behöver inte vara dyra! Hitta blommor under 300 kr som fortfarande imponerar. Jämför priser från flera butiker.',
     productCount: 0,
-    isActive: true,
+    isActive: false, // Use price filter on buketter instead
     sortOrder: 8,
   },
 }
