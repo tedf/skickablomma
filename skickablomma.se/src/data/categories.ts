@@ -52,21 +52,35 @@ export const MAIN_CATEGORIES: Record<MainCategory, Category> = {
     sortOrder: 2,
     seoContent: {
       intro:
-        'Att välja begravningsblommor är ett sätt att visa sin sista hälsning till någon man bryr sig om. Vi erbjuder ett brett sortiment av begravningskransar, buketter och arrangemang som uttrycker respekt och saknad.',
+        'Att välja begravningsblommor är ett sätt att visa din sista hälsning till någon du bryr dig om. Vi samlar de vackraste begravningskransarna, begravningsbuketter och kondoleansarrangemang från Interflora och andra ledande florister. Alla blommor binds av erfarna florister och kan levereras samma dag direkt till kyrka, kapell eller begravningsplats.',
       faq: [
         {
           id: 'begravning-faq-1',
           question: 'Hur väljer jag rätt begravningsblommor?',
           answer:
-            'Välj blommor som speglar den avlidnas personlighet eller favoritfärger. Vita blommor symboliserar frid, röda visar kärlek och gula uttrycker vänskap.',
+            'Välj blommor som speglar den avlidnas personlighet eller favoritfärger. Vita blommor symboliserar frid och renhet, röda rosor visar djup kärlek, och pastellfärger uttrycker ömhet. En klassisk begravningskrans är alltid ett värdigt val, medan en bukett passar bra som personlig hälsning.',
           sortOrder: 1,
         },
         {
           id: 'begravning-faq-2',
           question: 'Kan blommorna levereras direkt till kyrkan?',
           answer:
-            'Ja, de flesta av våra partners kan leverera direkt till kyrka eller begravningsplats. Ange leveransadressen och tidpunkt vid beställning.',
+            'Ja, samtliga våra partners levererar direkt till kyrka, kapell eller begravningsplats. Ange ceremoniplatsen och önskad leveranstid vid beställning så sköter floristen resten.',
           sortOrder: 2,
+        },
+        {
+          id: 'begravning-faq-3',
+          question: 'Vad kostar en begravningskrans?',
+          answer:
+            'Begravningskransar kostar vanligtvis mellan 1 500 och 3 000 kr beroende på storlek och blomval. Enklare buketter finns från 399 kr. Vi visar alltid totalpris inklusive leverans.',
+          sortOrder: 3,
+        },
+        {
+          id: 'begravning-faq-4',
+          question: 'Kan jag lägga till ett textat band?',
+          answer:
+            'Ja, de flesta arrangemang kan kompletteras med ett textat band där du skriver en personlig hälsning. Detta väljer du i nästa steg efter att du klickat på produkten.',
+          sortOrder: 4,
         },
       ],
     },

@@ -45,6 +45,7 @@ const navigation = [
     icon: Sparkles,
     children: [
       { name: 'Alla begravningsblommor', href: '/begravning' },
+      { name: 'Begravningskransar', href: '/begravning/begravningskransar' },
       { name: 'Begravningsbuketter', href: '/begravning/begravningsbuketter' },
       { name: 'Kondoleanser', href: '/begravning/kondoleanser' },
     ],
