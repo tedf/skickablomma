@@ -5,7 +5,7 @@
  * Laddar produkter från genererad JSON-fil (data/products.json).
  */
 
-import { Product, ProductFilters, SearchResult, MainCategory, Partner } from '@/types'
+import { Product, ProductFilters, SearchResult, MainCategory, Partner, SubCategory } from '@/types'
 import productsJson from '../../data/products.json'
 
 // =============================================================================
@@ -23,6 +23,83 @@ const PRODUCTS: Product[] = (productsJson as any).products.map((p: any) => ({
   },
 }))
 
+
+// =============================================================================
+// UNDERKATEGORI-MATCHNING VIA ATTRIBUT
+// =============================================================================
+
+/**
+ * Kontrollerar om en produkt matchar en underkategori baserat på attribut.
+ * Används för att hantera produkter som inte har explicit subCategory-taggning
+ * men vars attribut (färg, blomtyp, tillfälle) matchar underkategorin.
+ */
+export function matchesSubCategoryByAttributes(product: Product, subCategory: SubCategory): boolean {
+  const colors = product.attributes.colors || []
+  const name = product.name.toLowerCase()
+  const desc = product.description.toLowerCase()
+  const tags = product.tags.map((t) => t.toLowerCase())
+
+  const nameDescTags = name + ' ' + desc + ' ' + tags.join(' ')
+
+  switch (subCategory) {
+    // Färgkategorier
+    case 'roda-blommor':
+      return colors.includes('röd')
+    case 'rosa-blommor':
+      return colors.includes('rosa')
+    case 'vita-blommor':
+      return colors.includes('vit')
+    case 'gula-blommor':
+      return colors.includes('gul')
+    case 'lila-blommor':
+      return colors.includes('lila')
+    case 'orange-blommor':
+      return colors.includes('orange')
+    case 'blandade-farger':
+      return colors.length > 1
+
+    // Blomtyper – matcha på namn/beskrivning
+    case 'rosor':
+      return nameDescTags.includes('ros') || nameDescTags.includes('rose')
+    case 'tulpaner':
+      return nameDescTags.includes('tulpan')
+    case 'liljor':
+      return nameDescTags.includes('lilja') || nameDescTags.includes('liljor')
+    case 'solrosor':
+      return nameDescTags.includes('solros')
+    case 'orkideer':
+      return nameDescTags.includes('orkidé') || nameDescTags.includes('orkide')
+    case 'pioner':
+      return nameDescTags.includes('pion')
+    case 'hortensia':
+      return nameDescTags.includes('hortensia')
+
+    // Tillfällen
+    case 'fodelsedags-blommor':
+      return nameDescTags.includes('födelsedag') || nameDescTags.includes('birthday')
+    case 'tackblommor':
+      return nameDescTags.includes('tack')
+    case 'gratulationer':
+      return nameDescTags.includes('gratulat') || nameDescTags.includes('student') || nameDescTags.includes('examen')
+    case 'karlek-romantik':
+      return nameDescTags.includes('kärlek') || nameDescTags.includes('romantisk') || nameDescTags.includes('valentine')
+    case 'ursakt-blommor':
+      return nameDescTags.includes('ursäkt') || nameDescTags.includes('förlåt')
+
+    // Begravning
+    case 'begravningskransar':
+      return nameDescTags.includes('krans') && (nameDescTags.includes('begravning') || product.mainCategory === 'begravning')
+    case 'begravningsbuketter':
+      return (nameDescTags.includes('bukett') || nameDescTags.includes('liggande')) && product.mainCategory === 'begravning'
+    case 'kondoleanser':
+      return nameDescTags.includes('kondoleans') || nameDescTags.includes('sympati')
+    case 'minnesbuketter':
+      return nameDescTags.includes('minne') && product.mainCategory === 'begravning'
+
+    default:
+      return false
+  }
+}
 
 // =============================================================================
 // PRODUKTFUNKTIONER
@@ -104,10 +181,14 @@ export async function searchProducts(
     results = results.filter((p) => p.mainCategory === filters.mainCategory)
   }
 
-  // Filtrera på underkategorier
+  // Filtrera på underkategorier – använder matchesSubCategoryByAttributes() som fallback
   if (filters.subCategories && filters.subCategories.length > 0) {
     results = results.filter((p) =>
-      filters.subCategories!.some((sub) => p.subCategories.includes(sub as any))
+      filters.subCategories!.some(
+        (sub) =>
+          p.subCategories.includes(sub as any) ||
+          matchesSubCategoryByAttributes(p, sub as SubCategory)
+      )
     )
   }
 

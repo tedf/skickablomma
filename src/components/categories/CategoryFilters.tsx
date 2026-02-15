@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
-import { ChevronDown, ChevronUp } from 'lucide-react'
+import { ChevronDown, ChevronUp, SlidersHorizontal, X } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { Category } from '@/types'
 
@@ -33,10 +33,13 @@ export function CategoryFilters({ category }: CategoryFiltersProps) {
 
   const [priceExpanded, setPriceExpanded] = useState(true)
   const [colorExpanded, setColorExpanded] = useState(true)
+  const [drawerOpen, setDrawerOpen] = useState(false)
 
   const currentPriceMin = searchParams.get('pris_min')
   const currentPriceMax = searchParams.get('pris_max')
   const currentColors = searchParams.get('farg')?.split(',') || []
+
+  const hasActiveFilters = !!(currentPriceMin || currentPriceMax || currentColors.length > 0)
 
   const updateFilters = (key: string, value: string | null) => {
     const params = new URLSearchParams(searchParams.toString())
@@ -86,10 +89,8 @@ export function CategoryFilters({ category }: CategoryFiltersProps) {
     return match?.id || 'all'
   }
 
-  return (
-    <div className="sticky top-24 rounded-xl bg-white p-6 shadow-sm">
-      <h2 className="mb-6 text-lg font-semibold text-gray-900">Filter</h2>
-
+  const filterContent = (
+    <>
       {/* Pris */}
       <div className="border-b pb-4">
         <button
@@ -174,14 +175,87 @@ export function CategoryFilters({ category }: CategoryFiltersProps) {
       </div>
 
       {/* Rensa filter */}
-      {(currentPriceMin || currentPriceMax || currentColors.length > 0) && (
+      {hasActiveFilters && (
         <button
-          onClick={() => router.push(`/${category.slug}`)}
+          onClick={() => {
+            router.push(`/${category.slug}`)
+            setDrawerOpen(false)
+          }}
           className="mt-4 w-full rounded-lg border border-gray-300 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50"
         >
           Rensa filter
         </button>
       )}
-    </div>
+    </>
+  )
+
+  return (
+    <>
+      {/* Desktop: sticky sidebar */}
+      <div className="sticky top-24 hidden rounded-xl bg-white p-6 shadow-sm lg:block">
+        <h2 className="mb-6 text-lg font-semibold text-gray-900">Filter</h2>
+        {filterContent}
+      </div>
+
+      {/* Mobile: filter button */}
+      <div className="lg:hidden">
+        <button
+          onClick={() => setDrawerOpen(true)}
+          className={cn(
+            'flex items-center gap-2 rounded-full border px-4 py-2 text-sm font-medium transition-colors',
+            hasActiveFilters
+              ? 'border-primary bg-primary/10 text-primary'
+              : 'border-gray-300 bg-white text-gray-700 hover:bg-gray-50'
+          )}
+        >
+          <SlidersHorizontal className="h-4 w-4" />
+          Filter
+          {hasActiveFilters && (
+            <span className="flex h-5 w-5 items-center justify-center rounded-full bg-primary text-xs text-white">
+              {(currentPriceMin || currentPriceMax ? 1 : 0) + currentColors.length}
+            </span>
+          )}
+        </button>
+      </div>
+
+      {/* Mobile: slide-up drawer */}
+      {drawerOpen && (
+        <div className="fixed inset-0 z-50 lg:hidden">
+          {/* Backdrop */}
+          <div
+            className="absolute inset-0 bg-black/40"
+            onClick={() => setDrawerOpen(false)}
+          />
+
+          {/* Drawer panel */}
+          <div className="absolute bottom-0 left-0 right-0 max-h-[85vh] overflow-y-auto rounded-t-2xl bg-white px-4 pb-8 pt-4 shadow-xl">
+            {/* Handle */}
+            <div className="mx-auto mb-4 h-1 w-10 rounded-full bg-gray-300" />
+
+            {/* Header */}
+            <div className="mb-6 flex items-center justify-between">
+              <h2 className="text-lg font-semibold text-gray-900">Filter</h2>
+              <button
+                onClick={() => setDrawerOpen(false)}
+                className="flex h-8 w-8 items-center justify-center rounded-full text-gray-500 hover:bg-gray-100"
+                aria-label="Stäng filter"
+              >
+                <X className="h-5 w-5" />
+              </button>
+            </div>
+
+            {filterContent}
+
+            {/* Apply button */}
+            <button
+              onClick={() => setDrawerOpen(false)}
+              className="mt-4 w-full rounded-full bg-primary py-3 text-base font-medium text-white hover:bg-primary/90"
+            >
+              Visa resultat
+            </button>
+          </div>
+        </div>
+      )}
+    </>
   )
 }

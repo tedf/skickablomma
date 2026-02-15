@@ -23223,6 +23223,384 @@
       "feedUpdatedAt": "2026-02-01T16:02:13.591Z",
       "isActive": true,
       "isPromoted": false
+    },
+    {
+      "id": "interflora-beg-krans-karlek",
+      "sku": "beg-krans-karlek",
+      "partnerId": "interflora",
+      "name": "Kärlek, krans",
+      "description": "En vacker begravningskrans som symboliserar kärlek och saknad. Kransens cirkelform representerar evigheten och det oändliga. Arrangerad av erfarna florister med vita och röda blommor.",
+      "shortDescription": "En vacker begravningskrans som symboliserar kärlek och saknad.",
+      "mainCategory": "begravning",
+      "subCategories": [
+        "begravningskransar"
+      ],
+      "tags": [
+        "begravningskransar",
+        "krans",
+        "begravning",
+        "kärlek"
+      ],
+      "price": 2499,
+      "originalPrice": 2499,
+      "currency": "SEK",
+      "shipping": 0,
+      "inStock": true,
+      "sameDayDelivery": false,
+      "attributes": {
+        "colors": [
+          "vit",
+          "röd"
+        ],
+        "primaryColor": "vit",
+        "size": "stor",
+        "suitableFor": [
+          "begravning"
+        ]
+      },
+      "primaryImage": {
+        "id": "img-interflora-beg-krans-karlek",
+        "url": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/begravning-krans.jpg",
+        "localPath": "/images/products/interflora-beg-krans-karlek.jpg",
+        "sourceType": "partner",
+        "license": "partner_provided",
+        "dimensions": {
+          "width": 800,
+          "height": 800
+        },
+        "format": "jpg",
+        "fileSize": 65000,
+        "altText": "Kärlek, krans - begravningskrans",
+        "altTextSv": "Kärlek, krans - begravningskrans",
+        "createdAt": "2026-02-15T10:00:00.000Z",
+        "validationStatus": "valid"
+      },
+      "additionalImages": [],
+      "productUrl": "https://www.interflora.se/begravning/kransar/karlek-krans",
+      "trackingUrl": "https://go.adt246.net/t/t?a=767510657&as=1771789045&t=2&tk=1&url=https%3A%2F%2Fwww.interflora.se%2Fbegravning%2Fkransar%2Fkarlek-krans",
+      "brand": "Interflora",
+      "popularityScore": 75,
+      "clickCount": 0,
+      "createdAt": "2026-02-15T10:00:00.000Z",
+      "updatedAt": "2026-02-15T10:00:00.000Z",
+      "feedUpdatedAt": "2026-02-15T10:00:00.000Z",
+      "isActive": true,
+      "isPromoted": false
+    },
+    {
+      "id": "interflora-beg-krans-saknad",
+      "sku": "beg-krans-saknad",
+      "partnerId": "interflora",
+      "name": "Saknad, krans",
+      "description": "En värdig begravningskrans som uttrycker saknad och respekt. Kransens tidlösa form skapar en stämningsfull hyllning med vita och lila blommor arrangerade av skickliga florister.",
+      "shortDescription": "En värdig begravningskrans som uttrycker saknad och respekt.",
+      "mainCategory": "begravning",
+      "subCategories": [
+        "begravningskransar"
+      ],
+      "tags": [
+        "begravningskransar",
+        "krans",
+        "begravning",
+        "saknad"
+      ],
+      "price": 1899,
+      "originalPrice": 1899,
+      "currency": "SEK",
+      "shipping": 0,
+      "inStock": true,
+      "sameDayDelivery": false,
+      "attributes": {
+        "colors": [
+          "vit",
+          "lila"
+        ],
+        "primaryColor": "vit",
+        "size": "stor",
+        "suitableFor": [
+          "begravning"
+        ]
+      },
+      "primaryImage": {
+        "id": "img-interflora-beg-krans-saknad",
+        "url": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/begravning-saknad-krans.jpg",
+        "localPath": "/images/products/interflora-beg-krans-saknad.jpg",
+        "sourceType": "partner",
+        "license": "partner_provided",
+        "dimensions": {
+          "width": 800,
+          "height": 800
+        },
+        "format": "jpg",
+        "fileSize": 60000,
+        "altText": "Saknad, krans - begravningskrans",
+        "altTextSv": "Saknad, krans - begravningskrans",
+        "createdAt": "2026-02-15T10:00:00.000Z",
+        "validationStatus": "valid"
+      },
+      "additionalImages": [],
+      "productUrl": "https://www.interflora.se/begravning/kransar/saknad-krans",
+      "trackingUrl": "https://go.adt246.net/t/t?a=767510657&as=1771789045&t=2&tk=1&url=https%3A%2F%2Fwww.interflora.se%2Fbegravning%2Fkransar%2Fsaknad-krans",
+      "brand": "Interflora",
+      "popularityScore": 72,
+      "clickCount": 0,
+      "createdAt": "2026-02-15T10:00:00.000Z",
+      "updatedAt": "2026-02-15T10:00:00.000Z",
+      "feedUpdatedAt": "2026-02-15T10:00:00.000Z",
+      "isActive": true,
+      "isPromoted": false
+    },
+    {
+      "id": "interflora-beg-krans-frid",
+      "sku": "beg-krans-frid",
+      "partnerId": "interflora",
+      "name": "Frid, krans",
+      "description": "En stillsam begravningskrans som förmedlar frid och ro. Arrangerad i mjuka, lugnande toner med vita blommor och grönt som symboliserar fridens budskap.",
+      "shortDescription": "En stillsam begravningskrans som förmedlar frid och ro.",
+      "mainCategory": "begravning",
+      "subCategories": [
+        "begravningskransar"
+      ],
+      "tags": [
+        "begravningskransar",
+        "krans",
+        "begravning",
+        "frid"
+      ],
+      "price": 1799,
+      "originalPrice": 1799,
+      "currency": "SEK",
+      "shipping": 0,
+      "inStock": true,
+      "sameDayDelivery": false,
+      "attributes": {
+        "colors": [
+          "vit"
+        ],
+        "primaryColor": "vit",
+        "size": "mellan",
+        "suitableFor": [
+          "begravning"
+        ]
+      },
+      "primaryImage": {
+        "id": "img-interflora-beg-krans-frid",
+        "url": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/begravning-frid-krans.jpg",
+        "localPath": "/images/products/interflora-beg-krans-frid.jpg",
+        "sourceType": "partner",
+        "license": "partner_provided",
+        "dimensions": {
+          "width": 800,
+          "height": 800
+        },
+        "format": "jpg",
+        "fileSize": 58000,
+        "altText": "Frid, krans - begravningskrans",
+        "altTextSv": "Frid, krans - begravningskrans",
+        "createdAt": "2026-02-15T10:00:00.000Z",
+        "validationStatus": "valid"
+      },
+      "additionalImages": [],
+      "productUrl": "https://www.interflora.se/begravning/kransar/frid-krans",
+      "trackingUrl": "https://go.adt246.net/t/t?a=767510657&as=1771789045&t=2&tk=1&url=https%3A%2F%2Fwww.interflora.se%2Fbegravning%2Fkransar%2Ffrid-krans",
+      "brand": "Interflora",
+      "popularityScore": 70,
+      "clickCount": 0,
+      "createdAt": "2026-02-15T10:00:00.000Z",
+      "updatedAt": "2026-02-15T10:00:00.000Z",
+      "feedUpdatedAt": "2026-02-15T10:00:00.000Z",
+      "isActive": true,
+      "isPromoted": false
+    },
+    {
+      "id": "interflora-beg-krans-floristens",
+      "sku": "beg-krans-floristens",
+      "partnerId": "interflora",
+      "name": "Floristens begravningskrans",
+      "description": "En handkomponerad begravningskrans skapad av våra skickliga florister. Varje krans är unik och arrangeras med säsongens vackraste blommor i diskreta, värdiga färger.",
+      "shortDescription": "En handkomponerad begravningskrans skapad av våra skickliga florister.",
+      "mainCategory": "begravning",
+      "subCategories": [
+        "begravningskransar"
+      ],
+      "tags": [
+        "begravningskransar",
+        "krans",
+        "begravning",
+        "floristens val"
+      ],
+      "price": 1599,
+      "originalPrice": 1599,
+      "currency": "SEK",
+      "shipping": 0,
+      "inStock": true,
+      "sameDayDelivery": false,
+      "attributes": {
+        "colors": [
+          "vit",
+          "rosa"
+        ],
+        "primaryColor": "vit",
+        "size": "mellan",
+        "suitableFor": [
+          "begravning"
+        ]
+      },
+      "primaryImage": {
+        "id": "img-interflora-beg-krans-floristens",
+        "url": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/begravning-floristens-krans.jpg",
+        "localPath": "/images/products/interflora-beg-krans-floristens.jpg",
+        "sourceType": "partner",
+        "license": "partner_provided",
+        "dimensions": {
+          "width": 800,
+          "height": 800
+        },
+        "format": "jpg",
+        "fileSize": 55000,
+        "altText": "Floristens begravningskrans",
+        "altTextSv": "Floristens begravningskrans",
+        "createdAt": "2026-02-15T10:00:00.000Z",
+        "validationStatus": "valid"
+      },
+      "additionalImages": [],
+      "productUrl": "https://www.interflora.se/begravning/kransar/floristens-begravningskrans",
+      "trackingUrl": "https://go.adt246.net/t/t?a=767510657&as=1771789045&t=2&tk=1&url=https%3A%2F%2Fwww.interflora.se%2Fbegravning%2Fkransar%2Ffloristens-begravningskrans",
+      "brand": "Interflora",
+      "popularityScore": 68,
+      "clickCount": 0,
+      "createdAt": "2026-02-15T10:00:00.000Z",
+      "updatedAt": "2026-02-15T10:00:00.000Z",
+      "feedUpdatedAt": "2026-02-15T10:00:00.000Z",
+      "isActive": true,
+      "isPromoted": false
+    },
+    {
+      "id": "interflora-beg-bukett-farval",
+      "sku": "beg-bukett-farval",
+      "partnerId": "interflora",
+      "name": "Farväl, liggande bukett",
+      "description": "En elegant liggande begravningsbukett som sänds med som ett sista farväl. Buketten arrangeras med vita och diskret färgade blommor i ett vackert avlångt arrangemang som placeras på kistan.",
+      "shortDescription": "En elegant liggande begravningsbukett som sänds med som ett sista farväl.",
+      "mainCategory": "begravning",
+      "subCategories": [
+        "begravningsbuketter"
+      ],
+      "tags": [
+        "begravningsbuketter",
+        "bukett",
+        "begravning",
+        "farväl",
+        "liggande bukett"
+      ],
+      "price": 1299,
+      "originalPrice": 1299,
+      "currency": "SEK",
+      "shipping": 0,
+      "inStock": true,
+      "sameDayDelivery": false,
+      "attributes": {
+        "colors": [
+          "vit"
+        ],
+        "primaryColor": "vit",
+        "size": "stor",
+        "suitableFor": [
+          "begravning"
+        ]
+      },
+      "primaryImage": {
+        "id": "img-interflora-beg-bukett-farval",
+        "url": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/begravning-farval-bukett.jpg",
+        "localPath": "/images/products/interflora-beg-bukett-farval.jpg",
+        "sourceType": "partner",
+        "license": "partner_provided",
+        "dimensions": {
+          "width": 800,
+          "height": 800
+        },
+        "format": "jpg",
+        "fileSize": 52000,
+        "altText": "Farväl, liggande bukett - begravning",
+        "altTextSv": "Farväl, liggande bukett - begravning",
+        "createdAt": "2026-02-15T10:00:00.000Z",
+        "validationStatus": "valid"
+      },
+      "additionalImages": [],
+      "productUrl": "https://www.interflora.se/begravning/buketter/farval-liggande-bukett",
+      "trackingUrl": "https://go.adt246.net/t/t?a=767510657&as=1771789045&t=2&tk=1&url=https%3A%2F%2Fwww.interflora.se%2Fbegravning%2Fbuketter%2Ffarval-liggande-bukett",
+      "brand": "Interflora",
+      "popularityScore": 65,
+      "clickCount": 0,
+      "createdAt": "2026-02-15T10:00:00.000Z",
+      "updatedAt": "2026-02-15T10:00:00.000Z",
+      "feedUpdatedAt": "2026-02-15T10:00:00.000Z",
+      "isActive": true,
+      "isPromoted": false
+    },
+    {
+      "id": "interflora-beg-dek-minne",
+      "sku": "beg-dek-minne",
+      "partnerId": "interflora",
+      "name": "Minne, dekoration",
+      "description": "En vacker minnesdekoration för att hedra och minnas någon som gått bort. Dekorationen är arrangerad med omsorgsfullt utvalda blommor och passar till gravplatsen eller minnesceremonin.",
+      "shortDescription": "En vacker minnesdekoration för att hedra och minnas någon som gått bort.",
+      "mainCategory": "begravning",
+      "subCategories": [
+        "minnesbuketter"
+      ],
+      "tags": [
+        "minnesbuketter",
+        "dekoration",
+        "begravning",
+        "minne",
+        "kondoleans"
+      ],
+      "price": 999,
+      "originalPrice": 999,
+      "currency": "SEK",
+      "shipping": 0,
+      "inStock": true,
+      "sameDayDelivery": false,
+      "attributes": {
+        "colors": [
+          "vit",
+          "lila"
+        ],
+        "primaryColor": "vit",
+        "size": "liten",
+        "suitableFor": [
+          "begravning"
+        ]
+      },
+      "primaryImage": {
+        "id": "img-interflora-beg-dek-minne",
+        "url": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/begravning-minne-dekoration.jpg",
+        "localPath": "/images/products/interflora-beg-dek-minne.jpg",
+        "sourceType": "partner",
+        "license": "partner_provided",
+        "dimensions": {
+          "width": 800,
+          "height": 800
+        },
+        "format": "jpg",
+        "fileSize": 48000,
+        "altText": "Minne, dekoration - begravning",
+        "altTextSv": "Minne, dekoration - begravning",
+        "createdAt": "2026-02-15T10:00:00.000Z",
+        "validationStatus": "valid"
+      },
+      "additionalImages": [],
+      "productUrl": "https://www.interflora.se/begravning/dekorationer/minne-dekoration",
+      "trackingUrl": "https://go.adt246.net/t/t?a=767510657&as=1771789045&t=2&tk=1&url=https%3A%2F%2Fwww.interflora.se%2Fbegravning%2Fdekorationer%2Fminne-dekoration",
+      "brand": "Interflora",
+      "popularityScore": 62,
+      "clickCount": 0,
+      "createdAt": "2026-02-15T10:00:00.000Z",
+      "updatedAt": "2026-02-15T10:00:00.000Z",
+      "feedUpdatedAt": "2026-02-15T10:00:00.000Z",
+      "isActive": true,
+      "isPromoted": false
     }
   ]
 }
