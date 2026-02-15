@@ -42,7 +42,7 @@ export function ProductCard({
   const [isHovered, setIsHovered] = useState(false)
   const [imageError, setImageError] = useState(false)
 
-  const partner = PARTNERS[product.partnerId]
+  const partner = PARTNERS[product.partnerId] ?? Object.values(PARTNERS)[0]
   const hasDiscount = product.discountPercent && product.discountPercent > 0
 
   const handleClick = () => {

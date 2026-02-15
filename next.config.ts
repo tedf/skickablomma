@@ -28,6 +28,10 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'cdn.skickablomma.se',
       },
+      {
+        protocol: 'https',
+        hostname: 'unfvnlzo1alycrmp.public.blob.vercel-storage.com',
+      },
     ],
     formats: ['image/avif', 'image/webp'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920],

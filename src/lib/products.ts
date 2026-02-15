@@ -90,6 +90,19 @@ export async function getProductById(id: string): Promise<Product | null> {
 }
 
 /**
+ * Hämtar produkter per underkategori
+ */
+export async function getProductsBySubCategory(
+  subCategory: string,
+  limit: number = 20
+): Promise<Product[]> {
+  return PRODUCTS
+    .filter((p) => p.isActive && p.subCategories.includes(subCategory as any))
+    .sort((a, b) => b.popularityScore - a.popularityScore)
+    .slice(0, limit)
+}
+
+/**
  * Söker produkter
  */
 export async function searchProducts(

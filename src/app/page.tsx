@@ -109,7 +109,7 @@ export default async function HomePage() {
                 <Clock className="h-4 w-4" />
                 Leverans idag
               </Link>
-              <Link href="/buketter/rosor" className="filter-chip">
+              <Link href="/rosor" className="filter-chip">
                 <Heart className="h-4 w-4" />
                 Rosor
               </Link>

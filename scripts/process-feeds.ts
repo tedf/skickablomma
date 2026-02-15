@@ -13,6 +13,7 @@
  */
 
 import { XMLParser } from 'fast-xml-parser'
+import { put } from '@vercel/blob'
 import * as fs from 'fs'
 import * as path from 'path'
 import * as https from 'https'
@@ -117,6 +118,8 @@ const OUTPUT_FILE = path.join(DATA_DIR, 'products.json')
 const MAX_PRODUCTS_PER_PARTNER = 100 // Limit for testing
 const IMAGE_DOWNLOAD_RETRY = 3
 const IMAGE_TIMEOUT = 10000 // 10 seconds
+const BLOB_BASE_URL = 'https://unfvnlzo1alycrmp.public.blob.vercel-storage.com'
+const USE_BLOB_STORAGE = !!process.env.BLOB_READ_WRITE_TOKEN
 
 const PARTNERS: PartnerConfig[] = [
   {
@@ -298,6 +301,27 @@ function downloadImageOnce(url: string, outputPath: string): Promise<void> {
 }
 
 /**
+ * Upload local image to Vercel Blob
+ * Returns blob URL or undefined if upload fails
+ */
+async function uploadImageToBlob(localPath: string, blobKey: string): Promise<string | undefined> {
+  if (!USE_BLOB_STORAGE) return undefined
+  try {
+    const fileBuffer = fs.readFileSync(localPath)
+    const contentType = localPath.endsWith('.png') ? 'image/png' : 'image/jpeg'
+    const blob = await put(blobKey, fileBuffer, {
+      access: 'public',
+      contentType,
+      addRandomSuffix: false,
+    })
+    return blob.url
+  } catch (err) {
+    console.warn(`   ⚠️  Blob upload misslyckades för ${blobKey}: ${err}`)
+    return undefined
+  }
+}
+
+/**
  * Get file extension from URL
  */
 function getImageExtension(url?: string): string {
@@ -398,8 +422,9 @@ async function processPartner(partner: PartnerConfig): Promise<ProcessedProduct[
       ? Math.round(((originalPrice - price) / originalPrice) * 100)
       : undefined
 
-    // Handle image download
+    // Handle image download and Vercel Blob upload
     let localImagePath: string | undefined
+    let imageUrl: string = feedProduct.ImageUrl || '/images/placeholders/flower-placeholder.svg'
     let imageFormat = 'jpg'
     let imageFileSize = 0
 
@@ -407,15 +432,30 @@ async function processPartner(partner: PartnerConfig): Promise<ProcessedProduct[
       const imageExt = getImageExtension(feedProduct.ImageUrl)
       const imageName = `${partner.id}-${sanitizeSku(feedProduct.SKU)}.${imageExt}`
       const imagePath = path.join(IMAGES_DIR, imageName)
+      const blobKey = `products/${imageName}`
       localImagePath = `/images/products/${imageName}`
       imageFormat = imageExt
 
-      // Check if image already exists
+      // Expected blob URL (if already uploaded)
+      const expectedBlobUrl = `${BLOB_BASE_URL}/${blobKey}`
+
+      // Check if image already exists locally
       if (fs.existsSync(imagePath)) {
-        console.log(`   ⏭️  Image already exists, skipping download`)
+        console.log(`   ⏭️  Image already exists locally, skipping download`)
         skippedImages++
         const stats = fs.statSync(imagePath)
         imageFileSize = stats.size
+
+        // Upload to blob if token is available
+        if (USE_BLOB_STORAGE) {
+          const blobUrl = await uploadImageToBlob(imagePath, blobKey)
+          if (blobUrl) {
+            imageUrl = blobUrl
+            console.log(`   ☁️  Uploaded to Vercel Blob`)
+          } else {
+            imageUrl = expectedBlobUrl // Use expected URL even if upload fails (may already exist)
+          }
+        }
       } else {
         console.log(`   ⬇️  Downloading image...`)
         const success = await downloadImage(feedProduct.ImageUrl, imagePath)
@@ -424,10 +464,24 @@ async function processPartner(partner: PartnerConfig): Promise<ProcessedProduct[
           downloadedImages++
           const stats = fs.statSync(imagePath)
           imageFileSize = stats.size
+
+          // Upload to blob if token is available
+          if (USE_BLOB_STORAGE) {
+            const blobUrl = await uploadImageToBlob(imagePath, blobKey)
+            if (blobUrl) {
+              imageUrl = blobUrl
+              console.log(`   ☁️  Uploaded to Vercel Blob`)
+            } else {
+              imageUrl = feedProduct.ImageUrl // Fall back to partner URL
+            }
+          } else {
+            imageUrl = feedProduct.ImageUrl // Use partner URL if no blob token
+          }
         } else {
-          console.log(`   ⚠️  Image download failed, using URL only`)
+          console.log(`   ⚠️  Image download failed, using partner URL`)
           failedImages++
           localImagePath = undefined
+          imageUrl = feedProduct.ImageUrl
         }
       }
     } else {
@@ -464,7 +518,7 @@ async function processPartner(partner: PartnerConfig): Promise<ProcessedProduct[
       },
       primaryImage: {
         id: `img-${partner.id}-${feedProduct.SKU}`,
-        url: feedProduct.ImageUrl || '/images/placeholder.jpg',
+        url: imageUrl,
         localPath: localImagePath,
         sourceType: 'partner',
         license: 'partner_provided',

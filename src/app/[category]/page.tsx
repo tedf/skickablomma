@@ -1,7 +1,8 @@
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import { getCategoryBySlug, MAIN_CATEGORIES, getSubCategoriesByParent } from '@/data/categories'
-import { getProductsByCategory } from '@/lib/products'
+import { getCategoryBySlug, MAIN_CATEGORIES, SUB_CATEGORIES, getSubCategoriesByParent } from '@/data/categories'
+import { getProductsByCategory, getProductsBySubCategory } from '@/lib/products'
+import { MainCategory } from '@/types'
 import { ProductCard } from '@/components/products/ProductCard'
 import { CategoryFilters } from '@/components/categories/CategoryFilters'
 import { FAQSection } from '@/components/content/FAQSection'
@@ -59,8 +60,11 @@ export default async function CategoryPage({ params, searchParams }: CategoryPag
     notFound()
   }
 
-  const products = await getProductsByCategory(category.id as any, 24)
-  const subCategories = getSubCategoriesByParent(category.id as any)
+  const isMainCategory = category.id in MAIN_CATEGORIES
+  const products = isMainCategory
+    ? await getProductsByCategory(category.id as MainCategory, 24)
+    : await getProductsBySubCategory(category.id, 24)
+  const subCategories = isMainCategory ? getSubCategoriesByParent(category.id as MainCategory) : []
 
   // Filtrera produkter baserat på searchParams
   let filteredProducts = [...products]
@@ -124,10 +128,10 @@ export default async function CategoryPage({ params, searchParams }: CategoryPag
                 {subCategories.slice(0, 8).map((subCat) => (
                   <a
                     key={subCat}
-                    href={`/${subCat}`}
+                    href={`/${SUB_CATEGORIES[subCat]?.slug || subCat}`}
                     className="filter-chip"
                   >
-                    {subCat.replace(/-/g, ' ')}
+                    {SUB_CATEGORIES[subCat]?.namePlural || subCat.replace(/-/g, ' ')}
                   </a>
                 ))}
               </div>

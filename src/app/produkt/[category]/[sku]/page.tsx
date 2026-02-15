@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import Image from 'next/image'
 import { getProductBySku, getRelatedProducts } from '@/lib/products'
+import { ProductImage } from '@/components/products/ProductImage'
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs'
 import { ProductCard } from '@/components/products/ProductCard'
 import { getCategoryBySlug } from '@/data/categories'
@@ -69,11 +69,9 @@ export default async function ProductPage({ params }: ProductPageProps) {
           {/* Image */}
           <div className="relative aspect-square overflow-hidden rounded-xl bg-white shadow-sm">
             {product.primaryImage ? (
-              <Image
+              <ProductImage
                 src={product.primaryImage.url}
                 alt={product.primaryImage.altTextSv || product.name}
-                fill
-                className="object-cover"
                 priority
               />
             ) : (
