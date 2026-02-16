@@ -35,10 +35,10 @@ const footerLinks = {
 }
 
 const partners = [
-  { name: 'Interflora', logo: '/images/partners/interflora-logo.svg' },
-  { name: 'Cramers', logo: '/images/partners/cramers-logo.svg' },
-  { name: 'Fakeflowers', logo: '/images/partners/fakeflowers-logo.svg' },
-  { name: 'My Perfect Day', logo: '/images/partners/myperfectday-logo.svg' },
+  { name: 'Interflora' },
+  { name: 'Cramers' },
+  { name: 'Fakeflowers' },
+  { name: 'My Perfect Day' },
 ]
 
 export function Footer() {
@@ -50,19 +50,14 @@ export function Footer() {
           <p className="mb-4 text-center text-sm text-gray-500">
             Vi jämför priser från Sveriges ledande blomsterbutiker
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-8">
+          <div className="flex flex-wrap items-center justify-center gap-6">
             {partners.map((partner) => (
-              <div
+              <span
                 key={partner.name}
-                className="flex h-8 items-center opacity-60 grayscale transition-all hover:opacity-100 hover:grayscale-0"
+                className="rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-semibold text-gray-500 transition-colors hover:border-primary hover:text-primary"
               >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={partner.logo}
-                  alt={partner.name}
-                  className="h-full w-auto object-contain"
-                />
-              </div>
+                {partner.name}
+              </span>
             ))}
           </div>
         </div>

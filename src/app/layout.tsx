@@ -54,21 +54,12 @@ export const metadata: Metadata = {
     title: 'Skicka Blomma - Jämför priser på blommor i Sverige',
     description:
       'Hitta de bästa blomsterbuden. Jämför priser, läs recensioner och beställ blommor med leverans samma dag.',
-    images: [
-      {
-        url: '/images/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Skicka Blomma - Jämför blommor i Sverige',
-      },
-    ],
   },
   twitter: {
-    card: 'summary_large_image',
+    card: 'summary',
     title: 'Skicka Blomma - Jämför priser på blommor i Sverige',
     description:
       'Hitta de bästa blomsterbuden. Jämför priser och beställ blommor med leverans samma dag.',
-    images: ['/images/og-image.jpg'],
   },
   robots: {
     index: true,
@@ -97,10 +88,6 @@ export default function RootLayout({
   return (
     <html lang="sv" className={`${inter.variable} ${playfair.variable}`}>
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#ec4899" />
       </head>
       <body className="min-h-screen bg-background font-sans antialiased">
