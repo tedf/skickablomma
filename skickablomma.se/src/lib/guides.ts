@@ -54,42 +54,92 @@ export function getGuideBySlug(slug: string): Guide | null {
 }
 
 /**
- * Konverterar Markdown till enkel HTML
- * (Enkel implementation - kan bytas mot remark/rehype senare)
+ * Konverterar Markdown till HTML.
+ * Hanterar: rubriker, paragrafer, listor, fetstil, kursiv, länkar, horisontella linjer.
  */
 export function markdownToHtml(markdown: string): string {
-  let html = markdown
+  function inlineFormat(text: string): string {
+    // Fetstil + kursiv
+    text = text.replace(/\*\*\*(.+?)\*\*\*/g, '<strong><em>$1</em></strong>')
+    // Fetstil
+    text = text.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    // Kursiv
+    text = text.replace(/\*(.+?)\*/g, '<em>$1</em>')
+    // Länk
+    text = text.replace(/\[(.+?)\]\((.+?)\)/g, '<a href="$2">$1</a>')
+    // Kod (inline)
+    text = text.replace(/`(.+?)`/g, '<code>$1</code>')
+    return text
+  }
 
-  // Headers
-  html = html.replace(/^### (.+)$/gm, '<h3>$1</h3>')
-  html = html.replace(/^## (.+)$/gm, '<h2>$1</h2>')
-  html = html.replace(/^# (.+)$/gm, '<h1>$1</h1>')
+  const lines = markdown.split('\n')
+  const output: string[] = []
+  let inList = false
+  let i = 0
 
-  // Bold
-  html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+  while (i < lines.length) {
+    const line = lines[i]
 
-  // Lists
-  html = html.replace(/^- (.+)$/gm, '<li>$1</li>')
-  html = html.replace(/(<li>.*<\/li>\n?)+/g, '<ul>$&</ul>')
+    // Horisontell linje
+    if (/^---+$/.test(line.trim())) {
+      if (inList) { output.push('</ul>'); inList = false }
+      output.push('<hr />')
+      i++
+      continue
+    }
 
-  // Links
-  html = html.replace(/\[(.+?)\]\((.+?)\)/g, '<a href="$2">$1</a>')
+    // Rubriker
+    const h3 = line.match(/^### (.+)$/)
+    if (h3) {
+      if (inList) { output.push('</ul>'); inList = false }
+      output.push(`<h3>${inlineFormat(h3[1])}</h3>`)
+      i++
+      continue
+    }
+    const h2 = line.match(/^## (.+)$/)
+    if (h2) {
+      if (inList) { output.push('</ul>'); inList = false }
+      output.push(`<h2>${inlineFormat(h2[1])}</h2>`)
+      i++
+      continue
+    }
+    const h1 = line.match(/^# (.+)$/)
+    if (h1) {
+      if (inList) { output.push('</ul>'); inList = false }
+      output.push(`<h1>${inlineFormat(h1[1])}</h1>`)
+      i++
+      continue
+    }
 
-  // Paragraphs (enkel version)
-  html = html.split('\n\n').map(para => {
-    if (para.match(/^<[h|u|o|t]/)) return para
-    if (para.trim() === '') return ''
-    if (para.match(/^\|/)) return para // Tables
-    if (para.startsWith('---')) return '<hr />'
-    return `<p>${para}</p>`
-  }).join('\n')
+    // Listrad
+    const li = line.match(/^[-*] (.+)$/)
+    if (li) {
+      if (!inList) { output.push('<ul>'); inList = true }
+      output.push(`<li>${inlineFormat(li[1])}</li>`)
+      i++
+      continue
+    }
 
-  // Tables (basic support)
-  html = html.replace(/\|(.+)\|/g, (match) => {
-    const cells = match.split('|').filter(c => c.trim())
-    return '<tr>' + cells.map(c => `<td>${c.trim()}</td>`).join('') + '</tr>'
-  })
-  html = html.replace(/(<tr>.*<\/tr>\n?)+/g, '<table class="guide-table">$&</table>')
+    // Tom rad – avsluta lista
+    if (line.trim() === '') {
+      if (inList) { output.push('</ul>'); inList = false }
+      i++
+      continue
+    }
 
-  return html
+    // Paragraf – samla ihop konsekutiva icke-tomma, icke-spec rader
+    if (inList) { output.push('</ul>'); inList = false }
+    const paraLines: string[] = []
+    while (i < lines.length && lines[i].trim() !== '' && !lines[i].match(/^#{1,3} /) && !lines[i].match(/^[-*] /) && !lines[i].match(/^---+$/)) {
+      paraLines.push(lines[i])
+      i++
+    }
+    if (paraLines.length > 0) {
+      output.push(`<p>${inlineFormat(paraLines.join(' '))}</p>`)
+    }
+  }
+
+  if (inList) output.push('</ul>')
+
+  return output.join('\n')
 }
