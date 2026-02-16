@@ -6,6 +6,7 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs'
 import { ProductCard } from '@/components/products/ProductCard'
 import { getCategoryBySlug } from '@/data/categories'
 import { PARTNERS } from '@/data/partners'
+import { generateProductContent } from '@/lib/product-content'
 
 interface ProductPageProps {
   params: {
@@ -55,6 +56,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
   const partner = PARTNERS[product.partnerId as keyof typeof PARTNERS]
   const partnerName = partner?.displayName || product.brand
   const relatedProducts = await getRelatedProducts(product, 4)
+  const contentSections = generateProductContent(product, partnerName || '')
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -210,6 +212,31 @@ export default async function ProductPage({ params }: ProductPageProps) {
             </div>
           </div>
         </div>
+
+        {/* SEO Content Sections */}
+        {contentSections.length > 0 && (
+          <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {contentSections.map((section, i) => (
+              <div key={i} className="rounded-xl bg-white p-6 shadow-sm">
+                <h2 className="mb-3 font-display text-lg font-semibold text-gray-900">
+                  {section.heading}
+                </h2>
+                {section.type === 'paragraph' ? (
+                  <p className="text-sm leading-relaxed text-gray-600">{section.body as string}</p>
+                ) : (
+                  <ul className="space-y-1">
+                    {(section.body as string[]).map((item, j) => (
+                      <li key={j} className="flex items-start gap-2 text-sm text-gray-600">
+                        <span className="mt-1 text-primary">✓</span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
 
         {/* Related Products */}
         {relatedProducts.length > 0 && (
