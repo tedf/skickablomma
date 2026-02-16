@@ -29,14 +29,13 @@ const navigation = [
   },
   {
     name: 'Tillfällen',
-    href: '/tillfallen',
+    href: '/fodelsedags-blommor',
     icon: Heart,
     children: [
       { name: 'Födelsedag', href: '/fodelsedags-blommor' },
       { name: 'Tack', href: '/tackblommor' },
       { name: 'Kärlek & Romantik', href: '/karlek-romantik' },
       { name: 'Gratulationer', href: '/gratulationer' },
-      { name: 'Ursäkt', href: '/ursakt-blommor' },
     ],
   },
   {
@@ -70,15 +69,6 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80">
-      {/* Top bar */}
-      <div className="bg-primary text-white">
-        <div className="container mx-auto flex items-center justify-center gap-2 px-4 py-2 text-sm">
-          <Flower2 className="h-4 w-4" />
-          <span>
-            Jämför priser från <strong>Interflora</strong>, <strong>Bloomify</strong> och fler
-          </span>
-        </div>
-      </div>
 
       {/* Main header */}
       <div className="container mx-auto px-4">

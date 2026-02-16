@@ -800,9 +800,10 @@ function matchesSubCategoryByAttributes(product: Product, subCategory: string): 
 
   // Tillfälle-matchning
   const occasionMappings: Record<string, string[]> = {
-    'fodelsedags-blommor': ['födelsedag', 'birthday'],
-    'tackblommor': ['tack', 'thank'],
+    'fodelsedags-blommor': ['födelsedag', 'birthday', 'grattis'],
+    'tackblommor': ['tackbukett', 'tack för'],
     'karlek-romantik': ['kärlek', 'romantik', 'romantic', 'love'],
+    'gratulationer': ['gratulat', 'grattis'],
     'mors-dag': ['mors dag', "mother's day", 'mamma'],
   }
 

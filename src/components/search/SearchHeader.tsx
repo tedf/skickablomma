@@ -61,7 +61,7 @@ export function SearchHeader({ initialQuery }: SearchHeaderProps) {
         {/* Populära sökningar */}
         <div className="mt-4 flex flex-wrap justify-center gap-2">
           <span className="text-sm text-gray-500">Populärt:</span>
-          {['rosor', 'tulpaner', 'begravning', 'mors dag', 'under 300 kr'].map((term) => (
+          {['rosor', 'tulpaner', 'begravning', 'liljor', 'vita blommor'].map((term) => (
             <button
               key={term}
               onClick={() => {

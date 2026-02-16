@@ -72,9 +72,15 @@ export default async function CategoryPage({ params, searchParams }: CategoryPag
 
   const subCategoryIds = getSubCategoriesByParent(category.id as MainCategory)
 
+  // Detect if this is a main category or subcategory
+  const isMainCategory = category.id in MAIN_CATEGORIES
+
   // Bygg filter från searchParams
   const filters = {
-    mainCategory: category.id as MainCategory,
+    ...(isMainCategory
+      ? { mainCategory: category.id as MainCategory }
+      : { subCategories: [params.category] as any }
+    ),
     priceMin: searchParams.pris_min ? parseInt(searchParams.pris_min) : undefined,
     priceMax: searchParams.pris_max ? parseInt(searchParams.pris_max) : undefined,
     colors: searchParams.farg ? searchParams.farg.split(',') : undefined,
@@ -89,7 +95,7 @@ export default async function CategoryPage({ params, searchParams }: CategoryPag
   const searchResult = await searchProducts(filters, page, 24)
 
   // Hämta tillgängliga färger för filter
-  const availableColors = await getAvailableColors(category.id as MainCategory)
+  const availableColors = await getAvailableColors(isMainCategory ? category.id as MainCategory : undefined)
 
   return (
     <>

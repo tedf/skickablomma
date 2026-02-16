@@ -82,14 +82,11 @@ export function ProductCard({
           )}
         </div>
 
-        {/* Partner logo */}
+        {/* Partner badge */}
         <div className="absolute right-3 top-3 z-10">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={partner.logoUrl}
-            alt={partner.displayName}
-            className="h-5 w-auto rounded bg-white/90 px-2 py-1"
-          />
+          <span className="rounded bg-white/90 px-2 py-1 text-xs font-semibold text-gray-600">
+            {partner.displayName}
+          </span>
         </div>
 
         {/* Bildkälla-indikator (endast i dev) */}

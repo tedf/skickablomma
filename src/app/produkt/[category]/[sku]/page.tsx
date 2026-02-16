@@ -5,6 +5,7 @@ import { getProductBySku, getRelatedProducts } from '@/lib/products'
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs'
 import { ProductCard } from '@/components/products/ProductCard'
 import { getCategoryBySlug } from '@/data/categories'
+import { PARTNERS } from '@/data/partners'
 
 interface ProductPageProps {
   params: {
@@ -46,6 +47,8 @@ export default async function ProductPage({ params }: ProductPageProps) {
   }
 
   const category = getCategoryBySlug(params.category)
+  const partner = PARTNERS[product.partnerId as keyof typeof PARTNERS]
+  const partnerName = partner?.displayName || product.brand
   const relatedProducts = await getRelatedProducts(product, 4)
 
   return (
@@ -70,7 +73,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
           <div className="relative aspect-square overflow-hidden rounded-xl bg-white shadow-sm">
             {product.primaryImage ? (
               <Image
-                src={product.primaryImage.localPath || product.primaryImage.url}
+                src={product.primaryImage.url}
                 alt={product.primaryImage.altTextSv || product.name}
                 fill
                 className="object-cover"
@@ -193,10 +196,10 @@ export default async function ProductPage({ params }: ProductPageProps) {
                 rel="noopener noreferrer sponsored"
                 className="cta-button block w-full text-center"
               >
-                Köp hos {product.brand}
+                Köp hos {partnerName}
               </a>
               <p className="mt-3 text-center text-xs text-gray-500">
-                Du kommer till vår partner {product.brand}
+                Du kommer till vår partner {partnerName}
               </p>
             </div>
           </div>
