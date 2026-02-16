@@ -13,9 +13,11 @@ import { getProductsByFlowerType, getSameDayProducts } from '@/lib/products'
 import { getAllGuides } from '@/lib/guides'
 
 export const metadata: Metadata = {
-  title: 'Skicka Blomma - Jämför priser på blommor och buketter i Sverige',
+  title: {
+    absolute: 'Skicka Blomma – Jämför buketter & blommor online i Sverige',
+  },
   description:
-    'Hitta och jämför de bästa blomsterbuden i Sverige. Buketter, begravningsblommor, bröllopsblommor med leverans samma dag. Spara pengar genom att jämföra Interflora, Cramers och fler.',
+    'Jämför blommor och buketter från Interflora, Cramers och fler. Hitta rätt bukett till rätt pris – leverans samma dag möjlig.',
   alternates: {
     canonical: 'https://skickablomma.se',
   },

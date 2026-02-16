@@ -84,11 +84,11 @@ export async function generateMetadata({ params }: GuidePageProps): Promise<Meta
   const guide = getGuideBySlug(params.slug)
 
   if (!guide) {
-    return { title: 'Guide inte hittad | Skicka Blomma' }
+    return { title: 'Guide inte hittad' }
   }
 
   return {
-    title: `${guide.title} | Skicka Blomma`,
+    title: guide.title,
     description: guide.excerpt || guide.title,
     alternates: {
       canonical: `https://skickablomma.se/guide/${params.slug}`,

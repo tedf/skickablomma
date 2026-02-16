@@ -11,7 +11,7 @@ export const MAIN_CATEGORIES: Record<MainCategory, Category> = {
     name: 'Bukett',
     namePlural: 'Buketter',
     description: 'Vackra blomsterbuketter för alla tillfällen',
-    metaTitle: 'Buketter - Skicka vackra blommor | Skicka Blomma',
+    metaTitle: 'Buketter - Skicka vackra blommor',
     metaDescription:
       'Hitta den perfekta buketten för varje tillfälle. Jämför priser från Interflora, Cramers och fler. Leverans samma dag möjlig.',
     productCount: 0,
@@ -44,7 +44,7 @@ export const MAIN_CATEGORIES: Record<MainCategory, Category> = {
     name: 'Begravningsblomma',
     namePlural: 'Begravningsblommor',
     description: 'Värdiga begravningsarrangemang och kransar',
-    metaTitle: 'Begravningsblommor - Kransar & Buketter | Skicka Blomma',
+    metaTitle: 'Begravningsblommor - Kransar & Buketter',
     metaDescription:
       'Begravningsblommor med värdighet. Kransar, begravningsbuketter och kondoleanser. Leverans direkt till kyrka eller begravningsplats.',
     productCount: 0,
@@ -91,7 +91,7 @@ export const MAIN_CATEGORIES: Record<MainCategory, Category> = {
     name: 'Bröllopsblomma',
     namePlural: 'Bröllopsblommor',
     description: 'Brudbuketter och bröllopsdekorationer',
-    metaTitle: 'Bröllopsblommor - Brudbuketter & Dekorationer | Skicka Blomma',
+    metaTitle: 'Bröllopsblommor - Brudbuketter & Dekorationer',
     metaDescription:
       'Skapa det perfekta bröllopet med vackra brudblommor. Brudbuketter, bordsdekoration och kyrkoarrangemang från Sveriges bästa florister.',
     productCount: 0,
@@ -104,7 +104,7 @@ export const MAIN_CATEGORIES: Record<MainCategory, Category> = {
     name: 'Företagsblomma',
     namePlural: 'Företagsblommor',
     description: 'Blommor för kontor, event och representation',
-    metaTitle: 'Företagsblommor - Kontor & Event | Skicka Blomma',
+    metaTitle: 'Företagsblommor - Kontor & Event',
     metaDescription:
       'Professionella blomsterarrangemang för företag. Kontorsblommor, eventblommor och representationsblommor med faktura.',
     productCount: 0,
@@ -117,7 +117,7 @@ export const MAIN_CATEGORIES: Record<MainCategory, Category> = {
     name: 'Present',
     namePlural: 'Presenter',
     description: 'Choklad, vin och andra presentartiklar',
-    metaTitle: 'Presenter - Choklad, Vin & Mer | Skicka Blomma',
+    metaTitle: 'Presenter - Choklad, Vin & Mer',
     metaDescription:
       'Kombinera blommor med presenter! Choklad, vin, nallar och andra gåvor som kompletterar din blomsterhälsning.',
     productCount: 0,
@@ -130,7 +130,7 @@ export const MAIN_CATEGORIES: Record<MainCategory, Category> = {
     name: 'Konstgjord blomma',
     namePlural: 'Konstgjorda blommor',
     description: 'Sidenblommor och konstgjorda arrangemang',
-    metaTitle: 'Konstgjorda Blommor - Sidenblommor | Skicka Blomma',
+    metaTitle: 'Konstgjorda Blommor - Sidenblommor',
     metaDescription:
       'Underhållsfria konstgjorda blommor som ser ut som äkta. Perfekta för allergiker och för att dekorera hemmet året runt.',
     productCount: 0,
@@ -143,7 +143,7 @@ export const MAIN_CATEGORIES: Record<MainCategory, Category> = {
     name: 'Samma dag leverans',
     namePlural: 'Samma dag leverans',
     description: 'Blommor som kan levereras idag',
-    metaTitle: 'Blommor Samma Dag - Expressleverans | Skicka Blomma',
+    metaTitle: 'Blommor Samma Dag - Expressleverans',
     metaDescription:
       'Beställ blommor med leverans samma dag! Skicka blommor idag till någon du bryr dig om. Beställ före kl 13-14.',
     productCount: 0,
@@ -169,7 +169,7 @@ export const MAIN_CATEGORIES: Record<MainCategory, Category> = {
     name: 'Billig blomma',
     namePlural: 'Billiga blommor',
     description: 'Blommor under 300 kr',
-    metaTitle: 'Billiga Blommor Under 300 kr | Skicka Blomma',
+    metaTitle: 'Billiga Blommor Under 300 kr',
     metaDescription:
       'Vackra buketter behöver inte vara dyra! Hitta blommor under 300 kr som fortfarande imponerar. Jämför priser från flera butiker.',
     productCount: 0,
@@ -190,7 +190,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     name: 'Röd blomma',
     namePlural: 'Röda blommor',
     description: 'Buketter med röda blommor - passion och kärlek',
-    metaTitle: 'Röda Blommor - Buketter i Rött | Skicka Blomma',
+    metaTitle: 'Röda Blommor - Buketter i Rött',
     metaDescription:
       'Röda blommor symboliserar passion och kärlek. Perfekta för romantiska tillfällen eller för att visa djup uppskattning.',
     parentCategory: 'buketter',
@@ -201,7 +201,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     name: 'Rosa blomma',
     namePlural: 'Rosa blommor',
     description: 'Buketter med rosa blommor - elegans och ömhet',
-    metaTitle: 'Rosa Blommor - Buketter i Rosa | Skicka Blomma',
+    metaTitle: 'Rosa Blommor - Buketter i Rosa',
     metaDescription:
       'Rosa blommor utstrålar elegans och ömhet. Passa perfekt för födelsedagar, tack eller bara för att glädja någon.',
     parentCategory: 'buketter',
@@ -212,7 +212,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     name: 'Vit blomma',
     namePlural: 'Vita blommor',
     description: 'Buketter med vita blommor - renhet och elegans',
-    metaTitle: 'Vita Blommor - Buketter i Vitt | Skicka Blomma',
+    metaTitle: 'Vita Blommor - Buketter i Vitt',
     metaDescription:
       'Vita blommor symboliserar renhet och elegans. Perfekta för bröllop, sympati eller för att skapa en lugn atmosfär.',
     parentCategory: 'buketter',
@@ -223,7 +223,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     name: 'Gul blomma',
     namePlural: 'Gula blommor',
     description: 'Buketter med gula blommor - glädje och vänskap',
-    metaTitle: 'Gula Blommor - Buketter i Gult | Skicka Blomma',
+    metaTitle: 'Gula Blommor - Buketter i Gult',
     metaDescription:
       'Gula blommor sprider glädje och symboliserar vänskap. Perfekta för att lysa upp någons dag.',
     parentCategory: 'buketter',
@@ -234,7 +234,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     name: 'Lila blomma',
     namePlural: 'Lila blommor',
     description: 'Buketter med lila blommor - mystik och lyx',
-    metaTitle: 'Lila Blommor - Buketter i Lila | Skicka Blomma',
+    metaTitle: 'Lila Blommor - Buketter i Lila',
     metaDescription:
       'Lila blommor utstrålar mystik och lyx. Perfekta för speciella tillfällen och för att imponera.',
     parentCategory: 'buketter',
@@ -245,7 +245,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     name: 'Orange blomma',
     namePlural: 'Orange blommor',
     description: 'Buketter med orange blommor - energi och entusiasm',
-    metaTitle: 'Orange Blommor - Buketter i Orange | Skicka Blomma',
+    metaTitle: 'Orange Blommor - Buketter i Orange',
     metaDescription:
       'Orange blommor symboliserar energi och entusiasm. Perfekta för att sprida gott humör.',
     parentCategory: 'buketter',
@@ -256,7 +256,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     name: 'Blandad bukett',
     namePlural: 'Blandade buketter',
     description: 'Färgglada buketter med blandade färger',
-    metaTitle: 'Blandade Buketter - Färgglada Blommor | Skicka Blomma',
+    metaTitle: 'Blandade Buketter - Färgglada Blommor',
     metaDescription:
       'Färgglada buketter med en mix av blommor i olika nyanser. Perfekta för alla tillfällen.',
     parentCategory: 'buketter',
@@ -269,7 +269,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     name: 'Ros',
     namePlural: 'Rosor',
     description: 'Klassiska rosbuketter i alla färger',
-    metaTitle: 'Rosor - Klassiska Rosbuketter | Skicka Blomma',
+    metaTitle: 'Rosor - Klassiska Rosbuketter',
     metaDescription:
       'Rosor är den klassiska blomman för kärlek. Röda rosor för passion, rosa för ömhet, vita för renhet.',
     parentCategory: 'buketter',
@@ -280,7 +280,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     name: 'Tulpan',
     namePlural: 'Tulpaner',
     description: 'Fräscha tulpaner för vårkänsla året runt',
-    metaTitle: 'Tulpaner - Våriga Buketter | Skicka Blomma',
+    metaTitle: 'Tulpaner - Våriga Buketter',
     metaDescription:
       'Tulpaner sprider vårkänsla och glädje. Perfekta för att fira våren eller bara lysa upp vardagen.',
     parentCategory: 'buketter',
@@ -291,7 +291,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     name: 'Lilja',
     namePlural: 'Liljor',
     description: 'Eleganta liljor med fantastisk doft',
-    metaTitle: 'Liljor - Eleganta Buketter | Skicka Blomma',
+    metaTitle: 'Liljor - Eleganta Buketter',
     metaDescription:
       'Liljor är kända för sin elegans och underbara doft. Perfekta för speciella tillfällen.',
     parentCategory: 'buketter',
@@ -302,7 +302,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     name: 'Solros',
     namePlural: 'Solrosor',
     description: 'Glada solrosor som sprider solsken',
-    metaTitle: 'Solrosor - Glada Buketter | Skicka Blomma',
+    metaTitle: 'Solrosor - Glada Buketter',
     metaDescription:
       'Solrosor sprider glädje och värme. Perfekta för att lysa upp någons dag med solsken.',
     parentCategory: 'buketter',
@@ -313,7 +313,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     name: 'Orkidé',
     namePlural: 'Orkidéer',
     description: 'Exotiska orkidéer som krukväxt eller snittblomma',
-    metaTitle: 'Orkidéer - Exotiska Blommor | Skicka Blomma',
+    metaTitle: 'Orkidéer - Exotiska Blommor',
     metaDescription:
       'Orkidéer är exotiska och eleganta. Perfekta som present eller för att dekorera hemmet.',
     parentCategory: 'buketter',
@@ -324,7 +324,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     name: 'Pion',
     namePlural: 'Pioner',
     description: 'Romantiska pioner - sommarens favorit',
-    metaTitle: 'Pioner - Romantiska Buketter | Skicka Blomma',
+    metaTitle: 'Pioner - Romantiska Buketter',
     metaDescription:
       'Pioner är sommarens mest romantiska blomma. Perfekta för bröllop och speciella tillfällen.',
     parentCategory: 'buketter',
@@ -335,7 +335,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     name: 'Hortensia',
     namePlural: 'Hortensior',
     description: 'Fyllda hortensior i vackra färger',
-    metaTitle: 'Hortensior - Fyllda Buketter | Skicka Blomma',
+    metaTitle: 'Hortensior - Fyllda Buketter',
     metaDescription:
       'Hortensior ger volym och elegans till varje bukett. Perfekta för stora arrangemang.',
     parentCategory: 'buketter',
@@ -348,7 +348,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     name: 'Födelsedagsblomma',
     namePlural: 'Födelsedagsblommor',
     description: 'Buketter perfekta för födelsedagar',
-    metaTitle: 'Födelsedagsblommor - Fira med Blommor | Skicka Blomma',
+    metaTitle: 'Födelsedagsblommor - Fira med Blommor',
     metaDescription:
       'Överraska med blommor på födelsedagen! Färgglada och festliga buketter som gör dagen extra speciell.',
     parentCategory: 'buketter',
@@ -359,7 +359,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     name: 'Tackblomma',
     namePlural: 'Tackblommor',
     description: 'Blommor för att säga tack',
-    metaTitle: 'Tackblommor - Säg Tack med Blommor | Skicka Blomma',
+    metaTitle: 'Tackblommor - Säg Tack med Blommor',
     metaDescription:
       'Visa din uppskattning med en vacker tackhälsning. Blommor som säger mer än tusen ord.',
     parentCategory: 'buketter',
@@ -370,7 +370,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     name: 'Gratulationsblomma',
     namePlural: 'Gratulationsblommor',
     description: 'Blommor för att gratulera',
-    metaTitle: 'Gratulationsblommor | Skicka Blomma',
+    metaTitle: 'Gratulationsblommor',
     metaDescription:
       'Gratulera med stil! Blommor för examen, nytt jobb, ny bostad eller andra framgångar.',
     parentCategory: 'buketter',
@@ -381,7 +381,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     name: 'Kärleksblomma',
     namePlural: 'Kärleksblommor',
     description: 'Romantiska blommor för din älskade',
-    metaTitle: 'Kärleksblommor - Romantiska Buketter | Skicka Blomma',
+    metaTitle: 'Kärleksblommor - Romantiska Buketter',
     metaDescription:
       'Visa din kärlek med romantiska blommor. Röda rosor, hjärtformade buketter och mer.',
     parentCategory: 'buketter',
@@ -392,7 +392,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     name: 'Ursäktsblomma',
     namePlural: 'Ursäktsblommor',
     description: 'Blommor för att be om ursäkt',
-    metaTitle: 'Ursäktsblommor - Be om Förlåtelse | Skicka Blomma',
+    metaTitle: 'Ursäktsblommor - Be om Förlåtelse',
     metaDescription:
       'Ibland behövs en extra gest. Blommor kan hjälpa dig att be om ursäkt på ett fint sätt.',
     parentCategory: 'buketter',
@@ -403,7 +403,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     name: 'Kramblomma',
     namePlural: 'Kramblommor',
     description: 'Skicka en blommig kram',
-    metaTitle: 'Kramblommor - Skicka en Kram | Skicka Blomma',
+    metaTitle: 'Kramblommor - Skicka en Kram',
     metaDescription:
       'Kan du inte vara där personligen? Skicka en blommig kram istället!',
     parentCategory: 'buketter',
@@ -416,7 +416,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     name: 'Vårblomma',
     namePlural: 'Vårblommor',
     description: 'Fräscha vårblommor som tulpaner och påskliljor',
-    metaTitle: 'Vårblommor - Fräscha Buketter | Skicka Blomma',
+    metaTitle: 'Vårblommor - Fräscha Buketter',
     metaDescription:
       'Fira våren med fräscha vårblommor! Tulpaner, påskliljor och andra vårfavoriter.',
     parentCategory: 'buketter',
@@ -427,7 +427,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     name: 'Sommarblomma',
     namePlural: 'Sommarblommor',
     description: 'Färgglada sommarblommor fulla av liv',
-    metaTitle: 'Sommarblommor - Färgglada Buketter | Skicka Blomma',
+    metaTitle: 'Sommarblommor - Färgglada Buketter',
     metaDescription:
       'Njut av sommarens alla färger! Solrosor, dahlior och andra sommarfavoriter.',
     parentCategory: 'buketter',
@@ -438,7 +438,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     name: 'Höstblomma',
     namePlural: 'Höstblommor',
     description: 'Höstens varma färger i bukett',
-    metaTitle: 'Höstblommor - Varma Färger | Skicka Blomma',
+    metaTitle: 'Höstblommor - Varma Färger',
     metaDescription:
       'Höstens varma färger i vackra buketter. Orange, röda och gula toner som värmer.',
     parentCategory: 'buketter',
@@ -449,7 +449,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     name: 'Julblomma',
     namePlural: 'Julblommor',
     description: 'Julstämning med blommor',
-    metaTitle: 'Julblommor - Festliga Arrangemang | Skicka Blomma',
+    metaTitle: 'Julblommor - Festliga Arrangemang',
     metaDescription:
       'Skapa julstämning med vackra julblommor! Julstjärnor, amaryllis och festliga arrangemang.',
     parentCategory: 'buketter',
@@ -462,7 +462,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     name: 'Mors dag-blomma',
     namePlural: 'Mors dag-blommor',
     description: 'Fira mamma med blommor på mors dag',
-    metaTitle: 'Mors Dag Blommor 2025 | Skicka Blomma',
+    metaTitle: 'Mors Dag Blommor 2025',
     metaDescription:
       'Överraska mamma med vackra blommor på mors dag! Beställ i tid för garanterad leverans.',
     parentCategory: 'buketter',
@@ -473,7 +473,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     name: 'Fars dag-blomma',
     namePlural: 'Fars dag-blommor',
     description: 'Fira pappa med blommor på fars dag',
-    metaTitle: 'Fars Dag Blommor 2025 | Skicka Blomma',
+    metaTitle: 'Fars Dag Blommor 2025',
     metaDescription:
       'Överraska pappa med blommor på fars dag! Klassiska och stilfulla buketter.',
     parentCategory: 'buketter',
@@ -484,7 +484,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     name: 'Alla hjärtans dag-blomma',
     namePlural: 'Alla hjärtans dag-blommor',
     description: 'Romantiska blommor för alla hjärtans dag',
-    metaTitle: 'Alla Hjärtans Dag Blommor 2025 | Skicka Blomma',
+    metaTitle: 'Alla Hjärtans Dag Blommor 2025',
     metaDescription:
       'Fira kärleken med romantiska blommor! Röda rosor och hjärtformade buketter för alla hjärtans dag.',
     parentCategory: 'buketter',
@@ -495,7 +495,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     name: 'Påskblomma',
     namePlural: 'Påskblommor',
     description: 'Våriga påskblommor',
-    metaTitle: 'Påskblommor 2025 | Skicka Blomma',
+    metaTitle: 'Påskblommor 2025',
     metaDescription:
       'Fira påsk med fräscha vårblommor! Påskliljor, tulpaner och andra våriga favoriter.',
     parentCategory: 'buketter',
@@ -506,7 +506,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     name: 'Studentblomma',
     namePlural: 'Studentblommor',
     description: 'Gratulera studenten med blommor',
-    metaTitle: 'Studentblommor 2025 | Skicka Blomma',
+    metaTitle: 'Studentblommor 2025',
     metaDescription:
       'Gratulera studenten med vackra blommor! Festliga buketter för den stora dagen.',
     parentCategory: 'buketter',
@@ -517,7 +517,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     name: 'Midsommarblomma',
     namePlural: 'Midsommarblommor',
     description: 'Somriga midsommarblommor',
-    metaTitle: 'Midsommarblommor 2025 | Skicka Blomma',
+    metaTitle: 'Midsommarblommor 2025',
     metaDescription:
       'Fira midsommar med svenska sommarblommor! Traditionella och moderna buketter.',
     parentCategory: 'buketter',
@@ -530,7 +530,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     name: 'Bukett under 300 kr',
     namePlural: 'Buketter under 300 kr',
     description: 'Fina buketter för liten budget',
-    metaTitle: 'Blommor Under 300 kr | Skicka Blomma',
+    metaTitle: 'Blommor Under 300 kr',
     metaDescription:
       'Vackra buketter behöver inte vara dyra. Hitta blommor under 300 kr inklusive leverans.',
     parentCategory: 'budget',
@@ -541,7 +541,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     name: 'Bukett under 500 kr',
     namePlural: 'Buketter under 500 kr',
     description: 'Buketter för 300-500 kr',
-    metaTitle: 'Blommor Under 500 kr | Skicka Blomma',
+    metaTitle: 'Blommor Under 500 kr',
     metaDescription:
       'Stort urval av buketter för 300-500 kr. Bra pris utan att kompromissa med kvaliteten.',
     parentCategory: 'budget',
@@ -552,7 +552,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     name: 'Bukett under 700 kr',
     namePlural: 'Buketter under 700 kr',
     description: 'Buketter för 500-700 kr',
-    metaTitle: 'Blommor Under 700 kr | Skicka Blomma',
+    metaTitle: 'Blommor Under 700 kr',
     metaDescription:
       'Imponerande buketter för 500-700 kr. Perfekta för speciella tillfällen.',
     parentCategory: 'budget',
@@ -563,7 +563,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     name: 'Premium-bukett',
     namePlural: 'Premium-buketter',
     description: 'Lyxiga buketter för speciella tillfällen',
-    metaTitle: 'Premium Buketter - Lyxiga Blommor | Skicka Blomma',
+    metaTitle: 'Premium Buketter - Lyxiga Blommor',
     metaDescription:
       'Lyxiga premium-buketter som imponerar. Utvalda blommor och exklusiva arrangemang.',
     parentCategory: 'buketter',
@@ -576,7 +576,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     name: 'Begravningskrans',
     namePlural: 'Begravningskransar',
     description: 'Värdiga kransar för begravning',
-    metaTitle: 'Begravningskransar | Skicka Blomma',
+    metaTitle: 'Begravningskransar',
     metaDescription:
       'Traditionella begravningskransar som visar respekt och saknad. Leverans till kyrka eller kapell.',
     parentCategory: 'begravning',
@@ -587,7 +587,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     name: 'Begravningsbukett',
     namePlural: 'Begravningsbuketter',
     description: 'Avskedsbuketter för begravning',
-    metaTitle: 'Begravningsbuketter | Skicka Blomma',
+    metaTitle: 'Begravningsbuketter',
     metaDescription:
       'Värdiga begravningsbuketter som sista hälsning. Eleganta arrangemang med respekt.',
     parentCategory: 'begravning',
@@ -598,7 +598,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     name: 'Kondoleans',
     namePlural: 'Kondoleanser',
     description: 'Kondoleanser och sympatiblommor',
-    metaTitle: 'Kondoleanser - Sympatiblommor | Skicka Blomma',
+    metaTitle: 'Kondoleanser - Sympatiblommor',
     metaDescription:
       'Visa medkänsla med sympatiblommor. Diskreta och värdiga arrangemang för svåra stunder.',
     parentCategory: 'begravning',
@@ -609,7 +609,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     name: 'Minnesbukett',
     namePlural: 'Minnesbuketter',
     description: 'Blommor för att minnas',
-    metaTitle: 'Minnesbuketter | Skicka Blomma',
+    metaTitle: 'Minnesbuketter',
     metaDescription:
       'Vackra minnesbuketter för att hedra någons minne. Till gravplats eller minnesceremoni.',
     parentCategory: 'begravning',
@@ -622,7 +622,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     name: 'Brudbukett',
     namePlural: 'Brudbuketter',
     description: 'Klassiska och moderna brudbuketter',
-    metaTitle: 'Brudbuketter 2025 | Skicka Blomma',
+    metaTitle: 'Brudbuketter 2025',
     metaDescription:
       'Hitta den perfekta brudbuketten! Klassiska, romantiska och moderna brudbuketter för ditt bröllop.',
     parentCategory: 'brollop',
@@ -633,7 +633,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     name: 'Bröllopsbukett',
     namePlural: 'Bröllopsbuketter',
     description: 'Buketter för bröllop och fest',
-    metaTitle: 'Bröllopsbuketter | Skicka Blomma',
+    metaTitle: 'Bröllopsbuketter',
     metaDescription:
       'Buketter för hela bröllopet! Till brudtärnor, mödrar och som dekoration.',
     parentCategory: 'brollop',
@@ -644,7 +644,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     name: 'Bordsdekoration',
     namePlural: 'Bordsdekorationer',
     description: 'Bordsarrangemang för bröllopsfest',
-    metaTitle: 'Bordsdekoration Bröllop | Skicka Blomma',
+    metaTitle: 'Bordsdekoration Bröllop',
     metaDescription:
       'Vackra bordsarrangemang för bröllopsfesten. Skapa rätt stämning med blommor.',
     parentCategory: 'brollop',
@@ -655,7 +655,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     name: 'Kyrkodekoration',
     namePlural: 'Kyrkodekorationer',
     description: 'Blomsterdekoration för kyrkan',
-    metaTitle: 'Kyrkodekoration Bröllop | Skicka Blomma',
+    metaTitle: 'Kyrkodekoration Bröllop',
     metaDescription:
       'Dekorera kyrkan med vackra blommor! Altararrangemang och dekoration för vigseln.',
     parentCategory: 'brollop',
@@ -668,7 +668,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     name: 'Kontorsblomma',
     namePlural: 'Kontorsblommor',
     description: 'Blommor och växter för kontoret',
-    metaTitle: 'Kontorsblommor | Skicka Blomma',
+    metaTitle: 'Kontorsblommor',
     metaDescription:
       'Lyft arbetsmiljön med vackra kontorsblommor! Växter och buketter för kontoret.',
     parentCategory: 'foretag',
@@ -679,7 +679,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     name: 'Representationsblomma',
     namePlural: 'Representationsblommor',
     description: 'Blommor för representation och möten',
-    metaTitle: 'Representationsblommor | Skicka Blomma',
+    metaTitle: 'Representationsblommor',
     metaDescription:
       'Professionella blommor för representation. Imponera på kunder och samarbetspartners.',
     parentCategory: 'foretag',
@@ -690,7 +690,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     name: 'Eventblomma',
     namePlural: 'Eventblommor',
     description: 'Blommor för event och tillställningar',
-    metaTitle: 'Eventblommor | Skicka Blomma',
+    metaTitle: 'Eventblommor',
     metaDescription:
       'Blomsterarrangemang för event och tillställningar. Stora och små beställningar.',
     parentCategory: 'foretag',

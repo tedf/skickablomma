@@ -58,7 +58,7 @@ export async function generateMetadata({ params }: SubCategoryPageProps): Promis
 
   if (!parentCategory || !subCategoryId) {
     return {
-      title: 'Kategori inte hittad | Skicka Blomma',
+      title: 'Kategori inte hittad',
     }
   }
 

@@ -23,7 +23,7 @@ export async function generateMetadata({ searchParams }: SearchPageProps): Promi
 
   if (query) {
     return {
-      title: `Sökresultat för "${query}" | Skicka Blomma`,
+      title: `Sökresultat för "${query}"`,
       description: `Hitta blommor som matchar "${query}". Jämför priser från flera butiker och hitta den perfekta buketten.`,
       robots: {
         index: false, // Indexera inte söksidor
@@ -32,7 +32,7 @@ export async function generateMetadata({ searchParams }: SearchPageProps): Promi
   }
 
   return {
-    title: 'Sök blommor | Skicka Blomma',
+    title: 'Sök blommor',
     description: 'Sök bland hundratals buketter och blommor. Filtrera på pris, färg, tillfälle och mer.',
     robots: {
       index: false,

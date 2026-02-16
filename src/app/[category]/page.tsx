@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
 
   if (!category) {
     return {
-      title: 'Kategori inte hittad | Skicka Blomma',
+      title: 'Kategori inte hittad',
     }
   }
 

@@ -723,19 +723,22 @@ function calculateFacets(products: Product[], currentFilters: ProductFilters) {
 }
 
 /**
- * Hämtar relaterade produkter
+ * Hämtar relaterade produkter – kräver samma huvudkategori
  */
 export async function getRelatedProducts(
   product: Product,
   limit: number = 4
 ): Promise<Product[]> {
+  const sharedSubCats = product.subCategories
+
   return PRODUCTS
     .filter(
       (p) =>
         p.isActive &&
         p.id !== product.id &&
-        (p.mainCategory === product.mainCategory ||
-          p.subCategories.some((sub) => product.subCategories.includes(sub)))
+        p.mainCategory === product.mainCategory &&
+        p.brand !== 'Sam van Schooten' &&
+        (sharedSubCats.length === 0 || p.subCategories.some((sub) => sharedSubCats.includes(sub)))
     )
     .sort((a, b) => b.popularityScore - a.popularityScore)
     .slice(0, limit)

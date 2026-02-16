@@ -19,19 +19,24 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
 
   if (!product) {
     return {
-      title: 'Produkt inte hittad | Skicka Blomma',
+      title: 'Produkt inte hittad',
     }
   }
 
+  const partner = await import('@/data/partners').then(m => m.PARTNERS[product.partnerId as keyof typeof m.PARTNERS])
+  const partnerDisplayName = partner?.displayName || product.brand
+  const totalPrice = product.price + (product.shipping || 0)
+  const desc = `${product.description.slice(0, 140)} – Köp hos ${partnerDisplayName} från ${product.price} kr (${totalPrice} kr inkl. frakt).`
+
   return {
-    title: `${product.name} | Skicka Blomma`,
-    description: product.shortDescription,
+    title: product.name,
+    description: desc,
     alternates: {
       canonical: `https://skickablomma.se/produkt/${params.category}/${params.sku}`,
     },
     openGraph: {
-      title: product.name,
-      description: product.shortDescription,
+      title: `${product.name} – ${product.price} kr`,
+      description: desc,
       url: `https://skickablomma.se/produkt/${params.category}/${params.sku}`,
       type: 'website',
       images: product.primaryImage ? [product.primaryImage.url] : [],
@@ -101,7 +106,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
           {/* Info */}
           <div className="space-y-6">
             <div>
-              <p className="text-sm text-gray-500 mb-2">{product.brand}</p>
+              <p className="text-sm text-gray-500 mb-2">{partnerName}</p>
               <h1 className="font-display text-3xl font-bold text-gray-900 md:text-4xl">
                 {product.name}
               </h1>
@@ -124,11 +129,12 @@ export default async function ProductPage({ params }: ProductPageProps) {
               )}
             </div>
 
-            {product.shipping > 0 && (
-              <p className="text-sm text-gray-600">
-                + {product.shipping} kr frakt
-              </p>
-            )}
+            <p className="text-sm text-gray-500">
+              {product.shipping === 0
+                ? 'Fri frakt'
+                : `+ ${product.shipping} kr frakt`}
+              {' '}· Totalt: <span className="font-semibold text-gray-700">{product.price + (product.shipping || 0)} kr</span>
+            </p>
 
             <div className="prose prose-gray max-w-none">
               {product.description.split('\n').filter(p => p.trim()).map((paragraph, i) => (

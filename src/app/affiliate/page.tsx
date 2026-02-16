@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Affiliate-information | Skicka Blomma',
+  title: 'Affiliate-information – Så tjänar vi pengar',
   description: 'Information om hur vi använder affiliate-länkar och hur vi tjänar pengar.',
 }
 

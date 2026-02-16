@@ -5,7 +5,7 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs'
 import { BookOpen } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Guider om blommor och leverans | Skicka Blomma',
+  title: 'Guider om blommor – Välj rätt bukett & tillfälle',
   description: 'Läs våra guider om att skicka blommor, välja rätt bukett och förstå blommornas betydelse.',
   alternates: {
     canonical: 'https://skickablomma.se/guider',

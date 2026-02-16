@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: WizardPageProps): Promise<Met
 
   if (!config) {
     return {
-      title: 'Wizard inte hittad | Skicka Blomma',
+      title: 'Wizard inte hittad',
     }
   }
 
