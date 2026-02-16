@@ -7,8 +7,9 @@ import { CategoryCard } from '@/components/categories/CategoryCard'
 import { WizardCTA } from '@/components/wizards/WizardCTA'
 import { TrustBadges } from '@/components/ui/TrustBadges'
 import { FAQSection } from '@/components/content/FAQSection'
+import { FlowerTypeToggle } from '@/components/products/FlowerTypeToggle'
 import { MAIN_CATEGORIES } from '@/data/categories'
-import { getPopularProducts, getSameDayProducts } from '@/lib/products'
+import { getProductsByFlowerType, getSameDayProducts } from '@/lib/products'
 import { getAllGuides } from '@/lib/guides'
 
 export const metadata: Metadata = {
@@ -52,9 +53,13 @@ const organizationSchema = {
 }
 
 export default async function HomePage() {
-  // Hämta produkter (i produktion från databas/API)
-  const popularProducts = await getPopularProducts(8)
-  const sameDayProducts = await getSameDayProducts(4)
+  // Hämta produkter per typ för toggle
+  const [snittblommor, konstgjorda, lokar, sameDayProducts] = await Promise.all([
+    getProductsByFlowerType('snittblommor', 8),
+    getProductsByFlowerType('konstgjorda', 8),
+    getProductsByFlowerType('lokar', 8),
+    getSameDayProducts(4),
+  ])
   const mainCategories = Object.values(MAIN_CATEGORIES).slice(0, 6)
   const guides = getAllGuides()
 
@@ -170,34 +175,12 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* Populära produkter */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <div className="mb-10 flex items-end justify-between">
-            <div>
-              <h2 className="font-display text-3xl font-bold text-gray-900">
-                Populära buketter
-              </h2>
-              <p className="mt-2 text-gray-600">
-                Upptäck våra mest populära val just nu
-              </p>
-            </div>
-            <Link
-              href="/buketter"
-              className="hidden items-center gap-1 text-sm font-medium text-primary hover:underline md:flex"
-            >
-              Visa alla buketter
-              <ChevronRight className="h-4 w-4" />
-            </Link>
-          </div>
-
-          <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
-            {popularProducts.map((product) => (
-              <ProductCard key={product.id} product={product} showDeliveryBadge listType="homepage" />
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Produkttyp-toggle */}
+      <FlowerTypeToggle
+        snittblommor={snittblommor}
+        konstgjorda={konstgjorda}
+        lokar={lokar}
+      />
 
       {/* Samma dag leverans */}
       <section className="bg-secondary/5 py-16">

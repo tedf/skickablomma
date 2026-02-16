@@ -462,6 +462,30 @@ export async function getPopularProducts(limit: number = 8): Promise<Product[]> 
 }
 
 /**
+ * Hämtar produkter per blomtyp (snittblommor, konstgjorda, lökar/frön)
+ */
+export async function getProductsByFlowerType(
+  type: 'snittblommor' | 'konstgjorda' | 'lokar',
+  limit: number = 8
+): Promise<Product[]> {
+  let filtered = PRODUCTS.filter((p) => p.isActive)
+
+  if (type === 'snittblommor') {
+    filtered = filtered.filter(
+      (p) => p.mainCategory === 'buketter' && p.brand !== 'Sam van Schooten'
+    )
+  } else if (type === 'konstgjorda') {
+    filtered = filtered.filter((p) => p.mainCategory === 'konstgjorda-blommor')
+  } else if (type === 'lokar') {
+    filtered = filtered.filter((p) => p.brand === 'Sam van Schooten')
+  }
+
+  return filtered
+    .sort((a, b) => b.popularityScore - a.popularityScore)
+    .slice(0, limit)
+}
+
+/**
  * Hämtar produkter med samma-dag-leverans
  */
 export async function getSameDayProducts(limit: number = 4): Promise<Product[]> {
