@@ -113,6 +113,13 @@ export default async function HomePage() {
                 <Heart className="h-4 w-4" />
                 Rosor
               </Link>
+              <Link href="/buketter/tulpaner" className="filter-chip">
+                Tulpaner
+              </Link>
+              <Link href="/brollop" className="filter-chip">
+                <Gift className="h-4 w-4" />
+                Bröllop
+              </Link>
               <Link href="/billiga-blommor" className="filter-chip">
                 Under 300 kr
               </Link>
@@ -186,7 +193,7 @@ export default async function HomePage() {
 
           <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
             {popularProducts.map((product) => (
-              <ProductCard key={product.id} product={product} />
+              <ProductCard key={product.id} product={product} showDeliveryBadge listType="homepage" />
             ))}
           </div>
         </div>

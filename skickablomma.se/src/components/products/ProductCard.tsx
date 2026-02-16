@@ -74,7 +74,7 @@ export function ProductCard({
               -{product.discountPercent}%
             </span>
           )}
-          {showDeliveryBadge && product.sameDayDelivery && (
+          {product.sameDayDelivery && (
             <span className="product-card-badge product-card-badge-express">
               <Clock className="mr-1 inline h-3 w-3" />
               Idag
@@ -128,41 +128,34 @@ export function ProductCard({
       </Link>
 
       {/* Info */}
-      <div className="p-4">
-        {/* Kategori */}
-        <p className="mb-1 text-xs font-medium uppercase tracking-wide text-gray-500">
-          {product.mainCategory.replace(/-/g, ' ')}
-        </p>
-
+      <div className="flex flex-col gap-3 p-4">
         {/* Namn */}
         <Link href={productUrl} onClick={handleClick}>
-          <h3 className="mb-2 line-clamp-2 text-sm font-semibold text-gray-900 group-hover:text-primary">
+          <h3 className="line-clamp-2 text-sm font-semibold text-gray-900 group-hover:text-primary">
             {product.name}
           </h3>
         </Link>
 
         {/* Pris */}
-        <div className="mb-3 flex items-baseline gap-2">
+        <div>
           {hasDiscount ? (
-            <>
+            <div className="flex items-baseline gap-2">
               <span className="price-discount">{product.price} kr</span>
               <span className="price-original">{product.originalPrice} kr</span>
-            </>
+            </div>
           ) : (
             <span className="price-display">{product.price} kr</span>
           )}
-          {product.shipping > 0 && (
-            <span className="text-xs text-gray-500">+ {product.shipping} kr frakt</span>
-          )}
+          <p className="mt-0.5 text-xs text-gray-500">
+            Totalt: {product.price + product.shipping} kr{product.shipping === 0 ? ' (fri frakt)' : ` inkl. ${product.shipping} kr frakt`}
+          </p>
         </div>
 
         {/* Leveransinfo */}
         {product.sameDayDelivery && (
-          <div className="mb-3 flex items-center gap-1 text-xs text-secondary-700">
-            <Truck className="h-3.5 w-3.5" />
-            <span>
-              Leverans idag (beställ före {partner.deliveryInfo.sameDayCutoff})
-            </span>
+          <div className="flex items-center gap-1 rounded-md bg-secondary/10 px-2 py-1 text-xs font-medium text-secondary-700">
+            <Truck className="h-3.5 w-3.5 flex-shrink-0" />
+            <span>Leverans idag – beställ före {partner.deliveryInfo.sameDayCutoff}</span>
           </div>
         )}
 
@@ -171,11 +164,11 @@ export function ProductCard({
           href={product.trackingUrl}
           target="_blank"
           rel="noopener noreferrer sponsored"
-          className="cta-button w-full text-sm"
+          className="cta-button cta-button-gradient w-full py-3 text-sm font-bold"
           onClick={handleClick}
         >
           Köp hos {partner.displayName}
-          <ExternalLink className="ml-2 h-4 w-4" />
+          <ExternalLink className="ml-2 h-4 w-4 flex-shrink-0" />
         </a>
       </div>
     </article>

@@ -164,6 +164,7 @@ export default async function CategoryPage({ params, searchParams }: CategoryPag
                       product={product}
                       listType="category"
                       position={index}
+                      showDeliveryBadge
                     />
                   ))}
                 </div>

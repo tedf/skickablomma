@@ -6,8 +6,7 @@
  */
 
 import { Product, ProductFilters, SearchResult, MainCategory, Partner } from '@/types'
-import * as fs from 'fs'
-import * as path from 'path'
+import productsData from '../../data/products.json'
 
 // =============================================================================
 // LOAD PRODUCTS FROM JSON
@@ -16,28 +15,20 @@ import * as path from 'path'
 let PRODUCTS: Product[] = []
 
 try {
-  const productsPath = path.join(process.cwd(), 'data', 'products.json')
-  if (fs.existsSync(productsPath)) {
-    const productsData = JSON.parse(fs.readFileSync(productsPath, 'utf-8'))
-    PRODUCTS = productsData.products.map((p: any) => ({
-      ...p,
-      createdAt: new Date(p.createdAt),
-      updatedAt: new Date(p.updatedAt),
-      feedUpdatedAt: new Date(p.feedUpdatedAt),
-      primaryImage: {
-        ...p.primaryImage,
-        createdAt: new Date(p.primaryImage.createdAt),
-      },
-    }))
-    console.log(`Loaded ${PRODUCTS.length} products from JSON`)
-  } else {
-    console.warn('Products file not found, using fallback mock data')
-    // Fallback to minimal mock data
-    PRODUCTS = MOCK_PRODUCTS
-  }
+  PRODUCTS = productsData.products.map((p: any) => ({
+    ...p,
+    createdAt: new Date(p.createdAt),
+    updatedAt: new Date(p.updatedAt),
+    feedUpdatedAt: new Date(p.feedUpdatedAt),
+    primaryImage: {
+      ...p.primaryImage,
+      createdAt: new Date(p.primaryImage.createdAt),
+    },
+  }))
+  console.log(`Loaded ${PRODUCTS.length} products from JSON`)
 } catch (error) {
   console.error('Error loading products:', error)
-  PRODUCTS = MOCK_PRODUCTS
+  PRODUCTS = []
 }
 
 // =============================================================================
@@ -484,11 +475,27 @@ export async function getSameDayProducts(limit: number = 4): Promise<Product[]> 
  * Hämtar produkter per kategori
  */
 export async function getProductsByCategory(
-  category: MainCategory,
+  category: MainCategory | string,
   limit: number = 20
 ): Promise<Product[]> {
-  return PRODUCTS
-    .filter((p) => p.isActive && p.mainCategory === category)
+  let filtered = PRODUCTS.filter((p) => p.isActive)
+
+  if (category === 'budget') {
+    filtered = filtered.filter((p) => (p.price + p.shipping) < 300)
+  } else if (category === 'samma-dag-leverans') {
+    filtered = filtered.filter((p) => p.sameDayDelivery)
+  } else if (category === 'foretag') {
+    filtered = filtered.filter(
+      (p) =>
+        (p.attributes.suitableFor?.includes('foretag') ||
+          p.attributes.suitableFor?.includes('alla')) &&
+        p.mainCategory !== 'begravning'
+    )
+  } else {
+    filtered = filtered.filter((p) => p.mainCategory === category)
+  }
+
+  return filtered
     .sort((a, b) => b.popularityScore - a.popularityScore)
     .slice(0, limit)
 }
