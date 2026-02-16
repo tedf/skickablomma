@@ -1,144 +1,29 @@
-# Studentblommor 2025 - Fira Studenten med Stil
+# Studentblommor – tradition med mening
 
-*Senast uppdaterad: Januari 2025*
+Att bli student är en av de stora höjdpunkterna i unga människors liv. Åren av plugg, tenter och stress mynnar ut i ett ögonblick – springet ut från skolan med mössan på, omgiven av de man älskar. Blommor är sedan länge en naturlig del av den festen. De ges av föräldrar, syskon, mor- och farföräldrar och nära vänner – och det är svårt att tänka sig bilden utan dem.
 
-Studentfirandet är en av årets största högtider i Sverige. Att ge blommor till den nyutexaminerade studenten är en omtyckt tradition. Här är allt du behöver veta om studentblommor 2025.
+## Vilka blommor passar till studenten?
 
-## När är studenten 2025?
+**Röda rosor** är det klassiska valet och förknippas med stolthet och kärlek. Det är en blomma som kommunicerar: jag är stolt över dig och det du åstadkommit.
 
-Gymnasiestudenten infaller vanligtvis i **juni**, med exakta datum som varierar mellan skolor och kommuner.
+**Solrosor** är ett annat populärt val och passar extra bra till studenten. De symboliserar glädje, framtid och livskraft – en tydlig bild av det som väntar. Gula och orangea solrosor ser dessutom fantastiska ut mot en vit studentmössa.
 
-**Vanliga perioder 2025:**
-- **Gymnasiet:** 5-13 juni (varierar)
-- **Högskola/Universitet:** Maj-juni
+**Pioner** blommar i juni precis när studentfirandet är på topp och är en av sommarens mest lyxiga blommor. De utstrålar festlighet och är ett minnesvärt val.
 
-> **Tips:** Kontrollera exakt datum med skolan - det kan variera!
+**Blandade sommarbuquetter** i glada färger – gult, orange, rosa, vitt – fungerar alltid. De matchar stämningen och ser vackra ut på foton.
 
-## Populära studentblommor
+## Hur många blommor ska man ge?
 
-### 1. Röda rosor
-Klassiskt och elegant. Symboliserar kärlek och stolthet.
+Det finns inga regler. Föräldrar brukar ge större buketter, syskon och mor-/farföräldrar lite mindre, och vänner ger ibland en enda ros eller en liten bukett. Det är inte storleken som spelar roll – det är att du visade upp och firade stunden med dem.
 
-**Antal att ge:**
-- 1 ros - Symboliskt och stilrent
-- 3 rosor - "Grattis!"
-- 10+ rosor - Extra festligt
+## Beställ i tid
 
-### 2. Blandade buketter
-Färgglada och glada buketter i sommarfärger är perfekta för den festliga stämningen.
+Studentdagarna är extremt belastade för blomsterhandeln. Alla köper blommor under samma dagar i juni och det kan uppstå brist på de mest populära bukettmodellerna. Beställ gärna tre till fem dagar innan för att säkra rätt bukett och slipper stress dagarna före.
 
-### 3. Solrosor
-Representerar lycka, glädje och framtid - perfekt symbolik för studenten!
+Ska blommorna levereras till skolan eller festlokalen – ange exakt adress, tid och eventuellt ett mobilnummer till mottagaren. Om du inte kan vara med vid utspringet kan en leverans till hemmet med ett personligt kort vara ett lika fint sätt att fira.
 
-### 4. Pioner
-Sommarens blomma som symboliserar framgång och välstånd.
+## Skötsel i sommarvärmen
 
-### 5. Studentrosor (kranskrans)
-Traditionell krans med småblommor att hänga runt halsen.
+En het junidag är hård mot snittblommor. Ställ buketten i vatten så snart som möjligt och håll den i skugga under de varma timmarna. Klipp stjälkarna snett under vatten och byt vatten dagligen – då håller buketten längre och ser fin ut i alla festfotona.
 
-## Budget-guide för studentblommor
-
-| Budget | Vad du får |
-|--------|-----------|
-| Under 200 kr | En enkel ros eller liten bukett |
-| 200-400 kr | Fin bukett med 5-10 blommor |
-| 400-600 kr | Större bukett eller arrangemang |
-| Över 600 kr | Lyxig bukett eller kombination med present |
-
-## Traditioner och etikette
-
-### Blommor vid utspringet
-Många ger blommor direkt när studenten springer ut från skolan. Var beredd på trängsel!
-
-**Tips:**
-- Kom tidigt för bra plats
-- Ha blommorna redo
-- Ta med kamera
-
-### Blommor vid festen
-Skicka blommor till festlokalen eller studentens hem om du inte kan vara med vid utspringet.
-
-### Studentmössa och blommor
-Blommorna kompletterar den vita mössan perfekt. Rött och vitt är klassiska färger.
-
-## Leverans till studenten
-
-### Samma dag-leverans
-De flesta blomsterbutiker erbjuder expressleverans. Beställ före kl 13-14.
-
-### Leverans till skolan
-Vissa butiker kan leverera direkt till skolan - perfekt om du inte kan vara med!
-
-### Leverans till festen
-Ange festlokalens adress och önskad tid.
-
-## Kombinera med presenter
-
-Populära tillägg till studentbuketten:
-
-- **Studentmössa** - Om de inte redan har
-- **Champagne/Cider** - Festligt!
-- **Presentkort** - Låt studenten välja
-- **Pengar** - Alltid uppskattat
-- **Smycke** - Minnesvärt
-- **Studentnalle** - Klassiker
-
-## Studentkort - förslag på text
-
-### Formellt
-- "Grattis till studenten! Vi är så stolta över dig."
-- "Stort grattis till din examen. Framtiden ligger framför dig!"
-
-### Personligt
-- "Äntligen student! Nu börjar äventyret. Grattis!"
-- "Du klarade det! Så otroligt stolt. ❤️"
-- "Hurra för studenten! Nu väntar livet!"
-
-### Roligt
-- "Skolan är slut - nu börjar det riktiga livet!"
-- "Grattis! Nu får du jobba som vi andra 😉"
-
-## Beställa studentblommor
-
-### I god tid
-Studentdagarna är extremt populära. Beställ minst **3-5 dagar i förväg**.
-
-### Sista minuten
-Expressleverans fungerar, men urvalet kan vara begränsat.
-
-### Avhämtning
-Hämta själv i butik för att undvika leveransstress.
-
-## Vanliga frågor
-
-### Hur många blommor ska man ge?
-Det finns ingen regel! Allt från en enkel ros till en stor bukett uppskattas.
-
-### Ska alla ge blommor?
-Ja, det är tradition att familj och nära vänner ger blommor. Även en enkel blomma räknas!
-
-### Kan jag skicka blommor om jag inte kan vara med?
-Absolut! Skicka till hemmet eller festlokalen med ett personligt kort.
-
-### Vilka färger är bäst?
-Röda rosor är klassiskt. Annars passar glada sommarfärger som gult, orange och rosa.
-
-### Hur håller blommorna i värmen?
-- Ge dem snabbt till studenten
-- Ställ i vatten så snart som möjligt
-- Undvik direkt sol
-
-## Trender 2025
-
-- **Torkade blommor** - Hållbara och trendiga
-- **Minimalistiska buketter** - En vacker ros med grönt
-- **Lokala blommor** - Svenskodlade sommarblommor
-- **Hållbara alternativ** - Krukväxter istället för snittblommor
-
-## Sammanfattning
-
-Studentblommor är en älskad tradition. Röda rosor är klassikern, men färgglada sommarblommor passar lika bra. Beställ i god tid (3-5 dagar innan) och glöm inte ett personligt kort!
-
----
-
-*Hitta perfekta studentblommor. [Visa studentblommor →](/student-blommor)*
+[Se studentbuketter och gratulationsblommor →](/fodelsedags-blommor)
