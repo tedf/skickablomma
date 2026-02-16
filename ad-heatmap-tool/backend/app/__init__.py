@@ -1,1 +1,0 @@
-# Ad Heatmap Tool Backend
