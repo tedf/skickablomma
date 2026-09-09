@@ -119,6 +119,12 @@ export const floristSchema = z.object({
   phone: z.string().nullable(),
   url: z.string().url().nullable(),
   hours: z.string().nullable(),
+  /**
+   * Var uppgiften kommer ifrån. En post utan källa är en gissning, och
+   * gissningar får inte publiceras. Fältet finns för att skilja
+   * "hittad i en sökning" från "kontrollerad mot butiken".
+   */
+  source: z.string().nullable().default(null),
   verifiedAt: verifiedAtSchema,
 })
 export type Florist = z.infer<typeof floristSchema>

@@ -9,6 +9,9 @@ import { ComparisonTable, type ComparisonRow } from '@/components/comparison/Com
 import { MicroAnswer } from '@/components/comparison/MicroAnswer'
 import { DraftNotice } from '@/components/comparison/DraftNotice'
 import { FloristList } from '@/components/comparison/FloristList'
+import { ProductEvidence } from '@/components/comparison/ProductEvidence'
+import { getFeedDate, getProductsByCategory } from '@/lib/products'
+import type { MainCategory } from '@/types'
 
 interface CityPageProps {
   params: { city: string }
@@ -31,7 +34,7 @@ export async function generateMetadata({ params }: CityPageProps): Promise<Metad
   }
 }
 
-export default function CityPage({ params }: CityPageProps) {
+export default async function CityPage({ params }: CityPageProps) {
   const city = getCity(params.city)
   if (!city) notFound()
 
@@ -53,6 +56,7 @@ export default function CityPage({ params }: CityPageProps) {
     .filter((row): row is ComparisonRow => row !== null)
 
   const neighbours = getCityNeighbours(city)
+  const products = await getProductsByCategory('buketter' as MainCategory, 24)
 
   // ItemList över floristerna — bara när det finns verifierade poster att lista.
   const floristSchema =
@@ -147,6 +151,13 @@ export default function CityPage({ params }: CityPageProps) {
           )}
         </section>
       )}
+
+      <ProductEvidence
+        products={products}
+        feedDate={getFeedDate()}
+        noun={`buketter att skicka till ${city.name}`}
+        exclude={['begravningsbuketter', 'begravningskransar']}
+      />
 
       {city.page.faq.length > 0 && (
         <FAQSection

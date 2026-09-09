@@ -18,7 +18,8 @@
     "content:generate": "tsx scripts/generate-content.ts",
     "check:content": "tsx scripts/check-publishable.ts",
     "content:sanitize": "tsx scripts/sanitize-products.ts",
-    "prebuild": "npm run check:content"
+    "prebuild": "npm run check:content",
+    "city:status": "tsx scripts/city-status.ts"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.0",

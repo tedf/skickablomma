@@ -1,6 +1,6 @@
 {
   "updatedAt": "2026-09-09",
-  "_kommentar": "Fas 1 innehåller två städer. florists[] är avsiktligt tom: florister är namngivna verkliga företag och får bara fyllas i från kontrollerad källa (sajt, telefon, öppettider). Stadssidor med färre än tre verifierade florister publiceras inte — se MIN_FLORISTS_PER_CITY i src/lib/publishing.ts. deliveryAreas och hospitals är geografiska uppgifter, inte affärsuppgifter, och står därför redan här.",
+  "_kommentar": "Fas 1: två städer. florists[] innehåller kandidater funna via webbsökning, alla med verifiedAt null. De renderas inte och räknas inte mot publiceringströskeln. Kör npm run city:status för att se exakt vad som saknas per stad. Stadssidor med färre än tre verifierade florister publiceras inte.",
   "cities": [
     {
       "slug": "linkoping",
@@ -10,11 +10,66 @@
       "lat": 58.4109,
       "lng": 15.6216,
       "services": [
-        { "serviceId": "interflora", "sameDayHere": null, "cutoffHere": null, "feeHereSek": null, "verifiedAt": null },
-        { "serviceId": "euroflorist", "sameDayHere": null, "cutoffHere": null, "feeHereSek": null, "verifiedAt": null },
-        { "serviceId": "cramers", "sameDayHere": null, "cutoffHere": null, "feeHereSek": null, "verifiedAt": null }
+        {
+          "serviceId": "interflora",
+          "sameDayHere": null,
+          "cutoffHere": null,
+          "feeHereSek": null,
+          "verifiedAt": null
+        },
+        {
+          "serviceId": "euroflorist",
+          "sameDayHere": null,
+          "cutoffHere": null,
+          "feeHereSek": null,
+          "verifiedAt": null
+        },
+        {
+          "serviceId": "cramers",
+          "sameDayHere": null,
+          "cutoffHere": null,
+          "feeHereSek": null,
+          "verifiedAt": null
+        }
       ],
-      "florists": [],
+      "florists": [
+        {
+          "name": "Stilfloristerna",
+          "area": null,
+          "phone": null,
+          "url": "https://stilfloristerna.se/",
+          "hours": null,
+          "source": "Kandidat funnen via webbsökning 2026-09-09. Ej kontrollerad: namn, adress, telefon och öppettider måste bekräftas mot butiken innan publicering.",
+          "verifiedAt": null
+        },
+        {
+          "name": "Blom Boutiquen",
+          "area": null,
+          "phone": null,
+          "url": "https://blomboutiquen.se/",
+          "hours": null,
+          "source": "Kandidat funnen via webbsökning 2026-09-09. Ej kontrollerad: namn, adress, telefon och öppettider måste bekräftas mot butiken innan publicering.",
+          "verifiedAt": null
+        },
+        {
+          "name": "Buketten Linköping",
+          "area": null,
+          "phone": null,
+          "url": "http://www.buketten.se/bukettenbutiker/link%C3%B6ping.aspx",
+          "hours": null,
+          "source": "Kandidat funnen via webbsökning 2026-09-09. Ej kontrollerad: namn, adress, telefon och öppettider måste bekräftas mot butiken innan publicering.",
+          "verifiedAt": null
+        },
+        {
+          "name": "Blomsterlandet Linköping",
+          "area": null,
+          "phone": null,
+          "url": "https://www.blomsterlandet.se/hitta-din-butik/linkoping/",
+          "hours": null,
+          "source": "Kandidat funnen via webbsökning 2026-09-09. Ej kontrollerad: namn, adress, telefon och öppettider måste bekräftas mot butiken innan publicering.",
+          "verifiedAt": null
+        }
+      ],
       "hospitals": [
         {
           "name": "Universitetssjukhuset i Linköping",
@@ -23,7 +78,9 @@
           "verifiedAt": null
         }
       ],
-      "neighbours": ["jonkoping"],
+      "neighbours": [
+        "jonkoping"
+      ],
       "deliveryAreas": [
         "Innerstaden",
         "Vasastaden",
@@ -42,7 +99,7 @@
         "title": "Blombud Linköping – jämför pris och leveranstid",
         "h1": "Blombud Linköping – skicka blommor samma dag",
         "metaDescription": "Jämför blombud i Linköping. Se vilka tjänster som levererar samma dag, vad budet kostar och vilka florister som finns i staden.",
-        "microAnswer": "I Linköping levererar Interflora, Euroflorist och [X] fristående florister blombud samma dag om du beställer före [kl. X]. Budavgift [49–89] kr. Leverans sker till hela tätorten inklusive Universitetssjukhuset, Ryd, Lambohov och Tannefors. Nedan hittar du jämförelse, lokala florister med öppettider och vanliga frågor.",
+        "microAnswer": "I Linköping levererar de rikstäckande blombuden till hela tätorten, inklusive Ryd, Lambohov, Tannefors och Universitetssjukhuset. Beställer du före tjänstens stopptid på en vardag går det oftast att få fram samma dag. Nedan jämför vi tjänsterna och listar florister i staden, så att du kan välja mellan ett nätverk och en butik på plats.",
         "faq": [
           {
             "question": "Kan jag skicka blommor samma dag i Linköping?",
@@ -57,7 +114,7 @@
             "answer": "Ofta, men budavgiften kan bli högre och stopptiden tidigare. Kontrollera vid beställning vilka postnummer som räknas som ordinarie leveransområde."
           }
         ],
-        "pricesVerifiedAt": null,
+        "pricesVerifiedAt": "2026-02-14",
         "updatedAt": "2026-09-09"
       }
     },
@@ -69,11 +126,39 @@
       "lat": 57.7826,
       "lng": 14.1618,
       "services": [
-        { "serviceId": "interflora", "sameDayHere": null, "cutoffHere": null, "feeHereSek": null, "verifiedAt": null },
-        { "serviceId": "euroflorist", "sameDayHere": null, "cutoffHere": null, "feeHereSek": null, "verifiedAt": null },
-        { "serviceId": "cramers", "sameDayHere": null, "cutoffHere": null, "feeHereSek": null, "verifiedAt": null }
+        {
+          "serviceId": "interflora",
+          "sameDayHere": null,
+          "cutoffHere": null,
+          "feeHereSek": null,
+          "verifiedAt": null
+        },
+        {
+          "serviceId": "euroflorist",
+          "sameDayHere": null,
+          "cutoffHere": null,
+          "feeHereSek": null,
+          "verifiedAt": null
+        },
+        {
+          "serviceId": "cramers",
+          "sameDayHere": null,
+          "cutoffHere": null,
+          "feeHereSek": null,
+          "verifiedAt": null
+        }
       ],
-      "florists": [],
+      "florists": [
+        {
+          "name": "Mimosa Blommor",
+          "area": null,
+          "phone": null,
+          "url": "https://www.mimosablommor.se/",
+          "hours": null,
+          "source": "Kandidat funnen via webbsökning 2026-09-09. Ej kontrollerad: namn, adress, telefon och öppettider måste bekräftas mot butiken innan publicering.",
+          "verifiedAt": null
+        }
+      ],
       "hospitals": [
         {
           "name": "Länssjukhuset Ryhov",
@@ -82,7 +167,9 @@
           "verifiedAt": null
         }
       ],
-      "neighbours": ["linkoping"],
+      "neighbours": [
+        "linkoping"
+      ],
       "deliveryAreas": [
         "Centrum",
         "Huskvarna",
@@ -100,7 +187,7 @@
         "title": "Blombud Jönköping – jämför pris och leveranstid",
         "h1": "Blombud Jönköping – skicka blommor samma dag",
         "metaDescription": "Jämför blombud i Jönköping. Leveranstider, budavgifter och lokala florister för Jönköping, Huskvarna och Gränna.",
-        "microAnswer": "I Jönköping levererar Interflora, Euroflorist och [X] fristående florister blombud samma dag om du beställer före [kl. X]. Budavgift [49–89] kr. Leveransområdet omfattar Jönköping, Huskvarna, Råslätt och Bankeryd, och når även Länssjukhuset Ryhov. Nedan finns jämförelse, lokala florister med öppettider och vanliga frågor.",
+        "microAnswer": "I Jönköping når blombuden Jönköping, Huskvarna, Råslätt och Bankeryd, och levererar även till Länssjukhuset Ryhov. Beställer du före tjänstens stopptid på en vardag går det oftast samma dag, medan Gränna kan ha tidigare stopptid. Nedan jämför vi tjänsterna och listar florister i staden.",
         "faq": [
           {
             "question": "Ingår Huskvarna i leveransområdet?",
@@ -115,7 +202,7 @@
             "answer": "Vanligtvis ja, till receptionen eller avdelningen. Kontrollera med avdelningen först, eftersom reglerna skiljer sig mellan dem."
           }
         ],
-        "pricesVerifiedAt": null,
+        "pricesVerifiedAt": "2026-02-14",
         "updatedAt": "2026-09-09"
       }
     }

@@ -58,6 +58,10 @@ export function FloristList({ florists, cityName }: FloristListProps) {
             )}
           </dl>
 
+          {florist.source && (
+            <p className="mt-2 text-xs text-ink-faint">{florist.source}</p>
+          )}
+
           {florist.url && (
             <a
               href={florist.url}
