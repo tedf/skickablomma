@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter, Playfair_Display } from 'next/font/google'
+import { Inter, Newsreader } from 'next/font/google'
 import './globals.css'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
@@ -11,17 +11,24 @@ const inter = Inter({
   display: 'swap',
 })
 
-const playfair = Playfair_Display({
+/**
+ * Newsreader ersätter Playfair Display. Playfair är en high-contrast display-
+ * serif med bröllops- och blomsterbutikskonnotationer — exakt fel signal för
+ * en sajt vars löfte är att den inte säljer något. Newsreader är ritad för
+ * redaktionell brödtext och läser som ett uppslagsverk.
+ */
+const newsreader = Newsreader({
   subsets: ['latin'],
-  variable: '--font-playfair',
+  variable: '--font-newsreader',
   display: 'swap',
+  weight: ['400', '500', '600'],
 })
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://skickablomma.se'),
   title: {
-    default: 'Skicka Blomma - Jämför priser på blommor och buketter i Sverige',
-    template: '%s | Skicka Blomma',
+    default: 'Skickablomma - Jämför priser på blommor och buketter i Sverige',
+    template: '%s | Skickablomma',
   },
   description:
     'Hitta och jämför de bästa blomsterbuden i Sverige. Buketter, begravningsblommor, bröllopsblommor med leverans samma dag. Spara pengar genom att jämföra Interflora, Cramers och fler.',
@@ -38,9 +45,9 @@ export const metadata: Metadata = {
     'blommor online',
     'skicka blommor idag',
   ],
-  authors: [{ name: 'Skicka Blomma' }],
-  creator: 'Skicka Blomma',
-  publisher: 'Skicka Blomma',
+  authors: [{ name: 'Skickablomma' }],
+  creator: 'Skickablomma',
+  publisher: 'Skickablomma',
   formatDetection: {
     email: false,
     address: false,
@@ -50,14 +57,14 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'sv_SE',
     url: 'https://skickablomma.se',
-    siteName: 'Skicka Blomma',
-    title: 'Skicka Blomma - Jämför priser på blommor i Sverige',
+    siteName: 'Skickablomma',
+    title: 'Skickablomma - Jämför priser på blommor i Sverige',
     description:
       'Hitta de bästa blomsterbuden. Jämför priser, läs recensioner och beställ blommor med leverans samma dag.',
   },
   twitter: {
     card: 'summary',
-    title: 'Skicka Blomma - Jämför priser på blommor i Sverige',
+    title: 'Skickablomma - Jämför priser på blommor i Sverige',
     description:
       'Hitta de bästa blomsterbuden. Jämför priser och beställ blommor med leverans samma dag.',
   },
@@ -86,7 +93,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="sv" className={`${inter.variable} ${playfair.variable}`}>
+    <html lang="sv" className={`${inter.variable} ${newsreader.variable}`}>
       <head>
         <meta name="theme-color" content="#ec4899" />
       </head>

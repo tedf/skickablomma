@@ -42,7 +42,7 @@ export function ComparisonPageShell({
       )}
 
       <header className="mt-6 space-y-4">
-        <h1 className="font-display text-3xl font-bold text-gray-900 sm:text-4xl">
+        <h1 className="font-display text-3xl text-ink sm:text-4xl">
           {page.page.h1}
         </h1>
         <MicroAnswer>{page.page.microAnswer}</MicroAnswer>

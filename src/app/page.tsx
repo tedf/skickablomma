@@ -19,7 +19,7 @@ import { DraftNotice } from '@/components/comparison/DraftNotice'
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'Skicka Blomma – Jämför buketter & blommor online i Sverige',
+    absolute: 'Skickablomma – Jämför buketter & blommor online i Sverige',
   },
   description:
     'Jämför blommor och buketter från Interflora, Cramers och fler. Hitta rätt bukett till rätt pris – leverans samma dag möjlig.',
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 const homeSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
-  name: 'Skicka Blomma',
+  name: 'Skickablomma',
   url: 'https://skickablomma.se',
   description: 'Jämför priser på blommor och buketter från Sveriges bästa blomsterbutiker',
   potentialAction: {
@@ -48,7 +48,7 @@ const homeSchema = {
 const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
-  name: 'Skicka Blomma',
+  name: 'Skickablomma',
   url: 'https://skickablomma.se',
   logo: 'https://skickablomma.se/images/logo.png',
   sameAs: [],

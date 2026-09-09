@@ -9,51 +9,75 @@ const config = {
   theme: {
     extend: {
       colors: {
-        // Brand colors för skickablomma.se
+        // =====================================================================
+        // SKICKABLOMMA — funktionell palett
+        // =====================================================================
+        // Positioneringen är neutral jämförelse, inte blomsterbutik. Därför
+        // finns ingen rosa och ingen dekorfärg. Varje kulör har ett jobb:
+        //
+        //   brand   navigation, länkar, verifierat tillstånd
+        //   signal  "Vårt val" och primär CTA — ingenting annat
+        //   ink/muted/line/paper  allt övrigt
+        //
+        // Kategorin är upptagen: Interflora äger rött, Blomsterlandet grönt.
+        // Djup teal läser botaniskt utan att krocka med någon av dem.
+
+        brand: {
+          DEFAULT: 'hsl(var(--brand))',
+          50: '#eff6f4',
+          100: '#d6e8e3',
+          200: '#aed1c8',
+          300: '#7fb3a7',
+          400: '#4f8f81',
+          500: '#2c7365',
+          600: '#14524a', // Grundton
+          700: '#10423c',
+          800: '#0c332e',
+          900: '#082421',
+          foreground: 'hsl(var(--brand-foreground))',
+        },
+
+        signal: {
+          DEFAULT: 'hsl(var(--signal))',
+          50: '#fdf6ed',
+          100: '#f8e6cf',
+          200: '#efc99c',
+          300: '#e0a765',
+          400: '#cd873a',
+          500: '#b4661e', // Grundton
+          600: '#96521a',
+          700: '#743f16',
+          800: '#532d11',
+          900: '#361d0b',
+          foreground: 'hsl(var(--signal-foreground))',
+        },
+
+        // Neutraler. Varma, inte blå — sajten ska läsa som papper.
+        paper: '#faf9f6',
+        surface: '#ffffff',
+        ink: {
+          DEFAULT: '#17191c',
+          muted: '#5c6069',
+          faint: '#8b8f97',
+        },
+        line: {
+          DEFAULT: '#e5e2db',
+          strong: '#d2cec5',
+        },
+
+        // Bakåtkompatibla alias. Kod som redan säger `primary` får den nya
+        // varumärkesfärgen i stället för den rosa. Använd `brand` i ny kod.
         primary: {
-          DEFAULT: '#ec4899',
-          50: '#fdf2f8',
-          100: '#fce7f3',
-          200: '#fbcfe8',
-          300: '#f9a8d4',
-          400: '#f472b6',
-          500: '#ec4899', // Rosa - huvudfärg
-          600: '#db2777',
-          700: '#be185d',
-          800: '#9d174d',
-          900: '#831843',
-          950: '#500724',
-          foreground: '#ffffff',
+          DEFAULT: 'hsl(var(--primary))',
+          foreground: 'hsl(var(--primary-foreground))',
         },
         secondary: {
-          DEFAULT: '#22c55e',
-          50: '#f0fdf4',
-          100: '#dcfce7',
-          200: '#bbf7d0',
-          300: '#86efac',
-          400: '#4ade80',
-          500: '#22c55e', // Grön - sekundär
-          600: '#16a34a',
-          700: '#15803d',
-          800: '#166534',
-          900: '#14532d',
-          950: '#052e16',
-          foreground: '#ffffff',
+          DEFAULT: 'hsl(var(--secondary))',
+          foreground: 'hsl(var(--secondary-foreground))',
         },
         accent: {
-          DEFAULT: '#f59e0b',
-          50: '#fffbeb',
-          100: '#fef3c7',
-          200: '#fde68a',
-          300: '#fcd34d',
-          400: '#fbbf24',
-          500: '#f59e0b', // Guld - accent
-          600: '#d97706',
-          700: '#b45309',
-          800: '#92400e',
-          900: '#78350f',
-          950: '#451a03',
-          foreground: '#ffffff',
+          DEFAULT: 'hsl(var(--accent))',
+          foreground: 'hsl(var(--accent-foreground))',
         },
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
@@ -78,13 +102,59 @@ const config = {
         ring: 'hsl(var(--ring))',
       },
       fontFamily: {
+        // Inter för allt som ska läsas snabbt, särskilt tabeller — den har
+        // äkta tabulära siffror, vilket en jämförelsesajt inte klarar sig utan.
         sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
-        display: ['var(--font-playfair)', 'Georgia', 'serif'],
+        // Newsreader ersätter Playfair Display. Playfair är en romantisk
+        // display-serif som signalerar bröllop och blomsterbutik. Newsreader
+        // är en redaktionell brödtextserif och läser som ett uppslagsverk.
+        display: ['var(--font-newsreader)', 'Georgia', 'serif'],
+      },
+      fontFeatureSettings: {
+        tabular: '"tnum" 1, "cv05" 1',
       },
       borderRadius: {
         lg: 'var(--radius)',
         md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)',
+      },
+      typography: {
+        /*
+          `prose` användes på fem sidor utan att pluginet var installerat, så
+          all brödtext renderades ostilad: H2 i brödtextstorlek, inga
+          listpunkter, ingen styckemarginal. Nu bunden till varumärket.
+        */
+        DEFAULT: {
+          css: {
+            '--tw-prose-body': '#17191c',
+            '--tw-prose-headings': '#17191c',
+            '--tw-prose-links': '#14524a',
+            '--tw-prose-bold': '#17191c',
+            '--tw-prose-bullets': '#8b8f97',
+            '--tw-prose-quotes': '#5c6069',
+            '--tw-prose-hr': '#e5e2db',
+            '--tw-prose-counters': '#5c6069',
+            maxWidth: 'none',
+            h2: {
+              fontFamily: 'var(--font-newsreader), Georgia, serif',
+              fontWeight: '400',
+              letterSpacing: '-0.015em',
+              marginTop: '2.5em',
+              marginBottom: '0.75em',
+            },
+            h3: {
+              fontFamily: 'var(--font-newsreader), Georgia, serif',
+              fontWeight: '500',
+              letterSpacing: '-0.01em',
+              marginTop: '1.75em',
+              marginBottom: '0.5em',
+            },
+            a: {
+              textDecorationColor: '#aed1c8',
+              textUnderlineOffset: '2px',
+            },
+          },
+        },
       },
       keyframes: {
         'accordion-down': {
@@ -113,7 +183,8 @@ const config = {
     },
   },
   plugins: [
-    require('tailwindcss-animate')
+    require('tailwindcss-animate'),
+    require('@tailwindcss/typography'),
   ],
 }
 

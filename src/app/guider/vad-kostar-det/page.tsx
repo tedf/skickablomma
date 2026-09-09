@@ -27,8 +27,8 @@ export default function VadKostarDetPage() {
     '@type': 'Article',
     headline: page.page.h1,
     description: page.page.metaDescription,
-    author: { '@type': 'Organization', name: 'Skicka Blomma' },
-    publisher: { '@type': 'Organization', name: 'Skicka Blomma' },
+    author: { '@type': 'Organization', name: 'Skickablomma' },
+    publisher: { '@type': 'Organization', name: 'Skickablomma' },
     ...(page.page.updatedAt ? { dateModified: page.page.updatedAt } : {}),
   }
 

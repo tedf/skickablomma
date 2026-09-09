@@ -9,6 +9,6 @@ interface MicroAnswerProps {
  */
 export function MicroAnswer({ children }: MicroAnswerProps) {
   return (
-    <p className="text-lg leading-relaxed text-gray-800">{children}</p>
+    <p className="text-lg leading-relaxed text-ink">{children}</p>
   )
 }

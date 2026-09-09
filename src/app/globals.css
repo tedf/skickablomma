@@ -3,50 +3,55 @@
 @tailwind utilities;
 
 @layer base {
+  /* ===========================================================================
+     SKICKABLOMMA — designtokens
+     ===========================================================================
+     HSL-tripplar för shadcn-kompatibilitet. Kulörerna motsvarar paletten i
+     tailwind.config.ts. Se skickablomma-brand.html för resonemanget.
+
+     brand  #14524a  djup teal — navigation, länkar, verifierat tillstånd
+     signal #b4661e  ockra — "Vårt val" och primär CTA, ingenting annat
+     paper  #faf9f6  varmt off-white, sidans grund
+     ink    #17191c  text
+  */
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 45 27% 97%;
+    --foreground: 220 8% 10%;
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 220 8% 10%;
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-    --primary: 330 81% 60%;
+    --popover-foreground: 220 8% 10%;
+
+    --brand: 172 60% 20%;
+    --brand-foreground: 0 0% 100%;
+    --signal: 27 71% 41%;
+    --signal-foreground: 0 0% 100%;
+
+    /* Alias: befintlig kod som säger primary får varumärkesfärgen. */
+    --primary: 172 60% 20%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 142 76% 36%;
-    --secondary-foreground: 0 0% 100%;
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 38 92% 50%;
+    --secondary: 172 25% 92%;
+    --secondary-foreground: 172 60% 20%;
+    --accent: 27 71% 41%;
     --accent-foreground: 0 0% 100%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 330 81% 60%;
-    --radius: 0.75rem;
+
+    --muted: 40 12% 94%;
+    --muted-foreground: 222 6% 39%;
+    --destructive: 0 65% 42%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 40 15% 88%;
+    --input: 40 15% 88%;
+    --ring: 172 60% 20%;
+
+    /* 0.5rem. Dokument, inte app. */
+    --radius: 0.5rem;
   }
 
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 330 81% 60%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 142 76% 36%;
-    --secondary-foreground: 0 0% 100%;
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-    --accent: 38 92% 50%;
-    --accent-foreground: 0 0% 100%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 330 81% 60%;
-  }
+  /*
+    Mörkt läge är avsiktligt inte implementerat ännu. Sajtens kärna är
+    tabeller med datumstämplar, och en halvfärdig mörk palett gör dem
+    oläsbara. Bygg det när tabellerna är färdiga, inte innan.
+  */
 }
 
 @layer base {
@@ -61,7 +66,19 @@
   h1,
   h2,
   h3 {
-    @apply font-display;
+    @apply font-display font-normal;
+    letter-spacing: -0.015em;
+  }
+
+  /*
+    Tabulära siffror i all data. Utan detta hoppar kolumnerna i
+    jämförelsetabellen och priserna går inte att jämföra med ögat —
+    vilket är hela sajtens uppgift.
+  */
+  table,
+  .tabular {
+    font-feature-settings: 'tnum' 1;
+    font-variant-numeric: tabular-nums;
   }
 }
 
@@ -69,7 +86,7 @@
   /* Produktkort */
   .product-card {
     @apply relative overflow-hidden rounded-xl bg-card shadow-sm transition-all duration-300;
-    @apply hover:shadow-xl hover:-translate-y-1.5;
+    @apply hover:border-line-strong hover:shadow-md;
   }
 
   .product-card-image {
@@ -130,10 +147,14 @@
     @apply hover:bg-primary hover:text-white;
   }
 
+  /*
+    Gradienten är borttagen. En jämförelsesajt vinner inte på glans, och
+    varje effekt som ser ut som e-handel undergräver neutralitetslöftet.
+    Klassen behålls som alias så att befintlig kod inte går sönder.
+  */
   .cta-button-gradient {
-    background: linear-gradient(135deg, hsl(330 81% 60%) 0%, hsl(330 81% 45%) 100%);
-    @apply shadow-md hover:shadow-lg;
-    @apply hover:scale-[1.02] active:scale-[0.98];
+    @apply bg-signal text-signal-foreground;
+    @apply hover:bg-signal-600;
   }
 
   /* Filter-chips */

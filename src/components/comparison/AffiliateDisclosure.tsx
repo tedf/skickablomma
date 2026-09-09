@@ -29,19 +29,19 @@ export function AffiliateDisclosure({
 }: AffiliateDisclosureProps) {
   return (
     <div
-      className={`flex gap-3 rounded-lg border border-gray-200 bg-gray-50 p-4 text-sm text-gray-700 ${className}`}
+      className={`flex gap-3 rounded-lg border border-line bg-paper p-4 text-sm text-ink-muted ${className}`}
     >
-      <Info className="mt-0.5 h-4 w-4 shrink-0 text-gray-400" aria-hidden />
+      <Info className="mt-0.5 h-4 w-4 shrink-0 text-ink-faint" aria-hidden />
       <p>
         Vi får provision när du beställer via länkarna. Det påverkar inte vår
         rangordning.{' '}
-        <Link href="/om/sa-tjanar-vi-pengar" className="underline hover:text-gray-900">
+        <Link href="/om/sa-tjanar-vi-pengar" className="underline hover:text-ink">
           Så tjänar vi pengar
         </Link>
         {pricesVerifiedAt ? (
           <>
             {' · '}
-            <span className="text-gray-500">
+            <span className="text-ink-faint">
               Priser kontrollerade {formatSwedishDate(pricesVerifiedAt)}
             </span>
           </>

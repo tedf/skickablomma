@@ -104,14 +104,14 @@ export default function CityPage({ params }: CityPageProps) {
       )}
 
       <header className="mt-6 space-y-4">
-        <h1 className="font-display text-3xl font-bold text-gray-900 sm:text-4xl">
+        <h1 className="font-display text-3xl text-ink sm:text-4xl">
           {city.page.h1}
         </h1>
         <MicroAnswer>{city.page.microAnswer}</MicroAnswer>
       </header>
 
       <div className="mt-8">
-        <h2 className="mb-4 font-display text-2xl font-semibold text-gray-900">
+        <h2 className="mb-4 font-display text-2xl text-ink">
           Jämför blombud i {city.name}
         </h2>
         <ComparisonTable
@@ -122,7 +122,7 @@ export default function CityPage({ params }: CityPageProps) {
       </div>
 
       <section className="mt-12">
-        <h2 className="mb-4 font-display text-2xl font-semibold text-gray-900">
+        <h2 className="mb-4 font-display text-2xl text-ink">
           Florister i {city.name} som levererar
         </h2>
         <FloristList florists={florists} cityName={city.name} />
@@ -130,16 +130,16 @@ export default function CityPage({ params }: CityPageProps) {
 
       {city.deliveryAreas.length > 0 && (
         <section className="mt-12">
-          <h2 className="mb-4 font-display text-2xl font-semibold text-gray-900">
+          <h2 className="mb-4 font-display text-2xl text-ink">
             Leveransområden
           </h2>
-          <p className="text-gray-700">
+          <p className="text-ink-muted">
             Blombuden når normalt hela tätorten, däribland{' '}
             {city.deliveryAreas.slice(0, -1).join(', ')} och{' '}
             {city.deliveryAreas[city.deliveryAreas.length - 1]}.
           </p>
           {city.hospitals.length > 0 && (
-            <p className="mt-3 text-gray-700">
+            <p className="mt-3 text-ink-muted">
               Leverans till {city.hospitals.map((hospital) => hospital.name).join(' och ')}{' '}
               går oftast att ordna, men avdelningarna har egna regler. Kontrollera med
               avdelningen innan du beställer.
@@ -160,8 +160,8 @@ export default function CityPage({ params }: CityPageProps) {
         />
       )}
 
-      <nav className="mt-12 border-t border-gray-200 pt-8" aria-label="Relaterade sidor">
-        <h2 className="mb-4 font-display text-xl font-semibold text-gray-900">
+      <nav className="mt-12 border-t border-line pt-8" aria-label="Relaterade sidor">
+        <h2 className="mb-4 font-display text-xl text-ink">
           Läs vidare
         </h2>
         <ul className="flex flex-wrap gap-3 text-sm">
@@ -169,7 +169,7 @@ export default function CityPage({ params }: CityPageProps) {
             <li key={neighbour.slug}>
               <Link
                 href={`/blombud/${neighbour.slug}`}
-                className="rounded-full bg-gray-100 px-4 py-2 text-gray-700 hover:bg-gray-200"
+                className="rounded-full bg-muted px-4 py-2 text-ink-muted hover:bg-line"
               >
                 Blombud {neighbour.name}
               </Link>
@@ -178,7 +178,7 @@ export default function CityPage({ params }: CityPageProps) {
           <li>
             <Link
               href="/tillfalle/begravning"
-              className="rounded-full bg-gray-100 px-4 py-2 text-gray-700 hover:bg-gray-200"
+              className="rounded-full bg-muted px-4 py-2 text-ink-muted hover:bg-line"
             >
               Blommor till begravning
             </Link>
@@ -186,7 +186,7 @@ export default function CityPage({ params }: CityPageProps) {
           <li>
             <Link
               href="/jamfor"
-              className="rounded-full bg-gray-100 px-4 py-2 text-gray-700 hover:bg-gray-200"
+              className="rounded-full bg-muted px-4 py-2 text-ink-muted hover:bg-line"
             >
               Jämför alla blombud
             </Link>

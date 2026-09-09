@@ -60,8 +60,8 @@ export default function OccasionPage({ params }: OccasionPageProps) {
     '@type': 'Article',
     headline: occasion.page.h1,
     description: occasion.page.metaDescription,
-    author: { '@type': 'Organization', name: 'Skicka Blomma' },
-    publisher: { '@type': 'Organization', name: 'Skicka Blomma' },
+    author: { '@type': 'Organization', name: 'Skickablomma' },
+    publisher: { '@type': 'Organization', name: 'Skickablomma' },
     ...(occasion.page.updatedAt ? { dateModified: occasion.page.updatedAt } : {}),
   }
 
@@ -87,7 +87,7 @@ export default function OccasionPage({ params }: OccasionPageProps) {
       )}
 
       <header className="mt-6 space-y-4">
-        <h1 className="font-display text-3xl font-bold text-gray-900 sm:text-4xl">
+        <h1 className="font-display text-3xl text-ink sm:text-4xl">
           {occasion.page.h1}
         </h1>
         <MicroAnswer>{occasion.page.microAnswer}</MicroAnswer>
@@ -95,7 +95,7 @@ export default function OccasionPage({ params }: OccasionPageProps) {
 
       {rows.length > 0 && (
         <div className="mt-8">
-          <h2 className="mb-4 font-display text-2xl font-semibold text-gray-900">
+          <h2 className="mb-4 font-display text-2xl text-ink">
             Var du beställer
           </h2>
           <ComparisonTable
@@ -114,9 +114,9 @@ export default function OccasionPage({ params }: OccasionPageProps) {
       {(occasion.flowersRecommended.length > 0 || occasion.flowersAvoid.length > 0) && (
         <section className="mt-12 grid gap-6 sm:grid-cols-2">
           {occasion.flowersRecommended.length > 0 && (
-            <div className="rounded-xl border border-gray-200 p-5">
-              <h2 className="font-semibold text-gray-900">Blommor som passar</h2>
-              <ul className="mt-2 list-disc pl-5 text-gray-700">
+            <div className="rounded-xl border border-line p-5">
+              <h2 className="font-semibold text-ink">Blommor som passar</h2>
+              <ul className="mt-2 list-disc pl-5 text-ink-muted">
                 {occasion.flowersRecommended.map((flower) => (
                   <li key={flower}>{flower}</li>
                 ))}
@@ -124,9 +124,9 @@ export default function OccasionPage({ params }: OccasionPageProps) {
             </div>
           )}
           {occasion.flowersAvoid.length > 0 && (
-            <div className="rounded-xl border border-gray-200 p-5">
-              <h2 className="font-semibold text-gray-900">Tänk efter en gång till</h2>
-              <ul className="mt-2 list-disc pl-5 text-gray-700">
+            <div className="rounded-xl border border-line p-5">
+              <h2 className="font-semibold text-ink">Tänk efter en gång till</h2>
+              <ul className="mt-2 list-disc pl-5 text-ink-muted">
                 {occasion.flowersAvoid.map((flower) => (
                   <li key={flower}>{flower}</li>
                 ))}
@@ -138,14 +138,14 @@ export default function OccasionPage({ params }: OccasionPageProps) {
 
       {occasion.cardTexts.length > 0 && (
         <section className="mt-12">
-          <h2 className="mb-4 font-display text-2xl font-semibold text-gray-900">
+          <h2 className="mb-4 font-display text-2xl text-ink">
             Texter till kortet
           </h2>
           <ul className="space-y-2">
             {occasion.cardTexts.map((text) => (
               <li
                 key={text}
-                className="rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 text-gray-800"
+                className="rounded-lg border border-line bg-paper px-4 py-3 text-ink"
               >
                 {text}
               </li>
@@ -166,14 +166,14 @@ export default function OccasionPage({ params }: OccasionPageProps) {
         />
       )}
 
-      <nav className="mt-12 border-t border-gray-200 pt-8" aria-label="Relaterade sidor">
-        <h2 className="mb-4 font-display text-xl font-semibold text-gray-900">Läs vidare</h2>
+      <nav className="mt-12 border-t border-line pt-8" aria-label="Relaterade sidor">
+        <h2 className="mb-4 font-display text-xl text-ink">Läs vidare</h2>
         <ul className="flex flex-wrap gap-3 text-sm">
           {cityLinks.map((city) => (
             <li key={city.slug}>
               <Link
                 href={`/blombud/${city.slug}`}
-                className="rounded-full bg-gray-100 px-4 py-2 text-gray-700 hover:bg-gray-200"
+                className="rounded-full bg-muted px-4 py-2 text-ink-muted hover:bg-line"
               >
                 Blombud {city.name}
               </Link>
@@ -182,7 +182,7 @@ export default function OccasionPage({ params }: OccasionPageProps) {
           <li>
             <Link
               href="/jamfor"
-              className="rounded-full bg-gray-100 px-4 py-2 text-gray-700 hover:bg-gray-200"
+              className="rounded-full bg-muted px-4 py-2 text-ink-muted hover:bg-line"
             >
               Jämför blombud
             </Link>

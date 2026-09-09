@@ -1,7 +1,30 @@
 /** @type {import('next').NextConfig} */
+/**
+ * Statisk export styrs av miljövariabeln STATIC_EXPORT, inte av att en
+ * annan konfigurationsfil kopieras över den här. Den gamla lösningen
+ * (`cp next.config.static.ts next.config.ts`) skrev sönder konfigurationen
+ * permanent och skrev dessutom till en fil som Next 14 ignorerar.
+ *
+ *   npm run build          vanligt bygge
+ *   npm run build:static   genererar /out för uppladdning via FTP
+ *
+ * headers(), redirects() och rewrites() fungerar inte vid statisk export.
+ * De hanteras då av public/.htaccess i stället.
+ */
+const isStaticExport = process.env.STATIC_EXPORT === 'true'
+
 const nextConfig = {
+  ...(isStaticExport
+    ? {
+        output: 'export',
+        // Ger /buketter/index.html i stället för /buketter.html.
+        trailingSlash: true,
+      }
+    : {}),
+
   // Optimera bilder från partner-feeds
   images: {
+    ...(isStaticExport ? { unoptimized: true } : {}),
     remotePatterns: [
       {
         protocol: 'https',
@@ -75,7 +98,13 @@ const nextConfig = {
       },
       {
         source: '/blomsterbud',
-        destination: '/samma-dag-leverans',
+        destination: '/blombud',
+        permanent: true,
+      },
+      {
+        // Transparenssidan flyttad till /om/ enligt siteplanen §3.
+        source: '/affiliate',
+        destination: '/om/sa-tjanar-vi-pengar',
         permanent: true,
       },
     ]

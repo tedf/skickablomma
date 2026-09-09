@@ -30,10 +30,10 @@ export default function SaTjanarViPengarPage() {
       />
 
       <header className="mt-6 space-y-4">
-        <h1 className="font-display text-3xl font-bold text-gray-900 sm:text-4xl">
+        <h1 className="font-display text-3xl text-ink sm:text-4xl">
           Så tjänar vi pengar
         </h1>
-        <p className="text-lg leading-relaxed text-gray-800">
+        <p className="text-lg leading-relaxed text-ink">
           Vi säljer inga blommor och tar aldrig emot din beställning eller betalning. När du
           klickar vidare till en tjänst och beställer där får vi en provision från den
           tjänsten. Du betalar inte mer för det. Provisionen påverkar inte i vilken ordning
@@ -98,7 +98,7 @@ export default function SaTjanarViPengarPage() {
         </p>
       </div>
 
-      <p className="mt-10 text-sm text-gray-600">
+      <p className="mt-10 text-sm text-ink-muted">
         Se även <Link href="/jamfor" className="underline">jämförelsen av blombud</Link>.
       </p>
     </div>

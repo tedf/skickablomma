@@ -75,7 +75,12 @@ export const serviceSchema = z.object({
   network: affiliateNetworkSchema,
   commissionNote: z.string().nullable(),
 
-  sameDay: z.boolean(),
+  /**
+   * Null = vi har inte kontrollerat. Fältet var tidigare en ren boolean,
+   * vilket gjorde att "nej" och "ej kontrollerat" renderades som samma
+   * tankstreck — precis den sammanblandning sajten finns för att undvika.
+   */
+  sameDay: z.boolean().nullable(),
   cutoffWeekday: cutoffSchema,
   cutoffSaturday: cutoffSchema,
 

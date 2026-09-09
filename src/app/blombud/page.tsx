@@ -45,11 +45,11 @@ export default function BlombudHubPage() {
       }
     >
       <section className="mt-12">
-        <h2 className="mb-4 font-display text-2xl font-semibold text-gray-900">
+        <h2 className="mb-4 font-display text-2xl text-ink">
           Blombud stad för stad
         </h2>
         {cities.length === 0 ? (
-          <p className="text-gray-600">
+          <p className="text-ink-muted">
             Inga stadssidor är publicerade ännu. En stad läggs till när minst tre florister
             är kontrollerade på plats.
           </p>
@@ -59,10 +59,10 @@ export default function BlombudHubPage() {
               <li key={city.slug}>
                 <Link
                   href={`/blombud/${city.slug}`}
-                  className="block rounded-xl border border-gray-200 p-4 transition-colors hover:border-gray-400"
+                  className="block rounded-lg border border-line p-4 transition-colors hover:border-line-strong"
                 >
-                  <span className="font-medium text-gray-900">{city.name}</span>
-                  <span className="mt-1 block text-sm text-gray-500">{city.county}</span>
+                  <span className="font-medium text-ink">{city.name}</span>
+                  <span className="mt-1 block text-sm text-ink-faint">{city.county}</span>
                 </Link>
               </li>
             ))}

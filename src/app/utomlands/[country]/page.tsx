@@ -80,14 +80,14 @@ export default function CountryPage({ params }: CountryPageProps) {
       )}
 
       <header className="mt-6 space-y-4">
-        <h1 className="font-display text-3xl font-bold text-gray-900 sm:text-4xl">
+        <h1 className="font-display text-3xl text-ink sm:text-4xl">
           {country.page.h1}
         </h1>
         <MicroAnswer>{country.page.microAnswer}</MicroAnswer>
       </header>
 
       <div className="mt-8">
-        <h2 className="mb-4 font-display text-2xl font-semibold text-gray-900">
+        <h2 className="mb-4 font-display text-2xl text-ink">
           Priser och leveranstider till {country.name}
         </h2>
         <ComparisonTable
@@ -96,7 +96,7 @@ export default function CountryPage({ params }: CountryPageProps) {
           trackingContext={`land:${country.slug}`}
         />
 
-        <ul className="mt-4 space-y-1 text-sm text-gray-600">
+        <ul className="mt-4 space-y-1 text-sm text-ink-muted">
           {country.services.map((countryService) => {
             const service = getService(countryService.serviceId)
             const lead = formatLeadDays(countryService.leadDays)
@@ -111,21 +111,21 @@ export default function CountryPage({ params }: CountryPageProps) {
       </div>
 
       <section className="mt-12 space-y-6">
-        <h2 className="font-display text-2xl font-semibold text-gray-900">
+        <h2 className="font-display text-2xl text-ink">
           Att tänka på vid leverans till {country.name}
         </h2>
 
         {country.customsNote && (
           <div>
-            <h3 className="font-semibold text-gray-900">Tull och moms</h3>
-            <p className="mt-1 text-gray-700">{country.customsNote}</p>
+            <h3 className="font-semibold text-ink">Tull och moms</h3>
+            <p className="mt-1 text-ink-muted">{country.customsNote}</p>
           </div>
         )}
 
         {country.timezoneOffset !== null && country.timezoneOffset !== 0 && (
           <div>
-            <h3 className="font-semibold text-gray-900">Tidsskillnad</h3>
-            <p className="mt-1 text-gray-700">
+            <h3 className="font-semibold text-ink">Tidsskillnad</h3>
+            <p className="mt-1 text-ink-muted">
               {country.name} ligger {Math.abs(country.timezoneOffset)} timme
               {Math.abs(country.timezoneOffset) === 1 ? '' : 'r'}{' '}
               {country.timezoneOffset > 0 ? 'före' : 'efter'} Sverige. Det kan avgöra om
@@ -136,8 +136,8 @@ export default function CountryPage({ params }: CountryPageProps) {
 
         {country.holidays.length > 0 && (
           <div>
-            <h3 className="font-semibold text-gray-900">Helgdagar som flyttar leveransen</h3>
-            <ul className="mt-1 list-disc pl-5 text-gray-700">
+            <h3 className="font-semibold text-ink">Helgdagar som flyttar leveransen</h3>
+            <ul className="mt-1 list-disc pl-5 text-ink-muted">
               {country.holidays.map((holiday) => (
                 <li key={holiday}>{holiday}</li>
               ))}
@@ -158,13 +158,13 @@ export default function CountryPage({ params }: CountryPageProps) {
         />
       )}
 
-      <nav className="mt-12 border-t border-gray-200 pt-8" aria-label="Relaterade sidor">
-        <h2 className="mb-4 font-display text-xl font-semibold text-gray-900">Läs vidare</h2>
+      <nav className="mt-12 border-t border-line pt-8" aria-label="Relaterade sidor">
+        <h2 className="mb-4 font-display text-xl text-ink">Läs vidare</h2>
         <ul className="flex flex-wrap gap-3 text-sm">
           <li>
             <Link
               href="/utomlands"
-              className="rounded-full bg-gray-100 px-4 py-2 text-gray-700 hover:bg-gray-200"
+              className="rounded-full bg-muted px-4 py-2 text-ink-muted hover:bg-line"
             >
               Alla länder
             </Link>
@@ -173,7 +173,7 @@ export default function CountryPage({ params }: CountryPageProps) {
             <li key={neighbour.slug}>
               <Link
                 href={`/utomlands/${neighbour.slug}`}
-                className="rounded-full bg-gray-100 px-4 py-2 text-gray-700 hover:bg-gray-200"
+                className="rounded-full bg-muted px-4 py-2 text-ink-muted hover:bg-line"
               >
                 Blommor till {neighbour.name}
               </Link>
@@ -182,7 +182,7 @@ export default function CountryPage({ params }: CountryPageProps) {
           <li>
             <Link
               href="/guider/vad-kostar-det"
-              className="rounded-full bg-gray-100 px-4 py-2 text-gray-700 hover:bg-gray-200"
+              className="rounded-full bg-muted px-4 py-2 text-ink-muted hover:bg-line"
             >
               Vad kostar det att skicka blommor?
             </Link>

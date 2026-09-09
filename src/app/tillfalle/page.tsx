@@ -28,10 +28,10 @@ export default function TillfalleHubPage() {
       />
 
       <header className="mt-6 space-y-4">
-        <h1 className="font-display text-3xl font-bold text-gray-900 sm:text-4xl">
+        <h1 className="font-display text-3xl text-ink sm:text-4xl">
           Blommor för olika tillfällen
         </h1>
-        <p className="text-lg leading-relaxed text-gray-800">
+        <p className="text-lg leading-relaxed text-ink">
           Vilka blommor som passar beror mindre på smak än på sammanhang. Här går vi igenom
           vad som är brukligt vid varje tillfälle, vad du skriver på kortet och när
           beställningen behöver ligga inne.
@@ -40,17 +40,17 @@ export default function TillfalleHubPage() {
 
       <section className="mt-8">
         {occasions.length === 0 ? (
-          <p className="text-gray-600">Inga tillfällen är publicerade ännu.</p>
+          <p className="text-ink-muted">Inga tillfällen är publicerade ännu.</p>
         ) : (
           <ul className="grid gap-3 sm:grid-cols-2">
             {occasions.map((occasion) => (
               <li key={occasion.slug}>
                 <Link
                   href={`/tillfalle/${occasion.slug}`}
-                  className="block rounded-xl border border-gray-200 p-4 transition-colors hover:border-gray-400"
+                  className="block rounded-lg border border-line p-4 transition-colors hover:border-line-strong"
                 >
-                  <span className="font-medium text-gray-900">{occasion.name}</span>
-                  <span className="mt-1 block text-sm text-gray-500">
+                  <span className="font-medium text-ink">{occasion.name}</span>
+                  <span className="mt-1 block text-sm text-ink-faint">
                     {occasion.page.metaDescription}
                   </span>
                 </Link>

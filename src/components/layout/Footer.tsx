@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { Flower2, Mail, MapPin, Phone } from 'lucide-react'
+import { Wordmark } from '@/components/brand/Wordmark'
 
 const footerLinks = {
   kategorier: [
@@ -60,14 +61,7 @@ export function Footer() {
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-5">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center gap-2">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary">
-                <Flower2 className="h-6 w-6 text-white" />
-              </div>
-              <span className="font-display text-xl font-bold text-gray-900">
-                Skicka Blomma
-              </span>
-            </Link>
+            <Wordmark />
             <p className="mt-4 text-sm text-gray-600">
               Sveriges smartaste sätt att hitta och jämföra blommor. Vi hjälper dig hitta
               den perfekta buketten till bästa pris.
@@ -157,7 +151,7 @@ export function Footer() {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
             <p className="text-sm text-gray-500">
-              &copy; {new Date().getFullYear()} Skicka Blomma. Alla rättigheter förbehållna.
+              &copy; {new Date().getFullYear()} Skickablomma. Alla rättigheter förbehållna.
             </p>
             <p className="text-xs text-gray-400">
               Vi använder affiliate-länkar. När du köper via våra länkar får vi en liten

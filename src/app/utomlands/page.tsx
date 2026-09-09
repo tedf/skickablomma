@@ -40,10 +40,10 @@ export default function UtomlandsHubPage() {
               <li key={country.slug}>
                 <Link
                   href={`/utomlands/${country.slug}`}
-                  className="block rounded-xl border border-gray-200 p-4 transition-colors hover:border-gray-400"
+                  className="block rounded-lg border border-line p-4 transition-colors hover:border-line-strong"
                 >
-                  <span className="font-medium text-gray-900">{country.name}</span>
-                  <span className="mt-1 block text-sm text-gray-500">
+                  <span className="font-medium text-ink">{country.name}</span>
+                  <span className="mt-1 block text-sm text-ink-faint">
                     {country.eu ? 'EU-land, ingen tull' : 'Utanför EU'}
                   </span>
                 </Link>

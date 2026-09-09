@@ -15,6 +15,7 @@ import {
   Globe,
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import { Wordmark } from '@/components/brand/Wordmark'
 
 // Jämförelsehubbarna först, produktkatalogen efter. Ordningen speglar
 // sitearkitekturen i siteplanen §3: sajten är en jämförelse, inte en butik.
@@ -100,14 +101,7 @@ export function Header() {
       <div className="container mx-auto px-4">
         <nav className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary">
-              <Flower2 className="h-6 w-6 text-white" />
-            </div>
-            <span className="font-display text-xl font-bold text-gray-900">
-              Skicka Blomma
-            </span>
-          </Link>
+          <Wordmark />
 
           {/* Desktop Navigation */}
           <div className="hidden items-center gap-1 lg:flex">
@@ -161,14 +155,16 @@ export function Header() {
               <Search className="h-5 w-5" />
             </Link>
 
+            {/*
+              Primär åtgärd är att jämföra, inte att handla. Den gamla knappen
+              pekade på en produktkategori, vilket är fel signal i en header
+              som ska säga "vi säljer inget".
+            */}
             <Link
-              href="/konstgjorda-blommor"
-              className="hidden rounded-full bg-secondary px-4 py-2 text-sm font-medium text-white hover:bg-secondary/90 sm:block"
+              href="/jamfor"
+              className="hidden rounded-lg bg-brand px-4 py-2 text-sm font-medium text-brand-foreground hover:bg-brand-700 sm:block"
             >
-              <span className="flex items-center gap-1">
-                <Sparkles className="h-4 w-4" />
-                Konstgjorda blommor
-              </span>
+              Jämför blombud
             </Link>
 
             {/* Mobile menu button */}

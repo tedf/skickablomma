@@ -24,18 +24,18 @@ const wizards = [
     description: 'Hitta den perfekta presenten för henne',
     icon: Gift,
     href: '/wizard/presenter-till-henne',
-    color: 'bg-pink-500',
+    color: 'bg-brand-400',
   },
 ]
 
 export function WizardCTA() {
   return (
     <div className="text-center">
-      <h2 className="mb-4 font-display text-3xl font-bold text-gray-900">
-        Behöver du hjälp att välja?
+      <h2 className="mb-4 font-display text-3xl text-ink">
+        Vet du inte vad som passar?
       </h2>
-      <p className="mb-10 text-lg text-gray-600">
-        Låt oss hjälpa dig hitta de perfekta blommorna med vår guide
+      <p className="mb-10 text-lg text-ink-muted">
+        Svara på några frågor så snävar vi ner urvalet åt dig.
       </p>
 
       <div className="grid gap-4 md:grid-cols-3">

@@ -1,7 +1,7 @@
 'use client'
 
 import { useMemo, useState } from 'react'
-import { Check, Minus, Star } from 'lucide-react'
+import { Check, Star } from 'lucide-react'
 import type { Service } from '@/types/comparison'
 import { AffiliateDisclosure } from './AffiliateDisclosure'
 
@@ -37,13 +37,35 @@ function effectiveCutoff(row: ComparisonRow): string | null {
   return row.cutoffOverride ?? row.service.cutoffWeekday
 }
 
-/** Okänt värde skrivs ut som tankstreck, aldrig som noll eller en gissning. */
+/**
+ * Okänt värde skrivs ut som tankstreck, aldrig som noll eller en gissning.
+ * Tecknet är också varumärkets märke — se components/brand/Wordmark.
+ */
 function Unknown() {
   return (
-    <span className="text-gray-400" title="Ej kontrollerat">
+    <span className="text-ink-faint" title="Ej kontrollerat">
       –
+      <span className="sr-only">Ej kontrollerat</span>
     </span>
   )
+}
+
+/**
+ * Tre tillstånd, tre uttryck. Ett minustecken för "nej" och ett tankstreck
+ * för "vet ej" ser likadana ut, vilket är exakt den sammanblandning sajten
+ * finns för att undvika. "Nej" skrivs därför ut i ord.
+ */
+function SameDayCell({ value }: { value: boolean | null }) {
+  if (value === null) return <Unknown />
+  if (value) {
+    return (
+      <>
+        <Check className="h-4 w-4 text-brand" aria-hidden />
+        <span className="sr-only">Ja</span>
+      </>
+    )
+  }
+  return <span className="text-ink-muted">Nej</span>
 }
 
 export function ComparisonTable({
@@ -58,9 +80,11 @@ export function ComparisonTable({
     const copy = [...rows]
     copy.sort((a, b) => {
       if (sortMode === 'speed') {
-        // Samma dag först, därefter tidigast stopptid.
-        if (a.service.sameDay !== b.service.sameDay) {
-          return a.service.sameDay ? -1 : 1
+        // Samma dag först, sedan okänt, sist nej. Ett okontrollerat värde
+        // ska aldrig sorteras som om vi visste att svaret var nej.
+        const rank = (value: boolean | null) => (value === true ? 0 : value === null ? 1 : 2)
+        if (rank(a.service.sameDay) !== rank(b.service.sameDay)) {
+          return rank(a.service.sameDay) - rank(b.service.sameDay)
         }
         const cutoffA = effectiveCutoff(a)
         const cutoffB = effectiveCutoff(b)
@@ -97,14 +121,14 @@ export function ComparisonTable({
       <AffiliateDisclosure pricesVerifiedAt={pricesVerifiedAt} />
 
       <div className="flex items-center gap-2 text-sm">
-        <span className="text-gray-500">Sortera:</span>
+        <span className="text-ink-faint">Sortera:</span>
         <button
           type="button"
           onClick={() => setSortMode('price')}
           className={`rounded-full px-3 py-1 transition-colors ${
             sortMode === 'price'
-              ? 'bg-gray-900 text-white'
-              : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+              ? 'bg-brand text-brand-foreground'
+              : 'bg-muted text-ink-muted hover:bg-line'
           }`}
           aria-pressed={sortMode === 'price'}
         >
@@ -115,8 +139,8 @@ export function ComparisonTable({
           onClick={() => setSortMode('speed')}
           className={`rounded-full px-3 py-1 transition-colors ${
             sortMode === 'speed'
-              ? 'bg-gray-900 text-white'
-              : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+              ? 'bg-brand text-brand-foreground'
+              : 'bg-muted text-ink-muted hover:bg-line'
           }`}
           aria-pressed={sortMode === 'speed'}
         >
@@ -124,14 +148,14 @@ export function ComparisonTable({
         </button>
       </div>
 
-      <div className="overflow-x-auto rounded-xl border border-gray-200">
+      <div className="overflow-x-auto rounded-lg border border-line">
         <table className="w-full min-w-[640px] border-collapse text-sm">
           <caption className="sr-only">
             Jämförelse av blombud: totalpris, leverans samma dag, sista beställningstid
             och budavgift.
           </caption>
           <thead>
-            <tr className="border-b border-gray-200 bg-gray-50 text-left">
+            <tr className="border-b border-line bg-paper text-left">
               <th scope="col" className="p-3 font-semibold">Tjänst</th>
               <th scope="col" className="p-3 font-semibold">Samma dag</th>
               <th scope="col" className="p-3 font-semibold">Beställ före</th>
@@ -155,25 +179,21 @@ export function ComparisonTable({
               return (
                 <tr
                   key={service.id}
-                  className={`border-b border-gray-100 last:border-0 ${
-                    isPick ? 'bg-amber-50/60' : ''
+                  className={`border-b border-line last:border-0 ${
+                    isPick ? 'bg-signal-50' : ''
                   }`}
                 >
                   <th scope="row" className="p-3 text-left font-medium">
                     {service.name}
                     {isPick && (
-                      <span className="mt-1 flex items-center gap-1 text-xs font-normal text-amber-700">
+                      <span className="mt-1 flex items-center gap-1 text-xs font-normal text-signal-600">
                         <Star className="h-3 w-3 fill-current" aria-hidden />
                         Vårt val
                       </span>
                     )}
                   </th>
                   <td className="p-3">
-                    {service.sameDay ? (
-                      <Check className="h-4 w-4 text-green-600" aria-label="Ja" />
-                    ) : (
-                      <Minus className="h-4 w-4 text-gray-400" aria-label="Nej" />
-                    )}
+                    <SameDayCell value={service.sameDay} />
                   </td>
                   <td className="p-3">{cutoff ?? <Unknown />}</td>
                   <td className="p-3">{price !== null ? `${price} kr` : <Unknown />}</td>
@@ -188,7 +208,7 @@ export function ComparisonTable({
                         rel="sponsored nofollow noopener"
                         target="_blank"
                         onClick={() => handleClick(service)}
-                        className="inline-block rounded-lg bg-gray-900 px-3 py-2 text-white transition-colors hover:bg-gray-700"
+                        className="inline-block rounded-lg bg-brand px-3 py-2 text-brand-foreground transition-colors hover:bg-brand-700"
                       >
                         Till {service.name}
                       </a>
@@ -197,7 +217,7 @@ export function ComparisonTable({
                         href={service.websiteUrl}
                         rel="nofollow noopener"
                         target="_blank"
-                        className="inline-block rounded-lg border border-gray-300 px-3 py-2 text-gray-700 transition-colors hover:bg-gray-50"
+                        className="inline-block rounded-lg border border-line-strong px-3 py-2 text-ink-muted transition-colors hover:bg-paper"
                       >
                         Till {service.name}
                       </a>
@@ -211,14 +231,15 @@ export function ComparisonTable({
       </div>
 
       {pick && (
-        <p className="text-sm text-gray-600">
+        <p className="text-sm text-ink-muted">
           <strong className="font-medium">Vårt val:</strong> {pick.reason}
         </p>
       )}
 
-      <p className="text-xs text-gray-500">
-        Tankstreck betyder att uppgiften inte är kontrollerad av oss. Vi skriver hellre
-        ingenting än en siffra vi inte kan stå för.
+      <p className="text-xs text-ink-faint">
+        Tankstreck betyder att vi inte kontrollerat uppgiften. Står det &rdquo;Nej&rdquo;
+        har vi kontrollerat och svaret är nej. Vi skriver hellre ingenting än en
+        siffra vi inte kan stå för.
       </p>
     </section>
   )

@@ -2,32 +2,53 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Category } from '@/types'
 import { cn } from '@/lib/utils'
+import {
+  Building2,
+  Church,
+  Clock,
+  Flower2,
+  Gift,
+  Leaf,
+  Sparkles,
+  Tag,
+  type LucideIcon,
+} from 'lucide-react'
 
 interface CategoryCardProps {
   category: Category
   size?: 'small' | 'medium' | 'large'
 }
 
+/*
+  Tidigare låg åtta godtyckliga regnbågsgradienter här — rosa, lila, röd,
+  blå. De var ren dekor och drog sajten mot e-handel. Korten skiljs nu åt
+  med djup i varumärkesskalan i stället för med kulör. Ett enda undantag:
+  begravning får den dovaste tonen, eftersom sammanhanget kräver det.
+*/
 const categoryGradients: Record<string, string> = {
-  buketter: 'from-pink-400 to-rose-500',
-  begravning: 'from-gray-500 to-gray-700',
-  brollop: 'from-purple-300 to-pink-400',
-  foretag: 'from-blue-400 to-indigo-500',
-  presenter: 'from-amber-400 to-orange-500',
-  'konstgjorda-blommor': 'from-emerald-400 to-teal-500',
-  'samma-dag-leverans': 'from-red-400 to-rose-500',
-  budget: 'from-green-400 to-emerald-500',
+  buketter: 'from-brand-400 to-brand-600',
+  begravning: 'from-brand-800 to-brand-900',
+  brollop: 'from-brand-300 to-brand-500',
+  foretag: 'from-brand-600 to-brand-800',
+  presenter: 'from-signal-400 to-signal-600',
+  'konstgjorda-blommor': 'from-brand-200 to-brand-400',
+  'samma-dag-leverans': 'from-signal-500 to-signal-700',
+  budget: 'from-brand-500 to-brand-700',
 }
 
-const categoryEmojis: Record<string, string> = {
-  buketter: '💐',
-  begravning: '🌿',
-  brollop: '💍',
-  foretag: '🏢',
-  presenter: '🎁',
-  'konstgjorda-blommor': '🌸',
-  'samma-dag-leverans': '⚡',
-  budget: '💚',
+/*
+  Emojier ersatta med linjeikoner. 💐 💍 🎁 💚 läser som present- och
+  bröllopsbutik, vilket är precis den avsändare sajten inte ska ha.
+*/
+const categoryIcons: Record<string, LucideIcon> = {
+  buketter: Flower2,
+  begravning: Leaf,
+  brollop: Church,
+  foretag: Building2,
+  presenter: Gift,
+  'konstgjorda-blommor': Sparkles,
+  'samma-dag-leverans': Clock,
+  budget: Tag,
 }
 
 export function CategoryCard({ category, size = 'medium' }: CategoryCardProps) {
@@ -37,8 +58,8 @@ export function CategoryCard({ category, size = 'medium' }: CategoryCardProps) {
     large: 'aspect-[3/4]',
   }
 
-  const gradient = categoryGradients[category.id] || 'from-primary to-primary/70'
-  const emoji = categoryEmojis[category.id] || '🌷'
+  const gradient = categoryGradients[category.id] || 'from-brand-500 to-brand-700'
+  const Icon = categoryIcons[category.id] ?? Flower2
 
   return (
     <Link
@@ -56,7 +77,7 @@ export function CategoryCard({ category, size = 'medium' }: CategoryCardProps) {
         />
       ) : (
         <div className={cn('absolute inset-0 bg-gradient-to-br transition-transform duration-500 group-hover:scale-105', gradient)}>
-          <span className="absolute right-4 top-4 text-5xl opacity-30">{emoji}</span>
+          <Icon className="absolute right-4 top-4 h-12 w-12 text-white opacity-25" aria-hidden />
         </div>
       )}
 
@@ -65,8 +86,8 @@ export function CategoryCard({ category, size = 'medium' }: CategoryCardProps) {
 
       {/* Innehåll */}
       <div className="category-card-content">
-        <div className="mb-1 text-2xl">{emoji}</div>
-        <h3 className="font-display text-lg font-bold md:text-xl">
+        <Icon className="mb-1.5 h-5 w-5" aria-hidden />
+        <h3 className="font-display text-lg md:text-xl">
           {category.namePlural}
         </h3>
         {category.productCount > 0 && (

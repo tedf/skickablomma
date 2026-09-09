@@ -1,6 +1,6 @@
 {
   "updatedAt": "2026-09-09",
-  "_kommentar": "priceFromSek och deliveryFeeSek för Interflora och Cramers kommer ur Adtraction-feeden daterad 2026-02-14 (data/products.json). Övriga tjänster saknar affiliate-avtal och därmed feed — deras siffror är null tills de kontrollerats manuellt mot respektive sajt. Null betyder 'ej kontrollerat', aldrig 0.",
+  "_kommentar": "priceFromSek och deliveryFeeSek för Interflora och Cramers kommer ur Adtraction-feeden daterad 2026-02-14 (data/products.json). Övriga tjänster saknar affiliate-avtal och därmed feed — deras siffror är null tills de kontrollerats manuellt mot respektive sajt. Null betyder 'ej kontrollerat', aldrig 0. sameDay är null för varje tjänst utan verifiedAt: vi har inte kontrollerat det, och får därför inte påstå nej.",
   "services": [
     {
       "id": "interflora",
@@ -56,7 +56,7 @@
       "affiliateUrl": null,
       "network": "tradedoubler",
       "commissionNote": "Ansökan ej inskickad (fas 0). Villkor enligt siteplanen: brand bidding förbjudet, spärrade PPC-sökord — gäller betald sök, inte organisk.",
-      "sameDay": true,
+      "sameDay": null,
       "cutoffWeekday": null,
       "cutoffSaturday": null,
       "priceFromSek": null,
@@ -78,7 +78,7 @@
       "affiliateUrl": null,
       "network": "adtraction",
       "commissionNote": "Nätverk och villkor ej verifierade.",
-      "sameDay": false,
+      "sameDay": null,
       "cutoffWeekday": null,
       "cutoffSaturday": null,
       "priceFromSek": null,
@@ -96,7 +96,7 @@
       "affiliateUrl": null,
       "network": "direkt",
       "commissionNote": "Kontaktas för direktavtal (fas 0). Små aktörer ger ofta bättre villkor än nätverken.",
-      "sameDay": false,
+      "sameDay": null,
       "cutoffWeekday": null,
       "cutoffSaturday": null,
       "priceFromSek": null,
@@ -118,7 +118,7 @@
       "affiliateUrl": null,
       "network": "direkt",
       "commissionNote": "Kontaktas för direktavtal (fas 0).",
-      "sameDay": false,
+      "sameDay": null,
       "cutoffWeekday": null,
       "cutoffSaturday": null,
       "priceFromSek": null,
