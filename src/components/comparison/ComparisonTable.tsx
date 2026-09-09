@@ -39,7 +39,11 @@ function effectiveCutoff(row: ComparisonRow): string | null {
 
 /**
  * Okänt värde skrivs ut som tankstreck, aldrig som noll eller en gissning.
- * Tecknet är också varumärkets märke — se components/brand/Wordmark.
+ *
+ * Tecknet var tidigare också varumärkets märke. Det är det inte längre: en
+ * logotyp som betyder "ej kontrollerat" sa fel sak om avsändaren, och gick
+ * dessutom inte att skilja från en minusknapp i en flik. Strecket behåller
+ * sitt jobb här, i tabellen, där det betyder något.
  */
 function Unknown() {
   return (

@@ -9,14 +9,22 @@ interface WordmarkProps {
 }
 
 /**
- * Märket är ett tankstreck i en ruta.
+ * Märket är en kvist: en stjälk med två blad, förskjutna i höjd och sida.
  *
- * Tankstrecket är tecknet vi sätter i en tabellcell där vi inte kontrollerat
- * uppgiften. Ingen konkurrent skriver ut sin okunskap — Interflora och
- * Euroflorist fyller varje fält, oavsett om de vet. Därför är tecknet ledigt,
- * och därför betyder det något: logotypen och produktlogiken är samma sak.
+ * Det var tidigare ett tankstreck, med motiveringen att tecknet vi sätter i en
+ * okontrollerad tabellcell också kunde bära avsändaren. Den idén höll inte.
+ * Ett vågrätt streck i en rundad ruta är redan upptaget i gränssnitt — minus,
+ * kollapsa, ta bort, avstängd — och vid 16 px i en flik gick märket inte att
+ * skilja från en minusknapp. Värre: samma glyf står i tabellen och betyder
+ * "ej kontrollerat". Logotypen sa alltså bokstavligen att vi inte vet.
  *
- * Rutan är kvadratisk och strikt. Ingen blomma, ingen kvist, ingen hjärtform.
+ * Kvisten säger i stället vad sajten handlar om. Bladen är solida och sitter
+ * på olika höjd, vilket gör att formen läser som något som växer och inte som
+ * en pil. Ingen blomknopp, ingen hjärtform: kvisten är ämnet, inte sortimentet.
+ *
+ * Ritad för 16 px först. Stjälken är 2,4 enheter bred i en ruta på 32, alltså
+ * drygt en px vid flikstorlek, och båda bladen har full opacitet eftersom
+ * opacitetsskillnader försvinner vid nedskalning.
  */
 function Mark({ size = 28 }: { size?: number }) {
   return (
@@ -30,7 +38,14 @@ function Mark({ size = 28 }: { size?: number }) {
       className="shrink-0"
     >
       <rect width="32" height="32" rx="7" className="fill-brand" />
-      <rect x="8" y="15" width="16" height="2" rx="1" className="fill-paper" />
+      <path
+        d="M15.4 25.5V7.5"
+        className="stroke-paper"
+        strokeWidth="2.4"
+        strokeLinecap="round"
+      />
+      <path d="M15.4 14.4c0-3.3 2.7-6 6-6 0 3.3-2.7 6-6 6Z" className="fill-paper" />
+      <path d="M15.4 21c0-2.7-2.2-4.9-4.9-4.9 0 2.7 2.2 4.9 4.9 4.9Z" className="fill-paper" />
     </svg>
   )
 }
