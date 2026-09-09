@@ -4,7 +4,7 @@
   "pages": [
     {
       "slug": "/",
-      "bodyMd": "## Så fungerar sajten\n\nVi säljer inga blommor. Vi jämför dem som gör det, och tjänar pengar när du klickar vidare och beställer. Rangordningen i tabellerna sätts efter pris och leveranstid, inte efter vilken provision vi får — annars vore jämförelsen värdelös för dig och därmed för oss.\n\n## Vad du hittar här\n\n**Blombud stad för stad.** Vilka tjänster som levererar var, när stopptiden går, vad budet kostar och vilka lokala florister som finns. Ingen mallad text: en stad publiceras först när vi kontrollerat floristerna på plats.\n\n**Blommor utomlands.** Leveranstider och priser per land, plus det praktiska — tidsskillnad, helgdagar, om tull tillkommer.\n\n**Tillfällen.** Vad som passar och vad du skriver på kortet, från begravning till födelsedag.\n\n**Prisjämförelser.** Totalpris, alltså bukett plus bud, för de största tjänsterna. Med datum för när vi senast kontrollerade.\n\n## Om priserna\n\nVarje tabell visar när priserna kontrollerades. Blir en uppgift gammal syns det, i stället för att gömmas. Hittar du ett fel, hör av dig.",
+      "bodyMd": "## Så fungerar sajten\n\nVi säljer inga blommor. Vi jämför dem som gör det, och tjänar pengar när du klickar vidare och beställer. Rangordningen sätts efter pris och leveranstid. Provisionen påverkar den inte. En jämförelse som gick att köpa vore värdelös för dig, och därmed på sikt för oss.\n\n## Vad du hittar här\n\n**Blombud stad för stad.** Vilka tjänster som levererar var, när stopptiden går, vad budet kostar och vilka lokala florister som finns. Ingen mallad text: en stad publiceras först när vi kontrollerat floristerna på plats.\n\n**Blommor utomlands.** Leveranstider och priser per land. Också det praktiska: tidsskillnad, helgdagar och om det tillkommer tull.\n\n**Tillfällen.** Vad som passar och vad du skriver på kortet, från begravning till födelsedag.\n\n**Prisjämförelser.** Totalpris, alltså bukett plus bud, för de största tjänsterna. Med datum för när vi senast kontrollerade.\n\n## Om priserna\n\nVarje tabell visar när priserna kontrollerades. Blir en uppgift gammal syns det på datumet. Hittar du ett fel, hör av dig.",
       "page": {
         "status": "draft",
         "title": "Jämför blombud i Sverige",
@@ -27,7 +27,7 @@
     },
     {
       "slug": "/blombud",
-      "bodyMd": "## Skillnaden mellan blombud och blomsterbutik\n\nEtt blombud är en förmedlingstjänst. Du beställer på nätet, en florist nära mottagaren binder buketten och kör ut den. Du handlar alltså inte av en butik utan av ett nätverk som fördelar din beställning.\n\nDet förklarar två saker som ofta förvånar: att priset inte beror på avståndet, och att stopptiden är tidig. Floristen behöver tid att binda och köra.\n\n## Vad budavgiften täcker\n\nAvgiften går till utkörningen, inte till blommorna. Den är densamma oavsett buketten kostar tvåhundra eller åttahundra kronor. På billiga buketter blir avgiften därför en stor andel av totalen — det är därför vi jämför totalpris och inte från-pris.\n\n## Samma dag\n\nSamma dag-leverans kräver nästan alltid att beställningen ligger inne före lunch på en vardag. Lördagar har tidigare stopptid. Söndagar levererar de flesta inte alls.\n\n## Så väljer vi städer\n\nEn stad publiceras här när vi kontrollerat minst tre florister på plats: namn, område, öppettider. Det tar tid, och det är avsiktligt. En stadssida byggd på gissningar hjälper ingen.",
+      "bodyMd": "## Skillnaden mellan blombud och blomsterbutik\n\nEtt blombud är en förmedlingstjänst. Du beställer på nätet, en florist nära mottagaren binder buketten och kör ut den. Du handlar alltså inte av en butik utan av ett nätverk som fördelar din beställning.\n\nDet förklarar två saker som ofta förvånar: att priset inte beror på avståndet, och att stopptiden är tidig. Floristen behöver tid att binda och köra.\n\n## Vad budavgiften täcker\n\nAvgiften betalar för utkörningen och har ingenting med bukettens pris att göra. Den är densamma vare sig buketten kostar tvåhundra eller åttahundra kronor. På en billig bukett blir avgiften därför en stor andel av totalen, och det är skälet till att vi jämför totalpriset.\n\n## Samma dag\n\nSamma dag-leverans kräver nästan alltid att beställningen ligger inne före lunch på en vardag. Lördagar har tidigare stopptid, och på söndagar levererar de flesta inte alls.\n\n## Så väljer vi städer\n\nEn stad publiceras här när vi kontrollerat minst tre florister på plats: namn, område, öppettider. Det tar tid, och det är avsiktligt. En stadssida byggd på gissningar hjälper ingen.",
       "page": {
         "status": "draft",
         "title": "Blombud – jämför tjänster och städer",
@@ -37,7 +37,7 @@
         "faq": [
           {
             "question": "Vilket blombud är billigast?",
-            "answer": "Det avgörs av totalpriset, inte av från-priset. Budavgiften är fast oavsett hur dyr buketten är, så en tjänst med lågt från-pris och hög avgift blir dyrare än den ser ut. Jämförelsetabellen ovan sorterar på totalen. Att ringa en lokal florist direkt är ofta billigast av allt, eftersom du slipper nätverkets förmedlingsavgift."
+            "answer": "Det avgörs av totalpriset snarare än av från-priset. Budavgiften är fast oavsett hur dyr buketten är, så en tjänst med lågt från-pris och hög avgift blir dyrare än den ser ut. Jämförelsetabellen ovan sorterar på totalen. Att ringa en lokal florist direkt är ofta billigast av allt, eftersom du slipper nätverkets förmedlingsavgift."
           },
           {
             "question": "Vilket blombud är bäst?",
@@ -49,7 +49,7 @@
           },
           {
             "question": "Vad kan man skicka istället för blombud?",
-            "answer": "En krukväxt håller längre och passar när mottagaren är borta några dagar. Presentkort hos en lokal florist låter mottagaren välja själv. Till någon som ligger på sjukhus är blommor ibland inte tillåtna alls — då fungerar frukt, en bok eller ett handskrivet kort bättre. Ring avdelningen och fråga först."
+            "answer": "En krukväxt håller längre och passar när mottagaren är borta några dagar. Presentkort hos en lokal florist låter mottagaren välja själv. Till någon som ligger på sjukhus är blommor ibland inte tillåtna alls. Frukt, en bok eller ett handskrivet kort fungerar då bättre, men ring avdelningen och fråga innan du bestämmer dig."
           }
         ],
         "pricesVerifiedAt": "2026-02-14",
@@ -58,7 +58,7 @@
     },
     {
       "slug": "/utomlands",
-      "bodyMd": "## Hur det går till\n\nBuketten skickas inte från Sverige. Din beställning går till ett floristnätverk som lämnar över den till en florist i mottagarens land, som binder och kör ut. Blommorna korsar alltså aldrig en gräns.\n\nDärför tillkommer ingen tull, inte heller till länder utanför EU. Och därför beror leveranstiden på den lokala floristens arbetsdag, inte på avståndet från Sverige.\n\n## Det som faktiskt påverkar leveransen\n\n**Tidsskillnad.** En beställning som läggs på svensk eftermiddag kan hinna med samma arbetsdag i USA, men missa den i Finland.\n\n**Helgdagar.** De skiljer sig mellan länder, och i Tyskland även mellan delstater. En röd dag flyttar leveransen framåt.\n\n**Söndagar.** Många länders florister levererar inte alls på söndagar.\n\n## Vad du behöver ange\n\nFullständig adress i landets eget format, och mottagarens telefonnummer. Utländska florister ringer när adressen är otydlig, och utan nummer blir leveransen liggande.",
+      "bodyMd": "## Hur det går till\n\nBuketten skickas inte från Sverige. Din beställning går till ett floristnätverk som lämnar över den till en florist i mottagarens land, som binder och kör ut. Blommorna korsar alltså aldrig en gräns.\n\nDärför tillkommer ingen tull, inte ens till länder utanför EU. Leveranstiden styrs av den lokala floristens arbetsdag snarare än av avståndet från Sverige.\n\n## Det som faktiskt påverkar leveransen\n\n**Tidsskillnad.** En beställning som läggs på svensk eftermiddag kan hinna med samma arbetsdag i USA, men missa den i Finland.\n\n**Helgdagar.** De skiljer sig mellan länder, och i Tyskland även mellan delstater, så en röd dag flyttar fram leveransen.\n\n**Söndagar.** Många länders florister levererar inte alls på söndagar.\n\n## Vad du behöver ange\n\nFullständig adress i landets eget format, och mottagarens telefonnummer. Utländska florister ringer när adressen är otydlig, och utan nummer blir leveransen liggande.",
       "page": {
         "status": "draft",
         "title": "Skicka blommor utomlands – priser och leveranstider per land",
@@ -68,11 +68,11 @@
         "faq": [
           {
             "question": "Tillkommer tull?",
-            "answer": "Nej. Buketten binds av en florist i mottagarlandet och passerar aldrig en gräns, så ingen tull uppstår — inte heller utanför EU."
+            "answer": "Nej. Buketten binds av en florist i mottagarlandet, så det sker ingen import och därmed ingen tull. Det gäller även länder utanför EU."
           },
           {
             "question": "Hur lång tid tar det?",
-            "answer": "Normalt en till tre vardagar. Tiden styrs av den lokala floristens arbetsdag och landets helgdagar, inte av avståndet från Sverige."
+            "answer": "Normalt en till tre vardagar. Det är den lokala floristens arbetsdag och landets helgdagar som styr, inte hur långt bort landet ligger."
           }
         ],
         "pricesVerifiedAt": null,
@@ -81,7 +81,7 @@
     },
     {
       "slug": "/jamfor",
-      "bodyMd": "## Så rankar vi\n\nTabellen sorteras på totalpris: bukettens från-pris plus budavgiften. Det är den siffra du faktiskt betalar, och den som skiljer tjänsterna åt mest.\n\nDu kan byta till sortering på leveranstid om du har bråttom snarare än ont om pengar.\n\n## Vad \"Vårt val\" betyder\n\nÄr en rad markerad som vårt val står motiveringen i en mening under tabellen, och den går att kontrollera mot siffrorna i raden. Valet styrs av pris, täckning och stopptid, aldrig av vilken provision vi får.\n\nVi markerar ingen rad så länge vi bara har kontrollerat priset hos en enda tjänst. Billigast av en är inte en jämförelse.\n\n## Vad tabellen inte säger\n\nFrån-priset gäller den billigaste buketten i sortimentet, som sällan är den du vill skicka. Använd tabellen för att välja tjänst, inte för att förutse din slutnota.\n\nTäckningen varierar också inom landet. En tjänst som levererar samma dag i Stockholm gör det inte nödvändigtvis i mindre orter. Stadssidorna är mer exakta än den här översikten.",
+      "bodyMd": "## Så rankar vi\n\nTabellen sorteras på totalpris: bukettens från-pris plus budavgiften. Det är den siffra du faktiskt betalar, och den som skiljer tjänsterna åt mest.\n\nDu kan byta till sortering på leveranstid om du har bråttom snarare än ont om pengar.\n\n## Vad \"Vårt val\" betyder\n\nÄr en rad markerad som vårt val står motiveringen i en mening under tabellen, och den går att kontrollera mot siffrorna i raden. Vi väljer efter pris, täckning och stopptid, och provisionen är inte med i bedömningen.\n\nSå länge vi bara kontrollerat priset hos en enda tjänst markerar vi ingen rad alls, eftersom billigast av en inte säger någonting.\n\n## Vad tabellen inte säger\n\nFrån-priset gäller den billigaste buketten i sortimentet, som sällan är den du vill skicka. Använd tabellen när du väljer tjänst. Vad din beställning landar på beror på vilken bukett du väljer.\n\nTäckningen varierar också inom landet. En tjänst som levererar samma dag i Stockholm gör det inte nödvändigtvis i mindre orter. Stadssidorna är mer exakta än den här översikten.",
       "page": {
         "status": "published",
         "title": "Jämför blombud – pris, leveranstid och täckning",
@@ -104,7 +104,7 @@
     },
     {
       "slug": "/jamfor/billigt",
-      "bodyMd": "## Var pengarna tar vägen\n\nEn billig blomsterleverans har två kostnader, och det är den andra som avgör. Buketten kan kosta hundrafemtio kronor, men budavgiften är densamma som på en bukett för åttahundra. På det billigaste alternativet kan avgiften utgöra en tredjedel av notan.\n\nJämför därför alltid totalen.\n\n## Tre sätt att sänka priset\n\n**Ring en lokal florist direkt.** Du slipper nätverkets förmedlingsavgift. Nackdelen är att du får ringa runt, och att du inte ser sortimentet.\n\n**Välj säsongsblommor.** Tulpaner i mars och pioner i juni kostar en bråkdel av vad samma sorter gör utanför säsong.\n\n**Undvik de stora dagarna.** Priserna stiger inför alla hjärtans dag och mors dag. Skickar du dagen efter får du mer för pengarna, och buketten blir ofta mer uppskattad.\n\n## Fri frakt\n\nFörekommer i kampanjer och i vissa tjänsters abonnemang. Räkna på om abonnemanget lönar sig — det gör det sällan om du skickar blommor någon enstaka gång per år.",
+      "bodyMd": "## Var pengarna tar vägen\n\nEn billig blomsterleverans har två kostnader, och det är den andra som avgör. Buketten kan kosta hundrafemtio kronor, men budavgiften är densamma som på en bukett för åttahundra. På det billigaste alternativet kan avgiften utgöra en tredjedel av notan.\n\nJämför därför alltid totalen.\n\n## Tre sätt att sänka priset\n\n**Ring en lokal florist direkt.** Du slipper nätverkets förmedlingsavgift. Nackdelen är att du får ringa runt, och att du inte ser sortimentet.\n\n**Välj säsongsblommor.** Tulpaner i mars och pioner i juni kostar en bråkdel av vad samma sorter gör utanför säsong.\n\n**Undvik de stora dagarna.** Priserna stiger inför alla hjärtans dag och mors dag. Skickar du dagen efter får du mer för pengarna, och buketten blir ofta mer uppskattad.\n\n## Fri frakt\n\nFörekommer i kampanjer och i vissa tjänsters abonnemang. Räkna på om abonnemanget lönar sig. Skickar du blommor någon enstaka gång per år gör det sällan det.",
       "page": {
         "status": "draft",
         "title": "Billigast att skicka blommor – jämförelse av totalpris",
@@ -127,7 +127,7 @@
     },
     {
       "slug": "/guider/vad-kostar-det",
-      "bodyMd": "## De två posterna\n\nEn blomsterleverans prissätts i två delar: buketten och budet. De redovisas var för sig i kassan, och det är summan som räknas.\n\nBuketten kostar mest i de fall du väljer specifika sorter utanför säsong. Budet kostar lika mycket oavsett.\n\n## Vad som får priset att röra sig\n\n**Säsong.** Samma sort kan skilja sig kraftigt i pris beroende på månad.\n\n**Högtider.** Alla hjärtans dag och mors dag driver upp priserna veckan före.\n\n**Storlek.** Antalet stjälkar är den enskilt största faktorn i bukettens pris.\n\n**Leveransdag.** Lördagsleverans kostar ofta extra. Söndag går sällan att få alls.\n\n## Vad som inte påverkar\n\nAvståndet. Buketten binds lokalt, så det kostar lika mycket att skicka till grannstaden som till andra sidan landet. Samma sak utomlands.\n\n## Vad du bör budgetera\n\nFör en bukett som ser ut som något ligger de flesta beställningar en bit över tjänsternas från-pris. Från-priset gäller den minsta buketten i sortimentet.",
+      "bodyMd": "## De två posterna\n\nEn blomsterleverans prissätts i två delar: buketten och budet. De redovisas var för sig i kassan, och det är summan som räknas.\n\nBuketten blir dyrast när du väljer specifika sorter utanför säsong, medan budet kostar lika mycket oavsett.\n\n## Vad som får priset att röra sig\n\n**Säsong.** Samma sort kan skilja sig kraftigt i pris beroende på månad.\n\n**Högtider.** Alla hjärtans dag och mors dag driver upp priserna veckan före.\n\n**Storlek.** Antalet stjälkar är den enskilt största faktorn i bukettens pris.\n\n**Leveransdag.** Lördagsleverans kostar ofta extra, och söndag går sällan att få alls.\n\n## Vad som inte påverkar\n\nAvståndet. Buketten binds lokalt, så det kostar lika mycket att skicka till grannstaden som till andra sidan landet. Detsamma gäller utomlands.\n\n## Vad du bör budgetera\n\nDe flesta beställningar landar en bit över tjänsternas från-pris, eftersom den allra minsta buketten sällan är den man vill skicka. Lägg på budavgiften och ett par stjälkar till, så har du en rimligare budget.",
       "page": {
         "status": "draft",
         "title": "Vad kostar det att skicka blommor? Prisjämförelse",
@@ -154,7 +154,7 @@
     },
     {
       "slug": "/guider/text-till-begravning",
-      "bodyMd": "## Hur lång ska texten vara?\n\nTvå rader. Korten är små och texten skrivs för hand av floristen, så det som inte får plats stryks ändå.\n\nSkriv hälsningen på de första raderna och namnet under. Är ni flera: förnamn räcker, eller familjenamnet om ni är många.\n\n## Vad du inte behöver skriva\n\nDu behöver inte förklara varför du inte kan komma. Du behöver inte skriva något originellt. Och du behöver inte hitta orden som gör det bättre, för de finns inte.\n\nDe anhöriga läser hundra kort samma vecka. Det som fastnar är att du fanns med, inte hur du formulerade dig.\n\n## Formuleringar efter relation\n\n**Till någon som stod dig nära**\n\n- Tack för allt. Jag saknar dig.\n- Du finns kvar i allt du lärde mig.\n- Vila i frid. Jag glömmer dig aldrig.\n\n**Till en kollega eller bekant**\n\n- Med varmt deltagande.\n- Vi minns dig med värme. Kollegorna på ekonomiavdelningen\n- Tack för åren tillsammans.\n\n**Till de efterlevande, när du inte kände den avlidne**\n\n- Våra tankar är hos er.\n- Med deltagande i er sorg.\n- Vi tänker på er.\n\n**Från en familj eller grupp**\n\n- Vila i frid. Familjen Lindberg\n- Ett sista farväl från oss alla.\n\n## Om du är osäker\n\nVälj den kortaste varianten. Ett kort som säger \"Med varmt deltagande\" och ditt namn är alltid rätt. Ett kort som försöker för mycket kan bli fel.\n\n## Praktiskt\n\nTexten anges i beställningen, i ett fritextfält. Kontrollera stavningen på namn innan du skickar — floristen skriver av exakt det du matar in.\n\nAnge också om kortet ska gå till kyrkan tillsammans med blommorna eller separat till de anhörigas hem.",
+      "bodyMd": "## Hur lång ska texten vara?\n\nTvå rader. Korten är små och texten skrivs för hand av floristen, så det som inte får plats stryks ändå.\n\nSkriv hälsningen på de första raderna och namnet under. Är ni flera: förnamn räcker, eller familjenamnet om ni är många.\n\n## Vad du inte behöver skriva\n\nDu behöver inte förklara varför du inte kan komma. Du behöver inte skriva något originellt. Och du behöver inte hitta orden som gör det bättre, för de finns inte.\n\nDe anhöriga läser hundra kort samma vecka. Det som fastnar är att du fanns med, inte hur du formulerade dig.\n\n## Formuleringar efter relation\n\n**Till någon som stod dig nära**\n\n- Tack för allt. Jag saknar dig.\n- Du finns kvar i allt du lärde mig.\n- Vila i frid. Jag glömmer dig aldrig.\n\n**Till en kollega eller bekant**\n\n- Med varmt deltagande.\n- Vi minns dig med värme. Kollegorna på ekonomiavdelningen\n- Tack för åren tillsammans.\n\n**Till de efterlevande, när du inte kände den avlidne**\n\n- Våra tankar är hos er.\n- Med deltagande i er sorg.\n- Vi tänker på er.\n\n**Från en familj eller grupp**\n\n- Vila i frid. Familjen Lindberg\n- Ett sista farväl från oss alla.\n\n## Om du är osäker\n\nVälj den kortaste varianten. Ett kort som säger \"Med varmt deltagande\" och ditt namn är alltid rätt. Ett kort som försöker för mycket kan bli fel.\n\n## Praktiskt\n\nTexten anges i beställningen, i ett fritextfält. Läs igenom namnen en extra gång innan du skickar beställningen.\n\nAnge också om kortet ska gå till kyrkan tillsammans med blommorna eller separat till de anhörigas hem.",
       "page": {
         "status": "published",
         "title": "Vad skriver man på kortet till en begravning?",
@@ -172,7 +172,7 @@
           },
           {
             "question": "Skriver floristen texten för hand?",
-            "answer": "Oftast ja. Därför är det viktigt att stavningen i beställningen är rätt — de skriver av exakt det du matar in, utan att rätta."
+            "answer": "Oftast ja. Därför måste stavningen i beställningen vara rätt. De skriver av exakt det du matar in, utan att rätta."
           }
         ],
         "pricesVerifiedAt": null,

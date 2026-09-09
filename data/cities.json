@@ -50,7 +50,7 @@
           },
           {
             "question": "Levererar blombuden till Universitetssjukhuset?",
-            "answer": "De flesta gör det, men avdelningarna har olika regler. Vissa avdelningar tar inte emot blommor alls. Ring avdelningen innan du beställer."
+            "answer": "De flesta gör det, men avdelningarna har olika regler och vissa tar inte emot blommor alls. Ring och fråga innan du beställer."
           },
           {
             "question": "Går det att beställa till en adress utanför tätorten?",
@@ -108,7 +108,7 @@
           },
           {
             "question": "Vad kostar budet i Jönköping?",
-            "answer": "Budavgiften sätts av tjänsten, inte av staden, och ligger i samma spann som i övriga landet. Se jämförelsetabellen ovan för aktuella avgifter."
+            "answer": "Budavgiften sätts av tjänsten och ligger i samma spann som i övriga landet. Aktuella avgifter står i tabellen ovan."
           },
           {
             "question": "Levererar blombuden till Länssjukhuset Ryhov?",
