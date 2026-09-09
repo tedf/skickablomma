@@ -72,7 +72,8 @@
         }
       ],
       "neighbours": [
-        "jonkoping"
+        "jonkoping",
+        "norrkoping"
       ],
       "deliveryAreas": [
         "Innerstaden",
@@ -154,7 +155,8 @@
         }
       ],
       "neighbours": [
-        "linkoping"
+        "linkoping",
+        "boras"
       ],
       "deliveryAreas": [
         "Centrum",
@@ -186,6 +188,879 @@
           {
             "question": "Levererar blombuden till Länssjukhuset Ryhov?",
             "answer": "Vanligtvis ja, till receptionen eller avdelningen. Kontrollera med avdelningen först, eftersom reglerna skiljer sig mellan dem."
+          }
+        ],
+        "pricesVerifiedAt": "2026-02-14",
+        "updatedAt": "2026-09-09"
+      }
+    },
+    {
+      "slug": "uppsala",
+      "name": "Uppsala",
+      "county": "Uppsala län",
+      "population": 177000,
+      "lat": 59.8586,
+      "lng": 17.6389,
+      "services": [
+        {
+          "serviceId": "interflora",
+          "sameDayHere": null,
+          "cutoffHere": null,
+          "feeHereSek": null,
+          "verifiedAt": null
+        },
+        {
+          "serviceId": "euroflorist",
+          "sameDayHere": null,
+          "cutoffHere": null,
+          "feeHereSek": null,
+          "verifiedAt": null
+        }
+      ],
+      "florists": [],
+      "hospitals": [
+        {
+          "name": "Akademiska sjukhuset",
+          "deliveryOk": null,
+          "note": "En av landets största sjukhusanläggningar. Ange avdelning och våningsplan, annars stannar buketten i receptionen.",
+          "verifiedAt": null
+        }
+      ],
+      "neighbours": [
+        "gavle",
+        "eskilstuna"
+      ],
+      "deliveryAreas": [
+        "Centrum",
+        "Luthagen",
+        "Svartbäcken",
+        "Sala backe",
+        "Eriksberg",
+        "Flogsta",
+        "Gottsunda",
+        "Årsta",
+        "Boländerna"
+      ],
+      "searchVolume": 700,
+      "kd": 22,
+      "phase": 2,
+      "page": {
+        "status": "published",
+        "title": "Blombud Uppsala – jämför pris och leveranstid",
+        "h1": "Blombud Uppsala – skicka blommor samma dag",
+        "metaDescription": "Jämför blombud i Uppsala: budavgift, stopptid och totalpris sida vid sida. Se vilka områden som täcks och vad som gäller för leverans till Akademiska sjukhuset.",
+        "microAnswer": "I Uppsala når blombuden hela tätorten, från Luthagen och Svartbäcken ut till Gottsunda och Årsta. Beställer du före tjänstens stopptid på en vardag går det oftast att få fram samma dag. Studentkorridorerna i Flogsta och Eriksberg har portkod, så ange den vid beställningen. Nedan jämför vi budavgift, stopptid och totalpris.",
+        "faq": [
+          {
+            "question": "Kan jag skicka blommor samma dag i Uppsala?",
+            "answer": "Oftast, om beställningen ligger inne före tjänstens stopptid på en vardag. Vilka tider som gäller har vi inte kontrollerat och skriver därför tankstreck i tabellen i stället för en siffra."
+          },
+          {
+            "question": "Levererar blombuden till Akademiska sjukhuset?",
+            "answer": "Ja, men Akademiska är en av landets största sjukhusanläggningar och avdelningarna har egna regler. Ange avdelning och våningsplan i beställningen, och kontrollera med avdelningen om patienten får ta emot blommor."
+          },
+          {
+            "question": "Hur gör jag med studentkorridorer?",
+            "answer": "Ange portkod och korridorsnummer i adressfältet. Utan portkod kommer budet inte in i huset, och buketten går tillbaka till floristen eller ställs utanför."
+          }
+        ],
+        "pricesVerifiedAt": "2026-02-14",
+        "updatedAt": "2026-09-09"
+      }
+    },
+    {
+      "slug": "orebro",
+      "name": "Örebro",
+      "county": "Örebro län",
+      "population": 126000,
+      "lat": 59.2741,
+      "lng": 15.2066,
+      "services": [
+        {
+          "serviceId": "interflora",
+          "sameDayHere": null,
+          "cutoffHere": null,
+          "feeHereSek": null,
+          "verifiedAt": null
+        },
+        {
+          "serviceId": "euroflorist",
+          "sameDayHere": null,
+          "cutoffHere": null,
+          "feeHereSek": null,
+          "verifiedAt": null
+        }
+      ],
+      "florists": [],
+      "hospitals": [
+        {
+          "name": "Universitetssjukhuset Örebro",
+          "deliveryOk": null,
+          "note": "Kontrollera avdelningens egna regler innan beställning.",
+          "verifiedAt": null
+        }
+      ],
+      "neighbours": [
+        "eskilstuna",
+        "karlstad"
+      ],
+      "deliveryAreas": [
+        "Centrum",
+        "Almby",
+        "Brickebacken",
+        "Adolfsberg",
+        "Baronbackarna",
+        "Vivalla",
+        "Hjärsta",
+        "Marieberg"
+      ],
+      "searchVolume": 600,
+      "kd": 0,
+      "phase": 2,
+      "page": {
+        "status": "published",
+        "title": "Blombud Örebro – jämför pris och leveranstid",
+        "h1": "Blombud Örebro – skicka blommor samma dag",
+        "metaDescription": "Jämför blombud i Örebro: budavgift, stopptid och totalpris sida vid sida. Se vilka områden som täcks och vad som gäller för leverans till Universitetssjukhuset Örebro.",
+        "microAnswer": "I Örebro levererar blombuden till hela tätorten, inklusive Almby, Brickebacken, Adolfsberg och Vivalla. Beställer du före tjänstens stopptid på en vardag går det oftast att få fram samma dag. Marieberg ligger utanför centrum och kan hamna i en annan leveranszon. Nedan jämför vi budavgift, stopptid och vad en bukett kostar totalt hit.",
+        "faq": [
+          {
+            "question": "Kan jag skicka blommor samma dag i Örebro?",
+            "answer": "Oftast, om beställningen ligger inne före tjänstens stopptid på en vardag. Stopptiderna har vi inte kontrollerat för Örebro och skriver därför tankstreck i tabellen."
+          },
+          {
+            "question": "Levererar blombuden till Universitetssjukhuset Örebro?",
+            "answer": "Ja, men avdelningarna har egna regler. Ange avdelning i beställningen och kontrollera med avdelningen om patienten får ta emot blommor, särskilt på infektions- och intensivvårdsavdelningar."
+          },
+          {
+            "question": "Ingår Marieberg i leveransområdet?",
+            "answer": "Marieberg ligger söder om centrum och räknas i regel som en egen zon. Kontrollera adressen i tjänstens kassa innan du betalar, priset kan skilja sig från centrumleverans."
+          }
+        ],
+        "pricesVerifiedAt": "2026-02-14",
+        "updatedAt": "2026-09-09"
+      }
+    },
+    {
+      "slug": "umea",
+      "name": "Umeå",
+      "county": "Västerbottens län",
+      "population": 93000,
+      "lat": 63.8258,
+      "lng": 20.263,
+      "services": [
+        {
+          "serviceId": "interflora",
+          "sameDayHere": null,
+          "cutoffHere": null,
+          "feeHereSek": null,
+          "verifiedAt": null
+        },
+        {
+          "serviceId": "euroflorist",
+          "sameDayHere": null,
+          "cutoffHere": null,
+          "feeHereSek": null,
+          "verifiedAt": null
+        }
+      ],
+      "florists": [],
+      "hospitals": [
+        {
+          "name": "Norrlands universitetssjukhus",
+          "deliveryOk": null,
+          "note": "Kontrollera avdelningens egna regler innan beställning.",
+          "verifiedAt": null
+        }
+      ],
+      "neighbours": [
+        "sundsvall"
+      ],
+      "deliveryAreas": [
+        "Centrum",
+        "Haga",
+        "Teg",
+        "Ålidhem",
+        "Mariehem",
+        "Ersboda",
+        "Böleäng",
+        "Holmsund"
+      ],
+      "searchVolume": 400,
+      "kd": 2,
+      "phase": 2,
+      "page": {
+        "status": "published",
+        "title": "Blombud Umeå – jämför pris och leveranstid",
+        "h1": "Blombud Umeå – skicka blommor samma dag",
+        "metaDescription": "Jämför blombud i Umeå: budavgift, stopptid och totalpris sida vid sida. Se vilka områden som täcks och vad som gäller för leverans till Norrlands universitetssjukhus.",
+        "microAnswer": "I Umeå når blombuden Centrum, Haga, Teg, Ålidhem och Ersboda. Beställer du före tjänstens stopptid på en vardag går det oftast att få fram samma dag. På vintern är kylan det som avgör: en bukett tar skada på några minuter i tjugogradig kyla, så leverans till en dörr utan mottagare är en sämre idé här än söderut.",
+        "faq": [
+          {
+            "question": "Kan jag skicka blommor samma dag i Umeå?",
+            "answer": "Oftast, om beställningen ligger inne före tjänstens stopptid på en vardag. Vilka tider som gäller i Umeå har vi inte kontrollerat."
+          },
+          {
+            "question": "Vad händer med blommorna i vinterkylan?",
+            "answer": "Snittblommor tar frostskada snabbt. Floristen packar därför buketten i papper eller skyddshylsa, men den tål inte att stå ute. Se till att någon är hemma, eller skicka till en arbetsplats i stället för till en dörr."
+          },
+          {
+            "question": "Levererar blombuden till Norrlands universitetssjukhus?",
+            "answer": "Ja, men ange avdelning. Sjukhuset är regionsjukhus för hela norra Sverige och avdelningarna har egna regler för vad som får tas emot."
+          }
+        ],
+        "pricesVerifiedAt": "2026-02-14",
+        "updatedAt": "2026-09-09"
+      }
+    },
+    {
+      "slug": "norrkoping",
+      "name": "Norrköping",
+      "county": "Östergötlands län",
+      "population": 145000,
+      "lat": 58.5877,
+      "lng": 16.1924,
+      "services": [
+        {
+          "serviceId": "interflora",
+          "sameDayHere": null,
+          "cutoffHere": null,
+          "feeHereSek": null,
+          "verifiedAt": null
+        },
+        {
+          "serviceId": "euroflorist",
+          "sameDayHere": null,
+          "cutoffHere": null,
+          "feeHereSek": null,
+          "verifiedAt": null
+        }
+      ],
+      "florists": [],
+      "hospitals": [
+        {
+          "name": "Vrinnevisjukhuset",
+          "deliveryOk": null,
+          "note": "Kontrollera avdelningens egna regler innan beställning.",
+          "verifiedAt": null
+        }
+      ],
+      "neighbours": [
+        "linkoping"
+      ],
+      "deliveryAreas": [
+        "Centrum",
+        "Hageby",
+        "Klockaretorpet",
+        "Vilbergen",
+        "Ektorp",
+        "Lindö",
+        "Såpkullen",
+        "Skarphagen"
+      ],
+      "searchVolume": 350,
+      "kd": 0,
+      "phase": 2,
+      "page": {
+        "status": "published",
+        "title": "Blombud Norrköping – jämför pris och leveranstid",
+        "h1": "Blombud Norrköping – skicka blommor samma dag",
+        "metaDescription": "Jämför blombud i Norrköping: budavgift, stopptid och totalpris sida vid sida. Se vilka områden som täcks och vad som gäller för leverans till Vrinnevisjukhuset.",
+        "microAnswer": "I Norrköping levererar blombuden till Centrum, Hageby, Vilbergen, Ektorp och Lindö. Beställer du före tjänstens stopptid på en vardag går det oftast att få fram samma dag. Vrinnevisjukhuset ligger söder om centrum och nås av samma bud. Nedan jämför vi budavgift, stopptid och totalpris för en bukett hit.",
+        "faq": [
+          {
+            "question": "Kan jag skicka blommor samma dag i Norrköping?",
+            "answer": "Oftast, om beställningen ligger inne före tjänstens stopptid på en vardag. Stopptiderna för Norrköping har vi inte kontrollerat."
+          },
+          {
+            "question": "Levererar blombuden till Vrinnevisjukhuset?",
+            "answer": "Ja. Ange avdelning i beställningen och kontrollera med avdelningen om patienten får ta emot blommor."
+          },
+          {
+            "question": "Går det att skicka mellan Norrköping och Linköping?",
+            "answer": "Ja, men det är två leveransorter och inte en. Beställningen går till en florist i mottagarens stad, så adressen avgör priset och stopptiden, inte var du själv befinner dig."
+          }
+        ],
+        "pricesVerifiedAt": "2026-02-14",
+        "updatedAt": "2026-09-09"
+      }
+    },
+    {
+      "slug": "karlstad",
+      "name": "Karlstad",
+      "county": "Värmlands län",
+      "population": 66000,
+      "lat": 59.4022,
+      "lng": 13.5115,
+      "services": [
+        {
+          "serviceId": "interflora",
+          "sameDayHere": null,
+          "cutoffHere": null,
+          "feeHereSek": null,
+          "verifiedAt": null
+        },
+        {
+          "serviceId": "euroflorist",
+          "sameDayHere": null,
+          "cutoffHere": null,
+          "feeHereSek": null,
+          "verifiedAt": null
+        }
+      ],
+      "florists": [],
+      "hospitals": [
+        {
+          "name": "Centralsjukhuset i Karlstad",
+          "deliveryOk": null,
+          "note": "Kontrollera avdelningens egna regler innan beställning.",
+          "verifiedAt": null
+        }
+      ],
+      "neighbours": [
+        "orebro"
+      ],
+      "deliveryAreas": [
+        "Centrum",
+        "Norrstrand",
+        "Kronoparken",
+        "Rud",
+        "Våxnäs",
+        "Färjestad",
+        "Skåre",
+        "Kroppkärr"
+      ],
+      "searchVolume": 300,
+      "kd": 20,
+      "phase": 2,
+      "page": {
+        "status": "published",
+        "title": "Blombud Karlstad – jämför pris och leveranstid",
+        "h1": "Blombud Karlstad – skicka blommor samma dag",
+        "metaDescription": "Jämför blombud i Karlstad: budavgift, stopptid och totalpris sida vid sida. Se vilka områden som täcks och vad som gäller för leverans till Centralsjukhuset i Karlstad.",
+        "microAnswer": "I Karlstad når blombuden Centrum, Norrstrand, Våxnäs, Rud och Kronoparken. Beställer du före tjänstens stopptid på en vardag går det oftast att få fram samma dag. Kronoparken är studentområde med portkoder, så ange koden i adressfältet. Nedan jämför vi budavgift, stopptid och vad en bukett kostar totalt hit.",
+        "faq": [
+          {
+            "question": "Kan jag skicka blommor samma dag i Karlstad?",
+            "answer": "Oftast, om beställningen ligger inne före tjänstens stopptid på en vardag. Tiderna för Karlstad har vi inte kontrollerat."
+          },
+          {
+            "question": "Levererar blombuden till Centralsjukhuset?",
+            "answer": "Ja, men ange avdelning. Avdelningarna har egna regler för om patienten får ta emot blommor."
+          },
+          {
+            "question": "Ingår Skåre i leveransområdet?",
+            "answer": "Skåre ligger norr om Karlstad och kan hamna i en annan zon än centrum. Kontrollera adressen i tjänstens kassa innan du betalar."
+          }
+        ],
+        "pricesVerifiedAt": "2026-02-14",
+        "updatedAt": "2026-09-09"
+      }
+    },
+    {
+      "slug": "helsingborg",
+      "name": "Helsingborg",
+      "county": "Skåne län",
+      "population": 113000,
+      "lat": 56.0465,
+      "lng": 12.6945,
+      "services": [
+        {
+          "serviceId": "interflora",
+          "sameDayHere": null,
+          "cutoffHere": null,
+          "feeHereSek": null,
+          "verifiedAt": null
+        },
+        {
+          "serviceId": "euroflorist",
+          "sameDayHere": null,
+          "cutoffHere": null,
+          "feeHereSek": null,
+          "verifiedAt": null
+        }
+      ],
+      "florists": [],
+      "hospitals": [
+        {
+          "name": "Helsingborgs lasarett",
+          "deliveryOk": null,
+          "note": "Kontrollera avdelningens egna regler innan beställning.",
+          "verifiedAt": null
+        }
+      ],
+      "neighbours": [
+        "lund",
+        "halmstad"
+      ],
+      "deliveryAreas": [
+        "Centrum",
+        "Söder",
+        "Norr",
+        "Eneborg",
+        "Dalhem",
+        "Drottninghög",
+        "Ramlösa",
+        "Råå",
+        "Ödåkra"
+      ],
+      "searchVolume": 250,
+      "kd": 3,
+      "phase": 2,
+      "page": {
+        "status": "published",
+        "title": "Blombud Helsingborg – jämför pris och leveranstid",
+        "h1": "Blombud Helsingborg – skicka blommor samma dag",
+        "metaDescription": "Jämför blombud i Helsingborg: budavgift, stopptid och totalpris sida vid sida. Se vilka områden som täcks och vad som gäller för leverans till Helsingborgs lasarett.",
+        "microAnswer": "I Helsingborg levererar blombuden till Centrum, Söder, Norr, Dalhem och Ramlösa. Beställer du före tjänstens stopptid på en vardag går det oftast att få fram samma dag. Råå och Ödåkra ligger utanför tätorten och kan hamna i en annan zon. Ska blommorna över sundet till Helsingör är det en leverans till Danmark, inte en lokal.",
+        "faq": [
+          {
+            "question": "Kan jag skicka blommor samma dag i Helsingborg?",
+            "answer": "Oftast, om beställningen ligger inne före tjänstens stopptid på en vardag. Stopptiderna för Helsingborg har vi inte kontrollerat."
+          },
+          {
+            "question": "Kan jag skicka blommor till Helsingör härifrån?",
+            "answer": "Det är en leverans till Danmark och inte en lokal leverans, även om avståndet är kort. Buketten binds av en dansk florist och priset följer utlandstaxan."
+          },
+          {
+            "question": "Ingår Råå och Ödåkra i leveransområdet?",
+            "answer": "Båda ligger utanför tätorten och räknas ofta som egen zon. Kontrollera adressen i tjänstens kassa, avgiften kan skilja sig från centrumleverans."
+          }
+        ],
+        "pricesVerifiedAt": "2026-02-14",
+        "updatedAt": "2026-09-09"
+      }
+    },
+    {
+      "slug": "gavle",
+      "name": "Gävle",
+      "county": "Gävleborgs län",
+      "population": 103000,
+      "lat": 60.6749,
+      "lng": 17.1413,
+      "services": [
+        {
+          "serviceId": "interflora",
+          "sameDayHere": null,
+          "cutoffHere": null,
+          "feeHereSek": null,
+          "verifiedAt": null
+        },
+        {
+          "serviceId": "euroflorist",
+          "sameDayHere": null,
+          "cutoffHere": null,
+          "feeHereSek": null,
+          "verifiedAt": null
+        }
+      ],
+      "florists": [],
+      "hospitals": [
+        {
+          "name": "Gävle sjukhus",
+          "deliveryOk": null,
+          "note": "Kontrollera avdelningens egna regler innan beställning.",
+          "verifiedAt": null
+        }
+      ],
+      "neighbours": [
+        "uppsala",
+        "sundsvall"
+      ],
+      "deliveryAreas": [
+        "Centrum",
+        "Brynäs",
+        "Sätra",
+        "Andersberg",
+        "Bomhus",
+        "Stigslund",
+        "Hemlingby",
+        "Valbo"
+      ],
+      "searchVolume": 250,
+      "kd": 0,
+      "phase": 2,
+      "page": {
+        "status": "published",
+        "title": "Blombud Gävle – jämför pris och leveranstid",
+        "h1": "Blombud Gävle – skicka blommor samma dag",
+        "metaDescription": "Jämför blombud i Gävle: budavgift, stopptid och totalpris sida vid sida. Se vilka områden som täcks och vad som gäller för leverans till Gävle sjukhus.",
+        "microAnswer": "I Gävle levererar blombuden till Centrum, Brynäs, Sätra, Andersberg och Bomhus. Beställer du före tjänstens stopptid på en vardag går det oftast att få fram samma dag. Valbo ligger en bit väster om staden och kan hamna i en annan leveranszon. Nedan jämför vi budavgift, stopptid och totalpris för en bukett hit.",
+        "faq": [
+          {
+            "question": "Kan jag skicka blommor samma dag i Gävle?",
+            "answer": "Oftast, om beställningen ligger inne före tjänstens stopptid på en vardag. Tiderna för Gävle har vi inte kontrollerat."
+          },
+          {
+            "question": "Ingår Valbo i leveransområdet?",
+            "answer": "Valbo ligger utanför Gävle tätort och räknas ofta som egen zon. Kontrollera adressen i tjänstens kassa innan du betalar."
+          },
+          {
+            "question": "Levererar blombuden till Gävle sjukhus?",
+            "answer": "Ja, men ange avdelning. Kontrollera med avdelningen om patienten får ta emot blommor."
+          }
+        ],
+        "pricesVerifiedAt": "2026-02-14",
+        "updatedAt": "2026-09-09"
+      }
+    },
+    {
+      "slug": "halmstad",
+      "name": "Halmstad",
+      "county": "Hallands län",
+      "population": 73000,
+      "lat": 56.6745,
+      "lng": 12.8568,
+      "services": [
+        {
+          "serviceId": "interflora",
+          "sameDayHere": null,
+          "cutoffHere": null,
+          "feeHereSek": null,
+          "verifiedAt": null
+        },
+        {
+          "serviceId": "euroflorist",
+          "sameDayHere": null,
+          "cutoffHere": null,
+          "feeHereSek": null,
+          "verifiedAt": null
+        }
+      ],
+      "florists": [],
+      "hospitals": [
+        {
+          "name": "Hallands sjukhus Halmstad",
+          "deliveryOk": null,
+          "note": "Kontrollera avdelningens egna regler innan beställning.",
+          "verifiedAt": null
+        }
+      ],
+      "neighbours": [
+        "helsingborg",
+        "boras"
+      ],
+      "deliveryAreas": [
+        "Centrum",
+        "Andersberg",
+        "Vallås",
+        "Snöstorp",
+        "Söndrum",
+        "Frösakull",
+        "Oskarström"
+      ],
+      "searchVolume": 250,
+      "kd": 1,
+      "phase": 2,
+      "page": {
+        "status": "published",
+        "title": "Blombud Halmstad – jämför pris och leveranstid",
+        "h1": "Blombud Halmstad – skicka blommor samma dag",
+        "metaDescription": "Jämför blombud i Halmstad: budavgift, stopptid och totalpris sida vid sida. Se vilka områden som täcks och vad som gäller för leverans till Hallands sjukhus Halmstad.",
+        "microAnswer": "I Halmstad når blombuden Centrum, Andersberg, Vallås, Snöstorp och Söndrum. Beställer du före tjänstens stopptid på en vardag går det oftast att få fram samma dag. Frösakull och Oskarström ligger utanför tätorten och kan kosta extra. På sommaren är trycket högre än vanligt eftersom Tylösand fylls av gäster.",
+        "faq": [
+          {
+            "question": "Kan jag skicka blommor samma dag i Halmstad?",
+            "answer": "Oftast, om beställningen ligger inne före tjänstens stopptid på en vardag. Tiderna för Halmstad har vi inte kontrollerat."
+          },
+          {
+            "question": "Går det att leverera till ett hotell i Tylösand?",
+            "answer": "Ja, men ange rumsnummer och gästens namn. Hotell tar emot i receptionen och lämnar vidare, vilket kan ta några timmar extra."
+          },
+          {
+            "question": "Ingår Oskarström i leveransområdet?",
+            "answer": "Oskarström ligger drygt en och en halv mil från Halmstad och räknas som egen ort. Kontrollera adressen i tjänstens kassa innan du betalar."
+          }
+        ],
+        "pricesVerifiedAt": "2026-02-14",
+        "updatedAt": "2026-09-09"
+      }
+    },
+    {
+      "slug": "sundsvall",
+      "name": "Sundsvall",
+      "county": "Västernorrlands län",
+      "population": 59000,
+      "lat": 62.3908,
+      "lng": 17.3069,
+      "services": [
+        {
+          "serviceId": "interflora",
+          "sameDayHere": null,
+          "cutoffHere": null,
+          "feeHereSek": null,
+          "verifiedAt": null
+        },
+        {
+          "serviceId": "euroflorist",
+          "sameDayHere": null,
+          "cutoffHere": null,
+          "feeHereSek": null,
+          "verifiedAt": null
+        }
+      ],
+      "florists": [],
+      "hospitals": [
+        {
+          "name": "Sundsvalls sjukhus",
+          "deliveryOk": null,
+          "note": "Kontrollera avdelningens egna regler innan beställning.",
+          "verifiedAt": null
+        }
+      ],
+      "neighbours": [
+        "gavle",
+        "umea"
+      ],
+      "deliveryAreas": [
+        "Centrum",
+        "Skönsberg",
+        "Nacksta",
+        "Granloholm",
+        "Bosvedjan",
+        "Alnö",
+        "Njurunda",
+        "Matfors"
+      ],
+      "searchVolume": 250,
+      "kd": 2,
+      "phase": 2,
+      "page": {
+        "status": "published",
+        "title": "Blombud Sundsvall – jämför pris och leveranstid",
+        "h1": "Blombud Sundsvall – skicka blommor samma dag",
+        "metaDescription": "Jämför blombud i Sundsvall: budavgift, stopptid och totalpris sida vid sida. Se vilka områden som täcks och vad som gäller för leverans till Sundsvalls sjukhus.",
+        "microAnswer": "I Sundsvall levererar blombuden till Centrum, Skönsberg, Nacksta, Granloholm och Bosvedjan. Beställer du före tjänstens stopptid på en vardag går det oftast att få fram samma dag. Alnö ligger på andra sidan bron och Njurunda och Matfors är egna orter, så de kan hamna i en annan zon. På vintern tål buketten inte att stå ute.",
+        "faq": [
+          {
+            "question": "Kan jag skicka blommor samma dag i Sundsvall?",
+            "answer": "Oftast, om beställningen ligger inne före tjänstens stopptid på en vardag. Tiderna för Sundsvall har vi inte kontrollerat."
+          },
+          {
+            "question": "Ingår Alnö i leveransområdet?",
+            "answer": "Alnö nås via Alnöbron och räknas i regel som egen zon. Kontrollera adressen i tjänstens kassa, avgiften kan skilja sig från centrumleverans."
+          },
+          {
+            "question": "Vad gäller på vintern?",
+            "answer": "Snittblommor tar frostskada på kort tid. Se till att någon kan ta emot, eller skicka till en arbetsplats i stället för till en dörr där buketten blir stående."
+          }
+        ],
+        "pricesVerifiedAt": "2026-02-14",
+        "updatedAt": "2026-09-09"
+      }
+    },
+    {
+      "slug": "boras",
+      "name": "Borås",
+      "county": "Västra Götalands län",
+      "population": 73000,
+      "lat": 57.721,
+      "lng": 12.9401,
+      "services": [
+        {
+          "serviceId": "interflora",
+          "sameDayHere": null,
+          "cutoffHere": null,
+          "feeHereSek": null,
+          "verifiedAt": null
+        },
+        {
+          "serviceId": "euroflorist",
+          "sameDayHere": null,
+          "cutoffHere": null,
+          "feeHereSek": null,
+          "verifiedAt": null
+        }
+      ],
+      "florists": [],
+      "hospitals": [
+        {
+          "name": "Södra Älvsborgs sjukhus",
+          "deliveryOk": null,
+          "note": "Kontrollera avdelningens egna regler innan beställning.",
+          "verifiedAt": null
+        }
+      ],
+      "neighbours": [
+        "jonkoping",
+        "halmstad"
+      ],
+      "deliveryAreas": [
+        "Centrum",
+        "Norrby",
+        "Hässleholmen",
+        "Sjöbo",
+        "Trandared",
+        "Göta",
+        "Brämhult",
+        "Dalsjöfors"
+      ],
+      "searchVolume": 200,
+      "kd": 0,
+      "phase": 2,
+      "page": {
+        "status": "published",
+        "title": "Blombud Borås – jämför pris och leveranstid",
+        "h1": "Blombud Borås – skicka blommor samma dag",
+        "metaDescription": "Jämför blombud i Borås: budavgift, stopptid och totalpris sida vid sida. Se vilka områden som täcks och vad som gäller för leverans till Södra Älvsborgs sjukhus.",
+        "microAnswer": "I Borås levererar blombuden till Centrum, Norrby, Hässleholmen, Sjöbo och Trandared. Beställer du före tjänstens stopptid på en vardag går det oftast att få fram samma dag. Dalsjöfors och Brämhult ligger utanför tätorten och kan hamna i en annan zon. Nedan jämför vi budavgift, stopptid och totalpris för en bukett hit.",
+        "faq": [
+          {
+            "question": "Kan jag skicka blommor samma dag i Borås?",
+            "answer": "Oftast, om beställningen ligger inne före tjänstens stopptid på en vardag. Tiderna för Borås har vi inte kontrollerat."
+          },
+          {
+            "question": "Levererar blombuden till Södra Älvsborgs sjukhus?",
+            "answer": "Ja, men ange avdelning. Avdelningarna har egna regler för om patienten får ta emot blommor."
+          },
+          {
+            "question": "Ingår Dalsjöfors i leveransområdet?",
+            "answer": "Dalsjöfors ligger öster om Borås och räknas som egen ort. Kontrollera adressen i tjänstens kassa innan du betalar."
+          }
+        ],
+        "pricesVerifiedAt": "2026-02-14",
+        "updatedAt": "2026-09-09"
+      }
+    },
+    {
+      "slug": "eskilstuna",
+      "name": "Eskilstuna",
+      "county": "Södermanlands län",
+      "population": 71000,
+      "lat": 59.371,
+      "lng": 16.5098,
+      "services": [
+        {
+          "serviceId": "interflora",
+          "sameDayHere": null,
+          "cutoffHere": null,
+          "feeHereSek": null,
+          "verifiedAt": null
+        },
+        {
+          "serviceId": "euroflorist",
+          "sameDayHere": null,
+          "cutoffHere": null,
+          "feeHereSek": null,
+          "verifiedAt": null
+        }
+      ],
+      "florists": [],
+      "hospitals": [
+        {
+          "name": "Mälarsjukhuset",
+          "deliveryOk": null,
+          "note": "Kontrollera avdelningens egna regler innan beställning.",
+          "verifiedAt": null
+        }
+      ],
+      "neighbours": [
+        "orebro",
+        "uppsala"
+      ],
+      "deliveryAreas": [
+        "Centrum",
+        "Nyfors",
+        "Fröslunda",
+        "Skiftinge",
+        "Årby",
+        "Hällbybrunn",
+        "Skogstorp",
+        "Torshälla"
+      ],
+      "searchVolume": 200,
+      "kd": 2,
+      "phase": 2,
+      "page": {
+        "status": "published",
+        "title": "Blombud Eskilstuna – jämför pris och leveranstid",
+        "h1": "Blombud Eskilstuna – skicka blommor samma dag",
+        "metaDescription": "Jämför blombud i Eskilstuna: budavgift, stopptid och totalpris sida vid sida. Se vilka områden som täcks och vad som gäller för leverans till Mälarsjukhuset.",
+        "microAnswer": "I Eskilstuna når blombuden Centrum, Nyfors, Fröslunda, Skiftinge och Årby. Beställer du före tjänstens stopptid på en vardag går det oftast att få fram samma dag. Torshälla är en egen stad inom kommunen och kan hamna i en annan leveranszon. Nedan jämför vi budavgift, stopptid och vad en bukett kostar totalt hit.",
+        "faq": [
+          {
+            "question": "Kan jag skicka blommor samma dag i Eskilstuna?",
+            "answer": "Oftast, om beställningen ligger inne före tjänstens stopptid på en vardag. Tiderna för Eskilstuna har vi inte kontrollerat."
+          },
+          {
+            "question": "Ingår Torshälla i leveransområdet?",
+            "answer": "Torshälla ligger norr om Eskilstuna och är en egen tätort inom kommunen. Kontrollera adressen i tjänstens kassa, avgiften kan skilja sig."
+          },
+          {
+            "question": "Levererar blombuden till Mälarsjukhuset?",
+            "answer": "Ja, men ange avdelning. Kontrollera med avdelningen om patienten får ta emot blommor."
+          }
+        ],
+        "pricesVerifiedAt": "2026-02-14",
+        "updatedAt": "2026-09-09"
+      }
+    },
+    {
+      "slug": "lund",
+      "name": "Lund",
+      "county": "Skåne län",
+      "population": 94000,
+      "lat": 55.7047,
+      "lng": 13.191,
+      "services": [
+        {
+          "serviceId": "interflora",
+          "sameDayHere": null,
+          "cutoffHere": null,
+          "feeHereSek": null,
+          "verifiedAt": null
+        },
+        {
+          "serviceId": "euroflorist",
+          "sameDayHere": null,
+          "cutoffHere": null,
+          "feeHereSek": null,
+          "verifiedAt": null
+        }
+      ],
+      "florists": [],
+      "hospitals": [
+        {
+          "name": "Skånes universitetssjukhus Lund",
+          "deliveryOk": null,
+          "note": "Kontrollera avdelningens egna regler innan beställning.",
+          "verifiedAt": null
+        }
+      ],
+      "neighbours": [
+        "helsingborg"
+      ],
+      "deliveryAreas": [
+        "Centrum",
+        "Norra Fäladen",
+        "Klostergården",
+        "Linero",
+        "Väster",
+        "Gunnesbo",
+        "Dalby",
+        "Södra Sandby"
+      ],
+      "searchVolume": 200,
+      "kd": 2,
+      "phase": 2,
+      "page": {
+        "status": "published",
+        "title": "Blombud Lund – jämför pris och leveranstid",
+        "h1": "Blombud Lund – skicka blommor samma dag",
+        "metaDescription": "Jämför blombud i Lund: budavgift, stopptid och totalpris sida vid sida. Se vilka områden som täcks och vad som gäller för leverans till Skånes universitetssjukhus Lund.",
+        "microAnswer": "I Lund levererar blombuden till Centrum, Norra Fäladen, Klostergården, Linero och Väster. Beställer du före tjänstens stopptid på en vardag går det oftast att få fram samma dag. Studentbostäderna på Norra Fäladen har portkod, så ange den i adressfältet. Dalby och Södra Sandby är egna orter och kan hamna i en annan zon.",
+        "faq": [
+          {
+            "question": "Kan jag skicka blommor samma dag i Lund?",
+            "answer": "Oftast, om beställningen ligger inne före tjänstens stopptid på en vardag. Tiderna för Lund har vi inte kontrollerat."
+          },
+          {
+            "question": "Levererar blombuden till Skånes universitetssjukhus?",
+            "answer": "Ja, men ange avdelning och våningsplan. Sjukhuset är stort och avdelningarna har egna regler för om patienten får ta emot blommor."
+          },
+          {
+            "question": "Hur gör jag med studentbostäder?",
+            "answer": "Ange portkod och lägenhetsnummer. Utan portkod kommer budet inte in, och buketten går tillbaka till floristen."
           }
         ],
         "pricesVerifiedAt": "2026-02-14",
