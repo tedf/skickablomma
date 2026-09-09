@@ -81,7 +81,7 @@
     },
     {
       "slug": "/jamfor",
-      "bodyMd": "## Så rankar vi\n\nTabellen sorteras på totalpris: bukettens från-pris plus budavgiften. Det är den siffra du faktiskt betalar, och den som skiljer tjänsterna åt mest.\n\nDu kan byta till sortering på leveranstid om du har bråttom snarare än ont om pengar.\n\n## Vad \"Vårt val\" betyder\n\nÄr en rad markerad som vårt val står motiveringen i en mening under tabellen, och den går att kontrollera mot siffrorna i raden. Vi väljer efter pris, täckning och stopptid, och provisionen är inte med i bedömningen.\n\nSå länge vi bara kontrollerat priset hos en enda tjänst markerar vi ingen rad alls, eftersom billigast av en inte säger någonting.\n\n## Vad tabellen inte säger\n\nFrån-priset gäller den billigaste buketten i sortimentet, som sällan är den du vill skicka. Använd tabellen när du väljer tjänst. Vad din beställning landar på beror på vilken bukett du väljer.\n\nTäckningen varierar också inom landet. En tjänst som levererar samma dag i Stockholm gör det inte nödvändigtvis i mindre orter. Stadssidorna är mer exakta än den här översikten.",
+      "bodyMd": "## Så rankar vi\n\nTabellen sorteras på totalpris: bukettens från-pris plus budavgiften. Det är den siffra du faktiskt betalar, och den som skiljer tjänsterna åt mest.\n\nDu kan byta till sortering på leveranstid om du har bråttom snarare än ont om pengar.\n\n## Vad ”Vårt val” betyder\n\nÄr en rad markerad som vårt val står motiveringen i en mening under tabellen, och den går att kontrollera mot siffrorna i raden. Vi väljer efter pris, täckning och stopptid, och provisionen är inte med i bedömningen.\n\nSå länge vi bara kontrollerat priset hos en enda tjänst markerar vi ingen rad alls, eftersom billigast av en inte säger någonting.\n\n## Vad tabellen inte säger\n\nFrån-priset gäller den billigaste buketten i sortimentet, som sällan är den du vill skicka. Använd tabellen när du väljer tjänst. Vad din beställning landar på beror på vilken bukett du väljer.\n\nTäckningen varierar också inom landet. En tjänst som levererar samma dag i Stockholm gör det inte nödvändigtvis i mindre orter. Stadssidorna är mer exakta än den här översikten.",
       "page": {
         "status": "published",
         "title": "Jämför blombud – pris, leveranstid och täckning",
@@ -154,7 +154,7 @@
     },
     {
       "slug": "/guider/text-till-begravning",
-      "bodyMd": "## Hur lång ska texten vara?\n\nTvå rader. Korten är små och texten skrivs för hand av floristen, så det som inte får plats stryks ändå.\n\nSkriv hälsningen på de första raderna och namnet under. Är ni flera: förnamn räcker, eller familjenamnet om ni är många.\n\n## Vad du inte behöver skriva\n\nDu behöver inte förklara varför du inte kan komma. Du behöver inte skriva något originellt. Och du behöver inte hitta orden som gör det bättre, för de finns inte.\n\nDe anhöriga läser hundra kort samma vecka. Det som fastnar är att du fanns med, inte hur du formulerade dig.\n\n## Formuleringar efter relation\n\n**Till någon som stod dig nära**\n\n- Tack för allt. Jag saknar dig.\n- Du finns kvar i allt du lärde mig.\n- Vila i frid. Jag glömmer dig aldrig.\n\n**Till en kollega eller bekant**\n\n- Med varmt deltagande.\n- Vi minns dig med värme. Kollegorna på ekonomiavdelningen\n- Tack för åren tillsammans.\n\n**Till de efterlevande, när du inte kände den avlidne**\n\n- Våra tankar är hos er.\n- Med deltagande i er sorg.\n- Vi tänker på er.\n\n**Från en familj eller grupp**\n\n- Vila i frid. Familjen Lindberg\n- Ett sista farväl från oss alla.\n\n## Om du är osäker\n\nVälj den kortaste varianten. Ett kort som säger \"Med varmt deltagande\" och ditt namn är alltid rätt. Ett kort som försöker för mycket kan bli fel.\n\n## Praktiskt\n\nTexten anges i beställningen, i ett fritextfält. Läs igenom namnen en extra gång innan du skickar beställningen.\n\nAnge också om kortet ska gå till kyrkan tillsammans med blommorna eller separat till de anhörigas hem.",
+      "bodyMd": "## Hur lång ska texten vara?\n\nTvå rader. Korten är små och texten skrivs för hand av floristen, så det som inte får plats stryks ändå.\n\nSkriv hälsningen på de första raderna och namnet under. Är ni flera: förnamn räcker, eller familjenamnet om ni är många.\n\n## Vad du inte behöver skriva\n\nDu behöver inte förklara varför du inte kan komma. Du behöver inte skriva något originellt. Och du behöver inte hitta orden som gör det bättre, för de finns inte.\n\nDe anhöriga läser hundra kort samma vecka. Det som fastnar är att du fanns med, inte hur du formulerade dig.\n\n## Formuleringar efter relation\n\n**Till någon som stod dig nära**\n\n- Tack för allt. Jag saknar dig.\n- Du finns kvar i allt du lärde mig.\n- Vila i frid. Jag glömmer dig aldrig.\n\n**Till en kollega eller bekant**\n\n- Med varmt deltagande.\n- Vi minns dig med värme. Kollegorna på ekonomiavdelningen\n- Tack för åren tillsammans.\n\n**Till de efterlevande, när du inte kände den avlidne**\n\n- Våra tankar är hos er.\n- Med deltagande i er sorg.\n- Vi tänker på er.\n\n**Från en familj eller grupp**\n\n- Vila i frid. Familjen Lindberg\n- Ett sista farväl från oss alla.\n\n## Om du är osäker\n\nVälj den kortaste varianten. Ett kort som säger ”Med varmt deltagande” och ditt namn är alltid rätt. Ett kort som försöker för mycket kan bli fel.\n\n## Praktiskt\n\nTexten anges i beställningen, i ett fritextfält. Läs igenom namnen en extra gång innan du skickar beställningen.\n\nAnge också om kortet ska gå till kyrkan tillsammans med blommorna eller separat till de anhörigas hem.",
       "page": {
         "status": "published",
         "title": "Vad skriver man på kortet till en begravning?",
@@ -173,6 +173,41 @@
           {
             "question": "Skriver floristen texten för hand?",
             "answer": "Oftast ja. Därför måste stavningen i beställningen vara rätt. De skriver av exakt det du matar in, utan att rätta."
+          }
+        ],
+        "pricesVerifiedAt": null,
+        "updatedAt": "2026-09-09"
+      }
+    },
+    {
+      "slug": "/guider/kondoleans",
+      "bodyMd": "## Vad ordet betyder\n\nKondoleans kommer av latinets *condolere*, att lida med någon. Ordet betyder alltså att du visar att du delar en annan människas sorg.\n\nI svenskt bruk är kondoleans också en konkret sak: hälsningen du skickar till de efterlevande. Det kan vara blommor, ett kort, ett telefonsamtal eller en gåva. Alla räknas.\n\nPlural används ibland om själva blommorna. Att ”skicka kondoleanser” betyder i praktiken att skicka blommor hem till de anhöriga.\n\n## Vem man kondolerar\n\nDe efterlevande, alltså de som står den avlidne närmast. Make eller maka, barn, föräldrar, syskon.\n\nDu behöver inte ha känt den avlidne. Kondoleansen går till de levande, och det är helt normalt att kondolera en kollega vars förälder gått bort trots att du aldrig träffat föräldern.\n\nDu behöver inte heller känna de efterlevande väl. Ett kort från någon som stod den avlidne nära betyder något även för familjen som aldrig mött dig.\n\n## När\n\nDet finns ingen tidsgräns, och det är den vanligaste missuppfattningen.\n\nDe första dagarna kommer det mycket på en gång. Veckorna efter begravningen kommer det ingenting alls, samtidigt som det är då tystnaden märks. En hälsning som kommer sent är inte försenad.\n\nUndvik bara begravningsdagen, om du skickar hem till någon. Då är de inte där.\n\n## Vad du skriver\n\nKort. Två eller tre meningar.\n\nSkriv den avlidnes namn om du kände personen. En konkret sak du minns betyder mer än en vacker formulering: *”Jag tänker på när han lärde mig lägga om ett däck i regnet.”*\n\nSkriv inte att du vet hur det känns. Skriv inte att allt ordnar sig. Skriv inte en förklaring till varför du inte kom på begravningen.\n\nEtt erbjudande som går att tacka ja till är värt mer än en vacker mening: att du ringer på tisdag, att du handlar, att du kan hämta barnen.\n\n## När en minnesgåva passar bättre\n\nStår det **”Tänk på”** följt av en organisation i dödsannonsen ber familjen om det. Då skickar du en gåva, inte blommor.\n\nStår det **”Ingen blomsterhyllning”** gäller det. Formuleringen är genomtänkt, inte en artighetsfras.\n\nEn minnesgåva passar också när du inte känner familjen väl nog för att veta vad de vill ha hem, eller när du vet att det redan står blommor i varje rum. Många organisationer skickar ett minnesblad till familjen med ditt namn, så de vet att du tänkt på dem.\n\n## Det som betyder mest\n\nAtt höra av sig igen. En månad senare, ett halvår senare, på årsdagen.\n\nDet är då nästan alla har slutat fråga, och det är då de flesta som sörjer säger att de behövde någon som frågade.",
+      "page": {
+        "status": "published",
+        "title": "Kondoleans – vad det betyder, vad du skriver och när",
+        "h1": "Kondoleans",
+        "metaDescription": "Vad kondoleans betyder, vem man kondolerar, när man gör det och vad man skriver. Plus när en minnesgåva passar bättre än blommor.",
+        "microAnswer": "Kondoleans betyder att visa deltagande i någons sorg. I praktiken är det en hälsning till de efterlevande: blommor, ett kort, ett samtal eller en minnesgåva. Den går hem till familjen, inte till begravningen, och det finns ingen tidsgräns. Här går vi igenom vad ordet betyder, vem man kondolerar, vad du skriver och när en gåva passar bättre än blommor.",
+        "faq": [
+          {
+            "question": "Vad betyder kondoleans?",
+            "answer": "Att visa deltagande i någons sorg. Ordet kommer av latinets condolere, att lida med. I svenskt bruk betyder det också själva hälsningen du skickar till de efterlevande."
+          },
+          {
+            "question": "Måste man ha känt den avlidne?",
+            "answer": "Nej. Kondoleansen går till de levande. Det är helt normalt att kondolera en kollega vars förälder gått bort utan att ha träffat föräldern."
+          },
+          {
+            "question": "Hur sent kan man kondolera?",
+            "answer": "Det finns ingen gräns. De första dagarna kommer det mycket på en gång, veckorna efter begravningen kommer det ingenting. En hälsning som kommer sent är inte försenad."
+          },
+          {
+            "question": "Vad ska man inte skriva?",
+            "answer": "Att du vet hur det känns, att allt ordnar sig, eller en förklaring till varför du inte kom på begravningen. Ett konkret minne eller ett erbjudande som går att tacka ja till betyder mer."
+          },
+          {
+            "question": "När är en minnesgåva bättre än blommor?",
+            "answer": "När dödsannonsen ber om det, när du inte känner familjen väl nog för att veta vad de vill ha hem, eller när du vet att det redan står blommor i varje rum."
           }
         ],
         "pricesVerifiedAt": null,

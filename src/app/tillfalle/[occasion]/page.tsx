@@ -54,7 +54,14 @@ export default function OccasionPage({ params }: OccasionPageProps) {
   // De största städerna som faktiskt har en renderbar sida (siteplanen §3).
   const cityLinks = [...getRenderableCities()]
     .sort((a, b) => (b.population ?? 0) - (a.population ?? 0))
-    .slice(0, 5)
+    .slice(0, 3)
+
+  // Syskonsidor först i "Läs vidare". Tillfällena är ett kluster och ska
+  // länka inbördes: den som läser om kondoleans är oftare på väg till
+  // begravningssidan än till en stadssida.
+  const siblings = getRenderableOccasions()
+    .filter((other) => other.slug !== occasion.slug)
+    .slice(0, 3)
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -172,6 +179,16 @@ export default function OccasionPage({ params }: OccasionPageProps) {
       <nav className="mt-12 border-t border-line pt-8" aria-label="Relaterade sidor">
         <h2 className="mb-4 font-display text-xl text-ink">Läs vidare</h2>
         <ul className="flex flex-wrap gap-3 text-sm">
+          {siblings.map((sibling) => (
+            <li key={sibling.slug}>
+              <Link
+                href={`/tillfalle/${sibling.slug}`}
+                className="rounded-full bg-leaf-50 px-4 py-2 text-leaf-800 hover:bg-leaf-100"
+              >
+                {sibling.name}
+              </Link>
+            </li>
+          ))}
           {cityLinks.map((city) => (
             <li key={city.slug}>
               <Link
