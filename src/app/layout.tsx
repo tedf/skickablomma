@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter, Newsreader } from 'next/font/google'
 import './globals.css'
 import { Header } from '@/components/layout/Header'
+import { buildNavigation } from '@/lib/navigation'
 import { Footer } from '@/components/layout/Footer'
 import { Toaster } from '@/components/ui/toaster'
 
@@ -108,7 +109,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-screen bg-background font-sans antialiased">
         <div className="relative flex min-h-screen flex-col">
-          <Header />
+          <Header navigation={buildNavigation()} />
           <main className="flex-1">{children}</main>
           <Footer />
         </div>

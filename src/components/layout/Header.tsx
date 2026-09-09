@@ -16,80 +16,20 @@ import {
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { Wordmark } from '@/components/brand/Wordmark'
+import type { NavGroup } from '@/lib/navigation'
 
-// Jämförelsehubbarna först, produktkatalogen efter. Ordningen speglar
-// sitearkitekturen i siteplanen §3: sajten är en jämförelse, inte en butik.
-const navigation = [
-  {
-    name: 'Blombud',
-    href: '/blombud',
-    icon: Truck,
-    children: [
-      { name: 'Jämför blombud', href: '/blombud' },
-      { name: 'Linköping', href: '/blombud/linkoping' },
-      { name: 'Jönköping', href: '/blombud/jonkoping' },
-    ],
-  },
-  {
-    name: 'Utomlands',
-    href: '/utomlands',
-    icon: Globe,
-    children: [
-      { name: 'Alla länder', href: '/utomlands' },
-      { name: 'Norge', href: '/utomlands/norge' },
-      { name: 'Danmark', href: '/utomlands/danmark' },
-      { name: 'Finland', href: '/utomlands/finland' },
-      { name: 'Tyskland', href: '/utomlands/tyskland' },
-      { name: 'USA', href: '/utomlands/usa' },
-    ],
-  },
-  {
-    name: 'Tillfällen',
-    href: '/tillfalle',
-    icon: Heart,
-    children: [
-      { name: 'Alla tillfällen', href: '/tillfalle' },
-      { name: 'Begravning', href: '/tillfalle/begravning' },
-      { name: 'Födelsedag', href: '/fodelsedags-blommor' },
-      { name: 'Tack', href: '/tackblommor' },
-      { name: 'Kärlek & Romantik', href: '/karlek-romantik' },
-    ],
-  },
-  {
-    name: 'Jämför',
-    href: '/jamfor',
-    icon: Sparkles,
-    children: [
-      { name: 'Alla tjänster', href: '/jamfor' },
-      { name: 'Billigast', href: '/jamfor/billigt' },
-    ],
-  },
-  {
-    name: 'Guider',
-    href: '/guider',
-    icon: Flower2,
-    children: [
-      { name: 'Alla guider', href: '/guider' },
-      { name: 'Vad kostar det?', href: '/guider/vad-kostar-det' },
-      { name: 'Skicka samma dag', href: '/guide/skicka-blommor-samma-dag' },
-    ],
-  },
-  {
-    name: 'Buketter',
-    href: '/buketter',
-    icon: Flower2,
-    children: [
-      { name: 'Alla buketter', href: '/buketter' },
-      { name: 'Rosor', href: '/buketter/rosor' },
-      { name: 'Tulpaner', href: '/buketter/tulpaner' },
-      { name: 'Liljor', href: '/buketter/liljor' },
-      { name: 'Begravningsblommor', href: '/begravning' },
-      { name: 'Bröllopsblommor', href: '/brollop' },
-    ],
-  },
-]
 
-export function Header() {
+interface HeaderProps {
+  /*
+    Menyn byggs av samma data som sidorna, i layout.tsx som är en
+    serverkomponent. Header är en klientkomponent för rullgardinernas
+    tillstånd och ska inte läsa datafilerna själv — då hamnar hela
+    innehållet i klientbundlen.
+  */
+  navigation: NavGroup[]
+}
+
+export function Header({ navigation }: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
   const pathname = usePathname()
@@ -127,9 +67,21 @@ export function Header() {
                   )}
                 </Link>
 
-                {/* Dropdown */}
-                {item.children && activeDropdown === item.name && (
-                  <div className="absolute left-0 top-full z-50 w-56 rounded-xl border bg-white p-2 shadow-lg">
+                {/*
+                  Rullgardinen renderas alltid och döljs med CSS. Tidigare
+                  monterades den först när activeDropdown matchade, alltså vid
+                  hover, vilket betyder att den aldrig fanns i den serverrenderade
+                  HTML:en. Googlebot hovrar inte: sajtens hela sekundärnavigation
+                  var osynlig för sökmotorn, och stadssidorna fick sina enda
+                  internlänkar från hubben och Läs vidare-blocken.
+                */}
+                {item.children && (
+                  <div
+                    className={cn(
+                      'absolute left-0 top-full z-50 w-56 rounded-xl border bg-white p-2 shadow-lg',
+                      activeDropdown === item.name ? 'block' : 'hidden'
+                    )}
+                  >
                     {item.children.map((child) => (
                       <Link
                         key={child.href}
@@ -201,7 +153,6 @@ export function Header() {
                     )}
                     onClick={() => setMobileMenuOpen(false)}
                   >
-                    <item.icon className="h-5 w-5" />
                     {item.name}
                   </Link>
                   {item.children && (

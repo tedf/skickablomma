@@ -1,31 +1,8 @@
 import Link from 'next/link'
 import { Flower2, Mail, MapPin, Phone } from 'lucide-react'
 import { Wordmark } from '@/components/brand/Wordmark'
+import { buildFooterLinks } from '@/lib/navigation'
 
-const footerLinks = {
-  kategorier: [
-    { name: 'Blombud', href: '/blombud' },
-    { name: 'Skicka utomlands', href: '/utomlands' },
-    { name: 'Jämför blombud', href: '/jamfor' },
-    { name: 'Billigast', href: '/jamfor/billigt' },
-    { name: 'Buketter', href: '/buketter' },
-  ],
-  tillfallen: [
-    { name: 'Begravning', href: '/tillfalle/begravning' },
-    { name: 'Födelsedagsblommor', href: '/fodelsedags-blommor' },
-    { name: 'Tackblommor', href: '/tackblommor' },
-    { name: 'Kärlek & Romantik', href: '/karlek-romantik' },
-  ],
-  information: [
-    { name: 'Guider', href: '/guider' },
-    { name: 'Vad kostar det?', href: '/guider/vad-kostar-det' },
-    { name: 'Sök blommor', href: '/sok' },
-  ],
-  juridiskt: [
-    // Länkas från varje jämförelsetabell — se AffiliateDisclosure.
-    { name: 'Så tjänar vi pengar', href: '/om/sa-tjanar-vi-pengar' },
-  ],
-}
 
 const partners = [
   { name: 'Interflora' },
@@ -34,6 +11,8 @@ const partners = [
 ]
 
 export function Footer() {
+  // Samma källa som huvudmenyn, så footern inte halkar efter innehållet.
+  const footerLinks = buildFooterLinks()
   return (
     <footer className="border-t border-line bg-leaf-50">
       {/* Partner logos */}
@@ -62,8 +41,8 @@ export function Footer() {
           <div className="lg:col-span-1">
             <Wordmark />
             <p className="mt-4 text-sm text-gray-600">
-              Sveriges smartaste sätt att hitta och jämföra blommor. Vi hjälper dig hitta
-              den perfekta buketten till bästa pris.
+              Vi jämför pris, budavgift och leveranstid hos blombuden i Sverige. Vi
+              säljer inga blommor själva.
             </p>
           </div>
 
@@ -124,13 +103,13 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Juridiskt */}
+          {/* Städer */}
           <div>
             <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-gray-900">
-              Juridiskt
+              Städer
             </h3>
             <ul className="space-y-2">
-              {footerLinks.juridiskt.map((link) => (
+              {footerLinks.stader.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
