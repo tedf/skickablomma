@@ -880,7 +880,13 @@ export async function getSubCategoryCounts(
  * dem är ett blombud. De har egna platser på sajten — se PARTY_PARTNERS och
  * pickPlantableBulbs — men de hör aldrig hemma bland buketterna.
  */
-const BLOMBUD_PARTNERS: Partner[] = ['interflora', 'cramers']
+/*
+  Cramers är struken här också. Funktionen valde bland "blombudspartners" och
+  Cramers räknades som en, vilket är hur lökar kunde hamna bland buketterna
+  innan trädgårdsfiltret fanns. Feeden innehåller inte en enda bunden bukett,
+  så listan har i praktiken en enda medlem tills ett andra program är på plats.
+*/
+const BLOMBUD_PARTNERS: Partner[] = ['interflora']
 
 function harLokalBild(product: Product): boolean {
   return (product.primaryImage?.url ?? '').startsWith('/images/products/')

@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import { getAllServices, getStaticPage, sortByTotalPrice, totalPriceSek } from '@/lib/comparison'
+import { getBlombudServices, getStaticPage, sortByTotalPrice, totalPriceSek } from '@/lib/comparison'
 import { ComparisonPageShell } from '@/components/comparison/ComparisonPageShell'
 import { ComparisonTable } from '@/components/comparison/ComparisonTable'
 
@@ -22,7 +22,7 @@ export default function BilligtPage() {
   const page = getStaticPage(SLUG)
   if (!page) notFound()
 
-  const services = sortByTotalPrice(getAllServices())
+  const services = sortByTotalPrice(getBlombudServices())
   const priced = services.filter((service) => totalPriceSek(service) !== null)
 
   // Samma regel som på /jamfor: ingen "billigast"-markering förrän minst två

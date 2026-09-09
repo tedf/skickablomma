@@ -28,8 +28,7 @@
       "publishBefore": null,
       "serviceIds": [
         "interflora",
-        "euroflorist",
-        "cramers"
+        "euroflorist"
       ],
       "searchVolume": 3800,
       "kd": 19,
@@ -118,8 +117,7 @@
       "publishBefore": null,
       "serviceIds": [
         "interflora",
-        "euroflorist",
-        "cramers"
+        "euroflorist"
       ],
       "searchVolume": 800,
       "kd": 0,
@@ -196,8 +194,7 @@
       "publishBefore": "2026-10-15",
       "serviceIds": [
         "interflora",
-        "euroflorist",
-        "cramers"
+        "euroflorist"
       ],
       "productNoun": "julblommor",
       "productQuery": null,
@@ -266,8 +263,7 @@
       "publishBefore": "2026-12-20",
       "serviceIds": [
         "interflora",
-        "euroflorist",
-        "cramers"
+        "euroflorist"
       ],
       "searchVolume": 200,
       "kd": 0,
@@ -339,8 +335,7 @@
       "publishBefore": "2027-03-01",
       "serviceIds": [
         "interflora",
-        "euroflorist",
-        "cramers"
+        "euroflorist"
       ],
       "searchVolume": 250,
       "kd": 0,
@@ -435,8 +430,7 @@
       "publishBefore": null,
       "serviceIds": [
         "interflora",
-        "euroflorist",
-        "cramers"
+        "euroflorist"
       ],
       "searchVolume": 1000,
       "kd": 0,
@@ -510,8 +504,7 @@
       "publishBefore": null,
       "serviceIds": [
         "interflora",
-        "euroflorist",
-        "cramers"
+        "euroflorist"
       ],
       "searchVolume": 100,
       "kd": 0,
@@ -579,8 +572,7 @@
       "publishBefore": null,
       "serviceIds": [
         "interflora",
-        "euroflorist",
-        "cramers"
+        "euroflorist"
       ],
       "searchVolume": 90,
       "kd": 0,
@@ -654,8 +646,7 @@
       "publishBefore": null,
       "serviceIds": [
         "interflora",
-        "euroflorist",
-        "cramers"
+        "euroflorist"
       ],
       "searchVolume": 30,
       "kd": 0,
@@ -728,8 +719,7 @@
       "publishBefore": null,
       "serviceIds": [
         "interflora",
-        "euroflorist",
-        "cramers"
+        "euroflorist"
       ],
       "searchVolume": 20,
       "kd": 0,

@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import { getAllServices, getStaticPage, sortByTotalPrice, totalPriceSek } from '@/lib/comparison'
+import { getBlombudServices, getStaticPage, sortByTotalPrice, totalPriceSek } from '@/lib/comparison'
 import { ComparisonPageShell } from '@/components/comparison/ComparisonPageShell'
 import { ComparisonTable } from '@/components/comparison/ComparisonTable'
 
@@ -22,7 +22,7 @@ export default function JamforPage() {
   const page = getStaticPage(SLUG)
   if (!page) notFound()
 
-  const services = getAllServices()
+  const services = getBlombudServices()
 
   // Vårt val sätts av data, inte av provisionen. Det kräver att minst två
   // tjänster har kontrollerat totalpris — annars vore "billigast" ett påstående

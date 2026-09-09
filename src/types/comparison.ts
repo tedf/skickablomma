@@ -76,6 +76,22 @@ export const serviceSchema = z.object({
   commissionNote: z.string().nullable(),
 
   /**
+   * Levererar tjänsten blommor med bud?
+   *
+   * Fältet finns för att Cramers Blommor låg i jämförelsen på tolv sidor och
+   * påstod "Ja" under Samma dag. Deras produktflöde innehåller 17 994 artiklar
+   * — buskar, perenner, prydnadsträd, krukor, sättpotatis och julgranspynt —
+   * och inte en enda bunden bukett. Deras 69 kr är en fraktavgift för paket,
+   * men stod i kolumnen Budavgift bredvid Interfloras riktiga budavgift på
+   * 99 kr och fick en trädgårdshandel att se ut som det billigare blombudet.
+   *
+   * En tjänst med false hör inte hemma i jämförelsetabellen. Den kan fortsatt
+   * finnas på sajten på andra sätt, men inte som svar på frågan var man
+   * beställer blommor med bud.
+   */
+  isBlombud: z.boolean().default(true),
+
+  /**
    * Null = vi har inte kontrollerat. Fältet var tidigare en ren boolean,
    * vilket gjorde att "nej" och "ej kontrollerat" renderades som samma
    * tankstreck — precis den sammanblandning sajten finns för att undvika.

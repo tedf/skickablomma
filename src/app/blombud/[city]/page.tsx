@@ -82,6 +82,10 @@ export default async function CityPage({ params }: CityPageProps) {
       }
     })
     .filter((row): row is ComparisonRow => row !== null)
+    // Jämförelsen svarar på var man beställer blommor med bud. En tjänst som
+    // inte gör det hör inte hemma i tabellen, hur aktivt affiliateprogrammet
+    // än är. Se isBlombud i types/comparison.ts.
+    .filter((row) => row.service.isBlombud)
 
   const neighbours = getCityNeighbours(city)
   /*

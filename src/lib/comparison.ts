@@ -66,6 +66,17 @@ export function totalPriceSek(service: Service): number | null {
 }
 
 /** Sorterar på totalpris. Tjänster utan verifierat pris hamnar sist. */
+/**
+ * Tjänsterna som faktiskt kör ut blommor med bud.
+ *
+ * getAllServices ger alla partners, även de som inte är blombud. Jämförelsen
+ * ska bara innehålla de som svarar på sidans fråga — se isBlombud i
+ * types/comparison.ts för varför fältet finns.
+ */
+export function getBlombudServices(): Service[] {
+  return SERVICES.filter((service) => service.isBlombud)
+}
+
 export function sortByTotalPrice(services: Service[]): Service[] {
   return [...services].sort((a, b) => {
     const priceA = totalPriceSek(a)

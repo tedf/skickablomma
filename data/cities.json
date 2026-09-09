@@ -23,13 +23,6 @@
           "cutoffHere": null,
           "feeHereSek": null,
           "verifiedAt": null
-        },
-        {
-          "serviceId": "cramers",
-          "sameDayHere": null,
-          "cutoffHere": null,
-          "feeHereSek": null,
-          "verifiedAt": null
         }
       ],
       "florists": [
@@ -135,13 +128,6 @@
         },
         {
           "serviceId": "euroflorist",
-          "sameDayHere": null,
-          "cutoffHere": null,
-          "feeHereSek": null,
-          "verifiedAt": null
-        },
-        {
-          "serviceId": "cramers",
           "sameDayHere": null,
           "cutoffHere": null,
           "feeHereSek": null,

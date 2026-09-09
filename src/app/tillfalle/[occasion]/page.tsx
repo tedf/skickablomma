@@ -89,6 +89,10 @@ export default async function OccasionPage({ params }: OccasionPageProps) {
       return service ? { service } : null
     })
     .filter((row): row is ComparisonRow => row !== null)
+    // Jämförelsen svarar på var man beställer blommor med bud. En tjänst som
+    // inte gör det hör inte hemma i tabellen, hur aktivt affiliateprogrammet
+    // än är. Se isBlombud i types/comparison.ts.
+    .filter((row) => row.service.isBlombud)
 
   // De största städerna som faktiskt har en renderbar sida (siteplanen §3).
   const cityLinks = [...getRenderableCities()]

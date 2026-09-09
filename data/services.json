@@ -24,7 +24,8 @@
         "Högre från-pris än flera konkurrenter",
         "Stadssidorna är produktlistor utan lokal information"
       ],
-      "verifiedAt": "2026-02-14"
+      "verifiedAt": "2026-02-14",
+      "isBlombud": true
     },
     {
       "id": "cramers",
@@ -33,20 +34,22 @@
       "websiteUrl": "https://shop.cramersblommor.com",
       "affiliateUrl": "https://pin.cramersblommor.com/t/t?a=1954033070&as=1771789045&t=2&tk=1&url=https%3A%2F%2Fshop.cramersblommor.com%2F",
       "network": "adtraction",
-      "commissionNote": "Aktivt program. Sortimentet i feeden är övervägande lökar, knölar och plantor, inte bundna buketter — jämförs därför inte på från-pris för bukett förrän sortimentet kontrollerats.",
-      "sameDay": true,
+      "commissionNote": "Aktivt program. Feeden hämtad 2026-09-09 innehåller 17 994 artiklar och inga bundna buketter. Tjänsten är ingen blombud och ingår därför inte i jämförelsen — den ligger på /lokar-och-fron i stället.",
+      "sameDay": null,
       "cutoffWeekday": null,
       "cutoffSaturday": null,
       "priceFromSek": null,
       "deliveryFeeSek": 69,
       "countriesCount": null,
       "pros": [
-        "Lägre budavgift än Interflora"
+        "Stort sortiment av blomsterlökar och knölar"
       ],
       "cons": [
-        "Sortimentet är inte i första hand blombud"
+        "Säljer trädgård, inte blombud: lökar, plantor, krukor och krukväxter",
+        "De 69 kronorna är paketfrakt, inte budavgift"
       ],
-      "verifiedAt": "2026-02-14"
+      "verifiedAt": "2026-02-14",
+      "isBlombud": false
     },
     {
       "id": "euroflorist",
@@ -68,7 +71,8 @@
       "cons": [
         "Rankar i praktiken bara med Stockholm-sidan"
       ],
-      "verifiedAt": null
+      "verifiedAt": null,
+      "isBlombud": true
     },
     {
       "id": "blomsterlandet",
@@ -86,7 +90,8 @@
       "countriesCount": null,
       "pros": [],
       "cons": [],
-      "verifiedAt": null
+      "verifiedAt": null,
+      "isBlombud": true
     },
     {
       "id": "flowery",
@@ -108,7 +113,8 @@
       "cons": [
         "Levererar bara i Stockholm"
       ],
-      "verifiedAt": null
+      "verifiedAt": null,
+      "isBlombud": true
     },
     {
       "id": "blomverket",
@@ -130,7 +136,8 @@
       "cons": [
         "Ingen stadstäckning utanför storstadsområdena"
       ],
-      "verifiedAt": null
+      "verifiedAt": null,
+      "isBlombud": true
     }
   ]
 }
