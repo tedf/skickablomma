@@ -7,6 +7,7 @@ import {
   getRenderableCities,
   getRenderableOccasions,
   getService,
+  totalPriceSek,
 } from '@/lib/comparison'
 import { validateOccasion } from '@/lib/publishing'
 import { markdownToHtml } from '@/lib/guides'
@@ -18,6 +19,11 @@ import { DraftNotice } from '@/components/comparison/DraftNotice'
 import { BotanicalRule } from '@/components/brand/Botanical'
 import { ProductEvidence } from '@/components/comparison/ProductEvidence'
 import { getFeedDate, getProductsByCategory, getProductsBySubCategory } from '@/lib/products'
+
+/** Versal på första bokstaven. Ankartexterna kommer ur datan i gemener. */
+function stortForst(text: string): string {
+  return text.charAt(0).toUpperCase() + text.slice(1)
+}
 
 interface OccasionPageProps {
   params: { occasion: string }
@@ -40,6 +46,28 @@ export async function generateMetadata({ params }: OccasionPageProps): Promise<M
   }
 }
 
+/*
+  Vårt val ska stå där trafiken landar, inte bara på /jamfor. Tillfälles- och
+  stadssidorna skickade ingen pick alls, alltså visade tabellen på sajtens
+  mest besökta sidor ingen rekommendation över huvud taget.
+
+  Regeln är oförändrad: minst två kontrollerade totalpriser, annars ingen
+  markering. Kopplingen görs nu ändå, så att markeringen tänds av sig själv
+  den dag ett andra från-pris kontrolleras.
+*/
+function valjVarttVal(rows: ComparisonRow[]): { serviceId: string; reason: string } | null {
+  const prissatta = rows
+    .map((row) => ({ row, total: totalPriceSek(row.service) }))
+    .filter((x): x is { row: ComparisonRow; total: number } => x.total !== null)
+    .sort((a, b) => a.total - b.total)
+
+  if (prissatta.length < 2) return null
+  return {
+    serviceId: prissatta[0].row.service.id,
+    reason: `Lägsta totalpris av de ${prissatta.length} tjänster vi kontrollerat: ${prissatta[0].total} kr för bukett plus bud.`,
+  }
+}
+
 export default async function OccasionPage({ params }: OccasionPageProps) {
   const occasion = getOccasion(params.occasion)
   if (!occasion) notFound()
@@ -59,12 +87,22 @@ export default async function OccasionPage({ params }: OccasionPageProps) {
     .sort((a, b) => (b.population ?? 0) - (a.population ?? 0))
     .slice(0, 3)
 
-  // Syskonsidor först i "Läs vidare". Tillfällena är ett kluster och ska
-  // länka inbördes: den som läser om kondoleans är oftare på väg till
-  // begravningssidan än till en stadssida.
-  const siblings = getRenderableOccasions()
-    .filter((other) => other.slug !== occasion.slug)
-    .slice(0, 3)
+  /*
+    Syskonsidor i "Läs vidare".
+
+    Urvalet var tidigare `.slice(0, 3)`, alltså de tre första i datafilen,
+    oavsett vilken sida man stod på. Följden blev att begravning, kondoleans
+    och jul fick tretton inkommande länkar var medan födelsedag, mors dag,
+    nyfödd, sjukhus, student och anonymt fick en enda. Klustret länkade inte
+    inbördes, det länkade allihop åt samma håll.
+
+    Nu väljs grannarna i tur och ordning från den egna platsen i listan, så
+    att varje sida får ungefär lika många inkommande länkar och kedjan går
+    runt hela klustret.
+  */
+  const alla = getRenderableOccasions()
+  const egetIndex = alla.findIndex((other) => other.slug === occasion.slug)
+  const siblings = [1, 2, 3].map((steg) => alla[(egetIndex + steg) % alla.length])
 
   // Produkter som underlag. Google visar shoppingkaruseller på de här
   // sökorden, alltså vill den som söker se buketter och inte bara läsa om dem.
@@ -130,6 +168,7 @@ export default async function OccasionPage({ params }: OccasionPageProps) {
           </h2>
           <ComparisonTable
             rows={rows}
+            pick={valjVarttVal(rows)}
             pricesVerifiedAt={occasion.page.pricesVerifiedAt}
             trackingContext={`tillfalle:${occasion.slug}`}
           />
@@ -215,7 +254,13 @@ export default async function OccasionPage({ params }: OccasionPageProps) {
                 href={`/tillfalle/${sibling.slug}`}
                 className="rounded-full bg-leaf-50 px-4 py-2 text-leaf-800 hover:bg-leaf-100"
               >
-                {sibling.name}
+                {/*
+                  Ankartexten var tillfällets namn i ett ord: tretton länkar
+                  med ankaret "Begravning" till den sida som ska ranka på
+                  "begravningsblommor". Substantivet i produktrubriken är det
+                  ord sidan faktiskt vill äga.
+                */}
+                {stortForst(sibling.productNoun ?? `blommor till ${sibling.name.toLowerCase()}`)}
               </Link>
             </li>
           ))}
@@ -235,6 +280,14 @@ export default async function OccasionPage({ params }: OccasionPageProps) {
               className="rounded-full bg-muted px-4 py-2 text-ink-muted hover:bg-line"
             >
               Jämför blombud
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/jamfor/billigt"
+              className="rounded-full bg-muted px-4 py-2 text-ink-muted hover:bg-line"
+            >
+              Skicka blommor billigt
             </Link>
           </li>
         </ul>

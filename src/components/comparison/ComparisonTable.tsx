@@ -230,9 +230,22 @@ export function ComparisonTable({
         </table>
       </div>
 
-      {pick && (
-        <p className="text-sm text-ink-muted">
+      {pick ? (
+        <p className="rounded-lg border border-signal-200 bg-signal-50 p-4 text-sm text-signal-900">
           <strong className="font-medium">Vårt val:</strong> {pick.reason}
+        </p>
+      ) : (
+        /*
+          Tidigare stod här ingenting när vi saknade underlag, samtidigt som
+          /jamfor har ett eget avsnitt som förklarar vad "Vårt val" betyder.
+          Sajten förklarade alltså en markering som aldrig dök upp. Nu står det
+          utskrivet varför den saknas, vilket är samma regel som tankstrecket
+          i tabellen följer.
+        */
+        <p className="text-sm text-ink-muted">
+          Ingen rad är markerad som vårt val. Markeringen kräver kontrollerat
+          totalpris hos minst två tjänster, och så många har vi inte ännu.
+          Billigast av en är ingen jämförelse.
         </p>
       )}
 

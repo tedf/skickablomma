@@ -1,7 +1,13 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { getCity, getCityNeighbours, getRenderableCities, getService } from '@/lib/comparison'
+import {
+  getCity,
+  getCityNeighbours,
+  getRenderableCities,
+  getService,
+  totalPriceSek,
+} from '@/lib/comparison'
 import { validateCity, verifiedFlorists } from '@/lib/publishing'
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs'
 import { FAQSection } from '@/components/content/FAQSection'
@@ -31,6 +37,28 @@ export async function generateMetadata({ params }: CityPageProps): Promise<Metad
     alternates: { canonical: `https://skickablomma.se/blombud/${city.slug}` },
     // Utkast ska aldrig indexeras, inte ens om de råkar bli åtkomliga.
     robots: city.page.status === 'published' ? undefined : { index: false, follow: false },
+  }
+}
+
+/*
+  Vårt val ska stå där trafiken landar, inte bara på /jamfor. Tillfälles- och
+  stadssidorna skickade ingen pick alls, alltså visade tabellen på sajtens
+  mest besökta sidor ingen rekommendation över huvud taget.
+
+  Regeln är oförändrad: minst två kontrollerade totalpriser, annars ingen
+  markering. Kopplingen görs nu ändå, så att markeringen tänds av sig själv
+  den dag ett andra från-pris kontrolleras.
+*/
+function valjVarttVal(rows: ComparisonRow[]): { serviceId: string; reason: string } | null {
+  const prissatta = rows
+    .map((row) => ({ row, total: totalPriceSek(row.service) }))
+    .filter((x): x is { row: ComparisonRow; total: number } => x.total !== null)
+    .sort((a, b) => a.total - b.total)
+
+  if (prissatta.length < 2) return null
+  return {
+    serviceId: prissatta[0].row.service.id,
+    reason: `Lägsta totalpris av de ${prissatta.length} tjänster vi kontrollerat: ${prissatta[0].total} kr för bukett plus bud.`,
   }
 }
 
@@ -126,6 +154,7 @@ export default async function CityPage({ params }: CityPageProps) {
         </h2>
         <ComparisonTable
           rows={rows}
+            pick={valjVarttVal(rows)}
           pricesVerifiedAt={city.page.pricesVerifiedAt}
           trackingContext={`stad:${city.slug}`}
         />
@@ -211,6 +240,14 @@ export default async function CityPage({ params }: CityPageProps) {
           <li>
             <Link
               href="/jamfor"
+              className="rounded-full bg-muted px-4 py-2 text-ink-muted hover:bg-line"
+            >
+              Jämför alla blombud
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/jamfor/billigt"
               className="rounded-full bg-muted px-4 py-2 text-ink-muted hover:bg-line"
             >
               Jämför alla blombud
