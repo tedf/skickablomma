@@ -19,7 +19,7 @@ export const MAIN_CATEGORIES: Record<MainCategory, Category> = {
     sortOrder: 1,
     seoContent: {
       intro:
-        'Hos oss hittar du ett brett utbud av vackra buketter för alla tillfällen. Oavsett om du söker en romantisk bukett till din partner, en färgglad födelsedagsbukett eller en elegant bukett för att tacka någon - vi hjälper dig hitta rätt.',
+        'Buketter är den vanligaste formen av blomsterhälsning och finns i alla prisklasser. Skillnaden mellan tjänsterna ligger mindre i sortimentet än i vad budet kostar och hur sent du kan beställa. Nedan jämför vi buketter från de tjänster vi följer.',
       faq: [
         {
           id: 'buketter-faq-1',
@@ -32,7 +32,7 @@ export const MAIN_CATEGORIES: Record<MainCategory, Category> = {
           id: 'buketter-faq-2',
           question: 'Kan jag få buketten levererad samma dag?',
           answer:
-            'Ja, flera av våra partners erbjuder leverans samma dag om du beställer före kl 13-14. Välj filtret "Samma dag leverans" för att se tillgängliga buketter.',
+            'Flera av tjänsterna levererar samma dag om beställningen ligger inne före lunch på en vardag. Använd filtret för samma dag-leverans för att se vilka buketter det gäller.',
           sortOrder: 2,
         },
       ],
@@ -65,7 +65,7 @@ export const MAIN_CATEGORIES: Record<MainCategory, Category> = {
           id: 'begravning-faq-2',
           question: 'Kan blommorna levereras direkt till kyrkan?',
           answer:
-            'Ja, samtliga våra partners levererar direkt till kyrka, kapell eller begravningsplats. Ange ceremoniplatsen och önskad leveranstid vid beställning så sköter floristen resten.',
+            'Ja. Tjänsterna levererar till kyrka, kapell eller begravningsplats. Ange ceremoniplats, datum och klockslag vid beställning, så samordnar floristen med begravningsbyrån.',
           sortOrder: 2,
         },
         {
@@ -119,7 +119,7 @@ export const MAIN_CATEGORIES: Record<MainCategory, Category> = {
     description: 'Choklad, vin och andra presentartiklar',
     metaTitle: 'Presenter - Choklad, Vin & Mer',
     metaDescription:
-      'Kombinera blommor med presenter! Choklad, vin, nallar och andra gåvor som kompletterar din blomsterhälsning.',
+      'Choklad, vin och andra gåvor som går att beställa tillsammans med blommorna. Tillvalen prissätts separat och påverkar inte budavgiften.',
     productCount: 0,
     isActive: false, // No products in feed
     sortOrder: 5,
@@ -145,13 +145,13 @@ export const MAIN_CATEGORIES: Record<MainCategory, Category> = {
     description: 'Blommor som kan levereras idag',
     metaTitle: 'Blommor Samma Dag - Expressleverans',
     metaDescription:
-      'Beställ blommor med leverans samma dag! Skicka blommor idag till någon du bryr dig om. Beställ före kl 13-14.',
+      'Blommor som når mottagaren samma dag. Kräver att beställningen ligger inne före tjänstens stopptid, normalt före lunch på en vardag.',
     productCount: 0,
     isActive: false, // No same-day-delivery data in feed
     sortOrder: 7,
     seoContent: {
       intro:
-        'Behöver du skicka blommor snabbt? Många av våra partners erbjuder leverans samma dag om du beställer före kl 13-14. Perfekt när du glömt en födelsedag eller vill överraska någon idag!',
+        'Många av tjänsterna levererar samma dag om beställningen ligger inne före lunch på en vardag. Efter stopptiden flyttas leveransen till nästa arbetsdag.',
       faq: [
         {
           id: 'samma-dag-faq-1',
@@ -171,7 +171,7 @@ export const MAIN_CATEGORIES: Record<MainCategory, Category> = {
     description: 'Blommor under 300 kr',
     metaTitle: 'Billiga Blommor Under 300 kr',
     metaDescription:
-      'Vackra buketter behöver inte vara dyra! Hitta blommor under 300 kr som fortfarande imponerar. Jämför priser från flera butiker.',
+      'Buketter under 300 kr. Tänk på att budavgiften tillkommer och är densamma oavsett bukettens pris — jämför därför totalen, inte från-priset.',
     productCount: 0,
     isActive: false, // Use price filter on buketter instead
     sortOrder: 8,
@@ -350,7 +350,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Buketter perfekta för födelsedagar',
     metaTitle: 'Födelsedagsblommor - Fira med Blommor',
     metaDescription:
-      'Överraska med blommor på födelsedagen! Färgglada och festliga buketter som gör dagen extra speciell.',
+      'Överraska med blommor på födelsedagen. Färgglada och festliga buketter som gör dagen extra speciell.',
     parentCategory: 'buketter',
   },
   tackblommor: {
@@ -372,7 +372,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Blommor för att gratulera',
     metaTitle: 'Gratulationsblommor',
     metaDescription:
-      'Gratulera med stil! Blommor för examen, nytt jobb, ny bostad eller andra framgångar.',
+      'Gratulera med stil. Blommor för examen, nytt jobb, ny bostad eller andra framgångar.',
     parentCategory: 'buketter',
   },
   'karlek-romantik': {
@@ -405,7 +405,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Skicka en blommig kram',
     metaTitle: 'Kramblommor - Skicka en Kram',
     metaDescription:
-      'Kan du inte vara där personligen? Skicka en blommig kram istället!',
+      'När du inte kan vara där personligen. Buketter som fungerar som en hälsning snarare än en present.',
     parentCategory: 'buketter',
   },
 
@@ -418,7 +418,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Fräscha vårblommor som tulpaner och påskliljor',
     metaTitle: 'Vårblommor - Fräscha Buketter',
     metaDescription:
-      'Fira våren med fräscha vårblommor! Tulpaner, påskliljor och andra vårfavoriter.',
+      'Fira våren med fräscha vårblommor. Tulpaner, påskliljor och andra vårfavoriter.',
     parentCategory: 'buketter',
   },
   'sommar-blommor': {
@@ -429,7 +429,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Färgglada sommarblommor fulla av liv',
     metaTitle: 'Sommarblommor - Färgglada Buketter',
     metaDescription:
-      'Njut av sommarens alla färger! Solrosor, dahlior och andra sommarfavoriter.',
+      'Njut av sommarens alla färger. Solrosor, dahlior och andra sommarfavoriter.',
     parentCategory: 'buketter',
   },
   'host-blommor': {
@@ -451,7 +451,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Julstämning med blommor',
     metaTitle: 'Julblommor - Festliga Arrangemang',
     metaDescription:
-      'Skapa julstämning med vackra julblommor! Julstjärnor, amaryllis och festliga arrangemang.',
+      'Skapa julstämning med vackra julblommor. Julstjärnor, amaryllis och festliga arrangemang.',
     parentCategory: 'buketter',
   },
 
@@ -464,7 +464,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Fira mamma med blommor på mors dag',
     metaTitle: 'Mors Dag Blommor 2025',
     metaDescription:
-      'Överraska mamma med vackra blommor på mors dag! Beställ i tid för garanterad leverans.',
+      'Överraska mamma med vackra blommor på mors dag. Beställ i tid för garanterad leverans.',
     parentCategory: 'buketter',
   },
   'fars-dag': {
@@ -475,7 +475,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Fira pappa med blommor på fars dag',
     metaTitle: 'Fars Dag Blommor 2025',
     metaDescription:
-      'Överraska pappa med blommor på fars dag! Klassiska och stilfulla buketter.',
+      'Överraska pappa med blommor på fars dag. Klassiska och stilfulla buketter.',
     parentCategory: 'buketter',
   },
   'alla-hjartans-dag': {
@@ -486,7 +486,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Romantiska blommor för alla hjärtans dag',
     metaTitle: 'Alla Hjärtans Dag Blommor 2025',
     metaDescription:
-      'Fira kärleken med romantiska blommor! Röda rosor och hjärtformade buketter för alla hjärtans dag.',
+      'Fira kärleken med romantiska blommor. Röda rosor och hjärtformade buketter för alla hjärtans dag.',
     parentCategory: 'buketter',
   },
   pask: {
@@ -497,7 +497,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Våriga påskblommor',
     metaTitle: 'Påskblommor 2025',
     metaDescription:
-      'Fira påsk med fräscha vårblommor! Påskliljor, tulpaner och andra våriga favoriter.',
+      'Fira påsk med fräscha vårblommor. Påskliljor, tulpaner och andra våriga favoriter.',
     parentCategory: 'buketter',
   },
   student: {
@@ -508,7 +508,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Gratulera studenten med blommor',
     metaTitle: 'Studentblommor 2025',
     metaDescription:
-      'Gratulera studenten med vackra blommor! Festliga buketter för den stora dagen.',
+      'Gratulera studenten med vackra blommor. Festliga buketter för den stora dagen.',
     parentCategory: 'buketter',
   },
   midsommar: {
@@ -519,7 +519,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Somriga midsommarblommor',
     metaTitle: 'Midsommarblommor 2025',
     metaDescription:
-      'Fira midsommar med svenska sommarblommor! Traditionella och moderna buketter.',
+      'Fira midsommar med svenska sommarblommor. Traditionella och moderna buketter.',
     parentCategory: 'buketter',
   },
 
@@ -624,7 +624,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Klassiska och moderna brudbuketter',
     metaTitle: 'Brudbuketter 2025',
     metaDescription:
-      'Hitta den perfekta brudbuketten! Klassiska, romantiska och moderna brudbuketter för ditt bröllop.',
+      'Hitta den perfekta brudbuketten. Klassiska, romantiska och moderna brudbuketter för ditt bröllop.',
     parentCategory: 'brollop',
   },
   brollopsbuketter: {
@@ -635,7 +635,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Buketter för bröllop och fest',
     metaTitle: 'Bröllopsbuketter',
     metaDescription:
-      'Buketter för hela bröllopet! Till brudtärnor, mödrar och som dekoration.',
+      'Buketter för hela bröllopet. Till brudtärnor, mödrar och som dekoration.',
     parentCategory: 'brollop',
   },
   bordsdekoration: {
@@ -657,7 +657,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Blomsterdekoration för kyrkan',
     metaTitle: 'Kyrkodekoration Bröllop',
     metaDescription:
-      'Dekorera kyrkan med vackra blommor! Altararrangemang och dekoration för vigseln.',
+      'Dekorera kyrkan med vackra blommor. Altararrangemang och dekoration för vigseln.',
     parentCategory: 'brollop',
   },
 
@@ -670,7 +670,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Blommor och växter för kontoret',
     metaTitle: 'Kontorsblommor',
     metaDescription:
-      'Lyft arbetsmiljön med vackra kontorsblommor! Växter och buketter för kontoret.',
+      'Lyft arbetsmiljön med vackra kontorsblommor. Växter och buketter för kontoret.',
     parentCategory: 'foretag',
   },
   representationsblommor: {

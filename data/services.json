@@ -1,0 +1,136 @@
+{
+  "updatedAt": "2026-09-09",
+  "_kommentar": "priceFromSek och deliveryFeeSek för Interflora och Cramers kommer ur Adtraction-feeden daterad 2026-02-14 (data/products.json). Övriga tjänster saknar affiliate-avtal och därmed feed — deras siffror är null tills de kontrollerats manuellt mot respektive sajt. Null betyder 'ej kontrollerat', aldrig 0.",
+  "services": [
+    {
+      "id": "interflora",
+      "name": "Interflora",
+      "slug": "interflora",
+      "websiteUrl": "https://www.interflora.se",
+      "affiliateUrl": "https://go.adt246.net/t/t?a=767510657&as=1771789045&t=2&tk=1&url=https%3A%2F%2Fwww.interflora.se%2F",
+      "network": "adtraction",
+      "commissionNote": "Aktivt program. Deeplink till startsidan är konstruerad från feedens spårningsmönster och måste klicktestas före lansering. Villkor: ingen SEM på varumärkesord, och de spärrade orden får inte förekomma på sajten.",
+      "sameDay": true,
+      "cutoffWeekday": null,
+      "cutoffSaturday": null,
+      "priceFromSek": 239,
+      "deliveryFeeSek": 99,
+      "countriesCount": null,
+      "pros": [
+        "Störst ombudsnät i Sverige",
+        "Levererar till fler orter än konkurrenterna"
+      ],
+      "cons": [
+        "Högre från-pris än flera konkurrenter",
+        "Stadssidorna är produktlistor utan lokal information"
+      ],
+      "verifiedAt": "2026-02-14"
+    },
+    {
+      "id": "cramers",
+      "name": "Cramers Blommor",
+      "slug": "cramers",
+      "websiteUrl": "https://shop.cramersblommor.com",
+      "affiliateUrl": "https://pin.cramersblommor.com/t/t?a=1954033070&as=1771789045&t=2&tk=1&url=https%3A%2F%2Fshop.cramersblommor.com%2F",
+      "network": "adtraction",
+      "commissionNote": "Aktivt program. Sortimentet i feeden är övervägande lökar, knölar och plantor, inte bundna buketter — jämförs därför inte på från-pris för bukett förrän sortimentet kontrollerats.",
+      "sameDay": true,
+      "cutoffWeekday": null,
+      "cutoffSaturday": null,
+      "priceFromSek": null,
+      "deliveryFeeSek": 69,
+      "countriesCount": null,
+      "pros": [
+        "Lägre budavgift än Interflora"
+      ],
+      "cons": [
+        "Sortimentet är inte i första hand blombud"
+      ],
+      "verifiedAt": "2026-02-14"
+    },
+    {
+      "id": "euroflorist",
+      "name": "Euroflorist",
+      "slug": "euroflorist",
+      "websiteUrl": "https://www.euroflorist.se",
+      "affiliateUrl": null,
+      "network": "tradedoubler",
+      "commissionNote": "Ansökan ej inskickad (fas 0). Villkor enligt siteplanen: brand bidding förbjudet, spärrade PPC-sökord — gäller betald sök, inte organisk.",
+      "sameDay": true,
+      "cutoffWeekday": null,
+      "cutoffSaturday": null,
+      "priceFromSek": null,
+      "deliveryFeeSek": null,
+      "countriesCount": null,
+      "pros": [
+        "Uppges ha marknadens lägsta från-pris"
+      ],
+      "cons": [
+        "Rankar i praktiken bara med Stockholm-sidan"
+      ],
+      "verifiedAt": null
+    },
+    {
+      "id": "blomsterlandet",
+      "name": "Blomsterlandet",
+      "slug": "blomsterlandet",
+      "websiteUrl": "https://www.blomsterlandet.se",
+      "affiliateUrl": null,
+      "network": "adtraction",
+      "commissionNote": "Nätverk och villkor ej verifierade.",
+      "sameDay": false,
+      "cutoffWeekday": null,
+      "cutoffSaturday": null,
+      "priceFromSek": null,
+      "deliveryFeeSek": null,
+      "countriesCount": null,
+      "pros": [],
+      "cons": [],
+      "verifiedAt": null
+    },
+    {
+      "id": "flowery",
+      "name": "Flowery",
+      "slug": "flowery",
+      "websiteUrl": "https://www.flowery.se",
+      "affiliateUrl": null,
+      "network": "direkt",
+      "commissionNote": "Kontaktas för direktavtal (fas 0). Små aktörer ger ofta bättre villkor än nätverken.",
+      "sameDay": false,
+      "cutoffWeekday": null,
+      "cutoffSaturday": null,
+      "priceFromSek": null,
+      "deliveryFeeSek": null,
+      "countriesCount": null,
+      "pros": [
+        "Rankar högt i Stockholm trots låg domänstyrka"
+      ],
+      "cons": [
+        "Levererar bara i Stockholm"
+      ],
+      "verifiedAt": null
+    },
+    {
+      "id": "blomverket",
+      "name": "Blomverket",
+      "slug": "blomverket",
+      "websiteUrl": "https://www.blomverket.se",
+      "affiliateUrl": null,
+      "network": "direkt",
+      "commissionNote": "Kontaktas för direktavtal (fas 0).",
+      "sameDay": false,
+      "cutoffWeekday": null,
+      "cutoffSaturday": null,
+      "priceFromSek": null,
+      "deliveryFeeSek": null,
+      "countriesCount": null,
+      "pros": [
+        "Hemleverans i eget regi"
+      ],
+      "cons": [
+        "Ingen stadstäckning utanför storstadsområdena"
+      ],
+      "verifiedAt": null
+    }
+  ]
+}

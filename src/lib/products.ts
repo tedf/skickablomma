@@ -6,6 +6,7 @@
  */
 
 import { Product, ProductFilters, SearchResult, MainCategory, Partner } from '@/types'
+import { sanitizeProductText } from '@/lib/restricted-terms'
 import productsData from '../../data/products.json'
 
 // =============================================================================
@@ -15,7 +16,9 @@ import productsData from '../../data/products.json'
 let PRODUCTS: Product[] = []
 
 try {
-  PRODUCTS = productsData.products.map((p: any) => ({
+  // Feedtexten saneras vid inläsning: spärrade varumärkesord (Blommogram,
+  // Chokladogram) får inte förekomma på sajten. Se lib/restricted-terms.ts.
+  PRODUCTS = productsData.products.map((raw: any) => sanitizeProductText(raw)).map((p: any) => ({
     ...p,
     createdAt: new Date(p.createdAt),
     updatedAt: new Date(p.updatedAt),

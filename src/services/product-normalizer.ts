@@ -13,6 +13,7 @@ import {
 } from '@/types'
 import { mapCategory } from './feed-ingestion'
 import { PARTNERS } from '@/data/partners'
+import { sanitizeRestrictedTerms } from '@/lib/restricted-terms'
 
 // =============================================================================
 // PARSNING
@@ -279,10 +280,13 @@ export function normalizeProduct(
     sku: feedProduct.SKU,
     partnerId,
 
-    // Grundinfo
-    name: feedProduct.Name,
-    description: feedProduct.Description || '',
-    shortDescription: createShortDescription(feedProduct.Description || ''),
+    // Grundinfo. Spärrade varumärkesord städas redan här så att de aldrig
+    // hamnar i data/products.json. Se lib/restricted-terms.ts.
+    name: sanitizeRestrictedTerms(feedProduct.Name),
+    description: sanitizeRestrictedTerms(feedProduct.Description || ''),
+    shortDescription: sanitizeRestrictedTerms(
+      createShortDescription(feedProduct.Description || '')
+    ),
 
     // Kategorisering
     mainCategory: categoryMapping.main,

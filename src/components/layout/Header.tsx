@@ -11,10 +11,68 @@ import {
   Flower2,
   Heart,
   Sparkles,
+  Truck,
+  Globe,
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
+// Jämförelsehubbarna först, produktkatalogen efter. Ordningen speglar
+// sitearkitekturen i siteplanen §3: sajten är en jämförelse, inte en butik.
 const navigation = [
+  {
+    name: 'Blombud',
+    href: '/blombud',
+    icon: Truck,
+    children: [
+      { name: 'Jämför blombud', href: '/blombud' },
+      { name: 'Linköping', href: '/blombud/linkoping' },
+      { name: 'Jönköping', href: '/blombud/jonkoping' },
+    ],
+  },
+  {
+    name: 'Utomlands',
+    href: '/utomlands',
+    icon: Globe,
+    children: [
+      { name: 'Alla länder', href: '/utomlands' },
+      { name: 'Norge', href: '/utomlands/norge' },
+      { name: 'Danmark', href: '/utomlands/danmark' },
+      { name: 'Finland', href: '/utomlands/finland' },
+      { name: 'Tyskland', href: '/utomlands/tyskland' },
+      { name: 'USA', href: '/utomlands/usa' },
+    ],
+  },
+  {
+    name: 'Tillfällen',
+    href: '/tillfalle',
+    icon: Heart,
+    children: [
+      { name: 'Alla tillfällen', href: '/tillfalle' },
+      { name: 'Begravning', href: '/tillfalle/begravning' },
+      { name: 'Födelsedag', href: '/fodelsedags-blommor' },
+      { name: 'Tack', href: '/tackblommor' },
+      { name: 'Kärlek & Romantik', href: '/karlek-romantik' },
+    ],
+  },
+  {
+    name: 'Jämför',
+    href: '/jamfor',
+    icon: Sparkles,
+    children: [
+      { name: 'Alla tjänster', href: '/jamfor' },
+      { name: 'Billigast', href: '/jamfor/billigt' },
+    ],
+  },
+  {
+    name: 'Guider',
+    href: '/guider',
+    icon: Flower2,
+    children: [
+      { name: 'Alla guider', href: '/guider' },
+      { name: 'Vad kostar det?', href: '/guider/vad-kostar-det' },
+      { name: 'Skicka samma dag', href: '/guide/skicka-blommor-samma-dag' },
+    ],
+  },
   {
     name: 'Buketter',
     href: '/buketter',
@@ -24,42 +82,10 @@ const navigation = [
       { name: 'Rosor', href: '/buketter/rosor' },
       { name: 'Tulpaner', href: '/buketter/tulpaner' },
       { name: 'Liljor', href: '/buketter/liljor' },
-      { name: 'Blandade buketter', href: '/buketter/blandade-farger' },
+      { name: 'Begravningsblommor', href: '/begravning' },
+      { name: 'Bröllopsblommor', href: '/brollop' },
     ],
   },
-  {
-    name: 'Tillfällen',
-    href: '/fodelsedags-blommor',
-    icon: Heart,
-    children: [
-      { name: 'Födelsedag', href: '/fodelsedags-blommor' },
-      { name: 'Tack', href: '/tackblommor' },
-      { name: 'Kärlek & Romantik', href: '/karlek-romantik' },
-      { name: 'Gratulationer', href: '/gratulationer' },
-    ],
-  },
-  {
-    name: 'Begravning',
-    href: '/begravning',
-    icon: Sparkles,
-    children: [
-      { name: 'Alla begravningsblommor', href: '/begravning' },
-      { name: 'Begravningskransar', href: '/begravning/begravningskransar' },
-      { name: 'Begravningsbuketter', href: '/begravning/begravningsbuketter' },
-      { name: 'Kondoleanser', href: '/begravning/kondoleanser' },
-    ],
-  },
-  {
-    name: 'Bröllop',
-    href: '/brollop',
-    icon: Heart,
-    children: [
-      { name: 'Brudbuketter', href: '/brudbuketter' },
-      { name: 'Bröllopsbuketter', href: '/brollopsbuketter' },
-      { name: 'Bordsdekoration', href: '/bordsdekoration-brollop' },
-    ],
-  },
-  // Note: Presenter and Företag removed - no products in feed yet
 ]
 
 export function Header() {

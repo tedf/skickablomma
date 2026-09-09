@@ -238,7 +238,7 @@ export default async function CategoryPage({ params, searchParams }: CategoryPag
                   </p>
                   <h3>Leverans och hållbarhet</h3>
                   <p>
-                    Våra partners levererar fräscha blommor direkt från floristen. Med rätt
+                    Tjänsterna levererar direkt från floristen. Med rätt
                     skötsel håller de flesta buketter 5-10 dagar. Byt vatten varannan dag
                     och klipp stjälkarna för bästa resultat.
                   </p>
@@ -255,7 +255,7 @@ export default async function CategoryPage({ params, searchParams }: CategoryPag
                   </p>
                   <h3>Leverans till kyrka och kapell</h3>
                   <p>
-                    Alla våra partners kan leverera direkt till kyrkan eller kapellet.
+                    Tjänsterna levererar direkt till kyrkan eller kapellet.
                     Se till att ange rätt leveransadress och tidpunkt vid beställning.
                   </p>
                 </>

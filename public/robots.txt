@@ -1,0 +1,30 @@
+# skickablomma.se
+# Siteplanen §4: sök- och svarsrobotar släpps in. Vi vill bli citerade, inte
+# bara rankade. Enda spärren är API-rutterna, som inte har något läsvärde.
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://skickablomma.se/sitemap.xml

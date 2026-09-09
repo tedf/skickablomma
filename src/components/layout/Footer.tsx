@@ -3,24 +3,26 @@ import { Flower2, Mail, MapPin, Phone } from 'lucide-react'
 
 const footerLinks = {
   kategorier: [
+    { name: 'Blombud', href: '/blombud' },
+    { name: 'Skicka utomlands', href: '/utomlands' },
+    { name: 'Jämför blombud', href: '/jamfor' },
+    { name: 'Billigast', href: '/jamfor/billigt' },
     { name: 'Buketter', href: '/buketter' },
-    { name: 'Begravningsblommor', href: '/begravning' },
-    { name: 'Bröllopsblommor', href: '/brollop' },
-    { name: 'Företagsblommor', href: '/foretag' },
-    { name: 'Konstgjorda blommor', href: '/konstgjorda-blommor' },
   ],
   tillfallen: [
+    { name: 'Begravning', href: '/tillfalle/begravning' },
     { name: 'Födelsedagsblommor', href: '/fodelsedags-blommor' },
     { name: 'Tackblommor', href: '/tackblommor' },
     { name: 'Kärlek & Romantik', href: '/karlek-romantik' },
-    { name: 'Gratulationer', href: '/gratulationer' },
   ],
   information: [
     { name: 'Guider', href: '/guider' },
+    { name: 'Vad kostar det?', href: '/guider/vad-kostar-det' },
     { name: 'Sök blommor', href: '/sok' },
   ],
   juridiskt: [
-    { name: 'Affiliate-information', href: '/affiliate' },
+    // Länkas från varje jämförelsetabell — se AffiliateDisclosure.
+    { name: 'Så tjänar vi pengar', href: '/om/sa-tjanar-vi-pengar' },
   ],
 }
 
@@ -160,7 +162,7 @@ export function Footer() {
             <p className="text-xs text-gray-400">
               Vi använder affiliate-länkar. När du köper via våra länkar får vi en liten
               provision utan extra kostnad för dig.{' '}
-              <Link href="/affiliate" className="underline hover:text-gray-600">
+              <Link href="/om/sa-tjanar-vi-pengar" className="underline hover:text-gray-600">
                 Läs mer
               </Link>
             </p>

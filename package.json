@@ -15,7 +15,10 @@
     "feed:process": "tsx scripts/process-feeds.ts",
     "images:resolve": "tsx scripts/resolve-images.ts",
     "sitemap:generate": "tsx scripts/generate-sitemap.ts",
-    "content:generate": "tsx scripts/generate-content.ts"
+    "content:generate": "tsx scripts/generate-content.ts",
+    "check:content": "tsx scripts/check-publishable.ts",
+    "content:sanitize": "tsx scripts/sanitize-products.ts",
+    "prebuild": "npm run check:content"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.0",

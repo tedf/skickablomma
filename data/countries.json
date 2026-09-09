@@ -1,0 +1,189 @@
+{
+  "updatedAt": "2026-09-09",
+  "_kommentar": "Fas 1: fem länder. All prissättning är null tills den kontrollerats mot respektive tjänsts sajt. Copyn innehåller platshållare av formen [349–549] som blockerar publicering tills siffran ersatts — se src/lib/publishing.ts.",
+  "countries": [
+    {
+      "slug": "norge",
+      "name": "Norge",
+      "eu": false,
+      "services": [
+        { "serviceId": "interflora", "leadDays": null, "priceFromSek": null, "verifiedAt": null },
+        { "serviceId": "euroflorist", "leadDays": null, "priceFromSek": null, "verifiedAt": null }
+      ],
+      "customsNote": "Norge står utanför EU, men buketten binds och levereras av en florist i Norge. Ingen tull eller moms tillkommer därför för mottagaren.",
+      "timezoneOffset": 0,
+      "holidays": ["17 maj (nationaldagen)", "Kristi himmelsfärd", "Andra pingstdag"],
+      "neighbours": ["danmark", "finland"],
+      "searchVolume": 350,
+      "kd": 0,
+      "phase": 1,
+      "page": {
+        "status": "draft",
+        "title": "Skicka blommor till Norge – priser och leveranstid",
+        "h1": "Skicka blommor till Norge",
+        "metaDescription": "Jämför vad det kostar att skicka blommor till Norge, hur lång tid det tar och vilka tjänster som levererar. Uppdaterad prisjämförelse.",
+        "microAnswer": "Blommor till Norge levereras normalt inom 1–2 vardagar via Interflora eller Euroflorist, som båda har floristnätverk i Norge. Räkna med [349–549] kr inklusive bud. Norge är utanför EU men blomsterbud hanteras lokalt, så ingen tull tillkommer för mottagaren. Beställ före [kl. X] för leverans nästa vardag.",
+        "faq": [
+          {
+            "question": "Tillkommer tull när jag skickar blommor till Norge?",
+            "answer": "Nej. Buketten binds av en florist i Norge och passerar aldrig en gräns, så varken tull eller norsk moms landar hos mottagaren."
+          },
+          {
+            "question": "Kan jag få blommorna levererade samma dag i Norge?",
+            "answer": "Sällan. Beställningar går via det norska floristnätverket och behöver normalt en arbetsdag. Räkna med leverans nästa vardag om du beställer på morgonen."
+          },
+          {
+            "question": "Behöver jag mottagarens telefonnummer?",
+            "answer": "Ja, i praktiken. Norska florister ringer ofta mottagaren om adressen är otydlig eller ingen öppnar, och utan nummer riskerar leveransen att skjutas upp."
+          }
+        ],
+        "pricesVerifiedAt": null,
+        "updatedAt": "2026-09-09"
+      }
+    },
+    {
+      "slug": "usa",
+      "name": "USA",
+      "eu": false,
+      "services": [
+        { "serviceId": "interflora", "leadDays": null, "priceFromSek": null, "verifiedAt": null },
+        { "serviceId": "euroflorist", "leadDays": null, "priceFromSek": null, "verifiedAt": null }
+      ],
+      "customsNote": "Buketten binds av en amerikansk florist. Ingen import sker, alltså ingen tull för mottagaren.",
+      "timezoneOffset": null,
+      "holidays": ["Thanksgiving (fjärde torsdagen i november)", "4 juli", "Memorial Day"],
+      "neighbours": [],
+      "searchVolume": 300,
+      "kd": 0,
+      "phase": 1,
+      "page": {
+        "status": "draft",
+        "title": "Skicka blommor till USA – kostnad och leveranstid",
+        "h1": "Skicka blommor till USA",
+        "metaDescription": "Så skickar du blommor till USA från Sverige. Priser, leveranstider, tidsskillnad och vad du behöver tänka på vid beställning.",
+        "microAnswer": "Blommor till USA skickas via Interflora eller Euroflorist och levereras av en amerikansk florist inom 1–3 vardagar. Priset ligger på [449–799] kr inklusive bud. Tänk på tidsskillnaden på sex till nio timmar vid beställning, och på att många amerikanska florister inte levererar på söndagar. Ange alltid mottagarens telefonnummer.",
+        "faq": [
+          {
+            "question": "Hur påverkar tidsskillnaden min beställning?",
+            "answer": "USA ligger sex till nio timmar efter Sverige. En beställning du lägger på svensk eftermiddag når floristen samma morgon där, vilket ofta räcker för leverans nästa dag."
+          },
+          {
+            "question": "Levereras blommor på söndagar i USA?",
+            "answer": "Oftast inte. Många amerikanska florister håller stängt på söndagar. Lägg beställningen så att leveransdagen hamnar måndag till lördag."
+          },
+          {
+            "question": "Kan jag skicka till en adress på ett hotell eller sjukhus?",
+            "answer": "Ja, men ange rumsnummer eller avdelning. Amerikanska sjukhus har ofta egna regler för vilka avdelningar som tar emot blommor."
+          }
+        ],
+        "pricesVerifiedAt": null,
+        "updatedAt": "2026-09-09"
+      }
+    },
+    {
+      "slug": "danmark",
+      "name": "Danmark",
+      "eu": true,
+      "services": [
+        { "serviceId": "interflora", "leadDays": null, "priceFromSek": null, "verifiedAt": null },
+        { "serviceId": "euroflorist", "leadDays": null, "priceFromSek": null, "verifiedAt": null }
+      ],
+      "customsNote": "Danmark är EU-land. Ingen tull, och buketten binds dessutom lokalt.",
+      "timezoneOffset": 0,
+      "holidays": ["Store bededag", "Grundlovsdag 5 juni"],
+      "neighbours": ["norge", "tyskland"],
+      "searchVolume": null,
+      "kd": null,
+      "phase": 1,
+      "page": {
+        "status": "draft",
+        "title": "Skicka blommor till Danmark – pris och leverans",
+        "h1": "Skicka blommor till Danmark",
+        "metaDescription": "Vad kostar det att skicka blommor till Danmark? Jämför leveranstider och priser mellan tjänsterna som levererar till danska adresser.",
+        "microAnswer": "Blommor till Danmark levereras normalt inom 1–2 vardagar av en dansk florist via Interflora eller Euroflorist. Priset ligger på [329–529] kr inklusive bud. Danmark är EU-land, så ingen tull tillkommer. Beställ före [kl. X] om du vill ha leverans nästa vardag i Köpenhamn och övriga större städer.",
+        "faq": [
+          {
+            "question": "Går det snabbare till Danmark än till andra länder?",
+            "answer": "Marginellt. Leveransen sker ändå via en dansk florist, så ledtiden styrs av deras arbetsdag, inte av avståndet från Sverige."
+          },
+          {
+            "question": "Kan jag betala i svenska kronor?",
+            "answer": "Ja. Du beställer i den svenska butiken och betalar i kronor. Mottagaren behöver inte göra någonting."
+          }
+        ],
+        "pricesVerifiedAt": null,
+        "updatedAt": "2026-09-09"
+      }
+    },
+    {
+      "slug": "tyskland",
+      "name": "Tyskland",
+      "eu": true,
+      "services": [
+        { "serviceId": "interflora", "leadDays": null, "priceFromSek": null, "verifiedAt": null },
+        { "serviceId": "euroflorist", "leadDays": null, "priceFromSek": null, "verifiedAt": null }
+      ],
+      "customsNote": "Tyskland är EU-land. Ingen tull, och buketten binds av en tysk florist.",
+      "timezoneOffset": 0,
+      "holidays": ["Tag der Deutschen Einheit 3 oktober", "Regionala helgdagar varierar per delstat"],
+      "neighbours": ["danmark"],
+      "searchVolume": null,
+      "kd": null,
+      "phase": 1,
+      "page": {
+        "status": "draft",
+        "title": "Skicka blommor till Tyskland – pris och leveranstid",
+        "h1": "Skicka blommor till Tyskland",
+        "metaDescription": "Så skickar du blommor till Tyskland. Jämför priser och leveranstider, och se vad som gäller för helgdagar i olika delstater.",
+        "microAnswer": "Blommor till Tyskland levereras inom 1–2 vardagar av en lokal florist via Interflora eller Euroflorist. Räkna med [329–549] kr inklusive bud. Tyskland är EU-land, så ingen tull tillkommer. Tänk på att helgdagarna skiljer sig mellan delstaterna, vilket kan flytta fram en leverans med en dag.",
+        "faq": [
+          {
+            "question": "Varför varierar leveransdagarna mellan tyska städer?",
+            "answer": "Helgdagar bestäms delvis på delstatsnivå. En dag som är arbetsdag i Berlin kan vara röd i Bayern, och då levererar floristen först nästa vardag."
+          },
+          {
+            "question": "Behöver jag skriva adressen på tyska?",
+            "answer": "Gatunamn och ort ska skrivas som de står i den tyska adressen. Postnummer före ortnamnet, precis som i det tyska formatet."
+          }
+        ],
+        "pricesVerifiedAt": null,
+        "updatedAt": "2026-09-09"
+      }
+    },
+    {
+      "slug": "finland",
+      "name": "Finland",
+      "eu": true,
+      "services": [
+        { "serviceId": "interflora", "leadDays": null, "priceFromSek": null, "verifiedAt": null },
+        { "serviceId": "euroflorist", "leadDays": null, "priceFromSek": null, "verifiedAt": null }
+      ],
+      "customsNote": "Finland är EU-land. Ingen tull tillkommer.",
+      "timezoneOffset": 1,
+      "holidays": ["Självständighetsdagen 6 december", "Midsommarafton"],
+      "neighbours": ["norge"],
+      "searchVolume": null,
+      "kd": null,
+      "phase": 1,
+      "page": {
+        "status": "draft",
+        "title": "Skicka blommor till Finland – pris och leveranstid",
+        "h1": "Skicka blommor till Finland",
+        "metaDescription": "Jämför pris och leveranstid när du skickar blommor till Finland. Se vilka tjänster som levererar och vad du behöver ange.",
+        "microAnswer": "Blommor till Finland levereras normalt inom 1–2 vardagar av en finsk florist via Interflora eller Euroflorist. Priset ligger på [329–549] kr inklusive bud. Finland är EU-land, så ingen tull tillkommer. Landet ligger en timme före Sverige, vilket kan påverka om beställningen hinner med dagens utkörning.",
+        "faq": [
+          {
+            "question": "Spelar tidsskillnaden någon roll?",
+            "answer": "Ja, en timme. En beställning som läggs strax före den finska floristens stopptid kan hamna dagen efter, trots att klockan i Sverige visar tidigare."
+          },
+          {
+            "question": "Kan jag skriva hälsningen på svenska?",
+            "answer": "Ja. Svenska är officiellt språk i Finland, och florister i tvåspråkiga områden hanterar svenska korttexter utan problem."
+          }
+        ],
+        "pricesVerifiedAt": null,
+        "updatedAt": "2026-09-09"
+      }
+    }
+  ]
+}

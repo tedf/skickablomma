@@ -1,0 +1,123 @@
+{
+  "updatedAt": "2026-09-09",
+  "_kommentar": "Fas 1 innehåller två städer. florists[] är avsiktligt tom: florister är namngivna verkliga företag och får bara fyllas i från kontrollerad källa (sajt, telefon, öppettider). Stadssidor med färre än tre verifierade florister publiceras inte — se MIN_FLORISTS_PER_CITY i src/lib/publishing.ts. deliveryAreas och hospitals är geografiska uppgifter, inte affärsuppgifter, och står därför redan här.",
+  "cities": [
+    {
+      "slug": "linkoping",
+      "name": "Linköping",
+      "county": "Östergötlands län",
+      "population": 165000,
+      "lat": 58.4109,
+      "lng": 15.6216,
+      "services": [
+        { "serviceId": "interflora", "sameDayHere": null, "cutoffHere": null, "feeHereSek": null, "verifiedAt": null },
+        { "serviceId": "euroflorist", "sameDayHere": null, "cutoffHere": null, "feeHereSek": null, "verifiedAt": null },
+        { "serviceId": "cramers", "sameDayHere": null, "cutoffHere": null, "feeHereSek": null, "verifiedAt": null }
+      ],
+      "florists": [],
+      "hospitals": [
+        {
+          "name": "Universitetssjukhuset i Linköping",
+          "deliveryOk": null,
+          "note": "Kontrollera avdelningens egna regler innan beställning.",
+          "verifiedAt": null
+        }
+      ],
+      "neighbours": ["jonkoping"],
+      "deliveryAreas": [
+        "Innerstaden",
+        "Vasastaden",
+        "Ryd",
+        "Lambohov",
+        "Tannefors",
+        "Berga",
+        "Skäggetorp",
+        "Ekholmen"
+      ],
+      "searchVolume": 600,
+      "kd": 1,
+      "phase": 1,
+      "page": {
+        "status": "draft",
+        "title": "Blombud Linköping – jämför pris och leveranstid",
+        "h1": "Blombud Linköping – skicka blommor samma dag",
+        "metaDescription": "Jämför blombud i Linköping. Se vilka tjänster som levererar samma dag, vad budet kostar och vilka florister som finns i staden.",
+        "microAnswer": "I Linköping levererar Interflora, Euroflorist och [X] fristående florister blombud samma dag om du beställer före [kl. X]. Budavgift [49–89] kr. Leverans sker till hela tätorten inklusive Universitetssjukhuset, Ryd, Lambohov och Tannefors. Nedan hittar du jämförelse, lokala florister med öppettider och vanliga frågor.",
+        "faq": [
+          {
+            "question": "Kan jag skicka blommor samma dag i Linköping?",
+            "answer": "Ja, om du beställer före tjänstens stopptid på en vardag. Efter stopptiden lägger floristen beställningen på nästa arbetsdag."
+          },
+          {
+            "question": "Levererar blombuden till Universitetssjukhuset?",
+            "answer": "De flesta gör det, men avdelningarna har olika regler. Vissa avdelningar tar inte emot blommor alls. Ring avdelningen innan du beställer."
+          },
+          {
+            "question": "Går det att beställa till en adress utanför tätorten?",
+            "answer": "Ofta, men budavgiften kan bli högre och stopptiden tidigare. Kontrollera vid beställning vilka postnummer som räknas som ordinarie leveransområde."
+          }
+        ],
+        "pricesVerifiedAt": null,
+        "updatedAt": "2026-09-09"
+      }
+    },
+    {
+      "slug": "jonkoping",
+      "name": "Jönköping",
+      "county": "Jönköpings län",
+      "population": 145000,
+      "lat": 57.7826,
+      "lng": 14.1618,
+      "services": [
+        { "serviceId": "interflora", "sameDayHere": null, "cutoffHere": null, "feeHereSek": null, "verifiedAt": null },
+        { "serviceId": "euroflorist", "sameDayHere": null, "cutoffHere": null, "feeHereSek": null, "verifiedAt": null },
+        { "serviceId": "cramers", "sameDayHere": null, "cutoffHere": null, "feeHereSek": null, "verifiedAt": null }
+      ],
+      "florists": [],
+      "hospitals": [
+        {
+          "name": "Länssjukhuset Ryhov",
+          "deliveryOk": null,
+          "note": "Kontrollera avdelningens egna regler innan beställning.",
+          "verifiedAt": null
+        }
+      ],
+      "neighbours": ["linkoping"],
+      "deliveryAreas": [
+        "Centrum",
+        "Huskvarna",
+        "Råslätt",
+        "Öxnehaga",
+        "Bankeryd",
+        "Gränna",
+        "Norrahammar"
+      ],
+      "searchVolume": null,
+      "kd": null,
+      "phase": 1,
+      "page": {
+        "status": "draft",
+        "title": "Blombud Jönköping – jämför pris och leveranstid",
+        "h1": "Blombud Jönköping – skicka blommor samma dag",
+        "metaDescription": "Jämför blombud i Jönköping. Leveranstider, budavgifter och lokala florister för Jönköping, Huskvarna och Gränna.",
+        "microAnswer": "I Jönköping levererar Interflora, Euroflorist och [X] fristående florister blombud samma dag om du beställer före [kl. X]. Budavgift [49–89] kr. Leveransområdet omfattar Jönköping, Huskvarna, Råslätt och Bankeryd, och når även Länssjukhuset Ryhov. Nedan finns jämförelse, lokala florister med öppettider och vanliga frågor.",
+        "faq": [
+          {
+            "question": "Ingår Huskvarna i leveransområdet?",
+            "answer": "Ja, Huskvarna räknas normalt till Jönköpings ordinarie leveransområde. Gränna ligger längre bort och kan ha tidigare stopptid."
+          },
+          {
+            "question": "Vad kostar budet i Jönköping?",
+            "answer": "Budavgiften sätts av tjänsten, inte av staden, och ligger i samma spann som i övriga landet. Se jämförelsetabellen ovan för aktuella avgifter."
+          },
+          {
+            "question": "Levererar blombuden till Länssjukhuset Ryhov?",
+            "answer": "Vanligtvis ja, till receptionen eller avdelningen. Kontrollera med avdelningen först, eftersom reglerna skiljer sig mellan dem."
+          }
+        ],
+        "pricesVerifiedAt": null,
+        "updatedAt": "2026-09-09"
+      }
+    }
+  ]
+}

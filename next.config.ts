@@ -76,7 +76,13 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/blomsterbud',
-        destination: '/samma-dag-leverans',
+        destination: '/blombud',
+        permanent: true,
+      },
+      {
+        // Transparenssidan flyttad till /om/ enligt siteplanen §3.
+        source: '/affiliate',
+        destination: '/om/sa-tjanar-vi-pengar',
         permanent: true,
       },
     ]

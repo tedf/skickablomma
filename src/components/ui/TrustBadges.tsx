@@ -19,7 +19,7 @@ const badges = [
   {
     icon: HeartHandshake,
     title: 'Kundnöjdhetsgaranti',
-    description: 'Våra partners erbjuder garanti',
+    description: 'Tjänsterna lämnar färskhetsgaranti',
   },
 ]
 

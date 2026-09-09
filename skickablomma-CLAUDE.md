@@ -2,7 +2,11 @@
 
 ## Projektöversikt
 
-Skickablomma.se är en datadriven, SEO-optimerad affiliate-webbplats för blommor och presenter i Sverige.
+Skickablomma.se är en **neutral jämförelsesajt för blombud** i Sverige och utomlands, finansierad via affiliate. Vi säljer inga blommor själva.
+
+Sajten har två lager:
+- **Jämförelsedelen** (`/blombud/`, `/utomlands/`, `/tillfalle/`, `/jamfor/`, `/guider/`) — kärnan, byggd på redaktionell data i `/data/`.
+- **Produktkatalogen** (`/[category]/`, `/produkt/`, `/wizard/`, `/sok/`) — byggd på Adtraction-feeds, fungerar som stödmaterial.
 
 **Tech stack:**
 - Next.js 14 (App Router)
@@ -43,6 +47,13 @@ skickablomma.se/
 │   │   └── image-resolver.ts
 │   └── types/               # TypeScript-typer
 │       └── index.ts
+├── data/                    # Redaktionell data för jämförelsedelen
+│   ├── services.json        # Tjänster: pris, budavgift, affiliate-länk
+│   ├── cities.json          # Städer: florister, leveransområden, sidcopy
+│   ├── countries.json       # Länder: ledtider, tull, helgdagar
+│   ├── occasions.json       # Tillfällen: etikett, blomval, korttexter
+│   ├── static-pages.json    # Startsida, hubbar, /jamfor/, guider
+│   └── products.json        # Genererad produktfeed
 ├── content/                 # Markdown-innehåll
 │   ├── guides/              # Guider (rosors-betydelse.md, etc.)
 │   └── faqs/                # FAQ-innehåll
@@ -81,13 +92,49 @@ Se `src/types/index.ts` för fullständig datamodell:
 ## Kommandon
 
 ```bash
-npm run dev          # Starta dev-server
-npm run build        # Bygg för produktion
+npm run dev          # Starta dev-server (visar även utkast)
+npm run build        # Bygg för produktion (kör check:content först)
+npm run check:content    # Publiceringskontroll: platshållare, florister, spärrade ord
+npm run content:sanitize # Städar spärrade varumärkesord ur data/products.json
 npm run feed:fetch   # Hämta partner-feeder
 npm run feed:process # Processa och normalisera
 npm run images:resolve # Kör Image Resolver
 npm run sitemap:generate # Generera sitemap
 ```
+
+## Publiceringsregler (viktigast)
+
+Sidor i jämförelsedelen har `status: 'draft' | 'published'` i sin datafil.
+Utkast renderas i dev men **genereras aldrig i produktionsbygget** och får
+`robots: noindex`. `npm run check:content` fäller bygget om en sida märkt
+`published` bryter mot någon regel:
+
+- Mikrosvar måste finnas och vara 40–80 ord.
+- Inga platshållare av formen `[149–399]` eller `[kl. X]` får vara kvar.
+- Stadssidor kräver minst **tre verifierade florister** (`verifiedAt` satt).
+- Jämförelsetabeller kräver `pricesVerifiedAt`.
+
+Grundprincip för data: allt som är ett faktapåstående om pris, tid eller en
+namngiven verksamhet är `null` tills det kontrollerats, och renderas som
+tankstreck. **Aldrig 0 som "vet ej", aldrig en gissad siffra.**
+
+En "Vårt val"-markering sätts bara när minst två tjänster har kontrollerat
+totalpris. Billigast av en är inte en jämförelse.
+
+## Spärrade varumärkesord
+
+"Blommogram", "Chokladogram" och böjningar får inte förekomma på sajten —
+Interfloras affiliate-villkor förbjuder dem på sajter som länkar till
+konkurrenter. Orden kommer in via produktfeeden och städas i
+`src/lib/restricted-terms.ts`, både vid normalisering och vid inläsning.
+Saneringen byter även determinerare och predikativa adjektiv, eftersom
+ersättningen har annat genus än originalet.
+
+## Tonalitet
+
+Rak, praktisk, varm. Ingen butiksröst ("hos oss", "våra partners"), inga
+utropstecken, inga blomstermetaforer. Sentence case, du-tilltal. Vi jämför,
+vi säljer inte.
 
 ## SEO-riktlinjer
 

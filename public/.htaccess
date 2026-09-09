@@ -30,7 +30,8 @@ RewriteRule ^(.*)$ https://skickablomma.se/$1 [L,R=301]
 # LEGACY REDIRECTS (gamla URL:er till nya)
 # =============================================================================
 Redirect 301 /blommor /buketter/
-Redirect 301 /blomsterbud /samma-dag-leverans/
+Redirect 301 /blomsterbud /blombud/
+Redirect 301 /affiliate /om/sa-tjanar-vi-pengar/
 Redirect 301 /flowers /buketter/
 Redirect 301 /order /buketter/
 

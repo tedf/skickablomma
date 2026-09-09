@@ -11,6 +11,11 @@ import { FlowerTypeToggle } from '@/components/products/FlowerTypeToggle'
 import { MAIN_CATEGORIES } from '@/data/categories'
 import { getProductsByFlowerType, getSameDayProducts } from '@/lib/products'
 import { getAllGuides } from '@/lib/guides'
+import { getAllServices, getStaticPage } from '@/lib/comparison'
+import { validateStaticPage } from '@/lib/publishing'
+import { ComparisonTable } from '@/components/comparison/ComparisonTable'
+import { MicroAnswer } from '@/components/comparison/MicroAnswer'
+import { DraftNotice } from '@/components/comparison/DraftNotice'
 
 export const metadata: Metadata = {
   title: {
@@ -65,6 +70,13 @@ export default async function HomePage() {
   const mainCategories = Object.values(MAIN_CATEGORIES).slice(0, 6)
   const guides = getAllGuides()
 
+  // Fas 1-copyn ligger i data/static-pages.json och innehåller siffror som ska
+  // verifieras. Den går live först när sidan sätts till published — tills dess
+  // står den befintliga hero-texten kvar, som inte påstår något om pris.
+  const landing = getStaticPage('/')
+  const landingIsLive = landing?.page.status === 'published'
+  const services = getAllServices()
+
   return (
     <>
       {/* JSON-LD Schema */}
@@ -82,13 +94,25 @@ export default async function HomePage() {
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-4xl text-center">
             <h1 className="mb-6 font-display text-4xl font-bold tracking-tight text-gray-900 md:text-5xl lg:text-6xl">
-              Hitta de <span className="text-primary">vackraste blommorna</span>
-              <br />till bästa pris
+              {landingIsLive && landing ? (
+                landing.page.h1
+              ) : (
+                <>
+                  Jämför <span className="text-primary">blombud</span>
+                  <br />i Sverige
+                </>
+              )}
             </h1>
-            <p className="mb-8 text-lg text-gray-600 md:text-xl">
-              Jämför buketter och presenter från Sveriges bästa blomsterbutiker.
-              Leverans samma dag möjlig hos flera partners.
-            </p>
+            {landingIsLive && landing ? (
+              <div className="mb-8 text-left">
+                <MicroAnswer>{landing.page.microAnswer}</MicroAnswer>
+              </div>
+            ) : (
+              <p className="mb-8 text-lg text-gray-600 md:text-xl">
+                Pris, leveranstid och täckning sida vid sida. Vi säljer inga blommor
+                själva.
+              </p>
+            )}
 
             {/* Sökfält */}
             <div className="mx-auto max-w-xl">
@@ -135,6 +159,67 @@ export default async function HomePage() {
               </Link>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Hubbar — sitearkitekturens fem ingångar (siteplanen §3) */}
+      <section className="border-b border-gray-100 py-12">
+        <div className="container mx-auto px-4">
+          {!landingIsLive && landing && (
+            <div className="mb-8">
+              <DraftNotice issues={validateStaticPage(landing)} />
+            </div>
+          )}
+          <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              {
+                href: '/blombud',
+                title: 'Blombud stad för stad',
+                text: 'Vem levererar var, när stopptiden går och vad budet kostar.',
+              },
+              {
+                href: '/utomlands',
+                title: 'Skicka utomlands',
+                text: 'Leveranstid, pris och praktiska regler land för land.',
+              },
+              {
+                href: '/tillfalle',
+                title: 'Tillfällen',
+                text: 'Vad som passar och vad du skriver på kortet.',
+              },
+              {
+                href: '/jamfor',
+                title: 'Jämför tjänster',
+                text: 'Totalpris, stopptid och täckning sida vid sida.',
+              },
+            ].map((hub) => (
+              <li key={hub.href}>
+                <Link
+                  href={hub.href}
+                  className="block h-full rounded-xl border border-gray-200 p-5 transition-colors hover:border-gray-400"
+                >
+                  <span className="font-display text-lg font-semibold text-gray-900">
+                    {hub.title}
+                  </span>
+                  <span className="mt-2 block text-sm text-gray-600">{hub.text}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/* Jämförelsetabellen ligger ovanför fold på mobil (siteplanen §7) */}
+      <section className="py-12">
+        <div className="container mx-auto max-w-4xl px-4">
+          <h2 className="mb-6 font-display text-2xl font-bold text-gray-900">
+            De största blombuden
+          </h2>
+          <ComparisonTable
+            rows={services.map((service) => ({ service }))}
+            pricesVerifiedAt={landing?.page.pricesVerifiedAt ?? null}
+            trackingContext="startsida"
+          />
         </div>
       </section>
 
@@ -239,7 +324,7 @@ export default async function HomePage() {
               </div>
               <h3 className="mb-2 text-xl font-semibold">Snabb leverans</h3>
               <p className="text-gray-600">
-                Många av våra partners erbjuder leverans samma dag om du beställer i tid.
+                Många av tjänsterna levererar samma dag om beställningen ligger inne i tid.
                 Perfekt för sista-minuten-överraskningar.
               </p>
             </div>
@@ -328,7 +413,7 @@ export default async function HomePage() {
             id: 'faq-1',
             question: 'Hur snabbt kan jag få blommorna levererade?',
             answer:
-              'Flera av våra partners erbjuder leverans samma dag om du beställer före kl 13-14. För standardleverans får du vanligtvis blommorna nästa dag.',
+              'Flera av tjänsterna levererar samma dag om beställningen ligger inne före lunch på en vardag. Med standardleverans kommer blommorna normalt nästa dag.',
             sortOrder: 1,
           },
           {
@@ -349,7 +434,7 @@ export default async function HomePage() {
             id: 'faq-4',
             question: 'Kan jag skicka blommor till hela Sverige?',
             answer:
-              'Ja, våra partners levererar till hela Sverige. Interflora har till exempel florister i de flesta städer för personlig leverans.',
+              'Ja, tjänsterna täcker hela Sverige. Interflora har flest ombud och når därmed fler mindre orter än konkurrenterna.',
             sortOrder: 4,
           },
           {
