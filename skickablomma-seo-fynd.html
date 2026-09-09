@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>skickablomma.se – SEO/AEO-fynd</title>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --color-paper:  #f5f5f5;
+      --color-card:   #ffffff;
+      --color-ink:    #2d3142;
+      --color-muted:  #4f5d75;
+      --color-faint:  #7a8399;
+      --color-accent: #eb6c36;
+      --color-line:   rgba(45,49,66,0.12);
+      --font-sans:    'Geist', system-ui, sans-serif;
+      --font-serif:   'Instrument Serif', serif;
+      --font-mono:    'Geist Mono', ui-monospace, monospace;
+    }
+    body {
+      font-family: var(--font-sans);
+      background: var(--color-paper);
+      color: var(--color-ink);
+      padding: 3rem 2rem 4rem;
+      line-height: 1.5;
+    }
+    .frame { max-width: 1080px; margin: 0 auto; }
+
+    .eyebrow {
+      font-family: var(--font-mono); font-size: 0.66rem; font-weight: 500;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--color-muted); margin-bottom: 0.5rem;
+    }
+    h1 {
+      font-family: var(--font-serif); font-weight: 400;
+      font-size: clamp(1.75rem, 3vw + 0.75rem, 2.75rem);
+      letter-spacing: -0.02em; line-height: 1.1; margin-bottom: 0.75rem;
+    }
+    .standfirst {
+      font-size: 1.0625rem; color: var(--color-muted);
+      max-width: 62ch; margin-bottom: 2.5rem;
+    }
+    h2 {
+      font-family: var(--font-mono); font-size: 0.66rem; font-weight: 600;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--color-faint);
+      padding-bottom: 0.5rem; margin-bottom: 1.25rem;
+      border-bottom: 1px solid var(--color-line);
+    }
+    section { margin-bottom: 3rem; }
+
+    /* --- Hero-siffran --- */
+    .hero {
+      display: grid; grid-template-columns: minmax(0,auto) 1fr;
+      gap: 2rem; align-items: center;
+      background: var(--color-card); border: 1px solid var(--color-line);
+      border-left: 3px solid var(--color-accent);
+      border-radius: 6px; padding: 1.75rem 2rem;
+    }
+    .hero-num {
+      font-family: var(--font-serif); font-size: 4.5rem; line-height: 0.9;
+      color: var(--color-accent); white-space: nowrap;
+    }
+    .hero-num small {
+      display: block; font-family: var(--font-mono); font-size: 0.7rem;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--color-muted); margin-top: 0.5rem;
+    }
+    .hero-text strong { font-weight: 600; }
+    .hero-text p + p { margin-top: 0.5rem; color: var(--color-muted); font-size: 0.9375rem; }
+
+    /* --- Staplar --- */
+    .bars { display: grid; gap: 0.875rem; }
+    .bar-row {
+      display: grid; grid-template-columns: 13rem 1fr 5.5rem;
+      gap: 1rem; align-items: center; font-size: 0.875rem;
+    }
+    .bar-label { font-weight: 500; }
+    .bar-label small {
+      display: block; font-family: var(--font-mono); font-size: 0.66rem;
+      color: var(--color-faint); font-weight: 400; letter-spacing: 0.04em;
+    }
+    .bar-track { background: rgba(45,49,66,0.06); border-radius: 3px; height: 26px; position: relative; }
+    .bar-fill {
+      height: 100%; border-radius: 3px;
+      background: rgba(79,93,117,0.28); border: 1px solid var(--color-muted);
+    }
+    .bar-fill.accent { background: rgba(235,108,54,0.18); border-color: var(--color-accent); }
+    .bar-val { font-family: var(--font-mono); font-size: 0.8125rem; text-align: right; }
+    .bar-val em { font-style: normal; color: var(--color-faint); display: block; font-size: 0.7rem; }
+
+    /* --- Kort --- */
+    .cards { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+    .card {
+      background: var(--color-card); border: 1px solid var(--color-line);
+      border-radius: 6px; padding: 1.25rem;
+    }
+    .card .stat {
+      font-family: var(--font-serif); font-size: 2.25rem; line-height: 1;
+      margin-bottom: 0.375rem;
+    }
+    .card .stat.accent { color: var(--color-accent); }
+    .card h3 { font-size: 0.9375rem; font-weight: 600; margin-bottom: 0.375rem; }
+    .card p { font-size: 0.8125rem; color: var(--color-muted); }
+
+    /* --- Kannibaliseringsdiagram --- */
+    .cannibal { background: var(--color-card); border: 1px solid var(--color-line); border-radius: 6px; padding: 1.5rem; }
+    .cannibal svg { width: 100%; height: auto; display: block; }
+    .cn-node { font-family: var(--font-sans); font-size: 11px; font-weight: 600; fill: #2d3142; }
+    .cn-sub  { font-family: var(--font-mono); font-size: 8px; fill: #7a8399; }
+    .cn-kw   { font-family: var(--font-mono); font-size: 9px; fill: #eb6c36; letter-spacing: 0.06em; }
+    .cn-role { font-family: var(--font-mono); font-size: 8px; fill: #4f5d75; }
+
+    /* --- Åtgärdstabell --- */
+    table { width: 100%; border-collapse: collapse; font-size: 0.8125rem; }
+    thead th {
+      font-family: var(--font-mono); font-size: 0.62rem; font-weight: 600;
+      letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-faint);
+      text-align: left; padding: 0 0.75rem 0.625rem; border-bottom: 1px solid var(--color-line);
+    }
+    tbody td { padding: 0.75rem; border-bottom: 1px solid var(--color-line); vertical-align: top; }
+    tbody tr:last-child td { border-bottom: 0; }
+    .rank {
+      font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-accent);
+      font-weight: 600;
+    }
+    .action { font-weight: 500; }
+    .action small { display: block; font-weight: 400; color: var(--color-muted); margin-top: 0.1875rem; }
+    .tag {
+      display: inline-block; font-family: var(--font-mono); font-size: 0.62rem;
+      letter-spacing: 0.06em; padding: 0.125rem 0.4375rem; border-radius: 3px;
+      border: 1px solid var(--color-line); color: var(--color-muted); white-space: nowrap;
+    }
+    .tag.hi { border-color: var(--color-accent); color: var(--color-accent); }
+    .evidence { font-family: var(--font-mono); font-size: 0.66rem; color: var(--color-faint); white-space: nowrap; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--color-line);
+      font-family: var(--font-mono); font-size: 0.7rem; color: var(--color-faint);
+      line-height: 1.7;
+    }
+
+    @media (max-width: 720px) {
+      body { padding: 2rem 1.25rem 3rem; }
+      .hero { grid-template-columns: 1fr; gap: 1.25rem; }
+      .hero-num { font-size: 3.5rem; }
+      .bar-row { grid-template-columns: 1fr; gap: 0.375rem; }
+      .bar-val { text-align: left; }
+      .table-scroll { overflow-x: auto; }
+      table { min-width: 640px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="frame">
+
+    <p class="eyebrow">SEO · AEO · skickablomma.se</p>
+    <h1>Fem fynd som ändrar fas 1</h1>
+    <p class="standfirst">
+      Siteplanens sökordssiffror kontrollerade mot Ahrefs för Sverige den 9 september 2026.
+      Tre av besluten i §0 håller. Två prioriteringar gör det inte.
+    </p>
+
+    <!-- ===== HUVUDFYND ===== -->
+    <section>
+      <h2>Huvudfynd</h2>
+      <div class="hero">
+        <div class="hero-num">
+          8,6&times;
+          <small>underskattat</small>
+        </div>
+        <div class="hero-text">
+          <p><strong>Begravningsklustret är 6 300 sök/mån, inte 730.</strong></p>
+          <p>
+            begravningsblommor 3 800 (KD 19) plus blommor till begravning 2 500 (KD 0).
+            Det är sajtens största och lättaste möjlighet &mdash; och den enda i fas 1
+            där tre av era egna sidor redan konkurrerar om samma ord.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== VOLYMJÄMFÖRELSE ===== -->
+    <section>
+      <h2>Var volymen faktiskt ligger</h2>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label">Begravning<small>2 sidor i fas 1</small></div>
+          <div class="bar-track"><div class="bar-fill accent" style="width:100%"></div></div>
+          <div class="bar-val">6 300<em>KD 0&ndash;19</em></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Blombud, hubb<small>1 sida</small></div>
+          <div class="bar-track"><div class="bar-fill" style="width:95%"></div></div>
+          <div class="bar-val">12 000<em>KD 42</em></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Städer, fas 1<small>2 sidor</small></div>
+          <div class="bar-track"><div class="bar-fill" style="width:12.7%"></div></div>
+          <div class="bar-val">800<em>KD 0&ndash;1</em></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Utomlands, allt<small>6 sidor i fas 1</small></div>
+          <div class="bar-track"><div class="bar-fill" style="width:11.1%"></div></div>
+          <div class="bar-val">700<em>KD 0&ndash;31</em></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Billigt<small>1 sida</small></div>
+          <div class="bar-track"><div class="bar-fill" style="width:15.9%"></div></div>
+          <div class="bar-val">1 000<em>KD 38</em></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Samma dag<small>planerad fas 3</small></div>
+          <div class="bar-track"><div class="bar-fill" style="width:1.6%"></div></div>
+          <div class="bar-val">100<em>KD 56</em></div>
+        </div>
+      </div>
+      <p style="margin-top:1rem;font-size:0.8125rem;color:var(--color-muted)">
+        Sex av fjorton fas 1-sidor går till utomlands, som tillsammans är en niondel
+        av begravningsklustret. Samma dag-sidan planerades för 850 sök som i själva
+        verket är 100, vid KD 56.
+      </p>
+    </section>
+
+    <!-- ===== TRE SNABBFYND ===== -->
+    <section>
+      <h2>Tre fynd till</h2>
+      <div class="cards">
+        <div class="card">
+          <div class="stat accent">2 av 2</div>
+          <h3>AI Overview citerar jämförelsesajter</h3>
+          <p>
+            AI Overview på &rdquo;blombud&rdquo; citerar bast-i-test.se och
+            blombudslistan.se &mdash; inte Interflora, inte Euroflorist.
+            Affärsmodellen är belagd.
+          </p>
+        </div>
+        <div class="card">
+          <div class="stat">36</div>
+          <h3>besök på bästa sökordet</h3>
+          <p>
+            Så liten är blombudslistan.se, som ändå citeras i AI Overview utan
+            att finnas i organisk topp 10. Citat följer inte placering.
+          </p>
+        </div>
+        <div class="card">
+          <div class="stat">2,0&ndash;4,7&times;</div>
+          <h3>&rdquo;blombud [stad]&rdquo; vinner</h3>
+          <p>
+            Slår &rdquo;skicka blommor [stad]&rdquo; i alla fem testade städer,
+            och har lägre KD i tre av dem. §0-beslut 1 är verifierat.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== KANNIBALISERING ===== -->
+    <section>
+      <h2>Intern kannibalisering</h2>
+      <div class="cannibal">
+        <svg viewBox="0 0 960 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="cn-title cn-desc">
+          <title id="cn-title">Kannibaliseringskarta för begravning och samma dag</title>
+          <desc id="cn-desc">Tre befintliga eller planerade sidor konkurrerar om sökordet begravningsblommor, och tre om samma dag-leverans. Diagrammet visar föreslagen rollfördelning: en ägande sida per intention, övriga länkar in.</desc>
+
+          <!-- Kluster 1: begravning -->
+          <text x="0" y="14" class="cn-kw">BEGRAVNINGSBLOMMOR · 6 300/MÅN · KD 0–19</text>
+
+          <rect x="0" y="28" width="290" height="46" rx="5" fill="rgba(235,108,54,0.08)" stroke="#eb6c36" stroke-width="1"/>
+          <text x="14" y="47" class="cn-node">/tillfalle/begravning</text>
+          <text x="14" y="62" class="cn-sub">ÄGER ORDET · etikett, korttexter, jämförelse</text>
+
+          <rect x="335" y="28" width="290" height="46" rx="5" fill="#ffffff" stroke="rgba(45,49,66,0.20)" stroke-width="1" stroke-dasharray="4,3"/>
+          <text x="349" y="47" class="cn-node">/begravning</text>
+          <text x="349" y="62" class="cn-sub">produktkategori · avoptimera title</text>
+
+          <rect x="670" y="28" width="290" height="46" rx="5" fill="#ffffff" stroke="rgba(45,49,66,0.20)" stroke-width="1" stroke-dasharray="4,3"/>
+          <text x="684" y="47" class="cn-node">/guide/begravningsblommor-guide</text>
+          <text x="684" y="62" class="cn-sub">slås ihop in i tillfällessidan</text>
+
+          <line x1="335" y1="51" x2="295" y2="51" stroke="#4f5d75" stroke-width="1"/>
+          <polygon points="290,51 298,47 298,55" fill="#4f5d75"/>
+          <line x1="670" y1="80" x2="180" y2="80" stroke="#4f5d75" stroke-width="1" stroke-dasharray="3,3"/>
+          <line x1="180" y1="80" x2="180" y2="76" stroke="#4f5d75" stroke-width="1"/>
+          <polygon points="180,72 176,80 184,80" fill="#4f5d75"/>
+          <text x="400" y="94" class="cn-role">internlänk med huvudordet som ankartext</text>
+
+          <!-- Kluster 2: samma dag -->
+          <text x="0" y="150" class="cn-kw">SAMMA DAG · 100/MÅN · KD 56</text>
+
+          <rect x="0" y="164" width="290" height="46" rx="5" fill="rgba(235,108,54,0.08)" stroke="#eb6c36" stroke-width="1"/>
+          <text x="14" y="183" class="cn-node">/samma-dag-leverans</text>
+          <text x="14" y="198" class="cn-sub">ÄGER ORDET · finns redan, låt den vara</text>
+
+          <rect x="335" y="164" width="290" height="46" rx="5" fill="#ffffff" stroke="rgba(45,49,66,0.20)" stroke-width="1" stroke-dasharray="4,3"/>
+          <text x="349" y="183" class="cn-node">/guide/skicka-blommor-samma-dag</text>
+          <text x="349" y="198" class="cn-sub">behåll, länka in</text>
+
+          <rect x="670" y="164" width="290" height="46" rx="5" fill="rgba(45,49,66,0.03)" stroke="rgba(45,49,66,0.20)" stroke-width="1" stroke-dasharray="4,3"/>
+          <text x="684" y="183" class="cn-node">/guider/samma-dag/</text>
+          <text x="684" y="198" class="cn-sub">STRYK ur planen · tredje sidan på 100 sök</text>
+
+          <line x1="335" y1="187" x2="295" y2="187" stroke="#4f5d75" stroke-width="1"/>
+          <polygon points="290,187 298,183 298,191" fill="#4f5d75"/>
+          <line x1="670" y1="187" x2="630" y2="187" stroke="rgba(45,49,66,0.25)" stroke-width="1" stroke-dasharray="3,3"/>
+          <text x="762" y="230" class="cn-role" text-anchor="middle">byggs aldrig</text>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ===== ÅTGÄRDER ===== -->
+    <section>
+      <h2>Prioriterat: hög effekt, låg insats, låg risk först</h2>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th style="width:2.5rem">#</th>
+              <th>Åtgärd</th>
+              <th style="width:5.5rem">Impact</th>
+              <th style="width:5.5rem">Effort</th>
+              <th style="width:5rem">Risk</th>
+              <th style="width:8rem">Belägg</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="rank">1</td>
+              <td class="action">Sätt rollfördelning för begravningsklustret
+                <small>/tillfalle/begravning äger ordet, /begravning avoptimeras, guiden slås ihop</small></td>
+              <td><span class="tag hi">Hög</span></td>
+              <td><span class="tag">Låg</span></td>
+              <td><span class="tag">Låg</span></td>
+              <td class="evidence">Direkt belägg</td>
+            </tr>
+            <tr>
+              <td class="rank">2</td>
+              <td class="action">Byt /blombud/-FAQ mot de fyra PAA-frågorna
+                <small>&rdquo;Vilket blombud är billigast/bäst&rdquo;, &rdquo;Hur mycket kostar ett blomsterbud&rdquo;, &rdquo;Vad kan man skicka istället&rdquo;</small></td>
+              <td><span class="tag hi">Hög</span></td>
+              <td><span class="tag">Låg</span></td>
+              <td><span class="tag">Låg</span></td>
+              <td class="evidence">Direkt belägg</td>
+            </tr>
+            <tr>
+              <td class="rank">3</td>
+              <td class="action">Flytta Danmark, Tyskland, Finland till fas 5
+                <small>Frigör tre sidor i fas 1 till begravning och fler städer</small></td>
+              <td><span class="tag">Medel</span></td>
+              <td><span class="tag">Låg</span></td>
+              <td><span class="tag">Låg</span></td>
+              <td class="evidence">Direkt belägg</td>
+            </tr>
+            <tr>
+              <td class="rank">4</td>
+              <td class="action">Behåll Norge och USA trots låg volym
+                <small>Båda har AI Overview vid KD 0 — billigaste AEO-vinsten på sajten</small></td>
+              <td><span class="tag">Medel</span></td>
+              <td><span class="tag">Låg</span></td>
+              <td><span class="tag">Låg</span></td>
+              <td class="evidence">Inferens</td>
+            </tr>
+            <tr>
+              <td class="rank">5</td>
+              <td class="action">Lägg Uppsala och Göteborg före resten av fas 2
+                <small>KD 22 och 38 vid 700 och 1 300 sök — bäst kvot i hela stadslistan</small></td>
+              <td><span class="tag">Medel</span></td>
+              <td><span class="tag">Medel</span></td>
+              <td><span class="tag">Låg</span></td>
+              <td class="evidence">Direkt belägg</td>
+            </tr>
+            <tr>
+              <td class="rank">6</td>
+              <td class="action">Sänk samma dag-sidan till fas 5
+                <small>100 sök vid KD 56, och tredje sidan på samma ord</small></td>
+              <td><span class="tag">Låg</span></td>
+              <td><span class="tag">Låg</span></td>
+              <td><span class="tag">Låg</span></td>
+              <td class="evidence">Direkt belägg</td>
+            </tr>
+            <tr>
+              <td class="rank">7</td>
+              <td class="action">Räkna inte hem trafikpotentialen på startsidan
+                <small>TP 50 000 tillhör parent topic &rdquo;interflora&rdquo; — deras varumärkestrafik, inte er</small></td>
+              <td><span class="tag">Medel</span></td>
+              <td><span class="tag">Låg</span></td>
+              <td><span class="tag">Låg</span></td>
+              <td class="evidence">Direkt belägg</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ===== VARNING ===== -->
+    <section>
+      <h2>Att räkna med</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Local pack på nästan alla stadssökord</h3>
+          <p>
+            blombud göteborg, uppsala, malmö, linköping och samtliga
+            &rdquo;skicka blommor [stad]&rdquo; visar kartresultat. En affiliatesajt
+            utan Google Business Profile kan inte vinna dem, och den organiska
+            ettan hamnar under kartan. Stadssidornas tak är lägre än volymen antyder.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Shopping-karuseller äter begravnings-SERP:en</h3>
+          <p>
+            Fjorton av tjugosju SERP-rader på &rdquo;blommor till begravning&rdquo;
+            är produktkaruseller. Men trafikvinnaren är Blomsterlandets
+            <em>guide</em>, inte deras produktsida &mdash; och Fonus FAQ ligger femma.
+            Intentionen är informationell. Det är precis vad tillfällessidan är byggd för.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      Källa: Ahrefs Keywords Explorer och SERP Overview, Sverige, 2026-09-09.<br>
+      Ingen GSC- eller Rank Tracker-baslinje finns &mdash; sajten är inte lanserad.
+      Analysen är körd i launch-läge, med första mätpunkt fyra veckor efter lansering.<br>
+      Volymer är Ahrefs estimat och ska läsas som storleksordningar, inte exakta tal.
+    </footer>
+
+  </div>
+</body>
+</html>
