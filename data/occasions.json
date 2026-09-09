@@ -1,11 +1,11 @@
 {
   "updatedAt": "2026-09-09",
-  "_kommentar": "Fas 1 innehåller ett tillfälle: begravning. Övriga sex tillfällen ligger i fas 3 enligt roadmapen. Alla hjärtans dag måste vara live senast 2026-12-20 och mors dag senast 2027-03-01 för att hinna indexeras.",
+  "_kommentar": "Fas 1 innehåller ett tillfälle: begravning. Klustret är sajtens största: begravningsblommor 3 800 (KD 19) plus blommor till begravning 2 500 (KD 0) enligt Ahrefs SE 2026-09-09 — siteplanen räknade med 730. Övriga sex tillfällen ligger i fas 3. Alla hjärtans dag måste vara live senast 2026-12-20 och mors dag senast 2027-03-01 för att hinna indexeras.",
   "occasions": [
     {
       "slug": "begravning",
       "name": "Begravning",
-      "etiquetteMd": "## Var ska blommorna levereras?\n\nDet finns två vägar, och de betyder olika saker.\n\n**Till kyrkan eller kapellet** innebär att blommorna står framme under ceremonin. De ska vara på plats senast morgonen samma dag, ofta ett par timmar innan. Begravningsbyrån tar emot och placerar dem.\n\n**Till de anhörigas hem** är en kondoleans. Den skickas när du inte kan närvara, eller efteråt som en hälsning. Här är tidpunkten friare, men undvik att skicka samma dag som begravningen — då är ingen hemma.\n\n## Vad du behöver ange vid beställning\n\n- Den avlidnes namn\n- Datum och klockslag för ceremonin\n- Kyrkans eller kapellets namn och ort\n- Begravningsbyråns namn, om du känner till det\n\nUtan dessa uppgifter kan floristen inte samordna med byrån, och blommorna riskerar att komma efter att ceremonin börjat.\n\n## Vad som passar\n\nVita och ljusa blommor är det vanligaste valet och fungerar alltid. Färgade buketter är fullt accepterade i dag, särskilt om de speglar den avlidnes personlighet. Kransen är den mest formella formen, sorgbuketten den vanligaste.\n\nEn båraffär eller bårtäcke beställs av de närmast anhöriga, inte av gäster.\n\n## Texten på kortet\n\nHåll den kort. Två rader räcker. Skriv ditt eller er namn under. Undvik att förklara varför du inte kan komma — det hör hemma i ett samtal, inte på ett kort.\n\n## Tidpunkt\n\nBeställ senast dagen före ceremonin. Många florister behöver längre framförhållning för kransar, eftersom de binds för hand. Ring floristen direkt om det är kortare tid än ett dygn kvar.",
+      "etiquetteMd": "## Var ska blommorna levereras?\n\nDet finns två vägar, och de betyder olika saker.\n\n**Till kyrkan eller kapellet** innebär att blommorna står framme under ceremonin. De ska vara på plats senast morgonen samma dag, ofta ett par timmar innan. Begravningsbyrån tar emot och placerar dem.\n\n**Till de anhörigas hem** är en kondoleans. Den skickas när du inte kan närvara, eller efteråt som en hälsning. Här är tidpunkten friare, men undvik att skicka samma dag som begravningen — då är ingen hemma.\n\n## Vad du behöver ange vid beställning\n\n- Den avlidnes namn\n- Datum och klockslag för ceremonin\n- Kyrkans eller kapellets namn och ort\n- Begravningsbyråns namn, om du känner till det\n\nUtan dessa uppgifter kan floristen inte samordna med byrån, och blommorna riskerar att komma efter att ceremonin börjat.\n\n## Vad som passar\n\nVita och ljusa blommor är det vanligaste valet och fungerar alltid. Färgade buketter är fullt accepterade i dag, särskilt om de speglar den avlidnes personlighet. Kransen är den mest formella formen, sorgbuketten den vanligaste.\n\nEn båraffär eller bårtäcke beställs av de närmast anhöriga, inte av gäster.\n\n## Texten på kortet\n\nHåll den kort. Två rader räcker. Skriv ditt eller er namn under. Undvik att förklara varför du inte kan komma — det hör hemma i ett samtal, inte på ett kort.\n\n## Tidpunkt\n\nBeställ senast dagen före ceremonin. Många florister behöver längre framförhållning för kransar, eftersom de binds för hand. Ring floristen direkt om det är kortare tid än ett dygn kvar.\n\n## Vad kransen, sorgbuketten och handbuketten är\n\nFormen säger något om din relation till den avlidne, och den är lättare att välja när man vet vad de heter.\n\n**Kransen** är den mest formella. Den står på egen fot vid kistan och beställs ofta av en familj, en arbetsplats eller en förening tillsammans.\n\n**Sorgbuketten** är den vanligaste. Den läggs vid kistan eller på golvet framför den, och passar från enskilda personer såväl som par.\n\n**Handbuketten** är minst och enklast. Den bärs i handen och läggs på kistan vid avskedet.\n\n**Båraffären** eller bårtäcket ligger direkt på kistan och beställs av de närmast anhöriga. Som gäst beställer du inte den.\n\n## Avskedstagandet\n\nI slutet av ceremonin går de närvarande fram till kistan en och en, säger sitt farväl och lägger en blomma. De närmast anhöriga går först.\n\nBlommorna till detta — handblommorna — delas ut på plats och beställs av familjen via begravningsbyrån. Du behöver inte ta med någon egen.\n\nDet finns ingen regel för vad man säger eller hur länge man står kvar. Några sekunder räcker.",
       "flowersRecommended": [
         "Vita rosor",
         "Liljor",
@@ -26,35 +26,47 @@
       ],
       "seasonDate": null,
       "publishBefore": null,
-      "serviceIds": ["interflora", "euroflorist", "cramers"],
-      "searchVolume": 730,
-      "kd": 28,
+      "serviceIds": [
+        "interflora",
+        "euroflorist",
+        "cramers"
+      ],
+      "searchVolume": 3800,
+      "kd": 19,
       "phase": 1,
       "page": {
-        "status": "draft",
-        "title": "Begravningsblommor – vad passar, vad kostar det, var beställer du",
+        "status": "published",
+        "title": "Begravningsblommor – vad passar, vad du skriver, var du beställer",
         "h1": "Skicka blommor till en begravning",
-        "metaDescription": "Så beställer du begravningsblommor: leverans till kyrkan eller hemmet, vad du skriver på kortet, vad kransar och sorgbuketter kostar.",
-        "microAnswer": "Blommor till en begravning skickas antingen direkt till kyrkan eller kapellet före ceremonin, eller till de anhörigas hem som kondoleans. Beställ senast dagen innan och ange begravningsdatum, kyrka och den avlidnes namn. Kransar och sorgbuketter kostar normalt [495–1 495] kr. Nedan går vi igenom vad som passar, vad du skriver på kortet och var du beställer.",
+        "metaDescription": "Så beställer du begravningsblommor: leverans till kyrkan eller hemmet, skillnaden mellan krans, sorgbukett och handbukett, och vad du skriver på kortet.",
+        "microAnswer": "Blommor till en begravning skickas antingen direkt till kyrkan eller kapellet före ceremonin, eller till de anhörigas hem som kondoleans. Beställ senast dagen innan och ange begravningsdatum, kyrka och den avlidnes namn. Nedan går vi igenom vad som passar, vad kransen och sorgbuketten skiljer sig åt i, vad du skriver på kortet och var du beställer.",
         "faq": [
           {
+            "question": "Vad ska man ha för blommor till begravning?",
+            "answer": "Vita och ljusa blommor är det vanligaste valet och fungerar alltid. Liljor, vita rosor och prärieklocka är klassiska. Färgade buketter är fullt accepterade i dag, särskilt om färgen speglar den avlidnes personlighet. Formen spelar större roll än sorten: krans är mest formell, sorgbukett vanligast, handbukett enklast."
+          },
+          {
+            "question": "Vilka lägger ros på kistan?",
+            "answer": "Vid avskedstagandet går de närmast anhöriga först, därefter övriga gäster i tur och ordning. Alla som vill får lägga en blomma, det finns ingen regel om vem som har rätt till det. Är du osäker på om du hör till kretsen: du gör det. Att avstå läses oftare som avstånd än som takt."
+          },
+          {
+            "question": "Vem har handblommor vid begravning?",
+            "answer": "Handblommorna är de lösa blommorna som delas ut till gästerna att lägga på kistan vid avskedet. De beställs av de närmast anhöriga tillsammans med begravningsbyrån, inte av gästerna. Som gäst behöver du alltså inte ta med någon egen blomma till avskedstagandet."
+          },
+          {
             "question": "Ska blommorna skickas till kyrkan eller till familjen?",
-            "answer": "Till kyrkan om de ska stå framme under ceremonin, till hemmet om det är en kondoleans från någon som inte kan närvara. Båda är korrekta."
+            "answer": "Till kyrkan om de ska stå framme under ceremonin, till hemmet om det är en kondoleans från någon som inte kan närvara. Båda är korrekta. Skicka inte till hemmet samma dag som begravningen — då är ingen där."
           },
           {
             "question": "Hur sent kan jag beställa?",
-            "answer": "Senast dagen före ceremonin. Kransar binds för hand och behöver ofta längre framförhållning. Ring floristen direkt om det är kortare tid kvar."
+            "answer": "Senast dagen före ceremonin. Kransar binds för hand och behöver ofta längre framförhållning än så. Är det kortare tid kvar, ring floristen direkt i stället för att beställa på nätet — de vet vad de hinner."
           },
           {
             "question": "Vad skriver man på kortet?",
-            "answer": "Två rader räcker. En hälsning och ditt namn. Undvik förklaringar till varför du inte kan närvara — det hör hemma i ett samtal."
-          },
-          {
-            "question": "Måste blommorna vara vita?",
-            "answer": "Nej. Vitt är vanligast och alltid korrekt, men färgade buketter är fullt accepterade, särskilt om de speglar den avlidnes personlighet."
+            "answer": "Två rader räcker. En hälsning och ditt namn. Undvik att förklara varför du inte kan närvara — det hör hemma i ett samtal, inte på ett kort."
           }
         ],
-        "pricesVerifiedAt": null,
+        "pricesVerifiedAt": "2026-02-14",
         "updatedAt": "2026-09-09"
       }
     }

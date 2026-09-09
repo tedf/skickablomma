@@ -36,15 +36,23 @@
         "microAnswer": "Blombud är en tjänst där en lokal florist binder buketten och levererar den till mottagaren samma dag eller nästa dag. I Sverige finns tre rikstäckande nätverk och ett antal regionala aktörer. Budavgiften ligger normalt på [49–99] kr. Nedan hittar du blombud i svenska städer med lokala florister, sista beställningstid och pris.",
         "faq": [
           {
-            "question": "Vad kostar ett blombud?",
-            "answer": "Buketten och budet prissätts var för sig. Budavgiften är densamma oavsett hur dyr buketten är, vilket gör att den väger tyngst på billiga beställningar."
+            "question": "Vilket blombud är billigast?",
+            "answer": "Det avgörs av totalpriset, inte av från-priset. Budavgiften är fast oavsett hur dyr buketten är, så en tjänst med lågt från-pris och hög avgift blir dyrare än den ser ut. Jämförelsetabellen ovan sorterar på totalen. Att ringa en lokal florist direkt är ofta billigast av allt, eftersom du slipper nätverkets förmedlingsavgift."
           },
           {
-            "question": "Vad är sista beställningstid?",
-            "answer": "För samma dag-leverans normalt före lunch på vardagar, tidigare på lördagar. Efter stopptiden flyttas leveransen till nästa arbetsdag."
+            "question": "Vilket blombud är bäst?",
+            "answer": "Det beror på vad som är knappast: tid eller pengar. Har du bråttom vinner den tjänst som har flest ombud nära mottagaren, eftersom den klarar samma dag på fler orter. Är priset viktigast vinner den med lägst totalpris. Vi utser ingen generell vinnare, för frågan har inget generellt svar."
+          },
+          {
+            "question": "Hur mycket kostar ett blomsterbud?",
+            "answer": "Notan består av två delar som redovisas var för sig: buketten och budet. Budet är en fast avgift per leverans och beror inte på avståndet, eftersom buketten binds av en florist nära mottagaren. Aktuella belopp per tjänst står i tabellen ovan, med datum för när vi kontrollerade dem."
+          },
+          {
+            "question": "Vad kan man skicka istället för blombud?",
+            "answer": "En krukväxt håller längre och passar när mottagaren är borta några dagar. Presentkort hos en lokal florist låter mottagaren välja själv. Till någon som ligger på sjukhus är blommor ibland inte tillåtna alls — då fungerar frukt, en bok eller ett handskrivet kort bättre. Ring avdelningen och fråga först."
           }
         ],
-        "pricesVerifiedAt": null,
+        "pricesVerifiedAt": "2026-02-14",
         "updatedAt": "2026-09-09"
       }
     },
@@ -90,7 +98,7 @@
             "answer": "Nej. Ordningen bestäms av pris och leveranstid. Vi skulle förlora läsarna direkt om rangordningen gick att köpa."
           }
         ],
-        "pricesVerifiedAt": null,
+        "pricesVerifiedAt": "2026-02-14",
         "updatedAt": "2026-09-09"
       }
     },
@@ -113,7 +121,7 @@
             "answer": "Bara om du skickar blommor flera gånger om året. Räkna på antalet leveranser innan du binder upp dig."
           }
         ],
-        "pricesVerifiedAt": null,
+        "pricesVerifiedAt": "2026-02-14",
         "updatedAt": "2026-09-09"
       }
     },
@@ -138,6 +146,33 @@
           {
             "question": "Varför blir notan högre än från-priset?",
             "answer": "Från-priset gäller den minsta buketten i sortimentet. Lägg till budavgiften och ett par stjälkar till, så landar de flesta beställningar högre."
+          }
+        ],
+        "pricesVerifiedAt": "2026-02-14",
+        "updatedAt": "2026-09-09"
+      }
+    },
+    {
+      "slug": "/guider/text-till-begravning",
+      "bodyMd": "## Hur lång ska texten vara?\n\nTvå rader. Korten är små och texten skrivs för hand av floristen, så det som inte får plats stryks ändå.\n\nSkriv hälsningen på de första raderna och namnet under. Är ni flera: förnamn räcker, eller familjenamnet om ni är många.\n\n## Vad du inte behöver skriva\n\nDu behöver inte förklara varför du inte kan komma. Du behöver inte skriva något originellt. Och du behöver inte hitta orden som gör det bättre, för de finns inte.\n\nDe anhöriga läser hundra kort samma vecka. Det som fastnar är att du fanns med, inte hur du formulerade dig.\n\n## Formuleringar efter relation\n\n**Till någon som stod dig nära**\n\n- Tack för allt. Jag saknar dig.\n- Du finns kvar i allt du lärde mig.\n- Vila i frid. Jag glömmer dig aldrig.\n\n**Till en kollega eller bekant**\n\n- Med varmt deltagande.\n- Vi minns dig med värme. Kollegorna på ekonomiavdelningen\n- Tack för åren tillsammans.\n\n**Till de efterlevande, när du inte kände den avlidne**\n\n- Våra tankar är hos er.\n- Med deltagande i er sorg.\n- Vi tänker på er.\n\n**Från en familj eller grupp**\n\n- Vila i frid. Familjen Lindberg\n- Ett sista farväl från oss alla.\n\n## Om du är osäker\n\nVälj den kortaste varianten. Ett kort som säger \"Med varmt deltagande\" och ditt namn är alltid rätt. Ett kort som försöker för mycket kan bli fel.\n\n## Praktiskt\n\nTexten anges i beställningen, i ett fritextfält. Kontrollera stavningen på namn innan du skickar — floristen skriver av exakt det du matar in.\n\nAnge också om kortet ska gå till kyrkan tillsammans med blommorna eller separat till de anhörigas hem.",
+      "page": {
+        "status": "published",
+        "title": "Vad skriver man på kortet till en begravning?",
+        "h1": "Text till begravningsblommor",
+        "metaDescription": "Färdiga formuleringar till kortet på begravningsblommor, ordnade efter din relation till den avlidne. Plus vad du inte behöver skriva.",
+        "microAnswer": "På kortet till begravningsblommor räcker två rader: en kort hälsning och ditt namn. Vanliga formuleringar är ”Vila i frid”, ”Med varmt deltagande” och ”Tack för allt”. Undvik att förklara varför du inte kan närvara. Nedan finns formuleringar ordnade efter din relation till den avlidne, och det praktiska kring hur texten anges vid beställning.",
+        "faq": [
+          {
+            "question": "Ska man skriva sitt efternamn på kortet?",
+            "answer": "Om de anhöriga känner dig väl räcker förnamn. Är du en av flera med samma förnamn i deras krets, eller en kollega de träffat sällan, skriv efternamn också."
+          },
+          {
+            "question": "Kan flera skriva på samma kort?",
+            "answer": "Ja, det är vanligt från arbetsplatser och föreningar. Skriv gruppens namn i stället för att räkna upp alla, till exempel ”Kollegorna på ekonomiavdelningen”."
+          },
+          {
+            "question": "Skriver floristen texten för hand?",
+            "answer": "Oftast ja. Därför är det viktigt att stavningen i beställningen är rätt — de skriver av exakt det du matar in, utan att rätta."
           }
         ],
         "pricesVerifiedAt": null,

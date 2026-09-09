@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skickablomma – varumärkesriktlinjer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --brand:  #14524a;
+      --brand-300: #7fb3a7;
+      --brand-800: #0c332e;
+      --signal: #b4661e;
+      --signal-50: #fdf6ed;
+      --paper:  #faf9f6;
+      --surface:#ffffff;
+      --ink:    #17191c;
+      --muted:  #5c6069;
+      --faint:  #8b8f97;
+      --line:   #e5e2db;
+      --serif:  'Newsreader', Georgia, serif;
+      --sans:   'Inter', system-ui, sans-serif;
+    }
+    body {
+      font-family: var(--sans); background: var(--paper); color: var(--ink);
+      line-height: 1.55; padding: 4rem 2rem 6rem;
+      font-feature-settings: 'tnum' 1;
+    }
+    .frame { max-width: 940px; margin: 0 auto; }
+
+    .masthead { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 3.5rem; }
+    .mark { width: 32px; height: 32px; border-radius: 7px; background: var(--brand); position: relative; flex: none; }
+    .mark::after { content: ''; position: absolute; left: 8px; top: 15px; width: 16px; height: 2px; border-radius: 1px; background: var(--paper); }
+    .masthead span { font-size: 1.0625rem; font-weight: 500; letter-spacing: -0.02em; }
+
+    h1 { font-family: var(--serif); font-weight: 400; font-size: clamp(2rem,4vw,2.75rem); letter-spacing: -0.02em; line-height: 1.1; margin-bottom: 1rem; }
+    .lede { font-size: 1.125rem; color: var(--muted); max-width: 60ch; margin-bottom: 4rem; }
+
+    section { margin-bottom: 4rem; }
+    .kicker { font-size: 0.6875rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--faint); margin-bottom: 1rem; }
+    h2 { font-family: var(--serif); font-weight: 400; font-size: 1.75rem; letter-spacing: -0.015em; margin-bottom: 1rem; }
+    h3 { font-family: var(--serif); font-weight: 500; font-size: 1.1875rem; margin: 2rem 0 0.5rem; }
+    p { max-width: 68ch; margin-bottom: 0.875rem; }
+    p.muted { color: var(--muted); }
+    ul { max-width: 68ch; padding-left: 1.15rem; margin-bottom: 0.875rem; }
+    li { margin-bottom: 0.3rem; }
+    strong { font-weight: 600; }
+    code { font-family: ui-monospace, monospace; font-size: 0.85em; background: rgba(23,25,28,0.05); padding: 0.1em 0.35em; border-radius: 3px; }
+
+    .pull {
+      font-family: var(--serif); font-size: 1.4rem; line-height: 1.35; letter-spacing: -0.01em;
+      border-left: 3px solid var(--signal); padding: 0.25rem 0 0.25rem 1.5rem;
+      margin: 2rem 0; max-width: 46ch;
+    }
+
+    /* Palett */
+    .swatches { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px,1fr)); gap: 1rem; }
+    .sw { border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--surface); }
+    .sw-chip { height: 76px; }
+    .sw-body { padding: 0.75rem 0.875rem 0.875rem; }
+    .sw-name { font-weight: 600; font-size: 0.875rem; }
+    .sw-hex { font-family: ui-monospace, monospace; font-size: 0.75rem; color: var(--faint); margin-top: 0.1rem; }
+    .sw-use { font-size: 0.75rem; color: var(--muted); margin-top: 0.4rem; line-height: 1.4; }
+
+    /* Typprover */
+    .type-row { border-top: 1px solid var(--line); padding: 1.5rem 0; display: grid; grid-template-columns: 8rem 1fr; gap: 2rem; align-items: baseline; }
+    .type-meta { font-size: 0.75rem; color: var(--faint); font-family: ui-monospace, monospace; line-height: 1.5; }
+    .s-h1 { font-family: var(--serif); font-size: 2.25rem; font-weight: 400; letter-spacing: -0.02em; }
+    .s-h2 { font-family: var(--serif); font-size: 1.5rem; font-weight: 400; letter-spacing: -0.015em; }
+    .s-micro { font-size: 1.0625rem; line-height: 1.6; }
+    .s-body { font-size: 0.9375rem; color: var(--muted); }
+    .s-data { font-family: var(--sans); font-size: 0.875rem; font-variant-numeric: tabular-nums; }
+
+    /* Gör / gör inte */
+    .dodont { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+    .box { border: 1px solid var(--line); border-radius: 8px; padding: 1.15rem; background: var(--surface); }
+    .box.no { background: #fdfaf8; }
+    .box-head { font-size: 0.6875rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 0.7rem; }
+    .box.yes .box-head { color: var(--brand); }
+    .box.no .box-head { color: var(--signal); }
+    .box p, .box li { font-size: 0.875rem; margin-bottom: 0.45rem; }
+    .box ul { padding-left: 1.05rem; }
+    .ex { font-family: var(--serif); font-size: 1.05rem; color: var(--ink); }
+    .ex.strike { text-decoration: line-through; text-decoration-color: var(--signal); text-decoration-thickness: 1px; color: var(--muted); }
+
+    /* Komponentregler */
+    table { width: 100%; border-collapse: collapse; font-size: 0.875rem; margin-top: 0.5rem; }
+    th { text-align: left; font-size: 0.6875rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--faint); padding: 0 0.75rem 0.6rem; border-bottom: 1px solid var(--line); }
+    td { padding: 0.7rem 0.75rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+    tr:last-child td { border-bottom: 0; }
+    td.k { font-weight: 500; white-space: nowrap; }
+
+    footer { border-top: 1px solid var(--line); padding-top: 1.5rem; font-size: 0.8125rem; color: var(--faint); }
+
+    @media (max-width: 700px) {
+      body { padding: 2.5rem 1.25rem 4rem; }
+      .dodont, .type-row { grid-template-columns: 1fr; }
+      .type-row { gap: 0.6rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="frame">
+
+  <div class="masthead">
+    <div class="mark"></div>
+    <span>skickablomma</span>
+  </div>
+
+  <h1>Varumärkesriktlinjer</h1>
+  <p class="lede">
+    Version 1.0 · 2026-09-09. Bygger vidare på siteplanens §2, som redan satte
+    kategori, löfte och tonalitet. Det här dokumentet lägger till det som saknades:
+    den visuella identiteten och reglerna för hur den används.
+  </p>
+
+  <!-- ============ STRATEGI ============ -->
+  <section>
+    <p class="kicker">Strategi</p>
+    <h2>Problemet identiteten löser</h2>
+    <p>
+      Sajten påstår att den inte säljer något. Formen påstod motsatsen: hot pink,
+      en romantisk display-serif, regnbågsgradienter och emojier. Det är en
+      blomsterbutiks språk, och varje sådan signal gjorde neutralitetslöftet
+      mindre trovärdigt.
+    </p>
+    <div class="pull">
+      Vi säljer inte blommor. Vi säljer ett kontrollerat påstående med ett datum på.
+    </div>
+    <p>
+      Allt nedan följer av den meningen. Identiteten ska läsa som ett referensverk
+      — Konsumentverket snarare än florist — men varmt nog att en människa som just
+      förlorat någon kan använda den.
+    </p>
+
+    <h3>Kategorin är redan uppdelad</h3>
+    <p>
+      Interflora äger rött. Blomsterlandet äger grönt. Euroflorist äger orange-rött.
+      Djup teal är ledig, läser botaniskt utan att vara &rdquo;blomsterhandel&rdquo;,
+      och har det institutionella allvar en jämförelse behöver.
+    </p>
+  </section>
+
+  <!-- ============ MÄRKET ============ -->
+  <section>
+    <p class="kicker">Märket</p>
+    <h2>Ett tankstreck i en ruta</h2>
+    <p>
+      Tankstrecket är tecknet vi sätter i en tabellcell där vi inte kontrollerat
+      uppgiften. Ingen konkurrent skriver ut sin okunskap — Interflora och
+      Euroflorist fyller varje fält oavsett om de vet. Därför är tecknet ledigt,
+      och därför betyder det något hos oss.
+    </p>
+    <p>
+      <strong>Logotypen och produktlogiken är samma objekt.</strong> Samma streck
+      som står i märket står i tabellen. Det är den enda visuella idé sajten
+      behöver, och den går inte att kopiera utan att kopiera ärligheten.
+    </p>
+    <ul>
+      <li>Rutan är kvadratisk, radie 7 px på 32 px. Aldrig cirkel.</li>
+      <li>Strecket är centrerat, 16&times;2 px, i papperskulören.</li>
+      <li>Ordmärket sätts i Inter Medium, gemener: <code>skickablomma</code>.</li>
+      <li>Ingen blomma, ingen kvist, ingen hjärtform. Någonsin.</li>
+    </ul>
+  </section>
+
+  <!-- ============ PALETT ============ -->
+  <section>
+    <p class="kicker">Palett</p>
+    <h2>Fem kulörer, alla med ett jobb</h2>
+    <p class="muted">Har en färg inget jobb finns den inte i systemet.</p>
+    <div class="swatches">
+      <div class="sw">
+        <div class="sw-chip" style="background:#14524a"></div>
+        <div class="sw-body">
+          <div class="sw-name">Brand</div>
+          <div class="sw-hex">#14524a</div>
+          <div class="sw-use">Avsändare. Navigation, länkar, knappar, verifierat tillstånd.</div>
+        </div>
+      </div>
+      <div class="sw">
+        <div class="sw-chip" style="background:#b4661e"></div>
+        <div class="sw-body">
+          <div class="sw-name">Signal</div>
+          <div class="sw-hex">#b4661e</div>
+          <div class="sw-use">Bara &rdquo;Vårt val&rdquo; och utkastvarningen. Aldrig dekor.</div>
+        </div>
+      </div>
+      <div class="sw">
+        <div class="sw-chip" style="background:#faf9f6; border-bottom:1px solid #e5e2db"></div>
+        <div class="sw-body">
+          <div class="sw-name">Paper</div>
+          <div class="sw-hex">#faf9f6</div>
+          <div class="sw-use">Sidans grund. Varmt, aldrig rent vitt.</div>
+        </div>
+      </div>
+      <div class="sw">
+        <div class="sw-chip" style="background:#17191c"></div>
+        <div class="sw-body">
+          <div class="sw-name">Ink</div>
+          <div class="sw-hex">#17191c</div>
+          <div class="sw-use">Text. Sekundärt <code>#5c6069</code>, svagt <code>#8b8f97</code>.</div>
+        </div>
+      </div>
+      <div class="sw">
+        <div class="sw-chip" style="background:#e5e2db"></div>
+        <div class="sw-body">
+          <div class="sw-name">Line</div>
+          <div class="sw-hex">#e5e2db</div>
+          <div class="sw-use">Hårstreck och tabellramar. Bär strukturen.</div>
+        </div>
+      </div>
+    </div>
+    <h3>Regeln som är lätt att bryta</h3>
+    <p>
+      Signalfärgen markerar ett <em>omdöme</em>. Så fort den används för att göra
+      en sida gladare slutar den betyda något, och &rdquo;Vårt val&rdquo; blir
+      dekoration i stället för en rekommendation.
+    </p>
+  </section>
+
+  <!-- ============ TYPOGRAFI ============ -->
+  <section>
+    <p class="kicker">Typografi</p>
+    <h2>Newsreader och Inter</h2>
+    <p>
+      Playfair Display är ersatt. Den är en high-contrast display-serif med
+      bröllops- och butikskonnotationer. Newsreader är ritad för redaktionell
+      brödtext och läser som ett uppslagsverk. Inter bär all UI och alla tabeller
+      — den har äkta tabulära siffror, vilket en jämförelsesajt inte klarar sig utan.
+    </p>
+
+    <div class="type-row">
+      <div class="type-meta">Newsreader 400<br>2.25rem<br>-0.02em</div>
+      <div class="s-h1">Blombud Linköping</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta">Newsreader 400<br>1.5rem</div>
+      <div class="s-h2">Jämför blombud i Linköping</div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta">Inter 400<br>1.0625rem<br>mikrosvar</div>
+      <div class="s-micro">
+        I Linköping levererar Interflora, Euroflorist och fyra fristående florister
+        blombud samma dag om du beställer före klockan 13.
+      </div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta">Inter 400<br>0.9375rem<br>brödtext</div>
+      <div class="s-body">
+        Budavgiften går till utkörningen, inte till blommorna. Den är densamma
+        oavsett om buketten kostar tvåhundra eller åttahundra kronor.
+      </div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta">Inter 400<br>tnum<br>tabelldata</div>
+      <div class="s-data">239 kr &nbsp; 99 kr &nbsp; <strong>338 kr</strong> &nbsp; – &nbsp; 12:30</div>
+    </div>
+
+    <h3>Aldrig fet serif</h3>
+    <p>
+      Rubriker sätts i vikt 400, undantagsvis 500. Fet Newsreader läser skrikigt
+      och drar mot annons.
+    </p>
+  </section>
+
+  <!-- ============ RÖST ============ -->
+  <section>
+    <p class="kicker">Röst</p>
+    <h2>Som en vän som redan googlat åt dig</h2>
+    <p class="muted">
+      Rak, praktisk, varm. Reglerna nedan kontrolleras maskinellt i
+      <code>src/data/brand.ts</code>.
+    </p>
+
+    <div class="dodont">
+      <div class="box yes">
+        <div class="box-head">Gör</div>
+        <p class="ex">Budavgiften är 99 kr. Vi kontrollerade det 14 februari.</p>
+        <ul>
+          <li>Sentence case i alla rubriker.</li>
+          <li>Du, aldrig ni. Aldrig &rdquo;man&rdquo; när &rdquo;du&rdquo; går.</li>
+          <li>Skriv ut vad vi inte vet.</li>
+          <li>Datum på varje siffra.</li>
+          <li>Korta meningar när ämnet är svårt.</li>
+        </ul>
+      </div>
+      <div class="box no">
+        <div class="box-head">Gör inte</div>
+        <p class="ex strike">Hos oss hittar du vackra buketter till bra pris!</p>
+        <ul>
+          <li>Inga utropstecken. Vi övertygar med siffror.</li>
+          <li>Ingen butiksröst: &rdquo;hos oss&rdquo;, &rdquo;våra partners&rdquo;, &rdquo;vi erbjuder&rdquo;.</li>
+          <li>Inga blomstermetaforer.</li>
+          <li>Aldrig &rdquo;Blommogram&rdquo; eller &rdquo;Chokladogram&rdquo; — avtalsspärrat.</li>
+          <li>Aldrig en siffra utan källa.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Tonen vid begravning</h3>
+    <p>
+      Sajtens största sidkluster handlar om död. Där gäller samma röst men lägre
+      volym: inga superlativ, ingen konverteringsdrivande formulering, inget
+      &rdquo;perfekt val&rdquo;. Läsaren har bråttom och är ledsen. Ge svaret först.
+    </p>
+  </section>
+
+  <!-- ============ KOMPONENTER ============ -->
+  <section>
+    <p class="kicker">Komponenter</p>
+    <h2>Regler som inte förhandlas</h2>
+    <table>
+      <thead>
+        <tr><th style="width:12rem">Komponent</th><th>Regel</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="k">Jämförelsetabell</td>
+          <td>Sorteras på totalpris, alltså från-pris plus budavgift. Ligger direkt efter mikrosvaret, ovanför fold på mobil. Tabulära siffror.</td>
+        </tr>
+        <tr>
+          <td class="k">Tankstreck</td>
+          <td>Betyder <em>ej kontrollerat</em>. Aldrig noll, aldrig en gissning. Skiljs från &rdquo;Nej&rdquo;, som skrivs ut i ord.</td>
+        </tr>
+        <tr>
+          <td class="k">Vårt val</td>
+          <td>Sätts av data, aldrig av provision. Kräver minst två tjänster med kontrollerat pris — billigast av en är ingen jämförelse. Motiveringen står i en mening under tabellen och ska gå att kontrollera mot raden.</td>
+        </tr>
+        <tr>
+          <td class="k">Disclosure</td>
+          <td>Ovanför varje tabell med affiliate-länkar, med kontrolldatum. Aldrig i footern bara.</td>
+        </tr>
+        <tr>
+          <td class="k">Affiliate-länk</td>
+          <td><code>rel="sponsored nofollow"</code>. Knapptext &rdquo;Till [Tjänst]&rdquo;, aldrig &rdquo;Köp nu&rdquo;.</td>
+        </tr>
+        <tr>
+          <td class="k">Mikrosvar</td>
+          <td>40–80 ord, står på egna ben utan kontext. Kontrolleras av <code>npm run check:content</code>.</td>
+        </tr>
+        <tr>
+          <td class="k">Utkast</td>
+          <td>Signalfärgad ruta, syns bara i utvecklingsläge. Utkast genereras aldrig i produktion och får <code>noindex</code>.</td>
+        </tr>
+        <tr>
+          <td class="k">Bilder</td>
+          <td>Aldrig produktbild som bevis. Aldrig bild från en tjänsts sajt. En bild får illustrera, aldrig påstå.</td>
+        </tr>
+        <tr>
+          <td class="k">Hörnradie</td>
+          <td>8 px. Mjukare läser som app, stramare som formulär.</td>
+        </tr>
+        <tr>
+          <td class="k">Rörelse</td>
+          <td>Färgövergångar, inte lyft eller skalning. Kort som hoppar vid hover är e-handelsspråk.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ============ IMPLEMENTATION ============ -->
+  <section>
+    <p class="kicker">Implementation</p>
+    <h2>Var det bor i koden</h2>
+    <table>
+      <tbody>
+        <tr><td class="k"><code>tailwind.config.mjs</code></td><td>Palett, typsnitt, prose-typografi. <strong>Enda</strong> Tailwind-konfigurationen — <code>.ts</code>-varianten var död kod och är borttagen.</td></tr>
+        <tr><td class="k"><code>src/app/globals.css</code></td><td>HSL-tokens, tabulära siffror, rubrikregler.</td></tr>
+        <tr><td class="k"><code>src/data/brand.ts</code></td><td>Namn, löfte, positionering, förbjudna fraser.</td></tr>
+        <tr><td class="k"><code>src/components/brand/Wordmark.tsx</code></td><td>Märke och ordmärke.</td></tr>
+        <tr><td class="k"><code>src/components/comparison/</code></td><td>Tabell, disclosure, mikrosvar, utkastruta, floristlista.</td></tr>
+        <tr><td class="k"><code>npm run check:content</code></td><td>Fäller bygget på overifierade påståenden och spärrade ord.</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer>
+    Skickablomma · varumärkesriktlinjer 1.0 · 2026-09-09<br>
+    Ändringar i identiteten görs i koden först och dokumenteras här efteråt,
+    aldrig tvärtom.
+  </footer>
+
+</div>
+</body>
+</html>
