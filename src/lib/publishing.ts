@@ -111,14 +111,27 @@ export function validateCity(city: City): PublishIssue[] {
   return issues
 }
 
+/** True när minst en tjänst har ett kontrollerat pris för landet. */
+export function hasVerifiedCountryPrices(country: Country): boolean {
+  return country.services.some((service) => service.priceFromSek !== null)
+}
+
 export function validateCountry(country: Country): PublishIssue[] {
   const issues = validatePageMeta(country.page)
 
-  const withPrice = country.services.filter((service) => service.priceFromSek !== null)
-  if (withPrice.length === 0) {
+  /*
+    Tidigare krävdes prisdata för att en landsida skulle få publiceras. Det
+    var rätt när sidan leddes av pris, men landsidornas värde ligger i det
+    praktiska: tull, tidsskillnad, helgdagar och vad florister i landet gör.
+    En sida som inte påstår något om pris behöver inget prisunderlag.
+
+    Priset måste däremot vara dokumenterat om det påstås, och det fångas av
+    platshållarkontrollen i validatePageMeta.
+  */
+  if (hasVerifiedCountryPrices(country) && country.page.pricesVerifiedAt === null) {
     issues.push({
-      field: 'services',
-      message: 'Ingen tjänst har verifierat pris för landet.',
+      field: 'pricesVerifiedAt',
+      message: 'Landet har prisdata men tabellen saknar kontrolldatum.',
     })
   }
 

@@ -7,7 +7,7 @@ import {
   getRenderableCountries,
   getService,
 } from '@/lib/comparison'
-import { validateCountry } from '@/lib/publishing'
+import { hasVerifiedCountryPrices, validateCountry } from '@/lib/publishing'
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs'
 import { FAQSection } from '@/components/content/FAQSection'
 import { ComparisonTable, type ComparisonRow } from '@/components/comparison/ComparisonTable'
@@ -86,7 +86,15 @@ export default function CountryPage({ params }: CountryPageProps) {
         <MicroAnswer>{country.page.microAnswer}</MicroAnswer>
       </header>
 
-      <div className="mt-8">
+      {!hasVerifiedCountryPrices(country) && (
+        <p className="mt-8 rounded-lg border border-line bg-paper p-4 text-sm text-ink-muted">
+          Vi har ännu inte kontrollerat priserna till {country.name}. Tills vi gjort det
+          skriver vi hellre ingenting än en siffra vi inte kan stå för. Det praktiska
+          nedan gäller oavsett pris.
+        </p>
+      )}
+
+      <div className={hasVerifiedCountryPrices(country) ? 'mt-8' : 'hidden'}>
         <h2 className="mb-4 font-display text-2xl text-ink">
           Priser och leveranstider till {country.name}
         </h2>

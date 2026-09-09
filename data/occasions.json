@@ -519,6 +519,149 @@
         "pricesVerifiedAt": "2026-02-14",
         "updatedAt": "2026-09-09"
       }
+    },
+    {
+      "slug": "nyfodd",
+      "name": "Nyfödd",
+      "productNoun": "blommor till nyfödd",
+      "productQuery": {
+        "mainCategory": null,
+        "subCategories": [
+          "blandade-farger",
+          "tulpaner",
+          "rosa-blommor"
+        ],
+        "excludeSubCategories": [
+          "begravningsbuketter",
+          "begravningskransar",
+          "kondoleanser",
+          "alla-hjartans-dag",
+          "karlek-romantik"
+        ]
+      },
+      "etiquetteMd": "## Vänta några dagar\n\nDe första dygnen är kaos. Familjen är på BB eller nyss hemkommen, sover i intervaller och har inte hunnit landa.\n\nEn bukett som kommer efter en vecka står kvar när gratulationerna tystnat, och den kommer när någon faktiskt orkar sätta den i vatten.\n\n## Skicka hem, inte till BB\n\nMånga förlossningsavdelningar tar inte emot blommor, och de som gör det har sällan vaser. Familjen ska dessutom ofta hem inom ett eller två dygn och kan då inte bära med sig en bukett utöver allt annat.\n\nHem till bostaden är nästan alltid rätt.\n\n## Vad som passar\n\nNågot litet som inte kräver arbete. Ingen ska stå och kvista stjälkar med ett nyfött barn i famnen.\n\nUndvik starkt doftande sorter. Liljor och hyacint blir tunga i en lägenhet där någon sover i varje rum, och pollen från liljor fläckar dessutom allt de rör vid.\n\nEn krukväxt håller längre än en bukett och behöver inget vattenbyte varannan dag.\n\n## Skriv till föräldrarna\n\nBarnet läser inte kortet. Skriv till dem som är vakna klockan fyra på natten.\n\nDet mest uppskattade är sällan en gratulation utan ett konkret erbjudande: att du kommer med mat, att du handlar, att du tar hunden. Något som går att tacka ja till utan att förhandla.",
+      "flowersRecommended": [
+        "Små buketter som inte kräver arrangering",
+        "Doftfria sorter",
+        "Krukväxt som klarar sig utan vattenbyte"
+      ],
+      "flowersAvoid": [
+        "Liljor, som doftar starkt och fläckar med pollen",
+        "Hyacint och andra tunga dofter",
+        "Stora buketter som kräver arbete"
+      ],
+      "cardTexts": [
+        "Grattis. Hör av er när ni orkar.",
+        "Välkommen till världen. Kram till er tre.",
+        "Jag kommer med mat på torsdag om ni vill.",
+        "Grattis. Ingen brådska med att svara."
+      ],
+      "seasonDate": null,
+      "publishBefore": null,
+      "serviceIds": [
+        "interflora",
+        "euroflorist",
+        "cramers"
+      ],
+      "searchVolume": 30,
+      "kd": 0,
+      "phase": 3,
+      "page": {
+        "status": "published",
+        "title": "Blommor till nyfödd – när, vart och vad som passar",
+        "h1": "Blommor till nyfödd",
+        "metaDescription": "Vänta några dagar, skicka hem i stället för till BB, och välj något litet och doftfritt. Plus vad du skriver till föräldrarna.",
+        "microAnswer": "Skicka blommor till en nyfödd några dagar efter förlossningen i stället för direkt. De första dygnen är kaotiska, och en bukett som kommer senare står kvar när gratulationerna tystnat. Skicka hem till bostaden, inte till BB, eftersom många avdelningar inte tar emot blommor. Välj något litet och doftfritt.",
+        "faq": [
+          {
+            "question": "Ska man skicka blommor till BB eller hem?",
+            "answer": "Hem. Många förlossningsavdelningar tar inte emot blommor, och de som gör det har sällan vaser. Familjen ska dessutom ofta hem inom ett dygn och kan inte bära med sig en bukett."
+          },
+          {
+            "question": "Hur snart ska man skicka?",
+            "answer": "Vänta några dagar. De första dygnen är kaos, och en bukett som kommer efter en vecka står kvar när alla andra slutat höra av sig."
+          },
+          {
+            "question": "Vilka blommor ska man undvika?",
+            "answer": "Starkt doftande sorter. Liljor och hyacint blir tunga i en lägenhet där någon sover i varje rum, och liljors pollen fläckar allt det rör vid."
+          },
+          {
+            "question": "Vad skriver man på kortet?",
+            "answer": "Skriv till föräldrarna, inte till barnet. Det mest uppskattade är ett konkret erbjudande som går att tacka ja till: att du kommer med mat, handlar eller tar hunden."
+          }
+        ],
+        "pricesVerifiedAt": "2026-02-14",
+        "updatedAt": "2026-09-09"
+      }
+    },
+    {
+      "slug": "student",
+      "name": "Studenten",
+      "productNoun": "studentblommor",
+      "productQuery": {
+        "mainCategory": null,
+        "subCategories": [
+          "gratulationer",
+          "blandade-farger",
+          "tulpaner"
+        ],
+        "excludeSubCategories": [
+          "begravningsbuketter",
+          "begravningskransar",
+          "kondoleanser",
+          "alla-hjartans-dag",
+          "karlek-romantik"
+        ]
+      },
+      "etiquetteMd": "## Blommorna bärs, inte ställs\n\nStudentblommor är den enda buketten som ska hålla i en hand i timmar, i värme, i en folkmassa.\n\nDet utesluter det mesta som är vackert i en vas. Välj något med stadiga stjälkar som tål att klämmas, och håll storleken nere. Studenten ska kunna krama folk med buketten i handen.\n\nKransar och blomsterband bärs på huvudet och beställs oftast separat.\n\n## Beställ i förväg\n\nStudentveckan är blomsterårets tätaste efter mors dag. Leveransfönstren tar slut långt före dagen.\n\nUtspring sker dessutom på ett bestämt klockslag, ofta mitt på dagen, och en leverans som kommer efteråt missar hela poängen. Beställ till dagen innan om du kan, och förvara buketten svalt.\n\n## Att skicka på håll\n\nKan du inte komma är blommorna hem till studenten samma kväll ett bättre alternativ än en leverans till skolan, där ingen har händer lediga och allt lämnas kvar.\n\n## Vad man skriver\n\nHåll det kort och undvik framtidsråd. Studenten har hört tillräckligt om vad som väntar.",
+      "flowersRecommended": [
+        "Stadiga stjälkar som tål att bäras",
+        "Gerbera, solros, ranunkel",
+        "Mindre buketter"
+      ],
+      "flowersAvoid": [
+        "Stora buketter som är svåra att bära i timmar",
+        "Sköra sorter som viker sig i värme"
+      ],
+      "cardTexts": [
+        "Grattis. Vilken dag.",
+        "Äntligen. Grattis.",
+        "Så stolt över dig.",
+        "Grattis. Nu firar vi."
+      ],
+      "seasonDate": null,
+      "publishBefore": null,
+      "serviceIds": [
+        "interflora",
+        "euroflorist",
+        "cramers"
+      ],
+      "searchVolume": 20,
+      "kd": 0,
+      "phase": 5,
+      "page": {
+        "status": "published",
+        "title": "Studentblommor – vad som håller att bära och när du beställer",
+        "h1": "Blommor till studenten",
+        "metaDescription": "Studentblommor bärs i timmar i värme och folkmassa. Så väljer du något som håller, och varför du beställer i god tid.",
+        "microAnswer": "Studentblommor ska hålla i en hand i timmar, i värme och i en folkmassa, vilket utesluter det mesta som är vackert i en vas. Välj stadiga stjälkar och håll storleken nere. Beställ i god tid: studentveckan är blomsterårets tätaste efter mors dag, och utspringet sker på ett bestämt klockslag.",
+        "faq": [
+          {
+            "question": "Vilka blommor håller att bära?",
+            "answer": "Sorter med stadiga stjälkar som tål att klämmas, som gerbera, solros och ranunkel. Håll storleken nere så att studenten kan krama folk med buketten i handen."
+          },
+          {
+            "question": "När ska man beställa?",
+            "answer": "I god tid. Studentveckan är blomsterårets tätaste efter mors dag och leveransfönstren tar slut långt före dagen. Beställ gärna till dagen innan och förvara buketten svalt."
+          },
+          {
+            "question": "Ska blommorna levereras till skolan?",
+            "answer": "Sällan en bra idé om du inte är där själv. Ingen har händer lediga vid utspringet. Hem till studenten samma kväll fungerar bättre."
+          }
+        ],
+        "pricesVerifiedAt": "2026-02-14",
+        "updatedAt": "2026-09-09"
+      }
     }
   ]
 }
