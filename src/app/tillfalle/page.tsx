@@ -47,7 +47,7 @@ export default function TillfalleHubPage() {
               <li key={occasion.slug}>
                 <Link
                   href={`/tillfalle/${occasion.slug}`}
-                  className="block rounded-lg border border-line p-4 transition-colors hover:border-line-strong"
+                  className="block rounded-lg border border-line bg-surface p-4 transition-colors hover:border-leaf-300 hover:bg-leaf-50"
                 >
                   <span className="font-medium text-ink">{occasion.name}</span>
                   <span className="mt-1 block text-sm text-ink-faint">

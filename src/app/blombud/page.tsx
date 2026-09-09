@@ -59,7 +59,7 @@ export default function BlombudHubPage() {
               <li key={city.slug}>
                 <Link
                   href={`/blombud/${city.slug}`}
-                  className="block rounded-lg border border-line p-4 transition-colors hover:border-line-strong"
+                  className="block rounded-lg border border-line bg-surface p-4 transition-colors hover:border-leaf-300 hover:bg-leaf-50"
                 >
                   <span className="font-medium text-ink">{city.name}</span>
                   <span className="mt-1 block text-sm text-ink-faint">{city.county}</span>

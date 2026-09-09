@@ -37,6 +37,40 @@ const config = {
           foreground: 'hsl(var(--brand-foreground))',
         },
 
+        // Levande grönt. Bär ytor och struktur, alltså det som ger sajten
+        // ämne. Salvia-olivton, medvetet varmare och gulare än tealen så att
+        // de två läser som samma växt i olika ljus, inte som två system.
+        leaf: {
+          DEFAULT: '#6f8c63',
+          50: '#f2f5ef',
+          100: '#e2e9dc',
+          200: '#c6d3bd',
+          300: '#a5b899',
+          400: '#879d78',
+          500: '#6f8c63',
+          600: '#5a744f',
+          700: '#475c3f',
+          800: '#364630',
+          900: '#253020',
+        },
+
+        // Kronblad, dovt. Bär värme och säsong, aldrig struktur. Torkad ros
+        // snarare än rosa: den rosa vi tog bort var magenta och signalerade
+        // present, den här signalerar torkad blomma.
+        petal: {
+          DEFAULT: '#a96e68',
+          50: '#faf1ef',
+          100: '#f2ddd9',
+          200: '#e3bdb7',
+          300: '#cd9992',
+          400: '#ba807a',
+          500: '#a96e68',
+          600: '#8c5a55',
+          700: '#6e4743',
+          800: '#523533',
+          900: '#372423',
+        },
+
         signal: {
           DEFAULT: 'hsl(var(--signal))',
           50: '#fdf6ed',

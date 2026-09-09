@@ -16,6 +16,7 @@ import { validateStaticPage } from '@/lib/publishing'
 import { ComparisonTable } from '@/components/comparison/ComparisonTable'
 import { MicroAnswer } from '@/components/comparison/MicroAnswer'
 import { DraftNotice } from '@/components/comparison/DraftNotice'
+import { BotanicalRule } from '@/components/brand/Botanical'
 
 export const metadata: Metadata = {
   title: {
@@ -196,7 +197,7 @@ export default async function HomePage() {
               <li key={hub.href}>
                 <Link
                   href={hub.href}
-                  className="block h-full rounded-xl border border-gray-200 p-5 transition-colors hover:border-gray-400"
+                  className="block h-full rounded-lg border border-line bg-surface p-5 transition-colors hover:border-leaf-300 hover:bg-leaf-50"
                 >
                   <span className="font-display text-lg font-semibold text-gray-900">
                     {hub.title}
@@ -211,6 +212,9 @@ export default async function HomePage() {
 
       {/* Jämförelsetabellen ligger ovanför fold på mobil (siteplanen §7) */}
       <section className="py-12">
+        <div className="container mx-auto max-w-4xl px-4">
+          <BotanicalRule className="mb-12" />
+        </div>
         <div className="container mx-auto max-w-4xl px-4">
           <h2 className="mb-6 font-display text-2xl font-bold text-gray-900">
             De största blombuden

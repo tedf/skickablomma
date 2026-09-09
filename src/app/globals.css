@@ -26,6 +26,8 @@
     --brand-foreground: 0 0% 100%;
     --signal: 27 71% 41%;
     --signal-foreground: 0 0% 100%;
+    --leaf: 105 17% 47%;             /* #6f8c63 — ytor och struktur */
+    --petal: 5 26% 53%;              /* #a96e68 — värme och säsong */
 
     /* Alias: befintlig kod som säger primary får varumärkesfärgen. */
     --primary: 172 60% 20%;

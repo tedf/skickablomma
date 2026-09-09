@@ -14,6 +14,7 @@ import { FAQSection } from '@/components/content/FAQSection'
 import { ComparisonTable, type ComparisonRow } from '@/components/comparison/ComparisonTable'
 import { MicroAnswer } from '@/components/comparison/MicroAnswer'
 import { DraftNotice } from '@/components/comparison/DraftNotice'
+import { BotanicalRule } from '@/components/brand/Botanical'
 
 interface OccasionPageProps {
   params: { occasion: string }
@@ -106,6 +107,8 @@ export default function OccasionPage({ params }: OccasionPageProps) {
         </div>
       )}
 
+      <BotanicalRule figure="sprig" className="mt-14" />
+
       <article
         className="prose prose-gray mt-12 max-w-none"
         dangerouslySetInnerHTML={{ __html: markdownToHtml(occasion.etiquetteMd) }}
@@ -114,9 +117,9 @@ export default function OccasionPage({ params }: OccasionPageProps) {
       {(occasion.flowersRecommended.length > 0 || occasion.flowersAvoid.length > 0) && (
         <section className="mt-12 grid gap-6 sm:grid-cols-2">
           {occasion.flowersRecommended.length > 0 && (
-            <div className="rounded-xl border border-line p-5">
-              <h2 className="font-semibold text-ink">Blommor som passar</h2>
-              <ul className="mt-2 list-disc pl-5 text-ink-muted">
+            <div className="rounded-lg border border-leaf-200 bg-leaf-50 p-5">
+              <h2 className="font-semibold text-leaf-800">Blommor som passar</h2>
+              <ul className="mt-2 list-disc pl-5 text-leaf-900/80">
                 {occasion.flowersRecommended.map((flower) => (
                   <li key={flower}>{flower}</li>
                 ))}
@@ -124,7 +127,7 @@ export default function OccasionPage({ params }: OccasionPageProps) {
             </div>
           )}
           {occasion.flowersAvoid.length > 0 && (
-            <div className="rounded-xl border border-line p-5">
+            <div className="rounded-lg border border-line p-5">
               <h2 className="font-semibold text-ink">Tänk efter en gång till</h2>
               <ul className="mt-2 list-disc pl-5 text-ink-muted">
                 {occasion.flowersAvoid.map((flower) => (
@@ -145,7 +148,7 @@ export default function OccasionPage({ params }: OccasionPageProps) {
             {occasion.cardTexts.map((text) => (
               <li
                 key={text}
-                className="rounded-lg border border-line bg-paper px-4 py-3 text-ink"
+                className="rounded-lg border border-petal-200 bg-petal-50 px-4 py-3 text-petal-900"
               >
                 {text}
               </li>

@@ -110,7 +110,7 @@
 
   <h1>Varumärkesriktlinjer</h1>
   <p class="lede">
-    Version 1.0 · 2026-09-09. Bygger vidare på siteplanens §2, som redan satte
+    Version 1.1 · 2026-09-09. Bygger vidare på siteplanens §2, som redan satte
     kategori, löfte och tonalitet. Det här dokumentet lägger till det som saknades:
     den visuella identiteten och reglerna för hur den används.
   </p>
@@ -132,6 +132,20 @@
       Allt nedan följer av den meningen. Identiteten ska läsa som ett referensverk
       — Konsumentverket snarare än florist — men varmt nog att en människa som just
       förlorat någon kan använda den.
+    </p>
+
+    <h3>Rättelse: den första versionen gick för långt</h3>
+    <p>
+      Version 1.0 av det här dokumentet drog fel slutsats. &rdquo;Vi är inte en butik&rdquo;
+      är rätt begränsning. &rdquo;Vi handlar inte om blommor&rdquo; följer inte av den, men
+      det var vad identiteten sa i praktiken: en mörk teal, en ockra som nästan aldrig
+      syntes, och noll bilder på hela jämförelsedelen. Resultatet gick att förväxla med
+      en elprisjämförelse.
+    </p>
+    <p>
+      Ett referensverk får handla om sitt ämne. Ämnet får synas utan att säljrösten
+      kommer med. Därför finns nu <strong>leaf</strong> och <strong>petal</strong> i
+      paletten, och därför finns en bildpolicy som faktiskt släpper in något.
     </p>
 
     <h3>Kategorin är redan uppdelad</h3>
@@ -168,7 +182,7 @@
   <!-- ============ PALETT ============ -->
   <section>
     <p class="kicker">Palett</p>
-    <h2>Fem kulörer, alla med ett jobb</h2>
+    <h2>Sju kulörer, alla med ett jobb</h2>
     <p class="muted">Har en färg inget jobb finns den inte i systemet.</p>
     <div class="swatches">
       <div class="sw">
@@ -201,6 +215,22 @@
           <div class="sw-name">Ink</div>
           <div class="sw-hex">#17191c</div>
           <div class="sw-use">Text. Sekundärt <code>#5c6069</code>, svagt <code>#8b8f97</code>.</div>
+        </div>
+      </div>
+      <div class="sw">
+        <div class="sw-chip" style="background:#6f8c63"></div>
+        <div class="sw-body">
+          <div class="sw-name">Leaf</div>
+          <div class="sw-hex">#6f8c63</div>
+          <div class="sw-use">Ytor och struktur. Bär ämnet: kort, hubbar, footer, botaniska figurer.</div>
+        </div>
+      </div>
+      <div class="sw">
+        <div class="sw-chip" style="background:#a96e68"></div>
+        <div class="sw-body">
+          <div class="sw-name">Petal</div>
+          <div class="sw-hex">#a96e68</div>
+          <div class="sw-use">Värme och säsong. Aldrig struktur, aldrig knappar.</div>
         </div>
       </div>
       <div class="sw">
@@ -262,6 +292,33 @@
     <p>
       Rubriker sätts i vikt 400, undantagsvis 500. Fet Newsreader läser skrikigt
       och drar mot annons.
+    </p>
+  </section>
+
+  <!-- ============ BILD ============ -->
+  <section>
+    <p class="kicker">Bild</p>
+    <h2>Tecknat, inte fotograferat</h2>
+    <p>
+      En bild får aldrig påstå något. En bukett fotograferad i studio är en produktbild,
+      alltså ett påstående om vad du får, och den hör inte hemma på en sajt som inte
+      säljer buketter.
+    </p>
+    <p>
+      Men den regeln blev i praktiken &rdquo;ingen bild alls&rdquo;, och då försvann ämnet.
+      Lösningen är linjetecknade botaniska figurer: en stjälk, en kvist. De påstår
+      ingenting om ett sortiment, de säger bara vad sajten handlar om.
+    </p>
+    <ul>
+      <li>Tunn linje, låg kontrast, alltid i bladtonen.</li>
+      <li>Som avdelare mellan större avsnitt, aldrig som huvudmotiv.</li>
+      <li>Högst ett par gånger per sida. Oftare blir det tapet.</li>
+      <li>Aldrig som ikon inuti en rubrik. Figurerna är höga och smala och blir
+        oläsliga under 30 px.</li>
+      <li>Aldrig fotografi av en produkt. Aldrig bild hämtad från en tjänsts sajt.</li>
+    </ul>
+    <p class="muted">
+      Figurerna bor i <code>src/components/brand/Botanical.tsx</code>.
     </p>
   </section>
 
@@ -346,7 +403,11 @@
         </tr>
         <tr>
           <td class="k">Bilder</td>
-          <td>Aldrig produktbild som bevis. Aldrig bild från en tjänsts sajt. En bild får illustrera, aldrig påstå.</td>
+          <td>Linjetecknade botaniska figurer som avdelare. Aldrig produktfoto, aldrig bild från en tjänsts sajt. En bild får illustrera, aldrig påstå.</td>
+        </tr>
+        <tr>
+          <td class="k">Färgens jobb</td>
+          <td>Brand bär avsändaren, leaf bär ytor och ämne, petal bär värme och säsong, signal bär omdömet. Byter en kulör jobb slutar systemet betyda något.</td>
         </tr>
         <tr>
           <td class="k">Hörnradie</td>
@@ -377,7 +438,7 @@
   </section>
 
   <footer>
-    Skickablomma · varumärkesriktlinjer 1.0 · 2026-09-09<br>
+    Skickablomma · varumärkesriktlinjer 1.1 · 2026-09-09<br>
     Ändringar i identiteten görs i koden först och dokumenteras här efteråt,
     aldrig tvärtom.
   </footer>

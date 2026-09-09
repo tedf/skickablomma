@@ -36,7 +36,7 @@ const partners = [
 
 export function Footer() {
   return (
-    <footer className="border-t bg-gray-50">
+    <footer className="border-t border-line bg-leaf-50">
       {/* Partner logos */}
       <div className="border-b">
         <div className="container mx-auto px-4 py-8">
