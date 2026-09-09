@@ -15,8 +15,7 @@ export function FloristList({ florists, cityName }: FloristListProps) {
   if (florists.length === 0) {
     return (
       <p className="text-ink-muted">
-        Vi har ännu inte kontrollerat floristerna i {cityName}. Sidan publiceras när minst
-        tre är verifierade.
+        Vi har ännu inte kontrollerat några florister i {cityName}.
       </p>
     )
   }

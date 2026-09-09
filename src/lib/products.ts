@@ -939,6 +939,33 @@ function harLokalBild(product: Product): boolean {
 }
 
 /**
+ * Fälten som avslöjar en trädgårdsprodukt.
+ *
+ * Cramers lökkatalog ligger i feeden med mainCategory "buketter" och
+ * sameDayDelivery true, alltså går den inte att sortera bort på kategori eller
+ * partner. Den går däremot att känna igen på beskrivningen: en påse
+ * alliumlökar bär planteringsdjup och blomningstid, en bunden bukett gör
+ * aldrig det.
+ *
+ * En påse lökar som blommar i maj är fel svar på "skicka blommor idag",
+ * oavsett hur den är taggad.
+ */
+const TRADGARDSFALT = [
+  'Antal per påse',
+  'Planteringstid',
+  'Planteringsdjup',
+  'Planteringsavstånd',
+  'Lökstorlek',
+  'Blomningstid',
+  'Härdighet',
+]
+
+function arTradgardsprodukt(product: Product): boolean {
+  const text = product.description ?? ''
+  return TRADGARDSFALT.some((falt) => text.includes(falt))
+}
+
+/**
  * Filtrerar och sorterar produkter så att en tillfällessida visar bundna
  * buketter med fungerande bild, inte lökpåsar eller konstgjorda blommor.
  */
@@ -947,13 +974,29 @@ export function pickDeliverableBouquets(
   limit: number,
   exclude: string[] = []
 ): Product[] {
+  /*
+    Urvalet sorterades tidigare på popularitet, och priset sorterades först
+    efteråt bland de fyra som redan valts ut. Resultatet blev att en sida som
+    lovar lägsta totalpris visade de dyraste buketterna i sortimentet.
+
+    Totalpriset avgör därför urvalet: från-pris plus budavgift, alltså det
+    som faktiskt dras. Det är samma tal jämförelsetabellen sorteras på, och
+    det enda tal som gör rubriken sann.
+  */
+  const totalpris = (p: Product) => p.price + (p.shipping ?? 0)
   const rang = (p: Product) => (p.partnerId === 'interflora' ? 0 : 1)
 
   const sedda = new Set<string>()
   return products
     .filter((p) => BLOMBUD_PARTNERS.includes(p.partnerId) && harLokalBild(p))
+    .filter((p) => !arTradgardsprodukt(p))
     .filter((p) => !(p.subCategories ?? []).some((sub) => exclude.includes(sub)))
     .filter((p) => (sedda.has(p.id) ? false : (sedda.add(p.id), true)))
-    .sort((a, b) => rang(a) - rang(b) || (b.popularityScore ?? 0) - (a.popularityScore ?? 0))
+    .sort(
+      (a, b) =>
+        totalpris(a) - totalpris(b) ||
+        rang(a) - rang(b) ||
+        (b.popularityScore ?? 0) - (a.popularityScore ?? 0)
+    )
     .slice(0, limit)
 }

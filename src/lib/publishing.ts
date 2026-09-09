@@ -11,8 +11,21 @@
 
 import type { City, Country, Occasion, PageMeta, StaticPage } from '@/types/comparison'
 
-/** Minsta antal verifierade florister för att en stadssida ska få publiceras. */
-export const MIN_FLORISTS_PER_CITY = 3
+/**
+ * Minsta antal namngivna leveransområden för att en stadssida ska få publiceras.
+ *
+ * Regeln hette tidigare MIN_FLORISTS_PER_CITY och krävde tre florister
+ * kontrollerade per telefon. Den byggde på antagandet att sidans värde låg i
+ * en lokal floristkatalog. Det antagandet stämmer inte: de rikstäckande
+ * buden har anslutna florister i varje stad, och sidans jobb är att svara på
+ * frågan och slussa vidare till den som kan leverera.
+ *
+ * Det som skiljer en riktig stadssida från en mallad är i stället att den
+ * namnger platser som faktiskt finns på orten. Ryd, Lambohov och Tannefors
+ * går inte att generera fram, och en sida utan dem är just den mall
+ * siteplanen §0 säger nej till.
+ */
+export const MIN_DELIVERY_AREAS_PER_CITY = 4
 
 /** Mikrosvarets tillåtna längd i ord (siteplanen §6). */
 export const MICRO_ANSWER_MIN_WORDS = 40
@@ -22,8 +35,13 @@ export const MICRO_ANSWER_MAX_WORDS = 80
  * Matchar platshållare: [149–399], [kl. X], [datum], [X].
  * Avsiktligt snäv — vanliga hakparenteser i löptext är sällsynta och ska
  * hellre ge ett falskt larm än släppa igenom en overifierad siffra.
+ *
+ * Undantaget är markdown-länkar. En hakparentes som följs av en parentes är
+ * `[text](/url)`, alltså en internlänk och inte en osäker uppgift. Utan
+ * undantaget kan brödtexten inte länka någonstans, och internlänkarna är
+ * det som håller ihop sidklustren.
  */
-const PLACEHOLDER_PATTERN = /\[[^\]\n]{1,40}\]/g
+const PLACEHOLDER_PATTERN = /\[[^\]\n]{1,40}\](?!\()/g
 
 export interface PublishIssue {
   field: string
@@ -93,14 +111,19 @@ export function verifiedFlorists(city: City): City['florists'] {
 export function validateCity(city: City): PublishIssue[] {
   const issues = validatePageMeta(city.page)
 
-  const verified = verifiedFlorists(city)
-  if (verified.length < MIN_FLORISTS_PER_CITY) {
+  if (city.deliveryAreas.length < MIN_DELIVERY_AREAS_PER_CITY) {
     issues.push({
-      field: 'florists',
-      message: `${verified.length} verifierade florister, minst ${MIN_FLORISTS_PER_CITY} krävs.`,
+      field: 'deliveryAreas',
+      message: `${city.deliveryAreas.length} namngivna områden, minst ${MIN_DELIVERY_AREAS_PER_CITY} krävs.`,
     })
   }
 
+  /*
+    Floristerna är inte längre ett krav, men kravet på dem som faktiskt står
+    på sidan är oförändrat. En florist utan kontrolldatum är en gissning, och
+    gissningar publiceras inte. Skillnaden mot förr är att sidan får finnas
+    utan floristlista, inte att listan får innehålla vad som helst.
+  */
   if (city.page.pricesVerifiedAt === null) {
     issues.push({
       field: 'pricesVerifiedAt',

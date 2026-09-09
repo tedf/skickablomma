@@ -5,7 +5,7 @@
     {
       "slug": "begravning",
       "name": "Begravning",
-      "etiquetteMd": "## Var ska blommorna levereras?\n\nDet finns två vägar, och de betyder olika saker.\n\n**Till kyrkan eller kapellet** innebär att blommorna står framme under ceremonin. De ska vara på plats senast morgonen samma dag, ofta ett par timmar innan. Begravningsbyrån tar emot och placerar dem.\n\n**Till de anhörigas hem** är en kondoleans. Den skickas när du inte kan närvara, eller efteråt som en hälsning. Här är tidpunkten friare, men undvik dagen för begravningen, då ingen är hemma.\n\n## Vad du behöver ange vid beställning\n\n- Den avlidnes namn\n- Datum och klockslag för ceremonin\n- Kyrkans eller kapellets namn och ort\n- Begravningsbyråns namn, om du känner till det\n\nUtan dessa uppgifter kan floristen inte samordna med byrån, och blommorna riskerar att komma efter att ceremonin börjat.\n\n## Vad som passar\n\nVita och ljusa blommor är det vanligaste valet och fungerar alltid. Färgade buketter är fullt accepterade i dag, särskilt om de speglar den avlidnes personlighet. Kransen är den mest formella formen, sorgbuketten den vanligaste.\n\nBåraffären och bårtäcket beställer de närmast anhöriga.\n\n## Texten på kortet\n\nHåll den kort, gärna två rader, med ditt eller er namn under. Skriv inte en förklaring till varför du inte kommer. Det säger du hellre till någon av de anhöriga när ni ses.\n\n## Tidpunkt\n\nBeställ senast dagen före ceremonin. Många florister behöver längre framförhållning för kransar, eftersom de binds för hand. Ring floristen direkt om det är kortare tid än ett dygn kvar.\n\n## Vad kransen, sorgbuketten och handbuketten är\n\nFormen säger något om din relation till den avlidne, och den är lättare att välja när man vet vad de heter.\n\n**Kransen** är den mest formella. Den står på egen fot vid kistan och beställs ofta av en familj, en arbetsplats eller en förening tillsammans.\n\n**Sorgbuketten** är den vanligaste. Den läggs vid kistan eller på golvet framför den, och passar från enskilda personer såväl som par.\n\n**Handbuketten** är minst och enklast. Den bärs i handen och läggs på kistan vid avskedet.\n\n**Båraffären** eller bårtäcket ligger direkt på kistan. Den beställer de närmast anhöriga, så som gäst behöver du inte tänka på den.\n\n## Avskedstagandet\n\nI slutet av ceremonin går de närvarande fram till kistan en och en, säger sitt farväl och lägger en blomma. De närmast anhöriga går först.\n\nHandblommorna delas ut på plats och beställs av familjen via begravningsbyrån. Du behöver alltså inte ta med någon egen.\n\nDet finns ingen regel för vad man säger eller hur länge man står kvar. Några sekunder räcker.",
+      "etiquetteMd": "## Var ska blommorna levereras?\n\nDet finns två vägar, och de betyder olika saker.\n\n**Till kyrkan eller kapellet** innebär att blommorna står framme under ceremonin. De ska vara på plats senast morgonen samma dag, ofta ett par timmar innan. Begravningsbyrån tar emot och placerar dem.\n\n**Till de anhörigas hem** är en kondoleans. Den skickas när du inte kan närvara, eller efteråt som en hälsning. Här är tidpunkten friare, men undvik dagen för begravningen, då ingen är hemma.\n\n## Vad du behöver ange vid beställning\n\n- Den avlidnes namn\n- Datum och klockslag för ceremonin\n- Kyrkans eller kapellets namn och ort\n- Begravningsbyråns namn, om du känner till det\n\nUtan dessa uppgifter kan floristen inte samordna med byrån, och blommorna riskerar att komma efter att ceremonin börjat.\n\n## Vad som passar\n\nVita och ljusa blommor är det vanligaste valet och fungerar alltid. Färgade buketter är fullt accepterade i dag, särskilt om de speglar den avlidnes personlighet. Kransen är den mest formella formen, sorgbuketten den vanligaste.\n\nBåraffären och bårtäcket beställer de närmast anhöriga.\n\n## Texten på kortet\n\nHåll den kort, gärna två rader, med ditt eller er namn under. Skriv inte en förklaring till varför du inte kommer. Det säger du hellre till någon av de anhöriga när ni ses.\n\n## Tidpunkt\n\nBeställ senast dagen före ceremonin. Många florister behöver längre framförhållning för kransar, eftersom de binds för hand. Ring floristen direkt om det är kortare tid än ett dygn kvar.\n\n## Vad kransen, sorgbuketten och handbuketten är\n\nFormen säger något om din relation till den avlidne, och den är lättare att välja när man vet vad de heter.\n\n**Kransen** är den mest formella. Den står på egen fot vid kistan och beställs ofta av en familj, en arbetsplats eller en förening tillsammans.\n\n**Sorgbuketten** är den vanligaste. Den läggs vid kistan eller på golvet framför den, och passar från enskilda personer såväl som par.\n\n**Handbuketten** är minst och enklast. Den bärs i handen och läggs på kistan vid avskedet.\n\n**Båraffären** eller bårtäcket ligger direkt på kistan. Den beställer de närmast anhöriga, så som gäst behöver du inte tänka på den.\n\n## Avskedstagandet\n\nI slutet av ceremonin går de närvarande fram till kistan en och en, säger sitt farväl och lägger en blomma. De närmast anhöriga går först.\n\nHandblommorna delas ut på plats och beställs av familjen via begravningsbyrån. Du behöver alltså inte ta med någon egen.\n\nDet finns ingen regel för vad man säger eller hur länge man står kvar. Några sekunder räcker.\n\n## Läs vidare\n\nFler färdiga formuleringar finns i guiden om [vad man skriver på begravningsblommor](/guider/text-till-begravning). Ska blommorna hem till familjen i stället för till ceremonin handlar det om [kondoleansblommor](/tillfalle/kondoleans).",
       "flowersRecommended": [
         "Vita rosor",
         "Liljor",
@@ -64,6 +64,18 @@
           {
             "question": "Vad skriver man på kortet?",
             "answer": "Två rader räcker: en hälsning och ditt namn. Skriv ingen förklaring till varför du inte kommer, det tar du muntligt med de anhöriga i stället."
+          },
+          {
+            "question": "Hur skickar man blommor till en begravning?",
+            "answer": "Beställ hos ett blombud eller en florist senast dagen innan och ange fyra saker: den avlidnes namn, begravningsdatum, kyrkans eller kapellets adress och texten till kortet eller bandet. Floristen levererar till ceremonilokalen på morgonen. Ska blommorna i stället hem till familjen skickar du dem som kondoleans, och då spelar begravningsdatumet ingen roll."
+          },
+          {
+            "question": "Vilken färg ska blommorna ha till en begravning?",
+            "answer": "Vitt är den säkraste färgen och passar alltid. Ljusa toner i rosa, gult och grönt fungerar lika bra och är vanliga när den avlidne var ung eller när familjen bett om något ljust. Starkt rött är förknippat med kärlek och används mest av den närmaste familjen. Det finns ingen regel som förbjuder en färg."
+          },
+          {
+            "question": "Vad är bandet på begravningsblommor?",
+            "answer": "Ett tygband över buketten eller kransen med en hälsning och avsändarens namn, ofta i två rader. Floristen trycker eller skriver texten och du anger den vid beställningen. Om bandet ingår i priset eller kostar extra skiljer sig mellan tjänsterna, och vi har inte kontrollerat de priserna."
           }
         ],
         "pricesVerifiedAt": "2026-02-14",
@@ -82,7 +94,7 @@
     {
       "slug": "kondoleans",
       "name": "Kondoleans",
-      "etiquetteMd": "## Skillnaden mot begravningsblommor\n\nBegravningsblommor står framme under ceremonin. Kondoleansblommor går hem till de efterlevande och har inget med ceremonin att göra.\n\nDu kan skicka båda, en av dem, eller ingen. Det finns ingen förväntan som säger annat.\n\n## Läs dödsannonsen först\n\nAnnonsen innehåller ofta en rad som styr hela beslutet.\n\nStår det **”Tänk på”** följt av en organisation ber familjen om en minnesgåva i stället för blommor. Då skickar du en gåva, inte en bukett.\n\nStår det **”Ingen blomsterhyllning”** eller **”Vi undanber oss blommor”** gäller det. Det är inte en artighetsfras.\n\nSaknas sådana rader är blommor välkomna.\n\n## När du skickar\n\nSå snart dödsfallet blivit känt, eller veckorna efter begravningen. Båda fungerar.\n\nUndvik begravningsdagen. Då är familjen på ceremonin och blommorna står utanför dörren.\n\nMånga skickar med flit några veckor efteråt, när de första dagarnas rusning har lagt sig och det blivit tyst. Det är ofta då det märks mest.\n\n## Vad som passar hem till någon\n\nEn bukett som går att sätta i vas utan arbete. Sorgen tar tillräckligt med kraft utan att någon ska stå och kvista stjälkar.\n\nVita och ljusa toner är det vanligaste, men dova färger fungerar lika bra. Undvik starkt doftande sorter, som kan bli tunga i en liten lägenhet.\n\nEn krukväxt är ett alternativ som håller längre än en bukett, och som inte kräver att någon byter vatten varannan dag.\n\n## Minnesgåva i stället\n\nEn gåva till en förening eller ett forskningsfond som stod den avlidne nära räknas som en fullvärdig kondoleans. Många organisationer skickar ett minnesblad till familjen med givarens namn.\n\nDet är särskilt lämpligt när familjen bett om det, när du inte känner dem väl nog för att veta vad de vill ha hem, eller när det redan står blommor i varje rum.",
+      "etiquetteMd": "## Skillnaden mot begravningsblommor\n\nBegravningsblommor står framme under ceremonin. Kondoleansblommor går hem till de efterlevande och har inget med ceremonin att göra.\n\nDu kan skicka båda, en av dem, eller ingen. Det finns ingen förväntan som säger annat.\n\n## Läs dödsannonsen först\n\nAnnonsen innehåller ofta en rad som styr hela beslutet.\n\nStår det **”Tänk på”** följt av en organisation ber familjen om en minnesgåva i stället för blommor. Då skickar du en gåva, inte en bukett.\n\nStår det **”Ingen blomsterhyllning”** eller **”Vi undanber oss blommor”** gäller det. Det är inte en artighetsfras.\n\nSaknas sådana rader är blommor välkomna.\n\n## När du skickar\n\nSå snart dödsfallet blivit känt, eller veckorna efter begravningen. Båda fungerar.\n\nUndvik begravningsdagen. Då är familjen på ceremonin och blommorna står utanför dörren.\n\nMånga skickar med flit några veckor efteråt, när de första dagarnas rusning har lagt sig och det blivit tyst. Det är ofta då det märks mest.\n\n## Vad som passar hem till någon\n\nEn bukett som går att sätta i vas utan arbete. Sorgen tar tillräckligt med kraft utan att någon ska stå och kvista stjälkar.\n\nVita och ljusa toner är det vanligaste, men dova färger fungerar lika bra. Undvik starkt doftande sorter, som kan bli tunga i en liten lägenhet.\n\nEn krukväxt är ett alternativ som håller längre än en bukett, och som inte kräver att någon byter vatten varannan dag.\n\n## Minnesgåva i stället\n\nEn gåva till en förening eller ett forskningsfond som stod den avlidne nära räknas som en fullvärdig kondoleans. Många organisationer skickar ett minnesblad till familjen med givarens namn.\n\nDet är särskilt lämpligt när familjen bett om det, när du inte känner dem väl nog för att veta vad de vill ha hem, eller när det redan står blommor i varje rum.\n\n## Läs vidare\n\nOm du vill veta [vad ordet kondoleans betyder](/guider/kondoleans), vem man kondolerar och hur sent det går att göra finns en egen guide om det. Ska blommorna till ceremonin i stället för hem till familjen gäller [begravningsblommor](/tillfalle/begravning).",
       "flowersRecommended": [
         "Vita rosor",
         "Prärieklocka",
@@ -151,6 +163,80 @@
         ]
       },
       "productNoun": "kondoleansblommor"
+    },
+    {
+      "slug": "jul",
+      "name": "Jul",
+      "etiquetteMd": "## Vilka blommor räknas som julblommor\n\nFem växter bär den svenska julen: julstjärna, amaryllis, hyacint, julros och tulpaner. Till dem kommer julkaktus, cyklamen och azalea, som säljs i samma hylla utan att ha lika hård koppling till högtiden.\n\nJulstjärnans röda blad är inte blommor. Det är högblad, alltså färgade blad runt de små gulgröna blommorna i mitten. Det förklarar varför den ser ut att blomma i veckor: bladen sitter kvar långt efter att blomningen är över.\n\nAmaryllis säljs antingen som lök att driva själv eller som avskuren stjälk. Löken tar sex till åtta veckor på sig, så en lök köpt i december blommar i februari. Ska den blomma till julafton behöver den planteras i oktober.\n\n## Hur länge de håller\n\nEn krukväxt håller december ut. En bukett håller en dryg vecka i ett rum som är uppvärmt till julstandard.\n\nJulstjärnan är den känsligaste av dem. Den tar skada av kyla redan runt tolv grader, vilket är varför butiken slår papper om den innan du bär ut den. Den tål inte heller stående vatten. Nästan alla julstjärnor som tappar bladen har fått för mycket vatten, inte för lite.\n\nJulrosen vill ha svalt. I ett vardagsrum med golvvärme blommar den över på några dagar. Den hör egentligen hemma på en balkong eller vid en sval entré.\n\n## Julgrupp, bukett eller krukväxt\n\nEn julgrupp är flera plantor satta i samma kruka eller fat, oftast med mossa, kottar och ett band. Den är en plantering och ingen bukett, och den håller därför betydligt längre.\n\nVälj utifrån vem som får den. Till någon som har fullt upp är krukväxten eller julgruppen vänligare: den kräver inget vattenbyte och ingen vas. Till ett julbord är buketten eller den avskurna amaryllisen rätt, eftersom den är låg nog att prata över.\n\n## Katter och julblommor\n\nDet här är den fråga som ställs mest och besvaras sämst.\n\nLiljor är den allvarliga. Alla delar av växten, inklusive pollen och vattnet i vasen, kan ge akut njurskada hos katt. Har du katt hemma ska buketten inte innehålla lilja alls.\n\nAmaryllis är giftig, och löken är den giftigaste delen. Hyacint och andra lökväxter irriterar på samma sätt. Mistelns bär är giftiga. Julrosen likaså.\n\nJulstjärnan har sämre rykte än den förtjänar. Den vita mjölksaften irriterar mun och mage, men den är inte den dödliga växt den ofta beskrivs som. Julkaktus står med på de vanliga listorna över växter som inte är giftiga för katt.\n\nVi är ingen veterinärmedicinsk källa. Har katten ätit av en växt är det veterinären som avgör vad som ska göras, och det är bråttom om det gäller lilja.\n\n## Leverans över helgerna\n\nJulen är den tid på året då leveransfönstret är smalast, och det är inte blombudens fel utan kalenderns.\n\nJulafton infaller torsdag 24 december 2026. Juldagen och annandag jul är röda dagar. Det ger tre dagar i rad utan ordinarie utkörning, och den fjärde dagen är en söndag.\n\nSista ordinarie vardag före julafton är därför onsdag 23 december. Vissa tjänster kör ut på julafton mot särskild bokning och ofta mot en avgift. Vi har inte kontrollerat vilka som gör det i år, och skriver hellre ut det än gissar.\n\nNyårsafton är också en torsdag, med nyårsdagen som röd dag fredagen efter.\n\n## Julstjärnan som inte är en blomma\n\nSöker du på julstjärna hamnar du oftast bland lampor. Det svenska ordet bär två helt olika saker: pappers- eller metallstjärnan i fönstret, och krukväxten Euphorbia pulcherrima.\n\nDen här sidan handlar om växten. Ska du köpa stjärnan till fönstret är det inte blombud du behöver.",
+      "flowersRecommended": [
+        "Julstjärna, om mottagaren har ett svalt och ljust fönster",
+        "Amaryllis som avskuren stjälk, låg nog att prata över",
+        "Hyacint i kruka, håller hela december",
+        "Julgrupp, en plantering som varar längre än en bukett",
+        "Julkaktus, som står med bland växterna som inte är giftiga för katt",
+        "Tulpaner, om du vill ha något som inte skriker jul"
+      ],
+      "flowersAvoid": [
+        "Liljor om det finns katt i hemmet",
+        "Mistel med bär där små barn eller djur rör sig",
+        "Julros i ett varmt rum, den blommar över på några dagar",
+        "Julstjärna som burits hem oskyddad i kyla"
+      ],
+      "cardTexts": [
+        "God jul.",
+        "God jul och gott nytt år.",
+        "Tänker på dig i jul.",
+        "En bit jul, hemskickad.",
+        "God jul. Vi ses snart.",
+        "Tack för i år."
+      ],
+      "seasonDate": "2026-12-24",
+      "publishBefore": "2026-10-15",
+      "serviceIds": [
+        "interflora",
+        "euroflorist",
+        "cramers"
+      ],
+      "productNoun": "julblommor",
+      "productQuery": null,
+      "searchVolume": 1200,
+      "kd": 0,
+      "phase": 2,
+      "page": {
+        "status": "published",
+        "title": "Julblommor – vilka de är och när du behöver beställa",
+        "h1": "Julblommor: vad som hör till julen och när du beställer",
+        "metaDescription": "Vilka blommor räknas som julblommor, hur länge de håller, vilka som är giftiga för katt och sista beställningsdagen före julafton 2026.",
+        "microAnswer": "Julblommor är framför allt julstjärna, amaryllis, hyacint, julros och tulpaner, oftast sålda som krukväxt eller julgrupp. Krukväxterna håller hela december, en bukett en dryg vecka. Julafton 2026 är en torsdag, och juldagen och annandagen är röda dagar. Sista ordinarie vardagen för en leverans före julafton är därför onsdag 23 december.",
+        "faq": [
+          {
+            "question": "Vilka blommor räknas som julblommor?",
+            "answer": "Julstjärna, amaryllis, hyacint, julros och tulpaner är de fem som bär den svenska julen. Julkaktus, cyklamen och azalea säljs i samma hylla men har svagare koppling till högtiden. Julstjärnans röda blad är högblad, inte blomblad."
+          },
+          {
+            "question": "Vilka julblommor är giftiga för katter?",
+            "answer": "Liljor är den allvarliga: alla delar, även pollen och vasvattnet, kan ge akut njurskada hos katt. Amaryllis, hyacint, mistelbär och julros är också giftiga. Julstjärnan irriterar mun och mage men är inte den dödliga växt den ofta beskrivs som. Julkaktus står bland de växter som inte är giftiga för katt. Har katten ätit av en växt är det veterinären som avgör vad som ska göras."
+          },
+          {
+            "question": "Vilken julblomma kan man ha i kruka?",
+            "answer": "Julstjärna, hyacint, amaryllislök, julkaktus och cyklamen säljs alla som krukväxt och håller december ut. En julgrupp är flera sådana plantor satta i samma kruka eller fat. Krukväxten är vänligare än buketten till någon som har fullt upp, eftersom den varken kräver vas eller vattenbyte."
+          },
+          {
+            "question": "Hur länge håller en julstjärna?",
+            "answer": "Hela december om den står ljust, svalt och torrt mellan vattningarna. Den tar skada av kyla redan runt tolv grader, vilket är varför butiken slår papper om den. Nästan alla julstjärnor som tappar bladen har fått för mycket vatten, inte för lite."
+          },
+          {
+            "question": "När är sista beställningsdagen för blommor före jul?",
+            "answer": "Sista ordinarie vardag före julafton 2026 är onsdag 23 december. Julafton är en torsdag, och juldagen och annandagen är röda dagar utan ordinarie utkörning. Vissa tjänster levererar på julafton mot särskild bokning och avgift. Vi har inte kontrollerat vilka som gör det i år."
+          },
+          {
+            "question": "Vad är en julgrupp?",
+            "answer": "Flera plantor satta i samma kruka eller fat, oftast med mossa, kottar och ett band. Det är en plantering och inte en bukett, och den håller därför betydligt längre än avskurna blommor."
+          }
+        ],
+        "pricesVerifiedAt": "2026-02-14",
+        "updatedAt": "2026-09-09"
+      }
     },
     {
       "slug": "alla-hjartans-dag",

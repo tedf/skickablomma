@@ -95,11 +95,11 @@
       "kd": 1,
       "phase": 1,
       "page": {
-        "status": "draft",
+        "status": "published",
         "title": "Blombud Linköping – jämför pris och leveranstid",
         "h1": "Blombud Linköping – skicka blommor samma dag",
         "metaDescription": "Jämför blombud i Linköping. Se vilka tjänster som levererar samma dag, vad budet kostar och vilka florister som finns i staden.",
-        "microAnswer": "I Linköping levererar de rikstäckande blombuden till hela tätorten, inklusive Ryd, Lambohov, Tannefors och Universitetssjukhuset. Beställer du före tjänstens stopptid på en vardag går det oftast att få fram samma dag. Nedan jämför vi tjänsterna och listar florister i staden, så att du kan välja mellan ett nätverk och en butik på plats.",
+        "microAnswer": "I Linköping levererar de rikstäckande blombuden till hela tätorten, inklusive Ryd, Lambohov, Tannefors och Universitetssjukhuset. Beställer du före tjänstens stopptid på en vardag går det oftast att få fram samma dag. Nedan jämför vi vad tjänsterna tar i budavgift, vilka som kör ut samma dag och vad en bukett kostar totalt hit.",
         "faq": [
           {
             "question": "Kan jag skicka blommor samma dag i Linköping?",
@@ -183,11 +183,11 @@
       "kd": null,
       "phase": 1,
       "page": {
-        "status": "draft",
+        "status": "published",
         "title": "Blombud Jönköping – jämför pris och leveranstid",
         "h1": "Blombud Jönköping – skicka blommor samma dag",
         "metaDescription": "Jämför blombud i Jönköping. Leveranstider, budavgifter och lokala florister för Jönköping, Huskvarna och Gränna.",
-        "microAnswer": "I Jönköping når blombuden Jönköping, Huskvarna, Råslätt och Bankeryd, och levererar även till Länssjukhuset Ryhov. Beställer du före tjänstens stopptid på en vardag går det oftast samma dag, medan Gränna kan ha tidigare stopptid. Nedan jämför vi tjänsterna och listar florister i staden.",
+        "microAnswer": "I Jönköping når blombuden Jönköping, Huskvarna, Råslätt och Bankeryd, och levererar även till Länssjukhuset Ryhov. Beställer du före tjänstens stopptid på en vardag går det oftast att få fram samma dag. Nedan jämför vi vad tjänsterna tar i budavgift, vilka som kör ut samma dag och vad en bukett kostar totalt hit.",
         "faq": [
           {
             "question": "Ingår Huskvarna i leveransområdet?",

@@ -71,13 +71,13 @@ export default async function OccasionPage({ params }: OccasionPageProps) {
   const query = occasion.productQuery
   let products: Product[] = []
   if (query?.mainCategory) {
-    products = await getProductsByCategory(query.mainCategory as MainCategory, 24)
+    products = await getProductsByCategory(query.mainCategory as MainCategory, 200)
   } else if (query?.subCategories.length) {
     for (const sub of query.subCategories) {
-      if (products.length >= 24) break
-      const found = await getProductsBySubCategory(sub as SubCategory, 24)
+      if (products.length >= 200) break
+      const found = await getProductsBySubCategory(sub as SubCategory, 200)
       for (const product of found) {
-        if (products.length >= 24) break
+        if (products.length >= 200) break
         if (!products.some((existing) => existing.id === product.id)) {
           products.push(product)
         }

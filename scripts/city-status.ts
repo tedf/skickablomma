@@ -3,36 +3,14 @@
  * ====================
  * Kör: npm run city:status
  *
- * En stadssida är den dyra delen av sajten. Den publiceras inte förrän tre
- * florister är kontrollerade mot butiken, och det kräver att någon ringer.
- * Det här skriptet talar om exakt vad som saknas per stad och skriver ut den
- * post som ska klistras in när samtalet är gjort, så att steget blir
- * mekaniskt i stället för att kräva att man minns schemat.
+ * Stadssidan svarar på en lokal fråga och slussar vidare till den tjänst som
+ * kan leverera. Det som skiljer en riktig stadssida från en mallad är att den
+ * namnger platser som faktiskt finns på orten. Skriptet visar vad varje stad
+ * har, och listar de floristkandidater som väntar på att kontrolleras.
  */
 
 import { getAllCities, verifiedFlorists } from '../src/lib/comparison'
-import { MIN_FLORISTS_PER_CITY, validateCity } from '../src/lib/publishing'
-
-const IDAG = new Date().toISOString().slice(0, 10)
-
-function mall(namn: string): string {
-  return JSON.stringify(
-    {
-      name: namn,
-      area: 'Stadsdel eller gata',
-      phone: '013-12 34 56',
-      url: 'https://example.se/',
-      hours: 'Mån–fre 10–18, lör 10–15',
-      source: `Telefon ${IDAG}`,
-      verifiedAt: IDAG,
-    },
-    null,
-    2
-  )
-    .split('\n')
-    .map((rad) => '      ' + rad)
-    .join('\n')
-}
+import { MIN_DELIVERY_AREAS_PER_CITY, validateCity } from '../src/lib/publishing'
 
 const cities = getAllCities()
 let klara = 0
@@ -43,32 +21,30 @@ for (const city of cities) {
   const verifierade = verifiedFlorists(city)
   const kandidater = city.florists.filter((f) => f.verifiedAt === null)
   const hinder = validateCity(city)
-  const kvar = Math.max(0, MIN_FLORISTS_PER_CITY - verifierade.length)
 
   const status = hinder.length === 0 ? 'KLAR ATT PUBLICERA' : `${hinder.length} hinder`
   console.log(`\n${city.name}  (${city.page.status})  ${status}`)
-  console.log(`  Verifierade florister: ${verifierade.length} av ${MIN_FLORISTS_PER_CITY}`)
+  console.log(
+    `  Leveransområden: ${city.deliveryAreas.length} av ${MIN_DELIVERY_AREAS_PER_CITY}` +
+      `  (${city.deliveryAreas.join(', ')})`
+  )
+  console.log(`  Sjukhus: ${city.hospitals.map((h) => h.name).join(', ') || '–'}`)
+  console.log(`  Verifierade florister: ${verifierade.length}  (frivilligt)`)
 
   if (kandidater.length > 0) {
-    console.log(`  Kandidater att ringa (${kandidater.length}):`)
+    console.log(`  Kandidater, ej kontrollerade (${kandidater.length}):`)
     for (const k of kandidater) {
       console.log(`     ${k.name}${k.url ? `  ${k.url}` : ''}`)
     }
+    console.log(
+      '     De renderas inte. Sätt verifiedAt när uppgifterna kontrollerats\n' +
+        '     mot butiken, så börjar de synas.'
+    )
   }
 
   if (hinder.length > 0) {
     console.log('  Hinder:')
     for (const h of hinder) console.log(`     ${h.field}: ${h.message}`)
-  }
-
-  if (kvar > 0) {
-    console.log(`\n  Ring ${kvar} till och lägg in så här i data/cities.json,`)
-    console.log(`  under "${city.slug}" -> florists:\n`)
-    console.log(mall(kandidater[0]?.name ?? 'Butikens namn'))
-    console.log(
-      `\n  Fyll bara i det butiken faktiskt sagt. Vet du inte öppettiderna,\n` +
-        `  låt hours vara null. En halv uppgift är sämre än ingen.`
-    )
   }
 
   if (hinder.length === 0) klara += 1

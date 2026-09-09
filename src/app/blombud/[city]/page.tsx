@@ -56,7 +56,13 @@ export default async function CityPage({ params }: CityPageProps) {
     .filter((row): row is ComparisonRow => row !== null)
 
   const neighbours = getCityNeighbours(city)
-  const products = await getProductsByCategory('buketter' as MainCategory, 24)
+  /*
+    Hela kategorin hämtas, inte de 24 första. Feeden ligger sorterad med
+    Fakeflowers och lökkatalogen först, så ett litet urval silades ned till en
+    enda bukett innan ProductEvidence ens fick se det. Filtreringen sker efter
+    hämtningen, alltså måste hämtningen vara bred.
+  */
+  const products = await getProductsByCategory('buketter' as MainCategory, 200)
 
   // ItemList över floristerna — bara när det finns verifierade poster att lista.
   const floristSchema =
@@ -125,12 +131,20 @@ export default async function CityPage({ params }: CityPageProps) {
         />
       </div>
 
-      <section className="mt-12">
-        <h2 className="mb-4 font-display text-2xl text-ink">
-          Florister i {city.name} som levererar
-        </h2>
-        <FloristList florists={florists} cityName={city.name} />
-      </section>
+      {/*
+        Floristlistan är ett tillägg, inte sidans förutsättning. De rikstäckande
+        buden har anslutna florister i varje stad, så sidan fyller sin funktion
+        utan listan. Rubriken visas därför bara när det finns kontrollerade
+        butiker att sätta under den.
+      */}
+      {florists.length > 0 && (
+        <section className="mt-12">
+          <h2 className="mb-4 font-display text-2xl text-ink">
+            Florister i {city.name} som levererar
+          </h2>
+          <FloristList florists={florists} cityName={city.name} />
+        </section>
+      )}
 
       {city.deliveryAreas.length > 0 && (
         <section className="mt-12">
