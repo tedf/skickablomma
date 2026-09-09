@@ -204,6 +204,23 @@ export const occasionSchema = z.object({
   publishBefore: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).nullable(),
   serviceIds: z.array(z.string()).default([]),
 
+  /**
+   * Vilka produkter ur partnerfeeden som hör till tillfället.
+   *
+   * Att visa produkter gör oss inte till butik. Prisjakt och PriceRunner
+   * visar produkter och ingen tar dem för handlare. Det som avgör är vem som
+   * äger transaktionen, och det gör vi aldrig. Dessutom är SERP:en för de
+   * här sökorden full av shoppingkaruseller: Google säger att den som söker
+   * vill se buketter, inte bara läsa om dem.
+   */
+  productQuery: z
+    .object({
+      mainCategory: z.string().nullable(),
+      subCategories: z.array(z.string()).default([]),
+    })
+    .nullable()
+    .default(null),
+
   searchVolume: z.number().int().nonnegative().nullable(),
   kd: z.number().int().min(0).max(100).nullable(),
   phase: z.number().int().min(0).max(5),

@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
   const partner = await import('@/data/partners').then(m => m.PARTNERS[product.partnerId as keyof typeof m.PARTNERS])
   const partnerDisplayName = partner?.displayName || product.brand
   const totalPrice = product.price + (product.shipping || 0)
-  const desc = `${product.description.slice(0, 140)} – Köp hos ${partnerDisplayName} från ${product.price} kr (${totalPrice} kr inkl. frakt).`
+  const desc = `${product.description.slice(0, 140)} Finns hos ${partnerDisplayName} från ${product.price} kr, ${totalPrice} kr inklusive frakt.`
 
   return {
     title: product.name,
@@ -204,7 +204,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
                 rel="noopener noreferrer sponsored"
                 className="cta-button block w-full text-center"
               >
-                Köp hos {partnerName}
+                Till {partnerName}
               </a>
               <p className="mt-3 text-center text-xs text-gray-500">
                 Du kommer till vår partner {partnerName}

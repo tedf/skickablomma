@@ -108,7 +108,7 @@
   }
 
   .product-card-badge-express {
-    @apply bg-accent text-white;
+    @apply bg-brand text-brand-foreground;
   }
 
   /* Bildindikator för källtyp */

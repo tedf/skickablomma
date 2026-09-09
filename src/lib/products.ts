@@ -34,6 +34,15 @@ try {
   PRODUCTS = []
 }
 
+/**
+ * Datum då partnerfeeden hämtades, som YYYY-MM-DD.
+ * Varje pris vi visar ur feeden ska bära det här datumet.
+ */
+export function getFeedDate(): string | null {
+  const raw = (productsData as { generatedAt?: string }).generatedAt
+  return raw ? raw.slice(0, 10) : null
+}
+
 // =============================================================================
 // FALLBACK MOCK DATA (används endast om JSON inte finns)
 // =============================================================================

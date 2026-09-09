@@ -110,7 +110,7 @@
 
   <h1>Varumärkesriktlinjer</h1>
   <p class="lede">
-    Version 1.1 · 2026-09-09. Bygger vidare på siteplanens §2, som redan satte
+    Version 1.2 · 2026-09-09. Bygger vidare på siteplanens §2, som redan satte
     kategori, löfte och tonalitet. Det här dokumentet lägger till det som saknades:
     den visuella identiteten och reglerna för hur den används.
   </p>
@@ -298,24 +298,38 @@
   <!-- ============ BILD ============ -->
   <section>
     <p class="kicker">Bild</p>
-    <h2>Tecknat, inte fotograferat</h2>
+    <h2>Två sorters bild, två regelverk</h2>
     <p>
-      En bild får aldrig påstå något. En bukett fotograferad i studio är en produktbild,
-      alltså ett påstående om vad du får, och den hör inte hemma på en sajt som inte
-      säljer buketter.
+      Sajten har två sorters bild, och de lyder under olika regler.
     </p>
     <p>
-      Men den regeln blev i praktiken &rdquo;ingen bild alls&rdquo;, och då försvann ämnet.
-      Lösningen är linjetecknade botaniska figurer: en stjälk, en kvist. De påstår
-      ingenting om ett sortiment, de säger bara vad sajten handlar om.
+      <strong>Botaniska figurer</strong> är linjetecknade: en stjälk, en kvist. De påstår
+      ingenting om ett sortiment, de säger bara vad sajten handlar om. Regeln
+      &rdquo;ingen produktbild som bevis&rdquo; blev först &rdquo;ingen bild alls&rdquo;,
+      och då försvann ämnet ur identiteten.
+    </p>
+    <p>
+      <strong>Produktbilder</strong> får visas. Det gör oss inte till butik: Prisjakt och
+      PriceRunner visar produkter och ingen tar dem för handlare. Det som avgör är vem som
+      äger transaktionen, och det gör vi aldrig. Dessutom är SERP:en för de här sökorden
+      full av shoppingkaruseller, alltså vill den som söker se buketter.
+    </p>
+    <p>
+      Villkoren är hårda. En produktbild måste komma från tjänstens eget flöde, bära
+      tjänstens namn, ha ett pris med hämtdatum, och faktiskt finnas. En platshållare
+      märkt &rdquo;Produktbild&rdquo; är etiketten som ljuger, och sådana produkter
+      sorteras bort i stället för att visas.
     </p>
     <ul>
-      <li>Tunn linje, låg kontrast, alltid i bladtonen.</li>
-      <li>Som avdelare mellan större avsnitt, aldrig som huvudmotiv.</li>
-      <li>Högst ett par gånger per sida. Oftare blir det tapet.</li>
-      <li>Aldrig som ikon inuti en rubrik. Figurerna är höga och smala och blir
-        oläsliga under 30 px.</li>
-      <li>Aldrig fotografi av en produkt. Aldrig bild hämtad från en tjänsts sajt.</li>
+      <li>Figurerna: tunn linje, låg kontrast, alltid i bladtonen.</li>
+      <li>Figurerna som avdelare mellan större avsnitt, aldrig som huvudmotiv, högst ett
+        par gånger per sida.</li>
+      <li>Figurerna aldrig som ikon i en rubrik. De är höga och smala och blir oläsliga
+        under 30 px.</li>
+      <li>Produktbilder bara ur tjänstens eget flöde, aldrig skrapade från deras sajt.</li>
+      <li>Produkt utan fungerande bild visas inte alls.</li>
+      <li>Pris intill en produktbild bär alltid sitt hämtdatum, och en varning när flödet
+        är äldre än 60 dagar.</li>
     </ul>
     <p class="muted">
       Figurerna bor i <code>src/components/brand/Botanical.tsx</code>.
@@ -391,7 +405,7 @@
         </tr>
         <tr>
           <td class="k">Affiliate-länk</td>
-          <td><code>rel="sponsored nofollow"</code>. Knapptext &rdquo;Till [Tjänst]&rdquo;, aldrig &rdquo;Köp nu&rdquo;.</td>
+          <td><code>rel="sponsored nofollow"</code>. Knapptext &rdquo;Till [Tjänst]&rdquo;, aldrig &rdquo;Köp&rdquo; eller &rdquo;Köp nu&rdquo;: vi tar inte emot beställningen.</td>
         </tr>
         <tr>
           <td class="k">Mikrosvar</td>
@@ -403,7 +417,7 @@
         </tr>
         <tr>
           <td class="k">Bilder</td>
-          <td>Linjetecknade botaniska figurer som avdelare. Aldrig produktfoto, aldrig bild från en tjänsts sajt. En bild får illustrera, aldrig påstå.</td>
+          <td>Botaniska figurer som avdelare. Produktbilder ur tjänsternas flöden, med namn, pris och hämtdatum. Produkt utan fungerande bild visas inte.</td>
         </tr>
         <tr>
           <td class="k">Färgens jobb</td>
@@ -438,7 +452,7 @@
   </section>
 
   <footer>
-    Skickablomma · varumärkesriktlinjer 1.1 · 2026-09-09<br>
+    Skickablomma · varumärkesriktlinjer 1.2 · 2026-09-09<br>
     Ändringar i identiteten görs i koden först och dokumenteras här efteråt,
     aldrig tvärtom.
   </footer>

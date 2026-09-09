@@ -43,7 +43,9 @@ export function ProductCard({
   const [imageError, setImageError] = useState(false)
 
   const partner = PARTNERS[product.partnerId]
-  const hasDiscount = product.discountPercent && product.discountPercent > 0
+  // (product.discountPercent && ...) renderar literalt "0" när rabatten är
+  // exakt 0, vilket den är på tio produkter i feeden. Jämför mot tal i stället.
+  const hasDiscount = (product.discountPercent ?? 0) > 0
 
   const handleClick = () => {
     trackProductClick({
@@ -152,7 +154,7 @@ export function ProductCard({
         {product.sameDayDelivery && (
           <div className="flex items-center gap-1 rounded-md bg-secondary/10 px-2 py-1 text-xs font-medium text-secondary-700">
             <Truck className="h-3.5 w-3.5 flex-shrink-0" />
-            <span>Leverans idag – beställ före {partner.deliveryInfo.sameDayCutoff}</span>
+            <span>Leverans idag, beställ före {partner.deliveryInfo.sameDayCutoff}</span>
           </div>
         )}
 
@@ -161,10 +163,10 @@ export function ProductCard({
           href={product.trackingUrl}
           target="_blank"
           rel="noopener noreferrer sponsored"
-          className="cta-button cta-button-gradient w-full py-3 text-sm font-bold"
+          className="flex w-full items-center justify-center gap-2 rounded-lg bg-brand py-3 text-sm font-medium text-brand-foreground transition-colors hover:bg-brand-700"
           onClick={handleClick}
         >
-          Köp hos {partner.displayName}
+          Till {partner.displayName}
           <ExternalLink className="ml-2 h-4 w-4 flex-shrink-0" />
         </a>
       </div>

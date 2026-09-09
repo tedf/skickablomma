@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import type { MainCategory, Product, SubCategory } from '@/types'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import {
@@ -15,6 +16,8 @@ import { ComparisonTable, type ComparisonRow } from '@/components/comparison/Com
 import { MicroAnswer } from '@/components/comparison/MicroAnswer'
 import { DraftNotice } from '@/components/comparison/DraftNotice'
 import { BotanicalRule } from '@/components/brand/Botanical'
+import { ProductEvidence } from '@/components/comparison/ProductEvidence'
+import { getFeedDate, getProductsByCategory, getProductsBySubCategory } from '@/lib/products'
 
 interface OccasionPageProps {
   params: { occasion: string }
@@ -37,7 +40,7 @@ export async function generateMetadata({ params }: OccasionPageProps): Promise<M
   }
 }
 
-export default function OccasionPage({ params }: OccasionPageProps) {
+export default async function OccasionPage({ params }: OccasionPageProps) {
   const occasion = getOccasion(params.occasion)
   if (!occasion) notFound()
 
@@ -62,6 +65,25 @@ export default function OccasionPage({ params }: OccasionPageProps) {
   const siblings = getRenderableOccasions()
     .filter((other) => other.slug !== occasion.slug)
     .slice(0, 3)
+
+  // Produkter som underlag. Google visar shoppingkaruseller på de här
+  // sökorden, alltså vill den som söker se buketter och inte bara läsa om dem.
+  const query = occasion.productQuery
+  let products: Product[] = []
+  if (query?.mainCategory) {
+    products = await getProductsByCategory(query.mainCategory as MainCategory, 24)
+  } else if (query?.subCategories.length) {
+    for (const sub of query.subCategories) {
+      if (products.length >= 24) break
+      const found = await getProductsBySubCategory(sub as SubCategory, 24)
+      for (const product of found) {
+        if (products.length >= 24) break
+        if (!products.some((existing) => existing.id === product.id)) {
+          products.push(product)
+        }
+      }
+    }
+  }
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -163,6 +185,13 @@ export default function OccasionPage({ params }: OccasionPageProps) {
           </ul>
         </section>
       )}
+
+      <ProductEvidence
+        products={products}
+        feedDate={getFeedDate()}
+        heading={`Blommor till ${occasion.name.toLowerCase()} hos tjänsterna`}
+        categoryHref={query?.mainCategory ? `/${query.mainCategory}` : undefined}
+      />
 
       {occasion.page.faq.length > 0 && (
         <FAQSection

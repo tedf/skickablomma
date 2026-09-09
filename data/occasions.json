@@ -68,6 +68,10 @@
         ],
         "pricesVerifiedAt": "2026-02-14",
         "updatedAt": "2026-09-09"
+      },
+      "productQuery": {
+        "mainCategory": "begravning",
+        "subCategories": []
       }
     },
     {
@@ -132,6 +136,10 @@
         ],
         "pricesVerifiedAt": "2026-02-14",
         "updatedAt": "2026-09-09"
+      },
+      "productQuery": {
+        "mainCategory": "begravning",
+        "subCategories": []
       }
     },
     {
@@ -191,6 +199,14 @@
         ],
         "pricesVerifiedAt": "2026-02-14",
         "updatedAt": "2026-09-09"
+      },
+      "productQuery": {
+        "mainCategory": null,
+        "subCategories": [
+          "karlek-romantik",
+          "roda-blommor",
+          "rosor"
+        ]
       }
     },
     {
@@ -249,6 +265,14 @@
         ],
         "pricesVerifiedAt": "2026-02-14",
         "updatedAt": "2026-09-09"
+      },
+      "productQuery": {
+        "mainCategory": null,
+        "subCategories": [
+          "mors-dag",
+          "tackblommor",
+          "tulpaner"
+        ]
       }
     }
   ]
