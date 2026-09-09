@@ -107,6 +107,26 @@ const nextConfig = {
         destination: '/om/sa-tjanar-vi-pengar',
         permanent: true,
       },
+
+      /*
+        De gamla /guide/-sidorna konkurrerade med tillfällessidorna om samma
+        sökord. De skrevs före varumärket och innan publiceringsspärren fanns,
+        och de passerade den aldrig: de ligger som markdown i content/guides/
+        och kontrolleras varken på mikrosvar, platshållare eller spärrade ord.
+
+        Innehållet i dem höll inte heller. Julguiden påstod att man skulle
+        beställa senast 20–22 december medan tillfällessidan räknar ut att
+        sista ordinarie vardag är onsdag 23 december, och begravningsguiden
+        renderade en osatt platshållare rakt ut på en publicerad sida.
+
+        Varje sida som har en riktig ersättare pekas om dit. Filerna ligger
+        kvar i git, så inget innehåll är förlorat.
+      */
+      { source: '/guide/julblommor-guide', destination: '/tillfalle/jul', permanent: true },
+      { source: '/guide/begravningsblommor-guide', destination: '/tillfalle/begravning', permanent: true },
+      { source: '/guide/alla-hjartans-dag-blommor', destination: '/tillfalle/alla-hjartans-dag', permanent: true },
+      { source: '/guide/mors-dag-blommor', destination: '/tillfalle/mors-dag', permanent: true },
+      { source: '/guide/student-blommor', destination: '/tillfalle/student', permanent: true },
     ]
   },
 

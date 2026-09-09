@@ -6,11 +6,11 @@
       "slug": "/",
       "bodyMd": "## Så fungerar sajten\n\nVi säljer inga blommor. Vi jämför dem som gör det, och tjänar pengar när du klickar vidare och beställer. Rangordningen sätts efter pris och leveranstid. Provisionen påverkar den inte. En jämförelse som gick att köpa vore värdelös för dig, och därmed på sikt för oss.\n\n## Vad du hittar här\n\n**Blombud stad för stad.** Vilka tjänster som levererar var, när stopptiden går, vad budet kostar och vilka lokala florister som finns. Ingen mallad text: en stad publiceras först när vi kontrollerat floristerna på plats.\n\n**Blommor utomlands.** Leveranstider och priser per land. Också det praktiska: tidsskillnad, helgdagar och om det tillkommer tull.\n\n**Tillfällen.** Vad som passar och vad du skriver på kortet, från begravning till födelsedag.\n\n**Prisjämförelser.** Totalpris, alltså bukett plus bud, för de största tjänsterna. Med datum för när vi senast kontrollerade.\n\n## Om priserna\n\nVarje tabell visar när priserna kontrollerades. Blir en uppgift gammal syns det på datumet. Hittar du ett fel, hör av dig.",
       "page": {
-        "status": "draft",
+        "status": "published",
         "title": "Jämför blombud i Sverige",
         "h1": "Jämför blombud i Sverige",
         "metaDescription": "Jämför pris, leveranstid och täckning mellan Sveriges blombud. Stad för stad, land för land. Vi säljer inget själva.",
-        "microAnswer": "Skicka blommor i Sverige kostar normalt [149–399] kr för buketten plus [0–99] kr i budavgift. Interflora och Euroflorist levererar samma dag i de flesta städer om du beställer före [14:00] respektive [12:30] på vardagar. Här jämför vi priser, leveranstider och sortiment hos de största blombuden, stad för stad, så att du kan välja rätt utan att gissa.",
+        "microAnswer": "Vi jämför vad det kostar att skicka blommor i Sverige: buketten, budavgiften och totalen, tjänst för tjänst. Interflora tar 239 kronor för sin billigaste bukett plus 99 kronor i bud, kontrollerat i februari 2026. Övriga tjänsters från-priser har vi inte kontrollerat, och då skriver vi tankstreck i stället för en gissning. Välj stad, land eller tillfälle nedan.",
         "faq": [
           {
             "question": "Säljer ni blommor själva?",
@@ -21,7 +21,7 @@
             "answer": "Vi får provision från tjänsten när någon beställer via våra länkar. Det påverkar inte i vilken ordning tjänsterna rankas."
           }
         ],
-        "pricesVerifiedAt": null,
+        "pricesVerifiedAt": "2026-02-14",
         "updatedAt": "2026-09-09"
       }
     },
@@ -29,11 +29,11 @@
       "slug": "/blombud",
       "bodyMd": "## Skillnaden mellan blombud och blomsterbutik\n\nEtt blombud är en förmedlingstjänst. Du beställer på nätet, en florist nära mottagaren binder buketten och kör ut den. Du handlar alltså inte av en butik utan av ett nätverk som fördelar din beställning.\n\nDet förklarar två saker som ofta förvånar: att priset inte beror på avståndet, och att stopptiden är tidig. Floristen behöver tid att binda och köra.\n\n## Vad budavgiften täcker\n\nAvgiften betalar för utkörningen och har ingenting med bukettens pris att göra. Den är densamma vare sig buketten kostar tvåhundra eller åttahundra kronor. På en billig bukett blir avgiften därför en stor andel av totalen, och det är skälet till att vi jämför totalpriset.\n\n## Samma dag\n\nSamma dag-leverans kräver nästan alltid att beställningen ligger inne före lunch på en vardag. Lördagar har tidigare stopptid, och på söndagar levererar de flesta inte alls.\n\n## Så väljer vi städer\n\nEn stad publiceras här när vi kontrollerat minst tre florister på plats: namn, område, öppettider. Det tar tid, och det är avsiktligt. En stadssida byggd på gissningar hjälper ingen.",
       "page": {
-        "status": "draft",
+        "status": "published",
         "title": "Blombud – jämför tjänster och städer",
         "h1": "Blombud",
         "metaDescription": "Vad är ett blombud, vad kostar det och vilka tjänster levererar var? Jämförelse plus blombud i svenska städer.",
-        "microAnswer": "Blombud är en tjänst där en lokal florist binder buketten och levererar den till mottagaren samma dag eller nästa dag. I Sverige finns tre rikstäckande nätverk och ett antal regionala aktörer. Budavgiften ligger normalt på [49–99] kr. Nedan hittar du blombud i svenska städer med lokala florister, sista beställningstid och pris.",
+        "microAnswer": "Blombud betyder att en florist binder buketten och kör ut den, samma dag eller nästa. I Sverige finns tre rikstäckande nätverk och ett antal regionala aktörer. Budavgiften är det du betalar för utkörningen, och den är densamma oavsett vad buketten kostar. Nedan hittar du städerna vi gått igenom, med leveransområden och sista beställningstid.",
         "faq": [
           {
             "question": "Vilket blombud är billigast?",
@@ -60,11 +60,11 @@
       "slug": "/utomlands",
       "bodyMd": "## Hur det går till\n\nBuketten skickas inte från Sverige. Din beställning går till ett floristnätverk som lämnar över den till en florist i mottagarens land, som binder och kör ut. Blommorna korsar alltså aldrig en gräns.\n\nDärför tillkommer ingen tull, inte ens till länder utanför EU. Leveranstiden styrs av den lokala floristens arbetsdag snarare än av avståndet från Sverige.\n\n## Det som faktiskt påverkar leveransen\n\n**Tidsskillnad.** En beställning som läggs på svensk eftermiddag kan hinna med samma arbetsdag i USA, men missa den i Finland.\n\n**Helgdagar.** De skiljer sig mellan länder, och i Tyskland även mellan delstater, så en röd dag flyttar fram leveransen.\n\n**Söndagar.** Många länders florister levererar inte alls på söndagar.\n\n## Vad du behöver ange\n\nFullständig adress i landets eget format, och mottagarens telefonnummer. Utländska florister ringer när adressen är otydlig, och utan nummer blir leveransen liggande.",
       "page": {
-        "status": "draft",
+        "status": "published",
         "title": "Skicka blommor utomlands – priser och leveranstider per land",
         "h1": "Skicka blommor utomlands",
-        "metaDescription": "Skicka blommor till utlandet från Sverige. Leveranstider, priser och praktiska regler land för land.",
-        "microAnswer": "Du kan skicka blommor till över 140 länder från Sverige via Interflora och Euroflorist, som samarbetar med lokala florister på plats. Leveranstiden är normalt 1–3 vardagar och priset [299–599] kr inklusive bud. Inom EU tillkommer ingen tull. Välj land nedan för leveranstider, priser och praktiska tips.",
+        "metaDescription": "Skicka blommor utomlands från Sverige. Leveranstid, tull, helgdagar och tidsskillnad land för land, och vad du behöver ange vid beställningen.",
+        "microAnswer": "Du kan skicka blommor till större delen av världen från Sverige. Buketten binds alltid av en florist i mottagarlandet, vilket är varför ingen tull tillkommer ens utanför EU: ingenting passerar en gräns. Leveranstiden är normalt en till tre vardagar. Priserna utomlands har vi inte kontrollerat än. Välj land nedan för helgdagar, tidsskillnad och det praktiska.",
         "faq": [
           {
             "question": "Tillkommer tull?",
@@ -106,11 +106,11 @@
       "slug": "/jamfor/billigt",
       "bodyMd": "## Var pengarna tar vägen\n\nEn billig blomsterleverans har två kostnader, och det är den andra som avgör. Buketten kan kosta hundrafemtio kronor, men budavgiften är densamma som på en bukett för åttahundra. På det billigaste alternativet kan avgiften utgöra en tredjedel av notan.\n\nJämför därför alltid totalen.\n\n## Tre sätt att sänka priset\n\n**Ring en lokal florist direkt.** Du slipper nätverkets förmedlingsavgift. Nackdelen är att du får ringa runt, och att du inte ser sortimentet.\n\n**Välj säsongsblommor.** Tulpaner i mars och pioner i juni kostar en bråkdel av vad samma sorter gör utanför säsong.\n\n**Undvik de stora dagarna.** Priserna stiger inför alla hjärtans dag och mors dag. Skickar du dagen efter får du mer för pengarna, och buketten blir ofta mer uppskattad.\n\n## Fri frakt\n\nFörekommer i kampanjer och i vissa tjänsters abonnemang. Räkna på om abonnemanget lönar sig. Skickar du blommor någon enstaka gång per år gör det sällan det.",
       "page": {
-        "status": "draft",
+        "status": "published",
         "title": "Billigast att skicka blommor – jämförelse av totalpris",
         "h1": "Skicka blommor billigt",
         "metaDescription": "Vilket blombud är billigast? Vi jämför totalpriset, bukett plus bud, mellan de största tjänsterna och visar var pengarna tar vägen.",
-        "microAnswer": "Billigast att skicka blommor är oftast Euroflorist eller en lokal florist direkt utan nätverksavgift. Interflora ligger [X] kr högre men har fler ombud. Fri frakt förekommer i kampanjer och i vissa abonnemang. Här jämför vi totalpriset, bukett plus bud, för de fem största tjänsterna, och går igenom tre sätt att sänka notan.",
+        "microAnswer": "Totalpriset är det som avgör, alltså buketten plus budavgiften. Det enda från-pris vi kontrollerat är Interfloras 239 kronor, som med 99 kronor i bud landar på 338 kronor. Cramers budavgift är 69 kronor. Båda kontrollerades i februari 2026. Övriga tjänster står med tankstreck tills vi kontrollerat dem. Nedan går vi igenom tre sätt att sänka notan.",
         "faq": [
           {
             "question": "Är det billigare att ringa floristen direkt?",
@@ -129,11 +129,11 @@
       "slug": "/guider/vad-kostar-det",
       "bodyMd": "## De två posterna\n\nEn blomsterleverans prissätts i två delar: buketten och budet. De redovisas var för sig i kassan, och det är summan som räknas.\n\nBuketten blir dyrast när du väljer specifika sorter utanför säsong, medan budet kostar lika mycket oavsett.\n\n## Vad som får priset att röra sig\n\n**Säsong.** Samma sort kan skilja sig kraftigt i pris beroende på månad.\n\n**Högtider.** Alla hjärtans dag och mors dag driver upp priserna veckan före.\n\n**Storlek.** Antalet stjälkar är den enskilt största faktorn i bukettens pris.\n\n**Leveransdag.** Lördagsleverans kostar ofta extra, och söndag går sällan att få alls.\n\n## Vad som inte påverkar\n\nAvståndet. Buketten binds lokalt, så det kostar lika mycket att skicka till grannstaden som till andra sidan landet. Detsamma gäller utomlands.\n\n## Vad du bör budgetera\n\nDe flesta beställningar landar en bit över tjänsternas från-pris, eftersom den allra minsta buketten sällan är den man vill skicka. Lägg på budavgiften och ett par stjälkar till, så har du en rimligare budget.",
       "page": {
-        "status": "draft",
+        "status": "published",
         "title": "Vad kostar det att skicka blommor? Prisjämförelse",
         "h1": "Vad kostar det att skicka blommor?",
         "metaDescription": "Full prisjämförelse: vad buketten kostar, vad budet kostar och vad totalen landar på hos de största tjänsterna. Med kontrolldatum.",
-        "microAnswer": "Att skicka blommor i Sverige kostar i snitt [X] kr: [149–399] kr för buketten och [49–99] kr för budet. Samma dag-leverans kostar sällan extra men kräver beställning före lunch. Utomlands ligger totalen på [349–799] kr. Här är en fullständig prisjämförelse mellan de största tjänsterna, kontrollerad [datum].",
+        "microAnswer": "Att skicka blommor kostar buketten plus en budavgift. Interfloras billigaste bukett kostade 239 kronor och budet 99 kronor, alltså 338 kronor totalt. Cramers tog 69 kronor för budet. Båda uppgifterna kontrollerades i februari 2026 och kan ha ändrats sedan dess. Övriga tjänsters priser har vi inte kontrollerat. Nedan går vi igenom vad avgifterna består av.",
         "faq": [
           {
             "question": "Kostar det mer att skicka längre?",

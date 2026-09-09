@@ -24,7 +24,7 @@ export async function generateMetadata({ searchParams }: SearchPageProps): Promi
   if (query) {
     return {
       title: `Sökresultat för "${query}"`,
-      description: `Hitta blommor som matchar "${query}". Jämför priser från flera butiker och hitta den perfekta buketten.`,
+      description: 'Sök bland buketter från Interflora och Cramers. Filtrera på pris, färg och tillfälle, och jämför totalpriset inklusive budavgift innan du beställer.',
       robots: {
         index: false, // Indexera inte söksidor
       },
@@ -33,7 +33,7 @@ export async function generateMetadata({ searchParams }: SearchPageProps): Promi
 
   return {
     title: 'Sök blommor',
-    description: 'Sök bland hundratals buketter och blommor. Filtrera på pris, färg, tillfälle och mer.',
+    description: 'Sök bland buketter från Interflora och Cramers. Filtrera på pris, färg och tillfälle, och jämför totalpriset inklusive budavgift.',
     robots: {
       index: false,
     },

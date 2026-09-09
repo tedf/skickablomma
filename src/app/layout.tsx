@@ -27,8 +27,17 @@ const newsreader = Newsreader({
 export const metadata: Metadata = {
   metadataBase: new URL('https://skickablomma.se'),
   title: {
-    default: 'Skickablomma - Jämför priser på blommor och buketter i Sverige',
-    template: '%s | Skickablomma',
+    /*
+      Suffixet " | Skickablomma" kostade 15 tecken av de omkring 60 Google
+      visar, och tryckte 30 av 44 sidtitlar över gränsen. Sidtitlarna är redan
+      skrivna för att stå på egna ben, och avsändaren visas ändå: Google läser
+      sajtnamnet ur WebSite-schemat på startsidan och ritar det på egen rad.
+
+      Startsidans titel bär namnet själv, eftersom den är den enda sida där
+      titeln annars inte säger vem vi är.
+    */
+    default: 'Skickablomma – jämför blombud, priser och leveranstid',
+    template: '%s',
   },
   description:
     'Hitta och jämför de bästa blomsterbuden i Sverige. Buketter, begravningsblommor, bröllopsblommor med leverans samma dag. Spara pengar genom att jämföra Interflora, Cramers och fler.',

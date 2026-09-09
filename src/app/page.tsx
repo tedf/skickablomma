@@ -20,10 +20,10 @@ import { BotanicalRule } from '@/components/brand/Botanical'
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'Skickablomma – Jämför buketter & blommor online i Sverige',
+    absolute: 'Skickablomma – jämför blombud, pris och leveranstid',
   },
   description:
-    'Jämför blommor och buketter från Interflora, Cramers och fler. Hitta rätt bukett till rätt pris – leverans samma dag möjlig.',
+    'Jämför blombud i Sverige: från-pris, budavgift och totalpris sida vid sida. Vi visar vad vi kontrollerat och när, och tankstreck för resten.',
   alternates: {
     canonical: 'https://skickablomma.se',
   },
@@ -243,7 +243,7 @@ export default async function HomePage() {
               </p>
             </div>
             <Link
-              href="/kategorier"
+              href="/buketter"
               className="hidden items-center gap-1 text-sm font-medium text-primary hover:underline md:flex"
             >
               Visa alla kategorier
@@ -424,21 +424,21 @@ export default async function HomePage() {
             id: 'faq-2',
             question: 'Kan jag jämföra priser från olika butiker?',
             answer:
-              'Ja! Vi visar blommor från flera butiker (Interflora, Cramers, m.fl.) så att du enkelt kan jämföra priser och hitta det bästa erbjudandet.',
+              'Ja. Vi visar från-pris, budavgift och totalpris sida vid sida för de tjänster vi kontrollerat. Det vi inte kontrollerat står med tankstreck i stället för en gissning.',
             sortOrder: 2,
           },
           {
             id: 'faq-3',
             question: 'Hur fungerar beställningen?',
             answer:
-              'När du hittar en bukett du gillar klickar du på "Köp" så skickas du vidare till butikens egen webbplats där du slutför köpet. Vi tar aldrig emot din betalning.',
+              'Du klickar på "Till Interflora" eller motsvarande knapp och skickas vidare till tjänstens egen sajt, där du slutför beställningen. Vi tar aldrig emot din betalning och säljer ingenting själva.',
             sortOrder: 3,
           },
           {
             id: 'faq-4',
             question: 'Kan jag skicka blommor till hela Sverige?',
             answer:
-              'Ja, tjänsterna täcker hela Sverige. Interflora har flest ombud och når därmed fler mindre orter än konkurrenterna.',
+              'Ja, de rikstäckande tjänsterna täcker hela Sverige. Hur många ombud var och en har på en enskild ort har vi inte kontrollerat.',
             sortOrder: 4,
           },
           {
@@ -455,7 +455,7 @@ export default async function HomePage() {
       <section className="bg-primary py-16 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="mb-4 font-display text-3xl font-bold">
-            Hitta den perfekta buketten idag
+            Jämför innan du beställer
           </h2>
           <p className="mb-8 text-lg text-white/80">
             Över 500 buketter att välja mellan. Jämför och spara pengar.

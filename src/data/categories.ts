@@ -13,7 +13,7 @@ export const MAIN_CATEGORIES: Record<MainCategory, Category> = {
     description: 'Vackra blomsterbuketter för alla tillfällen',
     metaTitle: 'Buketter - Skicka vackra blommor',
     metaDescription:
-      'Hitta den perfekta buketten för varje tillfälle. Jämför priser från Interflora, Cramers och fler. Leverans samma dag möjlig.',
+      'Buketter från Interflora och Cramers sorterade på totalpris, alltså bukett plus budavgift. Varje pris bär datumet då vi kontrollerade det.',
     productCount: 0,
     isActive: true,
     sortOrder: 1,
@@ -46,7 +46,7 @@ export const MAIN_CATEGORIES: Record<MainCategory, Category> = {
     description: 'Värdiga begravningsarrangemang och kransar',
     metaTitle: 'Begravningsblommor - Kransar & Buketter',
     metaDescription:
-      'Begravningsblommor med värdighet. Kransar, begravningsbuketter och kondoleanser. Leverans direkt till kyrka eller begravningsplats.',
+      'Kransar, sorgbuketter och kondoleansblommor med leverans till kyrka, kapell eller hem till familjen. Vad som skiljer dem åt och vad de kostar.',
     productCount: 0,
     isActive: true,
     sortOrder: 2,
@@ -93,7 +93,7 @@ export const MAIN_CATEGORIES: Record<MainCategory, Category> = {
     description: 'Brudbuketter och bröllopsdekorationer',
     metaTitle: 'Bröllopsblommor - Brudbuketter & Dekorationer',
     metaDescription:
-      'Skapa det perfekta bröllopet med vackra brudblommor. Brudbuketter, bordsdekoration och kyrkoarrangemang från Sveriges bästa florister.',
+      'Brudbuketter, bordsdekoration och kyrkoarrangemang. Bröllopsblommor beställs oftast hos en florist på plats, och här ser du vad de kostar.',
     productCount: 0,
     isActive: true,
     sortOrder: 3,
@@ -106,7 +106,7 @@ export const MAIN_CATEGORIES: Record<MainCategory, Category> = {
     description: 'Blommor för kontor, event och representation',
     metaTitle: 'Företagsblommor - Kontor & Event',
     metaDescription:
-      'Professionella blomsterarrangemang för företag. Kontorsblommor, eventblommor och representationsblommor med faktura.',
+      'Kontorsblommor, eventblommor och representation, med faktura. Se vad tjänsterna tar för leverans och vad totalpriset landar på.',
     productCount: 0,
     isActive: false, // No products in feed
     sortOrder: 4,
@@ -132,7 +132,7 @@ export const MAIN_CATEGORIES: Record<MainCategory, Category> = {
     description: 'Sidenblommor och konstgjorda arrangemang',
     metaTitle: 'Konstgjorda Blommor - Sidenblommor',
     metaDescription:
-      'Underhållsfria konstgjorda blommor som ser ut som äkta. Perfekta för allergiker och för att dekorera hemmet året runt.',
+      'Konstgjorda blommor kräver inget vatten och håller år efter år. De levereras som paket, inte med blombud, vilket påverkar både pris och leveranstid.',
     productCount: 0,
     isActive: true,
     sortOrder: 6,
@@ -192,7 +192,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Buketter med röda blommor - passion och kärlek',
     metaTitle: 'Röda Blommor - Buketter i Rött',
     metaDescription:
-      'Röda blommor symboliserar passion och kärlek. Perfekta för romantiska tillfällen eller för att visa djup uppskattning.',
+      'Röda blommor läses som kärlek i Sverige, vilket gör dem självklara till alla hjärtans dag och missvisande till en begravning. Se urvalet och priserna.',
     parentCategory: 'buketter',
   },
   'rosa-blommor': {
@@ -203,7 +203,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Buketter med rosa blommor - elegans och ömhet',
     metaTitle: 'Rosa Blommor - Buketter i Rosa',
     metaDescription:
-      'Rosa blommor utstrålar elegans och ömhet. Passa perfekt för födelsedagar, tack eller bara för att glädja någon.',
+      'Rosa blommor fungerar till det mesta utan att bli laddade: födelsedag, tack eller en hälsning utan anledning. Se urvalet och totalpriset.',
     parentCategory: 'buketter',
   },
   'vita-blommor': {
@@ -214,7 +214,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Buketter med vita blommor - renhet och elegans',
     metaTitle: 'Vita Blommor - Buketter i Vitt',
     metaDescription:
-      'Vita blommor symboliserar renhet och elegans. Perfekta för bröllop, sympati eller för att skapa en lugn atmosfär.',
+      'Vita blommor används till både bröllop och begravning. Det är sammanhanget som avgör tolkningen, inte färgen. Se urvalet och vad det kostar.',
     parentCategory: 'buketter',
   },
   'gula-blommor': {
@@ -225,7 +225,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Buketter med gula blommor - glädje och vänskap',
     metaTitle: 'Gula Blommor - Buketter i Gult',
     metaDescription:
-      'Gula blommor sprider glädje och symboliserar vänskap. Perfekta för att lysa upp någons dag.',
+      'Gula blommor står för vänskap snarare än romantik, vilket gör dem trygga till en kollega eller granne. Se urvalet och totalpriset inklusive bud.',
     parentCategory: 'buketter',
   },
   'lila-blommor': {
@@ -236,7 +236,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Buketter med lila blommor - mystik och lyx',
     metaTitle: 'Lila Blommor - Buketter i Lila',
     metaDescription:
-      'Lila blommor utstrålar mystik och lyx. Perfekta för speciella tillfällen och för att imponera.',
+      'Lila blommor är ovanligare än rosa och rött och sticker därför ut i en bukett. Se vilka sorter som finns och vad de kostar levererade.',
     parentCategory: 'buketter',
   },
   'orange-blommor': {
@@ -247,7 +247,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Buketter med orange blommor - energi och entusiasm',
     metaTitle: 'Orange Blommor - Buketter i Orange',
     metaDescription:
-      'Orange blommor symboliserar energi och entusiasm. Perfekta för att sprida gott humör.',
+      'Orange blommor hörs på håll och passar när buketten ska synas i ett rum. Se urvalet, från-priset och vad budavgiften lägger till.',
     parentCategory: 'buketter',
   },
   'blandade-farger': {
@@ -258,7 +258,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Färgglada buketter med blandade färger',
     metaTitle: 'Blandade Buketter - Färgglada Blommor',
     metaDescription:
-      'Färgglada buketter med en mix av blommor i olika nyanser. Perfekta för alla tillfällen.',
+      'Blandade buketter kombinerar flera sorter och färger, vilket gör dem svårare att välja fel med. Se urvalet och totalpriset inklusive budavgift.',
     parentCategory: 'buketter',
   },
 
@@ -271,7 +271,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Klassiska rosbuketter i alla färger',
     metaTitle: 'Rosor - Klassiska Rosbuketter',
     metaDescription:
-      'Rosor är den klassiska blomman för kärlek. Röda rosor för passion, rosa för ömhet, vita för renhet.',
+      'Rosor är den mest köpta snittblomman i Sverige. Röda läses som kärlek, rosa som ömhet, vita som neutrala. Se antal, längd och totalpris.',
     parentCategory: 'buketter',
   },
   tulpaner: {
@@ -282,7 +282,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Fräscha tulpaner för vårkänsla året runt',
     metaTitle: 'Tulpaner - Våriga Buketter',
     metaDescription:
-      'Tulpaner sprider vårkänsla och glädje. Perfekta för att fira våren eller bara lysa upp vardagen.',
+      'Tulpaner säljs främst från januari till april och är då bland de billigaste snittblommorna. De fortsätter växa i vasen efter leverans.',
     parentCategory: 'buketter',
   },
   liljor: {
@@ -293,7 +293,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Eleganta liljor med fantastisk doft',
     metaTitle: 'Liljor - Eleganta Buketter',
     metaDescription:
-      'Liljor är kända för sin elegans och underbara doft. Perfekta för speciella tillfällen.',
+      'Liljor doftar starkt och håller länge, men är giftiga för katt. Se vilka sorter som finns och vad de kostar levererade.',
     parentCategory: 'buketter',
   },
   solrosor: {
@@ -304,7 +304,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Glada solrosor som sprider solsken',
     metaTitle: 'Solrosor - Glada Buketter',
     metaDescription:
-      'Solrosor sprider glädje och värme. Perfekta för att lysa upp någons dag med solsken.',
+      'Solrosor är säsongsvara från juli till oktober och har grov stjälk som håller i en hand. Se urvalet och vad de kostar inklusive bud.',
     parentCategory: 'buketter',
   },
   orkideer: {
@@ -315,7 +315,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Exotiska orkidéer som krukväxt eller snittblomma',
     metaTitle: 'Orkidéer - Exotiska Blommor',
     metaDescription:
-      'Orkidéer är exotiska och eleganta. Perfekta som present eller för att dekorera hemmet.',
+      'Orkidéer säljs som krukväxt och blommar i månader, till skillnad från en bukett. Se sorterna och vad de kostar levererade.',
     parentCategory: 'buketter',
   },
   pioner: {
@@ -326,7 +326,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Romantiska pioner - sommarens favorit',
     metaTitle: 'Pioner - Romantiska Buketter',
     metaDescription:
-      'Pioner är sommarens mest romantiska blomma. Perfekta för bröllop och speciella tillfällen.',
+      'Pioner har kort säsong, i Sverige främst juni. Utanför den är de importerade och dyrare. Se vad de kostar just nu inklusive budavgift.',
     parentCategory: 'buketter',
   },
   hortensia: {
@@ -337,7 +337,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Fyllda hortensior i vackra färger',
     metaTitle: 'Hortensior - Fyllda Buketter',
     metaDescription:
-      'Hortensior ger volym och elegans till varje bukett. Perfekta för stora arrangemang.',
+      'Hortensia finns som både snittblomma och krukväxt och ger volym med få stjälkar. Se urvalet och totalpriset inklusive leverans.',
     parentCategory: 'buketter',
   },
 
@@ -350,7 +350,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Buketter perfekta för födelsedagar',
     metaTitle: 'Födelsedagsblommor - Fira med Blommor',
     metaDescription:
-      'Överraska med blommor på födelsedagen. Färgglada och festliga buketter som gör dagen extra speciell.',
+      'Blommor till en födelsedag har inga regler, bara en tidsgräns: de flesta tjänster kör ut samma dag om beställningen ligger inne före lunch.',
     parentCategory: 'buketter',
   },
   tackblommor: {
@@ -361,7 +361,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Blommor för att säga tack',
     metaTitle: 'Tackblommor - Säg Tack med Blommor',
     metaDescription:
-      'Visa din uppskattning med en vacker tackhälsning. Blommor som säger mer än tusen ord.',
+      'Tackblommor skickas efter en middag, en tjänst eller en insats. Vanligast är en enkel bukett med kort text. Se urvalet och totalpriset.',
     parentCategory: 'buketter',
   },
   gratulationer: {
@@ -372,7 +372,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Blommor för att gratulera',
     metaTitle: 'Gratulationsblommor',
     metaDescription:
-      'Gratulera med stil. Blommor för examen, nytt jobb, ny bostad eller andra framgångar.',
+      'Blommor till examen, nytt jobb eller ny bostad. Se vilka buketter som finns, vad de kostar och vilka tjänster som kör ut samma dag.',
     parentCategory: 'buketter',
   },
   'karlek-romantik': {
@@ -383,7 +383,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Romantiska blommor för din älskade',
     metaTitle: 'Kärleksblommor - Romantiska Buketter',
     metaDescription:
-      'Visa din kärlek med romantiska blommor. Röda rosor, hjärtformade buketter och mer.',
+      'Röda rosor är standardsvaret, men inte det enda. Se urvalet, antalet stjälkar per bukett och vad totalpriset blir inklusive budavgift.',
     parentCategory: 'buketter',
   },
   'ursakt-blommor': {
@@ -394,7 +394,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Blommor för att be om ursäkt',
     metaTitle: 'Ursäktsblommor - Be om Förlåtelse',
     metaDescription:
-      'Ibland behövs en extra gest. Blommor kan hjälpa dig att be om ursäkt på ett fint sätt.',
+      'En bukett ersätter inte en ursäkt men gör den svårare att avfärda. Se urvalet, vad det kostar och vilka tjänster som levererar idag.',
     parentCategory: 'buketter',
   },
   kramblommor: {
@@ -405,7 +405,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Skicka en blommig kram',
     metaTitle: 'Kramblommor - Skicka en Kram',
     metaDescription:
-      'När du inte kan vara där personligen. Buketter som fungerar som en hälsning snarare än en present.',
+      'Buketter som fungerar som en hälsning snarare än en present, till någon som har det tungt. Se urvalet och totalpriset inklusive bud.',
     parentCategory: 'buketter',
   },
 
@@ -418,7 +418,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Fräscha vårblommor som tulpaner och påskliljor',
     metaTitle: 'Vårblommor - Fräscha Buketter',
     metaDescription:
-      'Fira våren med fräscha vårblommor. Tulpaner, påskliljor och andra vårfavoriter.',
+      'Tulpaner, påskliljor och hyacinter är billigast under sin säsong, ungefär februari till april. Se vad de kostar levererade just nu.',
     parentCategory: 'buketter',
   },
   'sommar-blommor': {
@@ -429,7 +429,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Färgglada sommarblommor fulla av liv',
     metaTitle: 'Sommarblommor - Färgglada Buketter',
     metaDescription:
-      'Njut av sommarens alla färger. Solrosor, dahlior och andra sommarfavoriter.',
+      'Solrosor, dahlior och pioner har alla kort säsong och är billigast inom den. Se vad sommarens buketter kostar inklusive budavgift.',
     parentCategory: 'buketter',
   },
   'host-blommor': {
@@ -440,7 +440,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Höstens varma färger i bukett',
     metaTitle: 'Höstblommor - Varma Färger',
     metaDescription:
-      'Höstens varma färger i vackra buketter. Orange, röda och gula toner som värmer.',
+      'Höstbuketter bygger på krysantemum, dahlia och kvistar i orange och rött. Se urvalet och vad totalpriset blir inklusive leverans.',
     parentCategory: 'buketter',
   },
   'jul-blommor': {
@@ -451,7 +451,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Julstämning med blommor',
     metaTitle: 'Julblommor - Festliga Arrangemang',
     metaDescription:
-      'Skapa julstämning med vackra julblommor. Julstjärnor, amaryllis och festliga arrangemang.',
+      'Julstjärna, amaryllis och hyacint är julens vanligaste blommor. Se vad de kostar levererade och när sista beställningsdagen infaller.',
     parentCategory: 'buketter',
   },
 
@@ -464,7 +464,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Fira mamma med blommor på mors dag',
     metaTitle: 'Mors Dag Blommor 2025',
     metaDescription:
-      'Överraska mamma med vackra blommor på mors dag. Beställ i tid för garanterad leverans.',
+      'Mors dag firas sista söndagen i maj, en dag då de flesta blombud inte kör ut. Se urvalet och när beställningen behöver ligga inne.',
     parentCategory: 'buketter',
   },
   'fars-dag': {
@@ -475,7 +475,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Fira pappa med blommor på fars dag',
     metaTitle: 'Fars Dag Blommor 2025',
     metaDescription:
-      'Överraska pappa med blommor på fars dag. Klassiska och stilfulla buketter.',
+      'Fars dag firas andra söndagen i november. Se vilka buketter som finns, vad de kostar och vilka tjänster som levererar på helger.',
     parentCategory: 'buketter',
   },
   'alla-hjartans-dag': {
@@ -486,7 +486,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Romantiska blommor för alla hjärtans dag',
     metaTitle: 'Alla Hjärtans Dag Blommor 2025',
     metaDescription:
-      'Fira kärleken med romantiska blommor. Röda rosor och hjärtformade buketter för alla hjärtans dag.',
+      'Alla hjärtans dag är blomsterhandelns dyraste dag och rosor kostar mest då. Se priserna och när beställningen behöver vara inne.',
     parentCategory: 'buketter',
   },
   pask: {
@@ -497,7 +497,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Våriga påskblommor',
     metaTitle: 'Påskblommor 2025',
     metaDescription:
-      'Fira påsk med fräscha vårblommor. Påskliljor, tulpaner och andra våriga favoriter.',
+      'Påskliljor, tulpaner och pärlhyacint säljs som både snitt och kruka. Se urvalet och vad det kostar levererat inklusive budavgift.',
     parentCategory: 'buketter',
   },
   student: {
@@ -508,7 +508,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Gratulera studenten med blommor',
     metaTitle: 'Studentblommor 2025',
     metaDescription:
-      'Gratulera studenten med vackra blommor. Festliga buketter för den stora dagen.',
+      'Studentbuketten bärs i handen i timmar, i värme och i trängsel. Se vilka buketter som klarar det och vad de kostar levererade.',
     parentCategory: 'buketter',
   },
   midsommar: {
@@ -519,7 +519,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Somriga midsommarblommor',
     metaTitle: 'Midsommarblommor 2025',
     metaDescription:
-      'Fira midsommar med svenska sommarblommor. Traditionella och moderna buketter.',
+      'Midsommarafton är röd dag och de flesta blombud kör inte ut då. Se urvalet och vilken dag beställningen behöver ligga inne.',
     parentCategory: 'buketter',
   },
 
@@ -532,7 +532,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Fina buketter för liten budget',
     metaTitle: 'Blommor Under 300 kr',
     metaDescription:
-      'Vackra buketter behöver inte vara dyra. Hitta blommor under 300 kr inklusive leverans.',
+      'Buketter under 300 kronor. Budavgiften tillkommer och är densamma oavsett bukettens pris, så jämför totalen och inte från-priset.',
     parentCategory: 'budget',
   },
   'under-500-kr': {
@@ -543,7 +543,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Buketter för 300-500 kr',
     metaTitle: 'Blommor Under 500 kr',
     metaDescription:
-      'Stort urval av buketter för 300-500 kr. Bra pris utan att kompromissa med kvaliteten.',
+      'Buketter mellan 300 och 500 kronor. Budavgiften tillkommer och ligger normalt mellan 69 och 99 kronor hos tjänsterna vi kontrollerat.',
     parentCategory: 'budget',
   },
   'under-700-kr': {
@@ -554,7 +554,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Buketter för 500-700 kr',
     metaTitle: 'Blommor Under 700 kr',
     metaDescription:
-      'Imponerande buketter för 500-700 kr. Perfekta för speciella tillfällen.',
+      'Buketter mellan 500 och 700 kronor, alltså fler stjälkar eller dyrare sorter. Se vad totalpriset blir när budavgiften läggs till.',
     parentCategory: 'budget',
   },
   premium: {
@@ -565,7 +565,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Lyxiga buketter för speciella tillfällen',
     metaTitle: 'Premium Buketter - Lyxiga Blommor',
     metaDescription:
-      'Lyxiga premium-buketter som imponerar. Utvalda blommor och exklusiva arrangemang.',
+      'De dyraste buketterna i tjänsternas sortiment. Se vad du får för pengarna i antal stjälkar och sorter, och vad totalpriset blir.',
     parentCategory: 'buketter',
   },
 
@@ -578,7 +578,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Värdiga kransar för begravning',
     metaTitle: 'Begravningskransar',
     metaDescription:
-      'Traditionella begravningskransar som visar respekt och saknad. Leverans till kyrka eller kapell.',
+      'Kransen står vid kistan under ceremonin och beställs med begravningsdatum, kyrka och den avlidnes namn. Se urvalet och priserna.',
     parentCategory: 'begravning',
   },
   begravningsbuketter: {
@@ -589,7 +589,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Avskedsbuketter för begravning',
     metaTitle: 'Begravningsbuketter',
     metaDescription:
-      'Värdiga begravningsbuketter som sista hälsning. Eleganta arrangemang med respekt.',
+      'Sorgbuketten läggs eller ställs vid kistan och är mindre än kransen. Se urvalet, vad den kostar och vad du behöver ange vid beställning.',
     parentCategory: 'begravning',
   },
   kondoleanser: {
@@ -600,7 +600,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Kondoleanser och sympatiblommor',
     metaTitle: 'Kondoleanser - Sympatiblommor',
     metaDescription:
-      'Visa medkänsla med sympatiblommor. Diskreta och värdiga arrangemang för svåra stunder.',
+      'Kondoleansblommor går hem till de efterlevande, inte till ceremonin. Se urvalet, vad det kostar och när det passar att skicka.',
     parentCategory: 'begravning',
   },
   minnesbuketter: {
@@ -611,7 +611,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Blommor för att minnas',
     metaTitle: 'Minnesbuketter',
     metaDescription:
-      'Vackra minnesbuketter för att hedra någons minne. Till gravplats eller minnesceremoni.',
+      'Buketter till gravplats eller minnesceremoni, ofta enklare och tåligare än en inomhusbukett. Se urvalet och totalpriset inklusive bud.',
     parentCategory: 'begravning',
   },
 
@@ -624,7 +624,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Klassiska och moderna brudbuketter',
     metaTitle: 'Brudbuketter 2025',
     metaDescription:
-      'Hitta den perfekta brudbuketten. Klassiska, romantiska och moderna brudbuketter för ditt bröllop.',
+      'Brudbuketten binds oftast av en florist på plats, eftersom den ska passa klänningen och hållas i handen en hel dag. Se urval och priser.',
     parentCategory: 'brollop',
   },
   brollopsbuketter: {
@@ -635,7 +635,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Buketter för bröllop och fest',
     metaTitle: 'Bröllopsbuketter',
     metaDescription:
-      'Buketter för hela bröllopet. Till brudtärnor, mödrar och som dekoration.',
+      'Buketter till brudtärnor, mödrar och dekoration, alltså allt utom brudbuketten. Se urvalet och vad totalpriset blir per bukett.',
     parentCategory: 'brollop',
   },
   bordsdekoration: {
@@ -646,7 +646,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Bordsarrangemang för bröllopsfest',
     metaTitle: 'Bordsdekoration Bröllop',
     metaDescription:
-      'Vackra bordsarrangemang för bröllopsfesten. Skapa rätt stämning med blommor.',
+      'Bordsarrangemang till bröllopsfesten är låga med flit, så att gästerna kan prata över dem. Se urvalet och vad de kostar per bord.',
     parentCategory: 'brollop',
   },
   'kyrko-dekoration': {
@@ -657,7 +657,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Blomsterdekoration för kyrkan',
     metaTitle: 'Kyrkodekoration Bröllop',
     metaDescription:
-      'Dekorera kyrkan med vackra blommor. Altararrangemang och dekoration för vigseln.',
+      'Altararrangemang och dekoration till vigseln. Många kyrkor har egna regler för vad som får sättas upp, så kontrollera med församlingen först.',
     parentCategory: 'brollop',
   },
 
@@ -670,7 +670,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Blommor och växter för kontoret',
     metaTitle: 'Kontorsblommor',
     metaDescription:
-      'Lyft arbetsmiljön med vackra kontorsblommor. Växter och buketter för kontoret.',
+      'Blommor och växter till kontoret, ofta som abonnemang med fast leverans. Se urvalet, vad det kostar och vilka tjänster som fakturerar.',
     parentCategory: 'foretag',
   },
   representationsblommor: {
@@ -681,7 +681,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Blommor för representation och möten',
     metaTitle: 'Representationsblommor',
     metaDescription:
-      'Professionella blommor för representation. Imponera på kunder och samarbetspartners.',
+      'Blommor till kunder och samarbetspartners, oftast med företagets namn på kortet. Se urvalet, totalpriset och vilka tjänster som fakturerar.',
     parentCategory: 'foretag',
   },
   'event-blommor': {
@@ -692,7 +692,7 @@ export const SUB_CATEGORIES: Record<SubCategory, Omit<Category, 'productCount' |
     description: 'Blommor för event och tillställningar',
     metaTitle: 'Eventblommor',
     metaDescription:
-      'Blomsterarrangemang för event och tillställningar. Stora och små beställningar.',
+      'Blomsterarrangemang till event och tillställningar, från enstaka bord till hela lokaler. Se urvalet och vad tjänsterna tar för leverans.',
     parentCategory: 'foretag',
   },
 }

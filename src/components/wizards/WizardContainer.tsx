@@ -159,7 +159,7 @@ export function WizardContainer({ config }: WizardContainerProps) {
             <Sparkles className="h-4 w-4" />
             Dina personliga rekommendationer
           </div>
-          <h1 className="font-display text-3xl font-bold text-gray-900">
+          <h1 className="font-display text-3xl text-ink">
             Vi hittade {results.length} buketter för dig
           </h1>
           <p className="mt-2 text-gray-600">
@@ -225,9 +225,20 @@ export function WizardContainer({ config }: WizardContainerProps) {
 
       {/* Step content */}
       <div className="wizard-step animate-fade-in">
-        <h2 className="mb-2 text-center font-display text-2xl font-bold text-gray-900">
-          {step.title}
-        </h2>
+        {/*
+          Frågevyn saknade rubrik på h1-nivå. Resultatvyn hade en, men dit når
+          varken en robot eller en skärmläsaranvändare som just landat. Första
+          steget är sidans rubrik, resten är h2.
+        */}
+        {currentStep === 0 ? (
+          <h1 className="mb-2 text-center font-display text-2xl text-ink">
+            {step.title}
+          </h1>
+        ) : (
+          <h2 className="mb-2 text-center font-display text-2xl text-ink">
+            {step.title}
+          </h2>
+        )}
         {step.description && (
           <p className="mb-8 text-center text-gray-600">{step.description}</p>
         )}

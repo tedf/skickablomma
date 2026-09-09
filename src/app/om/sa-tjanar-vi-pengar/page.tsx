@@ -88,7 +88,7 @@ export default function SaTjanarViPengarPage() {
         <p>
           Alla länkar som ger oss provision är märkta med{' '}
           <code>rel=&quot;sponsored nofollow&quot;</code>. Affiliate-nätverkens cookies sätts
-          först när du klickar vidare till tjänsten, inte när du läser hos oss.
+          först när du klickar vidare till tjänsten, inte när du läser den här sidan.
         </p>
 
         <h2>Hittar du ett fel?</h2>

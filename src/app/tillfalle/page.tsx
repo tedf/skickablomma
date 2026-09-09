@@ -9,7 +9,7 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs'
 export const metadata: Metadata = {
   title: 'Blommor för olika tillfällen',
   description:
-    'Vad passar till begravning, födelsedag eller en nyfödd? Etikett, blomval och korttexter per tillfälle.',
+    'Vad passar till begravning, födelsedag eller en nyfödd? Etikett, blomval och korttexter för varje tillfälle, plus vad tjänsterna tar för att leverera dem.',
   alternates: { canonical: 'https://skickablomma.se/tillfalle' },
 }
 

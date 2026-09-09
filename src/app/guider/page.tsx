@@ -6,7 +6,7 @@ import { BookOpen } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Guider om blommor – Välj rätt bukett & tillfälle',
-  description: 'Läs våra guider om att skicka blommor, välja rätt bukett och förstå blommornas betydelse.',
+  description: 'Guider om att skicka blommor: vad det kostar, vad man skriver på kortet, vad kondoleans betyder och vilka blommor som passar till vilket tillfälle.',
   alternates: {
     canonical: 'https://skickablomma.se/guider',
   },

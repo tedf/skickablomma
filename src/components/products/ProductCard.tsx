@@ -162,7 +162,7 @@ export function ProductCard({
         <a
           href={product.trackingUrl}
           target="_blank"
-          rel="noopener noreferrer sponsored"
+          rel="sponsored nofollow noopener"
           className="flex w-full items-center justify-center gap-2 rounded-lg bg-brand py-3 text-sm font-medium text-brand-foreground transition-colors hover:bg-brand-700"
           onClick={handleClick}
         >

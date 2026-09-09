@@ -10,9 +10,9 @@ export const WIZARD_CONFIGS: Record<string, WizardConfig> = {
     slug: 'hitta-ratt-blommor',
     title: 'Hitta rätt blommor',
     description: 'Svara på några enkla frågor så hjälper vi dig hitta den perfekta buketten',
-    metaTitle: 'Hitta Rätt Blommor - Personlig Guide | Skickablomma',
+    metaTitle: 'Hitta rätt blommor – en guide i fyra steg',
     metaDescription:
-      'Låt oss hjälpa dig hitta den perfekta buketten! Svara på några frågor om mottagare, tillfälle och budget så ger vi dig personliga rekommendationer.',
+      'Fyra frågor om mottagare, tillfälle och budget, sedan visar vi buketter som passar och vad de kostar inklusive budavgift.',
     steps: [
       {
         id: 'mottagare',
@@ -221,9 +221,9 @@ export const WIZARD_CONFIGS: Record<string, WizardConfig> = {
     slug: 'begravningsblommor',
     title: 'Hitta rätt begravningsblommor',
     description: 'Vi hjälper dig hitta värdiga blommor för att visa din sista hälsning',
-    metaTitle: 'Begravningsblommor Guide | Skickablomma',
+    metaTitle: 'Begravningsblommor – hitta rätt i fyra steg',
     metaDescription:
-      'Hitta värdiga begravningsblommor med vår guide. Vi hjälper dig välja rätt kransar, buketter och kondoleanser.',
+      'Fyra frågor om ceremoni, relation och budget, sedan visar vi kransar, sorgbuketter och kondoleansblommor med totalpris.',
     steps: [
       {
         id: 'typ',
@@ -297,9 +297,9 @@ export const WIZARD_CONFIGS: Record<string, WizardConfig> = {
     slug: 'presenter-till-henne',
     title: 'Hitta present till henne',
     description: 'Vi hjälper dig hitta den perfekta presenten för henne',
-    metaTitle: 'Present till Henne - Guide | Skickablomma',
+    metaTitle: 'Blommor som present – hitta rätt i fyra steg',
     metaDescription:
-      'Hitta den perfekta presenten till henne! Blommor, choklad och gåvor som hon kommer älska.',
+      'Fyra frågor om relation, tillfälle och budget, sedan visar vi buketter som passar och vad de kostar inklusive budavgift.',
     steps: [
       {
         id: 'relation',
@@ -363,8 +363,8 @@ export const WIZARD_CONFIGS: Record<string, WizardConfig> = {
     slug: 'brollopsblommor',
     title: 'Bröllopsblommor',
     description: 'Hitta perfekta blommor för bröllopet',
-    metaTitle: 'Bröllopsblommor Guide | Skickablomma',
-    metaDescription: 'Hitta brudbuketter och bröllopsblommor. Vi guidar dig till de perfekta blommorna för den stora dagen.',
+    metaTitle: 'Bröllopsblommor – hitta rätt i fyra steg',
+    metaDescription: 'Fyra frågor om mottagare, tillfälle och budget, sedan visar vi buketter som passar och vad de kostar inklusive budavgift.',
     steps: [
       {
         id: 'brollop-typ',
@@ -415,8 +415,8 @@ export const WIZARD_CONFIGS: Record<string, WizardConfig> = {
     slug: 'foretags-blommor',
     title: 'Företagsblommor',
     description: 'Hitta rätt blommor för ditt företag',
-    metaTitle: 'Företagsblommor Guide | Skickablomma',
-    metaDescription: 'Beställ blommor för företaget. Kontorsblommor, representation och eventblommor.',
+    metaTitle: 'Företagsblommor – hitta rätt i fyra steg',
+    metaDescription: 'Fyra frågor om tillfälle, mottagare och budget, sedan visar vi blommor för kontor, representation och event med totalpris.',
     steps: [
       {
         id: 'foretag-typ',

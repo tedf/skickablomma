@@ -80,6 +80,20 @@ export async function generateStaticParams() {
   }))
 }
 
+/**
+ * Metabeskrivningen sattes till hela ingressen, som är ett helt stycke. Sidorna
+ * hade beskrivningar på 258 till 367 tecken, alltså mer än dubbelt så mycket
+ * som Google visar. Här kapas den vid en meningsgräns i stället för mitt i ett
+ * ord.
+ */
+function kortaNed(text: string, max = 155): string {
+  if (text.length <= max) return text
+  const kapad = text.slice(0, max)
+  const punkt = Math.max(kapad.lastIndexOf('. '), kapad.lastIndexOf('? '))
+  if (punkt > 80) return kapad.slice(0, punkt + 1)
+  return kapad.slice(0, kapad.lastIndexOf(' ')) + '…'
+}
+
 export async function generateMetadata({ params }: GuidePageProps): Promise<Metadata> {
   const guide = getGuideBySlug(params.slug)
 
@@ -87,15 +101,17 @@ export async function generateMetadata({ params }: GuidePageProps): Promise<Meta
     return { title: 'Guide inte hittad' }
   }
 
+  const beskrivning = kortaNed(guide.excerpt || guide.title)
+
   return {
     title: guide.title,
-    description: guide.excerpt || guide.title,
+    description: beskrivning,
     alternates: {
       canonical: `https://skickablomma.se/guide/${params.slug}`,
     },
     openGraph: {
       title: guide.title,
-      description: guide.excerpt || guide.title,
+      description: beskrivning,
       url: `https://skickablomma.se/guide/${params.slug}`,
       type: 'article',
     },
@@ -109,8 +125,14 @@ export default async function GuidePage({ params }: GuidePageProps) {
     notFound()
   }
 
-  // Strip first h1 from content since we show it as page title
-  const contentWithoutTitle = guide.content.replace(/^#\s+.+\n\n?/, '')
+  /*
+    Rubriken och ingressen visas i sidhuvudet. Tas de inte bort ur brödtexten
+    renderas samma stycke två gånger direkt under sig självt, vilket syntes på
+    varje guidesida.
+  */
+  const contentWithoutTitle = guide.content
+    .replace(/^#\s+.+\n\n?/, '')
+    .replace(guide.excerpt ? guide.excerpt + '\n\n' : '\u0000', '')
   const htmlContent = markdownToHtml(contentWithoutTitle)
   const readingTime = estimateReadingTime(guide.content)
 

@@ -46,4 +46,4 @@ Tänk på relationen till personen du ger dem till. Röda rosor är för den nä
 
 Tveka inte att kombinera färger om du vill skapa ett personligt uttryck. Det viktigaste är inte vilken färg – det är att du tänkt på personen du ger dem till.
 
-[Jämför priser på rosbuketter hos våra partners →](/buketter/rosor)
+[Se rosbuketter och vad de kostar totalt](/buketter/rosor)
