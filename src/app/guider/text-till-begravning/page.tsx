@@ -4,6 +4,9 @@ import { notFound } from 'next/navigation'
 import { getStaticPage } from '@/lib/comparison'
 import { BRAND } from '@/data/brand'
 import { ComparisonPageShell } from '@/components/comparison/ComparisonPageShell'
+import { ProductEvidence } from '@/components/comparison/ProductEvidence'
+import { getFeedDate, getProductsByCategory, getProductsBySubCategory } from '@/lib/products'
+import type { MainCategory, SubCategory } from '@/types'
 
 const SLUG = '/guider/text-till-begravning'
 
@@ -24,9 +27,12 @@ export async function generateMetadata(): Promise<Metadata> {
  * någon står med ett kort i handen och vet inte vad de ska skriva. En
  * affiliatelänk högt upp vore både taktlöst och sämre för konverteringen.
  */
-export default function TextTillBegravningPage() {
+export default async function TextTillBegravningPage() {
   const page = getStaticPage(SLUG)
   if (!page) notFound()
+
+  const products = await getProductsByCategory('begravning' as MainCategory, 24)
+
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -52,6 +58,12 @@ export default function TextTillBegravningPage() {
           { label: 'Text till begravning', href: SLUG },
         ]}
       >
+        <ProductEvidence
+          products={products}
+          feedDate={getFeedDate()}
+          noun="begravningsblommor"
+        />
+
         <nav className="mt-12 border-t border-line pt-8" aria-label="Relaterade sidor">
           <h2 className="mb-4 font-display text-xl text-ink">Läs vidare</h2>
           <ul className="flex flex-wrap gap-3 text-sm">

@@ -213,10 +213,19 @@ export const occasionSchema = z.object({
    * här sökorden full av shoppingkaruseller: Google säger att den som söker
    * vill se buketter, inte bara läsa om dem.
    */
+  /** Substantivet i produktrubriken, t.ex. "begravningsblommor". */
+  productNoun: z.string().nullable().default(null),
+
   productQuery: z
     .object({
       mainCategory: z.string().nullable(),
       subCategories: z.array(z.string()).default([]),
+      /**
+       * Taggar som diskvalificerar en produkt för det här tillfället.
+       * Feedens taggning är grov: begravningsbuketten "Omtanke" är taggad
+       * vita-blommor och skulle annars hamna på sjukhussidan.
+       */
+      excludeSubCategories: z.array(z.string()).default([]),
     })
     .nullable()
     .default(null),

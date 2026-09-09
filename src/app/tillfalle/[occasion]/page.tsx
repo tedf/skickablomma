@@ -189,7 +189,8 @@ export default async function OccasionPage({ params }: OccasionPageProps) {
       <ProductEvidence
         products={products}
         feedDate={getFeedDate()}
-        heading={`Blommor till ${occasion.name.toLowerCase()} hos tjänsterna`}
+        noun={occasion.productNoun ?? `blommor till ${occasion.name.toLowerCase()}`}
+        exclude={query?.excludeSubCategories ?? []}
         categoryHref={query?.mainCategory ? `/${query.mainCategory}` : undefined}
       />
 

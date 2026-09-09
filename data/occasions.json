@@ -71,8 +71,13 @@
       },
       "productQuery": {
         "mainCategory": "begravning",
-        "subCategories": []
-      }
+        "subCategories": [],
+        "excludeSubCategories": [
+          "alla-hjartans-dag",
+          "karlek-romantik"
+        ]
+      },
+      "productNoun": "begravningsblommor"
     },
     {
       "slug": "kondoleans",
@@ -139,8 +144,13 @@
       },
       "productQuery": {
         "mainCategory": "begravning",
-        "subCategories": []
-      }
+        "subCategories": [],
+        "excludeSubCategories": [
+          "alla-hjartans-dag",
+          "karlek-romantik"
+        ]
+      },
+      "productNoun": "kondoleansblommor"
     },
     {
       "slug": "alla-hjartans-dag",
@@ -203,11 +213,17 @@
       "productQuery": {
         "mainCategory": null,
         "subCategories": [
-          "karlek-romantik",
+          "alla-hjartans-dag",
           "roda-blommor",
           "rosor"
+        ],
+        "excludeSubCategories": [
+          "begravningsbuketter",
+          "begravningskransar",
+          "kondoleanser"
         ]
-      }
+      },
+      "productNoun": "blommor till alla hjärtans dag"
     },
     {
       "slug": "mors-dag",
@@ -269,10 +285,239 @@
       "productQuery": {
         "mainCategory": null,
         "subCategories": [
-          "mors-dag",
-          "tackblommor",
-          "tulpaner"
+          "tulpaner",
+          "rosa-blommor",
+          "tackblommor"
+        ],
+        "excludeSubCategories": [
+          "begravningsbuketter",
+          "begravningskransar",
+          "kondoleanser",
+          "alla-hjartans-dag",
+          "karlek-romantik"
         ]
+      },
+      "productNoun": "blommor till mors dag"
+    },
+    {
+      "slug": "fodelsedag",
+      "name": "Födelsedag",
+      "productNoun": "födelsedagsblommor",
+      "productQuery": {
+        "mainCategory": null,
+        "subCategories": [
+          "fodelsedags-blommor",
+          "gratulationer",
+          "tulpaner",
+          "blandade-farger"
+        ],
+        "excludeSubCategories": [
+          "begravningsbuketter",
+          "begravningskransar",
+          "kondoleanser",
+          "alla-hjartans-dag",
+          "karlek-romantik",
+          "rosor",
+          "roda-blommor"
+        ]
+      },
+      "etiquetteMd": "## Vad du skriver\n\nDet mest sökta kring födelsedagsblommor är inte vilken bukett man ska välja utan vad man skriver på kortet. Här är utgångspunkterna.\n\nTill någon nära: skriv något bara ni två förstår. En intern referens slår varje färdig fras.\n\nTill en kollega eller bekant: håll det kort och varmt. ”Grattis på dagen” plus ditt namn räcker längre än man tror.\n\nTill någon du inte hunnit fira på flera år: säg det. ”Alldeles för länge sedan. Grattis.” är ärligare än att låtsas att inget hänt.\n\n## Om du är sen\n\nSkicka ändå. En bukett dagen efter är inte ett misslyckande, den är en påminnelse om att du tänkte på det. Skriv gärna ut att du är sen i stället för att hoppas att ingen märker det.\n\nBlommor som kommer en vecka senare fungerar också, särskilt till någon som fyllde jämnt och fick allt på en gång. Då står de kvar när resten är slut.\n\n## Vad som passar till vem\n\nFärgstarkt fungerar nästan alltid: tulpaner, gerbera, ranunkler, solrosor på sommaren.\n\nTill någon äldre är en krukväxt ofta mer uppskattad än snittblommor. Den behöver inte kastas efter en vecka och kräver inget arbete med vaser.\n\nUndvik vita liljor och krysantemum. Båda läses som sorgblommor i Sverige och skickar fel signal på en födelsedag.\n\n## Leverans på dagen\n\nBeställ före lunch på en vardag så går det oftast att få fram samma dag. Infaller födelsedagen på en söndag levererar de flesta blombud inte alls, så då är lördagen enda alternativet.\n\nAnge mottagarens telefonnummer. Är ingen hemma ringer floristen hellre än lämnar buketten i trappuppgången.",
+      "flowersRecommended": [
+        "Tulpaner",
+        "Gerbera",
+        "Ranunkler",
+        "Solrosor på sommaren",
+        "Krukväxt till någon äldre"
+      ],
+      "flowersAvoid": [
+        "Vita liljor, som läses som sorgblomma i Sverige",
+        "Krysantemum, av samma skäl"
+      ],
+      "cardTexts": [
+        "Grattis på dagen.",
+        "Alldeles för länge sedan. Grattis.",
+        "Grattis. Hoppas dagen blir precis som du vill ha den.",
+        "Sen som vanligt. Grattis ändå.",
+        "Ännu ett år klokare, säger de. Grattis."
+      ],
+      "seasonDate": null,
+      "publishBefore": null,
+      "serviceIds": [
+        "interflora",
+        "euroflorist",
+        "cramers"
+      ],
+      "searchVolume": 1000,
+      "kd": 0,
+      "phase": 3,
+      "page": {
+        "status": "published",
+        "title": "Födelsedagsblommor – vad du skriver och vad som passar",
+        "h1": "Blommor till födelsedag",
+        "metaDescription": "Vad man skriver på kortet, vad som passar till vem, och hur du gör om du är sen. Plus leveransläget på själva dagen.",
+        "microAnswer": "Födelsedagsblommor levereras samma dag om du beställer före lunch på en vardag. Infaller dagen på en söndag kör de flesta blombud inte, så lördagen är enda alternativet. Undvik vita liljor och krysantemum, som läses som sorgblommor i Sverige. Nedan finns färdiga korttexter, vad som passar till vem och vad du gör om du redan är sen.",
+        "faq": [
+          {
+            "question": "Vad skriver man på kortet till en födelsedag?",
+            "answer": "Kort och personligt. Till någon nära slår en intern referens varje färdig fras. Till en kollega räcker ”grattis på dagen” och ditt namn. Är du sen, skriv ut det i stället för att hoppas att ingen märker."
+          },
+          {
+            "question": "Går det att få leverans på själva födelsedagen?",
+            "answer": "Ja, om du beställer före lunch på en vardag. Infaller dagen på en söndag levererar de flesta blombud inte alls, och då är lördagen enda alternativet."
+          },
+          {
+            "question": "Är det pinsamt att skicka blommor för sent?",
+            "answer": "Nej. En bukett dagen efter läses som att du tänkte på det, inte som ett misslyckande. Till någon som fyllde jämnt är en sen bukett ofta bättre, eftersom den står kvar när resten är slut."
+          },
+          {
+            "question": "Vilka blommor ska man undvika?",
+            "answer": "Vita liljor och krysantemum. Båda är starkt förknippade med begravning i Sverige och skickar fel signal, hur vackra de än är."
+          }
+        ],
+        "pricesVerifiedAt": "2026-02-14",
+        "updatedAt": "2026-09-09"
+      }
+    },
+    {
+      "slug": "sjukhus",
+      "name": "Sjukhus",
+      "productNoun": "blommor till sjukhus",
+      "productQuery": {
+        "mainCategory": null,
+        "subCategories": [
+          "blandade-farger",
+          "tulpaner",
+          "vita-blommor"
+        ],
+        "excludeSubCategories": [
+          "begravningsbuketter",
+          "begravningskransar",
+          "kondoleanser",
+          "alla-hjartans-dag",
+          "karlek-romantik"
+        ]
+      },
+      "etiquetteMd": "## Ring avdelningen först\n\nDet här är sidans viktigaste råd, och det är det som blomsterhandlare sällan skriver ut.\n\nMånga avdelningar tar inte emot blommor alls. Intensivvård, infektionsavdelningar och avdelningar med patienter som har nedsatt immunförsvar har oftast totalförbud. Reglerna sätts per avdelning, inte per sjukhus, och de ändras.\n\nEtt samtal till avdelningen tar två minuter och avgör om buketten över huvud taget kommer fram.\n\n## Om blommor inte är tillåtna\n\nFrukt, en bok, ett korsord eller ett handskrivet kort fungerar. Många uppskattar en laddare eller hörlurar mer än blommor, av rent praktiska skäl.\n\nEn bukett hem till bostaden att komma hem till är ett annat alternativ. Den som legat inne en vecka har ofta ingen mat i kylen och inget levande i lägenheten.\n\n## Om de är tillåtna\n\nVälj litet. Sjukhusrum har ont om yta, och en stor bukett hamnar i vägen på ett nattduksbord som redan är fullt.\n\nUndvik starkt doftande sorter. Liljor, hyacint och vissa nejlikor blir tunga i ett litet rum där någon ligger dygnet runt.\n\nFråga om det finns vas. Många avdelningar har inte det, och en bukett utan vas blir personalens problem.\n\n## Adressering\n\nAnge avdelning och rumsnummer, inte bara sjukhusets namn. Ett större sjukhus har hundratals rum och receptionen vidarebefordrar sällan.\n\nSkriv ut patientens fullständiga namn. Personalen får inte alltid bekräfta att någon är inlagd, men de kan leverera till ett namn de har på avdelningen.",
+      "flowersRecommended": [
+        "Små buketter som får plats på ett nattduksbord",
+        "Doftfria sorter",
+        "Krukväxt som klarar sig utan vas"
+      ],
+      "flowersAvoid": [
+        "Liljor, hyacint och andra starkt doftande sorter",
+        "Stora buketter",
+        "Blommor över huvud taget till intensivvård och infektionsavdelningar"
+      ],
+      "cardTexts": [
+        "Krya på dig. Vi hörs när du orkar.",
+        "Tänker på dig.",
+        "Ingen brådska med att svara. Bara så du vet att vi finns.",
+        "Hörs snart. Vila nu."
+      ],
+      "seasonDate": null,
+      "publishBefore": null,
+      "serviceIds": [
+        "interflora",
+        "euroflorist",
+        "cramers"
+      ],
+      "searchVolume": 100,
+      "kd": 0,
+      "phase": 3,
+      "page": {
+        "status": "published",
+        "title": "Skicka blommor till sjukhus – vad som är tillåtet",
+        "h1": "Skicka blommor till sjukhus",
+        "metaDescription": "Många avdelningar tar inte emot blommor. Så tar du reda på vad som gäller, vad du skickar i stället, och hur du adresserar rätt.",
+        "microAnswer": "Ring avdelningen innan du beställer blommor till ett sjukhus. Många avdelningar tar inte emot dem alls, särskilt intensivvård och infektionsavdelningar, och reglerna sätts per avdelning. Är blommor tillåtna: välj litet och doftfritt, och ange avdelning och rumsnummer i adressen. Nedan finns vad du skickar i stället när blommor inte går.",
+        "faq": [
+          {
+            "question": "Får man skicka blommor till sjukhus?",
+            "answer": "Det beror på avdelningen. Intensivvård och infektionsavdelningar har oftast totalförbud, och reglerna sätts per avdelning snarare än per sjukhus. Ring och fråga innan du beställer."
+          },
+          {
+            "question": "Vad skickar man i stället om blommor inte är tillåtna?",
+            "answer": "Frukt, en bok, ett korsord eller ett handskrivet kort. Många uppskattar en laddare eller hörlurar mer än blommor. Ett annat alternativ är en bukett hem till bostaden att komma hem till."
+          },
+          {
+            "question": "Hur adresserar jag leveransen?",
+            "answer": "Ange avdelning och rumsnummer, inte bara sjukhusets namn. Ett större sjukhus har hundratals rum och receptionen vidarebefordrar sällan. Skriv ut patientens fullständiga namn."
+          },
+          {
+            "question": "Vilka blommor passar i ett sjukhusrum?",
+            "answer": "Små och doftfria. Rummen har ont om yta och en stor bukett hamnar i vägen. Liljor och hyacint blir tunga i ett litet rum. Fråga också om avdelningen har vaser, många har inte det."
+          }
+        ],
+        "pricesVerifiedAt": "2026-02-14",
+        "updatedAt": "2026-09-09"
+      }
+    },
+    {
+      "slug": "anonymt",
+      "name": "Anonymt",
+      "productNoun": "blommor att skicka anonymt",
+      "productQuery": {
+        "mainCategory": null,
+        "subCategories": [
+          "rosor",
+          "roda-blommor"
+        ],
+        "excludeSubCategories": [
+          "begravningsbuketter",
+          "begravningskransar",
+          "kondoleanser"
+        ]
+      },
+      "etiquetteMd": "## Det går, men läs det här först\n\nAlla tjänster låter dig lämna avsändarfältet tomt eller skriva något annat än ditt namn. Rent tekniskt är det inga problem.\n\nDet som ofta går fel är mottagandet. En bukett utan avsändare läser sällan som romantisk, den läser som obehaglig, särskilt för någon som bor ensam. Den vanligaste reaktionen är inte förtjusning utan oro över vem som vet var man bor.\n\nTänk igenom vad du faktiskt vill uppnå. Vill du ge en present är namnet en del av presenten. Vill du vara hemlig en kort stund fungerar en ledtråd bättre än ingenting alls: ett smeknamn, en plats, ett datum bara ni två känner till.\n\n## Helt anonymt är det ändå inte\n\nFloristen som binder buketten ser din beställning. Om mottagaren ringer och frågar är praxis att inte lämna ut avsändaren, men det är en policy och inte en garanti.\n\nBetalningen finns också kvar hos tjänsten. En anonym bukett är anonym mot mottagaren, inte mot systemet.\n\n## När det faktiskt passar\n\nTill en arbetsplats eller en förening där gruppen skickar och ingen enskild ska ta åt sig äran.\n\nTill någon som du vet skulle säga nej till en present men inte till en gest.\n\nSom del av något som redan är på gång, där mottagaren begriper direkt. Det är den enda situation där anonymiteten är rolig i stället för olustig.",
+      "flowersRecommended": [
+        "Röda rosor, om avsikten är romantisk",
+        "Blandad säsongsbukett, om avsikten är vänskaplig"
+      ],
+      "flowersAvoid": [
+        "Stora och dyra buketter, som förstärker obehaget när avsändaren saknas"
+      ],
+      "cardTexts": [
+        "Från någon som tänker på dig.",
+        "Du vet vem.",
+        "Tack för i lördags.",
+        "Ingen anledning. Bara för att."
+      ],
+      "seasonDate": null,
+      "publishBefore": null,
+      "serviceIds": [
+        "interflora",
+        "euroflorist",
+        "cramers"
+      ],
+      "searchVolume": 90,
+      "kd": 0,
+      "phase": 3,
+      "page": {
+        "status": "published",
+        "title": "Skicka blommor anonymt – går det, och bör man?",
+        "h1": "Skicka blommor anonymt",
+        "metaDescription": "Alla tjänster låter dig lämna avsändaren tom. Men en bukett utan namn läser oftare som obehaglig än som romantisk. Så tänker du igenom det.",
+        "microAnswer": "Alla blombud låter dig lämna avsändarfältet tomt, så tekniskt går det utan problem. Men en bukett utan avsändare läser oftare som obehaglig än som romantisk, särskilt för någon som bor ensam. En ledtråd fungerar nästan alltid bättre än ingenting. Nedan går vi igenom när det passar och när det slår fel.",
+        "faq": [
+          {
+            "question": "Går det att skicka blommor helt anonymt?",
+            "answer": "Alla tjänster låter dig lämna avsändaren tom. Men floristen ser din beställning och betalningen finns kvar hos tjänsten. Buketten är anonym mot mottagaren, inte mot systemet."
+          },
+          {
+            "question": "Är det en bra idé?",
+            "answer": "Oftare än man tror läser en bukett utan namn som obehaglig snarare än romantisk, särskilt för någon som bor ensam. En ledtråd som bara ni två förstår fungerar nästan alltid bättre."
+          },
+          {
+            "question": "Lämnar floristen ut vem som skickat?",
+            "answer": "Praxis är att inte göra det om mottagaren frågar. Men det är en policy och inte en garanti, så räkna inte med den om det är viktigt."
+          },
+          {
+            "question": "När passar det faktiskt?",
+            "answer": "När en grupp skickar och ingen enskild ska ta åt sig äran, eller när mottagaren begriper direkt vem det är. Då blir anonymiteten rolig i stället för olustig."
+          }
+        ],
+        "pricesVerifiedAt": "2026-02-14",
+        "updatedAt": "2026-09-09"
       }
     }
   ]

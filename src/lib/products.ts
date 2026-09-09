@@ -918,3 +918,42 @@ export async function getSubCategoryCounts(
 
   return counts
 }
+
+// =============================================================================
+// URVAL FÖR JÄMFÖRELSEDELEN
+// =============================================================================
+
+/**
+ * Partners som faktiskt levererar blombud.
+ *
+ * Feeden innehåller också Fakeflowers (konstgjorda blommor) och My Perfect Day
+ * (fest- och ballongdekor). Ingen av dem är ett blombud, och en konstgjord ros
+ * på en begravningssida vore fel på flera sätt. Cramers sortiment är dessutom
+ * övervägande lökar och plantor, alltså trädgårdsbilder snarare än buketter,
+ * så Interflora prioriteras när båda finns.
+ */
+const BLOMBUD_PARTNERS: Partner[] = ['interflora', 'cramers']
+
+function harLokalBild(product: Product): boolean {
+  return (product.primaryImage?.url ?? '').startsWith('/images/products/')
+}
+
+/**
+ * Filtrerar och sorterar produkter så att en tillfällessida visar bundna
+ * buketter med fungerande bild, inte lökpåsar eller konstgjorda blommor.
+ */
+export function pickDeliverableBouquets(
+  products: Product[],
+  limit: number,
+  exclude: string[] = []
+): Product[] {
+  const rang = (p: Product) => (p.partnerId === 'interflora' ? 0 : 1)
+
+  const sedda = new Set<string>()
+  return products
+    .filter((p) => BLOMBUD_PARTNERS.includes(p.partnerId) && harLokalBild(p))
+    .filter((p) => !(p.subCategories ?? []).some((sub) => exclude.includes(sub)))
+    .filter((p) => (sedda.has(p.id) ? false : (sedda.add(p.id), true)))
+    .sort((a, b) => rang(a) - rang(b) || (b.popularityScore ?? 0) - (a.popularityScore ?? 0))
+    .slice(0, limit)
+}
