@@ -1,0 +1,1195 @@
+{
+  "_kommentar": "Nya produkter ur partnerfeeden som ännu inte publiceras. Bilderna ligger hos partnern och är inte hämtade till public/images/products/. En produkt utan fungerande bild visas inte, så de väntar här tills bilderna finns.",
+  "hamtad": "2026-09-09",
+  "partner": "interflora",
+  "produkter": [
+    {
+      "sku": "1035B Finare halsningskort",
+      "name": "Finare hälsningskort",
+      "price": 29,
+      "shipping": 99,
+      "productType": "B2B-accessories category SE",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744203786-1035-5.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1035B+Finare+halsningskort&fid=1835&url=https://www.interflora.se/p/93233-finare-halsningskort/1"
+    },
+    {
+      "sku": "1201263_5-Roda-rosor-steelgras",
+      "name": "5 Röda rosor",
+      "price": 295,
+      "shipping": 99,
+      "productType": "Rosor",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744198519-1201263.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1201263_5-Roda-rosor-steelgras&fid=1835&url=https://www.interflora.se/p/132-5-roda-rosor/1"
+    },
+    {
+      "sku": "1201417",
+      "name": "Varm kram",
+      "price": 389,
+      "shipping": 99,
+      "productType": "Tack för hjälpen",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744197975-1201418-2024-4-5.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1201417&fid=1835&url=https://www.interflora.se/p/102-varm-kram/2"
+    },
+    {
+      "sku": "1201525_Utan-granser-sommar_1",
+      "name": "Utan gränser sommar, liten",
+      "price": 349,
+      "shipping": 99,
+      "productType": "Välgörenhet-Arkiv",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744194320-1201904-2024-4-5-m2.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1201525_Utan-granser-sommar_1&fid=1835&url=https://www.interflora.se/p/758-utan-granser-sommar-liten/1"
+    },
+    {
+      "sku": "1201738",
+      "name": "Dörrkrans Rosa hortensia",
+      "price": 629,
+      "shipping": 99,
+      "productType": "Tack för hjälpen",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744199090-1201738-2023-4-5.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1201738&fid=1835&url=https://www.interflora.se/p/3430-dorrkrans-rosa-hortensia/1"
+    },
+    {
+      "sku": "1201772",
+      "name": "Mera Blomsterglädje",
+      "price": 359,
+      "shipping": 99,
+      "productType": "Tack för hjälpen",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744198140-1201773-2023-ny-4-5.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1201772&fid=1835&url=https://www.interflora.se/p/3607-mera-blomstergladje/2"
+    },
+    {
+      "sku": "1201772-1138",
+      "name": "Mera blomsterglädje med chokladhjärta",
+      "price": 418,
+      "shipping": 99,
+      "productType": "Tack för hjälpen",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744198351-1201773-1138-2024-4-5.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1201772-1138&fid=1835&url=https://www.interflora.se/p/72471-mera-blomstergladje-med-chokladhjarta/2"
+    },
+    {
+      "sku": "1201904 Utan-Granser-Sommar-mellan_1",
+      "name": "Utan Gränser Sommar, mellan",
+      "price": 499,
+      "shipping": 99,
+      "productType": "Välgörenhet-Arkiv",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744194314-1201904-2024-4-5-m1.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1201904+Utan-Granser-Sommar-mellan_1&fid=1835&url=https://www.interflora.se/p/4912-utan-granser-sommar-mellan/1"
+    },
+    {
+      "sku": "1201905 Utan-Granser-Sommar-stor_1",
+      "name": "Utan Gränser Sommar, stor",
+      "price": 689,
+      "shipping": 99,
+      "productType": "Välgörenhet-Arkiv",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744194314-1201904-2024-4-5-m1.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1201905+Utan-Granser-Sommar-stor_1&fid=1835&url=https://www.interflora.se/p/4914-utan-granser-sommar-stor/1"
+    },
+    {
+      "sku": "1202104",
+      "name": "Floristens höstbukett",
+      "price": 339,
+      "shipping": 99,
+      "productType": "Tack för hjälpen",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744194215-1202106-4-5.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1202104&fid=1835&url=https://www.interflora.se/p/5707-floristens-hostbukett/2"
+    },
+    {
+      "sku": "1202355",
+      "name": "Dörrkrans hortensiaprakt",
+      "price": 679,
+      "shipping": 99,
+      "productType": "Tack för hjälpen",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744194154-1202355-2023-4-5.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1202355&fid=1835&url=https://www.interflora.se/p/10257-dorrkrans-hortensiaprakt/1"
+    },
+    {
+      "sku": "1202356",
+      "name": "Dörrkrans hösthortensia",
+      "price": 499,
+      "shipping": 99,
+      "productType": "Tack för hjälpen",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744204599-1202356-2023-4-5.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1202356&fid=1835&url=https://www.interflora.se/p/10259-dorrkrans-hosthortensia/1"
+    },
+    {
+      "sku": "1202357",
+      "name": "Dörrkrans hortensiadröm",
+      "price": 529,
+      "shipping": 99,
+      "productType": "Tack för hjälpen",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744198912-1202357-2023-4-5.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1202357&fid=1835&url=https://www.interflora.se/p/10261-dorrkrans-hortensiadrom/1"
+    },
+    {
+      "sku": "1202373",
+      "name": "Stilsäker",
+      "price": 269,
+      "shipping": 99,
+      "productType": "Tack för hjälpen",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744205345-1202374-4-5.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1202373&fid=1835&url=https://www.interflora.se/p/11003-stilsaker/2"
+    },
+    {
+      "sku": "1202561",
+      "name": "Hortensiaboxen, liten",
+      "price": 439,
+      "shipping": 99,
+      "productType": "Tack för hjälpen",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744193828-1202561-2023-4-5.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1202561&fid=1835&url=https://www.interflora.se/p/27841-hortensiaboxen-liten/1"
+    },
+    {
+      "sku": "1202562",
+      "name": "Hortensiaboxen, stor",
+      "price": 599,
+      "shipping": 99,
+      "productType": "Tack för hjälpen",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744194296-1202562-2023-4-5.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1202562&fid=1835&url=https://www.interflora.se/p/27843-hortensiaboxen-stor/1"
+    },
+    {
+      "sku": "1202715-Hortensialycka",
+      "name": "Hortensialycka",
+      "price": 319,
+      "shipping": 99,
+      "productType": "Tack för hjälpen",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744198308-1202716-2024-4-5.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1202715-Hortensialycka&fid=1835&url=https://www.interflora.se/p/70565-hortensialycka/2"
+    },
+    {
+      "sku": "1202719",
+      "name": "Höstvärme",
+      "price": 279,
+      "shipping": 99,
+      "productType": "Blommor från 229 kr",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744204521-1202720-4-5.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1202719&fid=1835&url=https://www.interflora.se/p/49189-hostvarme/2"
+    },
+    {
+      "sku": "1202719-1138",
+      "name": "Höstvärme med chokladhjärta",
+      "price": 338,
+      "shipping": 99,
+      "productType": "Tack för hjälpen",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744198567-1202720-1138-2024-4-5.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1202719-1138&fid=1835&url=https://www.interflora.se/p/72209-hostvarme-med-chokladhjarta/2"
+    },
+    {
+      "sku": "1202800",
+      "name": "Höstsol",
+      "price": 399,
+      "shipping": 99,
+      "productType": "Tack för hjälpen",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744198597-1202801-2024-4-5.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1202800&fid=1835&url=https://www.interflora.se/p/70560-hostsol/2"
+    },
+    {
+      "sku": "1202835-1138",
+      "name": "Blomstrande hälsning med choklad",
+      "price": 288,
+      "shipping": 99,
+      "productType": "Blommor från 229 kr",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1775839583-1202836-1138-blomstrande-halsning-med-chokladhjarta-mellan-2026.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1202835-1138&fid=1835&url=https://www.interflora.se/p/91700-blomstrande-halsning-med-choklad/2"
+    },
+    {
+      "sku": "1202864",
+      "name": "Septemberbuketten",
+      "price": 379,
+      "shipping": 99,
+      "productType": "Tack för hjälpen",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1756557935-1202865-septemberbuketten-mellan.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1202864&fid=1835&url=https://www.interflora.se/p/84373-septemberbuketten/2"
+    },
+    {
+      "sku": "1202864-1138-Septemberbuketten-med-chokladhjarta_1",
+      "name": "Septemberbuketten med chokladhjärta",
+      "price": 438,
+      "shipping": 99,
+      "productType": "Tack för hjälpen",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1788118578-1202865-1138-septemberbuketten-m-choklad-mellan.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1202864-1138-Septemberbuketten-med-chokladhjarta_1&fid=1835&url=https://www.interflora.se/p/93273-septemberbuketten-med-chokladhjarta/2"
+    },
+    {
+      "sku": "1202974-1138",
+      "name": "Färglycka med chokladhjärta",
+      "price": 368,
+      "shipping": 99,
+      "productType": "Tack för hjälpen",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1775839588-1202975-1138-farglycka-med-chokladhjarta-mellan-2026.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1202974-1138&fid=1835&url=https://www.interflora.se/p/91696-farglycka-med-chokladhjarta/2"
+    },
+    {
+      "sku": "1203080",
+      "name": "Elegant",
+      "price": 379,
+      "shipping": 99,
+      "productType": "Tack för hjälpen",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1756558287-1203081-elegant-mellan.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1203080&fid=1835&url=https://www.interflora.se/p/83997-elegant/2"
+    },
+    {
+      "sku": "1203089",
+      "name": "Blickfång",
+      "price": 1099,
+      "shipping": 99,
+      "productType": "Tack för hjälpen",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1756558157-1203090-blickfang-mellan-2.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1203089&fid=1835&url=https://www.interflora.se/p/84005-blickfang/2"
+    },
+    {
+      "sku": "1203147",
+      "name": "Styrkekram",
+      "price": 279,
+      "shipping": 99,
+      "productType": "Blommor från 229 kr",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1767170185-1203148-styrkekram-mellan-2026.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1203147&fid=1835&url=https://www.interflora.se/p/87779-styrkekram/2"
+    },
+    {
+      "sku": "1203187-Vanskap-Utan-Granser_1",
+      "name": "Vänskap Utan Gränser",
+      "price": 379,
+      "shipping": 99,
+      "productType": "Tack för hjälpen",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1786039826-1203188-vanskap-utan-granser-mellan-ny.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1203187-Vanskap-Utan-Granser_1&fid=1835&url=https://www.interflora.se/p/89760-vanskap-utan-granser/1"
+    },
+    {
+      "sku": "1203199-Kram-NY_1",
+      "name": "Kram",
+      "price": 329,
+      "shipping": 99,
+      "productType": "Blommor från 229 kr",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1772283449-1203200-kram-mellan-2026-2.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1203199-Kram-NY_1&fid=1835&url=https://www.interflora.se/p/90778-kram/2"
+    },
+    {
+      "sku": "1203202-Mjuk-pastell_1",
+      "name": "Mjuk pastell",
+      "price": 229,
+      "shipping": 99,
+      "productType": "Blommor från 229 kr",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1772283244-1203203-mjuk-pastell-mellan-2026-2.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1203202-Mjuk-pastell_1&fid=1835&url=https://www.interflora.se/p/90678-mjuk-pastell/2"
+    },
+    {
+      "sku": "1203208-1138",
+      "name": "Vardagslyx med chokladhjärta",
+      "price": 358,
+      "shipping": 99,
+      "productType": "Tack för hjälpen",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1775839566-1203209-1138-vardagslyx-med-chokladhjarta-2026.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1203208-1138&fid=1835&url=https://www.interflora.se/p/91686-vardagslyx-med-chokladhjarta/2"
+    },
+    {
+      "sku": "1203208-Vardagslyx_1",
+      "name": "Vardagslyx",
+      "price": 299,
+      "shipping": 99,
+      "productType": "Blommor från 229 kr",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1772283288-1203209-vardagslyx-mellan-2026-2.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1203208-Vardagslyx_1&fid=1835&url=https://www.interflora.se/p/90686-vardagslyx/2"
+    },
+    {
+      "sku": "1203211-1141",
+      "name": "Lycka till-buketten med choklad",
+      "price": 378,
+      "shipping": 99,
+      "productType": "Tack för hjälpen",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1775839557-1203212-1141-lycka-till-buketten-med-choklad-mellan-2026.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1203211-1141&fid=1835&url=https://www.interflora.se/p/91737-lycka-till-buketten-med-choklad/2"
+    },
+    {
+      "sku": "1203211-Lycka-till-buketten_1",
+      "name": "Lycka till-buketten",
+      "price": 289,
+      "shipping": 99,
+      "productType": "Blommor från 229 kr",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1772283256-1203212-lycka-till-buketten-mellan-2026-2.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1203211-Lycka-till-buketten_1&fid=1835&url=https://www.interflora.se/p/90690-lycka-till-buketten/2"
+    },
+    {
+      "sku": "1203214-Tack-buketten_1",
+      "name": "Tack-buketten",
+      "price": 319,
+      "shipping": 99,
+      "productType": "Blommor från 229 kr",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1772283279-1203215-tack-buketten-mellan-2026-2.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1203214-Tack-buketten_1&fid=1835&url=https://www.interflora.se/p/90735-tack-buketten/2"
+    },
+    {
+      "sku": "1203223-Kram-Utan-Granser_1",
+      "name": "Kram Utan Gränser",
+      "price": 359,
+      "shipping": 99,
+      "productType": "Tack för hjälpen",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1786039948-1203224-kram-utan-granser-mellan-2026-ny.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1203223-Kram-Utan-Granser_1&fid=1835&url=https://www.interflora.se/p/91729-kram-utan-granser/2"
+    },
+    {
+      "sku": "1203226-Elegant-Utan-Granser_1",
+      "name": "Elegant Utan Gränser",
+      "price": 409,
+      "shipping": 99,
+      "productType": "Tack för hjälpen",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1786039919-1203227-elegant-utan-granser-mellan-2026-ny.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1203226-Elegant-Utan-Granser_1&fid=1835&url=https://www.interflora.se/p/91736-elegant-utan-granser/2"
+    },
+    {
+      "sku": "1203237-Blomsterlyx-med-chokladpase_1",
+      "name": "Blomsterlyx med chokladpåse",
+      "price": 578,
+      "shipping": 99,
+      "productType": "Blomsterkassar",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1780000635-1203235-styrkekramguldkant-chokladtrio-2026.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1203237-Blomsterlyx-med-chokladpase_1&fid=1835&url=https://www.interflora.se/p/92714-blomsterlyx-med-chokladpase/2"
+    },
+    {
+      "sku": "1203240-Varma-gratulationer-med-chokladpase_1",
+      "name": "Varma gratulationer med chokladpåse",
+      "price": 549,
+      "shipping": 99,
+      "productType": "Blomsterkassar",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1780089786-1203241-varma-gratulationerguldkant-chokladtrio-mellan-2026.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1203240-Varma-gratulationer-med-chokladpase_1&fid=1835&url=https://www.interflora.se/p/92718-varma-gratulationer-med-chokladpase/2"
+    },
+    {
+      "sku": "1203307",
+      "name": "10 röda rosor",
+      "price": 279,
+      "shipping": 99,
+      "productType": "Direktleveranser",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1788701396-1203307-10-roda-rosor-2026.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1203307&fid=1835&url=https://www.interflora.se/p/93301-10-roda-rosor/1"
+    },
+    {
+      "sku": "1203308",
+      "name": "20 röda rosor",
+      "price": 549,
+      "shipping": 99,
+      "productType": "Direktleveranser",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1788701373-1203308-20-roda-rosor-2026.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1203308&fid=1835&url=https://www.interflora.se/p/93336-20-roda-rosor/1"
+    },
+    {
+      "sku": "1203309",
+      "name": "30 röda rosor",
+      "price": 819,
+      "shipping": 99,
+      "productType": "Direktleveranser",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1788701330-1203309-30-roda-rosor-2026.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1203309&fid=1835&url=https://www.interflora.se/p/93338-30-roda-rosor/1"
+    },
+    {
+      "sku": "1203310",
+      "name": "10 rosa rosor",
+      "price": 279,
+      "shipping": 99,
+      "productType": "Direktleveranser",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1788701384-1203310-10-rosa-rosor-2026.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1203310&fid=1835&url=https://www.interflora.se/p/93340-10-rosa-rosor/1"
+    },
+    {
+      "sku": "1203311",
+      "name": "20 rosa rosor",
+      "price": 549,
+      "shipping": 99,
+      "productType": "Direktleveranser",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1788701341-1203311-20-rosa-rosor-2026.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1203311&fid=1835&url=https://www.interflora.se/p/93342-20-rosa-rosor/1"
+    },
+    {
+      "sku": "1203312",
+      "name": "30 rosa rosor",
+      "price": 819,
+      "shipping": 99,
+      "productType": "Direktleveranser",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1788701337-1203312-30-rosa-rosor-2026.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1203312&fid=1835&url=https://www.interflora.se/p/93344-30-rosa-rosor/1"
+    },
+    {
+      "sku": "1204054",
+      "name": "Röda rosboxen, liten",
+      "price": 529,
+      "shipping": 99,
+      "productType": "Bara därför att",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744198429-1204054-roda-rosboxen-liten-4-5.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1204054&fid=1835&url=https://www.interflora.se/p/6959-roda-rosboxen-liten/1"
+    },
+    {
+      "sku": "1204055",
+      "name": "Röda rosboxen, stor",
+      "price": 699,
+      "shipping": 99,
+      "productType": "Bara därför att",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744199005-1204055-roda-rosboxen-stor-4-5.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1204055&fid=1835&url=https://www.interflora.se/p/6961-roda-rosboxen-stor/1"
+    },
+    {
+      "sku": "1204056",
+      "name": "Rosa rosboxen, liten",
+      "price": 549,
+      "shipping": 99,
+      "productType": "Bara därför att",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744198322-1204056-rosa-rosboxen-liten-4-5.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1204056&fid=1835&url=https://www.interflora.se/p/6963-rosa-rosboxen-liten/1"
+    },
+    {
+      "sku": "1204057",
+      "name": "Rosa rosboxen, stor",
+      "price": 699,
+      "shipping": 99,
+      "productType": "Bara därför att",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744198159-1204057-rosa-rosboxen-stor-4-5.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1204057&fid=1835&url=https://www.interflora.se/p/6965-rosa-rosboxen-stor/1"
+    },
+    {
+      "sku": "1205004",
+      "name": "Röd ros med grönt",
+      "price": 89,
+      "shipping": 99,
+      "productType": "Romantiska blommor",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744198462-1205004-4-5-2025.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1205004&fid=1835&url=https://www.interflora.se/p/138-rod-ros-med-gront/1"
+    },
+    {
+      "sku": "1205004-1005",
+      "name": "Röd ros med nalle",
+      "price": 188,
+      "shipping": 99,
+      "productType": "Blommor från 229 kr",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744198405-1205004-1006-4-5-2025.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1205004-1005&fid=1835&url=https://www.interflora.se/p/266-rod-ros-med-nalle/1"
+    },
+    {
+      "sku": "1208001",
+      "name": "Guldkant Chokladtrio",
+      "price": 299,
+      "shipping": 99,
+      "productType": "Tack för hjälpen",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1779300868-1208001-guldkant-chokladtrio-2026.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1208001&fid=1835&url=https://www.interflora.se/p/92139-guldkant-chokladtrio/1"
+    },
+    {
+      "sku": "1208002",
+      "name": "Guldkant Konfekt & praliner",
+      "price": 369,
+      "shipping": 99,
+      "productType": "Tack för hjälpen",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1779300815-1208002-guldkant-konfekt-praliner-2026.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1208002&fid=1835&url=https://www.interflora.se/p/92142-guldkant-konfekt--praliner/1"
+    },
+    {
+      "sku": "1208003",
+      "name": "Guldkant Stor favoritmix",
+      "price": 569,
+      "shipping": 99,
+      "productType": "Tack för hjälpen",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1786644154-guldkant_ny.png",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1208003&fid=1835&url=https://www.interflora.se/p/92146-guldkant-stor-favoritmix/1"
+    },
+    {
+      "sku": "1210059",
+      "name": "Vit orkidé i kruka",
+      "price": 499,
+      "shipping": 99,
+      "productType": "Krukväxter",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744203955-1210059-4-5.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1210059&fid=1835&url=https://www.interflora.se/p/87-vit-orkide-i-kruka/1"
+    },
+    {
+      "sku": "1210060",
+      "name": "Rosa orkidé i kruka",
+      "price": 499,
+      "shipping": 99,
+      "productType": "Krukväxter",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744204209-1210060-4-5.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1210060&fid=1835&url=https://www.interflora.se/p/126-rosa-orkide-i-kruka/1"
+    },
+    {
+      "sku": "1210066",
+      "name": "Rosa orkidé",
+      "price": 379,
+      "shipping": 99,
+      "productType": "Krukväxter",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744198378-1210066-2024-4-5.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1210066&fid=1835&url=https://www.interflora.se/p/124-rosa-orkide/1"
+    },
+    {
+      "sku": "1210067",
+      "name": "Vit orkidé",
+      "price": 429,
+      "shipping": 99,
+      "productType": "Krukväxter",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744203852-1210067-2024-4-5.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1210067&fid=1835&url=https://www.interflora.se/p/122-vit-orkide/1"
+    },
+    {
+      "sku": "1210076",
+      "name": "Aloe vera 40 cm",
+      "price": 199,
+      "shipping": 99,
+      "productType": "Krukväxter",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744204093-1210076-4-5.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1210076&fid=1835&url=https://www.interflora.se/p/72-aloe-vera-40-cm/1"
+    },
+    {
+      "sku": "1210078",
+      "name": "Monstera 50 cm",
+      "price": 229,
+      "shipping": 99,
+      "productType": "Krukväxter",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744198390-1210078-4-5-ny.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1210078&fid=1835&url=https://www.interflora.se/p/55-monstera-50-cm/1"
+    },
+    {
+      "sku": "1210082",
+      "name": "Kaktus 15 cm",
+      "price": 159,
+      "shipping": 99,
+      "productType": "Krukväxter",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744198099-1210082-4-5.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1210082&fid=1835&url=https://www.interflora.se/p/78-kaktus-15-cm/1"
+    },
+    {
+      "sku": "1210086",
+      "name": "Calathea 50 cm",
+      "price": 269,
+      "shipping": 99,
+      "productType": "Krukväxter",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744198090-1210086-4-5.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1210086&fid=1835&url=https://www.interflora.se/p/76-calathea-50-cm/1"
+    },
+    {
+      "sku": "1210123",
+      "name": "Monstera Monkey Mask",
+      "price": 195,
+      "shipping": 99,
+      "productType": "Krukväxter",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744267073-1280001_monstera-monkey-mask.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1210123&fid=1835&url=https://www.interflora.se/p/9202-monstera-monkey-mask/1"
+    },
+    {
+      "sku": "1210124",
+      "name": "Murgröna 50-60 cm",
+      "price": 199,
+      "shipping": 99,
+      "productType": "Krukväxter",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744198114-1210124-4-5.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1210124&fid=1835&url=https://www.interflora.se/p/9204-murgrona-50-60-cm/1"
+    },
+    {
+      "sku": "1210128",
+      "name": "Rundcalathea",
+      "price": 259,
+      "shipping": 99,
+      "productType": "Krukväxter",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744203986-1210128.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1210128&fid=1835&url=https://www.interflora.se/p/10914-rundcalathea/1"
+    },
+    {
+      "sku": "1210137",
+      "name": "Fiolfikus 60 cm",
+      "price": 549,
+      "shipping": 99,
+      "productType": "Krukväxter",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744198459-1210137-4-5.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1210137&fid=1835&url=https://www.interflora.se/p/11757-fiolfikus-60-cm/1"
+    },
+    {
+      "sku": "1210148",
+      "name": "Ljusrosa orkidé",
+      "price": 429,
+      "shipping": 99,
+      "productType": "Krukväxter",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744198129-1210148-2024-4-5.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1210148&fid=1835&url=https://www.interflora.se/p/62455-ljusrosa-orkide/1"
+    },
+    {
+      "sku": "1210150",
+      "name": "Rosa hortensia i vaxat papper",
+      "price": 379,
+      "shipping": 99,
+      "productType": "Krukväxter",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1746536659-1210074-2025.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1210150&fid=1835&url=https://www.interflora.se/p/67107-rosa-hortensia-i-vaxat-papper/1"
+    },
+    {
+      "sku": "1211020",
+      "name": "Rosa orkidéplantering",
+      "price": 1299,
+      "shipping": 99,
+      "productType": "Krukväxter",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744198228-1211020-4-5.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1211020&fid=1835&url=https://www.interflora.se/p/128-rosa-orkideplantering/1"
+    },
+    {
+      "sku": "1211066",
+      "name": "Krya på dig-kassen",
+      "price": 528,
+      "shipping": 99,
+      "productType": "Blomsterkassar",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744198758-1211067-2024-hjarta-ny.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1211066&fid=1835&url=https://www.interflora.se/p/6891-krya-pa-dig-kassen/2"
+    },
+    {
+      "sku": "1211072",
+      "name": "Rosa orkidékassen",
+      "price": 699,
+      "shipping": 99,
+      "productType": "Blomsterkassar",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744198610-1211072-rosa-orkidekassen-4-5-ny.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1211072&fid=1835&url=https://www.interflora.se/p/10347-rosa-orkidekassen/1"
+    },
+    {
+      "sku": "1211073",
+      "name": "Vita orkidékassen",
+      "price": 699,
+      "shipping": 99,
+      "productType": "Krukväxter",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744198127-1211073-vita-orkidekassen-4-5-ny.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1211073&fid=1835&url=https://www.interflora.se/p/10349-vita-orkidekassen/1"
+    },
+    {
+      "sku": "1211075",
+      "name": "Lättskötta kassen",
+      "price": 749,
+      "shipping": 99,
+      "productType": "Krukväxter",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744198120-1211075_lattskotta_kassen-4-5-ny.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1211075&fid=1835&url=https://www.interflora.se/p/10341-lattskotta-kassen/1"
+    },
+    {
+      "sku": "1220050",
+      "name": "Älskad, stjälkstående bukett",
+      "price": 1449,
+      "shipping": 149,
+      "productType": "Begravningsblommor",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744204663-1220050.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1220050&fid=1835&url=https://www.interflora.se/p/22839-alskad-stjalkstaende-bukett/1"
+    },
+    {
+      "sku": "1220052",
+      "name": "Saknad, stjälkstående bukett",
+      "price": 999,
+      "shipping": 149,
+      "productType": "Begravningsblommor",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744204740-1220052.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1220052&fid=1835&url=https://www.interflora.se/p/22965-saknad-stjalkstaende-bukett/1"
+    },
+    {
+      "sku": "1220055",
+      "name": "Älskad, liggande bukett",
+      "price": 499,
+      "shipping": 149,
+      "productType": "Begravningsblommor",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744194375-1220055.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1220055&fid=1835&url=https://www.interflora.se/p/43395-alskad-liggande-bukett/1"
+    },
+    {
+      "sku": "1221083",
+      "name": "Floristens höga dekoration",
+      "price": 1299,
+      "shipping": 149,
+      "productType": "Dekorationer",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744193577-1221101-2022-ny.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1221083&fid=1835&url=https://www.interflora.se/p/391-floristens-hoga-dekoration/2"
+    },
+    {
+      "sku": "1221084",
+      "name": "Floristens låga dekoration",
+      "price": 999,
+      "shipping": 149,
+      "productType": "Dekorationer",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744193831-1221099-2022-ny.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1221084&fid=1835&url=https://www.interflora.se/p/385-floristens-laga-dekoration/2"
+    },
+    {
+      "sku": "1221103_Rosa-himmel_1",
+      "name": "Dekoration, Cancerfonden",
+      "price": 1449,
+      "shipping": 99,
+      "productType": "Dekorationer",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1786646552-1221103-dekoration-cancerfonden-2026.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1221103_Rosa-himmel_1&fid=1835&url=https://www.interflora.se/p/3500-dekoration-cancerfonden/1"
+    },
+    {
+      "sku": "1221104_dekoration-Rosa-himmel_1",
+      "name": "Hög dekoration, Cancerfonden",
+      "price": 1949,
+      "shipping": 99,
+      "productType": "Dekorationer",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1786647477-1221104-hog-dekoration-cancerfonden.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1221104_dekoration-Rosa-himmel_1&fid=1835&url=https://www.interflora.se/p/3503-hog-dekoration-cancerfonden/1"
+    },
+    {
+      "sku": "1221110-Farval-hog-dekoration-natur",
+      "name": "Farväl, hög dekoration natur",
+      "price": 1499,
+      "shipping": 149,
+      "productType": "Dekorationer",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744194298-1221110.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1221110-Farval-hog-dekoration-natur&fid=1835&url=https://www.interflora.se/p/23183-farval-hog-dekoration-natur/1"
+    },
+    {
+      "sku": "1221114",
+      "name": "Ljusa minnen, rund dekoration",
+      "price": 2299,
+      "shipping": 149,
+      "productType": "Dekorationer",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744206871-1221114.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1221114&fid=1835&url=https://www.interflora.se/p/22708-ljusa-minnen-rund-dekoration/1"
+    },
+    {
+      "sku": "1221119",
+      "name": "Kärlek, hög dekoration klassisk",
+      "price": 2249,
+      "shipping": 149,
+      "productType": "Dekorationer",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744194393-1221119.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1221119&fid=1835&url=https://www.interflora.se/p/24333-karlek-hog-dekoration-klassisk/1"
+    },
+    {
+      "sku": "1221120",
+      "name": "Saknad, rund dekoration",
+      "price": 1649,
+      "shipping": 149,
+      "productType": "Dekorationer",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744193526-1221120.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1221120&fid=1835&url=https://www.interflora.se/p/23220-saknad-rund-dekoration/1"
+    },
+    {
+      "sku": "1221123",
+      "name": "Saknad, plantering",
+      "price": 549,
+      "shipping": 149,
+      "productType": "Dekorationer",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744193503-1221123.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1221123&fid=1835&url=https://www.interflora.se/p/22961-saknad-plantering/1"
+    },
+    {
+      "sku": "1221124",
+      "name": "Kärlek, hög dekoration",
+      "price": 3499,
+      "shipping": 149,
+      "productType": "Dekorationer",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744194444-1221124.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1221124&fid=1835&url=https://www.interflora.se/p/24337-karlek-hog-dekoration/1"
+    },
+    {
+      "sku": "1221125",
+      "name": "Älskad, hög dekoration",
+      "price": 1999,
+      "shipping": 149,
+      "productType": "Dekorationer",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744193428-1221125.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1221125&fid=1835&url=https://www.interflora.se/p/23228-alskad-hog-dekoration/1"
+    },
+    {
+      "sku": "1221128",
+      "name": "Älskad, låg dekoration",
+      "price": 1329,
+      "shipping": 149,
+      "productType": "Dekorationer",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744199110-1221128.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1221128&fid=1835&url=https://www.interflora.se/p/23230-alskad-lag-dekoration/1"
+    },
+    {
+      "sku": "1221130",
+      "name": "Strand, blomsterhjärta",
+      "price": 3349,
+      "shipping": 149,
+      "productType": "Dekorationer",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744193568-1221130.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1221130&fid=1835&url=https://www.interflora.se/p/23187-strand-blomsterhjarta/1"
+    },
+    {
+      "sku": "1221131",
+      "name": "Strand litet blomsterhjärta",
+      "price": 899,
+      "shipping": 149,
+      "productType": "Dekorationer",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744193616-1221131.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1221131&fid=1835&url=https://www.interflora.se/p/23189-strand-litet-blomsterhjarta/1"
+    },
+    {
+      "sku": "1221132",
+      "name": "Strand, stort blomsterhjärta",
+      "price": 3699,
+      "shipping": 149,
+      "productType": "Dekorationer",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744194424-1221132.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1221132&fid=1835&url=https://www.interflora.se/p/23191-strand-stort-blomsterhjarta/1"
+    },
+    {
+      "sku": "1221136",
+      "name": "Kärlek, öppet blomsterhjärta",
+      "price": 1999,
+      "shipping": 149,
+      "productType": "Dekorationer",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744193390-1221136.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1221136&fid=1835&url=https://www.interflora.se/p/24327-karlek-oppet-blomsterhjarta/1"
+    },
+    {
+      "sku": "1221137",
+      "name": "Älskad, stort blomsterhjärta",
+      "price": 2799,
+      "shipping": 149,
+      "productType": "Dekorationer",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744204450-1221137.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1221137&fid=1835&url=https://www.interflora.se/p/22845-alskad-stort-blomsterhjarta/1"
+    },
+    {
+      "sku": "1221138",
+      "name": "Älskad, blomsterhjärta",
+      "price": 1999,
+      "shipping": 149,
+      "productType": "Dekorationer",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744193704-1221138.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1221138&fid=1835&url=https://www.interflora.se/p/22841-alskad-blomsterhjarta/1"
+    },
+    {
+      "sku": "1221139-Avsked-hjarta",
+      "name": "Avsked, blomsterhjärta",
+      "price": 1699,
+      "shipping": 149,
+      "productType": "Dekorationer",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744199079-1221139.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1221139-Avsked-hjarta&fid=1835&url=https://www.interflora.se/p/22849-avsked-blomsterhjarta/1"
+    },
+    {
+      "sku": "1221140-Avsked-oppet-hjarta",
+      "name": "Avsked, öppet blomsterhjärta",
+      "price": 1599,
+      "shipping": 149,
+      "productType": "Dekorationer",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744194388-1221140.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1221140-Avsked-oppet-hjarta&fid=1835&url=https://www.interflora.se/p/22847-avsked-oppet-blomsterhjarta/1"
+    },
+    {
+      "sku": "1221141",
+      "name": "Älskad, öppet blomsterhjärta",
+      "price": 4299,
+      "shipping": 149,
+      "productType": "Dekorationer",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744193469-1221141.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1221141&fid=1835&url=https://www.interflora.se/p/22837-alskad-oppet-blomsterhjarta/1"
+    },
+    {
+      "sku": "1222060",
+      "name": "Ljusa minnen, krans",
+      "price": 8799,
+      "shipping": 149,
+      "productType": "Begravningskransar",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744194469-1222060.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1222060&fid=1835&url=https://www.interflora.se/p/22714-ljusa-minnen-krans/1"
+    },
+    {
+      "sku": "1222069",
+      "name": "Saknad, krans cypress",
+      "price": 2899,
+      "shipping": 149,
+      "productType": "Begravningskransar",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744193611-1222069.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1222069&fid=1835&url=https://www.interflora.se/p/22959-saknad-krans-cypress/1"
+    },
+    {
+      "sku": "1224016",
+      "name": "Ömhet, handbukett",
+      "price": 229,
+      "shipping": 149,
+      "productType": "Begravningsblommor",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744199320-1224016.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1224016&fid=1835&url=https://www.interflora.se/p/23301-omhet-handbukett/1"
+    },
+    {
+      "sku": "1224017",
+      "name": "Farväl, handbukett",
+      "price": 149,
+      "shipping": 149,
+      "productType": "Begravningsblommor",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744194414-1224017.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1224017&fid=1835&url=https://www.interflora.se/p/23179-farval-handbukett/1"
+    },
+    {
+      "sku": "1224021",
+      "name": "Älskad, handbukett",
+      "price": 99,
+      "shipping": 149,
+      "productType": "Begravningsblommor",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744193935-1224021.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1224021&fid=1835&url=https://www.interflora.se/p/39106-alskad-handbukett/1"
+    },
+    {
+      "sku": "1224022",
+      "name": "Kärlek, handbukett",
+      "price": 99,
+      "shipping": 149,
+      "productType": "Begravningsblommor",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744199118-1224022.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1224022&fid=1835&url=https://www.interflora.se/p/24283-karlek-handbukett/1"
+    },
+    {
+      "sku": "1224024",
+      "name": "Saknad, handbukett",
+      "price": 99,
+      "shipping": 149,
+      "productType": "Begravningsblommor",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744193454-1224024.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1224024&fid=1835&url=https://www.interflora.se/p/22967-saknad-handbukett/1"
+    },
+    {
+      "sku": "1258081-Fikabox",
+      "name": "Fikabox",
+      "price": 395,
+      "shipping": 99,
+      "productType": "Choklad & Presentboxar",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744198546-1258081-4-5-2024.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1258081-Fikabox&fid=1835&url=https://www.interflora.se/p/7199-fikabox/1"
+    },
+    {
+      "sku": "1258292",
+      "name": "Belgiska praliner",
+      "price": 179,
+      "shipping": 99,
+      "productType": "Färdiga paket",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744268380-1258292-4.jpeg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1258292&fid=1835&url=https://www.interflora.se/p/73192-belgiska-praliner/1"
+    },
+    {
+      "sku": "1258293-Pralinfrossa",
+      "name": "Pralinfrossa",
+      "price": 229,
+      "shipping": 99,
+      "productType": "Choklad & Presentboxar",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744194535-1258293-4-5-2024.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1258293-Pralinfrossa&fid=1835&url=https://www.interflora.se/p/73194-pralinfrossa/1"
+    },
+    {
+      "sku": "1258294-Lyxig-pralinask",
+      "name": "Lyxig pralinask",
+      "price": 249,
+      "shipping": 99,
+      "productType": "Choklad & Presentboxar",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744194073-1258294-4-5-2024.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1258294-Lyxig-pralinask&fid=1835&url=https://www.interflora.se/p/73196-lyxig-pralinask/1"
+    },
+    {
+      "sku": "1258295-Lyxiga-chokladstunder",
+      "name": "Lyxiga chokladstunder",
+      "price": 349,
+      "shipping": 99,
+      "productType": "Choklad & Presentboxar",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744204451-1258295-4-5-2024.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1258295-Lyxiga-chokladstunder&fid=1835&url=https://www.interflora.se/p/73198-lyxiga-chokladstunder/1"
+    },
+    {
+      "sku": "1258296-Fikastund",
+      "name": "Fikastund",
+      "price": 299,
+      "shipping": 99,
+      "productType": "Choklad & Presentboxar",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744206208-1258296-4-5-2024.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=1258296-Fikastund&fid=1835&url=https://www.interflora.se/p/73200-fikastund/1"
+    },
+    {
+      "sku": "2520",
+      "name": "Ros, röd",
+      "price": 60,
+      "shipping": 99,
+      "productType": "Skapa själv",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1746552346-2520-4-5.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=2520&fid=1835&url=https://www.interflora.se/p/161-ros-rod/1"
+    },
+    {
+      "sku": "2521",
+      "name": "Ros, rosa",
+      "price": 60,
+      "shipping": 99,
+      "productType": "Skapa själv",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744198498-2521-4-5.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=2521&fid=1835&url=https://www.interflora.se/p/171-ros-rosa/1"
+    },
+    {
+      "sku": "2524",
+      "name": "Ros, vit",
+      "price": 60,
+      "shipping": 99,
+      "productType": "Skapa själv",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744197859-2524-4-5.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=2524&fid=1835&url=https://www.interflora.se/p/169-ros-vit/1"
+    },
+    {
+      "sku": "2525-Extra-gront",
+      "name": "Extra grönt",
+      "price": 89,
+      "shipping": 99,
+      "productType": "Snittblommor styckvis",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744194160-2525-2.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=2525-Extra-gront&fid=1835&url=https://www.interflora.se/p/5212-extra-gront/1"
+    },
+    {
+      "sku": "2527",
+      "name": "Röd ros, stor",
+      "price": 85,
+      "shipping": 99,
+      "productType": "Rosor",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744198278-2527-4-5.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=2527&fid=1835&url=https://www.interflora.se/p/163-rod-ros-stor/1"
+    },
+    {
+      "sku": "2600_Liljor_1",
+      "name": "Lilja, vit",
+      "price": 80,
+      "shipping": 99,
+      "productType": "Snittblommor styckvis",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744203978-2600-4-5.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=2600_Liljor_1&fid=1835&url=https://www.interflora.se/p/995-lilja-vit/1"
+    },
+    {
+      "sku": "2601-Lilja-rosa",
+      "name": "Lilja, rosa",
+      "price": 80,
+      "shipping": 99,
+      "productType": "Snittblommor styckvis",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744193460-2601.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=2601-Lilja-rosa&fid=1835&url=https://www.interflora.se/p/17553-lilja-rosa/1"
+    },
+    {
+      "sku": "2603-Liljor-blandade-farger_1",
+      "name": "Lilja, blandade färger",
+      "price": 80,
+      "shipping": 99,
+      "productType": "Snittblommor styckvis",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744198414-2603_ny.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=2603-Liljor-blandade-farger_1&fid=1835&url=https://www.interflora.se/p/17841-lilja-blandade-farger/1"
+    },
+    {
+      "sku": "2605-Nejlika-cremeaprikos",
+      "name": "Nejlika creme/aprikos",
+      "price": 30,
+      "shipping": 99,
+      "productType": "Snittblommor styckvis",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744203972-nejlika-aprikos-snitt-styckvis.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=2605-Nejlika-cremeaprikos&fid=1835&url=https://www.interflora.se/p/17420-nejlika-cremeaprikos/1"
+    },
+    {
+      "sku": "2608",
+      "name": "Alstroemeria, rosa",
+      "price": 45,
+      "shipping": 99,
+      "productType": "Snittblommor styckvis",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744198240-alstroemeria-rosa-snitt-styckvis.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=2608&fid=1835&url=https://www.interflora.se/p/17403-alstroemeria-rosa/1"
+    },
+    {
+      "sku": "2609-Alstroemeria-vit",
+      "name": "Alstroemeria, vit",
+      "price": 45,
+      "shipping": 99,
+      "productType": "Snittblommor styckvis",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744198408-2609.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=2609-Alstroemeria-vit&fid=1835&url=https://www.interflora.se/p/17404-alstroemeria-vit/1"
+    },
+    {
+      "sku": "2610",
+      "name": "Alstroemeria orange",
+      "price": 45,
+      "shipping": 99,
+      "productType": "Snittblommor styckvis",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744198239-alstroemeria-orange-snitt-styckvis.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=2610&fid=1835&url=https://www.interflora.se/p/17408-alstroemeria-orange/1"
+    },
+    {
+      "sku": "2611-Nejlika-blandade-farger",
+      "name": "Nejlika, blandade färger",
+      "price": 30,
+      "shipping": 99,
+      "productType": "Snittblommor styckvis",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744198893-2611-ny.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=2611-Nejlika-blandade-farger&fid=1835&url=https://www.interflora.se/p/17421-nejlika-blandade-farger/1"
+    },
+    {
+      "sku": "2612-Astroemeria-blandade-farger_1",
+      "name": "Alstroemeria, blandade färger",
+      "price": 45,
+      "shipping": 99,
+      "productType": "Snittblommor styckvis",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744198850-2612-ny-2.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=2612-Astroemeria-blandade-farger_1&fid=1835&url=https://www.interflora.se/p/17405-alstroemeria-blandade-farger/1"
+    },
+    {
+      "sku": "2625_Tistlar_1",
+      "name": "Tistlar",
+      "price": 80,
+      "shipping": 99,
+      "productType": "Snittblommor styckvis",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744204393-2625-m2.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=2625_Tistlar_1&fid=1835&url=https://www.interflora.se/p/1030-tistlar/1"
+    },
+    {
+      "sku": "2628",
+      "name": "Prärieklocka, lila",
+      "price": 100,
+      "shipping": 99,
+      "productType": "Snittblommor styckvis",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744198371-prarieklocka-lila-snitt-styckvis.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=2628&fid=1835&url=https://www.interflora.se/p/17861-prarieklocka-lila/1"
+    },
+    {
+      "sku": "2647",
+      "name": "Prärieklocka, rosa",
+      "price": 100,
+      "shipping": 99,
+      "productType": "Snittblommor styckvis",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744204149-prarieklocka-rosa-snitt-styckvis.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=2647&fid=1835&url=https://www.interflora.se/p/1516-prarieklocka-rosa/1"
+    },
+    {
+      "sku": "2649-Prarieklocka-vit",
+      "name": "Prärieklocka, vit",
+      "price": 100,
+      "shipping": 99,
+      "productType": "Snittblommor styckvis",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744198393-2649.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=2649-Prarieklocka-vit&fid=1835&url=https://www.interflora.se/p/17862-prarieklocka-vit/1"
+    },
+    {
+      "sku": "2656",
+      "name": "Ros, blandande färger",
+      "price": 60,
+      "shipping": 99,
+      "productType": "Snittblommor styckvis",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744198055-1201652-4-5-m1.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=2656&fid=1835&url=https://www.interflora.se/p/17840-ros-blandande-farger/1"
+    },
+    {
+      "sku": "2657-Prarieklockor-blandade-farger_1",
+      "name": "Prärieklockor, blandade färger",
+      "price": 100,
+      "shipping": 99,
+      "productType": "Snittblommor styckvis",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744198573-2657.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=2657-Prarieklockor-blandade-farger_1&fid=1835&url=https://www.interflora.se/p/17863-prarieklockor-blandade-farger/1"
+    },
+    {
+      "sku": "2663",
+      "name": "Hypericum",
+      "price": 40,
+      "shipping": 99,
+      "productType": "Snittblommor styckvis",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744204314-hypericum-snitt-styckvis.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=2663&fid=1835&url=https://www.interflora.se/p/49969-hypericum/1"
+    },
+    {
+      "sku": "2666",
+      "name": "Ros, créme",
+      "price": 60,
+      "shipping": 99,
+      "productType": "Snittblommor styckvis",
+      "imageUrl": "https://www.interflora.se/fstrz/r/s/www.datocms-assets.com/157122/1744204063-2666-ros-creme-styckvis.jpg",
+      "trackingUrl": "https://go.adt246.net/t/t?a=1487385313&as=1771789045&t=2&tk=1&cupa_sku=2666&fid=1835&url=https://www.interflora.se/p/59694-ros-creme/1"
+    }
+  ]
+}

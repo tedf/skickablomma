@@ -76,6 +76,11 @@ export function ProductCard({
               -{product.discountPercent}%
             </span>
           )}
+          {/*
+            "Idag" gäller blombud. Lökar och festtillbehör kommer som paket från
+            en trädgårdshandel respektive en festbutik, och partnerns stopptid
+            säger ingenting om dem.
+          */}
           {product.sameDayDelivery && (
             <span className="product-card-badge product-card-badge-express">
               <Clock className="mr-1 inline h-3 w-3" />
@@ -151,10 +156,15 @@ export function ProductCard({
         </div>
 
         {/* Leveransinfo */}
-        {product.sameDayDelivery && (
+        {product.sameDayDelivery ? (
           <div className="flex items-center gap-1 rounded-md bg-secondary/10 px-2 py-1 text-xs font-medium text-secondary-700">
             <Truck className="h-3.5 w-3.5 flex-shrink-0" />
             <span>Leverans idag, beställ före {partner.deliveryInfo.sameDayCutoff}</span>
+          </div>
+        ) : (
+          <div className="flex items-center gap-1 rounded-md bg-muted px-2 py-1 text-xs text-ink-muted">
+            <Truck className="h-3.5 w-3.5 flex-shrink-0" />
+            <span>Skickas som paket</span>
           </div>
         )}
 

@@ -18,7 +18,15 @@ import { MicroAnswer } from '@/components/comparison/MicroAnswer'
 import { DraftNotice } from '@/components/comparison/DraftNotice'
 import { BotanicalRule } from '@/components/brand/Botanical'
 import { ProductEvidence } from '@/components/comparison/ProductEvidence'
-import { getFeedDate, getProductsByCategory, getProductsBySubCategory } from '@/lib/products'
+import { AdjacentOffer } from '@/components/comparison/AdjacentOffer'
+import {
+  arPlanteringssasong,
+  getFeedDate,
+  getProductsByCategory,
+  getProductsBySubCategory,
+  pickPartyAccessories,
+  pickPlantableBulbs,
+} from '@/lib/products'
 
 /** Versal på första bokstaven. Ankartexterna kommer ur datan i gemener. */
 function stortForst(text: string): string {
@@ -121,6 +129,18 @@ export default async function OccasionPage({ params }: OccasionPageProps) {
         }
       }
     }
+  }
+
+  /*
+    Angränsande sortiment. Vilket, om något, står i datan per tillfälle — se
+    fältet adjacent i types/comparison.ts. Lökarna visas dessutom bara under
+    planteringssäsongen, eftersom en tulpanlök i mars är fel svar.
+  */
+  let adjacent: Product[] = []
+  if (occasion.adjacent === 'lokar' && arPlanteringssasong()) {
+    adjacent = pickPlantableBulbs(await getProductsByCategory('lokar-och-fron', 200), 4)
+  } else if (occasion.adjacent === 'dukning') {
+    adjacent = pickPartyAccessories(await getProductsByCategory('dukning-och-fest', 200), 4)
   }
 
   const articleSchema = {
@@ -232,6 +252,10 @@ export default async function OccasionPage({ params }: OccasionPageProps) {
         exclude={query?.excludeSubCategories ?? []}
         categoryHref={query?.mainCategory ? `/${query.mainCategory}` : undefined}
       />
+
+      {occasion.adjacent && (
+        <AdjacentOffer products={adjacent} variant={occasion.adjacent} />
+      )}
 
       {occasion.page.faq.length > 0 && (
         <FAQSection

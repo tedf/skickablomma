@@ -37,24 +37,6 @@ export const PARTNERS: Record<Partner, PartnerConfig> = {
       epi: 'skickablomma',
     },
   },
-  fakeflowers: {
-    id: 'fakeflowers',
-    name: 'fakeflowers',
-    displayName: 'Fakeflowers',
-    logoUrl: '/images/partners/fakeflowers-logo.svg',
-    websiteUrl: 'https://www.fakeflowers.se',
-    productFeedUrl: process.env.ADTRACTION_FAKEFLOWERS_PRODUCT_FEED || '',
-    statusFeedUrl: process.env.ADTRACTION_FAKEFLOWERS_STATUS_FEED || '',
-    deliveryInfo: {
-      sameDayAvailable: false,
-      sameDayCutoff: '',
-      standardDays: 2,
-      expressAvailable: false,
-    },
-    trackingParams: {
-      epi: 'skickablomma',
-    },
-  },
   myperfectday: {
     id: 'myperfectday',
     name: 'myperfectday',

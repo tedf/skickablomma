@@ -9,7 +9,9 @@ import {
   Flower2,
   Gift,
   Leaf,
+  PartyPopper,
   Sparkles,
+  Sprout,
   Tag,
   type LucideIcon,
 } from 'lucide-react'
@@ -31,7 +33,8 @@ const categoryGradients: Record<string, string> = {
   brollop: 'from-brand-300 to-brand-500',
   foretag: 'from-brand-600 to-brand-800',
   presenter: 'from-signal-400 to-signal-600',
-  'konstgjorda-blommor': 'from-brand-200 to-brand-400',
+  'lokar-och-fron': 'from-leaf-200 to-leaf-400',
+  'dukning-och-fest': 'from-petal-200 to-petal-400',
   'samma-dag-leverans': 'from-signal-500 to-signal-700',
   budget: 'from-brand-500 to-brand-700',
 }
@@ -46,7 +49,8 @@ const categoryIcons: Record<string, LucideIcon> = {
   brollop: Church,
   foretag: Building2,
   presenter: Gift,
-  'konstgjorda-blommor': Sparkles,
+  'lokar-och-fron': Sprout,
+  'dukning-och-fest': PartyPopper,
   'samma-dag-leverans': Clock,
   budget: Tag,
 }

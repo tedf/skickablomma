@@ -236,6 +236,16 @@ export const occasionSchema = z.object({
     .nullable()
     .default(null),
 
+  /**
+   * Angränsande sortiment som sidan får visa under buketterna.
+   *
+   * 'lokar' är Cramers trädgårdslökar, 'dukning' är My Perfect Days
+   * festtillbehör. Ingen av dem är blommor, och fältet finns för att valet ska
+   * stå i datan i stället för i en mall: på begravning, kondoleans och sjukhus
+   * ska det vara null, och det ska synas att det är ett beslut.
+   */
+  adjacent: z.enum(['lokar', 'dukning']).nullable().default(null),
+
   searchVolume: z.number().int().nonnegative().nullable(),
   kd: z.number().int().min(0).max(100).nullable(),
   phase: z.number().int().min(0).max(5),

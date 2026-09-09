@@ -86,7 +86,7 @@ export default async function CityPage({ params }: CityPageProps) {
   const neighbours = getCityNeighbours(city)
   /*
     Hela kategorin hämtas, inte de 24 första. Feeden ligger sorterad med
-    Fakeflowers och lökkatalogen först, så ett litet urval silades ned till en
+    lökkatalogen och festtillbehören först, så ett litet urval silades ned till en
     enda bukett innan ProductEvidence ens fick se det. Filtreringen sker efter
     hämtningen, alltså måste hämtningen vara bred.
   */

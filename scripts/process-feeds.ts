@@ -127,13 +127,6 @@ const PARTNERS: PartnerConfig[] = [
     displayName: 'Cramers Blommor'
   },
   {
-    id: 'fakeflowers',
-    feedFile: 'fakeflowers.xml',
-    trackingUrlTemplate: 'https://go.fakeflowers.se/t/t?a=1998457785&as=1771789045&t=2&tk=1&url={ProductUrl}',
-    sameDayDelivery: false,
-    displayName: 'Fakeflowers'
-  },
-  {
     id: 'interflora',
     feedFile: 'interflora.xml',
     trackingUrlTemplate: 'https://go.adt246.net/t/t?a=767510657&as=1771789045&t=2&tk=1&url={ProductUrl}',

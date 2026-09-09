@@ -124,18 +124,82 @@ export const MAIN_CATEGORIES: Record<MainCategory, Category> = {
     isActive: false, // No products in feed
     sortOrder: 5,
   },
-  'konstgjorda-blommor': {
-    id: 'konstgjorda-blommor',
-    slug: 'konstgjorda-blommor',
-    name: 'Konstgjord blomma',
-    namePlural: 'Konstgjorda blommor',
-    description: 'Sidenblommor och konstgjorda arrangemang',
-    metaTitle: 'Konstgjorda Blommor - Sidenblommor',
+  /*
+    Två kategorier som inte är buketter, och som heter det de är.
+
+    Cramers sortiment i feeden är lökar och knölar, My Perfect Days är servetter,
+    bordslöpare och sugrör. Båda låg som "buketter", vilket är hur en påse
+    alliumlökar hamnade under rubriken "buketter att skicka till Linköping".
+
+    De hör inte hemma i jämförelsen av blombud, men de är inte skräp heller:
+    lökarna svarar på en annan fråga än buketten gör, och dukningen hör till
+    samma fest som blommorna skickas till.
+  */
+  'lokar-och-fron': {
+    id: 'lokar-och-fron',
+    slug: 'lokar-och-fron',
+    name: 'Lök',
+    namePlural: 'Lökar och frön',
+    description: 'Blommor du planterar själv i stället för att skicka',
+    metaTitle: 'Lökar och frön – blommor du planterar själv',
     metaDescription:
-      'Konstgjorda blommor kräver inget vatten och håller år efter år. De levereras som paket, inte med blombud, vilket påverkar både pris och leveranstid.',
+      'Lökar planteras på hösten och blommar till våren, år efter år. Det är en annan sak än en bukett som håller en vecka. Här är sorterna, priserna och planteringstiden.',
     productCount: 0,
     isActive: true,
     sortOrder: 6,
+    seoContent: {
+      intro:
+        'En bukett håller en dryg vecka. En lök kommer tillbaka varje vår, ofta i tio år eller mer. Det är två olika frågor och de har olika svar, så vi blandar dem inte i samma tabell. Lökar skickas dessutom som paket och inte med blombud, alltså ingen budavgift och ingen leverans samma dag. Planteringstiden står på varje sort och styr allt: en lök som ska blomma i maj måste i jorden före tjälen.',
+      faq: [
+        {
+          id: 'lokar-faq-1',
+          question: 'När planterar man blomsterlökar?',
+          answer:
+            'Vårblommande lökar som tulpan, narciss och hyacint planteras från augusti till november, så länge jorden går att gräva i. De behöver en kall period för att blomma. Sommarblommande knölar som dahlia sätts i stället på våren.',
+          sortOrder: 1,
+        },
+        {
+          id: 'lokar-faq-2',
+          question: 'Går det att skicka lökar som present?',
+          answer:
+            'Ja, men de kommer som ett paket och inte med blombud. Räkna med några dagars leveranstid i stället för samma dag, och att mottagaren får något att göra i stället för något att ställa i vas.',
+          sortOrder: 2,
+        },
+        {
+          id: 'lokar-faq-3',
+          question: 'Hur får jag amaryllis att blomma till jul?',
+          answer:
+            'Plantera löken i oktober. Från lök till blomning tar det sex till åtta veckor, så en lök som sätts i december blommar i februari. Ställ den ljust och varmt och vattna måttligt.',
+          sortOrder: 3,
+        },
+      ],
+    },
+  },
+  'dukning-och-fest': {
+    id: 'dukning-och-fest',
+    slug: 'dukning-och-fest',
+    name: 'Dukning',
+    namePlural: 'Dukning och fest',
+    description: 'Servetter, bordslöpare och annat till bordet blommorna står på',
+    metaTitle: 'Dukning och fest – tillbehör till bordet',
+    metaDescription:
+      'Servetter, bordslöpare, sugrör och ballonger till festen. Det här är inte blommor och ingår inte i någon jämförelse av blombud, men hör till samma bord.',
+    productCount: 0,
+    isActive: true,
+    sortOrder: 7,
+    seoContent: {
+      intro:
+        'Det här är inte blommor. Servetter, bordslöpare, sugrör och ballonger hör till festen som buketten skickas till, och de finns här av den anledningen. De ingår inte i jämförelsen av blombud, levereras som paket och har varken budavgift eller leverans samma dag.',
+      faq: [
+        {
+          id: 'dukning-faq-1',
+          question: 'Kan jag beställa dukningen tillsammans med blommorna?',
+          answer:
+            'Nej. Det är olika butiker och två separata beställningar, med var sin frakt. Vi tar inte emot någon av dem.',
+          sortOrder: 1,
+        },
+      ],
+    },
   },
   'samma-dag-leverans': {
     id: 'samma-dag-leverans',

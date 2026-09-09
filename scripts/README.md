@@ -45,11 +45,6 @@ The script processes feeds from:
    - Tracking: `https://pin.cramersblommor.com/t/t?a=1954033070&as=1771789045&t=2&tk=1&url={ProductUrl}`
    - Same-day delivery: Yes
 
-2. **Fakeflowers**
-   - Feed: `feeds/fakeflowers.xml` (408KB)
-   - Tracking: `https://go.fakeflowers.se/t/t?a=1998457785&as=1771789045&t=2&tk=1&url={ProductUrl}`
-   - Same-day delivery: No
-
 3. **Interflora**
    - Feed: `feeds/interflora.xml` (257KB)
    - Tracking: `https://go.adt246.net/t/t?a=767510657&as=1771789045&t=2&tk=1&url={ProductUrl}`

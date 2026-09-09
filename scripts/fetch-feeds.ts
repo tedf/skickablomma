@@ -25,11 +25,6 @@ const PARTNERS = {
     productFeed: process.env.ADTRACTION_INTERFLORA_PRODUCT_FEED || 'https://adtraction.com/feeds/products/interflora.xml',
     statusFeed: process.env.ADTRACTION_INTERFLORA_STATUS_FEED || 'https://adtraction.com/feeds/status/interflora.xml',
   },
-  fakeflowers: {
-    name: 'Fakeflowers',
-    productFeed: process.env.ADTRACTION_FAKEFLOWERS_PRODUCT_FEED || 'https://adtraction.com/feeds/products/fakeflowers.xml',
-    statusFeed: process.env.ADTRACTION_FAKEFLOWERS_STATUS_FEED || 'https://adtraction.com/feeds/status/fakeflowers.xml',
-  },
   myperfectday: {
     name: 'My Perfect Day',
     productFeed: process.env.ADTRACTION_MYPERFECTDAY_PRODUCT_FEED || 'https://adtraction.com/feeds/products/myperfectday.xml',

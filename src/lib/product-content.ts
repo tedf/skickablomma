@@ -56,10 +56,13 @@ const occasionText: Record<string, string> = {
 // =============================================================================
 
 function getCareInstructions(product: Product): string | null {
-  const isKonstgjord = product.mainCategory === 'konstgjorda-blommor'
+  // Lökar sköts inte i vas, de planteras. Beskrivningen bär planteringstiden.
+  if (product.mainCategory === 'lokar-och-fron') {
+    return 'Lökar planteras i jorden, inte i vas. Planteringstiden står i produktbeskrivningen och styr när de blommar: vårblommande lökar sätts på hösten så länge jorden går att gräva i. Djupet är tumregelmässigt två till tre gånger lökens egen höjd.'
+  }
 
-  if (isKonstgjord) {
-    return 'Konstgjorda blommor kräver ingen skötsel och håller sin skönhet år efter år. Dammas av med en mjuk borste eller fuktad trasa vid behov. Undvik direkt solljus för att bevara färgerna längre.'
+  if (product.mainCategory === 'dukning-och-fest') {
+    return null
   }
 
   const subs = product.subCategories || []
@@ -148,7 +151,8 @@ function getSuitableForText(product: Product): string[] {
     if (product.mainCategory === 'buketter') suggestions.push('Att ge bort i present', 'Att skicka med bud', 'Dekorera hemmet')
     if (product.mainCategory === 'begravning') suggestions.push('Begravningsceremonier', 'Att hedra minnet av en nära anhörig')
     if (product.mainCategory === 'brollop') suggestions.push('Bröllopsceremonier', 'Festdekoration')
-    if (product.mainCategory === 'konstgjorda-blommor') suggestions.push('Permanent heminredning', 'Allergikers alternativ', 'Kontor & arbetsplatser')
+    if (product.mainCategory === 'lokar-och-fron') suggestions.push('Att plantera i egen rabatt', 'Present som kommer tillbaka varje vår', 'Balkonglåda')
+    if (product.mainCategory === 'dukning-och-fest') suggestions.push('Kalas och fest', 'Dukning till middagen')
   }
 
   return suggestions.slice(0, 5)
@@ -250,7 +254,7 @@ export function generateProductContent(
   const careText = getCareInstructions(product)
   if (careText) {
     sections.push({
-      heading: product.mainCategory === 'konstgjorda-blommor' ? 'Skötsel av konstgjorda blommor' : 'Skötselråd',
+      heading: product.mainCategory === 'lokar-och-fron' ? 'Plantering' : 'Skötselråd',
       body: careText,
       type: 'paragraph',
     })

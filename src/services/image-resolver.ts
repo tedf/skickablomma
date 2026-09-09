@@ -227,21 +227,6 @@ const ROYALTY_FREE_LIBRARY: Record<string, ImageAsset[]> = {
       validationStatus: 'valid',
     },
   ],
-  'konstgjorda-blommor': [
-    {
-      id: 'rf-artificial-01',
-      url: '/images/royalty-free/artificial-flowers-01.webp',
-      sourceType: 'royalty_free',
-      license: 'cc0',
-      dimensions: { width: 800, height: 600 },
-      format: 'webp',
-      fileSize: 42000,
-      altText: 'Artificial silk flowers',
-      altTextSv: 'Konstgjorda sidenblommor',
-      createdAt: new Date('2024-01-01'),
-      validationStatus: 'valid',
-    },
-  ],
 }
 
 // =============================================================================
@@ -273,10 +258,15 @@ Swedish gift style, {flowers} in {colors} colors with elegant presentation.
 Professional product photography, white background, soft lighting.
 Cheerful and gift-worthy appearance. No text, no watermarks.`,
 
-  'konstgjorda-blommor': `High-quality artificial silk flowers, {flowers} in {colors} colors.
-Realistic appearance, Swedish interior design aesthetic.
-Professional product photography showing craftsmanship and detail.
-Clean white background, soft lighting. No text, no watermarks.`,
+  'lokar-och-fron': `Flower bulbs and packets laid out on soil or a wooden surface.
+{flowers} bulbs, Swedish garden context, autumn planting season.
+Professional product photography, natural light, shallow depth of field.
+Clean neutral background. No text, no watermarks.`,
+
+  'dukning-och-fest': `Table setting accessories for a Swedish celebration.
+Napkins, table runner and paper cups in {colors} colors, arranged on a table.
+Professional product photography, soft daylight, clean composition.
+No text, no watermarks.`,
 
   'samma-dag-leverans': `Fresh flower bouquet ready for same-day delivery in Sweden.
 {flowers} in {colors} colors, beautifully wrapped.
@@ -359,16 +349,29 @@ const PLACEHOLDER_IMAGES: Record<MainCategory, ImageAsset> = {
     createdAt: new Date(),
     validationStatus: 'valid',
   },
-  'konstgjorda-blommor': {
-    id: 'placeholder-konstgjorda',
-    url: '/images/placeholders/artificial-placeholder.svg',
+  'lokar-och-fron': {
+    id: 'placeholder-lokar',
+    url: '/images/placeholders/bouquet-placeholder.svg',
     sourceType: 'placeholder',
     license: 'partner_provided',
     dimensions: { width: 400, height: 400 },
     format: 'png',
     fileSize: 5000,
-    altText: 'Artificial flowers placeholder',
-    altTextSv: 'Konstgjorda blommor - bild saknas',
+    altText: 'Flower bulbs placeholder',
+    altTextSv: 'Lökar - bild saknas',
+    createdAt: new Date(),
+    validationStatus: 'valid',
+  },
+  'dukning-och-fest': {
+    id: 'placeholder-dukning',
+    url: '/images/placeholders/bouquet-placeholder.svg',
+    sourceType: 'placeholder',
+    license: 'partner_provided',
+    dimensions: { width: 400, height: 400 },
+    format: 'png',
+    fileSize: 5000,
+    altText: 'Party supplies placeholder',
+    altTextSv: 'Dukning - bild saknas',
     createdAt: new Date(),
     validationStatus: 'valid',
   },

@@ -19,23 +19,16 @@ const tabs: { id: FlowerType; label: string; emoji: string; description: string;
   {
     id: 'snittblommor',
     label: 'Snittblommor',
-    emoji: '💐',
+    emoji: '',
     description: 'Färska buketter & arrangemang',
     href: '/buketter',
   },
   {
-    id: 'konstgjorda',
-    label: 'Konstgjorda',
-    emoji: '🌸',
-    description: 'Håller för alltid – ingen skötsel',
-    href: '/konstgjorda-blommor',
-  },
-  {
     id: 'lokar',
-    label: 'Lökar & Frön',
-    emoji: '🌱',
-    description: 'Plantera egna blommor',
-    href: '/sok?q=lökar',
+    label: 'Lökar och frön',
+    emoji: '',
+    description: 'Planteras i stället för att skickas',
+    href: '/lokar-och-fron',
   },
 ]
 

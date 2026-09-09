@@ -10,7 +10,12 @@ import { z } from 'zod'
 // PARTNERS
 // -----------------------------------------------------------------------------
 
-export type Partner = 'cramers' | 'interflora' | 'fakeflowers' | 'myperfectday'
+/*
+  Fakeflowers är borttagen. Konstgjorda blommor går inte att skicka som en
+  hälsning och hörde aldrig hemma på en sajt om blombud: hundra sidenrosor i
+  sortimentet drog dessutom ned snittet i varje urval som filtrerade på pris.
+*/
+export type Partner = 'cramers' | 'interflora' | 'myperfectday'
 
 export interface PartnerConfig {
   id: Partner
@@ -77,13 +82,22 @@ export interface ImageAsset {
 // KATEGORIER
 // -----------------------------------------------------------------------------
 
+/*
+  Två av kategorierna handlar inte om buketter, och det är avsiktligt utskrivet
+  i namnen. Lökar planteras, de skickas inte, och dukningen är tillbehör till
+  festen och inte en hälsning. Feeden taggade båda som "buketter", vilket är
+  hur en påse alliumlökar hamnade under rubriken "buketter att skicka".
+
+  Kategorin konstgjorda-blommor är borttagen tillsammans med Fakeflowers.
+*/
 export type MainCategory =
   | 'buketter'
   | 'begravning'
   | 'brollop'
   | 'foretag'
   | 'presenter'
-  | 'konstgjorda-blommor'
+  | 'lokar-och-fron'
+  | 'dukning-och-fest'
   | 'samma-dag-leverans'
   | 'budget'
 

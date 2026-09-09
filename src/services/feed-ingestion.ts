@@ -272,15 +272,6 @@ export function mapCategory(
     return { main: 'foretag', sub: ['kontorsblommor'] }
   }
 
-  // Konstgjorda blommor
-  if (
-    category.includes('konstgjord') ||
-    category.includes('siden') ||
-    category.includes('fake') ||
-    partnerId === 'fakeflowers'
-  ) {
-    return { main: 'konstgjorda-blommor', sub: [] }
-  }
 
   // Presenter
   if (
@@ -424,7 +415,7 @@ export async function ingestPartnerFeed(partnerId: Partner): Promise<FeedIngesti
  * Kör ingestion för alla partners
  */
 export async function ingestAllFeeds(): Promise<FeedIngestionResult[]> {
-  const partners: Partner[] = ['cramers', 'interflora', 'fakeflowers', 'myperfectday']
+  const partners: Partner[] = ['cramers', 'interflora', 'myperfectday']
   const results: FeedIngestionResult[] = []
 
   for (const partner of partners) {

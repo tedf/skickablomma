@@ -205,55 +205,6 @@ const MOCK_PRODUCTS: Product[] = [
     isPromoted: false,
   },
   {
-    id: 'fakeflowers-001',
-    sku: 'FF001',
-    partnerId: 'fakeflowers',
-    name: 'Konstgjord Orkidé',
-    description: 'Vacker konstgjord orkidé som ser ut som äkta. Kräver ingen skötsel och blommar för evigt.',
-    shortDescription: 'Konstgjord orkidé - kräver ingen skötsel.',
-    mainCategory: 'konstgjorda-blommor',
-    subCategories: ['orkideer'],
-    tags: ['orkidé', 'konstgjord', 'sidenblomma', 'underhållsfri'],
-    price: 399,
-    currency: 'SEK',
-    shipping: 59,
-    inStock: true,
-    sameDayDelivery: false,
-    deliveryDays: 2,
-    attributes: {
-      flowerTypes: ['orkidéer'],
-      colors: ['vit'],
-      primaryColor: 'vit',
-      size: 'mellan',
-      style: 'modern',
-      suitableFor: ['kvinna', 'alla', 'foretag'],
-    },
-    primaryImage: {
-      id: 'img-ff001',
-      url: '/images/products/artificial-orchid.jpg',
-      sourceType: 'partner',
-      license: 'partner_provided',
-      dimensions: { width: 800, height: 800 },
-      format: 'jpg',
-      fileSize: 85000,
-      altText: 'Artificial white orchid',
-      altTextSv: 'Konstgjord vit orkidé',
-      createdAt: new Date(),
-      validationStatus: 'valid',
-    },
-    additionalImages: [],
-    productUrl: 'https://www.fakeflowers.se/produkter/konstgjord-orkide',
-    trackingUrl: 'https://track.adtraction.com/t/t?a=123&as=111&t=2&tk=1&url=https://www.fakeflowers.se/produkter/konstgjord-orkide',
-    brand: 'Fakeflowers',
-    popularityScore: 75,
-    clickCount: 450,
-    createdAt: new Date('2024-02-10'),
-    updatedAt: new Date(),
-    feedUpdatedAt: new Date(),
-    isActive: true,
-    isPromoted: false,
-  },
-  {
     id: 'cramers-002',
     sku: 'CRM002',
     partnerId: 'cramers',
@@ -486,10 +437,8 @@ export async function getProductsByFlowerType(
     filtered = filtered.filter(
       (p) => p.mainCategory === 'buketter' && p.brand !== 'Sam van Schooten'
     )
-  } else if (type === 'konstgjorda') {
-    filtered = filtered.filter((p) => p.mainCategory === 'konstgjorda-blommor')
   } else if (type === 'lokar') {
-    filtered = filtered.filter((p) => p.brand === 'Sam van Schooten')
+    filtered = filtered.filter((p) => p.mainCategory === 'lokar-och-fron')
   }
 
   return filtered
@@ -926,11 +875,10 @@ export async function getSubCategoryCounts(
 /**
  * Partners som faktiskt levererar blombud.
  *
- * Feeden innehåller också Fakeflowers (konstgjorda blommor) och My Perfect Day
- * (fest- och ballongdekor). Ingen av dem är ett blombud, och en konstgjord ros
- * på en begravningssida vore fel på flera sätt. Cramers sortiment är dessutom
- * övervägande lökar och plantor, alltså trädgårdsbilder snarare än buketter,
- * så Interflora prioriteras när båda finns.
+ * Feeden innehåller också My Perfect Day, som säljer fest- och dukningstillbehör
+ * och inte blommor, och Cramers, vars sortiment är lökar och knölar. Ingen av
+ * dem är ett blombud. De har egna platser på sajten — se PARTY_PARTNERS och
+ * pickPlantableBulbs — men de hör aldrig hemma bland buketterna.
  */
 const BLOMBUD_PARTNERS: Partner[] = ['interflora', 'cramers']
 
@@ -969,6 +917,56 @@ function arTradgardsprodukt(product: Product): boolean {
  * Filtrerar och sorterar produkter så att en tillfällessida visar bundna
  * buketter med fungerande bild, inte lökpåsar eller konstgjorda blommor.
  */
+/**
+ * Lökar som går att plantera, med planteringstiden utläst ur beskrivningen.
+ *
+ * Cramers är ingen blombud. Feeden är en trädgårdskatalog med buskar, perenner
+ * och krukor, och lökarna är den enda delen som svarar på en fråga en besökare
+ * här faktiskt har: vad får jag för pengarna om jag inte vill skicka en bukett
+ * som håller en vecka.
+ *
+ * Därför visas de aldrig bland buketterna, bara som ett eget alternativ, och
+ * bara under planteringssäsongen. En tulpanlök i mars är fel svar.
+ */
+export function pickPlantableBulbs(products: Product[], limit: number): Product[] {
+  return products
+    .filter((p) => p.mainCategory === 'lokar-och-fron' && harLokalBild(p) && p.inStock)
+    .sort((a, b) => a.price - b.price)
+    .slice(0, limit)
+}
+
+/** Planteringstiden står i feedens beskrivning som "Planteringstid: Augusti-November". */
+export function planteringstid(product: Product): string | null {
+  const match = (product.description ?? '').match(/Planteringstid:\s*([^\n]+)/)
+  return match ? match[1].trim() : null
+}
+
+/**
+ * Höstplanteringen pågår så länge jorden går att gräva i, i praktiken augusti
+ * till november. Utanför det fönstret säger vi ingenting om lökar.
+ */
+export function arPlanteringssasong(now: Date = new Date()): boolean {
+  const manad = now.getMonth() + 1
+  return manad >= 8 && manad <= 11
+}
+
+/**
+ * Dukning och festtillbehör från My Perfect Day.
+ *
+ * De säljer servetter, bordslöpare och sugrör, inte blommor. Feeden hade taggat
+ * alltihop som "buketter", vilket är hur ett paket sugrör kunde hamna i en
+ * jämförelse av blombud. De hör till samma bord som buketten står på, och det
+ * är hela kopplingen: de visas bara på sidor där det faktiskt är fest, aldrig
+ * på en begravnings- eller sjukhussida, och alltid utskrivet att det inte är
+ * blommor och inte samma beställning.
+ */
+export function pickPartyAccessories(products: Product[], limit: number): Product[] {
+  return products
+    .filter((p) => p.mainCategory === 'dukning-och-fest' && harLokalBild(p) && p.inStock)
+    .sort((a, b) => a.price - b.price)
+    .slice(0, limit)
+}
+
 export function pickDeliverableBouquets(
   products: Product[],
   limit: number,

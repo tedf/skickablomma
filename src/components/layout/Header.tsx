@@ -225,12 +225,11 @@ export function Header() {
             {/* Mobile CTA */}
             <div className="mt-4 border-t pt-4">
               <Link
-                href="/konstgjorda-blommor"
-                className="flex w-full items-center justify-center gap-2 rounded-full bg-secondary py-3 text-base font-medium text-white"
+                href="/jamfor"
+                className="flex w-full items-center justify-center gap-2 rounded-full bg-brand py-3 text-base font-medium text-paper"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                <Sparkles className="h-5 w-5" />
-                Konstgjorda blommor
+                Jämför blombud
               </Link>
             </div>
           </div>

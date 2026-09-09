@@ -30,7 +30,6 @@ const footerLinks = {
 const partners = [
   { name: 'Interflora' },
   { name: 'Cramers' },
-  { name: 'Fakeflowers' },
   { name: 'My Perfect Day' },
 ]
 
